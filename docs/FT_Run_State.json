@@ -4,10 +4,10 @@
   "status": "working",
   "run_id": "ft43b-20261012T233638Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-13T00:09:18Z",
-  "expected_head": "301647e627649378fdf4f3732bc43b37fd3e28cf",
+  "lease_expires_at": "2026-10-13T00:14:36Z",
+  "expected_head": "66b278e30d45c62114ce177bd068c47b9e9ef6ba",
   "current_batch": "FT4.3b1",
-  "next_batch": "Implement the registered honest-closure discovery protocol, freeze it, and run its bounded common predecessor gate",
+  "next_batch": "Run the frozen FT4.3b1 bounded acceptance gate and independently reconstruct both-setting closure witnesses",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
