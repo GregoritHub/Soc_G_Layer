@@ -1,13 +1,13 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "recovering",
+  "status": "running",
   "run_id": "ft-recovery-20261012T161631181Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-12T16:46:31.181Z",
-  "expected_head": "b5b84c37651cdf55c79960385783b3787f91e689",
-  "current_batch": "recovery gate",
-  "next_batch": "FT4.1a",
+  "lease_expires_at": "2026-10-12T17:00:29.363Z",
+  "expected_head": "77e7e4ecbe836bf27019f851ac71d5ae6b5b6134",
+  "current_batch": "FT4.1a",
+  "next_batch": "FT4.1a owned demand admission implementation",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -24,11 +24,29 @@
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/Recovery_Protocol_20261012.json",
+  "latest_record": "docs/ft/Recovery_Record_20261012.md",
   "automation": {
     "enabled": false,
     "id": null,
     "reason": "Awaiting executable recovery gate and verified destination save"
   },
-  "blocker": null
+  "blocker": null,
+  "recovery": {
+    "status": "passed",
+    "inherited_methods": 751,
+    "ft_control_methods": 30,
+    "ft_positive_witnesses": 2,
+    "exact_source_files": 1520,
+    "archive_name": "Soc_G_Layer_Recovery_Verification_20261012.zip",
+    "archive_sha256": "af1bd163563ecb703ffa77d95508ba4d8269c18b524ee143e8d750a216a42438"
+  },
+  "registered_subbatches": [
+    "FT4.1a"
+  ],
+  "publication": {
+    "mode": "read-only pinned dependencies plus new development",
+    "bulk_import": "rejected and not performed",
+    "runtime_dependencies": "verified reconstructible",
+    "standalone_ft9_release": false
+  }
 }

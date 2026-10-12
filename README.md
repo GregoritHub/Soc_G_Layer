@@ -1,11 +1,26 @@
 # Soc G Layer
 
-Full Theory engine continuation, authorized 12 October 2026.
+Full Theory engine continuation. The repaired FT3 recovery gate passed on 12 October 2026: all 751 inherited method identities, 30 FT controls and both positive retention witnesses passed with unchanged source. See `docs/ft/Recovery_Record_20261012.md`.
 
-The current work is recovery and verification of the repaired FT3 checkpoint. FT4.1 (autonomous demand formation) is the next development batch. FT4–FT9 are not yet complete, and no continuation schedule is enabled at this initial checkpoint.
+Current development starts at **FT4.1a: owned demand admission**. Its protocol is registered; implementation and the parent FT4.1 gate remain pending. The live state and actual schedule receipt are in `docs/FT_Run_State.json`. The job register retains all FT0.1–FT9.3 IDs.
 
-The inherited engine is pinned to `GregoritHub/Socionics_Engine` at `fdede6f16721f06422d0798a79d84170969b83f8`. Repaired FT source is recovered from `GregoritHub/Engine_Socionics` at `2b62b22f02a94f32ba060812c95309890a05856c`, supplemented by verified checkpoint and evidence archives. Those repositories remain read-only.
+## Run the recovered engine
 
-This repository will hold the new layer, its current operational state, prospective protocols, tests and verification records. The inherited engine and its historical evidence remain exact dependencies with separate provenance. This initial commit does not claim that source recovery, full publication, or engine acceptance has finished.
+The inherited engine remains a read-only, pinned dependency. Obtain the existing recovery attachments `Full_Theory_Checkpoint_FT3_Held.zip` and `FT2_FT3_Approved_Repair_Evidence.zip`, then run:
 
-Preserve the sealed baseline, `legacy-r4` default, accepted contracts, failed attempts and theoretical boundaries. Do not retry previously denied historical manifest uploads through this repository. Do not force-push or overlap an active worker. Consult the destination run-state before implementation once it is established.
+```sh
+python3 tools/prepare_workspace.py --held-archive /absolute/held.zip --repair-evidence /absolute/repairs.zip --output /absolute/new-runtime
+cd /absolute/new-runtime
+PYTHONPATH=.:baseline/HLE_Rebuild_R21B python3 -m unittest -v tests_ft1.test_historical tests_ft2.test_content
+python3 tools/evaluate_ft3.py /absolute/new-ft3-output
+```
+
+Use Python 3.12. The script verifies source and archive identities and preserves existing output directories. It never pushes to either source repository. New committed FT modules, tests, contracts and evaluators in this destination are applied over the verified repaired engine.
+
+The exact current plan and continuation handoff are in `operator/` inside `Soc_G_Layer_Recovery_Verification_20261012.zip` (SHA-256 `af1bd163563ecb703ffa77d95508ba4d8269c18b524ee143e8d750a216a42438`). Authorized hosted runs already have private retrieval pointers. Read this destination's run-state rather than the historical publication state inside recovered inputs. No manual download/upload cycle is required for hosted continuation.
+
+## Scope
+
+The recovery checkpoint is reproducible from exact dependencies. A standalone FT9 package and the full FT4–FT9 engine remain unfinished. The bulk recovered-source import was rejected by automatic review and was not performed; only the narrower setup/dependency save was used. Previously denied historical manifest transfers remain untouched.
+
+Preserve the sealed baseline, legacy-r4 default, accepted contracts, failed attempts, exact payments and theoretical boundaries. New dynamics are versioned hypotheses. Passing simulation tests does not validate a psychological theory.

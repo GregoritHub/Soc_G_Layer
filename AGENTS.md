@@ -2,7 +2,7 @@
 
 Greg authorized repository edits and scheduled implementation through the Full Theory FT0–FT9 plan on 12 October 2026. Continue without per-batch permission requests. The current destination is GregoritHub/Soc_G_Layer; both older repositories are read-only dependencies.
 
-Read docs/FT_Run_State.json, docs/FT_Job_Register.md when present, the current Full_Theory_Engine_Batched_Plan_v1_0.txt, docs/FT_Continuation.md and the latest record. The inherited Final Build/Phase 7 is already complete. FT0–FT3 have repaired acceptance; verify recovery before FT4.1.
+Read this destination's docs/FT_Run_State.json, docs/FT_Job_Register.md, README.md and the latest record. Retrieve the current Full_Theory_Engine_Batched_Plan_v1_0.txt and continuation handoff from the operator/ directory in the recovery verification artifact before implementation; its exact private pointer is in the continuation task. The inherited Final Build/Phase 7 is complete. FT0–FT3 have repaired acceptance; the destination recovery gate is recorded separately. The destination state governs; recovered old FT publication state is historical.
 
 Preserve inherited AGENTS rules, sealed baseline, legacy-r4 default, meaning, failures and independent audits. The current FT plan governs new candidate dynamics and operational routing. Protocols must be committed and hashed before governed code; freezes precede acceptance runs. At most three implementation/tool modules, one test directory, one bounded evaluation and one record per checkpoint. Split larger jobs without weakening their gate.
 
