@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": "ft4-a3e1fae08fed411ea933d1e92936b8f3",
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "040a6b83589547f89a2930f4c72842dfbcc381ac",
+  "status": "running",
+  "run_id": "ft4b2-20261012T183616Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-12T19:06:16Z",
+  "expected_head": "ba74bc78bd99368fc36172027725ef22506c138d",
   "current_batch": "FT4.1b2",
   "next_batch": "FT4.1b2 outcome fulfillment and controller integration; protocol before implementation",
   "completed_batches": [
