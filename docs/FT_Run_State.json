@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": "ft42b2b-ec13d4f7879545c9a5f8a979bcc029da",
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "1a86cc5c1bae481914b8facae2bee8c08569f161",
+  "status": "running",
+  "run_id": "ft42b2b2-20261012T222904Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-12T22:59:04Z",
+  "expected_head": "25ecf164c3f8ed32871012322942915b9d9f140d",
   "current_batch": "FT4.2b2b2",
   "next_batch": "FT4.2b2b2 opposition: declared consecutive lawful moves with their exact payments; protocol before code",
   "completed_batches": [
