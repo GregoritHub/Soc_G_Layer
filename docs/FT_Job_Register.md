@@ -17,7 +17,7 @@
 | FT3.2 | accepted, inherited | Pinned FT records; verified recovery |
 | FT3.3 | accepted, inherited | Pinned FT records; verified recovery |
 | FT4.1 | accepted | 30 exact methods; canonical/workflow fulfillment reconstructed; frozen source unchanged |
-| FT4.2 | a, b1, b2a and b2b1 accepted | Structural inventory, bounded paid native turns, exact orientation fee, and non-opposed TD5 priority/support/retention with actual traversal linkage passed; b2b2 opposition remains pending |
+| FT4.2 | accepted | 83 exact methods; paid native choice, cp fee, priority/support/retention, actual traversal and declared consecutive paid opposition independently reconstructed |
 | FT4.3 | pending | Full Theory plan gate |
 | FT5.1 | pending | Full Theory plan gate |
 | FT5.2 | pending | Full Theory plan gate |
@@ -35,4 +35,4 @@
 | FT9.2 | pending | Full Theory plan gate |
 | FT9.3 | pending | Full Theory plan gate |
 
-[derived] FT4.1 acceptance is the bounded demand-formation gate, not a full autonomous cycle. FT4.2 route choice and FT4.3 closure/reuse remain open. The old publication job remains historical and is not part of the live development queue.
+[derived] FT4.1 and FT4.2 are bounded demand-formation and route-choice gates, not a full autonomous cycle. FT4.3 closure and later reuse remain open. The old publication job remains historical and is not part of the live development queue.

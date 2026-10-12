@@ -1,13 +1,13 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
+  "status": "ready",
   "run_id": "ft42b2b2-20261012T222904Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-12T23:30:00Z",
-  "expected_head": "d870010b783e7026fa0ff9c6d8144e5935e40e43",
-  "current_batch": "FT4.2b2b2",
-  "next_batch": "FT4.2b2b2 source frozen; preserve the passing common FT4.2 acceptance evidence and release the checkpoint",
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "ae6df327f6e6de60e7284ffbdfbe1f9bbc56716d",
+  "current_batch": "FT4.3",
+  "next_batch": "FT4.3 full autonomous demand-choice-exchange-processing-closure-reuse cycle; protocol before code",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -27,11 +27,12 @@
     "FT4.2a",
     "FT4.2b1",
     "FT4.2b2a",
-    "FT4.2b2b1"
+    "FT4.2b2b1",
+    "FT4.2b2b2"
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT4_2b2b1_Record.md",
+  "latest_record": "docs/ft/FT4_2b2b2_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
@@ -53,7 +54,8 @@
     "FT4.2a",
     "FT4.2b1",
     "FT4.2b2a",
-    "FT4.2b2b1"
+    "FT4.2b2b1",
+    "FT4.2b2b2"
   ],
   "publication": {
     "mode": "read-only pinned dependencies plus new development",

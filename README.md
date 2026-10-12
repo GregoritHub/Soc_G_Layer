@@ -2,7 +2,7 @@
 
 Full Theory engine continuation. The repaired FT3 recovery gate passed on 12 October 2026: all 751 inherited method identities, 30 FT controls and both positive retention witnesses passed with unchanged source. See `docs/ft/Recovery_Record_20261012.md`.
 
-**FT4.1, FT4.2a structural means, FT4.2b1 native paid execution, FT4.2b2a orientation payment and FT4.2b2b1 non-opposed TD5 integration are accepted.** Next is FT4.2b2b2 opposition with declared consecutive lawful moves and their payments; the parent FT4.2 gate remains pending. The live state and actual schedule receipt are in `docs/FT_Run_State.json`. The job register retains all FT0.1–FT9.3 IDs.
+**FT4.1 demand formation and FT4.2 paid route choice are accepted.** FT4.2 includes structural route admission, bounded paid native turns, exact cp orientation fees, retained/support priority, native traversal linkage and declared paid opposition. Next is FT4.3, the full autonomous demand-to-closure-and-reuse cycle. The live state and actual schedule receipt are in `docs/FT_Run_State.json`. The job register retains all FT0.1–FT9.3 IDs.
 
 ## Run the recovered engine
 
