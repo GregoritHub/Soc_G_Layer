@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": "ft4b2-20261012T183616Z",
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "6b2e5ace1a95183115fefb20e4602d08cc71bbb4",
+  "status": "running",
+  "run_id": "ft42-20261012T193701Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-12T20:07:01Z",
+  "expected_head": "6b1579918a584cae47b130031d7223d00a2e48e0",
   "current_batch": "FT4.2",
   "next_batch": "FT4.2 paid route choice; commit and hash the prospective protocol before implementation",
   "completed_batches": [
