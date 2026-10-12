@@ -5,7 +5,7 @@
   "run_id": "ft42b-589159b634b24d2b8c8b10509fc38566",
   "active_worker": true,
   "lease_expires_at": "2026-10-12T21:02:50.634463+00:00",
-  "expected_head": "9d33cae603b92c4cec7ab294c706f1305943d9c7",
+  "expected_head": "c43526b40d6532b0a5cbe6185a9feafe7179a022",
   "current_batch": "FT4.2b2a",
   "next_batch": "FT4.2b2a native cp orientation payment; then b2b integrated TD5 priority/support/retention",
   "completed_batches": [
@@ -49,7 +49,8 @@
     "FT4.1b1",
     "FT4.1b2",
     "FT4.2a",
-    "FT4.2b1"
+    "FT4.2b1",
+    "FT4.2b2a"
   ],
   "publication": {
     "mode": "read-only pinned dependencies plus new development",
