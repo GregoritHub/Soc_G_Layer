@@ -1030,7 +1030,7 @@
   "contracts/ft/FT4_2b2b2_Protocol_v1.json": "7357574e1368886b719a2e2eab17cac15da8042441dad2ffedac1519e749129d",
   "contracts/ft/FT4_2b2b2_Protocol_v1.json.sha256": "0c771c8c198f479f41766998f08452ed36c1072d74c44a412fb63003cc97a90d",
   "contracts/ft/FT4_2b2b2_Source_Freeze_v1.json": "8752a2e7ff389d0241f0ff176c81faf777bfc28f5e6a4ec691d4799c642f8c2f",
-  "contracts/ft/FT4_3a_Protocol_v1.json": "8738155603e6cd6a16670a91a4c201140ad89cd201569e12950bd31de959f506",
+  "contracts/ft/FT4_3a_Protocol_v1.json": "b702c849138ea596ac341adff823a1efc5afa44363647df211b0efa8ce8cca12",
   "contracts/ft/FT4_3a_Protocol_v1.json.sha256": "4f8871a24d18061f93ad27a891c993140162f5298baee8d9f65c556480688c82",
   "evidence/FT0.1/reference/Followup_Protocol.json": "62426f8cc5618a3cca2ab117e2b36b6cc72f51e55eb4a887284bf801057e31db",
   "evidence/FT0.1/reference/Immutable_Manifest.json": "697bdf5e4af4f6542964bdd9a4cc6a734c5bb5117e825b72b379d41871a671cd",
