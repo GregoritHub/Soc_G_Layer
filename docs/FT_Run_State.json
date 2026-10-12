@@ -4,10 +4,10 @@
   "status": "working",
   "run_id": "ft43b-20261012T233638Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-13T00:06:38Z",
-  "expected_head": "dd5ddbdd2324772b9509cf5ee157ec8bf5e8a378",
-  "current_batch": "FT4.3b",
-  "next_batch": "FT4.3b honest closure, retained-capability-altered later choice, unavailable support and opposition controls under the common FT4 gate; protocol before implementation",
+  "lease_expires_at": "2026-10-13T00:09:18Z",
+  "expected_head": "301647e627649378fdf4f3732bc43b37fd3e28cf",
+  "current_batch": "FT4.3b1",
+  "next_batch": "Implement the registered honest-closure discovery protocol, freeze it, and run its bounded common predecessor gate",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -29,7 +29,8 @@
     "FT4.2b2a",
     "FT4.2b2b1",
     "FT4.2b2b2",
-    "FT4.3a"
+    "FT4.3a",
+    "FT4.3b1"
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
