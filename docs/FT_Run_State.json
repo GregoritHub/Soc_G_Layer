@@ -1,13 +1,13 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
+  "status": "ready",
   "run_id": "ft42b-589159b634b24d2b8c8b10509fc38566",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-12T21:02:50.634463+00:00",
-  "expected_head": "c43526b40d6532b0a5cbe6185a9feafe7179a022",
-  "current_batch": "FT4.2b2a",
-  "next_batch": "FT4.2b2a native cp orientation payment; then b2b integrated TD5 priority/support/retention",
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "7a60a2a703cd8c685d79f44382d1408f940cb67e",
+  "current_batch": "FT4.2b2b",
+  "next_batch": "FT4.2b2b integrated TD5 priority, exact consenting support, applicable retained capacity and actual cp traversal/fee linkage; protocol before code",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -25,11 +25,12 @@
     "FT4.1b1",
     "FT4.1b2",
     "FT4.2a",
-    "FT4.2b1"
+    "FT4.2b1",
+    "FT4.2b2a"
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT4_2b1_Record.md",
+  "latest_record": "docs/ft/FT4_2b2a_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
