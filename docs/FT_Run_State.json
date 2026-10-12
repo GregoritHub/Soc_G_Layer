@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": "ft-recovery-20261012T161631181Z",
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "ff653824d7c802794f6d4c7e6b2424c95ccefecc",
+  "status": "running",
+  "run_id": "ft4-a3e1fae08fed411ea933d1e92936b8f3",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-12T18:02:40.667253+00:00",
+  "expected_head": "d966ae2011794ba67845cfea586cdf45e3d674a4",
   "current_batch": "FT4.1a",
   "next_batch": "FT4.1a owned demand admission implementation",
   "completed_batches": [
