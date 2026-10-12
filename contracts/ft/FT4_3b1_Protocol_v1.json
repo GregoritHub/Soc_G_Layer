@@ -26,11 +26,11 @@
   ],
   "fixtures": {
     "docs/ft/FT_Configuration_Contract_v1.md": "d582a935b161b5e0ffb8e8a332d027f36cc54c7698ebecac79dc774b80efc94f",
-    "full_theory/autonomous_cycle.py": "5d82e739f57bd87cfeaeaaf5d4e35ac737315cf29e7ac1f54245f0da5e1bb0ad",
-    "full_theory/autonomous_cycle_audit.py": "a6e86379bccbba3f7b03edd7058388a0df0ee7522d0040136b34ec0c28c1cc82",
+    "full_theory/autonomous_cycle.py": "12ae1db85687e0d4eec48108de2e5e7f06be3e8c24527b4b581a12d4cd9970f2",
+    "full_theory/autonomous_cycle_audit.py": "e6cbae07974d90633885865fab339bc4c8761058a5bfeeb2bf0952cc62ef6b40",
     "full_theory/retention.py": "76e604a5a1d8ed7b73b58f391dad74d59e7d2ba868c51f271c14801e8174c29b",
     "full_theory/retention_audit.py": "9595b3770cf81ae663b5675d3e95e921f2e7d6250c0dd5dbbc68a5589fbf2f50",
-    "tests_ft4/test_autonomous_cycle.py": "492161bd4c8563bc96e84ffffa0017973c7751a078c1383fc6c5220d71df8e56",
+    "tests_ft4/test_autonomous_cycle.py": "ab8cbeb2575c72c99a7d11ce900bdca4f7b6a4135805180a3f912dc0530ee7c5",
     "tests_ft3/test_retention.py": "6d94c74e03edf05a4ce0e6c1f106e293712afffa4ee3cc2c3f9e3de9b1cb7863"
   },
   "settings": ["canonical", "workflow"],

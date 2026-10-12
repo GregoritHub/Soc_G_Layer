@@ -4,8 +4,8 @@
   "status": "working",
   "run_id": "ft43b-20261012T233638Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-13T00:14:36Z",
-  "expected_head": "66b278e30d45c62114ce177bd068c47b9e9ef6ba",
+  "lease_expires_at": "2026-10-13T00:19:21Z",
+  "expected_head": "efae83a73a8d1ed81e048e6b6be40db7c66e19a3",
   "current_batch": "FT4.3b1",
   "next_batch": "Run the frozen FT4.3b1 bounded acceptance gate and independently reconstruct both-setting closure witnesses",
   "completed_batches": [
