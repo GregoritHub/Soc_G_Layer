@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
+  "status": "ready",
   "run_id": "ft-recovery-20261012T161631181Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-12T17:00:29.363Z",
-  "expected_head": "77e7e4ecbe836bf27019f851ac71d5ae6b5b6134",
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "ff653824d7c802794f6d4c7e6b2424c95ccefecc",
   "current_batch": "FT4.1a",
   "next_batch": "FT4.1a owned demand admission implementation",
   "completed_batches": [
@@ -26,9 +26,8 @@
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
   "latest_record": "docs/ft/Recovery_Record_20261012.md",
   "automation": {
-    "enabled": false,
-    "id": null,
-    "reason": "Awaiting executable recovery gate and verified destination save"
+    "enabled": true,
+    "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
   },
   "blocker": null,
   "recovery": {
