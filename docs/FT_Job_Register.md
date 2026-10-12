@@ -18,7 +18,7 @@
 | FT3.3 | accepted, inherited | Pinned FT records; verified recovery |
 | FT4.1 | accepted | 30 exact methods; canonical/workflow fulfillment reconstructed; frozen source unchanged |
 | FT4.2 | accepted | 83 exact methods; paid native choice, cp fee, priority/support/retention, actual traversal and declared consecutive paid opposition independently reconstructed |
-| FT4.3 | pending | Full Theory plan gate |
+| FT4.3 | FT4.3a accepted | Autonomous demand, owned route-free request, paid choice/traversal, deterministic same-scope consumer and settlement passed; honest closure and retained reuse remain pending |
 | FT5.1 | pending | Full Theory plan gate |
 | FT5.2 | pending | Full Theory plan gate |
 | FT5.3 | pending | Full Theory plan gate |
@@ -35,4 +35,4 @@
 | FT9.2 | pending | Full Theory plan gate |
 | FT9.3 | pending | Full Theory plan gate |
 
-[derived] FT4.1 and FT4.2 are bounded demand-formation and route-choice gates, not a full autonomous cycle. FT4.3 closure and later reuse remain open. The old publication job remains historical and is not part of the live development queue.
+[derived] FT4.3a assembles the accepted demand and route components through paid settlement. It creates no closure or capability certificate. FT4.3b still owes honest closure, evidence-backed retained reuse and the parent/common FT4 gate. The old publication job remains historical and is not part of the live development queue.

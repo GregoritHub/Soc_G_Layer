@@ -1,13 +1,13 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
+  "status": "ready",
   "run_id": "ft43a-20261012T230133Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-12T23:31:33Z",
-  "expected_head": "b653c7883fc2a20bde7419c7d2840b152982140a",
-  "current_batch": "FT4.3a",
-  "next_batch": "FT4.3a autonomous demand-to-settlement assembly; prospectively registered before implementation",
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "b9d202d0be0d138ca0f52c9a3985c9fbe337b22d",
+  "current_batch": "FT4.3b",
+  "next_batch": "FT4.3b honest closure, retained-capability-altered later choice, unavailable support and opposition controls under the common FT4 gate; protocol before implementation",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -28,11 +28,12 @@
     "FT4.2b1",
     "FT4.2b2a",
     "FT4.2b2b1",
-    "FT4.2b2b2"
+    "FT4.2b2b2",
+    "FT4.3a"
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT4_2b2b2_Record.md",
+  "latest_record": "docs/ft/FT4_3a_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
