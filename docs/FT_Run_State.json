@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft42b2b2-20261012T222904Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-12T22:59:04Z",
-  "expected_head": "25ecf164c3f8ed32871012322942915b9d9f140d",
+  "lease_expires_at": "2026-10-12T23:20:00Z",
+  "expected_head": "635182fd1663d46317ad2e5d727e37befd0b87dc",
   "current_batch": "FT4.2b2b2",
   "next_batch": "FT4.2b2b2 protocol registered; implement declared paid cp-then-n opposition and run the common FT4.2 gate",
   "completed_batches": [
