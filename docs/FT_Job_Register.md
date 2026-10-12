@@ -16,8 +16,8 @@
 | FT3.1 | accepted, inherited | Pinned FT records; verified recovery |
 | FT3.2 | accepted, inherited | Pinned FT records; verified recovery |
 | FT3.3 | accepted, inherited | Pinned FT records; verified recovery |
-| FT4.1 | FT4.1a and FT4.1b1 accepted | Next b2 outcome fulfillment/integration; common gate remains open |
-| FT4.2 | pending | Full Theory plan gate |
+| FT4.1 | accepted | 30 exact methods; canonical/workflow fulfillment reconstructed; frozen source unchanged |
+| FT4.2 | pending | Next: prospective paid route-choice protocol, then implementation |
 | FT4.3 | pending | Full Theory plan gate |
 | FT5.1 | pending | Full Theory plan gate |
 | FT5.2 | pending | Full Theory plan gate |
@@ -35,4 +35,4 @@
 | FT9.2 | pending | Full Theory plan gate |
 | FT9.3 | pending | Full Theory plan gate |
 
-[derived] Registering FT4.1a is not acceptance of FT4.1. No autonomous cycle is claimed. The old publication job remains historical and is not part of the live development queue.
+[derived] FT4.1 acceptance is the bounded demand-formation gate, not a full autonomous cycle. FT4.2 route choice and FT4.3 closure/reuse remain open. The old publication job remains historical and is not part of the live development queue.
