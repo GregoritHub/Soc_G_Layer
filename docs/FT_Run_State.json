@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": "ft43a-20261012T230133Z",
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "b9d202d0be0d138ca0f52c9a3985c9fbe337b22d",
+  "status": "working",
+  "run_id": "ft43b-20261012T233638Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-13T00:06:38Z",
+  "expected_head": "dd5ddbdd2324772b9509cf5ee157ec8bf5e8a378",
   "current_batch": "FT4.3b",
   "next_batch": "FT4.3b honest closure, retained-capability-altered later choice, unavailable support and opposition controls under the common FT4 gate; protocol before implementation",
   "completed_batches": [
