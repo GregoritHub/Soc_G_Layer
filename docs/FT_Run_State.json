@@ -6,8 +6,8 @@
   "active_worker": true,
   "lease_expires_at": "2026-10-12T21:02:50.634463+00:00",
   "expected_head": "d095497a66ad9da7ceaf70b87cd8b8890bea7828",
-  "current_batch": "FT4.2b",
-  "next_batch": "FT4.2b paid route-means choice, consenting support and native launch; protocol before implementation",
+  "current_batch": "FT4.2b1",
+  "next_batch": "FT4.2b1 bounded native execution bridge; then b2 full TD5 means policy",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -47,7 +47,8 @@
     "FT4.1a",
     "FT4.1b1",
     "FT4.1b2",
-    "FT4.2a"
+    "FT4.2a",
+    "FT4.2b1"
   ],
   "publication": {
     "mode": "read-only pinned dependencies plus new development",
