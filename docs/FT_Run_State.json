@@ -7,7 +7,7 @@
   "lease_expires_at": "2026-10-12T23:31:33Z",
   "expected_head": "b653c7883fc2a20bde7419c7d2840b152982140a",
   "current_batch": "FT4.3a",
-  "next_batch": "FT4.3a autonomous demand-to-closure path; protocol before implementation",
+  "next_batch": "FT4.3a autonomous demand-to-settlement assembly; prospectively registered before implementation",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -55,7 +55,8 @@
     "FT4.2b1",
     "FT4.2b2a",
     "FT4.2b2b1",
-    "FT4.2b2b2"
+    "FT4.2b2b2",
+    "FT4.3a"
   ],
   "publication": {
     "mode": "read-only pinned dependencies plus new development",
