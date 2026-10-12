@@ -4,10 +4,10 @@
   "status": "running",
   "run_id": "ft4-a3e1fae08fed411ea933d1e92936b8f3",
   "active_worker": true,
-  "lease_expires_at": "2026-10-12T18:02:40.667253+00:00",
-  "expected_head": "d966ae2011794ba67845cfea586cdf45e3d674a4",
-  "current_batch": "FT4.1a",
-  "next_batch": "FT4.1a owned demand admission implementation",
+  "lease_expires_at": "2026-10-12T18:10:03.545361+00:00",
+  "expected_head": "0353b2e4a7bf71463691f32ed1e84d32e91211f1",
+  "current_batch": "FT4.1b1",
+  "next_batch": "FT4.1b1 native request formation",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -20,11 +20,12 @@
     "FT2.3",
     "FT3.1",
     "FT3.2",
-    "FT3.3"
+    "FT3.3",
+    "FT4.1a"
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/Recovery_Record_20261012.md",
+  "latest_record": "docs/ft/FT4_1a_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
@@ -40,7 +41,9 @@
     "archive_sha256": "af1bd163563ecb703ffa77d95508ba4d8269c18b524ee143e8d750a216a42438"
   },
   "registered_subbatches": [
-    "FT4.1a"
+    "FT4.1a",
+    "FT4.1b1",
+    "FT4.1b2"
   ],
   "publication": {
     "mode": "read-only pinned dependencies plus new development",

@@ -16,7 +16,7 @@
 | FT3.1 | accepted, inherited | Pinned FT records; verified recovery |
 | FT3.2 | accepted, inherited | Pinned FT records; verified recovery |
 | FT3.3 | accepted, inherited | Pinned FT records; verified recovery |
-| FT4.1 | protocol registered; implementation pending | FT4.1a owned admission, then FT4.1b integration; common gate remains open |
+| FT4.1 | FT4.1a accepted; b1 protocol registered | b1 native request formation, b2 outcome fulfillment/integration; common gate remains open |
 | FT4.2 | pending | Full Theory plan gate |
 | FT4.3 | pending | Full Theory plan gate |
 | FT5.1 | pending | Full Theory plan gate |

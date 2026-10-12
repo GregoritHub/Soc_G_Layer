@@ -2,7 +2,7 @@
 
 Full Theory engine continuation. The repaired FT3 recovery gate passed on 12 October 2026: all 751 inherited method identities, 30 FT controls and both positive retention witnesses passed with unchanged source. See `docs/ft/Recovery_Record_20261012.md`.
 
-Current development starts at **FT4.1a: owned demand admission**. Its protocol is registered; implementation and the parent FT4.1 gate remain pending. The live state and actual schedule receipt are in `docs/FT_Run_State.json`. The job register retains all FT0.1–FT9.3 IDs.
+**FT4.1a: owned demand admission is accepted.** Current development is FT4.1b1 native request formation, followed by FT4.1b2 fulfillment/integration; the parent FT4.1 gate remains pending. The live state and actual schedule receipt are in `docs/FT_Run_State.json`. The job register retains all FT0.1–FT9.3 IDs.
 
 ## Run the recovered engine
 
