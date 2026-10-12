@@ -17,7 +17,7 @@
 | FT3.2 | accepted, inherited | Pinned FT records; verified recovery |
 | FT3.3 | accepted, inherited | Pinned FT records; verified recovery |
 | FT4.1 | accepted | 30 exact methods; canonical/workflow fulfillment reconstructed; frozen source unchanged |
-| FT4.2 | a, b1 and b2a accepted | Structural inventory, bounded paid native turns and exact orientation fee passed; b2b TD5 priority/support/retention and actual traversal linkage pending |
+| FT4.2 | a, b1, b2a and b2b1 accepted | Structural inventory, bounded paid native turns, exact orientation fee, and non-opposed TD5 priority/support/retention with actual traversal linkage passed; b2b2 opposition remains pending |
 | FT4.3 | pending | Full Theory plan gate |
 | FT5.1 | pending | Full Theory plan gate |
 | FT5.2 | pending | Full Theory plan gate |
