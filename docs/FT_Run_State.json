@@ -4,10 +4,10 @@
   "status": "running",
   "run_id": "ft42b2b2-20261012T222904Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-12T23:20:00Z",
-  "expected_head": "635182fd1663d46317ad2e5d727e37befd0b87dc",
+  "lease_expires_at": "2026-10-12T23:30:00Z",
+  "expected_head": "d870010b783e7026fa0ff9c6d8144e5935e40e43",
   "current_batch": "FT4.2b2b2",
-  "next_batch": "FT4.2b2b2 protocol registered; implement declared paid cp-then-n opposition and run the common FT4.2 gate",
+  "next_batch": "FT4.2b2b2 source frozen; preserve the passing common FT4.2 acceptance evidence and release the checkpoint",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
