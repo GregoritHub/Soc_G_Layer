@@ -1,13 +1,13 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
+  "status": "ready",
   "run_id": "ft42-20261012T193701Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-12T20:07:01Z",
-  "expected_head": "6b1579918a584cae47b130031d7223d00a2e48e0",
-  "current_batch": "FT4.2a",
-  "next_batch": "FT4.2a structural means inventory and cp overhead admission",
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "1f27d41f3c0ee0813cceb26187c387fc23863b34",
+  "current_batch": "FT4.2b",
+  "next_batch": "FT4.2b paid route-means choice, consenting support and native launch; protocol before implementation",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -28,7 +28,7 @@
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT4_1b2_Record.md",
+  "latest_record": "docs/ft/FT4_2a_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
@@ -46,7 +46,8 @@
   "registered_subbatches": [
     "FT4.1a",
     "FT4.1b1",
-    "FT4.1b2"
+    "FT4.1b2",
+    "FT4.2a"
   ],
   "publication": {
     "mode": "read-only pinned dependencies plus new development",
