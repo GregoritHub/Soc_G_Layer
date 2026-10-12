@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": "ft42b-589159b634b24d2b8c8b10509fc38566",
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "7a60a2a703cd8c685d79f44382d1408f940cb67e",
+  "status": "running",
+  "run_id": "ft42b2b-ec13d4f7879545c9a5f8a979bcc029da",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-12T22:02:21Z",
+  "expected_head": "e7aff99c0c1b37e83b107636740cacf76a723c81",
   "current_batch": "FT4.2b2b",
   "next_batch": "FT4.2b2b integrated TD5 priority, exact consenting support, applicable retained capacity and actual cp traversal/fee linkage; protocol before code",
   "completed_batches": [
