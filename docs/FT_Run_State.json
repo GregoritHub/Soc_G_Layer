@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": "ft53a-20261013T0535Z",
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "d2df6d5af1df3e64dce0823fa8b64efe7a169ef6",
+  "status": "running",
+  "run_id": "ft53b-20261013T0634Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-13T07:04:47Z",
+  "expected_head": "43cab5a46101686e8a4103ac928a67566f0c1851",
   "current_batch": "FT5.3b",
   "next_batch": "FT5.3b real harder-demand partial order, incomparable reporting, preregistered ample/scarce grid and release-policy decision; protocol before implementation",
   "completed_batches": [
