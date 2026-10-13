@@ -199,6 +199,53 @@ class ReserveAutonomousController:
             raise ValueError("active autonomous preparation phase required")
         return self.candidates.bind_preparation(engine, operation_keys)
 
+    def replenish(self, engine, bridge, token_id, packet_key):
+        if (self.phase != "interrupted" or self.terminal is None
+                or not self.effects or self.effects[-1].get("kind") != "interruption"):
+            raise ValueError("one actual paid interruption is required before recovery")
+        request = fields_of(self.request)
+        reserve_id = self._reserve_id()
+        route = self.candidates.route_policy._attempt(self.request)
+        if route is None:
+            raise ValueError("interrupted native route attempt is absent")
+        native_before = _native_hash(engine)
+        binding = self.candidates.binding.replenish_from_uptake(
+            engine, bridge, token_id, packet_key)
+        native_after = _native_hash(engine)
+        if native_before != native_after:
+            raise ValueError("reserve recovery changed native engine state")
+        effect = dict(index=len(self.effects), kind="replenishment",
+            reserve_id=reserve_id, request=request,
+            route_key=route["request"]["key"], token_id=token_id,
+            packet_key=packet_key, binding=binding,
+            native_before=native_before, native_after=native_after)
+        self.effects.append(effect)
+        self.phase = "recovered"
+        self.terminal = None
+        return self._record(kind="recovery", reason="paid_external_a5_uptake",
+            request=request, candidate=self.candidates.events[-1], consumer=None,
+            settlement=None, effect=effect)
+
+    def restart(self, engine):
+        if (self.phase != "recovered" or self.terminal is not None
+                or not self.effects or self.effects[-1].get("kind") != "replenishment"):
+            raise ValueError("new paid replenishment is required before restart")
+        reserve_id = self._reserve_id()
+        route = self.candidates.route_policy._attempt(self.request)
+        if route is None or route.get("status") in TERMINAL:
+            raise ValueError("one resumable interrupted native route attempt required")
+        before = _native_hash(engine)
+        request = fields_of(self.request)
+        self.phase = "route"
+        row = self._record(kind="restart", reason="resume_existing_paid_native_attempt",
+            request=request, candidate=self.candidates.events[-1], consumer=None,
+            settlement=None, effect=dict(reserve_id=reserve_id,
+                route_key=route["request"]["key"], request=request,
+                replenishment_index=self.effects[-1]["index"], native_sha256=before))
+        if _native_hash(engine) != before:
+            raise ValueError("restart changed native engine state")
+        return row
+
     def interrupt(self, engine):
         if self.terminal is not None:
             if self.phase == "interrupted":

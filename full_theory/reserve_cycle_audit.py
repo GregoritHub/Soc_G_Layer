@@ -12,15 +12,27 @@ from .route_policy_audit import audit_route_policy
 NAMES = ("retained", "ordinary", "n", "cp", "support", "defer")
 
 
-def _paid_job(engine, actor, row):
+def _paid_job(engine, actor, row, *, continued=False):
     if type(row) is not dict or set(row) != {"key", "operation", "status"}:
         raise ValueError("invalid interruption paid-job evidence")
     key = row["key"]
     if (actor, key) not in engine._jobs:
         raise ValueError("interruption job is absent")
     status = engine.job_status(actor, key)
-    if (row["operation"] != engine._jobs[actor, key] or row["status"] != status
-            or type(status.get("spent")) is not int or status["spent"] <= 0):
+    historical = row["status"]
+    same_status = historical == status
+    continued_status = (continued and type(historical.get("spent")) is int
+        and type(status.get("spent")) is int and status["spent"] >= historical["spent"]
+        and status.get("completed", -1) >= historical.get("completed", -1))
+    operation = row["operation"]
+    current_operation = engine._jobs[actor, key]
+    same_operation = operation == current_operation
+    continued_operation = (continued
+        and getattr(operation, "identity", None) == getattr(current_operation, "identity", None)
+        and getattr(operation, "revision", -1) <= getattr(current_operation, "revision", -1))
+    if (not (same_operation or continued_operation)
+            or not (same_status or continued_status)
+            or type(historical.get("spent")) is not int or historical["spent"] <= 0):
         raise ValueError("interruption lacks exact positively paid native work")
     return status
 
@@ -78,7 +90,8 @@ def _candidate_state(engine, text):
                 or selected != next(row for row in options if row["eligible"])):
             raise ValueError("candidate route visibility or priority differs")
         if (event.get("policy") != reserve["policy"] == attempt["policy"]
-                or event.get("reserve_balance") != reserve_admission["balance_after"]
+                or event.get("reserve_balance") not in {
+                    row["balance_after"] for row in reserve["events"]}
                 or event.get("load") != attempt["demand"]["load"]
                 or event.get("reserve_id") != reserve_id
                 or event.get("preparation_required") != required_units
@@ -132,13 +145,62 @@ def audit_reserve_cycle(engine, checkpoint):
 
     effects = data["effects"]
     terminal = data["terminal"]
+    recovered = tuple(row.get("kind") for row in effects) == (
+        "interruption", "replenishment", "completion")
+
+    if recovered or tuple(row.get("kind") for row in effects) == (
+            "interruption", "replenishment"):
+        interruption, replenishment = effects[:2]
+        interruption_event = interruption.get("reserve_event")
+        recovery_binding = replenishment.get("binding")
+        recovery_event = None if type(recovery_binding) is not dict else recovery_binding.get(
+            "reserve_event")
+        if (request is None or interruption.get("reserve_id") != replenishment.get("reserve_id")
+                or interruption_event not in reserve["events"]
+                or interruption_event.get("kind") != "interruption"
+                or recovery_event not in reserve["events"]
+                or recovery_event.get("kind") != "replenishment"
+                or reserve["events"].index(interruption_event) >= reserve["events"].index(recovery_event)
+                or replenishment.get("request") != request
+                or replenishment.get("route_key") != request["key"]
+                or replenishment.get("token_id") != recovery_binding.get("token_id")
+                or replenishment.get("packet_key") != recovery_binding.get("packet_key")
+                or replenishment.get("native_before") != replenishment.get("native_after")
+                or interruption.get("native_before") != interruption.get("native_after")
+                or binding_report["replenishments"] != 1):
+            raise ValueError("paid interruption or replenishment recovery links differ")
+        recovery_rows = [row for row in data["events"] if row.get("kind") == "recovery"]
+        restart_rows = [row for row in data["events"] if row.get("kind") == "restart"]
+        interruption_rows = [row for row in data["events"]
+                             if row.get("reason") == "interrupted_actual_paid_work"]
+        if (len(recovery_rows) != 1 or len(restart_rows) != 1
+                or len(interruption_rows) != 1
+                or not interruption_rows[0]["index"] < recovery_rows[0]["index"] < restart_rows[0]["index"]
+                or recovery_rows[0].get("effect") != replenishment
+                or recovery_rows[0].get("request") != request
+                or restart_rows[0].get("request") != request
+                or restart_rows[0].get("effect", {}).get("reserve_id") != replenishment["reserve_id"]
+                or restart_rows[0].get("effect", {}).get("route_key") != request["key"]
+                or restart_rows[0].get("effect", {}).get("replenishment_index") != replenishment["index"]):
+            raise ValueError("recovery and restart order or identity differs")
+        jobs = tuple(interruption.get("paid_jobs", ()))
+        if not jobs or any(row.get("key") not in {request["key"], request["key"] + ":movement"}
+                           for row in jobs):
+            raise ValueError("recovered interruption lacks paid native route work")
+        for row in jobs:
+            _paid_job(engine, data["actor"], row, continued=True)
+        if (candidate["events"][-1].get("reserve_balance")
+                != recovery_event.get("balance_after")):
+            raise ValueError("resumed candidate did not observe recovered reserve")
+
     if data["phase"] == "complete":
-        if (len(effects) != 1 or terminal is None
+        expected_count = 3 if recovered else 1
+        if (len(effects) != expected_count or terminal is None
                 or terminal.get("reason") != "settled_after_paid_consumption_and_reserve"
-                or terminal.get("effect") != effects[0] or terminal.get("consumer") is None
+                or terminal.get("effect") != effects[-1] or terminal.get("consumer") is None
                 or terminal.get("settlement") is None or request is None):
             raise ValueError("complete autonomous reserve cycle lacks exact terminal links")
-        effect = effects[0]
+        effect = effects[-1]
         if effect.get("kind") != "completion":
             raise ValueError("complete cycle lacks completion effect")
         attempts = route["attempts"]
@@ -152,6 +214,9 @@ def audit_reserve_cycle(engine, checkpoint):
                  if completion_kind == "independent" and reserve["policy"] == "grade-load-v1"
                  else None)
         reserve_event = reserve["events"][-1]
+        if recovered and reserve["events"].index(
+                effects[1]["binding"]["reserve_event"]) >= reserve["events"].index(reserve_event):
+            raise ValueError("completion did not follow paid recovery")
         consumer = terminal["consumer"]
         if (effect.get("reserve_id") != candidate["attempts"][0]["reserve_id"]
                 or effect.get("selected") != traversal["means"]
@@ -204,6 +269,9 @@ def audit_reserve_cycle(engine, checkpoint):
             raise ValueError("interruption credited non-route work")
         for row in jobs:
             _paid_job(engine, data["actor"], row)
+    elif data["phase"] in ("recovered", "route") and len(effects) == 2:
+        if recovered or terminal is not None or fulfillment["fulfilled"]:
+            raise ValueError("nonterminal paid recovery state differs")
     else:
         if effects or fulfillment["fulfilled"]:
             raise ValueError("nonsettled cycle changed reserve or fulfillment")
