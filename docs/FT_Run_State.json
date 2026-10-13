@@ -59,7 +59,8 @@
     "FT4.2b2b1",
     "FT4.2b2b2",
     "FT4.3a",
-    "FT4.3b1"
+    "FT4.3b1",
+    "FT4.3b2a"
   ],
   "publication": {
     "mode": "read-only pinned dependencies plus new development",
