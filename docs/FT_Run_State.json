@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": "ft63-20261013T0816Z-codex",
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "3967adc5dd5878b8973ad13c2d8f1fc599ec6c8b",
+  "status": "running",
+  "run_id": "ft63a-20261013T0835Z-codex",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-13T09:05:00Z",
+  "expected_head": "7b2f0b66476efa4a837b13a9e87c6f777b8603da",
   "current_batch": "FT6.3a",
   "next_batch": "FT6.3a fixed matched-grid implementation under the registered prospective protocol",
   "completed_batches": [
