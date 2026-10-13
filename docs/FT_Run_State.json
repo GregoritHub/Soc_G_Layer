@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft43b2b-20261013T013016Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-13T02:32:27Z",
-  "expected_head": "046b8c8b63c5bc39b71ff34939fd64c5fe282bfa",
+  "lease_expires_at": "2026-10-13T02:45:00Z",
+  "expected_head": "491156fddac589255c081c059365c2fcb6f23307",
   "current_batch": "FT4.3b2b",
   "next_batch": "FT4.3b2b autonomous retained-route reuse, matched evidence ablation, unavailable support, opposition integration and final common FT4 gate; protocol before implementation",
   "completed_batches": [
