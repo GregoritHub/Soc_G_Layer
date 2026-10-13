@@ -22,7 +22,7 @@
 | FT5.1 | accepted | 16 exact methods; three-policy integer reserve accounting independently reconstructed; no duplicate interruption or replenishment loop; native FT4 state unchanged |
 | FT5.2 | accepted | 15 exact integration methods; three-policy completion and actual paid interruption independently reconstructed; all 171 predecessor identities exact |
 | FT5.3 | accepted | Target-sensitive partial order; 432-cell fixed grid and 216 token pairs independently reconstructed; load-v1 selected by the prospective minimal-candidate rule; parent FT5 accepted |
-| FT6.1 | registered, prospective | Protocol v1 fixes paid-use binding, four exact tags, three policies, score saturation, four-turn decay, bounded replay and no behavioral feedback before implementation |
+| FT6.1 | accepted | 13 exact methods; actual committed paid-use deltas, four tags, three policies, saturation, four-turn decay, recovery and bounded replay independently reconstructed; scores remain behaviorally inert |
 | FT6.2 | pending | Full Theory plan gate |
 | FT6.3 | pending | Full Theory plan gate |
 | FT7.1 | pending | Full Theory plan gate |
@@ -35,4 +35,4 @@
 | FT9.2 | pending | Full Theory plan gate |
 | FT9.3 | pending | Full Theory plan gate |
 
-[derived] FT4 closes the bounded engineering cycle from owned demand through paid later retained reuse. FT5 now adds exact reserve accounting, paid preparation/replenishment evidence, autonomous completion/interruption/recovery, a target-sensitive partial order and the full fixed grid. `load-v1` is the release configuration; `null` and `grade-load-v1` remain reported alternatives. This is engineering acceptance, not psychological validation or closure of C13/TD4. The old publication job remains historical and is not part of the live development queue.
+[derived] FT4 closes the bounded engineering cycle from owned demand through paid later retained reuse. FT5 adds exact reserve accounting and selects `load-v1`. FT6.1 adds bounded paid-use history accounting without behavioral feedback. Candidate feedback, measured occupancy and subtype interpretation remain open in FT6.2/FT6.3. These are engineering hypotheses, not psychological validation or theoretical closure. The old publication job remains historical and is not part of the live development queue.

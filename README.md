@@ -2,7 +2,7 @@
 
 Full Theory engine continuation. The repaired FT3 recovery gate passed on 12 October 2026: all 751 inherited method identities, 30 FT controls and both positive retention witnesses passed with unchanged source. See `docs/ft/Recovery_Record_20261012.md`.
 
-**FT4 and FT5 are accepted.** The target-sensitive demand partial order and all 432 frozen reserve-grid cells passed independent reconstruction, and the prospectively declared rule selected `load-v1` as the minimal release reserve policy. Paid interruption/replenishment/restart remains exact and separately accounted. Next is FT6.1 history/feedback protocol work.
+**FT4, FT5 and FT6.1 are accepted.** The target-sensitive demand partial order and all 432 frozen reserve-grid cells passed independent reconstruction, and the prospectively declared rule selected `load-v1` as the minimal release reserve policy. FT6.1 now binds bounded history scores to actual committed paid native use, with exact tag accounting, saturation, optional four-turn inactivity decay and bounded replay. Scores remain inert until FT6.2 prospectively integrates tie-only feedback; no subtype is assigned.
 
 ## Run the recovered engine
 
