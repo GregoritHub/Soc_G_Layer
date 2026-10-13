@@ -4,10 +4,10 @@
   "status": "running",
   "run_id": "ft62-20261013T0757Z-codex",
   "active_worker": true,
-  "lease_expires_at": "2026-10-13T08:39:16Z",
-  "expected_head": "e25c204939cd5056bf69a0ccffd7f3fe00e7e79b",
+  "lease_expires_at": "2026-10-13T08:41:07Z",
+  "expected_head": "57552c340979a3a516c7a8e955012681e216152b",
   "current_batch": "FT6.2",
-  "next_batch": "FT6.2 frozen evaluator, acceptance and independent causal witness",
+  "next_batch": "FT6.2 source freeze, acceptance and independent causal witness",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
