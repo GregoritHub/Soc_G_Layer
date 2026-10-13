@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft51-20261013T023558Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-13T03:05:58Z",
-  "expected_head": "03ae41572965b06fc7881e549d0a90375a2c83e0",
+  "lease_expires_at": "2026-10-13T03:15:43Z",
+  "expected_head": "3a972c13aeb70f5a453af11c598c4a0c8595b37c",
   "current_batch": "FT5.1",
   "next_batch": "FT5.1 prospective integer reserve state and accounting protocol before implementation",
   "completed_batches": [
