@@ -1,13 +1,13 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
+  "status": "ready",
   "run_id": "ft62-20261013T0757Z-codex",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-13T08:42:26Z",
-  "expected_head": "954b671d8df828915157339e7cc185644e11b397",
-  "current_batch": "FT6.2",
-  "next_batch": "FT6.2 acceptance and independent causal witness on frozen source",
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "10d866f0f8f3e54ae45b657c4fefcfa5605bf821",
+  "current_batch": "FT6.3",
+  "next_batch": "FT6.3 matched three-policy histories, held-out and changed-demand schedules, causal controls and parent stabilization gate; prospective protocol before implementation",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -39,11 +39,12 @@
     "FT5.2b2",
     "FT5.3a",
     "FT5.3b",
-    "FT6.1"
+    "FT6.1",
+    "FT6.2"
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT6_1_Record.md",
+  "latest_record": "docs/ft/FT6_2_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
