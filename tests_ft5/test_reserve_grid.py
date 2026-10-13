@@ -159,15 +159,18 @@ class ReserveGridTests(unittest.TestCase):
 
     def test_ample_and_scarce_budget_results_are_reported_without_retuning(self):
         reports = {}
+        cells = {}
         for budget_class in ("ample", "scarce"):
             axes = dict(setting="canonical", policy="null", initial_reserve=4,
                 load=1, token_inventory=0, wallet_model="legacy-r4",
                 budget_class=budget_class)
-            _, reports[budget_class] = run_axes(axes)
+            cells[budget_class], reports[budget_class] = run_axes(axes)
         self.assertEqual(reports["ample"]["axes"]["budget_class"], "ample")
         self.assertEqual(reports["scarce"]["axes"]["budget_class"], "scarce")
-        self.assertNotEqual(reports["ample"]["wallet_delta"],
-                            reports["scarce"]["wallet_delta"])
+        self.assertNotEqual(cells["ample"]["wallet_before"]["energy"],
+                            cells["scarce"]["wallet_before"]["energy"])
+        self.assertEqual(set(reports["ample"]["wallet_delta"]), {"energy", "time"})
+        self.assertEqual(set(reports["scarce"]["wallet_delta"]), {"energy", "time"})
 
     def test_independent_auditor_reconstructs_every_grid_cell(self):
         reports = complete_grid()
