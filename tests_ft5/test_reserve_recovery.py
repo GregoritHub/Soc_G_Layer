@@ -194,9 +194,14 @@ class ReserveRecoveryTests(unittest.TestCase):
         original = loads(controller.checkpoint(engine))
         mutations = []
         forged = deepcopy(original)
-        forged["events"][-4], forged["events"][-3] = forged["events"][-3], forged["events"][-4]
-        forged["events"][-4]["index"], forged["events"][-3]["index"] = (
-            forged["events"][-3]["index"], forged["events"][-4]["index"])
+        recovery_index = next(i for i, row in enumerate(forged["events"])
+                              if row["kind"] == "recovery")
+        restart_index = next(i for i, row in enumerate(forged["events"])
+                             if row["kind"] == "restart")
+        forged["events"][recovery_index], forged["events"][restart_index] = (
+            forged["events"][restart_index], forged["events"][recovery_index])
+        forged["events"][recovery_index]["index"] = recovery_index
+        forged["events"][restart_index]["index"] = restart_index
         mutations.append(forged)
         forged = deepcopy(original)
         forged["effects"][0]["paid_jobs"][0]["status"]["spent"] = 0
