@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": "ft43b-20261012T233638Z",
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "282991e68c135b94d0fa252473e8d6462528d46d",
+  "status": "running",
+  "run_id": "ft43b2-20261013T002942Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-13T00:59:42Z",
+  "expected_head": "84030fba2e53cbf04f1d315840a9f687ebb23c89",
   "current_batch": "FT4.3b2",
   "next_batch": "FT4.3b2 capability certification, later retained-route reuse, evidence ablation, unavailable support, opposition and final common FT4 gate; protocol before implementation",
   "completed_batches": [
