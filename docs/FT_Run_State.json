@@ -4,10 +4,10 @@
   "status": "running",
   "run_id": "ft63a-20261013T0835Z-codex",
   "active_worker": true,
-  "lease_expires_at": "2026-10-13T09:08:45Z",
-  "expected_head": "c64aefb25e8b78db79ffa831b4791d2268106896",
+  "lease_expires_at": "2026-10-13T09:20:00Z",
+  "expected_head": "13cd24a606907685c7eacdf0b55521a8c138f13d",
   "current_batch": "FT6.3a",
-  "next_batch": "FT6.3a fixed matched-grid implementation under the registered prospective protocol",
+  "next_batch": "FT6.3a bounded acceptance of the frozen matched-grid implementation",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
