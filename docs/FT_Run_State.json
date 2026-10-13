@@ -1,13 +1,13 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
+  "status": "ready",
   "run_id": "ft52b1-20261013T0352Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-13T04:27:00Z",
-  "expected_head": "447493fdb169f501331b9f1cbef8be14ec839b08",
-  "current_batch": "FT5.2b1",
-  "next_batch": "FT5.2b1 prospective reserve-conditioned candidate-readiness protocol before implementation",
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "dc5758b61aa708922d990c07fdc5b49f194c89e1",
+  "current_batch": "FT5.2b2",
+  "next_batch": "FT5.2b2 bind autonomous completion/interruption reserve effects and close the parent FT5.2 integration gate; protocol before implementation",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -34,11 +34,12 @@
     "FT4.3b2a",
     "FT4.3b2b",
     "FT5.1",
-    "FT5.2a"
+    "FT5.2a",
+    "FT5.2b1"
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT5_2a_Record.md",
+  "latest_record": "docs/ft/FT5_2b1_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
@@ -67,7 +68,8 @@
     "FT4.3b2a",
     "FT4.3b2b",
     "FT5.1",
-    "FT5.2a"
+    "FT5.2a",
+    "FT5.2b1"
   ],
   "publication": {
     "mode": "read-only pinned dependencies plus new development",

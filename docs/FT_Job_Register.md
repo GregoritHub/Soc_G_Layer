@@ -20,7 +20,7 @@
 | FT4.2 | accepted | 83 exact methods; paid native choice, cp fee, priority/support/retention, actual traversal and declared consecutive paid opposition independently reconstructed |
 | FT4.3 | accepted | 130-method common FT4 gate passed; later retained-route settlement, matched revocation, unavailable support, conflicts, harder demand and paid opposition independently reconstructed |
 | FT5.1 | accepted | 16 exact methods; three-policy integer reserve accounting independently reconstructed; no duplicate interruption or replenishment loop; native FT4 state unchanged |
-| FT5.2 | FT5.2a accepted | Paid post-admission preparation and A5 replenishment are bound to distinct authoritative native jobs; next integrate the three declared policies into autonomous candidate dynamics |
+| FT5.2 | FT5.2a–b1 accepted | Paid native binding and three-policy candidate readiness accepted; next bind completion/interruption effects to autonomous settlement and close the parent gate |
 | FT5.3 | pending | Full Theory plan gate |
 | FT6.1 | pending | Full Theory plan gate |
 | FT6.2 | pending | Full Theory plan gate |
@@ -35,4 +35,4 @@
 | FT9.2 | pending | Full Theory plan gate |
 | FT9.3 | pending | Full Theory plan gate |
 
-[derived] FT4 closes the bounded engineering cycle from owned demand through paid later retained reuse. FT5.2a establishes paid native evidence for preparation and replenishment without double charging, repricing grade-v1 or turning reserve into permission. Reserve does not yet alter autonomous route candidates and no release policy is elected. This is engineering acceptance, not psychological validation or closure of C13/TD4. The old publication job remains historical and is not part of the live development queue.
+[derived] FT4 closes the bounded engineering cycle from owned demand through paid later retained reuse. FT5.2b1 makes scarce reserve select a separately accounted preparation transition while retaining every unchanged FT4 route and native price. Completion/interruption effects and release-policy election remain open. This is engineering acceptance, not psychological validation or closure of C13/TD4. The old publication job remains historical and is not part of the live development queue.
