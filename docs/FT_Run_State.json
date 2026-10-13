@@ -1,13 +1,13 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
+  "status": "ready",
   "run_id": "ft53a-20261013T0535Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-13T06:22:55Z",
-  "expected_head": "f40342876a1199665ff65b84cf2ed0279e961036",
-  "current_batch": "FT5.3a",
-  "next_batch": "FT5.3a sustained depletion, actual external replenishment and exact restart; protocol before implementation",
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "d2df6d5af1df3e64dce0823fa8b64efe7a169ef6",
+  "current_batch": "FT5.3b",
+  "next_batch": "FT5.3b real harder-demand partial order, incomparable reporting, preregistered ample/scarce grid and release-policy decision; protocol before implementation",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -36,11 +36,12 @@
     "FT5.1",
     "FT5.2a",
     "FT5.2b1",
-    "FT5.2b2"
+    "FT5.2b2",
+    "FT5.3a"
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT5_2b2_Record.md",
+  "latest_record": "docs/ft/FT5_3a_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
@@ -71,7 +72,8 @@
     "FT5.1",
     "FT5.2a",
     "FT5.2b1",
-    "FT5.2b2"
+    "FT5.2b2",
+    "FT5.3a"
   ],
   "publication": {
     "mode": "read-only pinned dependencies plus new development",
