@@ -1,7 +1,7 @@
 {
   "batch": "FT5.3b",
   "parent_job": "FT5.3",
-  "protocol_version": "1",
+  "protocol_version": "1.1",
   "prospective": true,
   "scope": "Close the remaining FT5 depletion/recovery gate without changing accepted FT5.3a dynamics: implement the declared demand partial order including target identity, run the fixed matched reserve grid across both content settings, all three reserve policies, initial reserve {0,4,8}, load {1,2,4}, token inventory {0,2}, both native wallet models and fixed ample/scarce budgets, independently reconstruct every cell, and apply the already declared load-v1 release election only if every invariant holds.",
   "source_contract": {
@@ -19,12 +19,17 @@
     "wallet_models": ["legacy-r4", "grade-v1"],
     "native_budgets": {
       "ample": {"canonical": 200000, "workflow": 200000},
-      "scarce": {"canonical": 87, "workflow": 55}
+      "scarce": {"canonical": 90, "workflow": 55}
     },
     "cell_count": 432,
     "work_limit": 1,
     "construction": "Each cell begins from a fresh matched supplied fixture. Wallet model and finite initial native budget are fixed at engine construction. The grid performs one actual reserve-conditioned native candidate step; it does not fabricate route, grade, support, success, reserve delta or replenishment evidence.",
     "token_interpretation": "The zero/two inventory axis is observed at admission. With no paid replenishment event in a grid admission cell, token inventory must cause no balance or route difference. FT5.3a remains the accepted actual paid token-uptake/restart witness."
+  },
+  "correction": {
+    "preserved_attempt": "Attempt 1 stopped before acceptance: canonical grade-v1 at initial native budget 87 exhausted during the supplied owned-need setup and therefore could not form a valid grid fixture; legacy-r4 at 87 remained constructible.",
+    "change": "Canonical scarce initial native budget is 90 for both wallet models. This is the lowest shared tested fixture budget that constructs both models; it leaves a bounded scarce wallet and changes no reserve policy, axis, demand, work limit, release rule or expected outcome.",
+    "status": "Prospectively frozen before the corrected implementation/evaluation run; a second gate failure after this correction holds FT5.3b."
   },
   "demand_order": {
     "harder": "Same family, context, cue and target; superset requirements and obligations; subset alternatives and support allowed; load no lower; deadline no later; at least one strict coordinate.",
