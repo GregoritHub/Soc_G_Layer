@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": "ft43b2b-20261013T013016Z",
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "c20c26ccb5c011aa7f183fad19c8d07cc05dc1be",
+  "status": "running",
+  "run_id": "ft51-20261013T023558Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-13T03:05:58Z",
+  "expected_head": "03ae41572965b06fc7881e549d0a90375a2c83e0",
   "current_batch": "FT5.1",
   "next_batch": "FT5.1 prospective integer reserve state and accounting protocol before implementation",
   "completed_batches": [
