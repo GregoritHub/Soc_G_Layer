@@ -1,0 +1,53 @@
+{
+  "batch": "FT5.2b2",
+  "parent_job": "FT5.2",
+  "policy": "ft-autonomous-reserve-settlement-v1",
+  "status": "prospective",
+  "scope": "Bind the accepted reserve-readiness interface to actual autonomous settlement and actual paid-work interruption. Completion kind and grade come only from the realized native traversal; callers cannot assert success, support, grade, route or reserve effect. This closes the FT5.2 integration gate while retaining FT5.3 depletion, recovery, full grid comparison and release-policy election.",
+  "modules": ["full_theory/reserve_cycle.py", "full_theory/reserve_cycle_audit.py", "tools/evaluate_ft5_2b2.py"],
+  "test_directory": "tests_ft5",
+  "method_ids": [
+    "test_three_policies_settle_actual_autonomous_completion",
+    "test_load_v1_independent_completion_debits_exact_load_once",
+    "test_grade_load_v1_uses_actual_last_paid_seat_grade",
+    "test_consented_support_is_the_only_supported_completion",
+    "test_deferred_and_partial_cycles_do_not_complete_or_debit",
+    "test_actual_paid_interruption_debits_once_and_keeps_demand_pending",
+    "test_unpaid_or_preparation_only_interruption_is_rejected",
+    "test_zero_reserve_preserves_route_visibility_and_bounds",
+    "test_paid_preparation_to_route_to_settlement_runs_both_settings",
+    "test_reserve_effect_never_reprices_or_double_charges_native_work",
+    "test_public_inputs_cannot_supply_route_support_grade_or_success",
+    "test_checkpoint_continuation_is_exact",
+    "test_independent_auditor_reconstructs_completion_and_interruption",
+    "test_independent_auditor_rejects_forged_kind_grade_payment_and_delta",
+    "test_ft5_2b1_and_all_predecessor_method_identity_remain_exact"
+  ],
+  "fixtures": {
+    "docs/ft/FT_Configuration_Contract_v1.md": "d582a935b161b5e0ffb8e8a332d027f36cc54c7698ebecac79dc774b80efc94f",
+    "contracts/ft/FT5_2b1_Protocol_v1.json": "f00d10b001d7426481fcb23a9fdc2b46ec2b632c34a0cdf8f4f4c66c311acfa5",
+    "contracts/ft/FT5_2b1_Source_Freeze_v1.json": "f27b4cb0eb13ffae1ca8eb28ad9e117145362360a3b669f2b2d16c4d1b7a0946",
+    "full_theory/reserve_candidates.py": "7afba89d45fe1f8f271d11fd3d4487d5a513ce55c0b6bb8003c87d01f161034c",
+    "full_theory/reserve_candidates_audit.py": "c75a26fa0ac5fca28ded1c3cf2985b5d74b155aaa9b7bf1a0b451375135c494e",
+    "full_theory/autonomous_cycle.py": "12ae1db85687e0d4eec48108de2e5e7f06be3e8c24527b4b581a12d4cd9970f2",
+    "full_theory/reserve.py": "aba132cd98b4e6b587b51778d4ec7b569437ace86d56de69171b65c0e9c02fe5",
+    "hle_unified/model_g.py": "b71b679e307383aa0bcea6fa82d95dafb3ba3211c89daabdb642ac047727c8f6"
+  },
+  "rules": [
+    "One controller owns one IntegratedDemandController and one ReserveCandidateController paired to the same native engine, actor and exact ReserveLedger. It accepts only historical state, one exact Demand and a positive work bound; the native request and route remain autonomously formed and selected.",
+    "The reserve demand is admitted only through FT5.2b1 after the owned request exists. Any positive preparation remains a visible separate phase. Only FT5.2a-bound paid post-admission jobs can make it ready, after which the unchanged FT4 route policy re-evaluates and launches native work.",
+    "Completion is possible only after the actual selected traversal succeeds, its exact movement output is consumed by paid same-scope native work, and the FT4 demand controller commits settlement. No selection label, partial job, deferred route, failed consumer or evaluator input can complete reserve accounting.",
+    "A realized traversal whose supported field is true and whose selected means is support records supported completion. Every other settled traversal records independent completion. The controller accepts no completion-kind or support flag.",
+    "For grade-load-v1 independent completion, last_paid_grade is derived from hle_unified.model_g.grade of the actual traversal target seat. Null and load-v1 receive no grade input. Supported completion never receives a grade input.",
+    "An interruption is allowed only while the autonomous request remains unsettled and after authoritative native route work for that request has spent a positive amount. Preparation work alone is not route work. The controller derives one immutable attempt identity and exact paid-job evidence; interruption loses at most one reserve unit and leaves the owned demand pending.",
+    "Terminal steps and one recorded interruption are idempotent at the integration boundary. FT5.1 continues to reject replayed attempt identities. A completion or interruption reserve event is appended exactly once and cannot refund, mint or reprice the native wallet.",
+    "Zero reserve remains bounded at zero and never removes a demand, capability or any of the six FT4 route options. Preparation units, native energy/time, reserve balance and completion/interruption delta remain separate exact fields.",
+    "The checkpoint commits the paired native hash, exact demand-controller state, exact candidate/binding/ledger state, autonomous request and phase, consumer identity, terminal event and integration events. Restore rejects different native state or inconsistent event order and continues exactly.",
+    "The independent auditor imports no reserve-cycle controller. It audits the embedded candidate and native ledgers, reconstructs autonomous request ownership, paid traversal/consumer/settlement links, actual support and grade, authoritative paid interruption evidence, exact reserve deltas and one-use identities.",
+    "Acceptance requires the fifteen exact new methods, all one hundred seventy-one FT5.2b1/FT5.2a/FT5.1/FT4 predecessor identities, canonical and workflow witnesses, registered fixtures, a strict source freeze and unchanged source.",
+    "Passing closes only FT5.2 candidate-dynamics integration. FT5.3 still owes sustained depletion, restart, external replenishment, harder-demand partial order, the preregistered grid and release-policy selection. C13/TD4 realism and psychology remain unvalidated."
+  ],
+  "gate": "Fifteen exact FT5.2b2 methods pass with zero failures/errors; independent and supported completion plus actual paid interruption have reconstructible exact effects under all three policies; no partial, deferred, preparation-only or caller-asserted event changes reserve; native prices and all six routes remain unchanged; all 171 predecessor identities remain exact.",
+  "next": "FT5.3 sustained depletion, recovery, harder-demand order, frozen grid and release-policy decision",
+  "stop": "Preserve failures; two gate failures after correction stops."
+}
