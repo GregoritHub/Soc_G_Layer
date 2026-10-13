@@ -4,10 +4,10 @@
   "status": "running",
   "run_id": "ft62-20261013T0757Z-codex",
   "active_worker": true,
-  "lease_expires_at": "2026-10-13T08:27:29.231Z",
-  "expected_head": "4363bf54a6adc9179a516fe22f1a46508498ab96",
+  "lease_expires_at": "2026-10-13T08:29:00Z",
+  "expected_head": "54453642b95d29ee8094228e6915914a96d96336",
   "current_batch": "FT6.2",
-  "next_batch": "FT6.2 candidate feedback, actual repeated n-mediated traffic and measured DCNH-pair episode accounting; prospective protocol before implementation",
+  "next_batch": "FT6.2 candidate feedback and n-episode implementation under the registered prospective protocol",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -77,7 +77,8 @@
     "FT5.2b2",
     "FT5.3a",
     "FT5.3b",
-    "FT6.1"
+    "FT6.1",
+    "FT6.2"
   ],
   "publication": {
     "mode": "read-only pinned dependencies plus new development",
