@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft52a-20261013T0334Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-13T04:04:00Z",
-  "expected_head": "abb1899b2456020754eb9eaa1979b89dba084dcf",
+  "lease_expires_at": "2026-10-13T04:18:00Z",
+  "expected_head": "2aec3f3497da7169281a6fb38236182311cadd9d",
   "current_batch": "FT5.2a",
   "next_batch": "FT5.2a prospective paid native preparation and replenishment binding protocol before implementation",
   "completed_batches": [
