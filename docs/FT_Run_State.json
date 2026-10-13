@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft53a-20261013T0535Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-13T06:05:05Z",
-  "expected_head": "64fc3da18beacb04fa3019c3986b6d0902538959",
+  "lease_expires_at": "2026-10-13T06:22:55Z",
+  "expected_head": "f40342876a1199665ff65b84cf2ed0279e961036",
   "current_batch": "FT5.3a",
   "next_batch": "FT5.3a sustained depletion, actual external replenishment and exact restart; protocol before implementation",
   "completed_batches": [
