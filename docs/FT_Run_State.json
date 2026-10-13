@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft53b-20261013T0634Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-13T07:23:38Z",
-  "expected_head": "82a14e86e5eb0889801523ca8d3fb180224e52d6",
+  "lease_expires_at": "2026-10-13T07:42:11Z",
+  "expected_head": "d0787e325beafb299064d382663675c16fb6d436",
   "current_batch": "FT5.3b",
   "next_batch": "FT5.3b real harder-demand partial order, incomparable reporting, preregistered ample/scarce grid and release-policy decision; protocol before implementation",
   "completed_batches": [
