@@ -4,10 +4,10 @@
   "status": "running",
   "run_id": "ft61-20261013T0735Z-codex",
   "active_worker": true,
-  "lease_expires_at": "2026-10-13T08:09:25Z",
-  "expected_head": "86035d734ffc4538ca231b484b1ec5146344eafb",
+  "lease_expires_at": "2026-10-13T08:18:51Z",
+  "expected_head": "08b57c03c1305b572c7f8163f04f54722ec6664f",
   "current_batch": "FT6.1",
-  "next_batch": "FT6.1 bounded use-history state and exact feedback accounting implementation under registered protocol v1",
+  "next_batch": "FT6.1 frozen bounded evaluation and independent acceptance reconstruction under registered protocol v1",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
