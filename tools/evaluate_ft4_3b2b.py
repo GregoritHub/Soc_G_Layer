@@ -34,6 +34,11 @@ def freeze():
     return result
 
 
+def history_rows(ledger):
+    return tuple(sorted(((str(actor), tuple(sorted(values)))
+                         for actor, values in ledger.history.items())))
+
+
 def main(out):
     out.mkdir(parents=True, exist_ok=False)
     before = freeze()
@@ -70,7 +75,7 @@ def main(out):
                 "setting": setting, "phase": controller.phase,
                 "selected": report["selected"], "retained": report["retained"],
                 "fulfilled": report["fulfillment"]["fulfilled"],
-                "history": controller.ledger.history}, indent=2, default=str) + "\n")
+                "history": history_rows(controller.ledger)}, indent=2, default=str) + "\n")
             witnesses.append(dict(setting=setting, phase=controller.phase,
                 selected=report["selected"], retained=report["retained"],
                 fulfilled=report["fulfillment"]["fulfilled"]))
@@ -81,7 +86,7 @@ def main(out):
                 paid_time=opposed_report["orientation"]["paid_time"]))
         _, _, _, removed, _, removed_report = finish_reuse("canonical", revoke=True)
         controls.append(dict(setting="canonical-ablation", selected=removed_report["selected"],
-            revoked=removed_report["revoked"], history=removed.ledger.history))
+            revoked=removed_report["revoked"], history=history_rows(removed.ledger)))
     after = freeze()
     passed = (result.wasSuccessful() and actual == sorted(expected)
         and before == after == registered and fixtures_ok and digest == digest_file
