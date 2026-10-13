@@ -18,7 +18,7 @@
 | FT3.3 | accepted, inherited | Pinned FT records; verified recovery |
 | FT4.1 | accepted | 30 exact methods; canonical/workflow fulfillment reconstructed; frozen source unchanged |
 | FT4.2 | accepted | 83 exact methods; paid native choice, cp fee, priority/support/retention, actual traversal and declared consecutive paid opposition independently reconstructed |
-| FT4.3 | FT4.3a, FT4.3b1 and FT4.3b2a accepted | Autonomous settlement, honest closure and evidence-backed capability certification passed; later retained-route reuse and final common FT4 controls remain |
+| FT4.3 | accepted | 130-method common FT4 gate passed; later retained-route settlement, matched revocation, unavailable support, conflicts, harder demand and paid opposition independently reconstructed |
 | FT5.1 | pending | Full Theory plan gate |
 | FT5.2 | pending | Full Theory plan gate |
 | FT5.3 | pending | Full Theory plan gate |
@@ -35,4 +35,4 @@
 | FT9.2 | pending | Full Theory plan gate |
 | FT9.3 | pending | Full Theory plan gate |
 
-[derived] FT4.3 now reaches evidence-backed certification after autonomous settlement and honest closure, but later autonomous retained-route reuse and its matched evidence-removal control remain open. The old publication job remains historical and is not part of the live development queue.
+[derived] FT4 now closes the bounded engineering cycle from owned demand through paid later retained reuse in both content settings. Revoking the exact certificate removes retained priority without rewriting permanent closure history. This is an engineering acceptance, not psychological validation or closure of theoretical registers. The old publication job remains historical and is not part of the live development queue.

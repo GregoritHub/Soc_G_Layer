@@ -2,7 +2,7 @@
 
 Full Theory engine continuation. The repaired FT3 recovery gate passed on 12 October 2026: all 751 inherited method identities, 30 FT controls and both positive retention witnesses passed with unchanged source. See `docs/ft/Recovery_Record_20261012.md`.
 
-**FT4.1, FT4.2 and FT4.3a–FT4.3b2a are accepted.** The engine now assembles autonomous demand-to-settlement work, discovers honest closure and certifies evidence-backed guarded capacity in both content settings. Next is FT4.3b2b: later autonomous retained-route reuse, matched evidence ablation, unavailable support, opposition integration and the final common FT4 gate. The live state and actual schedule receipt are in `docs/FT_Run_State.json`. The job register retains all FT0.1–FT9.3 IDs.
+**FT4 is accepted.** In both content settings the engine now forms an owned demand, chooses and pays for native work, settles, discovers honest closure, certifies evidence-backed guarded capacity and later selects that retained route on a new owned need. Exact certificate revocation removes the retained-choice effect while preserving closure history; unavailable support, conflicts, harder demand and paid opposition controls also pass. Next is FT5.1 integer reserve state and accounting. The live state and actual schedule receipt are in `docs/FT_Run_State.json`. The job register retains all FT0.1–FT9.3 IDs.
 
 ## Run the recovered engine
 
