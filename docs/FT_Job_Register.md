@@ -19,8 +19,8 @@
 | FT4.1 | accepted | 30 exact methods; canonical/workflow fulfillment reconstructed; frozen source unchanged |
 | FT4.2 | accepted | 83 exact methods; paid native choice, cp fee, priority/support/retention, actual traversal and declared consecutive paid opposition independently reconstructed |
 | FT4.3 | accepted | 130-method common FT4 gate passed; later retained-route settlement, matched revocation, unavailable support, conflicts, harder demand and paid opposition independently reconstructed |
-| FT5.1 | pending | Full Theory plan gate |
-| FT5.2 | pending | Full Theory plan gate |
+| FT5.1 | accepted | 16 exact methods; three-policy integer reserve accounting independently reconstructed; no duplicate interruption or replenishment loop; native FT4 state unchanged |
+| FT5.2 | pending | Bind preparation and replenishment to actual paid native work and integrate the declared candidate policies without changing grade-v1 prices |
 | FT5.3 | pending | Full Theory plan gate |
 | FT6.1 | pending | Full Theory plan gate |
 | FT6.2 | pending | Full Theory plan gate |
@@ -35,4 +35,4 @@
 | FT9.2 | pending | Full Theory plan gate |
 | FT9.3 | pending | Full Theory plan gate |
 
-[derived] FT4 now closes the bounded engineering cycle from owned demand through paid later retained reuse in both content settings. Revoking the exact certificate removes retained priority without rewriting permanent closure history. This is an engineering acceptance, not psychological validation or closure of theoretical registers. The old publication job remains historical and is not part of the live development queue.
+[derived] FT4 closes the bounded engineering cycle from owned demand through paid later retained reuse. FT5.1 adds only the distinct reserve state and exact candidate arithmetic; it does not yet claim that its preparation or replenishment receipts are native paid events or elect a release policy. This is engineering acceptance, not psychological validation or closure of C13/TD4. The old publication job remains historical and is not part of the live development queue.
