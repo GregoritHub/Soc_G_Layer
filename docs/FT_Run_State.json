@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft61-20261013T0735Z-codex",
   "active_worker": true,
-  "lease_expires_at": "2026-10-13T08:18:51Z",
-  "expected_head": "08b57c03c1305b572c7f8163f04f54722ec6664f",
+  "lease_expires_at": "2026-10-13T08:21:20Z",
+  "expected_head": "3ceb282fa62e9a12e116ecc78165f3e8501f5ab6",
   "current_batch": "FT6.1",
   "next_batch": "FT6.1 frozen bounded evaluation and independent acceptance reconstruction under registered protocol v1",
   "completed_batches": [
