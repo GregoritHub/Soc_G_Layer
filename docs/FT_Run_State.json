@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft52b1-20261013T0352Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-13T04:22:00Z",
-  "expected_head": "5ce4fe54f1d53310e2f6aeb170b3f37d2aa2c26c",
+  "lease_expires_at": "2026-10-13T04:27:00Z",
+  "expected_head": "447493fdb169f501331b9f1cbef8be14ec839b08",
   "current_batch": "FT5.2b1",
   "next_batch": "FT5.2b1 prospective reserve-conditioned candidate-readiness protocol before implementation",
   "completed_batches": [
