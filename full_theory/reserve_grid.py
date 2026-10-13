@@ -20,7 +20,7 @@ WALLET_MODELS = ("legacy-r4", "grade-v1")
 BUDGET_CLASSES = ("ample", "scarce")
 BUDGETS = {
     "ample": {"canonical": 200000, "workflow": 200000},
-    "scarce": {"canonical": 87, "workflow": 55},
+    "scarce": {"canonical": 90, "workflow": 55},
 }
 GRID_CELL_COUNT = 432
 
