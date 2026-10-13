@@ -4,10 +4,10 @@
   "status": "running",
   "run_id": "ft63-20261013T0816Z-codex",
   "active_worker": true,
-  "lease_expires_at": "2026-10-13T08:46:26Z",
-  "expected_head": "37ab0352d9156060489fe983d1b0516683bf35b0",
+  "lease_expires_at": "2026-10-13T08:50:00Z",
+  "expected_head": "5bb02e58316d945c433123a1ed9f82c172bb2be4",
   "current_batch": "FT6.3",
-  "next_batch": "FT6.3 matched three-policy histories, held-out and changed-demand schedules, causal controls and parent stabilization gate; prospective protocol before implementation",
+  "next_batch": "FT6.3a fixed matched-grid implementation under the registered prospective protocol",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -79,7 +79,8 @@
     "FT5.3a",
     "FT5.3b",
     "FT6.1",
-    "FT6.2"
+    "FT6.2",
+    "FT6.3a"
   ],
   "publication": {
     "mode": "read-only pinned dependencies plus new development",
