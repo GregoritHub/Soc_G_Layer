@@ -7,6 +7,7 @@ import unittest
 
 from hle_unified.particulars import Selector
 from hle_unified import codec
+from hle_unified.material import attrs
 from hle_unified.selection_execution import SelectionEngine
 from hle_unified.selection_records import dumps, loads
 from tests_c6 import fixtures as c6
@@ -151,9 +152,11 @@ class ConditioningGridTests(unittest.TestCase):
                             for r in self.report["primary"]))
 
     def test_all_candidates_are_preflighted_by_actual_paid_native_completion(self):
-        for cell, (_, checkpoint, episode) in self.preflights.items():
-            self.assertEqual((episode["dcnh_cell"], episode["traversal"]["movement"]["required"]),
-                             (cell, 55))
+        for cell, (transactions, checkpoint, episode) in self.preflights.items():
+            reference = episode["traversal"]["movement"]
+            movement = [version for transaction in transactions for version in transaction.versions
+                        if version.ref == reference]
+            self.assertEqual((episode["dcnh_cell"], attrs(movement[0])["required"]), (cell, 55))
             self.assertEqual(tuple(episode["actual_elements"]),
                              tuple(self.fixture["alternatives"][cell]["actual_elements"]))
 

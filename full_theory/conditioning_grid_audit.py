@@ -3,6 +3,7 @@ from collections import Counter
 from hashlib import sha256
 
 from hle_unified import codec
+from hle_unified.material import attrs
 from hle_unified.selection_records import dumps, loads
 
 from .conditioning_feedback_audit import audit_choice, audit_episode
@@ -126,9 +127,13 @@ def _audit_row(row, expected, fixture, evidence, observed):
     transactions, route_checkpoint, episode = raw
     episode_audit = audit_episode(transactions, route_checkpoint, episode)
     traversal = episode["traversal"]
-    movement = traversal.get("movement")
-    if (type(movement) is not dict
-            or tuple(movement.get(name) for name in ("required", "completed", "spent")) != (55, 55, 55)):
+    movement_ref = traversal.get("movement")
+    movement_versions = [version for transaction in transactions
+                         for version in transaction.versions if version.ref == movement_ref]
+    if len(movement_versions) != 1:
+        raise ValueError("exact movement record missing")
+    movement = attrs(movement_versions[0])
+    if tuple(movement.get(name) for name in ("required", "completed", "spent")) != (55, 55, 55):
         raise ValueError("exact matched movement differs")
     if (episode["request_key"] != choice["request_key"]
             or episode_audit["cell"] != value["dcnh_cell"]
