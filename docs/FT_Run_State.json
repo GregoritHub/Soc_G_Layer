@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft63a-20261013T0835Z-codex",
   "active_worker": true,
-  "lease_expires_at": "2026-10-13T09:30:00Z",
-  "expected_head": "d532dc9d08323f0faaeea9082303961b12cb2e8d",
+  "lease_expires_at": "2026-10-13T09:35:00Z",
+  "expected_head": "708d96aab2c82e8c1aae5d0e73e22cc8243e59a4",
   "current_batch": "FT6.3a",
   "next_batch": "FT6.3a bounded acceptance of the frozen matched-grid implementation",
   "completed_batches": [
