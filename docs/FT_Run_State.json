@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": "ft52b1-20261013T0352Z",
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "dc5758b61aa708922d990c07fdc5b49f194c89e1",
+  "status": "running",
+  "run_id": "ft52b2-20261013T0433Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-13T05:03:19Z",
+  "expected_head": "554f1a77f90bd0a1c8bf7e81ad8480f1af960196",
   "current_batch": "FT5.2b2",
   "next_batch": "FT5.2b2 bind autonomous completion/interruption reserve effects and close the parent FT5.2 integration gate; protocol before implementation",
   "completed_batches": [
