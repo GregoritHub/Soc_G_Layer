@@ -1,13 +1,13 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
+  "status": "ready",
   "run_id": "ft52a-20261013T0334Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-13T04:18:00Z",
-  "expected_head": "2aec3f3497da7169281a6fb38236182311cadd9d",
-  "current_batch": "FT5.2a",
-  "next_batch": "FT5.2a prospective paid native preparation and replenishment binding protocol before implementation",
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "83d123a59becc33f36a315665d407e0887c22288",
+  "current_batch": "FT5.2b",
+  "next_batch": "FT5.2b integrate null, load-v1 and grade-load-v1 through separate autonomous candidate-dynamics interfaces; protocol before implementation",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -33,11 +33,12 @@
     "FT4.3b1",
     "FT4.3b2a",
     "FT4.3b2b",
-    "FT5.1"
+    "FT5.1",
+    "FT5.2a"
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT5_1_Record.md",
+  "latest_record": "docs/ft/FT5_2a_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
@@ -65,7 +66,8 @@
     "FT4.3b1",
     "FT4.3b2a",
     "FT4.3b2b",
-    "FT5.1"
+    "FT5.1",
+    "FT5.2a"
   ],
   "publication": {
     "mode": "read-only pinned dependencies plus new development",

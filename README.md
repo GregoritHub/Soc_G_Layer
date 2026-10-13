@@ -2,7 +2,7 @@
 
 Full Theory engine continuation. The repaired FT3 recovery gate passed on 12 October 2026: all 751 inherited method identities, 30 FT controls and both positive retention witnesses passed with unchanged source. See `docs/ft/Recovery_Record_20261012.md`.
 
-**FT4 and FT5.1 are accepted.** The engine closes the bounded autonomous demand-to-retained-reuse cycle in both content settings, and now has a separately audited integer reserve accounting state for the preregistered null, load-v1 and grade-load-v1 policies. Native paid preparation/replenishment binding and the reserve-policy comparison remain FT5.2–FT5.3 work. The live state and actual schedule receipt are in `docs/FT_Run_State.json`. The job register retains all FT0.1–FT9.3 IDs.
+**FT4 and FT5.1 are accepted; FT5.2a now binds preparation and replenishment to distinct paid native work.** Next is FT5.2b autonomous candidate-dynamics integration; the parent FT5.2 and FT5 gate remain pending. The live state and actual schedule receipt are in `docs/FT_Run_State.json`. The job register retains all FT0.1–FT9.3 IDs.
 
 ## Run the recovered engine
 
