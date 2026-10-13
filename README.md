@@ -2,7 +2,7 @@
 
 Full Theory engine continuation. The repaired FT3 recovery gate passed on 12 October 2026: all 751 inherited method identities, 30 FT controls and both positive retention witnesses passed with unchanged source. See `docs/ft/Recovery_Record_20261012.md`.
 
-**FT4 and FT5.1 are accepted; FT5.2a–b1 now bind reserve to paid native work and candidate readiness.** Scarce reserve selects a separate preparation transition while preserving the unchanged FT4 route inventory and prices. Next is FT5.2b2 autonomous completion/interruption integration; the parent FT5.2 and FT5 gate remain pending.
+**FT4, FT5.1 and FT5.2 are accepted.** Reserve-conditioned readiness now reaches actual autonomous settlement, and actual paid interruption has its declared bounded effect without repricing native work. Next is FT5.3 depletion, recovery, harder-demand and release-policy evaluation; the parent FT5 gate remains pending.
 
 ## Run the recovered engine
 
