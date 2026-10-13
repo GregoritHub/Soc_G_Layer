@@ -22,7 +22,7 @@
 | FT5.1 | accepted | 16 exact methods; three-policy integer reserve accounting independently reconstructed; no duplicate interruption or replenishment loop; native FT4 state unchanged |
 | FT5.2 | accepted | 15 exact integration methods; three-policy completion and actual paid interruption independently reconstructed; all 171 predecessor identities exact |
 | FT5.3 | accepted | Target-sensitive partial order; 432-cell fixed grid and 216 token pairs independently reconstructed; load-v1 selected by the prospective minimal-candidate rule; parent FT5 accepted |
-| FT6.1 | pending | Full Theory plan gate |
+| FT6.1 | registered, prospective | Protocol v1 fixes paid-use binding, four exact tags, three policies, score saturation, four-turn decay, bounded replay and no behavioral feedback before implementation |
 | FT6.2 | pending | Full Theory plan gate |
 | FT6.3 | pending | Full Theory plan gate |
 | FT7.1 | pending | Full Theory plan gate |

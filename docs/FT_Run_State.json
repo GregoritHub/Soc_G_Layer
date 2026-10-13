@@ -4,10 +4,10 @@
   "status": "running",
   "run_id": "ft61-20261013T0735Z-codex",
   "active_worker": true,
-  "lease_expires_at": "2026-10-13T08:05:40.412Z",
-  "expected_head": "1c3fc3ce25698434343fc802806693d6dcec3088",
+  "lease_expires_at": "2026-10-13T08:09:25Z",
+  "expected_head": "86035d734ffc4538ca231b484b1ec5146344eafb",
   "current_batch": "FT6.1",
-  "next_batch": "FT6.1 bounded use-history state and exact feedback accounting; prospective protocol before implementation",
+  "next_batch": "FT6.1 bounded use-history state and exact feedback accounting implementation under registered protocol v1",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -38,7 +38,8 @@
     "FT5.2b1",
     "FT5.2b2",
     "FT5.3a",
-    "FT5.3b"
+    "FT5.3b",
+    "FT6.1"
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
