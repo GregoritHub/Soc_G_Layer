@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "1ff9b0000f062b5ba216c821be691258c91546ef",
+  "status": "running",
+  "run_id": "ft71b2b2-20261014T2336Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-15T00:06:00Z",
+  "expected_head": "289264f2e24aaf65c489654e540085b454a5a8a5",
   "current_batch": "FT7.1b2b1",
   "next_batch": "FT7.1b2b2: honest content closure and scoped retained reuse under changed support; then FT7.1b2b3 integrated reserve/history binding and tie-only feedback",
   "completed_batches": [
