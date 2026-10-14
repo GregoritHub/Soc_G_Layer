@@ -23,7 +23,7 @@ class SocialTrainingTests(unittest.TestCase):
         cls.witnesses={};cls.restarts={};cls.bases={}
         for setting in ('canonical','workflow'):
             for mode in ('independent','supported','missing-content','missing-correction'):
-                e,p,d=training_opportunity(setting,mode);c=SocialTrainingController(e,p)
+                e,c,d=training_opportunity(setting,mode)
                 cls.bases[setting,mode]=(type(e),e.checkpoint(),c.checkpoint(e))
                 finish(e,c);cls.witnesses[setting+'/'+mode]=(e,c)
             typ,native,wrapper=cls.bases[setting,'independent']

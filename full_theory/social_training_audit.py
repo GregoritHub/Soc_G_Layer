@@ -35,7 +35,7 @@ def _known(snapshot,versions,target,context):
 
 def audit_social_training(engine,checkpoint):
     d=loads(checkpoint);native=engine.checkpoint();txs=tuple(engine.world.journal())
-    expected={'version','native_sha256','actor','setting','scope','prefix_native','prefix_peer','prefix_count','phase','index','plan','events','work','response','observation','delivery','capacity','terminal'}
+    expected={'version','native_sha256','actor','setting','scope','prefix_native','prefix_peer','prefix_count','start_count','phase','index','plan','events','work','response','observation','delivery','capacity','terminal'}
     if set(d)!=expected or d['version']!='ft-owned-social-training-v1' or d['native_sha256']!=sha256(native.encode()).hexdigest():raise ValueError('training/native pairing differs')
     peer=loads(d['prefix_peer']);raw=json.loads(d['prefix_native']);payload=unseal(d['prefix_native'],raw['schema']);prefix=CompactStore.restore(payload['world']).journal()
     if len(prefix)!=d['prefix_count'] or tuple(txs[:len(prefix)])!=tuple(prefix):raise ValueError('immutable social prefix differs')
@@ -50,9 +50,15 @@ def audit_social_training(engine,checkpoint):
         if r.get('status')!='succeeded' or not r.get('required') or r.get('spent',0)<r['required'] or r.get('completed')!=r['required']:raise ValueError('unpaid claimed training effect')
         return r
     if not d['events']:
-        if d['phase']!='discover' or d['plan'] is not None or d['work'] or d['capacity'] is not None or d['index']!=0 or d['terminal'] is not None or len(txs)!=d['prefix_count']:raise ValueError('forged initial training state')
+        if d['phase']!='discover' or d['plan'] is not None or d['work'] or d['capacity'] is not None or d['index']!=0 or d['terminal'] is not None or d['start_count'] is not None:raise ValueError('forged initial training state')
         audit_development(txs)
         return dict(passed=True,independent=True,phase='discover',episodes=0,content_uses=0,paid_observations=0,independent_practices=0,native_capacity=False)
+    if type(d['start_count']) is not int or not d['prefix_count']<=d['start_count']<=len(txs):raise ValueError('invalid training discovery boundary')
+    for tx in txs[d['prefix_count']:d['start_count']]:
+        for v in tx.versions:
+            r=attrs(v)
+            if r.get('u8') and r.get('purpose') in ('respond','practice','reorganize','reown'):raise ValueError('supplied training response/practice/capacity before discovery')
+            heads[v.ref.identity]=v
     snapshot=_snapshot(d['events'][0]['view'])
     if snapshot.actor!=d['actor']:raise ValueError('foreign discovery snapshot')
     patterns=sorted((v.ref for v in heads.values() if v.ref.identity.namespace=='u7.pattern' and (attrs(v).get('owner'),attrs(v).get('context'),attrs(v).get('cue'))==(d['actor'],d['scope']['context'],d['scope']['cue'])),key=dumps)
@@ -80,7 +86,7 @@ def audit_social_training(engine,checkpoint):
     expected_plan=dict(pattern=patterns[0],episodes=tuple(list(chosen.values())[:2])) if patterns and len(chosen)>=2 else None
     if d['plan']!=expected_plan:raise ValueError('owned discovery order or scope differs')
     audit_content(txs,d['work']);development=audit_development(txs)
-    phase='discover';index=0;offset=d['prefix_count'];works=[];responses=[];uses=[];practices=[];observations=[]
+    phase='discover';index=0;offset=d['start_count'];works=[];responses=[];uses=[];practices=[];observations=[]
     for i,event in enumerate(d['events']):
         if event['index']!=i or event['before']!=offset or event['phase_before']!=phase or not offset<=event['after']<=len(txs):raise ValueError('training event order differs')
         s=_snapshot(event['view'])

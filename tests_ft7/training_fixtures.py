@@ -8,6 +8,7 @@ from hle_unified.operation_records import OperationRequest
 from tests_c3 import fixtures as ca
 from tests_c7_workflow import fixtures as wf
 from full_theory.peer_cycle import AutonomousPeerCycle
+from full_theory.social_training import SocialTrainingController
 from full_theory.content import ContentBridge
 from hle_unified.shell_records import Effect
 
@@ -16,6 +17,7 @@ def training_opportunity(setting,mode='independent'):
     e,d=opportunity(setting)
     c=AutonomousPeerCycle(e,f.ALICE,f.BOB,setting);finish(e,c,d)
     if c.phase!='complete':raise AssertionError('social entry fixture did not complete: '+setting+'/'+mode+':'+c.phase)
+    training=SocialTrainingController(e,c)
     install_shell_opportunities(e)
     pattern=e._patterns[f.dev.inject(e,Effect('approval'),key='training-pattern')]
     for i,target in enumerate((f.SAW,f.SAW2)):
@@ -29,4 +31,4 @@ def training_opportunity(setting,mode='independent'):
             observation=f.receive(e,event,f.ALICE,key+'-observation')
             request=(replace(ca.req(e,key+'-model','organize-accumulation-v1',(observation,)),target=target,evidence=f.evidence(e,f.ALICE,target)) if setting=='canonical' else wf.request(e,key+'-model','Organize','accumulation',(observation,),target=target))
             ContentBridge(e).execute(request,consumed=(observation,))
-    return e,c,d
+    return e,training,d

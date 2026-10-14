@@ -33,7 +33,7 @@ class SocialTrainingController:
         self.actor=peer_cycle.actor;self.setting=peer_cycle.setting
         self.scope=deepcopy(peer_cycle.required)
         self.prefix_native=engine.checkpoint();self.prefix_peer=check
-        self.prefix_count=len(engine.world.journal())
+        self.prefix_count=len(engine.world.journal());self.start_count=None
         self.phase='discover';self.index=0;self.plan=None;self.events=[]
         self.bridge=ContentBridge(engine);self.response=None;self.observation=None
         self.delivery=None;self.capacity=None;self.terminal=None
@@ -100,6 +100,7 @@ class SocialTrainingController:
     def step(self,e,*,work_limit=1):
         if e is not self.bridge.engine or type(work_limit) is not int or work_limit<1:raise ValueError('paired native engine and positive exact bound required')
         if self.terminal is not None:return deepcopy(self.terminal)
+        if self.start_count is None:self.start_count=len(e.world.journal())
         before=len(e.world.journal());phase=self.phase;view=e.participant_view(self.actor).bytes();request=None;work=None
         if self.phase=='discover':
             self.plan=self._discover(e);self.phase='respond' if self.plan else 'deferred'
@@ -125,14 +126,14 @@ class SocialTrainingController:
 
     def checkpoint(self,e):
         if e is not self.bridge.engine:raise ValueError('paired native engine required')
-        return dumps(dict(version=self.VERSION,native_sha256=sha256(e.checkpoint().encode()).hexdigest(),actor=self.actor,setting=self.setting,scope=self.scope,prefix_native=self.prefix_native,prefix_peer=self.prefix_peer,prefix_count=self.prefix_count,phase=self.phase,index=self.index,plan=self.plan,events=self.events,work=self.bridge.events,response=self.response,observation=self.observation,delivery=self.delivery,capacity=self.capacity,terminal=self.terminal))
+        return dumps(dict(version=self.VERSION,native_sha256=sha256(e.checkpoint().encode()).hexdigest(),actor=self.actor,setting=self.setting,scope=self.scope,prefix_native=self.prefix_native,prefix_peer=self.prefix_peer,prefix_count=self.prefix_count,start_count=self.start_count,phase=self.phase,index=self.index,plan=self.plan,events=self.events,work=self.bridge.events,response=self.response,observation=self.observation,delivery=self.delivery,capacity=self.capacity,terminal=self.terminal))
 
     @classmethod
     def restore(cls,text,e):
         from .social_training_audit import audit_social_training
         audit_social_training(e,text)
         d=loads(text);o=cls.__new__(cls)
-        for name in ('actor','setting','scope','prefix_native','prefix_peer','prefix_count','phase','index','plan','events','response','observation','delivery','capacity','terminal'):setattr(o,name,deepcopy(d[name]))
+        for name in ('actor','setting','scope','prefix_native','prefix_peer','prefix_count','start_count','phase','index','plan','events','response','observation','delivery','capacity','terminal'):setattr(o,name,deepcopy(d[name]))
         o.bridge=ContentBridge(e);o.bridge.events=deepcopy(d['work'])
         if o.checkpoint(e)!=text:raise ValueError('training restoration differs')
         return o

@@ -8,7 +8,7 @@ def digest(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 
 def freeze():
     predecessor=json.loads((ROOT/'contracts/ft/FT7_1b2a_Source_Freeze_v1.json').read_text())
-    names=set(predecessor)|{'contracts/ft/FT7_1b2a_Source_Freeze_v1.json','contracts/ft/FT7_1b2b1_Protocol_v1.json','contracts/ft/FT7_1b2b1_Protocol_v1.sha256','contracts/ft/FT7_1b2b1_Preflight_Amendment_v1.json','contracts/ft/FT7_1b2b1_Preflight_Amendment_v1.sha256','contracts/ft/FT7_1b2b1_Typed_Source_Amendment_v1.json','contracts/ft/FT7_1b2b1_Typed_Source_Amendment_v1.sha256','contracts/ft/FT7_1b2b1_Relation_Admission_Amendment_v1.json','contracts/ft/FT7_1b2b1_Entry_Readback_Amendment_v1.json','contracts/ft/FT7_1b2b1_Fixture_Identity_v2.json','full_theory/social_training.py','full_theory/social_training_audit.py','tests_ft7/training_fixtures.py','tests_ft7/test_social_training.py','tools/evaluate_ft7_1b2b1.py'}
+    names=set(predecessor)|{'contracts/ft/FT7_1b2a_Source_Freeze_v1.json','contracts/ft/FT7_1b2b1_Protocol_v1.json','contracts/ft/FT7_1b2b1_Protocol_v1.sha256','contracts/ft/FT7_1b2b1_Preflight_Amendment_v1.json','contracts/ft/FT7_1b2b1_Preflight_Amendment_v1.sha256','contracts/ft/FT7_1b2b1_Typed_Source_Amendment_v1.json','contracts/ft/FT7_1b2b1_Typed_Source_Amendment_v1.sha256','contracts/ft/FT7_1b2b1_Relation_Admission_Amendment_v1.json','contracts/ft/FT7_1b2b1_Entry_Readback_Amendment_v1.json','contracts/ft/FT7_1b2b1_Fixture_Identity_v2.json','contracts/ft/FT7_1b2b1_Immutable_Entry_Amendment_v1.json','contracts/ft/FT7_1b2b1_Fixture_Identity_v3.json','full_theory/social_training.py','full_theory/social_training_audit.py','tests_ft7/training_fixtures.py','tests_ft7/test_social_training.py','tools/evaluate_ft7_1b2b1.py'}
     return {n:digest(ROOT/n) for n in sorted(names)}
 
 def main(out):
@@ -27,7 +27,7 @@ def main(out):
     pp=ROOT/'contracts/ft/FT7_1b2b1_Protocol_v1.json';p=json.loads(pp.read_text())
     if digest(pp)!=pp.with_suffix('.sha256').read_text().split()[0]:raise ValueError('protocol digest differs')
     ap=ROOT/'contracts/ft/FT7_1b2b1_Preflight_Amendment_v1.json';amendment=json.loads(ap.read_text())
-    if digest(ap)!=ap.with_suffix('.sha256').read_text().split()[0] or digest(ROOT/'tests_ft7/training_fixtures.py')!=json.loads((ROOT/'contracts/ft/FT7_1b2b1_Fixture_Identity_v2.json').read_text())['fixture_sha256']:raise ValueError('amendment/fixture digest differs')
+    if digest(ap)!=ap.with_suffix('.sha256').read_text().split()[0] or digest(ROOT/'tests_ft7/training_fixtures.py')!=json.loads((ROOT/'contracts/ft/FT7_1b2b1_Fixture_Identity_v3.json').read_text())['fixture_sha256']:raise ValueError('amendment/fixture digest differs')
     suite=unittest.defaultTestLoader.loadTestsFromName('tests_ft7.test_social_training');actual=sorted(ids(suite));expected=sorted('tests_ft7.test_social_training.SocialTrainingTests.'+m for m in p['registered_tests'])
     (out/'method_ids.json').write_text(json.dumps(actual,indent=2)+'\n')
     with (out/'controls.log').open('w') as log:r=unittest.TextTestRunner(stream=log,verbosity=2).run(suite)
