@@ -1,0 +1,17 @@
+# FT7.1a ordered paid content packets — accepted transport checkpoint
+
+Protocol: 5f962e9da2e14151a15917955be5d47223e2fee4. Preliminary freeze: 3cee1b4a9879c3eb088197fb0b5e9acd5440ef52. Prospective authority-audit amendment: 2c62ec484bd86e717d14a45a7b50a0390aeb198b. Corrected acceptance freeze: 153698145d855a9db51553a43b9d5609d001846b.
+
+The corrected frozen evaluation passed 14/14 exact methods, zero failures/errors, unchanged 171-file source freeze and all 267 predecessor method identities. All 207 published destination blobs were independently compared with the local frozen bytes. Eleven raw native witness records decoded exactly and passed the independent clock, native content, participant authority, landing and paid-receipt reconstruction.
+
+Coverage: four supplied-output transport witnesses (self/peer in canonical/workflow), four receiver-withdrawal/missing-uptake controls, two exact partial-read restart witnesses and one two-packet queue permutation. Both settings deliver the exact existing paid output through the unchanged ContentBridge; no packet label grants knowledge. Peer reads debit real native wallets. Partial work grants no kept content or charge. Absent receiver uptake leaves the packet pending through the declared eight-turn horizon without receiver debit. Repeated completed delivery does no native work. Recipient seat follows immutable TIM/aspect geometry; relation landing supplies no skill, authority or competence.
+
+The first attempt passed its fourteen tests but was not accepted as the complete transport gate. A concrete diagnostic consistently changed a private own-output packet's copied recipient metadata to the other valid participant. The runtime refused that emission, but the original independent auditor accepted it. The prospective amendment added raw event/public-payload/private-owner authority reconstruction and strengthened the existing wrong-recipient method. The corrected attempt rejects this exact forgery. Preliminary source, raw records, result and diagnostic remain preserved separately inside the evidence archive; the passing preliminary report is not relabeled as complete acceptance.
+
+This accepts FT7.1a only. Input routes were explicit evaluator fixtures; autonomous social demand/route selection, participant contribution to later consumption, scoped social closure/retention and integrated load-v1/success-v1 behavior still owe FT7.1b. Parent FT7.1 and FT7 remain pending. All ordered type-pair/settings, solos, benefit/supervision directions, population controls and 40/160-turn panels remain required by FT7.2/FT7.3. No all-type coverage is claimed here.
+
+Native law, baseline, TIM, dimensionality, released defaults, permanent H.retained and certificate meanings are unchanged. The accepted FT6 success-v1 election is carried forward; no subtype or C/D closure is asserted.
+
+Reproduce in the prepared Python 3.12 runtime with `python tools/evaluate_ft7_1a.py /absolute/fresh-output`. Preserve the separate FT6.3a/FT6.3b input evidence as directed by their records. The exact new source, corrected and preliminary raw witnesses, source freezes, tests and diagnostic are in FT7_1a_Paid_Packet_Evidence_20261014.zip; public evidence index contains filename/member hashes without private retrieval identifiers.
+
+Next eligible job: preregister FT7.1b before adding autonomous social coupling and later use. The accepted transport adapter is a dependency, not proof that the parent causal gate is complete. Ownership is released at this verified resumable checkpoint.
