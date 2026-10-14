@@ -14,6 +14,7 @@ def freeze():
 def main(out):
     from hle_unified import codec
     from hle_unified.selection_execution import SelectionEngine
+    from hle_unified.selection_records import dumps,loads
     from hle_unified.workflow_selection_execution import WorkflowFinalSelectionEngine
     from full_theory.peer_cycle_audit import audit_peer_cycle
     from tools.evaluate_ft6_3b import ids
@@ -34,15 +35,17 @@ def main(out):
         peer=None if c.request is None else e.job_status(c.peer,c.request.key)
         link=None if c.social is None or c.social.terminal is None else c.social.terminal['causal_link']
         consumer=None if link is None else e.job_status(c.actor,link['consumer_key'])
-        reports[key]=dict(phase=c.phase,turns=c.turn,peer_key=None if c.request is None else c.request.key,peer_paid=None if peer is None else peer['spent'],peer_required=None if peer is None else peer['required'],reply=c.reply,consumer_key=None if link is None else link['consumer_key'],consumer_paid=None if consumer is None else consumer['spent'],consumer_required=None if consumer is None else consumer['required'],before_wallets=wallets,after_wallets={a:dict(e.wallet(a)) for a in c.channel.participants})
+        reports[key]=dict(phase=c.phase,turns=c.turn,peer_key=None if c.request is None else c.request.key,peer_paid=None if peer is None else peer['spent'],peer_required=None if peer is None else peer['required'],reply=c.reply,consumer_key=None if link is None else link['consumer_key'],consumer_paid=None if consumer is None else consumer['spent'],consumer_required=None if consumer is None else consumer['required'],before_wallets=tuple((a,wallets[a]) for a in c.channel.participants),after_wallets=tuple((a,dict(e.wallet(a))) for a in c.channel.participants))
     for key,(e,c,other,restored,partial_native,partial_wrapper) in sorted(getattr(tests,'restarts',{}).items()):
         rows.append((key+'/restart-final',tuple(e.world.journal()),c.checkpoint(e),e.checkpoint()))
         typ=SelectionEngine if key.startswith('canonical/') else WorkflowFinalSelectionEngine
         partial=typ.restore(partial_native)
         rows.append((key+'/restart-partial',tuple(partial.world.journal()),partial_wrapper,partial_native))
         reports[key+'/restart']=dict(native_exact=e.checkpoint()==other.checkpoint(),wrapper_exact=c.checkpoint(e)==restored.checkpoint(other))
-    (out/'scenario_reports.json').write_text(codec.dumps(reports)+'\n')
     raw=tuple(rows);path_raw=out/'raw_peer_evidence.json';path_raw.write_text(codec.dumps(raw)+'\n');decoded=codec.loads(path_raw.read_text());audits={}
+    report_text=dumps(reports)
+    (out/'scenario_reports.json').write_text(report_text+'\n')
+    if loads(report_text)!=reports:raise ValueError('descriptive report roundtrip differs')
     for key,txs,wrapper,native in decoded:
         try:
             typ=SelectionEngine if key.startswith('canonical/') else WorkflowFinalSelectionEngine;e=typ.restore(native)
