@@ -51,6 +51,12 @@
     "restarts": [
       "partial-peer",
       "partial-recipient"
+    ],
+    "initial_variants_per_setting": [
+      "consented",
+      "nonconsent",
+      "no-stance",
+      "no-offer"
     ]
   },
   "registered_tests": [
@@ -98,6 +104,6 @@
     "self_only_control_unchanged": true,
     "no_parent_gate_waiver": true
   },
-  "fixture_sha256": "6d4ebd264101876b5bb63a5bd81bfc6dae6214de2448c2fae70916b27abdeefe",
+  "fixture_sha256": "2d4ce792a2248369287e7a47921f4a3826d9789f539478ac07c893c778ebfb68",
   "stop": "Two failed implementation gates after correction; required semantic change/ruling; unrecoverable source/access blocker"
 }
