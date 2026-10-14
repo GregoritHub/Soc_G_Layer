@@ -1,0 +1,12 @@
+{
+  "version": "ft7.1b2b1-entry-and-readback-amendment-v1",
+  "attempt": 3,
+  "failed_freeze": "2a26e3021034653f6eec9f655f7947ff359caa05",
+  "observed": "3 native primary records saved; setup stopped in missing-correction arm because its training pattern also blocked social entry. All three decoded audits rejected unsupported U2 format; gate remains failed.",
+  "repairs": [
+    "Create identical social prefix before independent training opportunities in every arm; training pattern cannot contaminate required completed entry. Same task, skill and training control differences remain.",
+    "Decode native compact world with the exact CompactStore storage reader, rather than the record-only U2 codec.",
+    "Accept an exact initial discover checkpoint with no events, plan or work, so partial-restart setup can start from its recorded initial state."
+  ],
+  "acceptance": "All settings, scenarios, methods, 18-record domain, independent raw audits, main-cost matched controls and parent gates remain unchanged."
+}
