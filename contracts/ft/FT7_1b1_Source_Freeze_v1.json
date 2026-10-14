@@ -89,6 +89,8 @@
   "contracts/ft/FT7_1a_Source_Freeze_v1.json": "e804ee44a093427aa7319e8fe9a00c8bc2f83c0fb75c8d2126d2b6a2b0d72511",
   "contracts/ft/FT7_1b1_Protocol_v1.json": "a5a8f9579cdea9277fb5596d4c21803ba8b9328bb560090b6a6ea8f0edf08661",
   "contracts/ft/FT7_1b1_Protocol_v1.sha256": "d33704d1edd85a4b9813cc32dcd501d2107f2e26f8690ac6491192d181e15491",
+  "contracts/ft/FT7_1b1_Public_Intake_Amendment_v1.json": "86a5e122fd2939e573dda1418c63c052149fea408c75e1a70a2ab3fb781c50b4",
+  "contracts/ft/FT7_1b1_Public_Intake_Amendment_v1.sha256": "fbcef3c5bac7b8a6cdd09303252255bc50dad52ed63acd7efbdcbf1c5d24cdc4",
   "contracts/ft/FT_Selected_Engineering_Policies_v1.json": "7d236db4b0c6d29c8c423d38a7096e3c7f0f3d1edbdb9a87f21790e33c9b2002",
   "full_theory/__init__.py": "dcd9ba23a829fd009b017d400a7497bf11f2f6e86dce0dc2c9f5a399e123b7c5",
   "full_theory/autonomous_capability.py": "8225fa3e27e57a8b51bd32c38781170ed4cf31e3ae50d46b2cabed9e8309cc8f",
@@ -138,8 +140,8 @@
   "full_theory/route_means_audit.py": "eded43dbf28abc02a0cf7246716155a7dc3f03882bd9343c3c7e6e2ee13c2c0c",
   "full_theory/route_policy.py": "ef68d90cee55bb5f32a3b0b9d3bc2ded43c36964c4ea689a3f4746b0fe65ed49",
   "full_theory/route_policy_audit.py": "40b87e5584ea310950fac01d2ae61a9896a05367091f20f2a190f9bc19366225",
-  "full_theory/social_cycle.py": "8589644dc5a6efdf989303482e0cd2ca5bc7c02246569c1bc41e3a18f8519fc5",
-  "full_theory/social_cycle_audit.py": "08d4e19e67ce2ed9a71ca8e3644fd7c5ccb6bef057902bb681f74b6a2659849b",
+  "full_theory/social_cycle.py": "d5c4a468a56d92bd0dcb57d126989a089aae9230d2b2b1eb126a8b63be422101",
+  "full_theory/social_cycle_audit.py": "5af1a8296f4544ead73c623ab7ec4b1fd8dc06ac3610ee711f4138060d276592",
   "full_theory/use_history.py": "1d0289f7762280c6914ee6a692c56001af684b36219d9f114584cf8b6b44ed75",
   "full_theory/use_history_audit.py": "5970a3c28a77e401cf61c60f23f3154492966c53e5ace31ad106d9818e74831e",
   "hle_unified/axes.py": "a413eb7296344e15d0ae04c45dcd4d493927e2650d7fd292110dc10a811917b7",
@@ -183,5 +185,5 @@
   "tools/evaluate_ft6_3a.py": "b800fd272817e3213fad1b523817166c87fdfecefb5dbe5865fc1b89fd1a2b56",
   "tools/evaluate_ft6_3b.py": "bd85dccc4e492e2f8e6e8cbeb7ac4d4f42e7bc33edb9aac53c8d13999282ac45",
   "tools/evaluate_ft7_1a.py": "f6ae5272c1abda3135eb9bacb475a104bcb82b3228d3e0184cdfb1b839e8d087",
-  "tools/evaluate_ft7_1b1.py": "afc3a98486bcaa59b59f9c3300713873988589e9ca2d438a2f4b953cee2c5302"
+  "tools/evaluate_ft7_1b1.py": "6c25169593b0361925ae618f923043abe97dadf91867e150fd5e9c52d4e61d9c"
 }

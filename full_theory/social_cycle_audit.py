@@ -8,6 +8,9 @@ from hle_unified import codec
 from hle_unified.conditioning_audit import completed_use
 from hle_unified.material import attrs
 from hle_unified.selection_records import loads
+from hle_unified.selection_records import dumps
+from hle_unified.self_content import decode
+from .fulfillment_audit import _snapshot
 from .packet_channel_audit import audit_packet_channel
 from .reserve_cycle_audit import audit_reserve_cycle
 from .use_history_audit import audit_use_history
@@ -66,6 +69,34 @@ def audit_social_cycle(engine, checkpoint):
         raise ValueError("delegated cycle/history event domain differs")
     if d["required"]!=cycle["required"] and cycle["required"] is not None:
         raise ValueError("scoped demand identity differs")
+    if cycle["request"] is not None:
+        base_event=loads(cycle["demand_controller"])["events"][0]
+        base=base_event["request"]["request"]
+        requested=cycle["request"]["fields"]
+        bridge=cycle["events"][0].get("public_intake")
+        if cycle["request"]["setting"]=="workflow":
+            snapshot=_snapshot(base_event["view"])
+            found=set()
+            for detail in snapshot.particulars:
+                if detail.address.key!="payload" or detail.source.identity.namespace!="c7w.message":continue
+                body=decode(detail.value)
+                if (body.get("context"),body.get("target"))!=(base["context"],base["target"]):continue
+                permitted=(body.get("kind")=="offer" and body.get("speaker")==d["actor"]
+                    and body.get("receiver") in d["required"]["support_allowed"]) or (
+                    body.get("kind")=="reply" and body.get("speaker") in d["required"]["support_allowed"]
+                    and body.get("receiver")==d["actor"])
+                if permitted:found.add(detail.source)
+            before=base["accessible"];after=tuple(sorted(set(before)|found,key=dumps))
+            expected_bridge=dict(policy="owned-public-workflow-intake-v1",base_request=base,
+                before=before,after=after,added=tuple(ref for ref in after if ref not in before),
+                view_sha256=sha256(base_event["view"].encode()).hexdigest())
+            if bridge!=expected_bridge or not 1<=len(after)<=8 or requested["accessible"]!=after:
+                raise ValueError("paid public workflow intake differs from owned snapshot")
+            for field in base:
+                if field not in ("accessible","peer","group") and requested[field]!=base[field]:
+                    raise ValueError("public intake changed owned request identity")
+        elif bridge is not None:
+            raise ValueError("canonical request gained a workflow intake bridge")
     history_prefix=transactions[:history["journal_count"]]
     history_audit=audit_use_history(d["history"],history_prefix)
     versions={v.ref:v for tx in transactions for v in tx.versions}

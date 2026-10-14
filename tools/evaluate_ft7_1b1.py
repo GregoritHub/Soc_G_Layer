@@ -16,6 +16,8 @@ def freeze():
     accepted=json.loads((ROOT/"contracts/ft/FT7_1a_Source_Freeze_v1.json").read_text())
     names=set(accepted)|{"contracts/ft/FT7_1a_Source_Freeze_v1.json",
         "contracts/ft/FT7_1b1_Protocol_v1.json","contracts/ft/FT7_1b1_Protocol_v1.sha256",
+        "contracts/ft/FT7_1b1_Public_Intake_Amendment_v1.json",
+        "contracts/ft/FT7_1b1_Public_Intake_Amendment_v1.sha256",
         "full_theory/social_cycle.py","full_theory/social_cycle_audit.py",
         "tests_ft7/test_social_cycle.py","tools/evaluate_ft7_1b1.py",
         "tests_c3/fixtures.py","tests_c5/fixtures.py","tests_c6/fixtures.py",
@@ -42,6 +44,8 @@ def main(out):
         if digest(ROOT/name)!=expected_hash:raise ValueError("accepted predecessor source differs: "+name)
     p=ROOT/"contracts/ft/FT7_1b1_Protocol_v1.json";protocol=json.loads(p.read_text())
     if digest(p)!=p.with_suffix('.sha256').read_text().split()[0]:raise ValueError("prospective protocol hash differs")
+    amendment=ROOT/"contracts/ft/FT7_1b1_Public_Intake_Amendment_v1.json"
+    if digest(amendment)!=amendment.with_suffix('.sha256').read_text().split()[0]:raise ValueError("public intake amendment hash differs")
     suite=unittest.defaultTestLoader.loadTestsFromName("tests_ft7.test_social_cycle")
     actual=sorted(ids(suite));expected=sorted("tests_ft7.test_social_cycle.SocialCycleTests."+m for m in protocol["registered_tests"])
     (out/"method_ids.json").write_text(json.dumps(actual,indent=2)+'\n')
@@ -79,6 +83,7 @@ def main(out):
         restart_records=len(getattr(tests,'restarts',{})),saved_records=len(audits),decoded_independent_audit=all(a['passed'] for a in audits.values()),
         raw_roundtrip_exact=roundtrip,source_unchanged=before==freeze(),registered_freeze=before==registered,
         protocol_sha256=digest(p),reserve_policy='load-v1',conditioning_policy='success-v1',
+        public_intake_amendment_sha256=digest(amendment),
         parent_ft7_1b='pending FT7.1b2 autonomous peer production and scoped independent reuse',
         scope='Packet-mediated owned support choice and paid later use only; no independent capability or subtype assignment')
     (out/"summary.json").write_text(json.dumps(summary,indent=2)+'\n')

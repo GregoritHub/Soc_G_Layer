@@ -4,14 +4,61 @@ No peer success, route, recipe or certificate is supplied to the actor cycle.
 Autonomous peer generation and social retention remain the next parent seam.
 """
 from copy import deepcopy
+from dataclasses import replace
 from hashlib import sha256
 
-from hle_unified.selection_records import dumps, loads
+from hle_unified.selection_records import dumps, loads, fields_of
+from hle_unified.workflow_selection_records import WorkflowSelectionRequest
+from hle_unified.self_content import decode
 from .packet_channel import PacketChannel
 from .reserve import ReserveLedger
-from .reserve_cycle import ReserveAutonomousController
+from .reserve_cycle import ReserveAutonomousController, _same_scope, _support_request
 from .retention import Demand
 from .use_history import UseHistoryLedger, classifications_for, native_snapshot
+
+
+class _PublicIntakeReserveController(ReserveAutonomousController):
+    """Wrapper-local v1 public intake bridge; inherited request record stays exact."""
+
+    def step(self, engine, historical_state, demand, *, work_limit=1):
+        if self.phase!="scan":
+            return super().step(engine,historical_state,demand,work_limit=work_limit)
+        if type(demand) is not Demand or type(work_limit) is not int or work_limit<1:
+            raise ValueError("exact demand and positive native work bound required")
+        self.required=demand.record()
+        request,cycle=self.demand_controller.cycle(engine,self.actor,historical_state)
+        bridge=None
+        if request is not None and type(request) is WorkflowSelectionRequest:
+            view=engine.participant_view(self.actor)
+            found=set()
+            for detail in view.lookup(key="payload"):
+                if detail.source.identity.namespace!="c7w.message":continue
+                body=decode(detail.value)
+                if (body.get("context"),body.get("target"))!=(request.context,request.target):continue
+                own_offer=(body.get("kind")=="offer" and body.get("speaker")==self.actor
+                           and body.get("receiver") in demand.support_allowed)
+                peer_reply=(body.get("kind")=="reply" and body.get("speaker") in demand.support_allowed
+                            and body.get("receiver")==self.actor)
+                if own_offer or peer_reply:found.add(detail.source)
+            before=tuple(request.accessible)
+            after=tuple(sorted(set(before)|found,key=dumps))
+            if len(after)>8:
+                raise ValueError("owned workflow public intake exceeds unchanged eight-input bound")
+            bridge=dict(policy="owned-public-workflow-intake-v1",base_request=fields_of(request),
+                before=before,after=after,added=tuple(ref for ref in after if ref not in before),
+                view_sha256=sha256(view.bytes().encode()).hexdigest())
+            request=replace(request,accessible=after)
+        if request is None:
+            self.phase="deferred"
+            self.terminal=self._record(kind="terminal",reason=cycle["request"]["reason"],
+                request=None,candidate=None,consumer=None,settlement=None,effect=None,public_intake=bridge)
+            return deepcopy(self.terminal)
+        if not _same_scope(request,demand):
+            raise ValueError("formed request differs from scoped social demand")
+        self.request=_support_request(engine,request,demand)
+        self.phase="route"
+        return self._record(kind="scan",reason=cycle["request"]["reason"],request=fields_of(self.request),
+            candidate=None,consumer=None,settlement=None,effect=None,public_intake=bridge)
 
 
 class SocialSupportCycle:
@@ -22,7 +69,7 @@ class SocialSupportCycle:
         self.channel = PacketChannel(engine, participants)
         if actor not in self.channel.participants:
             raise ValueError("cycle actor must be a declared channel participant")
-        self.cycle = ReserveAutonomousController(engine, ReserveLedger(actor,"load-v1",initial=4))
+        self.cycle = _PublicIntakeReserveController(engine, ReserveLedger(actor,"load-v1",initial=4))
         self.history = UseHistoryLedger(actor,"success-v1",tuple(engine.world.journal()))
         self.baseline = native_snapshot(tuple(engine.world.journal()),actor)
         self.packet_key = None
@@ -123,7 +170,7 @@ class SocialSupportCycle:
         for name in ("actor","baseline","packet_key","required","phase","turn","events","terminal"):
             setattr(result,name,deepcopy(d[name]))
         result.channel=PacketChannel.restore(d["channel"],engine)
-        result.cycle=ReserveAutonomousController.restore(d["cycle"],engine)
+        result.cycle=_PublicIntakeReserveController.restore(d["cycle"],engine)
         result.history=UseHistoryLedger.restore(d["history"])
         if result.checkpoint(engine)!=text:
             raise ValueError("social-cycle restoration differs")

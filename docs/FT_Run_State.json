@@ -4,10 +4,10 @@
   "status": "running",
   "run_id": "ft71b-20261014T043529973Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-14T05:05:29.973Z",
-  "expected_head": "0572599b1de9426c39f2fcdb7a9ceeb1ddecaf76",
+  "lease_expires_at": "2026-10-14T05:27:24.625757+00:00",
+  "expected_head": "f483ddc0bb6e64462d6944fa3799900e842d5d3e",
   "current_batch": "FT7.1b1",
-  "next_batch": "FT7.1b1 packet-mediated owned support choice and paid downstream use; FT7.1b2 parent gate remains pending",
+  "next_batch": "Frozen corrected FT7.1b1 paid public workflow intake and one bounded acceptance attempt; preserve original failed run",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
