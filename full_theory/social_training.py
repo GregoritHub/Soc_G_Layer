@@ -7,6 +7,7 @@ from copy import deepcopy
 from hashlib import sha256
 from hle_unified import codec
 from hle_unified.material import attrs
+from hle_unified.self_content import decode
 from hle_unified.development_policy import opportunity
 from hle_unified.development_records import DevelopmentRequest
 from hle_unified.operation_records import OperationRequest
@@ -51,6 +52,11 @@ class SocialTrainingController:
                 or r.get('destination') not in ('I','ITS')):continue
             output=r.get('binding') or r.get('result')
             if output is None or output not in view._bindings:continue
+            binding=view._bindings[output]
+            if len(binding.content)!=1:continue
+            body=decode(binding.content[0].object)
+            kinds=({'I':('intention','personal_policy'),'ITS':('model','rule')} if self.setting=='canonical' else {'I':('intention','personal'),'ITS':('system','rule')})
+            if body.get('kind') not in kinds[r['destination']]:continue
             try:target=semantic_scope(e,r)
             except ValueError:continue
             known,sources=opportunity(view,target,self.scope['context'])

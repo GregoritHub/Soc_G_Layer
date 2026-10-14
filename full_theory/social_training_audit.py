@@ -9,6 +9,7 @@ from hle_unified.compact import unseal
 from hle_unified.material import attrs
 from hle_unified.development_values import attrs as devattrs
 from hle_unified.records import Account
+from hle_unified.self_content import decode
 from hle_unified.development_audit import audit as audit_development
 from hle_unified.selection_records import dumps,loads
 from .fulfillment_audit import _snapshot
@@ -54,12 +55,17 @@ def audit_social_training(engine,checkpoint):
     patterns=sorted((v.ref for v in heads.values() if v.ref.identity.namespace=='u7.pattern' and (attrs(v).get('owner'),attrs(v).get('context'),attrs(v).get('cue'))==(d['actor'],d['scope']['context'],d['scope']['cue'])),key=dumps)
     found=[]
     if patterns:
-        p=attrs(versions[patterns[0]]);bindings={b.ref for b in snapshot.bindings}
+        p=attrs(versions[patterns[0]]);bindings={b.ref:b for b in snapshot.bindings}
         for v in heads.values():
             r=attrs(v)
             if r.get('actor')!=d['actor'] or r.get('record_type')!='operation' or r.get('status')!='succeeded' or not r.get('route_count') or r.get('u8') or r.get('context')!=d['scope']['context'] or r.get('destination') not in ('I','ITS'):continue
             output=r.get('binding') or r.get('result');target=r.get('content_target',r.get('target'))
             if output is None or output not in bindings:continue
+            binding=bindings[output]
+            if len(binding.content)!=1:continue
+            body=decode(binding.content[0].object)
+            kinds=({'I':('intention','personal_policy'),'ITS':('model','rule')} if d['setting']=='canonical' else {'I':('intention','personal'),'ITS':('system','rule')})
+            if body.get('kind') not in kinds[r['destination']]:continue
             account=versions[output].facet(Account)
             if r.get('binding') is not None and (account is None or account.holder!=d['actor'] or account.referent!=target or not account.content or any((x.subject,x.context)!=(target,r['context']) for x in account.content)):continue
             known,sources=_known(snapshot,versions,target,d['scope']['context'])
