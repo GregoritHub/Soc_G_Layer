@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "8c231c7613b2c0845c6a567ffab556860824bbd9",
+  "status": "running",
+  "run_id": "ft7-1b2b-20261014-2237",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-14T23:07:34.734Z",
+  "expected_head": "1a890b7198341f1be8323221c21dbb85223e3d59",
   "current_batch": "FT7.1b2a",
   "next_batch": "FT7.1b2b: actual independent paid training/closure, scoped retained reuse under changed support, integrated tie-only feedback",
   "completed_batches": [
