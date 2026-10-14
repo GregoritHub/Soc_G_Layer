@@ -4,10 +4,10 @@
   "status": "running",
   "run_id": "ft7-1b2b-20261014-2237",
   "active_worker": true,
-  "lease_expires_at": "2026-10-14T23:07:34.734Z",
-  "expected_head": "1a890b7198341f1be8323221c21dbb85223e3d59",
-  "current_batch": "FT7.1b2a",
-  "next_batch": "FT7.1b2b: actual independent paid training/closure, scoped retained reuse under changed support, integrated tie-only feedback",
+  "lease_expires_at": "2026-10-14T23:21:26.849Z",
+  "expected_head": "547ac377eb7aab969b88a4d469e0af1a36747bd1",
+  "current_batch": "FT7.1b2b1",
+  "next_batch": "FT7.1b2b2 honest content closure and scoped retained reuse; then FT7.1b2b3 integrated tie-only feedback",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -91,7 +91,10 @@
     "FT7.1b1",
     "FT7.1b2",
     "FT7.1b2a",
-    "FT7.1b2b"
+    "FT7.1b2b",
+    "FT7.1b2b1",
+    "FT7.1b2b2",
+    "FT7.1b2b3"
   ],
   "publication": {
     "mode": "read-only pinned dependencies plus new development",
@@ -198,5 +201,9 @@
       "actual_engine_run": false,
       "scope": "representative typed report schema and native raw tuple persistence only; not acceptance"
     }
+  },
+  "current_work": {
+    "frozen_commit": "547ac377eb7aab969b88a4d469e0af1a36747bd1",
+    "phase": "bounded acceptance attempt 4; earlier failures preserved; parent gates unchanged"
   }
 }
