@@ -1,13 +1,13 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft63b-20261014T033039730Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-14T04:00:39.730Z",
-  "expected_head": "4535b40af21dbdfa6d122a6da4105a6b4c1cb3f5",
-  "current_batch": "FT6.3b",
-  "next_batch": "FT6.3b prospective independent stabilization and parent engineering gate",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "4091e6a4fb6bae3d7a46c03669f670e82a3877bb",
+  "current_batch": "FT7.1",
+  "next_batch": "FT7.1 bounded prospective internal/interpersonal packet coupling",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -41,11 +41,12 @@
     "FT5.3b",
     "FT6.1",
     "FT6.2",
-    "FT6.3a"
+    "FT6.3a",
+    "FT6.3b"
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT6_3a_Publication_Resolution.md",
+  "latest_record": "docs/ft/FT6_3b_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
@@ -81,7 +82,8 @@
     "FT5.3b",
     "FT6.1",
     "FT6.2",
-    "FT6.3a"
+    "FT6.3a",
+    "FT6.3b"
   ],
   "publication": {
     "mode": "read-only pinned dependencies plus new development",
@@ -90,11 +92,17 @@
     "standalone_ft9_release": false
   },
   "local_acceptance": {
-    "batch": "FT6.3a",
+    "batch": "FT6.3b",
     "passed": true,
-    "frozen_commit": "8d3b215",
-    "summary": "docs/ft/FT6_3a_Corrected_Acceptance_Summary.json",
-    "source_publication": "verified",
-    "published_source_commit": "9b323063897b1aeb5e2f013126502a58ff8fb662"
+    "frozen_commit": "4091e6a4fb6bae3d7a46c03669f670e82a3877bb",
+    "summary": "docs/ft/FT6_3b_Acceptance_Summary.json",
+    "source_publication": "verified"
+  },
+  "conditioning_release": {
+    "policy": "success-v1",
+    "engineering_gate": "accepted",
+    "subtype_assignment": null,
+    "full_subtype_claim": "held pending author interpretation",
+    "evidence_index": "docs/ft/FT6_3b_Evidence_Index.json"
   }
 }
