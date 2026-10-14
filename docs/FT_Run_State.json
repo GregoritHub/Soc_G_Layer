@@ -1,13 +1,13 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
+  "status": "held",
   "run_id": "ft71b2-f590d4087a1144ba8493f5f821c2ad0b",
   "active_worker": true,
   "lease_expires_at": "2026-10-14T09:06:33.451358+00:00",
   "expected_head": "255b243cb5468eec1969f4067989d2f8d87b4f26",
-  "current_batch": "FT7.1b2",
-  "next_batch": "FT7.1b2a autonomous peer request/production coupling; FT7.1b2b independent closure/reuse and feedback remains mandatory",
+  "current_batch": "FT7.1b2a",
+  "next_batch": "Author reopening required for evidence-writer-only corrected frozen run, then mandatory FT7.1b2b",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -50,10 +50,17 @@
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
   "latest_record": "docs/ft/FT7_1b1_Comparison_Record.md",
   "automation": {
-    "enabled": true,
+    "enabled": false,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
   },
-  "blocker": null,
+  "blocker": {
+    "kind": "two_failure_stop",
+    "batch": "FT7.1b2a",
+    "attempts": 2,
+    "first": "0 method bodies; native DetailAddress checkpoint serialization rejected",
+    "second": "15/15 exact method bodies passed; descriptive dictionary passed to unsupported native codec; saved raw/readback gate not reached",
+    "required_ruling": "Reopen FT7.1b2a for evidence-writer-only correction and unchanged full gate; no engine or inherited semantics change"
+  },
   "recovery": {
     "status": "passed",
     "inherited_methods": 751,
