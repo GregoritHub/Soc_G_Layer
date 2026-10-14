@@ -1,0 +1,12 @@
+{
+  "attempt": 1,
+  "finding": "Saved canonical live record legitimately selected cp: the paid model preparation left the actor at seat 5, dimension 1, while the later demand requires all four facets. Certificate applicability alone cannot override current dimensionality. The new reuse auditor incorrectly equated certificate eligibility with retained-route eligibility.",
+  "audit_repair": "Only reject skipping a retained route when the independently audited retained option is itself eligible; continue to require current facet coverage and all native route checks. Do not change the accepted route policy or native dimensionality.",
+  "fixture_completion": "Both settings independently prepare a paid novel-target model followed by an actual paid use of that model before introducing the new need. This supplies a realized initial personal decision and pays the native traversal; no cursor write, free orientation, supplied route choice, capacity or successful later output. The complete no-support reuse test and matched revocation remain unchanged.",
+  "added_control": "Preserve the original model-only state as insufficient-dimension in both settings. It must keep retained ineligible and choose a lawful nonretained alternative. The full four-facet demand is unchanged.",
+  "added_scenarios": ["insufficient-dimension"],
+  "added_methods": ["test_insufficient_dimensionality_does_not_gain_retained_access"],
+  "saved_records": 20,
+  "methods": 13,
+  "criteria": "No original scenario, test, payment, scope or acceptance requirement is removed or weakened. Adds two exact native control records and one method. Preserve first attempt, its exact source and saved-record diagnostic."
+}
