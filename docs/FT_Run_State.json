@@ -1,13 +1,13 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "resume-20261014-routine-repair",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-14T22:16:41.367Z",
-  "expected_head": "259ab06c7798ae05722d9cc97d0e8a752dfeb1b1",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "8c231c7613b2c0845c6a567ffab556860824bbd9",
   "current_batch": "FT7.1b2a",
-  "next_batch": "FT7.1b2a evidence-writer-only frozen retry under standing authorization, then mandatory FT7.1b2b",
+  "next_batch": "FT7.1b2b: actual independent paid training/closure, scoped retained reuse under changed support, integrated tie-only feedback",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -44,13 +44,14 @@
     "FT6.3a",
     "FT6.3b",
     "FT7.1a",
-    "FT7.1b1"
+    "FT7.1b1",
+    "FT7.1b2a"
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT7_1b2a_Hold_Record.md",
+  "latest_record": "docs/ft/FT7_1b2a_Acceptance_Record.md",
   "automation": {
-    "enabled": false,
+    "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
   },
   "blocker": null,
@@ -99,12 +100,32 @@
     "standalone_ft9_release": false
   },
   "local_acceptance": {
-    "batch": "FT7.1b1",
+    "batch": "FT7.1b2a",
     "passed": true,
-    "frozen_commit": "0d78d7d75e4a87a344137a82a209af1f7a6ecf77",
-    "summary": "docs/ft/FT7_1b1_Comparison_Summary.json",
-    "source_publication": "verified",
-    "configuration": "Canonical SelectionEngine / workflow WorkflowFinalSelectionEngine v4; unchanged v1 retained as negative control"
+    "methods": 15,
+    "failures": 0,
+    "errors": 0,
+    "exact_methods": true,
+    "predecessor_identities": 297,
+    "scenarios": 14,
+    "restart_pairs": 4,
+    "saved_records": 22,
+    "raw_roundtrip_exact": true,
+    "decoded_independent_audits": true,
+    "source_unchanged": true,
+    "registered_freeze": true,
+    "protocol_sha256": "6f751a0634d1a4ecbf3fb599306a13ffcadf7ef3f8ca513f7b89618487ff39bf",
+    "configuration": {
+      "canonical": "SelectionEngine",
+      "workflow": "WorkflowFinalSelectionEngine v4 explicit",
+      "reserve": "load-v1",
+      "conditioning": "success-v1",
+      "defaults_changed": false
+    },
+    "parent_gate": "FT7.1b2b independent training/closure, changed-support retained reuse and later tie-only feedback remain pending",
+    "claim": "Autonomous paid peer reply and recipient support causality, no independent capability or psychology claim",
+    "frozen_commit": "8c231c7613b2c0845c6a567ffab556860824bbd9",
+    "source_publication": "verified"
   },
   "conditioning_release": {
     "policy": "success-v1",
@@ -135,7 +156,19 @@
     "default_changed": false,
     "control": "WorkflowSelectionEngine v1 unchanged"
   },
-  "pending_attempt": {
+  "prior_ft7_1b2a_hold": {
+    "kind": "two_failure_stop",
+    "batch": "FT7.1b2a",
+    "attempts": 2,
+    "first": "0 method bodies; native DetailAddress checkpoint serialization rejected",
+    "second": "15/15 exact method bodies passed; descriptive dictionary passed to unsupported native codec; saved raw/readback gate not reached",
+    "required_ruling": "Reopen FT7.1b2a for evidence-writer-only correction and unchanged full gate; no engine or inherited semantics change"
+  },
+  "standing_repair_authorization": {
+    "date": "2026-10-14",
+    "scope": "Routine repairs and retries through FT9 without renewed approval; acceptance criteria remain intact; FT7.1b2a reopened."
+  },
+  "prior_ft7_1b2a_attempt": {
     "passed": false,
     "status": "held",
     "batch": "FT7.1b2a",
@@ -165,17 +198,5 @@
       "actual_engine_run": false,
       "scope": "representative typed report schema and native raw tuple persistence only; not acceptance"
     }
-  },
-  "prior_ft7_1b2a_hold": {
-    "kind": "two_failure_stop",
-    "batch": "FT7.1b2a",
-    "attempts": 2,
-    "first": "0 method bodies; native DetailAddress checkpoint serialization rejected",
-    "second": "15/15 exact method bodies passed; descriptive dictionary passed to unsupported native codec; saved raw/readback gate not reached",
-    "required_ruling": "Reopen FT7.1b2a for evidence-writer-only correction and unchanged full gate; no engine or inherited semantics change"
-  },
-  "standing_repair_authorization": {
-    "date": "2026-10-14",
-    "scope": "Routine repairs and retries through FT9 without renewed approval; acceptance criteria remain intact; FT7.1b2a reopened."
   }
 }
