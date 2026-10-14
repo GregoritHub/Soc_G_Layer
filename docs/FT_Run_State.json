@@ -1,13 +1,13 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "held",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "3f0d9c5ba245efb862b93f88fde5435c9d1bc734",
+  "status": "running",
+  "run_id": "resume-20261014-routine-repair",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-14T22:16:41.367Z",
+  "expected_head": "259ab06c7798ae05722d9cc97d0e8a752dfeb1b1",
   "current_batch": "FT7.1b2a",
-  "next_batch": "Author reopening required for evidence-writer-only corrected frozen run, then mandatory FT7.1b2b",
+  "next_batch": "FT7.1b2a evidence-writer-only frozen retry under standing authorization, then mandatory FT7.1b2b",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -53,14 +53,7 @@
     "enabled": false,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
   },
-  "blocker": {
-    "kind": "two_failure_stop",
-    "batch": "FT7.1b2a",
-    "attempts": 2,
-    "first": "0 method bodies; native DetailAddress checkpoint serialization rejected",
-    "second": "15/15 exact method bodies passed; descriptive dictionary passed to unsupported native codec; saved raw/readback gate not reached",
-    "required_ruling": "Reopen FT7.1b2a for evidence-writer-only correction and unchanged full gate; no engine or inherited semantics change"
-  },
+  "blocker": null,
   "recovery": {
     "status": "passed",
     "inherited_methods": 751,
@@ -172,5 +165,17 @@
       "actual_engine_run": false,
       "scope": "representative typed report schema and native raw tuple persistence only; not acceptance"
     }
+  },
+  "prior_ft7_1b2a_hold": {
+    "kind": "two_failure_stop",
+    "batch": "FT7.1b2a",
+    "attempts": 2,
+    "first": "0 method bodies; native DetailAddress checkpoint serialization rejected",
+    "second": "15/15 exact method bodies passed; descriptive dictionary passed to unsupported native codec; saved raw/readback gate not reached",
+    "required_ruling": "Reopen FT7.1b2a for evidence-writer-only correction and unchanged full gate; no engine or inherited semantics change"
+  },
+  "standing_repair_authorization": {
+    "date": "2026-10-14",
+    "scope": "Routine repairs and retries through FT9 without renewed approval; acceptance criteria remain intact; FT7.1b2a reopened."
   }
 }
