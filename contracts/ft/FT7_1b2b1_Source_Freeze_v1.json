@@ -100,6 +100,7 @@
   "contracts/ft/FT7_1b2a_Protocol_v1.json": "6f751a0634d1a4ecbf3fb599306a13ffcadf7ef3f8ca513f7b89618487ff39bf",
   "contracts/ft/FT7_1b2a_Protocol_v1.sha256": "678c5a3de416792d11ea409e13ae8ef37c22e9c57919988f9134c3eb0de61047",
   "contracts/ft/FT7_1b2a_Source_Freeze_v1.json": "3d2e9bbb146d606f0b9ce40802d585f615433d1094227651455c730697560592",
+  "contracts/ft/FT7_1b2b1_Accounting_Composition_Amendment_v1.json": "1bde1db22995ef0528671d09fd44e07d5c618b530de27d4e8dd9bdd0f3a8931b",
   "contracts/ft/FT7_1b2b1_Entry_Readback_Amendment_v1.json": "da9acc7bc8a60cd4555d7327a67eba2421a3d1484b39c74ad3e6d1681822e0b1",
   "contracts/ft/FT7_1b2b1_Fixture_Identity_v2.json": "25e86c2105b58aa43f0fad49cea6d02ce80a29aad18a82c352fc5bb12b9baad7",
   "contracts/ft/FT7_1b2b1_Fixture_Identity_v3.json": "8a87c44fbcbaf2852c1796f26e5241a9f7c5a4620bc1f5763b96f9544cd11f3e",
@@ -166,7 +167,7 @@
   "full_theory/social_cycle.py": "d5c4a468a56d92bd0dcb57d126989a089aae9230d2b2b1eb126a8b63be422101",
   "full_theory/social_cycle_audit.py": "5af1a8296f4544ead73c623ab7ec4b1fd8dc06ac3610ee711f4138060d276592",
   "full_theory/social_training.py": "9d0462cabd8a542f2ade4efca53d01d11fcaaf54c0e4207f32c23417efcf9a12",
-  "full_theory/social_training_audit.py": "b426c0cc67baf646b489d2d8093301b604d4ef5fbdbddf3b681f4722d26975f5",
+  "full_theory/social_training_audit.py": "a6a218258adf3e5a0c83ff04a099f5e61c81f5b1c1b8080775c675327d8baca3",
   "full_theory/use_history.py": "1d0289f7762280c6914ee6a692c56001af684b36219d9f114584cf8b6b44ed75",
   "full_theory/use_history_audit.py": "5970a3c28a77e401cf61c60f23f3154492966c53e5ace31ad106d9818e74831e",
   "hle_unified/axes.py": "a413eb7296344e15d0ae04c45dcd4d493927e2650d7fd292110dc10a811917b7",
@@ -222,5 +223,5 @@
   "tools/evaluate_ft7_1a.py": "f6ae5272c1abda3135eb9bacb475a104bcb82b3228d3e0184cdfb1b839e8d087",
   "tools/evaluate_ft7_1b1.py": "6c25169593b0361925ae618f923043abe97dadf91867e150fd5e9c52d4e61d9c",
   "tools/evaluate_ft7_1b2a.py": "d1e8832c6b7e899cb7b5bd84020581808f0da417cd7a2aed44241b27a21d2fa5",
-  "tools/evaluate_ft7_1b2b1.py": "c8c0eeda871d30ef9b236413ac8777efb5a56d4b65d3af395c35dc4173ffbdb2"
+  "tools/evaluate_ft7_1b2b1.py": "723e843a1714dcc49011dc1b6cd0095ea37698089fb9d445f38dcc5f9bfeef23"
 }

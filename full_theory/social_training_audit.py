@@ -11,6 +11,7 @@ from hle_unified.development_values import attrs as devattrs
 from hle_unified.records import Account
 from hle_unified.self_content import decode
 from hle_unified.development_audit import audit as audit_development
+from hle_unified.workflow_selection_audit import extent as inherited_extent
 from hle_unified.selection_records import dumps,loads
 from .fulfillment_audit import _snapshot
 from .content_audit import audit_content
@@ -51,7 +52,7 @@ def audit_social_training(engine,checkpoint):
         return r
     if not d['events']:
         if d['phase']!='discover' or d['plan'] is not None or d['work'] or d['capacity'] is not None or d['index']!=0 or d['terminal'] is not None or d['start_count'] is not None:raise ValueError('forged initial training state')
-        audit_development(txs)
+        audit_development(txs,extent_check=inherited_extent,extended_flags=('c1','c2','c3','c4','c6','c7w','c7ws'))
         return dict(passed=True,independent=True,phase='discover',episodes=0,content_uses=0,paid_observations=0,independent_practices=0,native_capacity=False)
     if type(d['start_count']) is not int or not d['prefix_count']<=d['start_count']<=len(txs):raise ValueError('invalid training discovery boundary')
     for tx in txs[d['prefix_count']:d['start_count']]:
@@ -85,7 +86,7 @@ def audit_social_training(engine,checkpoint):
     for row in sorted(found,key=lambda row:dumps((row['target'],row['source']))):chosen.setdefault(row['target'].identity,row)
     expected_plan=dict(pattern=patterns[0],episodes=tuple(list(chosen.values())[:2])) if patterns and len(chosen)>=2 else None
     if d['plan']!=expected_plan:raise ValueError('owned discovery order or scope differs')
-    audit_content(txs,[work for work in d['work'] if not attrs(versions[work['operation']]).get('u8')]);development=audit_development(txs)
+    audit_content(txs,[work for work in d['work'] if not attrs(versions[work['operation']]).get('u8')]);development=audit_development(txs,extent_check=inherited_extent,extended_flags=('c1','c2','c3','c4','c6','c7w','c7ws'))
     phase='discover';index=0;offset=d['start_count'];works=[];responses=[];uses=[];practices=[];observations=[]
     for i,event in enumerate(d['events']):
         if event['index']!=i or event['before']!=offset or event['phase_before']!=phase or not offset<=event['after']<=len(txs):raise ValueError('training event order differs')
