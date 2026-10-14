@@ -5,7 +5,7 @@ No controller, selector, development policy, executor or scheduler imports.
 import json
 from hashlib import sha256
 from hle_unified import codec
-from hle_unified.compact import unseal
+from hle_unified.compact import unseal,CompactStore
 from hle_unified.material import attrs
 from hle_unified.development_values import attrs as devattrs
 from hle_unified.records import Account
@@ -37,7 +37,7 @@ def audit_social_training(engine,checkpoint):
     d=loads(checkpoint);native=engine.checkpoint();txs=tuple(engine.world.journal())
     expected={'version','native_sha256','actor','setting','scope','prefix_native','prefix_peer','prefix_count','phase','index','plan','events','work','response','observation','delivery','capacity','terminal'}
     if set(d)!=expected or d['version']!='ft-owned-social-training-v1' or d['native_sha256']!=sha256(native.encode()).hexdigest():raise ValueError('training/native pairing differs')
-    peer=loads(d['prefix_peer']);raw=json.loads(d['prefix_native']);payload=unseal(d['prefix_native'],raw['schema']);prefix=codec.loads(payload['world']).journal
+    peer=loads(d['prefix_peer']);raw=json.loads(d['prefix_native']);payload=unseal(d['prefix_native'],raw['schema']);prefix=CompactStore.restore(payload['world']).journal()
     if len(prefix)!=d['prefix_count'] or tuple(txs[:len(prefix)])!=tuple(prefix):raise ValueError('immutable social prefix differs')
     if peer['native_sha256']!=sha256(d['prefix_native'].encode()).hexdigest() or peer['phase']!='complete' or (peer['actor'],peer['setting'],peer['required'])!=(d['actor'],d['setting'],d['scope']):raise ValueError('training lacks exact social completion')
     social=loads(peer['social']);history=loads(social['history'])
@@ -49,7 +49,10 @@ def audit_social_training(engine,checkpoint):
         r=attrs(versions[ref])
         if r.get('status')!='succeeded' or not r.get('required') or r.get('spent',0)<r['required'] or r.get('completed')!=r['required']:raise ValueError('unpaid claimed training effect')
         return r
-    if not d['events']:raise ValueError('missing discovery record')
+    if not d['events']:
+        if d['phase']!='discover' or d['plan'] is not None or d['work'] or d['capacity'] is not None or d['index']!=0 or d['terminal'] is not None or len(txs)!=d['prefix_count']:raise ValueError('forged initial training state')
+        audit_development(txs)
+        return dict(passed=True,independent=True,phase='discover',episodes=0,content_uses=0,paid_observations=0,independent_practices=0,native_capacity=False)
     snapshot=_snapshot(d['events'][0]['view'])
     if snapshot.actor!=d['actor']:raise ValueError('foreign discovery snapshot')
     patterns=sorted((v.ref for v in heads.values() if v.ref.identity.namespace=='u7.pattern' and (attrs(v).get('owner'),attrs(v).get('context'),attrs(v).get('cue'))==(d['actor'],d['scope']['context'],d['scope']['cue'])),key=dumps)
@@ -68,7 +71,7 @@ def audit_social_training(engine,checkpoint):
             kinds=({'I':('intention','personal_policy'),'ITS':('model','rule')} if d['setting']=='canonical' else {'I':('intention','personal'),'ITS':('system','rule')})
             if body.get('kind') not in kinds[r['destination']]:continue
             account=versions[output].facet(Account)
-            if r.get('binding') is not None and (account is None or account.holder!=d['actor'] or account.referent!=target or not account.content or any((x.subject,x.context)!=(target,r['context']) for x in account.content)):continue
+            if r.get('binding') is not None and (account is None or account.holder!=d['actor'] or account.referent!=target or account.content!=binding.content or not account.content or any((x.subject,x.context)!=(target,r['context']) for x in account.content)):continue
             known,sources=_known(snapshot,versions,target,d['scope']['context'])
             if not sources or known.get('trigger')!=p['trigger'] or known.get('partner') is None or not any(x.source==target for x in snapshot.particulars):continue
             paid(v.ref);found.append(dict(target=target,source=output,source_operation=v.ref,destination=r['destination'],partner=known['partner']))

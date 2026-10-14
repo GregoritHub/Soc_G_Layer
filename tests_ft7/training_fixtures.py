@@ -13,7 +13,10 @@ from hle_unified.shell_records import Effect
 
 
 def training_opportunity(setting,mode='independent'):
-    e,d=opportunity(setting);install_shell_opportunities(e)
+    e,d=opportunity(setting)
+    c=AutonomousPeerCycle(e,f.ALICE,f.BOB,setting);finish(e,c,d)
+    if c.phase!='complete':raise AssertionError('social entry fixture did not complete: '+setting+'/'+mode+':'+c.phase)
+    install_shell_opportunities(e)
     pattern=e._patterns[f.dev.inject(e,Effect('approval'),key='training-pattern')]
     for i,target in enumerate((f.SAW,f.SAW2)):
         if mode!='missing-correction':f.dev.release8(e,'training-release-'+str(i),pattern,target)
@@ -26,6 +29,4 @@ def training_opportunity(setting,mode='independent'):
             observation=f.receive(e,event,f.ALICE,key+'-observation')
             request=(replace(ca.req(e,key+'-model','organize-accumulation-v1',(observation,)),target=target,evidence=f.evidence(e,f.ALICE,target)) if setting=='canonical' else wf.request(e,key+'-model','Organize','accumulation',(observation,),target=target))
             ContentBridge(e).execute(request,consumed=(observation,))
-    c=AutonomousPeerCycle(e,f.ALICE,f.BOB,setting);finish(e,c,d)
-    if c.phase!='complete':raise AssertionError('social entry fixture did not complete: '+c.phase)
     return e,c,d

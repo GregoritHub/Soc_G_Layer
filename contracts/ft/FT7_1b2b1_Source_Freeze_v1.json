@@ -100,6 +100,8 @@
   "contracts/ft/FT7_1b2a_Protocol_v1.json": "6f751a0634d1a4ecbf3fb599306a13ffcadf7ef3f8ca513f7b89618487ff39bf",
   "contracts/ft/FT7_1b2a_Protocol_v1.sha256": "678c5a3de416792d11ea409e13ae8ef37c22e9c57919988f9134c3eb0de61047",
   "contracts/ft/FT7_1b2a_Source_Freeze_v1.json": "3d2e9bbb146d606f0b9ce40802d585f615433d1094227651455c730697560592",
+  "contracts/ft/FT7_1b2b1_Entry_Readback_Amendment_v1.json": "da9acc7bc8a60cd4555d7327a67eba2421a3d1484b39c74ad3e6d1681822e0b1",
+  "contracts/ft/FT7_1b2b1_Fixture_Identity_v2.json": "25e86c2105b58aa43f0fad49cea6d02ce80a29aad18a82c352fc5bb12b9baad7",
   "contracts/ft/FT7_1b2b1_Preflight_Amendment_v1.json": "a66909fafd738686b571bb0025b194568800804c93a0518322289a2080fbcfb0",
   "contracts/ft/FT7_1b2b1_Preflight_Amendment_v1.sha256": "7b32925794599540a475c2975f85de46d73e2ba70b2a46bf137f811e51797974",
   "contracts/ft/FT7_1b2b1_Protocol_v1.json": "94ee8061d8319c3b248ac0a2b3709f6b2cf5e29a11525423ee6b928b2ed05d1d",
@@ -161,7 +163,7 @@
   "full_theory/social_cycle.py": "d5c4a468a56d92bd0dcb57d126989a089aae9230d2b2b1eb126a8b63be422101",
   "full_theory/social_cycle_audit.py": "5af1a8296f4544ead73c623ab7ec4b1fd8dc06ac3610ee711f4138060d276592",
   "full_theory/social_training.py": "9ae74d63cf07ff43a1f29d615bf466688a7b46ebb260e28f90259abec28ea06a",
-  "full_theory/social_training_audit.py": "25eafc9b92321ef72bbf5ffb1efa91e197b639fc45694e0c0592b9b751ec5924",
+  "full_theory/social_training_audit.py": "1b18267d864a0d6fd5564eb3e6d742e6e8cae87b661e6c14f302f2533136f3d7",
   "full_theory/use_history.py": "1d0289f7762280c6914ee6a692c56001af684b36219d9f114584cf8b6b44ed75",
   "full_theory/use_history_audit.py": "5970a3c28a77e401cf61c60f23f3154492966c53e5ace31ad106d9818e74831e",
   "hle_unified/axes.py": "a413eb7296344e15d0ae04c45dcd4d493927e2650d7fd292110dc10a811917b7",
@@ -210,12 +212,12 @@
   "tests_ft7/test_peer_cycle.py": "25e54d96dcb6d34f2fa76bf50627b592d6dc8f2380d66a6930f6596f7490b594",
   "tests_ft7/test_social_cycle.py": "4253d3a6a11a4aa3bbf991b841d7d6235620cfa6a96a6c86ca56788fcf898e73",
   "tests_ft7/test_social_training.py": "8ef4c66bf7db37176f7a04ee731e4e286d5717a21924632ea5f5e145d1819c28",
-  "tests_ft7/training_fixtures.py": "5dec647f834cdf03346bfc5862f7fd00ce0611732c1b4e274962fbaf91bf7df5",
+  "tests_ft7/training_fixtures.py": "24da8c079b2bafbdf35f86763eb6375074da124403afc8ec08365af0f0fefbe7",
   "tools/compare_ft7_1b1.py": "8dc4d9a99679441f40af5b70695f6f62803b1d8c12f422974ff4cfcc583ef36d",
   "tools/evaluate_ft6_3a.py": "b800fd272817e3213fad1b523817166c87fdfecefb5dbe5865fc1b89fd1a2b56",
   "tools/evaluate_ft6_3b.py": "bd85dccc4e492e2f8e6e8cbeb7ac4d4f42e7bc33edb9aac53c8d13999282ac45",
   "tools/evaluate_ft7_1a.py": "f6ae5272c1abda3135eb9bacb475a104bcb82b3228d3e0184cdfb1b839e8d087",
   "tools/evaluate_ft7_1b1.py": "6c25169593b0361925ae618f923043abe97dadf91867e150fd5e9c52d4e61d9c",
   "tools/evaluate_ft7_1b2a.py": "d1e8832c6b7e899cb7b5bd84020581808f0da417cd7a2aed44241b27a21d2fa5",
-  "tools/evaluate_ft7_1b2b1.py": "3c645247b47e2e1164bf860428e18625f1be06bbf88656358eb8439f1dbf1e74"
+  "tools/evaluate_ft7_1b2b1.py": "18b205d0e709a1cd64dd0cc2b01c00317ea3c60fc2624aa3a3460628ab5a37d2"
 }
