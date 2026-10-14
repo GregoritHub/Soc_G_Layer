@@ -8,7 +8,7 @@ def digest(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 
 def freeze():
     previous=json.loads((ROOT/'contracts/ft/FT7_1b1_Comparison_Source_Freeze_v1.json').read_text())
-    names=set(previous)|{'contracts/ft/FT7_1b1_Comparison_Source_Freeze_v1.json','contracts/ft/FT7_1b2a_Protocol_v1.json','contracts/ft/FT7_1b2a_Protocol_v1.sha256','full_theory/peer_cycle.py','full_theory/peer_cycle_audit.py','tests_ft7/peer_fixtures.py','tests_ft7/test_peer_cycle.py','tools/evaluate_ft7_1b2a.py','hle_unified/workflow_selection_execution.py','hle_unified/crossing_records.py','hle_unified/workflow_records.py'}
+    names=set(previous)|{'contracts/ft/FT7_1b2a_Checkpoint_Amendment_v1.json','contracts/ft/FT7_1b2a_Checkpoint_Amendment_v1.sha256','contracts/ft/FT7_1b1_Comparison_Source_Freeze_v1.json','contracts/ft/FT7_1b2a_Protocol_v1.json','contracts/ft/FT7_1b2a_Protocol_v1.sha256','full_theory/peer_cycle.py','full_theory/peer_cycle_audit.py','tests_ft7/peer_fixtures.py','tests_ft7/test_peer_cycle.py','tools/evaluate_ft7_1b2a.py','hle_unified/workflow_selection_execution.py','hle_unified/crossing_records.py','hle_unified/workflow_records.py'}
     return {n:digest(ROOT/n) for n in sorted(names)}
 
 def main(out):

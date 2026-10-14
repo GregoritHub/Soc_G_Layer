@@ -5,6 +5,7 @@ from hle_unified.selection_records import dumps,loads,fields_of
 from hle_unified.crossing_records import CrossingRequest
 from hle_unified.workflow_records import WorkflowRequest
 from hle_unified.self_content import decode
+from hle_unified.particulars import DetailAddress
 from .packet_channel import PacketChannel
 from .content import ContentBridge
 from .social_cycle import SocialSupportCycle
@@ -116,7 +117,7 @@ class AutonomousPeerCycle:
 
     def checkpoint(self,engine):
         if engine is not self.channel.bridge.engine:raise ValueError('paired native owner required')
-        return dumps(dict(version=self.VERSION,native_sha256=sha256(engine.checkpoint().encode()).hexdigest(),actor=self.actor,peer=self.peer,setting=self.setting,phase=self.phase,turn=self.turn,required=self.required,offer=self.offer,sender_view=self.sender_view,peer_view=self.peer_view,request=None if self.request is None else fields_of(self.request),reply=self.reply,channel=self.channel.checkpoint(),production=deepcopy(self.production.events),social=None if self.social is None else self.social.checkpoint(engine),events=deepcopy(self.events),terminal=deepcopy(self.terminal)))
+        return dumps(dict(version=self.VERSION,native_sha256=sha256(engine.checkpoint().encode()).hexdigest(),actor=self.actor,peer=self.peer,setting=self.setting,phase=self.phase,turn=self.turn,required=self.required,offer=self.offer,sender_view=self.sender_view,peer_view=self.peer_view,request=None if self.request is None else dict(fields_of(self.request),evidence=tuple((a.delivery,a.key) for a in self.request.evidence)),reply=self.reply,channel=self.channel.checkpoint(),production=deepcopy(self.production.events),social=None if self.social is None else self.social.checkpoint(engine),events=deepcopy(self.events),terminal=deepcopy(self.terminal)))
 
     @classmethod
     def restore(cls,text,engine):
@@ -125,7 +126,7 @@ class AutonomousPeerCycle:
         for name in ('phase','turn','required','offer','sender_view','peer_view','reply','events','terminal'):setattr(obj,name,deepcopy(d[name]))
         if d['request'] is not None:
             typ=CrossingRequest if d['setting']=='canonical' else WorkflowRequest
-            obj.request=typ(**d['request'])
+            fields=deepcopy(d['request']);fields['evidence']=tuple(DetailAddress(*a) for a in fields['evidence']);obj.request=typ(**fields)
         obj.channel=PacketChannel.restore(d['channel'],engine);obj.production.events=deepcopy(d['production'])
         if d['social'] is not None:obj.social=SocialSupportCycle.restore(d['social'],engine)
         if obj.checkpoint(engine)!=text:raise ValueError('peer restoration differs')

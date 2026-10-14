@@ -70,7 +70,7 @@ def audit_peer_cycle(engine,checkpoint):
             if account is None or account.holder!=d['peer'] or account.content!=b.content or raw.get('actor')!=d['peer'] or raw.get('input.0')!=b.ref:raise ValueError('peer stance ownership differs')
             if decode(b.content[0].object).get('kind')==('intention' if d['setting']=='canonical' else 'stance'):own.append(b.ref)
         if not own:raise ValueError('peer request lacks independent own stance')
-        stance=min(own,key=dumps);evidence=tuple(p.address for p in s.particulars if p.source==required['target'])
+        stance=min(own,key=dumps);evidence=tuple((p.address.delivery,p.address.key) for p in s.particulars if p.source==required['target'])
         expected=dict(key='ft-peer-reply:'+sha256(dumps((d['peer'],offer['output'],stance)).encode()).hexdigest(),actor=d['peer'],recipe='reply-v1' if d['setting']=='canonical' else 'workflow-reply-v1',context=required['context'],cue=required['cue'],inputs=(offer['output'],stance),evidence=evidence,target=required['target'],stock=None,peer=d['actor'],group=body['group'],elements=())
         if d['setting']=='canonical':expected['demand']=4
         else:expected.update(relation=None,completed=(),clock=0)
