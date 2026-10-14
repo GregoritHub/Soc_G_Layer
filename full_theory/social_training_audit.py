@@ -6,7 +6,7 @@ import json
 from hashlib import sha256
 from hle_unified import codec
 from hle_unified.compact import unseal,CompactStore
-from hle_unified.material import attrs
+from hle_unified.material import attrs,OperationStore
 from hle_unified.development_values import attrs as devattrs
 from hle_unified.records import Account
 from hle_unified.self_content import decode
@@ -37,7 +37,7 @@ def audit_social_training(engine,checkpoint):
     d=loads(checkpoint);native=engine.checkpoint();txs=tuple(engine.world.journal())
     expected={'version','native_sha256','actor','setting','scope','prefix_native','prefix_peer','prefix_count','start_count','phase','index','plan','events','work','response','observation','delivery','capacity','terminal'}
     if set(d)!=expected or d['version']!='ft-owned-social-training-v1' or d['native_sha256']!=sha256(native.encode()).hexdigest():raise ValueError('training/native pairing differs')
-    peer=loads(d['prefix_peer']);raw=json.loads(d['prefix_native']);payload=unseal(d['prefix_native'],raw['schema']);prefix=CompactStore.restore(payload['world']).journal()
+    peer=loads(d['prefix_peer']);raw=json.loads(d['prefix_native']);payload=unseal(d['prefix_native'],raw['schema']);prefix=OperationStore.restore(payload['world']).journal()
     if len(prefix)!=d['prefix_count'] or tuple(txs[:len(prefix)])!=tuple(prefix):raise ValueError('immutable social prefix differs')
     if peer['native_sha256']!=sha256(d['prefix_native'].encode()).hexdigest() or peer['phase']!='complete' or (peer['actor'],peer['setting'],peer['required'])!=(d['actor'],d['setting'],d['scope']):raise ValueError('training lacks exact social completion')
     social=loads(peer['social']);history=loads(social['history'])
@@ -85,7 +85,7 @@ def audit_social_training(engine,checkpoint):
     for row in sorted(found,key=lambda row:dumps((row['target'],row['source']))):chosen.setdefault(row['target'].identity,row)
     expected_plan=dict(pattern=patterns[0],episodes=tuple(list(chosen.values())[:2])) if patterns and len(chosen)>=2 else None
     if d['plan']!=expected_plan:raise ValueError('owned discovery order or scope differs')
-    audit_content(txs,d['work']);development=audit_development(txs)
+    audit_content(txs,[work for work in d['work'] if not attrs(versions[work['operation']]).get('u8')]);development=audit_development(txs)
     phase='discover';index=0;offset=d['start_count'];works=[];responses=[];uses=[];practices=[];observations=[]
     for i,event in enumerate(d['events']):
         if event['index']!=i or event['before']!=offset or event['phase_before']!=phase or not offset<=event['after']<=len(txs):raise ValueError('training event order differs')

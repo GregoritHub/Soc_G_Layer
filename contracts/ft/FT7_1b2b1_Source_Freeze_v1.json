@@ -104,6 +104,7 @@
   "contracts/ft/FT7_1b2b1_Fixture_Identity_v2.json": "25e86c2105b58aa43f0fad49cea6d02ce80a29aad18a82c352fc5bb12b9baad7",
   "contracts/ft/FT7_1b2b1_Fixture_Identity_v3.json": "8a87c44fbcbaf2852c1796f26e5241a9f7c5a4620bc1f5763b96f9544cd11f3e",
   "contracts/ft/FT7_1b2b1_Immutable_Entry_Amendment_v1.json": "c0cfe46c56b92b39dea5bff8e2d3e6bca5c296f27644cbbf4a6479818e96cf10",
+  "contracts/ft/FT7_1b2b1_Native_Readers_Amendment_v1.json": "846dd2bcd50051fb4d8c7cfe4cd1f11235da5de70e3114de8b731cc0b6d031fe",
   "contracts/ft/FT7_1b2b1_Preflight_Amendment_v1.json": "a66909fafd738686b571bb0025b194568800804c93a0518322289a2080fbcfb0",
   "contracts/ft/FT7_1b2b1_Preflight_Amendment_v1.sha256": "7b32925794599540a475c2975f85de46d73e2ba70b2a46bf137f811e51797974",
   "contracts/ft/FT7_1b2b1_Protocol_v1.json": "94ee8061d8319c3b248ac0a2b3709f6b2cf5e29a11525423ee6b928b2ed05d1d",
@@ -165,7 +166,7 @@
   "full_theory/social_cycle.py": "d5c4a468a56d92bd0dcb57d126989a089aae9230d2b2b1eb126a8b63be422101",
   "full_theory/social_cycle_audit.py": "5af1a8296f4544ead73c623ab7ec4b1fd8dc06ac3610ee711f4138060d276592",
   "full_theory/social_training.py": "9d0462cabd8a542f2ade4efca53d01d11fcaaf54c0e4207f32c23417efcf9a12",
-  "full_theory/social_training_audit.py": "331f71b6e0d020957214e52c7e12b4f9cd2a853a279b8df009ee4093aa45236e",
+  "full_theory/social_training_audit.py": "b426c0cc67baf646b489d2d8093301b604d4ef5fbdbddf3b681f4722d26975f5",
   "full_theory/use_history.py": "1d0289f7762280c6914ee6a692c56001af684b36219d9f114584cf8b6b44ed75",
   "full_theory/use_history_audit.py": "5970a3c28a77e401cf61c60f23f3154492966c53e5ace31ad106d9818e74831e",
   "hle_unified/axes.py": "a413eb7296344e15d0ae04c45dcd4d493927e2650d7fd292110dc10a811917b7",
@@ -221,5 +222,5 @@
   "tools/evaluate_ft7_1a.py": "f6ae5272c1abda3135eb9bacb475a104bcb82b3228d3e0184cdfb1b839e8d087",
   "tools/evaluate_ft7_1b1.py": "6c25169593b0361925ae618f923043abe97dadf91867e150fd5e9c52d4e61d9c",
   "tools/evaluate_ft7_1b2a.py": "d1e8832c6b7e899cb7b5bd84020581808f0da417cd7a2aed44241b27a21d2fa5",
-  "tools/evaluate_ft7_1b2b1.py": "18f164b6e7427b31ed9a70360b28c06fca6ef801d18856adaed89c2759552676"
+  "tools/evaluate_ft7_1b2b1.py": "c8c0eeda871d30ef9b236413ac8777efb5a56d4b65d3af395c35dc4173ffbdb2"
 }
