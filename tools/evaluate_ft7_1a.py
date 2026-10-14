@@ -17,6 +17,8 @@ def freeze():
     names=list(accepted)+["contracts/ft/FT6_3b_Source_Freeze_v1.json",
         "contracts/ft/FT_Selected_Engineering_Policies_v1.json",
         "contracts/ft/FT7_1a_Protocol_v1.json","contracts/ft/FT7_1a_Protocol_v1.sha256",
+        "contracts/ft/FT7_1a_Authority_Audit_Amendment_v1.json",
+        "contracts/ft/FT7_1a_Authority_Audit_Amendment_v1.sha256",
         "full_theory/packet_channel.py","full_theory/packet_channel_audit.py",
         "tests_ft7/test_packet_channel.py","tools/evaluate_ft7_1a.py"]
     return {name:digest(ROOT/name) for name in sorted(names)}
@@ -33,6 +35,8 @@ def main(out):
     if before!=registered:raise ValueError("registered FT7.1a freeze differs")
     p=ROOT/"contracts/ft/FT7_1a_Protocol_v1.json";protocol=json.loads(p.read_text())
     if digest(p)!=p.with_suffix('.sha256').read_text().split()[0]:raise ValueError("protocol hash differs")
+    amendment=ROOT/"contracts/ft/FT7_1a_Authority_Audit_Amendment_v1.json"
+    if digest(amendment)!=amendment.with_suffix('.sha256').read_text().split()[0]:raise ValueError("authority amendment hash differs")
     suite=unittest.defaultTestLoader.loadTestsFromName("tests_ft7.test_packet_channel")
     actual=sorted(ids(suite));expected=sorted("tests_ft7.test_packet_channel.PacketChannelTests."+m for m in protocol["registered_tests"])
     (out/"method_ids.json").write_text(json.dumps(actual,indent=2)+'\n')
@@ -61,6 +65,7 @@ def main(out):
         partial_restarts=2,queue_permutations=1,saved_records=len(audits),decoded_independent_audit=all(a['passed'] for a in audits.values()),
         raw_roundtrip_exact=roundtrip,source_unchanged=before==freeze(),registered_freeze=before==registered,
         protocol_sha256=digest(p),selected_conditioning_policy='success-v1',parent_ft7_1='pending FT7.1b',
+        authority_amendment_sha256=digest(amendment),private_recipient_forgery_rejected=True,
         scope='Paid transport only; no autonomous social coupling or subtype assignment')
     (out/"summary.json").write_text(json.dumps(summary,indent=2)+'\n')
     (out/"evidence_hashes.json").write_text(json.dumps({p.name:digest(p) for p in sorted(out.iterdir()) if p.is_file()},indent=2)+'\n')

@@ -6,6 +6,8 @@ from hashlib import sha256
 from hle import model_a
 from hle.relations import landing_position
 from hle_unified.material import attrs
+from hle_unified.records import Occurrence
+from hle_unified.self_content import decode
 from hle_unified.selection_records import loads
 from .content_audit import audit_content
 
@@ -47,6 +49,20 @@ def audit_packet_channel(transactions, checkpoint, native_checkpoint):
             p = event["packet"]; key=p["key"]; sender=p["sender"]; receiver=p["receiver"]
             if key in queue or len(queue) >= 8 or sender not in participants or receiver not in participants:
                 raise ValueError("emission domain differs")
+            source=versions.get(p["output"])
+            if source is None:
+                raise ValueError("exact raw packet output missing")
+            if source.occurrence==Occurrence.ACTUAL_EVENT:
+                parties=tuple(v for k,v in attrs(source).items() if k.startswith("participant."))
+                if receiver not in parties:
+                    raise ValueError("raw event excludes packet recipient")
+            elif p["output"].identity.namespace in ("c2.message","c3.message","c4.message","c7w.message"):
+                body=decode(attrs(source)["payload"])
+                parties=body.get("participants",()) or (body.get("speaker"),body.get("receiver"))
+                if receiver not in parties:
+                    raise ValueError("raw public payload excludes packet recipient")
+            elif receiver!=sender:
+                raise ValueError("private own realization cannot cross owners")
             expected = dict(key=key,due=turn+1,sender=sender,receiver=receiver,sender_sequence=sequence[sender],status="queued")
             if event["queue"] != expected:
                 raise ValueError("emission schedule differs")

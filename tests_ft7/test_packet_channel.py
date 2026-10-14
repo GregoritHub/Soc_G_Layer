@@ -4,6 +4,8 @@ import json
 import unittest
 
 from hle_unified.selection_records import dumps, loads
+from hle import model_a
+from hle.relations import landing_position
 from tests_c3 import fixtures as ca
 from tests_c7_workflow import fixtures as wf
 from full_theory.packet_channel import PacketChannel
@@ -121,6 +123,16 @@ class PacketChannelTests(unittest.TestCase):
         with self.assertRaises(ValueError):channel.emit("wrong",ca.ALICE,"public",ca.EVE,self.bases["canonical"][2])
         private=ca.cell(e,"Understand","accumulation",key="private",consumer=False)["result"]
         with self.assertRaises(ValueError):channel.emit("private",ca.ALICE,"private",ca.BOB,private)
+        channel.emit("private-self",ca.ALICE,"private",ca.ALICE,private)
+        d=loads(channel.checkpoint())
+        d["queue"][0]["receiver"]=ca.BOB
+        d["events"][0]["queue"]["receiver"]=ca.BOB
+        for packet in (d["events"][0]["packet"],d["bridge"]["packets"]["private-self"],d["bridge"]["events"][0]["packet"]):
+            packet["receiver"]=ca.BOB
+        d["events"][0]["receiver_seat"]=model_a.position_of(channel.bridge.tim(ca.BOB),d["events"][0]["packet"]["aspect"])
+        d["events"][0]["relation_landing"]=landing_position(channel.bridge.tim(ca.ALICE),d["events"][0]["sender_seat"],channel.bridge.tim(ca.BOB))
+        with self.assertRaisesRegex(ValueError,"private own realization"):
+            audit_packet_channel(tuple(e.world.journal()),dumps(d),e.checkpoint())
 
     def test_next_turn_delivery_and_stable_queue_order(self):
         e,channel=self.channel("canonical");public=self.bases["canonical"][2]

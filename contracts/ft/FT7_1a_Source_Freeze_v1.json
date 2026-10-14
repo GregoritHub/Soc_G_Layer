@@ -82,6 +82,8 @@
   "contracts/ft/FT6_3b_Protocol_v1.json": "858350d3da6f062b64dc1e2ff598d2b7ef8f676d8744bcddd6a09e53b4819b72",
   "contracts/ft/FT6_3b_Protocol_v1.sha256": "cecacffef028c4fbea006eb93aafee7dd02d3893cfa90c716fd505fa8ef5b2d0",
   "contracts/ft/FT6_3b_Source_Freeze_v1.json": "75ff8a064813b7b33f590feaa6962391bf9df95ee4852017593e470bcd6c1ec1",
+  "contracts/ft/FT7_1a_Authority_Audit_Amendment_v1.json": "8e40580cbca4d3d6381fae401a33e83cba7d88eac3588b9a2c0f54449dc69424",
+  "contracts/ft/FT7_1a_Authority_Audit_Amendment_v1.sha256": "80d6df3d7e219b195ea8e7521ff80b1c81658f02d8550523badd87ae6500aba7",
   "contracts/ft/FT7_1a_Protocol_v1.json": "be320a89cd8d5dbadd31471fdeb82496a4ddce4e9319d9332b0d75d5ba43ba56",
   "contracts/ft/FT7_1a_Protocol_v1.sha256": "3058fa59f6d333cf5e37e4c12123f1b52b1157778c2a65c49771f934a31e3e60",
   "contracts/ft/FT_Selected_Engineering_Policies_v1.json": "7d236db4b0c6d29c8c423d38a7096e3c7f0f3d1edbdb9a87f21790e33c9b2002",
@@ -115,7 +117,7 @@
   "full_theory/orientation.py": "0e971c6997dde4b92a168d3cca06d0c9db9f701f3f904ae9a3973cb87302b509",
   "full_theory/orientation_audit.py": "da30c69c77c46d4fb587def271697377d6a2467a9b64e8dd82c429457b8e3580",
   "full_theory/packet_channel.py": "f67ab2a95bb7861c2990cfa9be97191a3de884e533045721addca1490c678c2f",
-  "full_theory/packet_channel_audit.py": "aedcc1e23f504ace693d0d2f3a05fe36ebea203fb6f0344ae21dedebe410af9b",
+  "full_theory/packet_channel_audit.py": "d67a1fcb19a438f13f1c7822dac18fcca1e7f87a454e1332683a759b5e9024f8",
   "full_theory/request_audit.py": "f488723851535e59524f82e45678b50829fb410c30de05329c362c065f63f29b",
   "full_theory/reserve.py": "aba132cd98b4e6b587b51778d4ec7b569437ace86d56de69171b65c0e9c02fe5",
   "full_theory/reserve_audit.py": "8d7ce284a0d0bc392cfe875d690b66e2e2ec0463bf770733802b6b153de35b38",
@@ -164,8 +166,8 @@
   "tests_ft6/test_conditioning_grid.py": "411934e2b1fdc475f73848db822613d491d334cc55979b079088fa92d4561fd2",
   "tests_ft6/test_conditioning_release.py": "f4f09fcaa9096de7704f3be650d566aca5f7c89b3c231c01a0fbb35057667feb",
   "tests_ft6/test_use_history.py": "2b1672c987e0c3af63a5b7a33b68c9588605bb483d2ca71a82441eb3e6ba82c4",
-  "tests_ft7/test_packet_channel.py": "4a31415a98341668d5a0e9cd396763a22d7731291fb1cc8dcbb76c1a6c0c0082",
+  "tests_ft7/test_packet_channel.py": "28d4c091c4e50371f6a9772ec973fa2d3f218513353f48312eaface78a8acd32",
   "tools/evaluate_ft6_3a.py": "b800fd272817e3213fad1b523817166c87fdfecefb5dbe5865fc1b89fd1a2b56",
   "tools/evaluate_ft6_3b.py": "bd85dccc4e492e2f8e6e8cbeb7ac4d4f42e7bc33edb9aac53c8d13999282ac45",
-  "tools/evaluate_ft7_1a.py": "7a0c652c1b40fe82db4665c97233712bbfad11c3d04efdbbd3ef8c966c03220e"
+  "tools/evaluate_ft7_1a.py": "f6ae5272c1abda3135eb9bacb475a104bcb82b3228d3e0184cdfb1b839e8d087"
 }
