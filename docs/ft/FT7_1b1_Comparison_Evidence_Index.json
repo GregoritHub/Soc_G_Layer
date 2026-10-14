@@ -1,0 +1,28 @@
+{
+  "batch": "FT7.1b1",
+  "status": "accepted explicit all-cell configuration",
+  "archive_name": "FT7_1b1_Policy_Comparison_Evidence_20261014.zip",
+  "archive_sha256": "d60370f43eea24b4e59e37200bf6d7b16510df0d971df9e078e03df875eb2570",
+  "archive_bytes": 7186719,
+  "members": {
+    "comparison/all-cell-controls.log": "9954f342bb0096414b646d6d4a618e56686efa0decc912619e1c4b597bb225a1",
+    "comparison/all-cell-result.json": "3e1b58b0b5f34b78219b462162075add6e043e3bfda0241f22023af3c895b0db",
+    "comparison/decoded_audits.json": "f32a5dae6ff052a31ffa5438c2deee1e6581cafce1ad3a466da5c37383fc2ac4",
+    "comparison/evidence_hashes.json": "b59abab51a48a1680aeac9f762b318623eefef94cbc0a1c72d1f3383a386698d",
+    "comparison/raw_policy_comparison.json": "24b69ddbd9b49e4b88ed2ab937df7be43a6e22dbd42464824f8be54d0d3ebb8c",
+    "comparison/restart_reports.json": "8ed15bb19ed85043be5558d2f60a9a3302ce32a47f3ea40695c1137a86a5bf2d",
+    "comparison/scenario_reports.json": "63dd0247441b78dd2c6bf5e1dd4dc527f3b60daa8962d1dd5ee3a451ccf25f28",
+    "comparison/self-only-controls.log": "eb14031534032b841c5c8e05928d9c5f61ecbac33be6d2f1ea1a82f11d45096d",
+    "comparison/self-only-result.json": "a3e14352d763d24cc9378d5f37aefec3eba8551bae6b2707b85d29fc05f96555",
+    "comparison/source_freeze.json": "81797411a4ccb8988fc52e0a5f9007541484d46ebb2b79cad2c4a69e8123bb85",
+    "comparison/summary.json": "dafc8ead0dc5ca1d17079dc23071197c4882340c9b3a6cce1672b6ae069ade63",
+    "checkpoint/tools/compare_ft7_1b1.py": "8dc4d9a99679441f40af5b70695f6f62803b1d8c12f422974ff4cfcc583ef36d",
+    "checkpoint/contracts/ft/FT7_1b1_Comparison_Protocol_v1.json": "8f5ed3d64617dd099d22fc77feacea2db7d76014fee8fb4a57981849d4c8d8fb",
+    "checkpoint/contracts/ft/FT7_1b1_Comparison_Protocol_v1.sha256": "5965c8d68a7d4076c3bc8d447f1f646ffdf943028022641e7e7b2f46794fdda7",
+    "checkpoint/contracts/ft/FT7_1b1_Comparison_Source_Freeze_v1.json": "81797411a4ccb8988fc52e0a5f9007541484d46ebb2b79cad2c4a69e8123bb85",
+    "checkpoint/docs/ft/FT7_1b1_Comparison_Summary.json": "dafc8ead0dc5ca1d17079dc23071197c4882340c9b3a6cce1672b6ae069ade63",
+    "checkpoint/docs/ft/FT7_1b1_Comparison_Record.md": "e89e9d3c55620f218aa6cb797a988bb4c066b24613986b073e52b0b64cf9ef68",
+    "comparison/consumer_key_readback.json": "f9df0ff303dae30c873080e98296a2267e10494443d95b855364e9ee5dbb8bb7"
+  },
+  "retrieval": "Retrieve exact private filename; verify archive digest and SHA256.json. Comparison evaluator requires attempt2/raw_paid_social_evidence.json from FT7_1b1_Held_Evidence_20261014.zip; prior held archive remains unchanged. No private retrieval identifiers are published."
+}
