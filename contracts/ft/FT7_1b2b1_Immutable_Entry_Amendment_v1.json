@@ -1,0 +1,9 @@
+{
+  "version": "ft7.1b2b1-immutable-entry-amendment-v1",
+  "attempt": 4,
+  "failed_freeze": "547ac377eb7aab969b88a4d469e0af1a36747bd1",
+  "observed": "0 bodies; accepted reserve audit correctly rejected regenerating social wrapper after paid training preparation changed native state",
+  "cause": "A social completion checkpoint is bound to its exact native state. Later fixture preparation cannot be appended and then represented as the original completion.",
+  "repair": "Construct training controller immediately at exact social completion; preserve immutable native/peer entry then add independent owned opportunities before first discovery. Record start_count inferred from actual journal at first step. Independently audit immutable social prefix and all current paid preparation before discovery; initial checkpoint may contain preparation but no supplied response/practice/capacity. No accepted auditor changes.",
+  "unchanged": "All 14 methods, 18 saved-record domain, native semantics, costs, control differences and parent gates."
+}
