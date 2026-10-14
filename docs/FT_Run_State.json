@@ -1,13 +1,13 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "held",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "e1b17f08d4bea2618b7118eedc4ba226050a1876",
+  "status": "reopened",
+  "run_id": "ft71b1-comparison-20261014",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-14T08:00:41.642Z",
+  "expected_head": "b8bed1da304ce16c7f35c96b7d1295e11e0a0766",
   "current_batch": "FT7.1b1",
-  "next_batch": "Held after first and corrected gates failed; no further attempt until author rules to reopen. Proposed: prospective existing all-cell workflow policy comparison with unchanged v1 control.",
+  "next_batch": "FT7.1b1 prospectively registered existing all-cell versus unchanged self-only comparison",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -52,7 +52,7 @@
     "enabled": false,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
   },
-  "blocker": "Two failed FT7.1b1 gates: canonical paid support completes; workflow support admission now succeeds but preserved v1 self-only native selector omits the required social crossing and defers without movement/later-use output.",
+  "blocker": null,
   "recovery": {
     "status": "passed",
     "inherited_methods": 751,
@@ -117,5 +117,11 @@
     "errors_each": 3,
     "evidence_index": "docs/ft/FT7_1b1_Held_Evidence_Index.json",
     "required_ruling": "Reopen for prospectively registered existing all-cell workflow comparison, or retain v1 and hold full workflow/parent release claim"
+  },
+  "reopening": {
+    "authorization": "Reopen FT7.1b1 to compare the existing all-cell workflow engine against the unchanged self-only control.",
+    "date": "2026-10-14",
+    "prior_hold_retained": true,
+    "scope": "Matched comparison; no inherited engine, self-only control, authority, payment or release gate changes."
   }
 }
