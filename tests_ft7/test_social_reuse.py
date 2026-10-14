@@ -6,6 +6,7 @@ from hle_unified.selection_records import dumps,loads
 from hle_unified.material import attrs
 from hle_unified.self_content import encode
 from hle_unified.operation_records import OperationRequest
+from hle_unified.cognitive_records import reference
 from tests_c5 import fixtures as f
 from tests_c3 import fixtures as ca
 from tests_c7_workflow import fixtures as wf
@@ -38,18 +39,27 @@ def later(e,c,mode='live'):
     for b in heads.values():
         if b.endorsement.value not in ('retracted','disputed'):withdraw(e,b.ref)
     target=f.BORROWED if c.setting=='canonical' else wf.DEVICE
-    cue=f.CUE if mode=='wrong-cue' else c.requalification_demand.cue
+    cue=reference('minor:Wand:10') if mode=='wrong-cue' else c.requalification_demand.cue
+    if mode=='wrong-cue':f.show(e,c.actor,cue,key='later-alternate-cue')
     f.dev.supply8(e,'later-changed-partner',target=target,partner=f.ObjectRef(f.EVE,1))
     if c.setting=='canonical':
         event=f.perform(e,OperationRequest('later-model-inspect',c.actor,'inspect',f.ROOM,target=ca.SUPPLY,evidence=f.evidence(e,c.actor,ca.SUPPLY)),limit=100000)
         observation=f.receive(e,event,c.actor,'later-model-observation')
         r=replace(ca.req(e,'later-model','organize-accumulation-v1',(observation,)),target=target,cue=cue,evidence=f.evidence(e,c.actor,target))
-        ContentBridge(e).execute(r,consumed=(observation,))
+        model=ContentBridge(e).execute(r,consumed=(observation,))['output']
+        if mode!='insufficient-dimension':
+            use=replace(ca.req(e,'later-model-use','use-system-v1',(model,)),target=target,cue=cue,evidence=f.evidence(e,c.actor,target))
+            ContentBridge(e).execute(use,consumed=(model,))
         ca.seed(e,'later-owned-intention',encode(dict(kind='intention',cap=2,consent=True)),target=target,cue=cue,relation='c3.data')
         body=dict(kind='need',weights=(10,0,0,0),commit=False,scope='quantity',amount=4,collective=False)
         relation='c6.need'
     else:
-        rows=wf.data(e,next(b.ref for b in e.participant_view(c.actor).snapshot.bindings if len(b.content)==1 and b.content[0].relation=='c7w.data' and b.target==target and wf.data(e,b.ref).get('kind')=='system'))['tasks']
+        event=f.perform(e,OperationRequest('later-model-inspect',c.actor,'inspect',f.ROOM,target=target,evidence=f.evidence(e,c.actor,target)),limit=100000)
+        observation=f.receive(e,event,c.actor,'later-model-observation')
+        model=ContentBridge(e).execute(wf.request(e,'later-model','Organize','accumulation',(observation,),target=target),consumed=(observation,))['output']
+        rows=wf.data(e,model)['tasks']
+        if mode!='insufficient-dimension':
+            ContentBridge(e).execute(wf.request(e,'later-model-use','use-system',None,(model,),target=target),consumed=(model,))
         own=wf.authored(e,'later-owned-intention',rows,target=target,kind='stance')
         if mode=='wrong-cue':
             ca.seed(e,'later-wrong-cue-content',encode(dict(kind='stance',tasks=rows,consent=True,hypothetical=False)),target=target,cue=cue,relation='c7w.data')
@@ -72,7 +82,7 @@ class SocialReuseTests(unittest.TestCase):
         for setting in ('canonical','workflow'):
             e,c=prepare(setting);cls.bases[setting]=(type(e),e.checkpoint(),c.checkpoint(e))
             typ,native,wrapper=cls.bases[setting]
-            for mode in ('live','revoked','harder','wrong-cue','partial-movement'):
+            for mode in ('live','revoked','harder','wrong-cue','partial-movement','insufficient-dimension'):
                 e=typ.restore(native);c=SocialReuseController.restore(wrapper,e);d=later(e,c,mode)
                 if mode=='partial-movement':
                     c.step(e,state('eii'),d,work_limit=1000000)
@@ -104,7 +114,7 @@ class SocialReuseTests(unittest.TestCase):
                 cls.restarts[setting+'/'+split]=(e,c,other,restored,pn,pw)
 
     def test_exact_panel(self):
-        self.assertEqual(set(self.witnesses),{s+'/'+m for s in ('canonical','workflow') for m in ('live','revoked','harder','wrong-cue','partial-movement')})
+        self.assertEqual(set(self.witnesses),{s+'/'+m for s in ('canonical','workflow') for m in ('live','revoked','harder','wrong-cue','partial-movement','insufficient-dimension')})
         self.assertEqual(len(self.restarts),4)
 
     def test_unsupported_requalification_has_two_fresh_exposures(self):
@@ -163,6 +173,14 @@ class SocialReuseTests(unittest.TestCase):
             e,c,d=self.witnesses[s+'/partial-movement'];self.assertNotEqual(c.phase,'complete');self.assertIsNone(c.terminal)
         for e,c,other,restored,_,_ in self.restarts.values():
             self.assertEqual(c.phase,'complete');self.assertEqual(e.checkpoint(),other.checkpoint());self.assertEqual(c.checkpoint(e),restored.checkpoint(other))
+
+    def test_insufficient_dimensionality_does_not_gain_retained_access(self):
+        for s in ('canonical','workflow'):
+            e,c,d=self.witnesses[s+'/insufficient-dimension']
+            self.assertEqual(d.requirements,('experience','norms','situation','time'))
+            option=next(x for x in c.route_policy.attempts[0]['options'] if x['name']=='retained')
+            self.assertFalse(option['eligible']);self.assertEqual(option['reason'],'current_dimensionality_insufficient')
+            self.assertNotEqual(c.route_policy.attempts[0]['selected']['name'],'retained')
 
     def test_forged_certificate_prefix_and_settlement_rejected(self):
         for s in ('canonical','workflow'):

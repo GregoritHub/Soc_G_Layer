@@ -117,6 +117,8 @@
   "contracts/ft/FT7_1b2b2a_Protocol_v1.json": "fe343b03c205c2214f223f9f068d01dfebe872ee47d4fb011fcf824e7eb8bcf5",
   "contracts/ft/FT7_1b2b2a_Protocol_v1.sha256": "735890b750d705eda7d05a9f32961254914c2349046dbc504d04bdd45e404884",
   "contracts/ft/FT7_1b2b2a_Source_Freeze_v1.json": "9122c47177771db194fe2c2660c893e53fa77eb1f9f7cec569c30721591c3d63",
+  "contracts/ft/FT7_1b2b2b_Cue_Amendment_v1.json": "06d28235d70541db1591e069df48f87a17e0e5c23801477dfedb841a06f97dc1",
+  "contracts/ft/FT7_1b2b2b_Dimensionality_Amendment_v1.json": "3a619656574f1ebdab34b226103e5fcfe0a7b78b7cab220d62cd662970006cf9",
   "contracts/ft/FT7_1b2b2b_Novel_Target_Amendment_v1.json": "5424eb0ded4828720e0e019c4a88ed3e945510e9c22ba61f075df13e789d34cf",
   "contracts/ft/FT7_1b2b2b_Protocol_v1.json": "2da7f69807e3a297291c9aa8035598584e69fcbdb3aadb3f5d525af0870f8bc1",
   "contracts/ft/FT7_1b2b2b_Protocol_v1.sha256": "fed5964bc03c3e1c7bd30a6a412984659ff542dbcd7b6b6e0d0041931a48bc07",
@@ -176,7 +178,7 @@
   "full_theory/social_cycle.py": "d5c4a468a56d92bd0dcb57d126989a089aae9230d2b2b1eb126a8b63be422101",
   "full_theory/social_cycle_audit.py": "5af1a8296f4544ead73c623ab7ec4b1fd8dc06ac3610ee711f4138060d276592",
   "full_theory/social_reuse.py": "be3df7fbb4a5aac3c4314a034da9a0986c8f2d2bd3156888239fd1681307626c",
-  "full_theory/social_reuse_audit.py": "d68bca5a086b097c4925b4fbe59d18e5839b6129cd254603c6ae86b473f7feae",
+  "full_theory/social_reuse_audit.py": "14014ed7dc24e15d4e6053f77d86542e698f45f2b5c58da2f5198bd56c2dc159",
   "full_theory/social_training.py": "9d0462cabd8a542f2ade4efca53d01d11fcaaf54c0e4207f32c23417efcf9a12",
   "full_theory/social_training_audit.py": "a6a218258adf3e5a0c83ff04a099f5e61c81f5b1c1b8080775c675327d8baca3",
   "full_theory/use_history.py": "1d0289f7762280c6914ee6a692c56001af684b36219d9f114584cf8b6b44ed75",
@@ -227,7 +229,7 @@
   "tests_ft7/test_peer_cycle.py": "25e54d96dcb6d34f2fa76bf50627b592d6dc8f2380d66a6930f6596f7490b594",
   "tests_ft7/test_social_closure.py": "a4f9051f399b041369c3ed891862d2f88e511bb2c37b7bf93fdf0c2b6c63dcba",
   "tests_ft7/test_social_cycle.py": "4253d3a6a11a4aa3bbf991b841d7d6235620cfa6a96a6c86ca56788fcf898e73",
-  "tests_ft7/test_social_reuse.py": "b806fbd9480a580c95422e7aa27bee7e13dba1df5c358b1e2d0603674fcc562d",
+  "tests_ft7/test_social_reuse.py": "98d5825db5c4539d6e8b55177e6e756ed8c32df06a0adbc8f34224ec66c30168",
   "tests_ft7/test_social_training.py": "2aa3e47c032d475503f24063bab778526f2d66a892690e3f92bb396402b474de",
   "tests_ft7/training_fixtures.py": "fcc43f89605dde5e55cf27dd81fc5581ee5e3493868a2f7e20ba674e4e9df882",
   "tools/compare_ft7_1b1.py": "8dc4d9a99679441f40af5b70695f6f62803b1d8c12f422974ff4cfcc583ef36d",
@@ -238,5 +240,5 @@
   "tools/evaluate_ft7_1b2a.py": "d1e8832c6b7e899cb7b5bd84020581808f0da417cd7a2aed44241b27a21d2fa5",
   "tools/evaluate_ft7_1b2b1.py": "723e843a1714dcc49011dc1b6cd0095ea37698089fb9d445f38dcc5f9bfeef23",
   "tools/evaluate_ft7_1b2b2a.py": "0004b7f7bc3d38ffbd76b10bad66388e151bdbe9ae8fd1e4ccd45ac3a58bcf20",
-  "tools/evaluate_ft7_1b2b2b.py": "90099fa7a3664c5eb59fd92efe582e0e083f85a9081797759d2cead7d80ceeef"
+  "tools/evaluate_ft7_1b2b2b.py": "d2a739413013492f104883e55d44600e54c09c74824472421921834eab642d50"
 }

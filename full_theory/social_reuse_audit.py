@@ -130,7 +130,9 @@ def audit_social_reuse(engine,checkpoint):
             and terminal['consumer']['output']==settlement['consumer_output'],'exact downstream use and settlement')
         bound=next((r for r in attempts[0]['retained'] if r['key']==certificate_key),None)
         if selected=='retained':require(bound is not None and bound['eligible'] and attempts[0]['selected']['certificate']==certificate_key and tr['means']=='retained','applicable retained choice')
-        elif bound is not None:require(not bound['eligible'],'skipped eligible retained choice')
+        elif bound is not None:
+            option=next(r for r in attempts[0]['options'] if r['name']=='retained')
+            require(not option['eligible'],'skipped eligible retained choice')
     else:require(not fulfillment['fulfilled'],'unfulfilled claimed completion')
     return dict(passed=True,phase=d['phase'],qualification_exposures=len(exposures),qualified=bool(certs),selected=selected,
         retained=selected=='retained',revoked=certificate_key in d['retention']['revoked'],fulfilled=fulfillment['fulfilled'])

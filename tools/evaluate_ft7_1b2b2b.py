@@ -30,9 +30,10 @@ def main(out):
     predecessor=json.loads((ROOT/'contracts/ft/FT7_1b2b2a_Source_Freeze_v1.json').read_text())
     if any(digest(ROOT/n)!=h for n,h in predecessor.items()):raise ValueError('accepted predecessor changed')
     pp=ROOT/'contracts/ft/FT7_1b2b2b_Protocol_v1.json';p=json.loads(pp.read_text())
+    amendment=json.loads((ROOT/'contracts/ft/FT7_1b2b2b_Dimensionality_Amendment_v1.json').read_text())
     if digest(pp)!=pp.with_suffix('.sha256').read_text().split()[0]:raise ValueError('protocol digest differs')
     suite=unittest.defaultTestLoader.loadTestsFromName('tests_ft7.test_social_reuse');actual=sorted(ids(suite))
-    expected=sorted('tests_ft7.test_social_reuse.SocialReuseTests.'+m for m in p['registered_tests'])
+    expected=sorted('tests_ft7.test_social_reuse.SocialReuseTests.'+m for m in p['registered_tests']+amendment['added_methods'])
     (out/'method_ids.json').write_text(json.dumps(actual,indent=2)+'\n')
     with (out/'controls.log').open('w') as log:r=unittest.TextTestRunner(stream=log,verbosity=2).run(suite)
     from tests_ft7.test_social_reuse import SocialReuseTests as tests
@@ -48,7 +49,7 @@ def main(out):
         except Exception as exc:audits[key]=dict(passed=False,error=type(exc).__name__+': '+str(exc))
         print(key+': '+str(audits[key]['passed']),flush=True)
     (out/'decoded_audits.json').write_text(json.dumps(audits,indent=2)+'\n')
-    expected_keys={s+'/'+m for s in p['panel']['settings'] for m in p['panel']['scenarios']}|{s+'/'+m+'/restart-'+part for s in p['panel']['settings'] for m in p['panel']['restarts'] for part in ('final','partial')}
+    expected_keys={s+'/'+m for s in p['panel']['settings'] for m in p['panel']['scenarios']+amendment['added_scenarios']}|{s+'/'+m+'/restart-'+part for s in p['panel']['settings'] for m in p['panel']['restarts'] for part in ('final','partial')}
     passed=r.wasSuccessful() and actual==expected and before==freeze() and raw==decoded and set(audits)==expected_keys and all(a['passed'] for a in audits.values())
     summary=dict(passed=passed,methods=r.testsRun,failures=len(r.failures),errors=len(r.errors),exact_methods=actual==expected,predecessor_identities=338,saved_records=len(rows),exact_record_domain=set(audits)==expected_keys,raw_roundtrip_exact=raw==decoded,decoded_independent_audits=bool(audits) and all(a['passed'] for a in audits.values()),source_unchanged=before==freeze(),registered_freeze=before==registered,protocol_sha256=digest(pp),claim='unsupported requalification and scoped later retained reuse; integrated reserve/history feedback remains pending')
     (out/'summary.json').write_text(json.dumps(summary,indent=2)+'\n')
