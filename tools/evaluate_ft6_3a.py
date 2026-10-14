@@ -49,7 +49,7 @@ def predecessor_expected():
 
 def main(out):
     from hle_unified import codec
-    from hle_unified.selection_records import dumps
+    from hle_unified.selection_records import dumps, loads
     out.mkdir(parents=True, exist_ok=False)
     before = freeze()
     (out / "source_freeze.json").write_text(json.dumps(before, indent=2) + "\n")
@@ -68,7 +68,21 @@ def main(out):
     report = ConditioningGridTests.report
     evidence = ConditioningGridTests.evidence
     (out / "grid_report.json").write_text(dumps(report) + "\n")
-    (out / "raw_paid_evidence.json").write_text(codec.dumps(evidence) + "\n")
+    # The U2 codec accepts typed transactions and tuples, not string-keyed
+    # maps. Episodes use their existing C6 audit codec inside the tuple.
+    records = tuple((run_id, transactions, route_checkpoint, dumps(episode))
+                    for run_id, (transactions, route_checkpoint, episode)
+                    in sorted(evidence.items()))
+    raw_path = out / "raw_paid_evidence.json"
+    raw_path.write_text(codec.dumps(records) + "\n")
+    decoded = codec.loads(raw_path.read_text())
+    restored = {run_id: (transactions, route_checkpoint, loads(episode))
+                for run_id, transactions, route_checkpoint, episode in decoded}
+    roundtrip = (decoded == records and restored == evidence
+                 and len(restored) == len(decoded) == 228)
+    from full_theory.conditioning_grid_audit import audit_conditioning_grid
+    decoded_audit = audit_conditioning_grid(report, ConditioningGridTests.fixture,
+        ConditioningGridTests.histories, ConditioningGridTests.removed, restored)
     after = freeze()
     protocol_hash = digest(protocol_path)
     fixture_hash = digest(fixture_path)
@@ -78,7 +92,8 @@ def main(out):
     passed = (result.wasSuccessful() and actual == expected and len(actual) == 14
               and before == after == registered and hashes_registered
               and report["primary_count"] == 180 and report["control_count"] == 48
-              and ConditioningGridTests.audit["passed"])
+              and ConditioningGridTests.audit["passed"]
+              and roundtrip and decoded_audit["passed"])
     summary = dict(passed=passed, methods=result.testsRun, failures=len(result.failures),
         errors=len(result.errors), exact_methods=actual == expected,
         expected_methods=len(expected), predecessor_methods=len(predecessor_expected()),
@@ -89,7 +104,10 @@ def main(out):
         grid_sha256=report["grid_sha256"], source_unchanged=before == after,
         registered_freeze=before == registered, protocol_sha256=protocol_hash,
         fixture_sha256=fixture_hash, hashes_registered=hashes_registered,
-        preserved_failures=(),
+        evidence_format="ordered run_id/transactions/route_checkpoint/C6-encoded-episode tuples in U2 codec",
+        evidence_roundtrip_exact=roundtrip,
+        decoded_evidence_independently_reconstructed=decoded_audit["passed"],
+        preserved_failures=("FT6_3a_Held_Evidence_20261013.zip",),
         scope="FT6.3a engineering grid only; FT6.3 parent release and subtype interpretation remain open")
     (out / "summary.json").write_text(json.dumps(summary, indent=2) + "\n")
     (out / "evidence_hashes.json").write_text(json.dumps({

@@ -144,13 +144,13 @@
   "contracts/ft/FT6_2_Source_Freeze_v1.json": "5ab019dfe3b718df0480c6eca21d6875ac6c2307cf4a25785d76af38fd924ada",
   "contracts/ft/FT6_3a_Fixtures_v1.json": "d09d4e6ceeca5b775f230b2d42b750e3077acf8d2b6162805ec71c38ebefd1bc",
   "contracts/ft/FT6_3a_Fixtures_v1.sha256": "5539731af0a912cc8d466c5e8d8de86d7d6e10ee6c5652ca979d0db6be9f10f9",
-  "contracts/ft/FT6_3a_Protocol_v1.json": "233357a9f3326ca47e3252c00e4e0d9dc5660c771d101bd762cf730641356a38",
-  "contracts/ft/FT6_3a_Protocol_v1.sha256": "7607effd4440882bcadaeb4c8ce02ab7f725d5fd46b292ce018f7045d5015599",
+  "contracts/ft/FT6_3a_Protocol_v1.json": "9671bb237bfa750330b69d057066d2e64604146665c00af523b7f5f95729f33b",
+  "contracts/ft/FT6_3a_Protocol_v1.sha256": "4f2624df596cae14911a7578c6cc28cf614758e9074a9047cace792fc6dc6d50",
   "hle_unified/conditioning_audit.py": "82c0386a5d41d126fb74856fb54b56e56571c3d66b06b5874366fb3eab4b36c7",
   "hle_unified/axes.py": "a413eb7296344e15d0ae04c45dcd4d493927e2650d7fd292110dc10a811917b7",
   "hle_unified/codec.py": "3c2efa1c87915739c673bea77f7e470e3a41fbc1e4af4cb6fc48ca6642704dc5",
   "hle_unified/model_g.py": "b71b679e307383aa0bcea6fa82d95dafb3ba3211c89daabdb642ac047727c8f6",
   "hle_unified/selection_records.py": "1a691f5072c52389d87c376aa21443a854ffbe39167074ee279a92486dd0333c",
   "baseline/HLE_Rebuild_R21B/hle/development_structure.py": "da84dfa6f238e21281d389f63ec5f381d9a4e163786b0820a48d07e4b0dd6323",
-  "tools/evaluate_ft6_3a.py": "1fc4468445bcfe4e6ba1a441536f22c3b0092f94fda709ee32734b257cc21867"
+  "tools/evaluate_ft6_3a.py": "b800fd272817e3213fad1b523817166c87fdfecefb5dbe5865fc1b89fd1a2b56"
 }

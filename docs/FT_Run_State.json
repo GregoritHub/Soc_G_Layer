@@ -1,13 +1,13 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "blocked",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "d0439ad5e0b887c14ed0d54ceac0a26fee9682f8",
+  "status": "running",
+  "run_id": "ft63-publication-20261014T024632Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-14T03:16:32.527849+00:00",
+  "expected_head": "fa5f2bba18b5e37141ff1b83af738248adccc98b",
   "current_batch": "FT6.3a",
-  "next_batch": "Publish the accepted frozen FT6.3a correction and verify remote bytes; then FT6.3b",
+  "next_batch": "Verify published corrected FT6.3a bytes, release accepted checkpoint, resume FT6.3b",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -49,7 +49,7 @@
     "enabled": false,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
   },
-  "blocker": "FT6.3a local gate passed. Automatic approval review blocked complete evaluator/source-freeze publication as exceeding correction/hashes/result/status scope. Remote source remains pre-correction; schedule stays paused. No additional acceptance rerun needed.",
+  "blocker": null,
   "recovery": {
     "status": "passed",
     "inherited_methods": 751,

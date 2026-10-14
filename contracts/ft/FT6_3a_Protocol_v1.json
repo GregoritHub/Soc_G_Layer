@@ -55,7 +55,7 @@
     "test_primary_grid_executes_all_180_cells_without_scheduled_success",
     "test_every_chosen_request_binds_to_its_actual_paid_element_multiset",
     "test_null_policy_matches_feedback_off_for_each_fixed_candidate_set",
-    "test_history_removal_and_feedback_off_are_exact_one-factor_controls",
+    "test_history_removal_and_feedback_off_are_exact_one_factor_controls",
     "test_fixed_bias_is_score_independent_and_prospectively_identified",
     "test_held_out_occupancy_counts_only_completed_paid_n_episodes",
     "test_changed_schedule_applies_exact_four_turn_decay_before_c4",
