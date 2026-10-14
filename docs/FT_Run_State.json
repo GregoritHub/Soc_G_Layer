@@ -1,13 +1,13 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft63-spelling-20261014T002701Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-14T00:57:01.853981+00:00",
-  "expected_head": "8cda51dd3e7a72a726a003a8dc736a169d467894",
+  "status": "blocked",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "d0439ad5e0b887c14ed0d54ceac0a26fee9682f8",
   "current_batch": "FT6.3a",
-  "next_batch": "Authorized registered-spelling correction and one frozen FT6.3a acceptance rerun",
+  "next_batch": "Publish the accepted frozen FT6.3a correction and verify remote bytes; then FT6.3b",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -44,12 +44,12 @@
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT6_3a_Hold_Record.md",
+  "latest_record": "docs/ft/FT6_3a_Corrected_Acceptance_Record.md",
   "automation": {
     "enabled": false,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
   },
-  "blocker": null,
+  "blocker": "FT6.3a local gate passed. Automatic approval review blocked complete evaluator/source-freeze publication as exceeding correction/hashes/result/status scope. Remote source remains pre-correction; schedule stays paused. No additional acceptance rerun needed.",
   "recovery": {
     "status": "passed",
     "inherited_methods": 751,
@@ -87,5 +87,12 @@
     "bulk_import": "rejected and not performed",
     "runtime_dependencies": "verified reconstructible",
     "standalone_ft9_release": false
+  },
+  "local_acceptance": {
+    "batch": "FT6.3a",
+    "passed": true,
+    "frozen_commit": "8d3b215",
+    "summary": "docs/ft/FT6_3a_Corrected_Acceptance_Summary.json",
+    "source_publication": "blocked"
   }
 }
