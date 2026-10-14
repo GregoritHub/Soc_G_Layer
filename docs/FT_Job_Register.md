@@ -25,7 +25,7 @@
 | FT6.1 | accepted | 13 exact methods; actual committed paid-use deltas, four tags, three policies, saturation, four-turn decay, recovery and bounded replay independently reconstructed; scores remain behaviorally inert |
 | FT6.2 | accepted | 13 exact methods; tie-only history effect and its feedback-off/history-removal controls, actual chosen paid work, six paid n episodes and measured DCNH-pair occupancy independently reconstructed |
 | FT6.3 | accepted, engineering hypothesis | FT6.3b 12/12 methods; 228 saved records reconstructed; six exact paid training replays; unique H persistence; causal controls; success-v1 selected; full subtype interpretation held |
-| FT7.1 | FT7.1a/FT7.1b1/FT7.1b2a accepted | Writer-only retry passed 15 exact methods and all 22 decoded independent audits. FT7.1b2b independent closure/reuse/feedback remains pending |
+| FT7.1 | FT7.1a/FT7.1b1/FT7.1b2a/FT7.1b2b1 accepted in scope | Owned native training: 14 exact methods and 18 decoded audits. FT7.1b2b2 closure/scoped reuse and FT7.1b2b3 integrated reserve/history feedback remain pending |
 | FT7.2 | pending | Full Theory plan gate |
 | FT7.3 | pending | Full Theory plan gate |
 | FT8.1 | pending | Full Theory plan gate |
@@ -42,3 +42,5 @@
 [measured] FT7.1b2a: first setup failed checkpoint evidence-address serialization; corrected run passed 15 exact methods and 297 predecessor identities, then descriptive report serialization failed before saved native evidence. Both attempts are held. No third acceptance run occurred; reviewable writer repair and targeted format check are preserved. Continuation paused under the common two-failure stop rule.
 
 [measured] FT7.1b2a reopened under 14 October standing routine-repair authorization and accepted after the unchanged full gate passed. Historical hold paragraphs above are preserved history, superseded by docs/ft/FT7_1b2a_Acceptance_Record.md. Next FT7.1b2b; no current blocker.
+
+[measured] FT7.1b2b1 accepted after six preserved diagnosed failures: both settings form native guarded capacity from two actual paid independent practices; supported and missing-correction controls do not. All 18 saved native records and immutable social prefixes independently reconstruct. No FT closure/certificate or full parent acceptance is claimed. Next FT7.1b2b2; no blocker.
