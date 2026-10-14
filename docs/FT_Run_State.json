@@ -1,13 +1,13 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft71b-20261014T043529973Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-14T05:27:24.625757+00:00",
-  "expected_head": "f483ddc0bb6e64462d6944fa3799900e842d5d3e",
+  "status": "held",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "e1b17f08d4bea2618b7118eedc4ba226050a1876",
   "current_batch": "FT7.1b1",
-  "next_batch": "Frozen corrected FT7.1b1 paid public workflow intake and one bounded acceptance attempt; preserve original failed run",
+  "next_batch": "Held after first and corrected gates failed; no further attempt until author rules to reopen. Proposed: prospective existing all-cell workflow policy comparison with unchanged v1 control.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -47,12 +47,12 @@
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT7_1a_Record.md",
+  "latest_record": "docs/ft/FT7_1b1_Hold_Record.md",
   "automation": {
-    "enabled": true,
+    "enabled": false,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
   },
-  "blocker": null,
+  "blocker": "Two failed FT7.1b1 gates: canonical paid support completes; workflow support admission now succeeds but preserved v1 self-only native selector omits the required social crossing and defers without movement/later-use output.",
   "recovery": {
     "status": "passed",
     "inherited_methods": 751,
@@ -96,10 +96,10 @@
     "standalone_ft9_release": false
   },
   "local_acceptance": {
-    "batch": "FT7.1a",
-    "passed": true,
-    "frozen_commit": "153698145d855a9db51553a43b9d5609d001846b",
-    "summary": "docs/ft/FT7_1a_Acceptance_Summary.json",
+    "batch": "FT7.1b1",
+    "passed": false,
+    "frozen_commit": "e1b17f08d4bea2618b7118eedc4ba226050a1876",
+    "summary": "docs/ft/FT7_1b1_Hold_Summary.json",
     "source_publication": "verified"
   },
   "conditioning_release": {
@@ -108,5 +108,14 @@
     "subtype_assignment": null,
     "full_subtype_claim": "held pending author interpretation",
     "evidence_index": "docs/ft/FT6_3b_Evidence_Index.json"
+  },
+  "hold": {
+    "reason": "standing two-failure stop rule",
+    "attempts": 2,
+    "methods_each": 16,
+    "failures_each": 4,
+    "errors_each": 3,
+    "evidence_index": "docs/ft/FT7_1b1_Held_Evidence_Index.json",
+    "required_ruling": "Reopen for prospectively registered existing all-cell workflow comparison, or retain v1 and hold full workflow/parent release claim"
   }
 }
