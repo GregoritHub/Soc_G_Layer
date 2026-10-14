@@ -62,8 +62,9 @@ def audit_social_training(engine,checkpoint):
             output=r.get('binding') or r.get('result');target=r.get('content_target',r.get('target'))
             if output is None or output not in bindings:continue
             binding=bindings[output]
-            if len(binding.content)!=1:continue
-            body=decode(binding.content[0].object)
+            if len(binding.content)!=1 or binding.content[0].relation!=('c3.data' if d['setting']=='canonical' else 'c7w.data'):continue
+            try:body=decode(binding.content[0].object)
+            except ValueError:continue
             kinds=({'I':('intention','personal_policy'),'ITS':('model','rule')} if d['setting']=='canonical' else {'I':('intention','personal'),'ITS':('system','rule')})
             if body.get('kind') not in kinds[r['destination']]:continue
             account=versions[output].facet(Account)

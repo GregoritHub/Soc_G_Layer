@@ -104,6 +104,7 @@
   "contracts/ft/FT7_1b2b1_Preflight_Amendment_v1.sha256": "7b32925794599540a475c2975f85de46d73e2ba70b2a46bf137f811e51797974",
   "contracts/ft/FT7_1b2b1_Protocol_v1.json": "94ee8061d8319c3b248ac0a2b3709f6b2cf5e29a11525423ee6b928b2ed05d1d",
   "contracts/ft/FT7_1b2b1_Protocol_v1.sha256": "f75ca1a5a790773694a8af6564781c11ff184646d7884de7c8200e328119ea38",
+  "contracts/ft/FT7_1b2b1_Relation_Admission_Amendment_v1.json": "b3252d13bbba7a62877d0388adae650db33ac59137e72eb88bd1ae6b7c398c42",
   "contracts/ft/FT7_1b2b1_Typed_Source_Amendment_v1.json": "87cb0694babac9c499718f2d6983d9e960cfdea027e021ba49668e7e0441c79f",
   "contracts/ft/FT7_1b2b1_Typed_Source_Amendment_v1.sha256": "157ad240dd181ea84574f7951cae7e20b96f259c9d7773dcbaa869f26dadaf5e",
   "contracts/ft/FT_Selected_Engineering_Policies_v1.json": "7d236db4b0c6d29c8c423d38a7096e3c7f0f3d1edbdb9a87f21790e33c9b2002",
@@ -159,8 +160,8 @@
   "full_theory/route_policy_audit.py": "40b87e5584ea310950fac01d2ae61a9896a05367091f20f2a190f9bc19366225",
   "full_theory/social_cycle.py": "d5c4a468a56d92bd0dcb57d126989a089aae9230d2b2b1eb126a8b63be422101",
   "full_theory/social_cycle_audit.py": "5af1a8296f4544ead73c623ab7ec4b1fd8dc06ac3610ee711f4138060d276592",
-  "full_theory/social_training.py": "939ba0db9dbad7be8409b172e106e5de6945262dd494d3992b2a22d0817f7a22",
-  "full_theory/social_training_audit.py": "b2bec87368925242cd437df76f5d855ddab2088b208316e511ed160e3c02c44c",
+  "full_theory/social_training.py": "9ae74d63cf07ff43a1f29d615bf466688a7b46ebb260e28f90259abec28ea06a",
+  "full_theory/social_training_audit.py": "25eafc9b92321ef72bbf5ffb1efa91e197b639fc45694e0c0592b9b751ec5924",
   "full_theory/use_history.py": "1d0289f7762280c6914ee6a692c56001af684b36219d9f114584cf8b6b44ed75",
   "full_theory/use_history_audit.py": "5970a3c28a77e401cf61c60f23f3154492966c53e5ace31ad106d9818e74831e",
   "hle_unified/axes.py": "a413eb7296344e15d0ae04c45dcd4d493927e2650d7fd292110dc10a811917b7",
@@ -216,5 +217,5 @@
   "tools/evaluate_ft7_1a.py": "f6ae5272c1abda3135eb9bacb475a104bcb82b3228d3e0184cdfb1b839e8d087",
   "tools/evaluate_ft7_1b1.py": "6c25169593b0361925ae618f923043abe97dadf91867e150fd5e9c52d4e61d9c",
   "tools/evaluate_ft7_1b2a.py": "d1e8832c6b7e899cb7b5bd84020581808f0da417cd7a2aed44241b27a21d2fa5",
-  "tools/evaluate_ft7_1b2b1.py": "cd320a2d1b6cbc9686487bf0983930ec2fb56fbc33b72c6bfdc461a953ae41e5"
+  "tools/evaluate_ft7_1b2b1.py": "3c645247b47e2e1164bf860428e18625f1be06bbf88656358eb8439f1dbf1e74"
 }
