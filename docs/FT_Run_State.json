@@ -4,10 +4,10 @@
   "status": "running",
   "run_id": "ft71b2b2-20261014T2336Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-15T00:06:00Z",
-  "expected_head": "289264f2e24aaf65c489654e540085b454a5a8a5",
-  "current_batch": "FT7.1b2b1",
-  "next_batch": "FT7.1b2b2: honest content closure and scoped retained reuse under changed support; then FT7.1b2b3 integrated reserve/history binding and tie-only feedback",
+  "lease_expires_at": "2026-10-15T00:20:00Z",
+  "expected_head": "b2eebab69de197e6390d7e6d8ca614c9d2454f7e",
+  "current_batch": "FT7.1b2b2b",
+  "next_batch": "FT7.1b2b2b: stricter no-support requalification and later scoped retained reuse; then FT7.1b2b3 reserve/history integration",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -46,11 +46,12 @@
     "FT7.1a",
     "FT7.1b1",
     "FT7.1b2a",
-    "FT7.1b2b1"
+    "FT7.1b2b1",
+    "FT7.1b2b2a"
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT7_1b2b1_Record.md",
+  "latest_record": "docs/ft/FT7_1b2b2a_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
@@ -95,7 +96,9 @@
     "FT7.1b2b",
     "FT7.1b2b1",
     "FT7.1b2b2",
-    "FT7.1b2b3"
+    "FT7.1b2b3",
+    "FT7.1b2b2a",
+    "FT7.1b2b2b"
   ],
   "publication": {
     "mode": "read-only pinned dependencies plus new development",
@@ -105,31 +108,27 @@
   },
   "local_acceptance": {
     "passed": true,
-    "methods": 14,
+    "methods": 12,
     "failures": 0,
     "errors": 0,
     "exact_methods": true,
-    "predecessor_identities": 312,
-    "saved_records": 18,
+    "predecessor_identities": 326,
+    "saved_records": 22,
     "exact_record_domain": true,
     "raw_roundtrip_exact": true,
     "decoded_independent_audits": true,
     "source_unchanged": true,
     "registered_freeze": true,
-    "protocol_sha256": "94ee8061d8319c3b248ac0a2b3709f6b2cf5e29a11525423ee6b928b2ed05d1d",
+    "protocol_sha256": "fe343b03c205c2214f223f9f068d01dfebe872ee47d4fb011fcf824e7eb8bcf5",
     "configuration": {
       "canonical": "SelectionEngine",
       "workflow": "WorkflowFinalSelectionEngine v4 explicit",
-      "reserve": "load-v1 unchanged in accepted social prefix",
-      "conditioning": "success-v1; supported social prefix has zero independent credit",
       "defaults_changed": false
     },
-    "claim": "native owned guarded training only; no FT closure/certificate/reuse or feedback acceptance",
-    "parent_gate": "FT7.1b2b2 closure/reuse and FT7.1b2b3 feedback remain mandatory",
-    "batch": "FT7.1b2b1",
-    "frozen_commit": "1ff9b0000f062b5ba216c821be691258c91546ef",
-    "source_publication": "verified",
-    "prior_failed_attempts": 6
+    "claim": "owned content closure and guarded certificate only; changed-support reuse and reserve/history feedback remain pending",
+    "batch": "FT7.1b2b2a",
+    "frozen_commit": "1941ddde40701f4a9517e459eee55bc6d95287be",
+    "source_publication": "verified"
   },
   "conditioning_release": {
     "policy": "success-v1",
@@ -230,5 +229,33 @@
     "claim": "Autonomous paid peer reply and recipient support causality, no independent capability or psychology claim",
     "frozen_commit": "8c231c7613b2c0845c6a567ffab556860824bbd9",
     "source_publication": "verified"
+  },
+  "prior_ft7_1b2b1_acceptance": {
+    "passed": true,
+    "methods": 14,
+    "failures": 0,
+    "errors": 0,
+    "exact_methods": true,
+    "predecessor_identities": 312,
+    "saved_records": 18,
+    "exact_record_domain": true,
+    "raw_roundtrip_exact": true,
+    "decoded_independent_audits": true,
+    "source_unchanged": true,
+    "registered_freeze": true,
+    "protocol_sha256": "94ee8061d8319c3b248ac0a2b3709f6b2cf5e29a11525423ee6b928b2ed05d1d",
+    "configuration": {
+      "canonical": "SelectionEngine",
+      "workflow": "WorkflowFinalSelectionEngine v4 explicit",
+      "reserve": "load-v1 unchanged in accepted social prefix",
+      "conditioning": "success-v1; supported social prefix has zero independent credit",
+      "defaults_changed": false
+    },
+    "claim": "native owned guarded training only; no FT closure/certificate/reuse or feedback acceptance",
+    "parent_gate": "FT7.1b2b2 closure/reuse and FT7.1b2b3 feedback remain mandatory",
+    "batch": "FT7.1b2b1",
+    "frozen_commit": "1ff9b0000f062b5ba216c821be691258c91546ef",
+    "source_publication": "verified",
+    "prior_failed_attempts": 6
   }
 }

@@ -26,6 +26,7 @@
 | FT6.2 | accepted | 13 exact methods; tie-only history effect and its feedback-off/history-removal controls, actual chosen paid work, six paid n episodes and measured DCNH-pair occupancy independently reconstructed |
 | FT6.3 | accepted, engineering hypothesis | FT6.3b 12/12 methods; 228 saved records reconstructed; six exact paid training replays; unique H persistence; causal controls; success-v1 selected; full subtype interpretation held |
 | FT7.1 | FT7.1a/FT7.1b1/FT7.1b2a/FT7.1b2b1 accepted in scope | Owned native training: 14 exact methods and 18 decoded audits. FT7.1b2b2 closure/scoped reuse and FT7.1b2b3 integrated reserve/history feedback remain pending |
+| FT7.1b2b2a | accepted, bounded closure/certificate | 12 exact methods, 326 predecessor identities, 22 saved native records independently audited; stricter no-support requalification and actual later reuse remain FT7.1b2b2b |
 | FT7.2 | pending | Full Theory plan gate |
 | FT7.3 | pending | Full Theory plan gate |
 | FT8.1 | pending | Full Theory plan gate |

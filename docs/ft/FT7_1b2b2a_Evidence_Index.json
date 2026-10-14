@@ -1,0 +1,13 @@
+{
+  "batch": "FT7.1b2b2a",
+  "archive": "FT7_1b2b2a_Closure_Certificate_Evidence_20261014.zip",
+  "sha256": "0af766398e45678686778059d3d315bdb1144c7ea9045116ba0993e45da27442",
+  "bytes": 36552714,
+  "verified_manifest_members": 15,
+  "frozen_commit": "1941ddde40701f4a9517e459eee55bc6d95287be",
+  "saved_native_records": 22,
+  "retrieval": "The owner can retrieve the exact named private evidence attachment. Verify archive SHA-256, then every SHA256.json member. Account retrieval identifiers are intentionally absent from public metadata.",
+  "contents": "Accepted raw native records, exact readback audit reports, method IDs, source freeze, console/control logs and exact new source/protocol capsule.",
+  "reproduce": "Prepare the pinned inherited runtime with tools/prepare_workspace.py and the existing verified recovery attachments, apply destination source at the frozen commit, then Python 3.12: python3 tools/evaluate_ft7_1b2b2a.py /absolute/fresh-output. Accepted results need not be rerun for continuation.",
+  "claim": "Owned content closure and guarded demand-scoped certificate only; changed-support reuse and integrated feedback remain pending."
+}
