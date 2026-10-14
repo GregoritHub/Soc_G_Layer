@@ -5,7 +5,7 @@
   "run_id": "ft71b2-f590d4087a1144ba8493f5f821c2ad0b",
   "active_worker": true,
   "lease_expires_at": "2026-10-14T09:06:33.451358+00:00",
-  "expected_head": "255b243cb5468eec1969f4067989d2f8d87b4f26",
+  "expected_head": "f1bf4ff521d62c5f1e14f0b4c8ee13b3473879ac",
   "current_batch": "FT7.1b2a",
   "next_batch": "Author reopening required for evidence-writer-only corrected frozen run, then mandatory FT7.1b2b",
   "completed_batches": [
@@ -48,7 +48,7 @@
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT7_1b1_Comparison_Record.md",
+  "latest_record": "docs/ft/FT7_1b2a_Hold_Record.md",
   "automation": {
     "enabled": false,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
@@ -141,5 +141,36 @@
     "version": "c7-workflow-selection-v4",
     "default_changed": false,
     "control": "WorkflowSelectionEngine v1 unchanged"
+  },
+  "pending_attempt": {
+    "passed": false,
+    "status": "held",
+    "batch": "FT7.1b2a",
+    "methods": 15,
+    "failures": 0,
+    "errors": 0,
+    "method_suite_passed": true,
+    "exact_method_ids": true,
+    "predecessor_identities": 297,
+    "primary_scenarios": 14,
+    "exact_restart_comparisons": 4,
+    "source_unchanged": true,
+    "frozen_source_files": 206,
+    "saved_native_records": 0,
+    "raw_roundtrip_verified": false,
+    "decoded_full_independent_audit": false,
+    "error": "ValueError: unsupported U2 wire value; descriptive report dictionary passed to record-only codec",
+    "stop": "second failed gate after checkpoint correction",
+    "claim": "Behavioral methods passed; no full FT7.1b2a acceptance or independent capability claim",
+    "initial_frozen_commit": "564fdbbe8763052b6b106b71f1e01ae967577023",
+    "corrected_frozen_commit": "87251a465eb57b1b3ed7663698e829a602e3463e",
+    "evidence_writer_repair_commit": "f1bf4ff521d62c5f1e14f0b4c8ee13b3473879ac",
+    "repair_format_check": {
+      "passed": true,
+      "report_roundtrip_exact": true,
+      "raw_tuple_roundtrip_exact": true,
+      "actual_engine_run": false,
+      "scope": "representative typed report schema and native raw tuple persistence only; not acceptance"
+    }
   }
 }
