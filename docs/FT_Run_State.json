@@ -6,8 +6,8 @@
   "active_worker": true,
   "lease_expires_at": "2026-10-14T05:05:29.973Z",
   "expected_head": "0572599b1de9426c39f2fcdb7a9ceeb1ddecaf76",
-  "current_batch": "FT7.1b",
-  "next_batch": "Verify exact accepted source-tree restoration, then preregister FT7.1b",
+  "current_batch": "FT7.1b1",
+  "next_batch": "FT7.1b1 packet-mediated owned support choice and paid downstream use; FT7.1b2 parent gate remains pending",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -85,7 +85,9 @@
     "FT6.2",
     "FT6.3a",
     "FT6.3b",
-    "FT7.1a"
+    "FT7.1a",
+    "FT7.1b1",
+    "FT7.1b2"
   ],
   "publication": {
     "mode": "read-only pinned dependencies plus new development",
