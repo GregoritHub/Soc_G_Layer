@@ -1,0 +1,11 @@
+{
+  "version": "ft-selected-engineering-policies-v1",
+  "reserve_policy": "load-v1",
+  "conditioning_policy": "success-v1",
+  "conditioning_decision": "docs/ft/FT6_3b_Record.md",
+  "controller_family": "ft-integrated-v1",
+  "source": "prospective FT5.3 and FT6.3 election rules",
+  "default_changed": false,
+  "subtype_assignment": null,
+  "scope": "Explicit engineering hypothesis for subsequent FT7-FT9 integration; no intended-theory election"
+}

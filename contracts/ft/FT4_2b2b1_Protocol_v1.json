@@ -1,0 +1,58 @@
+{
+  "batch": "FT4.2b2b1",
+  "policy": "ft-td5-route-policy-v1",
+  "status": "prospective",
+  "scope": "Integrate the first non-opposed TD5 route-choice seam: applicable retained participation, ordinary traffic, n compensation, cp access, exact consenting support and deferral. A relay traversal is recorded only after the unchanged paid native selector launches and completes real native work. Opposition remains FT4.2b2b2 and the parent FT4.2 gate remains open.",
+  "modules": [
+    "full_theory/route_policy.py",
+    "full_theory/route_policy_audit.py",
+    "tools/evaluate_ft4_2b2b1.py"
+  ],
+  "method_ids": [
+    "test_priority_matrix_selects_ordinary_n_cp_and_defer",
+    "test_retained_capacity_precedes_structural_route_without_changing_dimension",
+    "test_removing_retained_evidence_changes_the_route",
+    "test_cp_requires_paid_orientation_before_traversal",
+    "test_each_cp_traversal_links_its_exact_fee_and_native_work",
+    "test_native_launch_and_relay_completion_both_settings",
+    "test_exact_consent_support_both_settings",
+    "test_nonconsent_foreign_and_unallowed_support_are_rejected",
+    "test_native_deferral_never_records_a_relay_traversal",
+    "test_partial_checkpoint_continues_exactly",
+    "test_independent_auditor_rejects_forged_priority_support_fee_and_traversal"
+  ],
+  "fixtures": {
+    "tests_ft4/test_controller.py": "02e45f329aa0e203040e2dc95b85febddd6f13e015d07e631b4cc30f8aba9a1c",
+    "tests_ft4/test_route_means.py": "12acc9cb5d2c5c212b485e81563d6b850290af536411c228a395f3f809d19eac",
+    "tests_ft4/test_route_execution.py": "7a8c60a82a1d221a0c5bd180f62bce59140cde38f90854cae829039444845e1a",
+    "tests_ft4/test_orientation.py": "dfe7bef4b7cb04bf55430f3f5bfe100df814693eb1e22cc5cd3478e235304338",
+    "tests_ft3/test_retention.py": "6d94c74e03edf05a4ce0e6c1f106e293712afffa4ee3cc2c3f9e3de9b1cb7863",
+    "tests_c6/fixtures.py": "cf1d93d18ad05357fadec6f71a599fc1ec8d3898fc79284365f53fd5d7da7223",
+    "tests_workflow_selection/fixtures.py": "e71942b599ad93003b8f9a771c40d284cb9b91b08871e2dd9db8aa60f932285b"
+  },
+  "settings": [
+    "canonical",
+    "workflow"
+  ],
+  "work_limits": [
+    1,
+    2,
+    1000000
+  ],
+  "rules": [
+    "The input remains an exact route-free paid actor-owned native request plus a same-scope FT3 Demand. No requested route, hidden target answer or evaluator-selected endpoint is accepted.",
+    "The controller derives present relay origin, immutable TIM geometry, wallet and structural options from FT4.2a. Required facets are compared with the target seat's unchanged dimensionality using the accepted FT2 facet order; access never increases seat dimension.",
+    "Priority is applicable independent recalled certificate at the current seat, feasible ordinary traffic, feasible n compensation, feasible cp, exact consenting support, then defer. Stable identity breaks ties. Every option retains an explicit eligibility reason.",
+    "A retained certificate must pass the existing RetentionLedger applicability rule in the same engine and demand scope. It authorizes guarded participation only, grants no material competence, and keeps the relay at the same seat.",
+    "Ordinary, n and cp are feasible only when their unchanged target seat covers every required facet. n has no geometric fee but all subsequent native processing remains paid.",
+    "cp additionally requires current affordability and completion of the exact FT4.2b2a orientation read. Its ticket must name this demand, request, origin and target and must precede the linked native selection/movement. A fee alone never traverses.",
+    "Support is eligible only when the paid actor view contains a current reply from the named peer to the actor in the exact group/context/target, consent is true, and the peer is explicitly allowed by the Demand. Support remains supported performance, not independent capacity.",
+    "The unchanged native selector and executor remain authoritative for content route, payment and completion. A relay transition is committed only after its exact movement child succeeds; native deferral, failure, cancellation, partial work or exhaustion records no traversal.",
+    "Integrated relay state is explicitly separate from the native processing cursor. The seam records both origins and the paid movement reference and makes no claim that a relay edge itself processed task content.",
+    "The independent auditor reconstructs inventory, facet coverage, retained evidence, exact consent, priority, fees, native debits and traversal linkage from raw records and saved participant evidence without importing the route-policy controller.",
+    "Exact checkpoint continuation is required. No default, TIM, dimensionality, native selector, native executor, retained history or prior FT source changes in this sub-batch."
+  ],
+  "gate": "Eleven exact new methods plus the 22 exact FT4.2b1/b2a methods pass with both-setting raw witnesses, independent reconstruction, strict source freeze and unchanged source. This accepts FT4.2b2b1 only; FT4.2b2b2 still owes declared opposition sequences and the common FT4.2 gate remains open.",
+  "next": "FT4.2b2b2 consecutive lawful opposition moves and parent FT4.2 integration gate",
+  "stop": "Preserve failures; two gate failures after correction stops."
+}

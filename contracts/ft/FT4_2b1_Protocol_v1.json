@@ -1,0 +1,56 @@
+{
+  "batch": "FT4.2b1",
+  "policy": "ft-native-turn-v1",
+  "status": "prospective",
+  "parent": "FT4.2",
+  "scope": "Connect route-free admitted demands to bounded native paid selector turns and exact child continuation. Native priorities unchanged in this bridge; FT4.2b2 still owes TD5 means priority, cp read, consenting support and recalled capacity integration. FT4.3 still owes full autonomous closure/reuse.",
+  "modules": [
+    "full_theory/route_execution.py",
+    "full_theory/route_execution_audit.py",
+    "tools/evaluate_ft4_2b1.py"
+  ],
+  "method_ids": [
+    "test_native_launch_and_paid_completion_both_settings",
+    "test_comparison_must_finish_before_child_exists",
+    "test_exact_partial_restart_both_settings",
+    "test_unaffordable_work_stays_visible_without_minting",
+    "test_cancelled_child_preserves_spending",
+    "test_repeated_terminal_turn_cannot_duplicate_child",
+    "test_withdrawn_demand_is_not_launched",
+    "test_foreign_and_route_named_requests_rejected",
+    "test_busy_actor_does_not_advance_unrelated_work",
+    "test_checkpoint_rejects_different_native_state",
+    "test_auditor_rejects_forged_payment_child_and_completion",
+    "test_native_deferral_remains_distinct_from_success"
+  ],
+  "prior_methods": "Exact union of registered FT4.1a, FT4.1b1, FT4.1b2, FT4.2a IDs (40)",
+  "fixtures": {
+    "tests_ft4/test_controller.py": "02e45f329aa0e203040e2dc95b85febddd6f13e015d07e631b4cc30f8aba9a1c",
+    "tests_ft4/test_route_means.py": "12acc9cb5d2c5c212b485e81563d6b850290af536411c228a395f3f809d19eac",
+    "tests_c6/fixtures.py": "cf1d93d18ad05357fadec6f71a599fc1ec8d3898fc79284365f53fd5d7da7223",
+    "tests_workflow_selection/fixtures.py": "e71942b599ad93003b8f9a771c40d284cb9b91b08871e2dd9db8aa60f932285b"
+  },
+  "horizon": 16,
+  "work_limits": [
+    1,
+    1000000
+  ],
+  "settings": [
+    "canonical",
+    "workflow"
+  ],
+  "pass_conditions": [
+    "All exact 52 identities pass; zero failures/errors; no source changes after freeze",
+    "No external recipe/cell/desired route; native selector owns decisions and native executor owns payment",
+    "Each turn advances at most one exact parent/admission/movement job; zero-credit read-only blocked turn at exhausted wallet",
+    "Payment reconstructed from raw wallet deltas and native operation progress; no completion claim for demand from selected or completed child",
+    "Checkpoint binds exact native engine bytes to controller state; restored partial continuation byte-identical",
+    "Negative and tamper controls reject paid launch/ownership/payment/completion forgery"
+  ],
+  "prohibited": [
+    "Any inherited source/default/route-price change",
+    "Any inference of full TD5 or FT4 acceptance",
+    "Any psychological/theoretical closure"
+  ],
+  "failures": "Preserve every run. Gate failing twice after a correction stops."
+}

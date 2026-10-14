@@ -1,0 +1,52 @@
+{
+  "batch": "FT5.3a",
+  "parent_job": "FT5.3",
+  "policy": "ft-paid-reserve-recovery-v1",
+  "status": "prospective",
+  "scope": "Extend the accepted autonomous reserve cycle with an exact recovery path after actual paid interruption: a separately paid external A5 uptake may replenish the same pending demand, after which an explicit restart resumes the existing native attempt. Test sustained depletion through interruption and later completion, compare actual supported completion, and preserve the harder-demand partial order, frozen parameter grid and release-policy election for FT5.3b.",
+  "modules": ["full_theory/reserve_cycle.py", "full_theory/reserve_cycle_audit.py", "tools/evaluate_ft5_3a.py"],
+  "test_directory": "tests_ft5",
+  "method_ids": [
+    "test_paid_uptake_restarts_same_pending_demand_in_both_settings",
+    "test_sustained_interruption_replenishment_completion_arithmetic",
+    "test_restart_requires_new_post_interruption_paid_replenishment",
+    "test_partial_or_wrong_seat_uptake_cannot_recover",
+    "test_restart_preserves_request_reserve_id_and_native_attempt",
+    "test_external_support_completion_remains_distinct_and_cheaper_at_load_two",
+    "test_null_policy_records_recovery_without_minting_reserve",
+    "test_grade_policy_uses_realized_grade_after_restart",
+    "test_finite_token_packet_receipt_and_second_restart_cannot_form_free_loop",
+    "test_recovery_does_not_reprice_or_double_charge_native_work",
+    "test_checkpoint_continuation_is_exact_across_recovery_and_restart",
+    "test_public_recovery_inputs_cannot_supply_route_grade_support_or_success",
+    "test_independent_auditor_reconstructs_paid_recovery_sequence",
+    "test_independent_auditor_rejects_forged_order_payment_token_and_delta",
+    "test_interrupted_demand_remains_visible_until_later_settlement",
+    "test_ft5_2b2_and_all_predecessor_method_identity_remain_exact"
+  ],
+  "fixtures": {
+    "docs/ft/FT_Configuration_Contract_v1.md": "d582a935b161b5e0ffb8e8a332d027f36cc54c7698ebecac79dc774b80efc94f",
+    "contracts/ft/FT5_2b2_Protocol_v1.json": "140bc361695644385b56987250c0a2b477b443710b542f39c1cbf88736b6fb45",
+    "contracts/ft/FT5_2b2_Source_Freeze_v1.json": "c8cc137c07a96613c4d1e6973ce5d9c9c83a9b1e5e3f04b6b7645b3894f9ad04",
+    "full_theory/native_reserve.py": "2199d0a20bb78f3597bba59dfd57bd7121a17a87d1af9e92c69c4f2323e55b77",
+    "full_theory/reserve.py": "aba132cd98b4e6b587b51778d4ec7b569437ace86d56de69171b65c0e9c02fe5",
+    "hle_unified/model_g.py": "b71b679e307383aa0bcea6fa82d95dafb3ba3211c89daabdb642ac047727c8f6"
+  },
+  "rules": [
+    "Recovery begins only from an interruption already certified by FT5.2b2 as actual positively paid native route work. The same owned demand remains pending, and the original autonomous request, reserve demand identity and native route attempt remain authoritative.",
+    "A recovery gain requires NativeReserveBinding.replenish_from_uptake over a fully paid same-actor external A5 packet receipt on the paired engine. The controller accepts only token and packet identities plus the paired ContentBridge; no balance, delta, seat, support, route, grade or success input is accepted.",
+    "Replenishment and restart are distinct events. A restart is unavailable before a new post-interruption replenishment binding and does not itself change reserve, native wallet, route price, TIM, dimensionality, demand ownership or native engine state.",
+    "Restart resumes the existing FT4 route-policy attempt and FT5 reserve admission; it never creates a second demand, resets paid work, clears pressure, replaces the request or manufactures a new route choice. Later settlement still requires completed native traversal, paid same-scope consumption and the existing demand-controller settlement.",
+    "The sustained recovery witness has exactly one interruption loss, one separately paid A5 replenishment gain and one later completion loss. Each reserve event is exact, ordered and reconstructible, while the corresponding native work is charged only by its native executor.",
+    "Null records the same paid evidence and recovery ordering with zero reserve deltas. Load-v1 and grade-load-v1 remain bounded by the accepted capacity, one-use token, packet, receipt, attempt and demand identities. No recovery operation may form a positive free loop.",
+    "Actual consented support remains supported completion and every other settled traversal remains independent completion. At matched load two, supported completion loses one unit while load-v1 independent completion loses two, without declaring either trajectory theoretically correct.",
+    "Grade-load-v1 derives its completion grade only from the realized post-restart traversal target seat. Recovery never supplies or rewrites grade and never changes grade-v1 native prices.",
+    "Checkpoint state retains the entire pre-interruption history, exact replenishment binding, recovery and restart events, pending demand, resumed native attempt and later terminal result. Restore requires the paired native hash and continues byte-exactly.",
+    "The independent auditor imports no reserve-cycle controller. It reconstructs the embedded native reserve ledger, actual A5 payment, one-use evidence, interruption-before-replenishment-before-restart ordering, unchanged request/admission/attempt identities, exact deltas and final paid settlement.",
+    "Acceptance requires the sixteen exact new methods, all one hundred eighty-six FT5.2b2 and earlier predecessor identities, canonical and workflow recovery witnesses, all three reserve policies, registered fixtures, a strict source freeze and unchanged source.",
+    "Passing accepts only FT5.3a depletion and exact paid recovery. FT5.3b still owes a real harder-demand partial order, incomparable reporting, the prospectively frozen matched ample/scarce parameter grid and an explicit release-policy selection or held release. C13/TD4 and psychological realism remain open."
+  ],
+  "gate": "Sixteen exact FT5.3a methods pass with zero failures/errors; a genuinely paid interrupted autonomous attempt in both settings can recover only through actual paid external A5 uptake and explicit restart of the same pending demand; the sustained arithmetic and all one-use identities reconstruct exactly; null, load-v1, grade-load-v1 and actual support remain distinct; native state and prices are not double charged; all 186 predecessor identities remain exact.",
+  "next": "FT5.3b harder-demand partial order, frozen ample/scarce grid and release-policy decision",
+  "stop": "Preserve failures; two gate failures after correction stops."
+}

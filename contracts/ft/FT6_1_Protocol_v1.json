@@ -1,0 +1,61 @@
+{
+  "batch": "FT6.1",
+  "parent_job": "FT6.1",
+  "protocol_version": "1.0",
+  "prospective": true,
+  "scope": "Add an opt-in bounded conditioning-history state over the inherited observation-only completed-use ledger. Bind every classified use to a monotone snapshot of actual committed paid native processing; distinguish successful independent work, rehearsal, supported success and failed work; implement the three prospectively declared score policies, saturation, exact inactivity decay and checkpoint replay. This sub-batch does not let scores choose routes, infer DCNH occupancy or assign a subtype; those remain FT6.2/FT6.3.",
+  "source_contract": {
+    "configuration": "docs/ft/FT_Configuration_Contract_v1.md TD6 and TD7",
+    "continuation_plan": "Full Theory Engine Batched Plan revision 1.1, FT6.1",
+    "accepted_predecessor": "FT5 parent accepted with load-v1 release reserve policy",
+    "inherited_observer": "hle_unified/conditioning_audit.py remains read-only and observation-only; its completed-use reconstruction is not changed or relabeled as feedback"
+  },
+  "policy": {
+    "names": ["null", "success-v1", "success-decay-v1"],
+    "elements": ["ne", "ni", "se", "si", "te", "ti", "fe", "fi"],
+    "tags": ["independent", "rehearsal", "supported", "failed"],
+    "score_domain": [0, 8],
+    "credit": "Only an actual completed-use delta classified as successful independent work adds one, saturated at eight, under success-v1 and success-decay-v1. Null records the same evidence but keeps all scores zero. Rehearsal, supported and failed uses never add independent credit.",
+    "decay": "Only success-decay-v1 subtracts one after four consecutive observed turns with no paid completed use of that element. A paid use of any tag resets that element's idle counter. Each four-turn idle block is consumed exactly once; scores floor at zero. Null and success-v1 do not decay.",
+    "future_effect": "Scores are inert in FT6.1. FT6.2 may use their sum only to break ties among already admissible routes; no score changes access, TIM, seat dimensionality, native law, reserve, certificate scope or route eligibility."
+  },
+  "native_binding": {
+    "baseline": "A ledger begins from an exact actor snapshot of the raw native journal. Fixture/setup use before that snapshot is not conditioning evidence.",
+    "snapshot": "Each successive turn supplies the complete native transaction prefix. The implementation hashes its exact canonical serialization and reconstructs the actor's per-element completed-use counts through the inherited paid-use observer. Journal length and every count are monotone.",
+    "classification": "The multiset of classification rows must exactly exhaust the new per-element completed-use deltas. A missing, extra, duplicate, unpaid, partial or merely proposed use is rejected. Exact outcome fields distinguish independent, rehearsal, supported and failed use; labels cannot create a native count delta.",
+    "idle": "A turn with no new use for an element is an idle turn for that element. Skipped, repeated or reordered turns and stale journal prefixes are rejected."
+  },
+  "bounded_state": {
+    "maps": "Exactly eight fixed element keys for scores, idle counters, cumulative tag totals and last native counts.",
+    "recent_window": 32,
+    "evidence_chain": "Every accepted turn extends a SHA-256 chain over the prior chain value, native snapshot identity, exact classifications and resulting bounded state. The checkpoint retains at most the latest 32 turn summaries plus cumulative totals and the chain head.",
+    "checkpoint": "Restore replays the retained base and recent window, verifies the evidence chain and resulting state, and continues byte-exactly. Truncation advances an authenticated base state; it cannot mint scores or erase cumulative tag totals."
+  },
+  "registered_tests": [
+    "test_exact_policy_tag_element_and_state_domains",
+    "test_native_snapshot_counts_only_committed_paid_completion",
+    "test_classifications_exactly_exhaust_native_element_deltas",
+    "test_successful_independent_use_adds_one_only_to_non_null_policies",
+    "test_rehearsal_supported_and_failed_use_never_add_independent_credit",
+    "test_scores_saturate_at_eight",
+    "test_decay_occurs_after_exact_four_idle_turns_only",
+    "test_paid_use_resets_idle_and_recovery_is_a_new_independent_credit",
+    "test_null_policy_records_evidence_without_feedback",
+    "test_stale_duplicate_reordered_and_skipped_snapshots_are_rejected",
+    "test_recent_window_is_bounded_and_checkpoint_continuation_is_exact",
+    "test_independent_auditor_reconstructs_state_and_rejects_tampering",
+    "test_ft5_and_all_predecessor_method_identity_remain_exact"
+  ],
+  "invariants": [
+    "No history credit exists without an actual positive completed-use delta reconstructed from committed native transactions and exact wallet evidence.",
+    "Classification partitions the paid delta; it cannot alter native counts, wallets, content, access, reserve or task outcome.",
+    "The fixed eight-element state is actor-owned and policy-specific. Cross-actor journals, changed TIM, non-monotone prefixes and duplicate classification identities are rejected.",
+    "Scores, idle counters and tag totals are exact integers. Boolean and floating values are rejected. Scores remain in 0..8 and idle counters in 0..3 after every committed turn.",
+    "Decay of a history score is not certificate revocation, loss of H.retained, loss of content, loss of access or a reserve change.",
+    "The new opt-in module changes no default, sealed baseline, inherited observer, TIM, dimensionality, native semantic law, grade/load-v1 reserve law or accepted FT4/FT5 source.",
+    "Passing establishes bounded conditioning accounting only. Candidate feedback, actual repeated n traffic, DCNH occupancy, held-out/changed schedules and subtype interpretation remain open."
+  ],
+  "gate": "Thirteen exact FT6.1 methods pass with zero failures/errors; actual committed paid native use is the sole source of element deltas; classifications exactly partition those deltas; all three policies, saturation, four-turn decay, recovery, bounded checkpoint replay and tamper controls reconstruct independently; all 215 FT5-and-earlier method identities remain exact; frozen source is unchanged.",
+  "next": "FT6.2 candidate feedback integration, actual repeated n-mediated traffic and measured DCNH-pair episode accounting under a new prospective protocol",
+  "theory_boundary": "Passing is an engineering history/accounting hypothesis. It does not validate psychology, assign a subtype, establish the 2+1 formula, close TD6/TD7 or alter any C/D register."
+}

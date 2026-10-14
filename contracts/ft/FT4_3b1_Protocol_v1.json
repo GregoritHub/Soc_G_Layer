@@ -1,0 +1,52 @@
+{
+  "batch": "FT4.3b1",
+  "parent_job": "FT4.3",
+  "policy": "ft-honest-closure-discovery-v1",
+  "status": "prospective",
+  "scope": "Extend an accepted autonomous demand-to-settlement cycle with deterministic discovery of actual paid closure evidence already committed by the same actor in the same demand scope. Record two consecutive non-vacuous exposures through the accepted RetentionLedger, without caller-supplied operation keys, kept references, route, success flag or clearance claim. This sub-batch stops at honest closure; FT4.3b2 retains capability certification, later retained-route reuse, evidence ablation, unavailable support and the final common FT4 gate.",
+  "modules": [
+    "full_theory/autonomous_closure.py",
+    "full_theory/autonomous_closure_audit.py",
+    "tools/evaluate_ft4_3b1.py"
+  ],
+  "test_directory": "tests_ft4",
+  "method_ids": [
+    "test_discovers_two_honest_closure_exposures_in_both_settings",
+    "test_discovery_accepts_no_operation_keys_or_success_flag",
+    "test_settlement_must_precede_closure_discovery",
+    "test_exact_owned_scope_and_actor_are_required",
+    "test_missing_complement_to_native_return_stays_open",
+    "test_missing_or_incomplete_shell_clearance_stays_open",
+    "test_changed_content_resets_continuity_window",
+    "test_interrupted_or_unpaid_work_never_closes",
+    "test_candidates_are_scanned_in_committed_chronological_order",
+    "test_checkpoint_continuation_is_exact",
+    "test_independent_auditor_rejects_forged_closure_and_links",
+    "test_all_ft4_3a_and_predecessor_method_identities_remain_exact"
+  ],
+  "fixtures": {
+    "docs/ft/FT_Configuration_Contract_v1.md": "d582a935b161b5e0ffb8e8a332d027f36cc54c7698ebecac79dc774b80efc94f",
+    "full_theory/autonomous_cycle.py": "12ae1db85687e0d4eec48108de2e5e7f06be3e8c24527b4b581a12d4cd9970f2",
+    "full_theory/autonomous_cycle_audit.py": "e6cbae07974d90633885865fab339bc4c8761058a5bfeeb2bf0952cc62ef6b40",
+    "full_theory/retention.py": "76e604a5a1d8ed7b73b58f391dad74d59e7d2ba868c51f271c14801e8174c29b",
+    "full_theory/retention_audit.py": "9595b3770cf81ae663b5675d3e95e921f2e7d6250c0dd5dbbc68a5589fbf2f50",
+    "tests_ft4/test_autonomous_cycle.py": "ab8cbeb2575c72c99a7d11ce900bdca4f7b6a4135805180a3f912dc0530ee7c5",
+    "tests_ft3/test_retention.py": "6d94c74e03edf05a4ce0e6c1f106e293712afffa4ee3cc2c3f9e3de9b1cb7863"
+  },
+  "settings": ["canonical", "workflow"],
+  "rules": [
+    "The public controller is paired to one completed accepted AutonomousCycleController, the same native engine, actor and exact Demand. Discovery accepts only a positive scan bound and interruption flag; it accepts no operation key, kept reference, return chain, shell encounter, route, desired result, clearance value or success flag.",
+    "Only committed fully paid same-actor native jobs visible in the native journal may become candidates. Candidate ordering is by finished tick, started tick and stable operation identity, independent of construction or mapping order.",
+    "A closure exposure requires one exact owned kept-content chain, an actual complementary-to-native paid return whose successor consumes its predecessor output, a later same-scope paid consumer of that exact kept content and a later non-vacuously evaluated clear Shell encounter for the same demand. The accepted RetentionLedger remains authoritative for continuity and closure.",
+    "The controller discovers at most one previously unused valid exposure per step. Reusing an operation pair, changing content revision, interruption, missing return, partial/unpaid work, wrong actor or scope, missing Shell fields or an active Shell effect cannot advance closure.",
+    "Demand settlement must already be independently auditable before closure discovery begins. Settlement itself grants neither closure nor capability.",
+    "Two consecutive accepted exposures over the same exact kept objects and demand are required. Honest closure records historical membership only; it creates no capability certificate and cannot yet select a retained route.",
+    "Checkpoint restoration is paired to the exact native engine and exact settled autonomous-cycle checkpoint and restores the RetentionLedger discovery cursor, used evidence identities, event sequence and closure state byte-for-byte.",
+    "TIM, seat dimensionality, native resource defaults, accepted subordinate policies and inherited source remain unchanged.",
+    "An independent auditor imports no autonomous-closure controller. It invokes the accepted autonomous-cycle and retention auditors, reconstructs candidate chronology and exact links from raw transactions, and rejects forged actor, scope, payment, return, content, Shell, order or closure claims.",
+    "Acceptance requires the twelve exact new methods plus all ninety-five exact FT4.1-FT4.3a predecessor methods, both-setting closure witnesses, strict source freeze and unchanged source. Passing accepts FT4.3b1 only; FT4.3b2 retains certification, later reuse, evidence removal, unavailable support and final parent/common FT4 acceptance."
+  ],
+  "gate": "One hundred seven exact methods pass with zero failures/errors; canonical and workflow witnesses each begin from an independently auditable settled autonomous cycle, discover two exact paid non-vacuous exposures without caller-selected evidence, close honestly under independent reconstruction, match the registered source freeze and leave source unchanged.",
+  "next": "FT4.3b2 capability certification, later retained-route reuse, evidence ablation, unavailable support, opposition and final common FT4 gate",
+  "stop": "Preserve failures; two gate failures after correction stops."
+}

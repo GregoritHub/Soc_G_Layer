@@ -1,0 +1,56 @@
+{
+  "batch": "FT6.3b",
+  "parent_job": "FT6.3",
+  "version": "1.0",
+  "prospective": true,
+  "scope": "Independent saved-grid reconstruction, exact six-episode training replay and prospective FT6 engineering release-policy decision. No new 180-cell attempt and no score, fixture or threshold tuning.",
+  "inputs": {
+    "accepted_source_commit": "9b323063897b1aeb5e2f013126502a58ff8fb662",
+    "accepted_checkpoint": "4535b40af21dbdfa6d122a6da4105a6b4c1cb3f5",
+    "archive_name": "FT6_3a_Corrected_Acceptance_Evidence_20261014.zip",
+    "archive_sha256": "2b3e796928868c1b02c56f4cc7886d8c8feac36925bb504f8c222e0eb7edde66",
+    "grid_sha256": "7449c13a386b5737b1090f29e9de7679c767b80ecd68a85aaf1148da98337551",
+    "protocol_sha256": "9671bb237bfa750330b69d057066d2e64604146665c00af523b7f5f95729f33b",
+    "fixture_sha256": "d09d4e6ceeca5b775f230b2d42b750e3077acf8d2b6162805ec71c38ebefd1bc",
+    "primary_records": 180,
+    "control_records": 48,
+    "predecessor_methods": 255
+  },
+  "training_replay": {
+    "fixture": "Unchanged accepted tests_ft6.test_conditioning_grid._base('H')",
+    "requests": ["ft63-training-1", "ft63-training-2", "ft63-training-3", "ft63-training-4", "ft63-training-5", "ft63-training-6"],
+    "completion": "Unchanged accepted _finish; six consecutive paid native n routes. Replay baseline and journal snapshots must exactly bind every history event's journal counts, hashes and paid-element deltas in the saved first independent-use checkpoint. The audit imports no executor or scheduler.",
+    "window": "Exactly the latest six completed training episodes; unique DCNH cell requires at least four of six. Fewer than six, tied counts, unpaid or incomplete records never establish stabilization.",
+    "extra_executions": 6
+  },
+  "independent_grid_audit": "Read all exact archive member hashes. Decode 228 ordered U2 records, preserving native transactions and C6 episode structures. Rebuild histories and zero-history controls from exact saved row checkpoints. Accepted independent grid/choice/paid-episode auditors must reconstruct every row and identity, not trust summaries. Compare accepted archive protocol and source-freeze hashes against the prepared unchanged source; only separately registered FT6.3b additions are allowed.",
+  "decision": {
+    "causal": "For each non-null policy, at least one of H0-H5 must choose differently from both exact history-removal and feedback-off controls; actual paid completion and its element binding must be independently reconstructed.",
+    "stabilization": "The same unique training n-pair must occupy at least four of all six held-out completed paid n episodes under independent-use history. Reconstruct primary occupancy and all counterexample history cells, including null, supported, failed, no-use and fixed bias.",
+    "changed_response": "Compare independent-use success-decay-v1 with success-v1 on C4 and C5 by actual chosen identity. Exactly four registered idle turns precede C4. Report all twelve changed decisions and the fixed-bias comparator; no new rate, horizon or threshold.",
+    "selection": "Apply unchanged FT6.3a selection_rule_for_ft6_3b: success-decay-v1 if causal and stabilization gates pass and at least one C4-C5 choice differs from success-v1; otherwise success-v1 if causal and stabilization pass; otherwise null and held FT6 behavioral gate.",
+    "publication": "Engineering conditioning policy only. Record no subtype assignment; full intended subtype claim, TD6/TD7 and theoretical C/D registers remain open. A passing engineering decision permits FT7 under the existing hypothesis contract; it never elects an author interpretation."
+  },
+  "registered_tests": [
+    "test_exact_input_and_predecessor_identities",
+    "test_saved_grid_and_training_reconstruct_independently",
+    "test_training_matches_all_saved_paid_history_events",
+    "test_unique_training_pair_persists_on_held_out_schedule",
+    "test_causal_controls_remove_choice_effect",
+    "test_changed_and_fixed_bias_counterexamples_are_preserved",
+    "test_selection_matches_prospective_rule_and_independent_auditor",
+    "test_synthetic_decay_distinction_selects_decay_without_tuning",
+    "test_synthetic_no_causal_effect_holds_behavioral_gate",
+    "test_synthetic_insufficient_and_tied_occupancy_hold_stabilization",
+    "test_forged_decision_and_unpaid_episode_are_rejected",
+    "test_subtype_and_permanent_history_boundaries_remain_explicit"
+  ],
+  "invariants": [
+    "No accepted source, legacy-r4 default, TIM, native semantic/payment law, load-v1 reserve, certificate or H.retained changes.",
+    "Decision and independent auditor reconstruct choices and occupancy separately; auditors import no runtime selector/executor/scheduler or decision module.",
+    "No previously held attempt is relabeled; all 15 history-policy cells and all 48 controls remain accounted for.",
+    "Synthetic adversarial records verify decision logic only and never substitute for actual paid causal evidence."
+  ],
+  "gate": "Twelve exact registered methods pass, source matches the preregistered freeze throughout the one bounded evaluation, all accepted input/member/source hashes match, all 228 saved records independently reconstruct, six exact paid training replays reconstruct and bind every saved independent-use history event, 255 predecessor identities remain exact, and the decision and independent audit agree with the unchanged prospective selection rule. A null selection is a held behavioral result rather than acceptance.",
+  "next": "FT7.1 prospective packet-mediated internal and interpersonal coupling under the selected engineering policy, with subtype interpretation explicitly held."
+}

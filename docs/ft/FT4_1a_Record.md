@@ -1,0 +1,11 @@
+# FT4.1a — owned demand admission accepted
+
+[machine-checked] On 12 October 2026, frozen source `0353b2e4a7bf71463691f32ed1e84d32e91211f1` passed all 12 exact prospective method IDs, the 64-cell binary historical pressure panel and independent canonical/workflow witnesses. No failures or source changes occurred in the acceptance run. Each witness admits two distinct paid needs, preserves bounded intake and suspends the withdrawn need without claiming fulfillment.
+
+[derived] New `DemandLedger` discovers current paid actor-owned c6.need/c7ws.need bindings, preserves exact revisions and scope, first-seen age, deterministic order, omissions and continuation cursor. Latest paid withdrawn/disputed revisions suspend obligations; hidden revisions alone change nothing. Restart preserves exact demand and native state. Pressure records pending A3/A4 and empty A2 charge separately from wallets and retained history. It does not invent a scoped task.
+
+[machine-checked] The independent auditor reconstructs binding ownership/content/receipts from native journal and access commands; it rejects false scope, age, actor, receipts, omissions and pressure predicates. Pressure inputs remain explicit recorded controller observations, not a claim of an autonomous integrated cycle. All inherited source remains unchanged; the full 751-method recovery regression was not repeated for these additive modules.
+
+[machine-checked] Raw native checkpoints, demand events, exact method IDs, run log and full executed-source freeze are saved as the private artifact `Soc_G_Layer_FT4_1a_Evidence_20261012.zip`, SHA-256 `86368969d2951a6808d77de2b17867ee2d1b8991cc15413a230f4f083a36f009`. Retrieve with the Library skill by exact filename; verify that archive hash and every `SHA256.json` member. Private retrieval IDs are intentionally excluded from this repository. Reproduce after dependency preparation with `python3 tools/evaluate_ft4_1.py /absolute/fresh-output`.
+
+[open] FT4.1 is still open. FT4.1b is split prospectively into b1 native request formation and b2 actual outcome fulfillment/controller integration. FT4.2 retains lawful route choice and FT4.3 retains autonomous closure/reuse. No theoretical register or psychological claim is closed.

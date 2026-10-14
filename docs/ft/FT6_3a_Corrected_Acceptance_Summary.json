@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "methods": 14,
+  "failures": 0,
+  "errors": 0,
+  "exact_methods": true,
+  "expected_methods": 14,
+  "predecessor_methods": 241,
+  "primary_paid_executions": 180,
+  "causal_control_executions": 48,
+  "independently_reconstructed": true,
+  "discriminating_controls": 24,
+  "grid_sha256": "7449c13a386b5737b1090f29e9de7679c767b80ecd68a85aaf1148da98337551",
+  "source_unchanged": true,
+  "registered_freeze": true,
+  "protocol_sha256": "9671bb237bfa750330b69d057066d2e64604146665c00af523b7f5f95729f33b",
+  "fixture_sha256": "d09d4e6ceeca5b775f230b2d42b750e3077acf8d2b6162805ec71c38ebefd1bc",
+  "hashes_registered": true,
+  "evidence_format": "ordered run_id/transactions/route_checkpoint/C6-encoded-episode tuples in U2 codec",
+  "evidence_roundtrip_exact": true,
+  "decoded_evidence_independently_reconstructed": true,
+  "preserved_failures": [
+    "FT6_3a_Held_Evidence_20261013.zip"
+  ],
+  "scope": "FT6.3a engineering grid only; FT6.3 parent release and subtype interpretation remain open"
+}

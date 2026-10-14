@@ -1,0 +1,48 @@
+{
+  "batch": "FT5.2b1",
+  "parent_job": "FT5.2",
+  "policy": "ft-reserve-candidate-readiness-v1",
+  "status": "prospective",
+  "scope": "Insert the three accepted reserve policies into route-candidate readiness without changing FT4 route ranking, prices or permissions. A positive preparation obligation selects a visible preparation transition before route launch; a completed or zero obligation delegates to the unchanged FT4 policy. FT5.2b2 retains completion/interruption debits and full autonomous-cycle settlement integration.",
+  "modules": ["full_theory/reserve_candidates.py", "full_theory/reserve_candidates_audit.py", "tools/evaluate_ft5_2b1.py"],
+  "test_directory": "tests_ft5",
+  "method_ids": [
+    "test_three_policies_have_separate_exact_candidate_state",
+    "test_null_and_ample_reserve_delegate_without_preparation",
+    "test_scarce_reserve_selects_preparation_and_preserves_all_routes",
+    "test_zero_reserve_never_marks_a_route_forbidden",
+    "test_paid_preparation_changes_readiness_then_native_route_launches",
+    "test_preparation_term_is_separate_from_native_overhead_and_wallet_price",
+    "test_canonical_and_workflow_route_priority_remain_native_owned",
+    "test_step_accepts_no_route_recipe_target_seat_or_success_input",
+    "test_checkpoint_continuation_is_exact",
+    "test_independent_auditor_reconstructs_candidate_transitions",
+    "test_independent_auditor_rejects_forged_policy_readiness_and_routes",
+    "test_ft5_2a_and_all_predecessor_method_identity_remain_exact"
+  ],
+  "fixtures": {
+    "contracts/ft/FT5_2a_Protocol_v1.json": "fe0d145ae29f940cfb7e67f5284dd0eca63099bfcdcdd1378f47c53abc187967",
+    "contracts/ft/FT5_2a_Source_Freeze_v1.json": "7fff5d720ca555dfd285c5bd13b21002e11c9a19eb2f90dc58c202727f31d046",
+    "full_theory/native_reserve.py": "2199d0a20bb78f3597bba59dfd57bd7121a17a87d1af9e92c69c4f2323e55b77",
+    "full_theory/native_reserve_audit.py": "92011661ec428175e2c9c163a422941730f79ce2e286a3831abd72d84b03109f",
+    "full_theory/route_policy.py": "ef68d90cee55bb5f32a3b0b9d3bc2ded43c36964c4ea689a3f4746b0fe65ed49",
+    "full_theory/route_policy_audit.py": "40b87e5584ea310950fac01d2ae61a9896a05367091f20f2a190f9bc19366225",
+    "full_theory/autonomous_cycle.py": "12ae1db85687e0d4eec48108de2e5e7f06be3e8c24527b4b581a12d4cd9970f2"
+  },
+  "rules": [
+    "The candidate controller owns one exact FT5.2a NativeReserveBinding and one unchanged FT4 IntegratedRoutePolicy for the same native engine and actor. Policy identity comes only from the embedded FT5.1 ledger and is immutable.",
+    "The first observation derives one reserve demand identity from the exact owned native request, admits its declared nonnegative demand load and computes the unchanged FT4 route plan from owned state. Callers cannot supply a route, recipe, target seat, preparation amount, reserve result or success flag.",
+    "For null or non-null preparation zero, the selected candidate is the route selected by the unchanged FT4 priority. For positive preparation, the selected candidate is preparation and records its exact remaining units separately; the complete FT4 option inventory and provisional selected route remain visible.",
+    "Preparation is a costly transition, never a forbidden route. Zero reserve may increase preparation but cannot remove, rename, reorder or mark any FT4 route forbidden. Native route overhead and reserve preparation units are separate fields and are never arithmetically merged.",
+    "Only FT5.2a-bound distinct paid post-admission native jobs reduce remaining preparation. The candidate controller performs no wallet debit for observing readiness and cannot credit a job itself. When the obligation becomes complete, it delegates to the unchanged FT4 policy, which re-evaluates current native affordability and owns route launch.",
+    "The null, load-v1 and grade-load-v1 ledgers remain separate interfaces with their accepted formulas. This batch does not invent a common implicit default or elect one policy for release.",
+    "Every candidate event records reserve policy, balance, load, required/bound/remaining preparation, unchanged route options, provisional native selection, selected candidate, native overhead and a separate reserve preparation term. Repeated observation without new paid binding is idempotent except for append-only event index.",
+    "Checkpoint restoration commits current native state, the exact FT5.2a binding, unchanged FT4 policy, attempt and event history. A different native engine, reserve policy, request, demand or evidence history is rejected.",
+    "The independent auditor imports no candidate controller. It independently audits the embedded native reserve binding, reconstructs preparation readiness and route visibility, checks selection transitions and rejects forged policy, load, balance, obligation, native option, selection or cost separation.",
+    "Acceptance requires the twelve exact new methods, all 159 FT5.2a/FT5.1/FT4 predecessor identities, registered fixtures, a strict source freeze and unchanged source.",
+    "Passing accepts reserve-conditioned candidate readiness only. It does not yet bind completion/interruption debits to autonomous settlement, elect a release policy, settle C13/TD4, validate psychology or complete FT5.2-FT9."
+  ],
+  "gate": "Twelve exact FT5.2b1 methods pass with zero failures/errors; all three policies produce reconstructible separate readiness state; scarce reserve selects paid preparation without removing any FT4 route; completed preparation delegates to unchanged native priority and pricing in both settings; all 159 predecessor identities remain exact.",
+  "next": "FT5.2b2 bind autonomous completion/interruption reserve effects and close the parent FT5.2 integration gate",
+  "stop": "Preserve failures; two gate failures after correction stops."
+}

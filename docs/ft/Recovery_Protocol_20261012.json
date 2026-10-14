@@ -1,0 +1,30 @@
+{
+  "schema": "ft-recovery-protocol-v1",
+  "registered_at": "2026-10-12T16:16:31.181Z",
+  "scope": "Exact repair restoration and bounded layered packaging; no engine behavior changes",
+  "source_commits": {
+    "base": "fdede6f16721f06422d0798a79d84170969b83f8",
+    "held": "c8bef62d623b55054594d1328dfd649c52811641",
+    "repairs": "2b62b22f02a94f32ba060812c95309890a05856c"
+  },
+  "archive_sha256": {
+    "held": "30ee3b393fa0b619cc7f2f8e6191a8769dc9f2b4382627eda1f00d759d801df0",
+    "repair_evidence": "1b7ca5507e7a82e9c1fc09d7485f6b47cfc91fa3302268006e9180c5ed5616d7"
+  },
+  "packaging": "Store repaired FT source and current operations in this repository. Reconstruct execution from the pinned read-only base plus the verified held bundle and repair-evidence archive, then apply this layer. Do not republish inherited denied manifests.",
+  "gate": [
+    "All archive members and all 20 FT3 source-freeze entries match",
+    "All 1093 tracked sealed baseline members match the pinned base; separately account for archival material absent from checkout",
+    "Historical immutable reference verifies",
+    "5 historical methods, 12 FT2 methods, 13 FT3 methods and both positive witnesses pass with unchanged source",
+    "Fresh inherited regression matches the exact accepted 751 method IDs, all passing, unchanged source",
+    "Prepared clean execution tree matches recovered executable source; command and summaries are reproducible",
+    "New destination head and saved layer hashes verified remotely before scheduling or FT4"
+  ],
+  "failure_record": [
+    "An initial bundle fetch without explicit branch failed because the incremental bundle has no HEAD ref; corrected by naming refs/heads/main",
+    "Legacy tools/verify_baseline.py checks all 3044 original archive members; 2087 archival paths are absent from the source checkout. Runtime digest and protocol digest match; a separate exact tracked baseline check passes. No baseline edited.",
+    "Shell git push dry-run has no HTTPS credential; use supported connector writes."
+  ],
+  "completion_claims": "This registers recovery/packaging only, not FT4 acceptance, standalone final release or completion of old publication."
+}

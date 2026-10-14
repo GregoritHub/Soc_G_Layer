@@ -1,0 +1,7 @@
+# Exact destination tree repair
+
+The FT7.1a status commit 0572599b1de9426c39f2fcdb7a9ceeb1ddecaf76 accidentally used a newly constructed six-file tree instead of extending its parent. The status and evidence documents survived, but the visible destination tree omitted the accepted source. This was a checkpoint-save execution error; it did not change or invalidate the frozen acceptance artifacts retained in the preceding commits.
+
+Restore the exact complete project-owned tree from corrected acceptance commit 153698145d855a9db51553a43b9d5609d001846b, tree 3fe24d335c2acb9c9aa90ed6e58b20b7bbe96447. Overlay all six latest status/evidence paths from 0572599b1de9426c39f2fcdb7a9ceeb1ddecaf76, except the run-state carries the current expected-head worker lease. Preserve every accepted blob identity and all predecessor commits; do not force-push or reset history. Compare the entire resulting remote tree with that declared union and the local exact source bytes before new implementation.
+
+No source or protocol correction, acceptance rerun, inherited import, historical C7 transfer or theory election is required. This checkpoint restores only already-published destination files by their exact existing Git object identities. Future saves must supply an explicit verified base-tree SHA and verify the complete tree, not only changed-file readback. FT7.1b remains pending until its own prospective implementation gate.
