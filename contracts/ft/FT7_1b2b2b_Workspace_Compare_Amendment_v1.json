@@ -1,0 +1,15 @@
+{
+  "batch": "FT7.1b2b2b",
+  "version": "include-existing-accepted-comparison-tool-v1",
+  "diagnosis": {
+    "clean_preparation_passed": true,
+    "subsequent_full_frozen_identity_check_passed": false,
+    "missing": [
+      "tools/compare_ft7_1b1.py"
+    ],
+    "different": []
+  },
+  "correction": "Also include the existing public tools/compare_ft prefix in the current project-owned layer overlay. The unchanged tools/compare_ft7_1b1.py is an accepted predecessor dependency required by the exact freeze; no method or engine source changes.",
+  "verification": "Repeat only clean input reconstruction into a fresh output and verify every saved-audit frozen file identity, reporting all missing or changed files. Do not rerun any accepted engine gate.",
+  "criteria": "All archive, sealed baseline, accepted repair, current layer and saved-evidence requirements remain intact; no full FT9 delivery claimed."
+}
