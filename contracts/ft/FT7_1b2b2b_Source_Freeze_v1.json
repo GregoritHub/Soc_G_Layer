@@ -124,6 +124,8 @@
   "contracts/ft/FT7_1b2b2b_Paid_Recall_Amendment_v1.sha256": "b951e795070ecad98f04b04cc0a9b9e02b45442a4fa6a113878f53ccecc16343",
   "contracts/ft/FT7_1b2b2b_Protocol_v1.json": "2da7f69807e3a297291c9aa8035598584e69fcbdb3aadb3f5d525af0870f8bc1",
   "contracts/ft/FT7_1b2b2b_Protocol_v1.sha256": "fed5964bc03c3e1c7bd30a6a412984659ff542dbcd7b6b6e0d0041931a48bc07",
+  "contracts/ft/FT7_1b2b2b_Runtime_Reference_Amendment_v1.json": "a7423c06f9272a9cff97110371bea6c98cc9ede3e18ae180877c5bc6a8fbf05d",
+  "contracts/ft/FT7_1b2b2b_Runtime_Reference_Amendment_v1.sha256": "9feb6f523eae7c6643a3e70e3dacd89899009029ee7da60ac9726d22bc5cb822",
   "contracts/ft/FT7_1b2b2b_Split_Comparison_Amendment_v1.json": "a2324947a07166b9e6065131416e1acdf8c057795ef55507d7603acebd3556e6",
   "contracts/ft/FT7_1b2b2b_Split_Comparison_Amendment_v1.sha256": "5df246869004911b1cba4aac0bf7f66d2dd41c245e41867c396fe6e036e83449",
   "contracts/ft/FT_Selected_Engineering_Policies_v1.json": "7d236db4b0c6d29c8c423d38a7096e3c7f0f3d1edbdb9a87f21790e33c9b2002",
