@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft7-window-admission-20261015T223300Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-15T23:17:51Z",
-  "expected_head": "8c66f6ba1fffd8e4ebc7a8863ab74df421c285ab",
+  "lease_expires_at": "2026-10-15T23:32:56Z",
+  "expected_head": "a346f0f9287f1a0a701cb97d051a08854eca49fa",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1d",
   "current_window_admission_progress": {
     "status": "frozen_evaluation_running_not_accepted",
@@ -18,7 +18,7 @@
     "required_saved_records": 40,
     "required_predecessor_identities": 484,
     "actual_methods_completed": 0,
-    "saved_records_completed": 16,
+    "saved_records_completed": 23,
     "new_native_work": false,
     "accepted": false,
     "record": "docs/ft/FT7_1b2b3b2b2b2b2b2b1d_Record.md"
