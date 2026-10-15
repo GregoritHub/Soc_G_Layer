@@ -1,12 +1,12 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "22066a138f726a5d3f0734dd4cf5723126044548",
-  "current_batch": null,
+  "status": "running",
+  "run_id": "ft7-fresh-request-20261015T1449Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-15T15:19:00Z",
+  "expected_head": "8238f87b68d991624b41146ef09db6e35dc51479",
+  "current_batch": "FT7.1b2b3b2b2b2b2b2b",
   "next_batch": "FT7.1b2b3b2b2b2b2b2b (planned, not preregistered): route-free fresh skill work and separately bound current request/admission integration, newly paid comparisons for changed inputs, genuine same-priority/native-cost ties across distinct actual elements, autonomous live history-only choice, chosen paid movement/downstream use, matched feedback-off/history-removal and full comparison/preparation/live-staging composition/restart. Preserve older unresolved demand/TD5 and all FT8 obligations.",
   "completed_batches": [
     "FT0.1",
