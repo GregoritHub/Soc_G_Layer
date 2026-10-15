@@ -8,7 +8,11 @@
   "expected_head": "ac106a6a754716b015c16d2f516405eb22e2da99",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1d",
   "current_window_admission_progress": {
-    "status": "implemented_not_frozen_not_accepted",
+    "status": "frozen_evaluation_pending_not_accepted",
+    "implementation_commit": "a79669120939bfb0ee5f2dd7914a45b44f3c5696",
+    "freeze_commit": "86c613185216ae09b76ef1a1dbd764847ec2c31e",
+    "frozen_identities": 406,
+    "prior_identities_exact": 399,
     "protocol_commit": "ac106a6a754716b015c16d2f516405eb22e2da99",
     "required_methods": 8,
     "required_saved_records": 40,
