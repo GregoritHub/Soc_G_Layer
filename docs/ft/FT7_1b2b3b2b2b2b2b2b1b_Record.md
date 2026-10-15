@@ -190,3 +190,17 @@ head were verified exact, with no paths removed. No alternate transfer route,
 runtime change, acceptance change or duplicate archive upload occurred.
 Both numbered attempt-2 methods remain active as of 19:47 UTC; ownership is
 refreshed while awaiting their actual results.
+
+## Verified acceptance checkpoint
+
+Acceptance was saved at c445b2bd9865be0194d998e9a9098a7ac8532ff2. All 504
+public blobs match their complete local Git identities, with no paths removed.
+The first acceptance-save helper invocation exceeded its combined read-output
+limit and failed JSON parsing before any GitHub tree/ref mutation. Bounded
+one-file-at-a-time reads retained the same exact public payload and explicit
+nonempty base-tree/expected-head guards; the subsequent save and full-tree
+verification passed. This auxiliary save error did not alter source, evidence,
+acceptance criteria or the already completed gate. Ownership is released at
+this verified checkpoint; no substantive blocker is present. The next work
+remains separately versioned current TD5/capacity integration and all remaining
+fresh-skill/live-choice/composition obligations, not a rerun of this gate.
