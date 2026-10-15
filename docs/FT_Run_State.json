@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "8c7242e5e3e474024e001e083fe31c23e2e6087c",
+  "status": "running",
+  "run_id": "ft7-b3b2-20261015T0339Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-15T04:09:00Z",
+  "expected_head": "45e898c0775166b0b499453ba8d0224e0bf28a00",
   "current_batch": "FT7.1b2b3b2",
   "next_batch": "Preregister and implement complete owned-domain tie-only choice integration and live movement/consumer outcome staging, with matched feedback controls and exact restart; FT7.1b2b3b parent remains pending",
   "completed_batches": [
