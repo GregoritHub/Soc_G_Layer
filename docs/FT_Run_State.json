@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft-role-20261015T0840-9f3c",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-15T09:35:00Z",
-  "expected_head": "87d00427663222efa57f275853688dbfaf5802e3",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "18316840e6791fb751b40bcb1c664054ba421938",
   "current_batch": "FT7.1b2b3b2b2b2b1",
   "next_batch": "FT7.1b2b3b2b2b2b2: complete owned role alternatives and fresh route-free task/skill panel, genuine same-priority/native-cost distinct-element tie, live history-caused selection, actual chosen movement/consumer, matched feedback-off/history-removal and full preparation/staging composition. Parent FT7/FT8/FT9 and all denominators unchanged.",
   "completed_batches": [
@@ -293,7 +293,7 @@
     "prior_failed_attempts": 6
   },
   "latest_acceptance_record": "docs/ft/FT7_1b2b3b2b2b2b1_Record.md",
-  "latest_acceptance_commit": null,
+  "latest_acceptance_commit": "18316840e6791fb751b40bcb1c664054ba421938",
   "engineering_continuation": {
     "batch": "FT7.1b2b3b",
     "accepted": false,
@@ -1385,6 +1385,13 @@
     },
     "execution_authorized": false,
     "history_choice": false,
-    "scope": "Actual comparison-to-preparation composition only; no live choice or parent acceptance"
+    "scope": "Actual comparison-to-preparation composition only; no live choice or parent acceptance",
+    "acceptance_commit": "18316840e6791fb751b40bcb1c664054ba421938",
+    "public_tree_verification": {
+      "commit": "18316840e6791fb751b40bcb1c664054ba421938",
+      "blobs": 423,
+      "all_local_git_blob_identities_exact": true,
+      "no_paths_removed": true
+    }
   }
 }
