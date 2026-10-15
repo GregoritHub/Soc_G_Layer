@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft7-b3b2-20261015T0339Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-15T04:27:00Z",
-  "expected_head": "6d87533776e262bdfc3c564e3d866161342c7c8c",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "5d513e0abc87d0c5d7da08df5d384953f816b61f",
   "current_batch": "FT7.1b2b3b2b",
   "next_batch": "Prospectively implement complete current owned candidate domain and autonomous tie-only paid choice, matched feedback-off/history-removal controls and exact integration with accepted paid preparation and live outcome staging; parent FT7 and FT8–FT9 remain pending.",
   "completed_batches": [
@@ -319,7 +319,7 @@
     "prior_failed_attempts": 6
   },
   "latest_acceptance_record": "docs/ft/FT7_1b2b3b2a_Record.md",
-  "latest_acceptance_commit": "Recorded by the subsequent verified ownership-release checkpoint",
+  "latest_acceptance_commit": "5d513e0abc87d0c5d7da08df5d384953f816b61f",
   "engineering_continuation": {
     "batch": "FT7.1b2b3b",
     "accepted": false,
@@ -1031,7 +1031,14 @@
     "source_unchanged": true,
     "claim": "Live suffix outcome staging only; complete owned-domain and tie-only causality remain pending",
     "actual_methods": 10,
-    "actual_saved_records": 16
+    "actual_saved_records": 16,
+    "acceptance_commit": "5d513e0abc87d0c5d7da08df5d384953f816b61f",
+    "public_tree_verification": {
+      "commit": "5d513e0abc87d0c5d7da08df5d384953f816b61f",
+      "blobs": 362,
+      "all_local_git_blob_identities_exact": true,
+      "no_paths_removed": true
+    }
   },
   "prior_ft7_1b2b3b1_acceptance": {
     "batch": "FT7.1b2b3b1",
