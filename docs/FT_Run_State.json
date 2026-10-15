@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "a23186a12e2a525697b18d33191ad2b3692c6a64",
+  "status": "running",
+  "run_id": "ft-role-20261015T0840-9f3c",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-15T09:10:00Z",
+  "expected_head": "ffddc01341a8cecc98ba9c224935d433249ecdcb",
   "current_batch": "FT7.1b2b3b2b2b2a",
   "next_batch": "FT7.1b2b3b2b2b2b: derive required native material/peer role alternatives from owned paid evidence; preregister fresh route-free task/skill panel and actual paid work yielding genuine priority/native-cost ties across distinct elements; separately version live history choice and execute chosen movement/downstream use with matched feedback-off/history-removal controls and exact preparation/staging composition. Existing bounded request-role inventory is not full future coverage. Then remaining FT7–FT9.",
   "completed_batches": [
