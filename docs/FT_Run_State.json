@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft7-paid-choice-20261015T0529Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-15T06:40:00Z",
-  "expected_head": "3430079d6ff2f11f1f361dffd31c75f2eb78b382",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "bc27f28123b1e590b457c918664d5641dd978946",
   "current_batch": "FT7.1b2b3b2b2a",
   "next_batch": "FT7.1b2b3b2b2b: preregister complete current TD5 admission/route/recipe and bounded operand domain, fresh paid owned work producing a genuine priority/native-cost tie, autonomous history-caused tie-only choice, actual chosen work/downstream use, matched feedback-off/history-removal controls and exact preparation/live-staging composition/restart; then remaining FT7–FT9.",
   "completed_batches": [
@@ -295,7 +295,7 @@
     "prior_failed_attempts": 6
   },
   "latest_acceptance_record": "docs/ft/FT7_1b2b3b2b2a_Record.md",
-  "latest_acceptance_commit": "567f4c7349cc1dce7eacb659021e2be26da40ad8",
+  "latest_acceptance_commit": "bc27f28123b1e590b457c918664d5641dd978946",
   "engineering_continuation": {
     "batch": "FT7.1b2b3b",
     "accepted": false,
@@ -1197,7 +1197,14 @@
     "reader_frozen_identities": 313,
     "paid_execution_rerun_for_saved_stage": false,
     "failed_attempts_preserved": 4,
-    "scope": "Actual native paid owned comparison and restart only; no TD5 admission, history-caused choice, movement or parent acceptance"
+    "scope": "Actual native paid owned comparison and restart only; no TD5 admission, history-caused choice, movement or parent acceptance",
+    "acceptance_commit": "bc27f28123b1e590b457c918664d5641dd978946",
+    "public_tree_verification": {
+      "commit": "bc27f28123b1e590b457c918664d5641dd978946",
+      "blobs": 390,
+      "all_local_git_blob_identities_exact": true,
+      "no_paths_removed": true
+    }
   },
   "prior_ft7_1b2b3b2b1_acceptance": {
     "batch": "FT7.1b2b3b2b1",
