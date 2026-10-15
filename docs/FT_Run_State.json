@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "ab86087436ef1d571a51d1eb6dad6cf6216b6f04",
+  "status": "running",
+  "run_id": "ft-reuse-oct15-1792024259179",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-15T01:00:59.179Z",
+  "expected_head": "eae48e69cc1cfb7e785a4c6b26a6fc9095a39fa5",
   "current_batch": "FT7.1b2b2b",
   "next_batch": "FT7.1b2b2b approved split comparison implementation and recall repair; freeze and full gate; then FT7.1b2b3",
   "completed_batches": [
