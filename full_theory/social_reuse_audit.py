@@ -6,7 +6,7 @@ from hle_unified.compact import unseal
 from hle_unified.material import OperationStore,attrs
 from hle_unified.records import Account
 from hle_unified.cognitive_records import reference
-from hle_unified.particulars import AccessLedger
+from hle_unified.operations import NativeAccess
 from .retention import Demand, no_easier
 from hle_unified.development_audit import audit as audit_development
 from hle_unified.workflow_selection_audit import extent as inherited_extent
@@ -117,7 +117,7 @@ def audit_social_reuse(engine,checkpoint):
         require(ready is not None,'organization before certification')
         snapshot=_snapshot(organization['view'])
         require(snapshot.actor==d['actor'],'organization actor')
-        qualified_access=AccessLedger.restore(d['qualified_access'])
+        qualified_access=NativeAccess.restore(d['qualified_access'])
         require(qualified_access.view(d['actor']).bytes()==organization['view'],'exact complete qualified organization snapshot')
         heads={}
         for b in snapshot.bindings:
