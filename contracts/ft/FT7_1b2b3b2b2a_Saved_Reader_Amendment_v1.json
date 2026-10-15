@@ -1,0 +1,13 @@
+{
+  "batch": "FT7.1b2b3b2b2a",
+  "kind": "prospective_test_harness_and_saved_reader_correction",
+  "date": "2026-10-15",
+  "original_frozen_commit": "ed4b85a7ed4ebe80491b4a4fcd98ccc6ff9887b8",
+  "original_freeze_sha256": "3bb54a6a5cb070dbaf9ee1d9f4335016cc9fccba5168737b6bdd96757b2cae1f",
+  "original_index_sha256": "1b04206c0558fbdc2f17b625a12fffda905a1bdc0a582e3f2abed86d542e5797",
+  "diagnosis": "Attempt4: all12 exact records independently audited; 10 actual methods ran, 9 passed and forged-extent test errored because its read-only world proxy omitted checkpoint().",
+  "correction": "Add original world checkpoint accessor to the forged journal proxy; retain altered required extent and assertRaises(ValueError). Runtime and independent auditor unchanged.",
+  "saved_stage": "Freeze reader before validation. Reuse exact original record index and all12 checksummed typed records. Bridge all311 original identities, allowing changes only to this new test harness and evaluator reader; all295 accepted predecessor source identities unchanged. Repeat full independent original source and saved native/domain/suffix audits per record, run all10 exact methods and check388 exact predecessor method identities. No paid comparison execution rerun.",
+  "preserve": "All attempts1-4, logs, raw records and exact source capsules; acceptance pending full saved-stage pass.",
+  "unchanged": "Original10 methods/12 records/388 predecessor gate, no TD5 admission or history choice, allFT8 requirements and denominators."
+}
