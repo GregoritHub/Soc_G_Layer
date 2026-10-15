@@ -1,8 +1,0 @@
-{
-  "version": "ft7.1b2a-checkpoint-amendment-v1",
-  "reason": "Frozen attempt 1 failed during class setup before method bodies: native DetailAddress is outside selection_records serializer domain",
-  "change": "Serialize exact evidence addresses as ordered (delivery,key) tuples; reconstruct native DetailAddress only at restore; no meaning, payment, input, selection or gate changes",
-  "preserve": "Attempt 1 log and source hashes; original frozen commit remains history",
-  "supplemental_evidence": "Save four partial restart snapshots in addition to fourteen primary and four final restart records; unchanged primary denominator",
-  "scope": "Owned autonomous peer coupling only; parent independent retention and feedback remain pending"
-}

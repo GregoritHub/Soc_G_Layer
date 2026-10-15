@@ -1,8 +1,0 @@
-{
-  "version": "ft7.1b2b1-composed-accounting-amendment-v1",
-  "attempt": 6,
-  "failed_freeze": "e1e8914d4c1931bd3eeb5937f7d69c6ab286716c",
-  "observed": "4 native training records saved; initial restoration rejected operation extent because development-only audit was called without inherited content/selection accounting extensions",
-  "repair": "Compose the native independent development audit with the unchanged workflow-selection extent auditor and explicit c1/c2/c3/c4/c6/c7w/c7ws flags, as inherited audit layering requires. This validates all operation prices rather than applying a plain U4 price to extended operations.",
-  "unchanged": "Full method/record domain, semantics and parent gates; no accepted auditor changes."
-}

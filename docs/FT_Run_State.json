@@ -1,12 +1,12 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "e8852cdf7f849c3f00a601d6a682ebf4544a3f2b",
-  "current_batch": "FT7.1b2b3b2b2b2b2b1",
+  "status": "running",
+  "run_id": "ft7-fresh-task-20261015T1335Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-15T14:05:00Z",
+  "expected_head": "3cd329a0a4d07fc10bdf406ec7612174177623e8",
+  "current_batch": "FT7.1b2b3b2b2b2b2b2a",
   "next_batch": "FT7.1b2b3b2b2b2b2b2 (planned, not preregistered): route-free fresh task/skill work, genuine same-priority/native-cost ties across actual distinct elements, separately versioned live history-only choice, actual chosen movement/downstream use, matched feedback-off/history-removal and full comparison/preparation/live-staging composition/restart. Preserve older unresolved demand/TD5; changed inputs require new proof and paid comparison; all FT8 denominators unchanged.",
   "completed_batches": [
     "FT0.1",
@@ -1539,5 +1539,10 @@
       "recovery_members": 209
     }
   },
-  "prior_role_domain_acceptance_commit": "c41545528ecb3b7c788737e804e08d3390f538b8"
+  "prior_role_domain_acceptance_commit": "c41545528ecb3b7c788737e804e08d3390f538b8",
+  "fresh_task_progress": {
+    "status": "designing_not_registered",
+    "accepted": false,
+    "scope": "Fresh route-free task intake on exact fulfilled sources only; parent live tie-only choice remains mandatory."
+  }
 }

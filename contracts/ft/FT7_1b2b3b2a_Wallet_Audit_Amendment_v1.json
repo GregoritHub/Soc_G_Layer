@@ -1,9 +1,0 @@
-{
-  "version": "ft-live-outcome-wallet-audit-correction-v1",
-  "batch": "FT7.1b2b3b2a",
-  "failed_freeze": "e37f14cfb96490cd9252e1f02578774fb43a4a1c",
-  "diagnosis": "Attempt 1 saved and independently audited the entry record, then saved partial movement and failed before method bodies: the runtime stores the full native wallet attrs, while the new auditor compared them to an energy/time-only projection. Native work is not implicated.",
-  "repair": "Auditor wallet reconstruction returns the complete latest actor-owned wallet record; exact debit remains the difference of its energy/time fields. No runtime, native law, protocol denominator, priority or outcome rule changes.",
-  "retry": "Preserve first raw records/log/source capsule; freeze changed auditor and this amendment before a fresh unchanged ten-method/sixteen-record full gate.",
-  "scope": "Routine audit representation repair; no theory ruling or acceptance waiver."
-}

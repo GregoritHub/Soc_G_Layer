@@ -1,6 +1,0 @@
-{
-  "full_theory/demand_controller.py": "3c33848812f4b285b833b06b83231fe97a2d9dd11dbf76965ce9afba84115391",
-  "full_theory/fulfillment_audit.py": "201410b7fe25b621526c90dcc77f4515b76a64de23ab2e5f60110208cbe7c662",
-  "tools/evaluate_ft4_1c.py": "44cd81c89182657ccfca462787a52c95830ac0004958a4b749ae180741950a61",
-  "tests_ft4/test_controller.py": "02e45f329aa0e203040e2dc95b85febddd6f13e015d07e631b4cc30f8aba9a1c"
-}

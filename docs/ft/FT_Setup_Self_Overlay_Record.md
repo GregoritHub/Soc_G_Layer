@@ -1,5 +1,0 @@
-# Exact setup self-overlay repair
-
-[measured] The prospectively registered setup-only repair passed fresh preparation on 15 October 2026 UTC. The output now contains exactly the executing project-owned setup tool without a separate manual copy. All 270 frozen identities match the revised freeze; only the explicitly registered setup tool differs from the previous 270-file freeze. All 1,093 sealed baseline files, 210 historical references, 20 repair-freeze files and 209 archive members verified. Existing-output rejection preserved the prepared output. See FT_Setup_Self_Overlay_Verification.json for exact hashes and commits.
-
-The only implementation change adds the exact tools/prepare_workspace.py path to the existing tracked-layer allowlist. No other tool prefix, pinned dependency, accepted engine source, default or native semantics changed. No accepted gate was rerun. Historical freezes remain intact. This removes a documented reproduction step; it does not accept FT9 or parent FT7. FT7.1b2b3b remains the next engine integration work, with actual paid preparation, live outcome staging and tie-only choice controls still required.

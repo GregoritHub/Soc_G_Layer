@@ -1,9 +1,0 @@
-{
-  "version": "ft7.1b2b1-relation-admission-amendment-v1",
-  "failed_freeze": "d85e5acf6136e846b266f12b7d26e4fbbd1b1e9c",
-  "attempt": 2,
-  "observed": "0 bodies; discovery attempted to decode a non-content actor binding as typed content",
-  "cause": "owned routed bindings also include annotation data outside the canonical/workflow payload relation",
-  "correction": "Require exact single c3.data or c7w.data relation before payload decoding; reject malformed payloads. Keep native schema, exact stable selection order, denominator, costs and parent gates.",
-  "authorization": "Routine diagnosed repair under standing authorization; no two-failure permission stop."
-}
