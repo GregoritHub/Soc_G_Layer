@@ -5,8 +5,8 @@
   "run_id": "ft71b2b3b-20261015T0240Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-15T03:10:00Z",
-  "expected_head": "64b692617396bc7c3837af0a933ededdca27a70a",
-  "current_batch": "FT7.1b2b3b",
+  "expected_head": "1617a018153a380cac721ebffeaa8bca57b4bf9f",
+  "current_batch": "FT7.1b2b3b1",
   "next_batch": "Preregister and implement actual paid reserve preparation plus autonomous tie-only later owned choices, complete owned candidate domain, feedback controls, matched main costs and integrated exact restart; then remaining FT7–FT9",
   "completed_batches": [
     "FT0.1",
@@ -102,7 +102,8 @@
     "FT7.1b2b3",
     "FT7.1b2b2a",
     "FT7.1b2b2b",
-    "FT7.1b2b3a"
+    "FT7.1b2b3a",
+    "FT7.1b2b3b1"
   ],
   "publication": {
     "mode": "read-only pinned dependencies plus new development",
@@ -904,5 +905,29 @@
     "frozen_commit": "83d057cb5700c6fa0676cc5d83b422c622d420b4",
     "saved_audit_frozen_commit": "c5b0b8927a564c8ac8706e21e3f8a28372616191",
     "source_publication": "verified"
+  },
+  "setup_repair": {
+    "passed": true,
+    "frozen_identities": 270,
+    "bad": [],
+    "prior_changed": [
+      "tools/prepare_workspace.py"
+    ],
+    "automatic_setup_identity": "7ad1d1068af68f3fa7b0c38ee32475541da03ddd68fa8e46f696ff3cf04e8d8a",
+    "existing_output_rejected": true,
+    "source_setup_unchanged": true,
+    "preparation": {
+      "passed": true,
+      "base": "fdede6f16721f06422d0798a79d84170969b83f8",
+      "held": "c8bef62d623b55054594d1328dfd649c52811641",
+      "dependency_recipe_sha256": "df4bcf2319f6478f211f2f160a7afa086e7fa2f5500de3b214dbb00987dd1974",
+      "layer_files": 265,
+      "repair_freeze_files": 20,
+      "baseline_files": 1093,
+      "historical_files": 210,
+      "verified_archive_members": 209,
+      "claim": "Exact prepared inputs; execute the declared tests separately."
+    },
+    "engine_gate_rerun": false
   }
 }
