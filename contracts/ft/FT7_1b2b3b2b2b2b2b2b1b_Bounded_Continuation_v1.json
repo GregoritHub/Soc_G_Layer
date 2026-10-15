@@ -1,0 +1,223 @@
+{
+  "batch": "FT7.1b2b3b2b2b2b2b2b1b",
+  "version": 1,
+  "kind": "prospective bounded continuation after execution-session loss",
+  "original_protocol_commit": "bf1007571fb4b7120e45668d7a19ecc4640fab36",
+  "original_freeze_commit": "ea8d9af46134405531a65bafe7ed17df0250ca69",
+  "observed": "At 2026-10-15 17:53 UTC the existing execution handle became unknown and its evaluator process was absent. The log ends with workflow/mask-7 independently audited, without a traceback or gate summary. Exact cause beyond execution-session loss is not established. All 32 indexed raw records and 32 passing independent audits survive; no actual test method began. No evidence establishes the state of unsaved mask-8 work.",
+  "preserve": {
+    "directory": "paid-window-attempt1",
+    "files": {
+      "cost_readback.json": "2ead462159da06707feab02fa0ca2e874772b36df655f8675b0c42e91c8673b8",
+      "decoded_audits.json": "0f830d7813435eb810b2a2f2d78c96b5c6bf34fb95b2c745c61ef6f2e93e67be",
+      "input_verification.json": "8cd71d3ecbef8d5d49b6ac61d3799760098755522a52dfea904499370787e574",
+      "predecessor_ids.json": "d9bc15fba3c4e06a802842fa173395c180b7caeb9826adfff38f0ce411467d0f",
+      "record_index.json": "f67689079f29980cf90f492f1c3f53199aca72c8666be736b950b94e29777ec7",
+      "records/canonical-before.json.gz": "b9eb910adc06cdbd917f92c35a63a9bc2968da893e60c02661343fa8de06e144",
+      "records/canonical-cancelled.json.gz": "c833aa8ce81dbcdfb2a11002d4fff887225bb3c3bb25a630e731ae33d21bbed0",
+      "records/canonical-mask-1.json.gz": "4ab8e52e56b99c0d64e802afea616a2ce335ecd1ba23f431c1231b829694cf2d",
+      "records/canonical-mask-10.json.gz": "f54f2de91cc3b16db503923e784c3ca6d8d1f5b0f8a0825cd119a65b82c53f2b",
+      "records/canonical-mask-11.json.gz": "079ddc222bfe91f4174d61876b9e75fcfb7a048bc6f2409d83f720e8ac5dfa07",
+      "records/canonical-mask-12.json.gz": "71c2a62652988ae8f3af46661e0ea2f2715b9b46e460a12a59b22b19312586eb",
+      "records/canonical-mask-13.json.gz": "f5b743df10049f573a26f7d03c0f065b6c0ed533ae5316e7ad79d3fb95eb4e81",
+      "records/canonical-mask-14.json.gz": "156402ae08bbd7025af9cdc5b7620ab433bfece1fcb997f439102c1eac9e9949",
+      "records/canonical-mask-15.json.gz": "b77b2db1508047815a2b0936a9de6aa6d4f9fa7f1ceaf73f63707dfcbcfb1a80",
+      "records/canonical-mask-2.json.gz": "76b4fb0aa08e287a0b5163fc204626c277f5ed96bb11437f7ae12744b27c853b",
+      "records/canonical-mask-3.json.gz": "d2c1ad25b06e6f74bd4ab57ff0096dd9716b5e489879761966a6e10ecb087ae6",
+      "records/canonical-mask-4.json.gz": "df6d082d3bc7294fb5f4b8bc679237138f93c74d93c371f839c52426f0f046cd",
+      "records/canonical-mask-5.json.gz": "b132f6464844b58bc683ba56715cc88eaf500b80e4567babbd809be581b476dd",
+      "records/canonical-mask-6.json.gz": "9e43e01fe2c8281c20cb1e3e1bee14e14aa5f532d0debc1b68a7aa56250e38af",
+      "records/canonical-mask-7.json.gz": "3b7d400414b3e89f8400c37d7c39697aa5e4ff659559fb479d91740090c5839a",
+      "records/canonical-mask-8.json.gz": "054a204f2a28cefe7d2d6d0acb28b34de5d26f62e8214b3a52c070e99a42ed86",
+      "records/canonical-mask-9.json.gz": "2824a37124e5f126a06a5c131c1006b9e178cd18a0466366a0421725cb594de2",
+      "records/canonical-partial.json.gz": "ebe1e7f50ec0fba29da7239dca35971d406d93f012382c5d35926da840c3f5d4",
+      "records/canonical-ready.json.gz": "683f8ba46677909e1167aa86fe73c88edf23c60c4c71b4e1dbbc80e59aa1e41f",
+      "records/canonical-restarted.json.gz": "9fb8df826fbd036958ef4aa76e30f8b1a2df3f83704959832435896cfd20a144",
+      "records/workflow-before.json.gz": "ccfaaf3e6eae53d2874a69b7b99a746c382db04e5513f3750ceb4af285229122",
+      "records/workflow-cancelled.json.gz": "cc3d02eada6b516b569016591a59b0b43dab47b9333526369b33fffa63865dc1",
+      "records/workflow-mask-1.json.gz": "b67617baf3444179a7f56a0b9e8a0fd3a2f9910f19f3868e13985eb4123e3d4e",
+      "records/workflow-mask-2.json.gz": "9f659d9a5b4ce356b67bef4ec5e77cd0f54869a3cea16bfb3fcf82d2b994e480",
+      "records/workflow-mask-3.json.gz": "44fa5017cb442900deb26637dfbde231ed920093e27c2cde6094c90048e72641",
+      "records/workflow-mask-4.json.gz": "0aab4ef684e2ca80be97be8827642d747adbc79ecf71028aa698838bc81bbb09",
+      "records/workflow-mask-5.json.gz": "8eea2c07488126dda1007ed63873e0e893f801e6ad08185c0a82f2f8a1540461",
+      "records/workflow-mask-6.json.gz": "f50e266d5a8beb95ce326be9a8467119f353c54ff2c068e8c2996151be88e6e1",
+      "records/workflow-mask-7.json.gz": "9163ecb063d6a78104270bbdc51103b8dc4eee1370326b212df45e162c981f06",
+      "records/workflow-partial.json.gz": "f5ba73338ddde6a37ba7f7feeef8a45334b8264d37b92c0237bfb44ba6ab8fa7",
+      "records/workflow-ready.json.gz": "637a7c6a5ddf722a252c69edc9c5320e814e03dab5ed699c65766f6c9648ae04",
+      "records/workflow-restarted.json.gz": "eef9cfe2f2c8e2df5a1b8b86afa6c7890a705e3c7c4a5692c5069f0a5d845568",
+      "retained_runtime_identity_check.json": "218b0ea577077c2d64a840be399f5d77ca88e664facf9cc444e02367fd6d5936",
+      "source_freeze.json": "fec2ce2e20b286defc4f0c77f0ff9d6355e3a4992ea13672247ffebcfa87bb67"
+    },
+    "log_file": "paid-window-attempt1.log",
+    "log_sha256": "669dd0fff0a6e17ea6261dcd95a86784bacaecf5a8589407dd43ed1144264b42",
+    "records": [
+      {
+        "key": "canonical/before",
+        "file": "records/canonical-before.json.gz",
+        "sha256": "b9eb910adc06cdbd917f92c35a63a9bc2968da893e60c02661343fa8de06e144"
+      },
+      {
+        "key": "canonical/partial",
+        "file": "records/canonical-partial.json.gz",
+        "sha256": "ebe1e7f50ec0fba29da7239dca35971d406d93f012382c5d35926da840c3f5d4"
+      },
+      {
+        "key": "canonical/ready",
+        "file": "records/canonical-ready.json.gz",
+        "sha256": "683f8ba46677909e1167aa86fe73c88edf23c60c4c71b4e1dbbc80e59aa1e41f"
+      },
+      {
+        "key": "canonical/mask-1",
+        "file": "records/canonical-mask-1.json.gz",
+        "sha256": "4ab8e52e56b99c0d64e802afea616a2ce335ecd1ba23f431c1231b829694cf2d"
+      },
+      {
+        "key": "canonical/restarted",
+        "file": "records/canonical-restarted.json.gz",
+        "sha256": "9fb8df826fbd036958ef4aa76e30f8b1a2df3f83704959832435896cfd20a144"
+      },
+      {
+        "key": "canonical/cancelled",
+        "file": "records/canonical-cancelled.json.gz",
+        "sha256": "c833aa8ce81dbcdfb2a11002d4fff887225bb3c3bb25a630e731ae33d21bbed0"
+      },
+      {
+        "key": "canonical/mask-2",
+        "file": "records/canonical-mask-2.json.gz",
+        "sha256": "76b4fb0aa08e287a0b5163fc204626c277f5ed96bb11437f7ae12744b27c853b"
+      },
+      {
+        "key": "canonical/mask-3",
+        "file": "records/canonical-mask-3.json.gz",
+        "sha256": "d2c1ad25b06e6f74bd4ab57ff0096dd9716b5e489879761966a6e10ecb087ae6"
+      },
+      {
+        "key": "canonical/mask-4",
+        "file": "records/canonical-mask-4.json.gz",
+        "sha256": "df6d082d3bc7294fb5f4b8bc679237138f93c74d93c371f839c52426f0f046cd"
+      },
+      {
+        "key": "canonical/mask-5",
+        "file": "records/canonical-mask-5.json.gz",
+        "sha256": "b132f6464844b58bc683ba56715cc88eaf500b80e4567babbd809be581b476dd"
+      },
+      {
+        "key": "canonical/mask-6",
+        "file": "records/canonical-mask-6.json.gz",
+        "sha256": "9e43e01fe2c8281c20cb1e3e1bee14e14aa5f532d0debc1b68a7aa56250e38af"
+      },
+      {
+        "key": "canonical/mask-7",
+        "file": "records/canonical-mask-7.json.gz",
+        "sha256": "3b7d400414b3e89f8400c37d7c39697aa5e4ff659559fb479d91740090c5839a"
+      },
+      {
+        "key": "canonical/mask-8",
+        "file": "records/canonical-mask-8.json.gz",
+        "sha256": "054a204f2a28cefe7d2d6d0acb28b34de5d26f62e8214b3a52c070e99a42ed86"
+      },
+      {
+        "key": "canonical/mask-9",
+        "file": "records/canonical-mask-9.json.gz",
+        "sha256": "2824a37124e5f126a06a5c131c1006b9e178cd18a0466366a0421725cb594de2"
+      },
+      {
+        "key": "canonical/mask-10",
+        "file": "records/canonical-mask-10.json.gz",
+        "sha256": "f54f2de91cc3b16db503923e784c3ca6d8d1f5b0f8a0825cd119a65b82c53f2b"
+      },
+      {
+        "key": "canonical/mask-11",
+        "file": "records/canonical-mask-11.json.gz",
+        "sha256": "079ddc222bfe91f4174d61876b9e75fcfb7a048bc6f2409d83f720e8ac5dfa07"
+      },
+      {
+        "key": "canonical/mask-12",
+        "file": "records/canonical-mask-12.json.gz",
+        "sha256": "71c2a62652988ae8f3af46661e0ea2f2715b9b46e460a12a59b22b19312586eb"
+      },
+      {
+        "key": "canonical/mask-13",
+        "file": "records/canonical-mask-13.json.gz",
+        "sha256": "f5b743df10049f573a26f7d03c0f065b6c0ed533ae5316e7ad79d3fb95eb4e81"
+      },
+      {
+        "key": "canonical/mask-14",
+        "file": "records/canonical-mask-14.json.gz",
+        "sha256": "156402ae08bbd7025af9cdc5b7620ab433bfece1fcb997f439102c1eac9e9949"
+      },
+      {
+        "key": "canonical/mask-15",
+        "file": "records/canonical-mask-15.json.gz",
+        "sha256": "b77b2db1508047815a2b0936a9de6aa6d4f9fa7f1ceaf73f63707dfcbcfb1a80"
+      },
+      {
+        "key": "workflow/before",
+        "file": "records/workflow-before.json.gz",
+        "sha256": "ccfaaf3e6eae53d2874a69b7b99a746c382db04e5513f3750ceb4af285229122"
+      },
+      {
+        "key": "workflow/partial",
+        "file": "records/workflow-partial.json.gz",
+        "sha256": "f5ba73338ddde6a37ba7f7feeef8a45334b8264d37b92c0237bfb44ba6ab8fa7"
+      },
+      {
+        "key": "workflow/ready",
+        "file": "records/workflow-ready.json.gz",
+        "sha256": "637a7c6a5ddf722a252c69edc9c5320e814e03dab5ed699c65766f6c9648ae04"
+      },
+      {
+        "key": "workflow/mask-1",
+        "file": "records/workflow-mask-1.json.gz",
+        "sha256": "b67617baf3444179a7f56a0b9e8a0fd3a2f9910f19f3868e13985eb4123e3d4e"
+      },
+      {
+        "key": "workflow/restarted",
+        "file": "records/workflow-restarted.json.gz",
+        "sha256": "eef9cfe2f2c8e2df5a1b8b86afa6c7890a705e3c7c4a5692c5069f0a5d845568"
+      },
+      {
+        "key": "workflow/cancelled",
+        "file": "records/workflow-cancelled.json.gz",
+        "sha256": "cc3d02eada6b516b569016591a59b0b43dab47b9333526369b33fffa63865dc1"
+      },
+      {
+        "key": "workflow/mask-2",
+        "file": "records/workflow-mask-2.json.gz",
+        "sha256": "9f659d9a5b4ce356b67bef4ec5e77cd0f54869a3cea16bfb3fcf82d2b994e480"
+      },
+      {
+        "key": "workflow/mask-3",
+        "file": "records/workflow-mask-3.json.gz",
+        "sha256": "44fa5017cb442900deb26637dfbde231ed920093e27c2cde6094c90048e72641"
+      },
+      {
+        "key": "workflow/mask-4",
+        "file": "records/workflow-mask-4.json.gz",
+        "sha256": "0aab4ef684e2ca80be97be8827642d747adbc79ecf71028aa698838bc81bbb09"
+      },
+      {
+        "key": "workflow/mask-5",
+        "file": "records/workflow-mask-5.json.gz",
+        "sha256": "8eea2c07488126dda1007ed63873e0e893f801e6ad08185c0a82f2f8a1540461"
+      },
+      {
+        "key": "workflow/mask-6",
+        "file": "records/workflow-mask-6.json.gz",
+        "sha256": "f50e266d5a8beb95ce326be9a8467119f353c54ff2c068e8c2996151be88e6e1"
+      },
+      {
+        "key": "workflow/mask-7",
+        "file": "records/workflow-mask-7.json.gz",
+        "sha256": "9163ecb063d6a78104270bbdc51103b8dc4eee1370326b212df45e162c981f06"
+      }
+    ]
+  },
+  "unchanged": "All original 388 frozen identities, including runtime, independent auditor, original evaluator, all eight actual test bodies, and all 468 predecessor identities remain byte-exact. All 381 accepted preceding source identities remain exact. No original or earlier accepted paid branch is rerun.",
+  "continuation": "One new tool only. Initialize a fresh output from the exact 32 original indexed records and original audited metadata. Complete only missing workflow masks 8..15 as separate bounded stages, using exact accepted intake/domain pairs and the original runtime/auditor. Save raw record before audit so interrupted readback can resume from that exact raw record without re-executing payment. Refuse any completed stage overwrite. Any existing incomplete raw record must be read/audited, not regenerated.",
+  "record_gate": "Each of eight new records must match original construction, exact typed roundtrip, full independent native/source/domain/payment audit, terminal idempotence and immutable input checks. Preserve exact input hashes, cost readback, stage source freeze and all logs. Original 32 audits are retained as exact frozen evidence, not substituted by newly invented results.",
+  "method_gate": "After all 40 exact records are assembled, execute all eight unchanged registered actual method bodies, one named method per bounded invocation. Record exact method ID, unittest result, before/after source identities and log. Successful completed methods must not be rerun. Incomplete method invocations are preserved separately and may be resumed only as a separately numbered attempt following a recorded execution interruption. A failed actual method remains a gate failure; no method body/criterion is weakened.",
+  "aggregate_gate": "Acceptance requires exact original 32 raw records and their original passing independent audit outputs, all eight new passing independent saved-record audits, all 40 typed roundtrips and exact expected record keys, 468 exact predecessor identities, all eight actual methods passed with no unaddressed failure, and unchanged complete source freeze. This is one logical original gate, not acceptance by counts alone. Original interrupted attempt remains preserved and not independently accepted.",
+  "freeze": "Add original freeze manifest, this amendment and hash, and the one new continuation tool to the 388-identity original freeze. Freeze the complete continuation before any governed continuation stage.",
+  "claim_boundary": "Original comparison-only claim unchanged. No admission, fresh skill, distinct-element tie, history choice, movement/consumer, parent FT7/FT8/FT9 or standalone acceptance. Changed inputs require new payment and separately bound composition. All FT8 obligations and historical transfer restrictions remain unchanged."
+}
