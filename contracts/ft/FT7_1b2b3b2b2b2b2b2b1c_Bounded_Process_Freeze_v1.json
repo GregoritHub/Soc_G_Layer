@@ -1,0 +1,5 @@
+{
+  "contracts/ft/FT7_1b2b3b2b2b2b2b2b1c_Bounded_Process_Protocol_v1.json": "f7256a954d3ae31cdb3ad2542c3315a38cf1090f73a9c3e3651c8b012833a3cd",
+  "contracts/ft/FT7_1b2b3b2b2b2b2b2b1c_Bounded_Process_Protocol_v1.sha256": "30ddf200ca3cf7130d0ae63b8ae9c31c54cde626665332ffbb59052dbea97cc6",
+  "tools/run_ft7_current_capacity_stages.py": "cfaebd2f76a97111c1f629764d29c9ee080440fd989a541498d561a36fc05dcc"
+}
