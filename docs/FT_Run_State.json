@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft7-window-payment-20261015T163521000Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-15T19:59:32.000Z",
-  "expected_head": "4314a10ddf4e0f228287a754bfdc312572e3d7b6",
+  "lease_expires_at": "2026-10-15T20:17:30.000Z",
+  "expected_head": "438e8196c6614c54630f003b2d2255db9fd9eed0",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1b",
   "next_batch": "Complete frozen FT7.1b2b3b2b2b2b2b2b1b evaluation and independent saved audits; then separately preregister current TD5/capacity integration and route-free skill work. All FT8 obligations unchanged.",
   "completed_batches": [

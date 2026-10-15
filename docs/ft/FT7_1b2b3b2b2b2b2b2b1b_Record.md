@@ -152,3 +152,15 @@ SHA256 758b6ca276c524a7552ab0052727271d20b5c7c92ae53203196c865f9cbee8d2.
 Every member was verified. This archive binds the exact earlier all-record
 companion and excludes the running attempt-2 logs; it does not replace any
 prior archive or establish acceptance.
+
+An auxiliary public-save review rejected the three-file checkpoint for a
+possible private identifier disclosure before any remote mutation. Exact
+read-only checks of the selected public files found no private identifiers;
+the private retrieval receipt was outside the repository and not selected.
+A fail-closed identifier scan and exact-path allowlist were added to the
+save operation, which then succeeded at
+438e8196c6614c54630f003b2d2255db9fd9eed0. All 501 public blobs and the remote
+head were verified exact, with no paths removed. No alternate transfer route,
+runtime change, acceptance change or duplicate archive upload occurred.
+Both numbered attempt-2 methods remain active as of 19:47 UTC; ownership is
+refreshed while awaiting their actual results.
