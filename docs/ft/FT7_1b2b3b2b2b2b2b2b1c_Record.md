@@ -40,7 +40,7 @@ No fresh skill, distinct-element tie, history-only choice, chosen movement/use,
 matched feedback control, full staging or parent FT7–FT9 acceptance follows.
 Every remaining FT8 denominator and matched-main-cost obligation is unchanged.
 
-## Bounded progress checkpoint
+## Initial bounded progress checkpoint
 
 Eight exact canonical projections passed typed roundtrip and full independent
 native/source/intake/domain/payment/capacity audits: before, partial, ready and
@@ -57,3 +57,46 @@ All 40 manifest members were verified. The archive requires the exact accepted
 input companions and excludes running logs. It was uploaded once; private
 retrieval identifiers are not public. Remaining stages continue serially, with
 zero actual method bodies completed and no gate acceptance claimed.
+
+## Verified stage-boundary checkpoint
+
+Twenty-four exact projections are now saved and independently audited: all twenty
+canonical records, plus workflow before, partial, ready and settled mask 1. The
+workflow settled projection binds all 510 exact request windows and the current
+175,815/175,815 wallet. Both settings retain the original four-facet demand,
+report no applicable recalled capacity (not_recalled/outside trained bounds),
+insufficient alternative dimensionality and no allowed consenting support. One
+preparation read remains unpaid. No mean is selected; deferral eligibility is
+descriptive, not a new controller choice. The not_recalled reason alone does not
+distinguish absent recall from truncation.
+
+The launcher checkpoint was prospectively registered at
+1287cd5f48c39069e960488e119eb0234805d5c8, protocol SHA256
+f338055f8293b817ed7c8d0fd3bf292c653d483d303bba10f856d642f7f009ca.
+An explicit marker occupied only the unstarted workflow-mask-2 launcher log.
+After mask 1 exited zero, the unchanged launcher stopped at its exclusive-open
+guard before invoking mask 2. The exact FileExistsError output and marker are
+preserved as a deliberate operational boundary, not an engine/test failure or
+pass. No gate stage was interrupted, and no owned process remains. Auxiliary
+process discovery found an absent procfs children interface and a separate PID
+namespace (pidfd lookup returned ESRCH); no signal or namespace access was
+attempted. The runtime, auditor, evaluator, tests and acceptance gate are unchanged.
+
+The immutable private checkpoint is
+FT7_1b2b3b2b2b2b2b2b1c_Current_Capacity_Checkpoint_Evidence_20261015.zip,
+SHA256 61c5bb2a389d00a82d38f20d898d5098f75422bc4fb95232e09777f9624df9a8.
+All 97 manifest members and the nested exact 40-member initial progress archive
+were verified. It contains all 24 closed projections/logs, new frozen source,
+476 predecessor identities, exact input bindings and boundary evidence. All
+forty accepted paid raw identities and 399 frozen identities (392 prior) were
+rechecked without executing accepted paid work or any actual method body.
+Both new evidence archives were uploaded once without overwrite; private
+identifiers remain outside public files.
+
+Resume only workflow masks 2–15, restarted and cancelled, using the unchanged
+frozen evaluator and fresh separately named operational invocation logs. Preserve
+the boundary marker; do not restart the original all-stage launcher or rerun a
+completed stage. Then run all eight registered actual methods separately and the
+unchanged final aggregate. The gate is **not accepted**: sixteen records and all
+eight actual methods remain. Ownership is released at this verified checkpoint;
+there is no substantive blocker and all parent FT7–FT9/FT8 obligations remain.
