@@ -1,0 +1,16 @@
+{
+  "batch": "FT7.1b2b3b2b2b2b2b1",
+  "version": 2,
+  "prior_freeze": "8364c31c3096175db45bc7345a13aa04ac05ec4e",
+  "findings": [
+    "Attempt1 independently audited canonical accepted input, then failed writing its first before record because the native U2 tuple codec does not accept descriptive lists/dicts. Zero new paid comparison operations, zero test method bodies, no valid saved output records. Preserve the log, incomplete output and exact source capsule.",
+    "Separate read-only diagnostic rehashed a before-preparation wrapper with required=0 and rebuilt its correct paid-observation role vocabulary. Mocking only the ballot entry with a sentinel proved the start guard accepted this forged preparation claim and reached enumeration. Native checkpoint remained unchanged. This is a real boundary validation gap, not an accepted gate."
+  ],
+  "corrections": [
+    "Keep the outer native tuple codec, but encode descriptive candidate arrays and optional results with the existing typed selection-record dumps/loads string codec. Preserve exact types and compare decoded values; no semantic result substitution.",
+    "Add the exact seven prior source/comparison/binding/domain/operand/admission strings to the new RoleComparisonRequest. Before starting any new operation, restore and fully independently audit that immutable source chain with the accepted role-domain audit. Require exact complete preparation and native pairing; a rehashed forged receipt, zero debt, history or source must fail. No claimed boolean or digest alone grants the prerequisite.",
+    "An exact-input bounded cache may retain only successful full source-chain audits, keyed by all immutable input strings, current native checkpoint and setting; failed validations are never cached. This avoids repeated identical read-only auditing during native restore, not native payment or enumeration. Cache size at most2. Independent evaluator still audits each original source chain separately.",
+    "Extend the already registered wrong-pair/unsettled method with forged-zero-debt and forged-receipt cases; exact method count remains8. Runtime, reader and independent command audit accept only the full versioned request fields. Add this amendment and hash to the new source freeze; retain all341 preceding identities exact. All original payment, complete-domain, cancellation, restart and independence gates remain unchanged."
+  ],
+  "accepted": false
+}
