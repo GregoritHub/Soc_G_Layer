@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft-role-20261015T0840-9f3c",
   "active_worker": true,
-  "lease_expires_at": "2026-10-15T09:10:00Z",
-  "expected_head": "5e9a37a3c114cb6e2750a81e04668f56e9d46c68",
+  "lease_expires_at": "2026-10-15T09:35:00Z",
+  "expected_head": "7f34cd6aa0417dff694e2864734d7a7aca6f96c4",
   "current_batch": "FT7.1b2b3b2b2b2b1",
   "next_batch": "FT7.1b2b3b2b2b2b2: complete owned role alternatives and fresh route-free task/skill panel, genuine same-priority/native-cost distinct-element tie, live history-caused selection, actual chosen movement/consumer, matched feedback-off/history-removal and full preparation/staging composition. Parent FT7/FT8/FT9 and all denominators unchanged.",
   "completed_batches": [
