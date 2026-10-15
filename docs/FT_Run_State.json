@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft7-current-window-admission-20261015T203900Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-15T21:25:48Z",
-  "expected_head": "3abe491cda3c181dbdc200fc379d0c6075c36731",
+  "lease_expires_at": "2026-10-15T21:49:29Z",
+  "expected_head": "1287cd5f48c39069e960488e119eb0234805d5c8",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1c",
   "current_window_capacity_progress": {
     "status": "implemented_frozen_not_accepted",
