@@ -100,3 +100,28 @@ completed stage. Then run all eight registered actual methods separately and the
 unchanged final aggregate. The gate is **not accepted**: sixteen records and all
 eight actual methods remain. Ownership is released at this verified checkpoint;
 there is no substantive blocker and all parent FT7–FT9/FT8 obligations remain.
+
+## Bounded disjoint-process continuation
+
+The released checkpoint was reverified before a new ownership claim. All 97
+checkpoint members, nested forty-member progress, accepted 45/79/81 input
+manifests, forty paid raw inputs, 24 closed projections, 476 predecessor IDs and
+399 frozen identities remain exact. No surviving evaluator was present.
+
+Operational protocol 93c0d343815ceb8674fc5f03831bb506c28cc36a (SHA256
+f7256a954d3ae31cdb3ad2542c3315a38cf1090f73a9c3e3651c8b012833a3cd)
+preregisters four independent record processes followed by two independent
+method processes, with an all-forty-record barrier and a final single aggregate.
+One scheduling tool was committed at b40113d42a605853047d2848b40ee76e825da5ca
+and separately frozen with its protocol/hash at
+e2a270a35dfba1160d1518d87d68e2b132d8ecbc. Its read-only inspection passed.
+The original runtime, auditor, evaluator, eight method bodies and 399-identity
+freeze are unchanged. All 79 prior output files are bound byte-exact, including
+the preserved original boundary marker.
+
+Every child has a distinct new invocation log and output target; no record and
+method phase overlap. Failed children stop new launches without killing active
+children or automatic retry. A cooperative STOP, deadline and lease guard allow
+clean checkpoints. The sixteen unfinished records are now running under renewed
+ownership. No further record or actual method pass is claimed in this entry;
+the original complete gate remains mandatory and unaccepted.
