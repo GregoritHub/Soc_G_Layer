@@ -107,7 +107,7 @@ def prepare(held_archive, repair_archive, output, source_checkout=None, repair_c
         # Only new, committed layer files are applied. Runtime dependency reads
         # do not transfer any source back to the destination repository.
         layer_files = [name for name in run("git", "ls-files", cwd=ROOT).splitlines()
-                       if name.startswith(("full_theory/", "tests_ft", "contracts/ft/", "tools/evaluate_ft", "tools/audit_ft"))]
+                       if name.startswith(("full_theory/", "tests_ft", "contracts/ft/", "tools/evaluate_ft", "tools/audit_ft", "tools/compare_ft"))]
         for name in layer_files:
             safe_path(name)
             dest = output / name
