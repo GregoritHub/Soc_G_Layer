@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "c445b2bd9865be0194d998e9a9098a7ac8532ff2",
+  "status": "running",
+  "run_id": "ft7-current-window-admission-20261015T203900Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-15T21:09:00Z",
+  "expected_head": "d33dd30395af601583c625433bba2e649fa44eaf",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1b",
   "next_batch": "Planned, not preregistered: separately bound current TD5/capacity integration, route-free fresh skill work and any new payment required by changed inputs; genuine same-priority/native-cost distinct-element ties, autonomous live history-only choice, chosen paid movement/downstream use, matched feedback controls and full preparation/live-staging composition. All FT8 obligations remain unchanged.",
   "completed_batches": [
