@@ -125,3 +125,14 @@ children or automatic retry. A cooperative STOP, deadline and lease guard allow
 clean checkpoints. The sixteen unfinished records are now running under renewed
 ownership. No further record or actual method pass is claimed in this entry;
 the original complete gate remains mandatory and unaccepted.
+
+At the completed record barrier, all sixteen formerly missing workflow records
+passed: masks 2–15, restarted and cancelled. All forty projections now have exact
+typed roundtrip and full independent audits. The runner reverified original 399
+source identities, forty accepted paid inputs and all 79 prior output files
+after every job. Four original actual methods subsequently passed in separate
+processes: exact full panel, lifecycle withholding, exact restart, and current
+wallet/preparation. Each result records one actual method, zero errors/failures
+and unchanged source. The remaining four actual methods and final aggregate are
+still mandatory; this progress observation is not gate acceptance or a new
+durable raw archive. Original markers and all prior evidence remain preserved.
