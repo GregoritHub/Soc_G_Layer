@@ -36,7 +36,9 @@
 | FT7.1b2b3b2a | accepted, live outcome staging only | 10 exact methods, 368 predecessor identities, 16 saved audits and 286 unchanged frozen identities; exact movement and consumer restarts |
 | FT7.1b2b3b2b | parent pending; bounded native proposal prerequisite accepted | Complete TD5 domain, actual paid tie-only choice and matched controls remain mandatory |
 | FT7.1b2b3b2b1 | accepted, bounded owned native proposals only | 10 exact methods, 378 predecessor identities, six saved audits, all 295 frozen identities unchanged; no execution authority |
-| FT7.1b2b3b2b2 | planned, not registered or implemented | Versioned paid choice controller, TD5 admission, genuine owned tie, actual work/use, matched feedback controls and exact composition/restart |
+| FT7.1b2b3b2b2 | in progress, parent not accepted | Paid comparison prerequisite accepted; complete TD5 domain and live tie-only choice remain mandatory |
+| FT7.1b2b3b2b2a | accepted, paid comparison and restart only | 10 exact methods, 388 predecessor identities, 12 saved independent audits; all 313 reader identities exact, unchanged runtime/auditor and prior 295 source identities |
+| FT7.1b2b3b2b2b | planned, not registered or implemented | Complete TD5 admission/domain, genuine owned tie, actual chosen work/use, matched feedback controls and exact composition/restart |
 | FT7.2 | pending | Full Theory plan gate |
 | FT7.3 | pending | Full Theory plan gate |
 | FT8.1 | pending | Full Theory plan gate |
@@ -65,3 +67,5 @@ Author-approved split supersedes the ruling-required status above. See FT7_1b2b2
 [measured] FT7.1b2b3b2a passed actual live outcome staging. The first wallet-auditor format failure is preserved; the prospective audit-only correction passed the complete gate. Partial states gain no outcome credit; actual paid downstream completion settles once. No candidate-domain or choice-causality acceptance follows. See FT7_1b2b3b2a_Record.md.
 
 [measured] FT7.1b2b3b2b1 passed the complete bounded native proposal prerequisite without modifying accepted source or executing accepted gates. Original native winners remain descriptive; no comparison payment or autonomous history-caused choice is claimed. The saved sources have no old-native primary-ranking tie; next paid owned work must establish one lawfully under a new versioned policy. See FT7_1b2b3b2b1_Record.md.
+
+[measured] FT7.1b2b3b2b2a passed actual paid native comparison and restart. Four failed attempts are preserved. A prospectively frozen saved reader and repaired adversarial mock validated the same 12 original records and all ten actual methods without regenerating paid work. No TD5 execution authority or history-caused choice follows; FT8 unchanged. See FT7_1b2b3b2b2a_Record.md.

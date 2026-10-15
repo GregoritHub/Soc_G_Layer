@@ -1,6 +1,6 @@
 # Soc G Layer
 
-Latest bounded progress, 15 October 2026 UTC: FT7.1b2b3b2b1 passed ten exact methods, 378 predecessor identities and six independently audited saved records for complete bounded owned native proposal inventory (33 canonical / 32 workflow-v4 cells). All295 frozen identities and prior 286 identities remain exact. This is not paid comparison, TD5 admission or history-caused choice. Earlier paid preparation and live outcome staging remain accepted. Parent FT7 and FT8–FT9 remain pending. See `docs/ft/FT7_1b2b3b2b1_Record.md`.
+Latest bounded progress, 15 October 2026 UTC: FT7.1b2b3b2b2a passed ten exact methods, 388 predecessor identities and twelve independently audited saved records for actual native paid owned comparison and exact restart. Canonical/workflow costs are 63/54 native energy and time units. All 313 reader identities and prior 295 identities remain exact; four failed attempts are preserved. No TD5 admission, route execution or history-caused choice is authorized. Parent FT7 and FT8–FT9 remain pending. See `docs/ft/FT7_1b2b3b2b2a_Record.md`.
 
 Full Theory engine continuation. The repaired FT3 recovery gate passed on 12 October 2026: all 751 inherited method identities, 30 FT controls and both positive retention witnesses passed with unchanged source. See `docs/ft/Recovery_Record_20261012.md`.
 

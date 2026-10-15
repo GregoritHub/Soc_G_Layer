@@ -1,0 +1,198 @@
+{
+  "batch": "FT7.1b2b3b2b2a",
+  "scope": "Native comparison costs only; not movement, downstream completion or matched feedback-control evidence; FT8 unchanged",
+  "records": {
+    "canonical/before": {
+      "passed": true,
+      "status": "before",
+      "required": 63,
+      "spent": 0,
+      "native_cost": {
+        "energy": 0,
+        "time": 0
+      },
+      "receipts": 0,
+      "new_transactions": 0,
+      "source_prefix_exact": true,
+      "access_unchanged": true,
+      "reserve_history_unchanged": true,
+      "execution_authorized": false
+    },
+    "canonical/partial": {
+      "passed": true,
+      "status": "partial",
+      "required": 63,
+      "spent": 1,
+      "native_cost": {
+        "energy": 1,
+        "time": 1
+      },
+      "receipts": 0,
+      "new_transactions": 2,
+      "source_prefix_exact": true,
+      "access_unchanged": true,
+      "reserve_history_unchanged": true,
+      "execution_authorized": false
+    },
+    "canonical/ready": {
+      "passed": true,
+      "status": "ready",
+      "required": 63,
+      "spent": 63,
+      "native_cost": {
+        "energy": 63,
+        "time": 63
+      },
+      "receipts": 0,
+      "new_transactions": 3,
+      "source_prefix_exact": true,
+      "access_unchanged": true,
+      "reserve_history_unchanged": true,
+      "execution_authorized": false
+    },
+    "canonical/complete": {
+      "passed": true,
+      "status": "succeeded",
+      "required": 63,
+      "spent": 63,
+      "native_cost": {
+        "energy": 63,
+        "time": 63
+      },
+      "receipts": 1,
+      "new_transactions": 4,
+      "source_prefix_exact": true,
+      "access_unchanged": true,
+      "reserve_history_unchanged": true,
+      "execution_authorized": false
+    },
+    "canonical/restarted": {
+      "passed": true,
+      "status": "succeeded",
+      "required": 63,
+      "spent": 63,
+      "native_cost": {
+        "energy": 63,
+        "time": 63
+      },
+      "receipts": 1,
+      "new_transactions": 4,
+      "source_prefix_exact": true,
+      "access_unchanged": true,
+      "reserve_history_unchanged": true,
+      "execution_authorized": false
+    },
+    "canonical/cancelled": {
+      "passed": true,
+      "status": "cancelled",
+      "required": 63,
+      "spent": 1,
+      "native_cost": {
+        "energy": 1,
+        "time": 1
+      },
+      "receipts": 0,
+      "new_transactions": 3,
+      "source_prefix_exact": true,
+      "access_unchanged": true,
+      "reserve_history_unchanged": true,
+      "execution_authorized": false
+    },
+    "workflow/before": {
+      "passed": true,
+      "status": "before",
+      "required": 54,
+      "spent": 0,
+      "native_cost": {
+        "energy": 0,
+        "time": 0
+      },
+      "receipts": 0,
+      "new_transactions": 0,
+      "source_prefix_exact": true,
+      "access_unchanged": true,
+      "reserve_history_unchanged": true,
+      "execution_authorized": false
+    },
+    "workflow/partial": {
+      "passed": true,
+      "status": "partial",
+      "required": 54,
+      "spent": 1,
+      "native_cost": {
+        "energy": 1,
+        "time": 1
+      },
+      "receipts": 0,
+      "new_transactions": 2,
+      "source_prefix_exact": true,
+      "access_unchanged": true,
+      "reserve_history_unchanged": true,
+      "execution_authorized": false
+    },
+    "workflow/ready": {
+      "passed": true,
+      "status": "ready",
+      "required": 54,
+      "spent": 54,
+      "native_cost": {
+        "energy": 54,
+        "time": 54
+      },
+      "receipts": 0,
+      "new_transactions": 3,
+      "source_prefix_exact": true,
+      "access_unchanged": true,
+      "reserve_history_unchanged": true,
+      "execution_authorized": false
+    },
+    "workflow/complete": {
+      "passed": true,
+      "status": "succeeded",
+      "required": 54,
+      "spent": 54,
+      "native_cost": {
+        "energy": 54,
+        "time": 54
+      },
+      "receipts": 1,
+      "new_transactions": 4,
+      "source_prefix_exact": true,
+      "access_unchanged": true,
+      "reserve_history_unchanged": true,
+      "execution_authorized": false
+    },
+    "workflow/restarted": {
+      "passed": true,
+      "status": "succeeded",
+      "required": 54,
+      "spent": 54,
+      "native_cost": {
+        "energy": 54,
+        "time": 54
+      },
+      "receipts": 1,
+      "new_transactions": 4,
+      "source_prefix_exact": true,
+      "access_unchanged": true,
+      "reserve_history_unchanged": true,
+      "execution_authorized": false
+    },
+    "workflow/cancelled": {
+      "passed": true,
+      "status": "cancelled",
+      "required": 54,
+      "spent": 1,
+      "native_cost": {
+        "energy": 1,
+        "time": 1
+      },
+      "receipts": 0,
+      "new_transactions": 3,
+      "source_prefix_exact": true,
+      "access_unchanged": true,
+      "reserve_history_unchanged": true,
+      "execution_authorized": false
+    }
+  }
+}

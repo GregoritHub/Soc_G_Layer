@@ -1,0 +1,153 @@
+{
+  "batch": "FT7.1b2b3b2b2a",
+  "archive": {
+    "filename": "FT7_1b2b3b2b2a_Paid_Comparison_Evidence_20261015.zip",
+    "bytes": 76061088,
+    "sha256": "83aaabc862b1fc09055761f2a994ad79106696e89ccc566391b1f5c21b56672b",
+    "manifest_members": 80,
+    "all_members_verified": true,
+    "nested_failed_source_members": [
+      7,
+      9,
+      11
+    ],
+    "nested_failed_source_verified": true
+  },
+  "protocol_commit": "3b6614e8b541bb9074aa56efd91c05c23b10020c",
+  "paid_frozen_commit": "ed4b85a7ed4ebe80491b4a4fcd98ccc6ff9887b8",
+  "saved_reader_frozen_commit": "3430079d6ff2f11f1f361dffd31c75f2eb78b382",
+  "records": [
+    {
+      "key": "canonical/before",
+      "file": "records/canonical-before.json.gz",
+      "sha256": "06ab5546165d5e321a132187a3339e765c4bdf059f999d91cdfa02e07f8e63b4"
+    },
+    {
+      "key": "canonical/partial",
+      "file": "records/canonical-partial.json.gz",
+      "sha256": "225479a4bb68072d82a827f63e58c2e5cdb02e9fa1499f284077c0eabd262d30"
+    },
+    {
+      "key": "canonical/ready",
+      "file": "records/canonical-ready.json.gz",
+      "sha256": "0be8b0751013cf139570a871e88743802debcca37d81d31e6d5d64f0c5800b45"
+    },
+    {
+      "key": "canonical/complete",
+      "file": "records/canonical-complete.json.gz",
+      "sha256": "9c2929345bac3835af1cf4073503ca0de85f673d27a7d0cfeb49bf1035e62fd1"
+    },
+    {
+      "key": "canonical/restarted",
+      "file": "records/canonical-restarted.json.gz",
+      "sha256": "264204374c1b9526a294e596e986373c2a0aa2ae651a1864f7559a9bf1cb609b"
+    },
+    {
+      "key": "canonical/cancelled",
+      "file": "records/canonical-cancelled.json.gz",
+      "sha256": "58cf616896587f25431b674bd733e96eafb70d9047ddfe7858ccfe0f9f903b17"
+    },
+    {
+      "key": "workflow/before",
+      "file": "records/workflow-before.json.gz",
+      "sha256": "af99d629fa1b8c19c409e4ffd44d6b4eda4fc30bd613cecfb452eb9e27004edd"
+    },
+    {
+      "key": "workflow/partial",
+      "file": "records/workflow-partial.json.gz",
+      "sha256": "0cbc248ea6e8983d5354b2879c638f57fdb5178b0503ee9de4ec8089f6ca68b5"
+    },
+    {
+      "key": "workflow/ready",
+      "file": "records/workflow-ready.json.gz",
+      "sha256": "a36e4eab10fecff01b49c011d042a0f501925d31ad69b256692b0ce0a4cdaa22"
+    },
+    {
+      "key": "workflow/complete",
+      "file": "records/workflow-complete.json.gz",
+      "sha256": "41fe3ecf709fb2f3b47318f2da41e978bc267ea4bbb64359960ba5bd888514a1"
+    },
+    {
+      "key": "workflow/restarted",
+      "file": "records/workflow-restarted.json.gz",
+      "sha256": "0a9e4089c9851dc63c8dbec23a490dc349c51e179ce7bd91a44f50fe59bb17e8"
+    },
+    {
+      "key": "workflow/cancelled",
+      "file": "records/workflow-cancelled.json.gz",
+      "sha256": "17816ac5053effae8368fdc2c9c74ec6c88c62232352f0fb539a69dae491b0e0"
+    }
+  ],
+  "records_root": "attempt4",
+  "validation_root": "saved-audit1",
+  "failed_attempts": [
+    {
+      "attempt": 1,
+      "freeze": "8822951be8ae9d9d0aedff7b07a5099b444ba793",
+      "method_bodies": 0,
+      "saved_records": 2,
+      "audited_records": 1,
+      "failure": "Audit compared complete access envelope, including legitimately extended native world.",
+      "source_capsule": "ft71b2b3b2b2a-attempt1-source.zip",
+      "log": "ft71b2b3b2b2a-attempt1.log",
+      "correction_registered": "eb4b68bbb199d333916c4dc58ecc4d3f7e96968f"
+    },
+    {
+      "attempt": 2,
+      "freeze": "981e1df860a1fc74d9eb53c07a08826b638612b3",
+      "method_bodies": 0,
+      "saved_records": 0,
+      "failure": "Invocation typo ft71b2b2b2b-saved-audit1; actual verified directory is ft71b2b2b-saved-audit1.",
+      "log": "ft71b2b3b2b2a-attempt2.log",
+      "correction": "Correct input directory; unchanged source and gate."
+    },
+    {
+      "attempt": 3,
+      "freeze": "981e1df860a1fc74d9eb53c07a08826b638612b3",
+      "method_bodies": 0,
+      "saved_records": 10,
+      "audited_records": 9,
+      "failure": "Exact terminal-event audit omitted inherited workflow_tick field.",
+      "source_capsule": "ft71b2b3b2b2a-attempt3-source.zip",
+      "log": "ft71b2b3b2b2a-attempt3.log",
+      "correction_registered": "e2e8c4469e6623a5b71a51e453fe158a931fc93b"
+    },
+    {
+      "attempt": 4,
+      "freeze": "ed4b85a7ed4ebe80491b4a4fcd98ccc6ff9887b8",
+      "method_bodies": 10,
+      "passed_methods": 9,
+      "errors": 1,
+      "saved_records": 12,
+      "audited_records": 12,
+      "failure": "Forged-extent test proxy lacked world.checkpoint(), causing AttributeError before expected ValueError; runtime and independent auditor unchanged.",
+      "source_capsule": "ft71b2b3b2b2a-attempt4-source.zip",
+      "log": "ft71b2b3b2b2a-attempt4.log",
+      "correction_registered": "3d53fc6388a686cde0dfd0758cd8f8505ec2db4e"
+    }
+  ],
+  "source_bridge": {
+    "original_identities": 311,
+    "current_identities": 313,
+    "changed": [
+      "tests_ft7/test_owned_paid_comparison.py",
+      "tools/evaluate_ft7_1b2b3b2b2a.py"
+    ],
+    "runtime_and_auditor_unchanged": true,
+    "prior_295_exact": true
+  },
+  "inputs": {
+    "native": {
+      "sha256": "3114e31cab6490dbb7a87a7fb10e592d570e4b9e6f2b95a51cb6b2b1fc060616",
+      "members": 141,
+      "all_verified": true
+    },
+    "binding": {
+      "sha256": "0e97d520c21a4e595239b573a85851948d950c70a0870f59d10fff822ce6732e",
+      "members": 648,
+      "all_verified": true
+    }
+  },
+  "private_retrieval": "Exact filename and SHA256; private continuation context contains retrieval pointer. Private identifiers intentionally not published.",
+  "reproduction": "See ft71b2b3b2b2a-reproduction.txt inside archive. Do not rerun accepted gate merely for continuation."
+}
