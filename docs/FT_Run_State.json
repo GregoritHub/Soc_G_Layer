@@ -4,9 +4,9 @@
   "status": "running",
   "run_id": "ft7-paid-choice-20261015T0529Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-15T06:00:00Z",
-  "expected_head": "7475b8a7ff70373b600f8694dcf28a42d4e52eda",
-  "current_batch": "FT7.1b2b3b2b2",
+  "lease_expires_at": "2026-10-15T06:16:00Z",
+  "expected_head": "981e1df860a1fc74d9eb53c07a08826b638612b3",
+  "current_batch": "FT7.1b2b3b2b2a",
   "next_batch": "FT7.1b2b3b2b2: preregister and implement versioned actual paid comparison/choice with complete TD5 admission/domain, fresh paid owned work yielding a genuine tie, matched feedback-off/history-removal controls, actual chosen work/downstream use and exact preparation/live-staging composition/restart; then remaining FT7–FT9.",
   "completed_batches": [
     "FT0.1",
@@ -108,7 +108,8 @@
     "FT7.1b2b3a",
     "FT7.1b2b3b1",
     "FT7.1b2b3b2a",
-    "FT7.1b2b3b2b1"
+    "FT7.1b2b3b2b1",
+    "FT7.1b2b3b2b2a"
   ],
   "publication": {
     "mode": "read-only pinned dependencies plus new development",
@@ -1158,5 +1159,17 @@
       "all_local_git_blob_identities_exact": true,
       "no_paths_removed": true
     }
+  },
+  "paid_comparison_progress": {
+    "batch": "FT7.1b2b3b2b2a",
+    "accepted": false,
+    "protocol_commit": "3b6614e8b541bb9074aa56efd91c05c23b10020c",
+    "first_freeze": "8822951be8ae9d9d0aedff7b07a5099b444ba793",
+    "amendment_commit": "eb4b68bbb199d333916c4dc58ecc4d3f7e96968f",
+    "current_freeze": "981e1df860a1fc74d9eb53c07a08826b638612b3",
+    "current_attempt": 3,
+    "first_attempt": "0 methods, 2 saved records, 1 audit; access envelope includes extended native world",
+    "second_attempt": "0 methods and records; launch path typo; corrected existing input path without source change",
+    "required": "10 exact methods, 12 saved records, 388 predecessor identities; no parent choice acceptance"
   }
 }
