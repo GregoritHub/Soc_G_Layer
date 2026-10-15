@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft7-fresh-task-20261015T1335Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-15T14:05:00Z",
-  "expected_head": "3cd329a0a4d07fc10bdf406ec7612174177623e8",
+  "lease_expires_at": "2026-10-15T14:25:00Z",
+  "expected_head": "568ee3b9d2d2197adf2cfec271deb811771156ad",
   "current_batch": "FT7.1b2b3b2b2b2b2b2a",
   "next_batch": "FT7.1b2b3b2b2b2b2b2 (planned, not preregistered): route-free fresh task/skill work, genuine same-priority/native-cost ties across actual distinct elements, separately versioned live history-only choice, actual chosen movement/downstream use, matched feedback-off/history-removal and full comparison/preparation/live-staging composition/restart. Preserve older unresolved demand/TD5; changed inputs require new proof and paid comparison; all FT8 denominators unchanged.",
   "completed_batches": [
@@ -1541,7 +1541,10 @@
   },
   "prior_role_domain_acceptance_commit": "c41545528ecb3b7c788737e804e08d3390f538b8",
   "fresh_task_progress": {
-    "status": "designing_not_registered",
+    "status": "frozen_attempt2_running",
+    "protocol_commit": "defc6fe7fad9d1212a612bd37e0c752b01b8d35f",
+    "freeze_commit": "568ee3b9d2d2197adf2cfec271deb811771156ad",
+    "failed_attempt1": "Checkpoint address encoding error before records or paid work; exact source/log preserved; prospective encoding-only correction e393cdd8aea91452fe1165008fd1663d9bccf683.",
     "accepted": false,
     "scope": "Fresh route-free task intake on exact fulfilled sources only; parent live tie-only choice remains mandatory."
   },
