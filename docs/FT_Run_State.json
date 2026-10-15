@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft-reuse-oct15-1792024259179",
   "active_worker": true,
-  "lease_expires_at": "2026-10-15T01:55:00.000Z",
-  "expected_head": "b1a69956df8401f264b67b4716b21ef54941226a",
+  "lease_expires_at": "2026-10-15T02:04:31.000Z",
+  "expected_head": "316bfca224f41cb74ac30b406a33439dc15194aa",
   "current_batch": "FT7.1b2b3a",
   "next_batch": "FT7.1b2b3a frozen exact reserve/history receipt binding running; FT7.1b2b3b actual paid reserve preparation and tie-only later owned choice mandatory",
   "completed_batches": [
@@ -268,24 +268,14 @@
   "engineering_continuation": {
     "batch": "FT7.1b2b3a",
     "accepted": false,
-    "frozen_commit": "b1a69956df8401f264b67b4716b21ef54941226a",
+    "method_witness_freeze": "b1a69956df8401f264b67b4716b21ef54941226a",
+    "saved_reader_freeze": "316bfca224f41cb74ac30b406a33439dc15194aa",
     "attempts": 2,
-    "prior_attempt": {
-      "methods": 8,
-      "errors": 8,
-      "records": 0,
-      "preserved": true,
-      "diagnosis": "Exact long-window use-history ordinal rejection; accepted history code unchanged"
-    },
-    "current_attempt": {
-      "methods": 8,
-      "failures": 0,
-      "errors": 0,
-      "saved_audit": "in progress",
-      "required_records": 24,
-      "source_identities": 266
-    },
-    "required_next": "Complete all 24 exact saved native/ledger audits and durable evidence; then FT7.1b2b3b actual reserve preparation and tie-only later owned choice",
+    "actual_method_bodies_passed": 8,
+    "original_saved_records": 8,
+    "interruption": "Tool runtime reset interrupted original saved-audit stage; all source and eight records preserved",
+    "required_records": 24,
+    "resume": "Frozen disjoint per-record units, at most two concurrently; preserve and revalidate durable receipts; full gate only after all24",
     "parent_FT7_pending": true
   },
   "prior_comparison_hold": {
