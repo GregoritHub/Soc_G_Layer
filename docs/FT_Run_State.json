@@ -5,9 +5,9 @@
   "run_id": "ft-role-20261015T0840-9f3c",
   "active_worker": true,
   "lease_expires_at": "2026-10-15T09:10:00Z",
-  "expected_head": "ffddc01341a8cecc98ba9c224935d433249ecdcb",
-  "current_batch": "FT7.1b2b3b2b2b2a",
-  "next_batch": "FT7.1b2b3b2b2b2b: derive required native material/peer role alternatives from owned paid evidence; preregister fresh route-free task/skill panel and actual paid work yielding genuine priority/native-cost ties across distinct elements; separately version live history choice and execute chosen movement/downstream use with matched feedback-off/history-removal controls and exact preparation/staging composition. Existing bounded request-role inventory is not full future coverage. Then remaining FT7–FT9.",
+  "expected_head": "5e9a37a3c114cb6e2750a81e04668f56e9d46c68",
+  "current_batch": "FT7.1b2b3b2b2b2b1",
+  "next_batch": "FT7.1b2b3b2b2b2b2: complete owned role alternatives and fresh route-free task/skill panel, genuine same-priority/native-cost distinct-element tie, live history-caused selection, actual chosen movement/consumer, matched feedback-off/history-removal and full preparation/staging composition. Parent FT7/FT8/FT9 and all denominators unchanged.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -114,7 +114,8 @@
     "FT7.1b2b3b2b1",
     "FT7.1b2b3b2b2a",
     "FT7.1b2b3b2b2b1",
-    "FT7.1b2b3b2b2b2a"
+    "FT7.1b2b3b2b2b2a",
+    "FT7.1b2b3b2b2b2b1"
   ],
   "publication": {
     "mode": "read-only pinned dependencies plus new development",
