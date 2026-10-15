@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft7-paid-choice-20261015T0529Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-15T06:16:00Z",
-  "expected_head": "981e1df860a1fc74d9eb53c07a08826b638612b3",
+  "lease_expires_at": "2026-10-15T06:40:00Z",
+  "expected_head": "3430079d6ff2f11f1f361dffd31c75f2eb78b382",
   "current_batch": "FT7.1b2b3b2b2a",
   "next_batch": "FT7.1b2b3b2b2: preregister and implement versioned actual paid comparison/choice with complete TD5 admission/domain, fresh paid owned work yielding a genuine tie, matched feedback-off/history-removal controls, actual chosen work/downstream use and exact preparation/live-staging composition/restart; then remaining FT7–FT9.",
   "completed_batches": [
@@ -1166,10 +1166,14 @@
     "protocol_commit": "3b6614e8b541bb9074aa56efd91c05c23b10020c",
     "first_freeze": "8822951be8ae9d9d0aedff7b07a5099b444ba793",
     "amendment_commit": "eb4b68bbb199d333916c4dc58ecc4d3f7e96968f",
-    "current_freeze": "981e1df860a1fc74d9eb53c07a08826b638612b3",
-    "current_attempt": 3,
+    "current_freeze": "ed4b85a7ed4ebe80491b4a4fcd98ccc6ff9887b8",
+    "current_attempt": 4,
     "first_attempt": "0 methods, 2 saved records, 1 audit; access envelope includes extended native world",
     "second_attempt": "0 methods and records; launch path typo; corrected existing input path without source change",
-    "required": "10 exact methods, 12 saved records, 388 predecessor identities; no parent choice acceptance"
+    "required": "10 exact methods, 12 saved records, 388 predecessor identities; no parent choice acceptance",
+    "saved_reader_freeze": "3430079d6ff2f11f1f361dffd31c75f2eb78b382",
+    "saved_reader_amendment": "3d53fc6388a686cde0dfd0758cd8f8505ec2db4e",
+    "fourth_attempt": "12 records and independent audits passed; 10 methods ran with 9 pass/1 mock-object AttributeError; unchanged runtime/auditor; exact evidence preserved",
+    "saved_stage": "Running exact original saved records and repaired adversarial harness; acceptance pending"
   }
 }
