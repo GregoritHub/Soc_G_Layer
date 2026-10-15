@@ -1,12 +1,12 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "567f4c7349cc1dce7eacb659021e2be26da40ad8",
-  "current_batch": "FT7.1b2b3b2b1",
+  "status": "running",
+  "run_id": "ft7-paid-choice-20261015T0529Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-15T06:00:00Z",
+  "expected_head": "7475b8a7ff70373b600f8694dcf28a42d4e52eda",
+  "current_batch": "FT7.1b2b3b2b2",
   "next_batch": "FT7.1b2b3b2b2: preregister and implement versioned actual paid comparison/choice with complete TD5 admission/domain, fresh paid owned work yielding a genuine tie, matched feedback-off/history-removal controls, actual chosen work/downstream use and exact preparation/live-staging composition/restart; then remaining FT7–FT9.",
   "completed_batches": [
     "FT0.1",
