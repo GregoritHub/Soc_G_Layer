@@ -1,12 +1,12 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "25e4073705cfefe3a5efc5e461379995b544d834",
-  "current_batch": "FT7.1b2b3b2b2b2b2b2b1a",
+  "status": "running",
+  "run_id": "ft7-window-payment-20261015T163521000Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-15T17:05:21.000Z",
+  "expected_head": "2f524c96aac8714ee9f15577351f4774715ce4a1",
+  "current_batch": "FT7.1b2b3b2b2b2b2b2b1b",
   "next_batch": "FT7.1b2b3b2b2b2b2b2b1b (planned, not preregistered): actual newly paid complete accessible-window native comparison, separately bound source/native-prefix composition and restart; then route-free fresh skill work, current TD5/capacity admission, genuine distinct-element same-priority/native-cost ties, autonomous live history-only choice, chosen paid movement/downstream use, matched feedback controls and full preparation/live-staging composition. No old-bound override or receipt reuse for changed inputs; all FT8 obligations intact.",
   "completed_batches": [
     "FT0.1",
