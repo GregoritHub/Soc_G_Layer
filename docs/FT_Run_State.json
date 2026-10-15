@@ -5,9 +5,9 @@
   "run_id": "ft7-fresh-task-20261015T1335Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-15T14:25:00Z",
-  "expected_head": "568ee3b9d2d2197adf2cfec271deb811771156ad",
+  "expected_head": "8b5fdb56c24d4d1aab91d8a40f06a2afa1b8072e",
   "current_batch": "FT7.1b2b3b2b2b2b2b2a",
-  "next_batch": "FT7.1b2b3b2b2b2b2b2 (planned, not preregistered): route-free fresh task/skill work, genuine same-priority/native-cost ties across actual distinct elements, separately versioned live history-only choice, actual chosen movement/downstream use, matched feedback-off/history-removal and full comparison/preparation/live-staging composition/restart. Preserve older unresolved demand/TD5; changed inputs require new proof and paid comparison; all FT8 denominators unchanged.",
+  "next_batch": "FT7.1b2b3b2b2b2b2b2b (planned, not preregistered): route-free fresh skill work and separately bound current request/admission integration, newly paid comparisons for changed inputs, genuine same-priority/native-cost ties across distinct actual elements, autonomous live history-only choice, chosen paid movement/downstream use, matched feedback-off/history-removal and full comparison/preparation/live-staging composition/restart. Preserve older unresolved demand/TD5 and all FT8 obligations.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -59,7 +59,8 @@
     "FT7.1b2b3b2b2b2a",
     "FT7.1b2b3b2b2b2b1",
     "FT7.1b2b3b2b2b2b2a",
-    "FT7.1b2b3b2b2b2b2b1"
+    "FT7.1b2b3b2b2b2b2b1",
+    "FT7.1b2b3b2b2b2b2b2a"
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
@@ -120,7 +121,8 @@
     "FT7.1b2b3b2b2b2a",
     "FT7.1b2b3b2b2b2b1",
     "FT7.1b2b3b2b2b2b2a",
-    "FT7.1b2b3b2b2b2b2b1"
+    "FT7.1b2b3b2b2b2b2b1",
+    "FT7.1b2b3b2b2b2b2b2a"
   ],
   "publication": {
     "mode": "read-only pinned dependencies plus new development",
@@ -129,35 +131,57 @@
     "standalone_ft9_release": false
   },
   "local_acceptance": {
-    "batch": "FT7.1b2b3b2b2b2b2b1",
+    "batch": "FT7.1b2b3b2b2b2b2b2a",
     "passed": true,
     "methods": 8,
     "failures": 0,
     "errors": 0,
-    "predecessor_identities": 436,
-    "saved_records": 12,
+    "predecessor_identities": 444,
+    "saved_records": 42,
     "typed_roundtrip_exact": true,
     "independent_audits": true,
     "source_unchanged": true,
-    "frozen_identities": 357,
+    "frozen_identities": 367,
+    "claim": "Actual paid fixed fresh task intake only, not autonomous goal invention, new skills, TD5 admission, genuine tie, history-caused choice, movement/downstream use, parent FT7 or FT8/FT9 acceptance. Changed future inputs need new paid comparison and separate composition proof. All FT8 denominators/matched costs and C/D theory holds unchanged.",
+    "protocol_commit": "defc6fe7fad9d1212a612bd37e0c752b01b8d35f",
+    "frozen_commit": "568ee3b9d2d2197adf2cfec271deb811771156ad",
+    "prior_357_identities_unchanged": true,
+    "failed_attempts_preserved": 1,
     "accepted_paid_work_rerun": false,
-    "claim": "Paid complete declared role comparison only; no TD5 or live choice acceptance",
-    "protocol_commit": "c7dda21b29709b48aa1910c9be0218938c9153fe",
-    "frozen_commit": "a8dda4cbc291e5bad37d9af8ba50e6506f97fa7b",
-    "prior_341_identities_unchanged": true,
-    "failed_attempts_preserved": 3,
+    "complete_panel_branches": 30,
+    "cost_per_complete_branch": {
+      "energy": 5,
+      "time": 5
+    },
+    "exact_read_and_bind_partial_restarts": true,
+    "terminal_idempotent": true,
+    "old_source_reserve_history_unchanged": true,
+    "comparison_paid": false,
+    "execution_authorized": false,
+    "td5_admitted": false,
+    "history_choice": false,
     "archive": {
-      "filename": "FT7_1b2b3b2b2b2b2b1_Paid_Role_Comparison_Evidence_20261015.zip",
-      "bytes": 94899561,
-      "sha256": "18f404d5567e7477d1c9dd0a0b41c85dbe9d519dec9e35d5b4c44a3ef2a4713a",
-      "manifest_members": 61,
-      "nested_source_members": [
-        16,
-        7,
-        10,
-        13
-      ],
+      "filename": "FT7_1b2b3b2b2b2b2b2a_Fresh_Task_Intake_Evidence_20261015.zip",
+      "bytes": 35096413,
+      "sha256": "b446c4b66c44e42b0a1bbcd75c10149cd6283fcc67804296648b306c67ee592a",
+      "manifest_members": 66,
+      "nested_members": {
+        "fresh-task-failed-source-v1.zip": 7,
+        "fresh-task-corrected-source-v2.zip": 10,
+        "FT7_1b2b3b2b1_Owned_Proposal_Domain_Evidence_20261015.zip": 20
+      },
       "all_members_verified": true
+    },
+    "clean_preparation": {
+      "passed": true,
+      "frozen_identities": 367,
+      "prior_identities": 357,
+      "both_prepared_runtimes_exact": true,
+      "manual_overlay": false,
+      "sealed_baseline": 1093,
+      "historical_references": 210,
+      "repair_freeze": 20,
+      "recovery_members": 209
     }
   },
   "conditioning_release": {
@@ -288,13 +312,13 @@
     "source_publication": "verified",
     "prior_failed_attempts": 6
   },
-  "latest_acceptance_record": "docs/ft/FT7_1b2b3b2b2b2b2b1_Record.md",
-  "latest_acceptance_commit": "e8852cdf7f849c3f00a601d6a682ebf4544a3f2b",
+  "latest_acceptance_record": "docs/ft/FT7_1b2b3b2b2b2b2b2a_Record.md",
+  "latest_acceptance_commit": null,
   "engineering_continuation": {
     "batch": "FT7.1b2b3b",
     "accepted": false,
-    "required_next": "FT7.1b2b3b2b2b2b2b2 (planned, not preregistered): route-free fresh task/skill work, genuine same-priority/native-cost ties across actual distinct elements, separately versioned live history-only choice, actual chosen movement/downstream use, matched feedback-off/history-removal and full comparison/preparation/live-staging composition/restart. Preserve older unresolved demand/TD5; changed inputs require new proof and paid comparison; all FT8 denominators unchanged.",
-    "scope": "Declared paid-observation role domain and actual complete role-dependent comparison accepted in recorded scopes, with immutable old source/history prefixes. Current capacity-request TD5 integration, genuine owned distinct-element tie, live history-caused choice and chosen paid movement/consumer with matched controls remain mandatory. Parent FT7-FT9 unfinished.",
+    "required_next": "FT7.1b2b3b2b2b2b2b2b (planned, not preregistered): route-free fresh skill work and separately bound current request/admission integration, newly paid comparisons for changed inputs, genuine same-priority/native-cost ties across distinct actual elements, autonomous live history-only choice, chosen paid movement/downstream use, matched feedback-off/history-removal and full comparison/preparation/live-staging composition/restart. Preserve older unresolved demand/TD5 and all FT8 obligations.",
+    "scope": "Fixed route-free supplied fresh task intake now accepted on exact fulfilled-source branches. Fresh skill work, new comparisons/current TD5 integration, genuine distinct-element ties, live history choice and paid chosen work/use with matched controls remain mandatory. Parent FT7–FT9 unfinished.",
     "permission": "Technical coding, testing, diagnosis, lawful repairs and retries through FT9 belong to the agent without renewed user approval. Preserve criteria except the explicitly approved comparison amendment; FT8 unchanged."
   },
   "prior_comparison_hold": {
@@ -1541,16 +1565,52 @@
   },
   "prior_role_domain_acceptance_commit": "c41545528ecb3b7c788737e804e08d3390f538b8",
   "fresh_task_progress": {
-    "status": "frozen_attempt2_running",
+    "status": "passed",
     "protocol_commit": "defc6fe7fad9d1212a612bd37e0c752b01b8d35f",
     "freeze_commit": "568ee3b9d2d2197adf2cfec271deb811771156ad",
     "failed_attempt1": "Checkpoint address encoding error before records or paid work; exact source/log preserved; prospective encoding-only correction e393cdd8aea91452fe1165008fd1663d9bccf683.",
-    "accepted": false,
-    "scope": "Fresh route-free task intake on exact fulfilled sources only; parent live tie-only choice remains mandatory."
+    "accepted": true,
+    "scope": "Fresh route-free task intake on exact fulfilled sources only; parent live tie-only choice remains mandatory.",
+    "saved_records": 42,
+    "methods": 8
   },
   "continuation_save_diagnostic": {
     "failed_commit": "e0a9c5c8eae1c8970568e6048cf9c3275fa042b2",
     "cause": "Lease publication omitted base_tree_sha after prior-turn in-memory metadata was unavailable; detected immediately by full-tree verification.",
-    "repair": "Restore exact prior 454-blob tree as explicit base, retaining only the authorized new lease; no engine execution or accepted source changed."
-  }
+    "repair": "Restore exact prior 454-blob tree as explicit base, retaining only the authorized new lease; no engine execution or accepted source changed.",
+    "repair_commit": "64376c5fbc74c635f4844b8c369c4bb81e6faffb"
+  },
+  "prior_paid_role_local_acceptance": {
+    "batch": "FT7.1b2b3b2b2b2b2b1",
+    "passed": true,
+    "methods": 8,
+    "failures": 0,
+    "errors": 0,
+    "predecessor_identities": 436,
+    "saved_records": 12,
+    "typed_roundtrip_exact": true,
+    "independent_audits": true,
+    "source_unchanged": true,
+    "frozen_identities": 357,
+    "accepted_paid_work_rerun": false,
+    "claim": "Paid complete declared role comparison only; no TD5 or live choice acceptance",
+    "protocol_commit": "c7dda21b29709b48aa1910c9be0218938c9153fe",
+    "frozen_commit": "a8dda4cbc291e5bad37d9af8ba50e6506f97fa7b",
+    "prior_341_identities_unchanged": true,
+    "failed_attempts_preserved": 3,
+    "archive": {
+      "filename": "FT7_1b2b3b2b2b2b2b1_Paid_Role_Comparison_Evidence_20261015.zip",
+      "bytes": 94899561,
+      "sha256": "18f404d5567e7477d1c9dd0a0b41c85dbe9d519dec9e35d5b4c44a3ef2a4713a",
+      "manifest_members": 61,
+      "nested_source_members": [
+        16,
+        7,
+        10,
+        13
+      ],
+      "all_members_verified": true
+    }
+  },
+  "prior_paid_role_acceptance_commit": "e8852cdf7f849c3f00a601d6a682ebf4544a3f2b"
 }

@@ -1,0 +1,56 @@
+{
+  "batch": "FT7.1b2b3b2b2b2b2b2a",
+  "source": "Exact decoded saved native checkpoints and independent full audits; no new engine work in readback.",
+  "units": [
+    "energy",
+    "time"
+  ],
+  "branch_accounting": "Each mask is an independent branch from the exact same fulfilled source. No cumulative 150-unit live execution or wallet refill is claimed.",
+  "canonical": {
+    "masks": 15,
+    "wallet_before": {
+      "energy": 197985,
+      "time": 197985
+    },
+    "wallet_after_each_complete": {
+      "energy": 197980,
+      "time": 197980
+    }
+  },
+  "workflow": {
+    "masks": 15,
+    "wallet_before": {
+      "energy": 198001,
+      "time": 198001
+    },
+    "wallet_after_each_complete": {
+      "energy": 197996,
+      "time": 197996
+    }
+  },
+  "read": {
+    "energy": 2,
+    "time": 2
+  },
+  "bind": {
+    "energy": 3,
+    "time": 3
+  },
+  "total_per_complete_branch": {
+    "energy": 5,
+    "time": 5
+  },
+  "stages": {
+    "before": 0,
+    "read_partial": 1,
+    "read_complete": 2,
+    "bind_partial": 3,
+    "complete": 5
+  },
+  "scope": "Intake only; not comparison, admission, movement, downstream consumer, route totals or matched feedback-control evidence.",
+  "comparison_paid": false,
+  "td5_admitted": false,
+  "execution_authorized": false,
+  "history_choice": false,
+  "reserve_history_unchanged": true
+}

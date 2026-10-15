@@ -1,0 +1,31 @@
+{
+  "batch": "FT7.1b2b3b2b2b2b2b2a",
+  "archive": {
+    "filename": "FT7_1b2b3b2b2b2b2b2a_Fresh_Task_Intake_Evidence_20261015.zip",
+    "bytes": 35096413,
+    "sha256": "b446c4b66c44e42b0a1bbcd75c10149cd6283fcc67804296648b306c67ee592a",
+    "manifest_members": 66,
+    "nested_members": {
+      "fresh-task-failed-source-v1.zip": 7,
+      "fresh-task-corrected-source-v2.zip": 10,
+      "FT7_1b2b3b2b1_Owned_Proposal_Domain_Evidence_20261015.zip": 20
+    },
+    "all_members_verified": true
+  },
+  "input": {
+    "filename": "FT7_1b2b3b2b1_Owned_Proposal_Domain_Evidence_20261015.zip",
+    "sha256": "3973f24b472e90ff047f5d61c16e3b987860c2d5478a62234dde213fc3212945",
+    "manifest_members": 20
+  },
+  "contents": [
+    "Both attempt outputs and logs",
+    "Seven-file failed and ten-file corrected frozen source capsules",
+    "All 42 exact native/adapter records and decoded independent audits",
+    "Exact 444 predecessor and eight actual method identities",
+    "Original accepted input archive",
+    "Automatic preparation and full public source verification",
+    "Cost readback and reproduction instructions"
+  ],
+  "retrieval": "Exact private artifact filename and SHA-256 identify the saved attachment; private retrieval pointer is retained in the continuation task, not public metadata.",
+  "paid_gate_rerun": false
+}

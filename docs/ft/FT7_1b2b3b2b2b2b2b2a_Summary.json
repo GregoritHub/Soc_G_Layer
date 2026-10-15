@@ -1,0 +1,54 @@
+{
+  "batch": "FT7.1b2b3b2b2b2b2b2a",
+  "passed": true,
+  "methods": 8,
+  "failures": 0,
+  "errors": 0,
+  "predecessor_identities": 444,
+  "saved_records": 42,
+  "typed_roundtrip_exact": true,
+  "independent_audits": true,
+  "source_unchanged": true,
+  "frozen_identities": 367,
+  "claim": "Actual paid fixed fresh task intake only, not autonomous goal invention, new skills, TD5 admission, genuine tie, history-caused choice, movement/downstream use, parent FT7 or FT8/FT9 acceptance. Changed future inputs need new paid comparison and separate composition proof. All FT8 denominators/matched costs and C/D theory holds unchanged.",
+  "protocol_commit": "defc6fe7fad9d1212a612bd37e0c752b01b8d35f",
+  "frozen_commit": "568ee3b9d2d2197adf2cfec271deb811771156ad",
+  "prior_357_identities_unchanged": true,
+  "failed_attempts_preserved": 1,
+  "accepted_paid_work_rerun": false,
+  "complete_panel_branches": 30,
+  "cost_per_complete_branch": {
+    "energy": 5,
+    "time": 5
+  },
+  "exact_read_and_bind_partial_restarts": true,
+  "terminal_idempotent": true,
+  "old_source_reserve_history_unchanged": true,
+  "comparison_paid": false,
+  "execution_authorized": false,
+  "td5_admitted": false,
+  "history_choice": false,
+  "archive": {
+    "filename": "FT7_1b2b3b2b2b2b2b2a_Fresh_Task_Intake_Evidence_20261015.zip",
+    "bytes": 35096413,
+    "sha256": "b446c4b66c44e42b0a1bbcd75c10149cd6283fcc67804296648b306c67ee592a",
+    "manifest_members": 66,
+    "nested_members": {
+      "fresh-task-failed-source-v1.zip": 7,
+      "fresh-task-corrected-source-v2.zip": 10,
+      "FT7_1b2b3b2b1_Owned_Proposal_Domain_Evidence_20261015.zip": 20
+    },
+    "all_members_verified": true
+  },
+  "clean_preparation": {
+    "passed": true,
+    "frozen_identities": 367,
+    "prior_identities": 357,
+    "both_prepared_runtimes_exact": true,
+    "manual_overlay": false,
+    "sealed_baseline": 1093,
+    "historical_references": 210,
+    "repair_freeze": 20,
+    "recovery_members": 209
+  }
+}
