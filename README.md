@@ -1,6 +1,6 @@
 # Soc G Layer
 
-Latest bounded progress, 15 October 2026 UTC: FT7.1b2b3b2b2b1 passed ten exact methods, 398 predecessor identities and twelve independently audited saved records. The settled paid comparison exposes all 22 canonical / 14 workflow examined operand alternatives while preserving all original nominees. All 320 frozen identities and prior 313 identities remain exact. No new failed attempt and no paid execution rerun. This is bounded inventory, not current TD5 admission or live history-caused choice. Parent FT7 and FT8–FT9 remain pending. See `docs/ft/FT7_1b2b3b2b2b1_Record.md`.
+Latest bounded progress, 15 October 2026 UTC: FT7.1b2b3b2b2b2a passed ten exact methods, 408 predecessor identities and eight independently audited saved records. Current TD5 admission joins all six means to the paid bounded operand domain, checks post-comparison wallets and retains unpaid preparation/cp costs. Both harder sources still honestly defer. All 327 frozen and prior 320 identities remain exact; no new failure or paid execution rerun. This is current bounded admission, not complete role coverage or live history-caused choice. FT7–FT9 remain pending. See `docs/ft/FT7_1b2b3b2b2b2a_Record.md`.
 
 Full Theory engine continuation. The repaired FT3 recovery gate passed on 12 October 2026: all 751 inherited method identities, 30 FT controls and both positive retention witnesses passed with unchanged source. See `docs/ft/Recovery_Record_20261012.md`.
 

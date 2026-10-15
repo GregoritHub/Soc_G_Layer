@@ -1,0 +1,26 @@
+{
+  "batch": "FT7.1b2b3b2b2b2a",
+  "passed": true,
+  "methods": 10,
+  "failures": 0,
+  "errors": 0,
+  "predecessor_identities": 408,
+  "saved_records": 8,
+  "typed_roundtrip_exact": true,
+  "independent_audits": true,
+  "source_unchanged": true,
+  "frozen_identities": 327,
+  "paid_execution_rerun": false,
+  "claim": "Current TD5 admission and bounded estimated-cost domain only; no live history-caused choice or parent acceptance",
+  "protocol_commit": "a7cfc9d5e7cf07bd4fa8389accff1d11048f7fc1",
+  "frozen_commit": "c1d48db23d17151f1837f9ec83c33b1eb0b1b705",
+  "prior_320_identities_unchanged": true,
+  "new_failed_attempts": 0,
+  "archive": {
+    "filename": "FT7_1b2b3b2b2b2a_Current_Admission_Evidence_20261015.zip",
+    "bytes": 25493663,
+    "sha256": "171d55d650b3da759880db91ccae7f7c6ef44c5c4f06d56aebb00dfe273ea1c7",
+    "manifest_members": 27,
+    "all_members_verified": true
+  }
+}

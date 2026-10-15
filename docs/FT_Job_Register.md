@@ -38,7 +38,7 @@
 | FT7.1b2b3b2b1 | accepted, bounded owned native proposals only | 10 exact methods, 378 predecessor identities, six saved audits, all 295 frozen identities unchanged; no execution authority |
 | FT7.1b2b3b2b2 | in progress, parent not accepted | Paid comparison prerequisite accepted; complete TD5 domain and live tie-only choice remain mandatory |
 | FT7.1b2b3b2b2a | accepted, paid comparison and restart only | 10 exact methods, 388 predecessor identities, 12 saved independent audits; all 313 reader identities exact, unchanged runtime/auditor and prior 295 source identities |
-| FT7.1b2b3b2b2b | planned, not registered or implemented | Complete TD5 admission/domain, genuine owned tie, actual chosen work/use, matched feedback controls and exact composition/restart |
+| FT7.1b2b3b2b2b | in progress; operand and bounded admission prerequisites accepted | Complete TD5 admission/domain, genuine owned tie, actual chosen work/use, matched feedback controls and exact composition/restart |
 | FT7.2 | pending | Full Theory plan gate |
 | FT7.3 | pending | Full Theory plan gate |
 | FT8.1 | pending | Full Theory plan gate |
@@ -71,3 +71,5 @@ Author-approved split supersedes the ruling-required status above. See FT7_1b2b2
 [measured] FT7.1b2b3b2b2a passed actual paid native comparison and restart. Four failed attempts are preserved. A prospectively frozen saved reader and repaired adversarial mock validated the same 12 original records and all ten actual methods without regenerating paid work. No TD5 execution authority or history-caused choice follows; FT8 unchanged. See FT7_1b2b3b2b2a_Record.md.
 
 [measured] FT7.1b2b3b2b2b1 accepted: ten exact methods, 398 predecessor identities, twelve exact records and all 320 frozen identities; prior 313 unchanged. All examined operand bundles are independently reconstructed from settled paid snapshots (22 canonical / 14 workflow), with original nominees unchanged and no execution authority. No new failure or accepted paid rerun. Next b2: current TD5/live tie-only choice and composition; parent FT7–FT9 unfinished. See FT7_1b2b3b2b2b1_Record.md. Ownership bookkeeping correction is disclosed there.
+
+[measured] FT7.1b2b3b2b2b2a accepted: ten exact methods, 408 predecessor identities, eight exact saved independent audits, 327 frozen identities and all prior 320 unchanged. Current paid request/retention/geometry/cost reconstruction yields 111 canonical and 71 workflow joined candidates including deferral. Both sources remain deferred with unpaid preparation debt1; no receipt or history credit. Next b2b: owned role coverage, fresh paid true tie, actual chosen work/use and matched feedback/composition controls. Parent FT7–FT9 and all FT8 denominators remain open/unchanged. See FT7_1b2b3b2b2b2a_Record.md.

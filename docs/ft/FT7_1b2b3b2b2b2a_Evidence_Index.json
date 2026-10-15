@@ -1,0 +1,64 @@
+{
+  "batch": "FT7.1b2b3b2b2b2a",
+  "archive": {
+    "filename": "FT7_1b2b3b2b2b2a_Current_Admission_Evidence_20261015.zip",
+    "bytes": 25493663,
+    "sha256": "171d55d650b3da759880db91ccae7f7c6ef44c5c4f06d56aebb00dfe273ea1c7",
+    "manifest_members": 27,
+    "all_members_verified": true
+  },
+  "protocol_commit": "a7cfc9d5e7cf07bd4fa8389accff1d11048f7fc1",
+  "frozen_commit": "c1d48db23d17151f1837f9ec83c33b1eb0b1b705",
+  "records": [
+    {
+      "key": "canonical/before",
+      "file": "records/canonical-before.json.gz",
+      "sha256": "1c45167ee5ec0c48dc17a9e0e44cfcf57e6102a7cfc12447fc27f9ff9447a6ce",
+      "original_sha256": "c3e6186325af74ddffe70a43d59092421020aea865bb1d354c28fd219ebc2dc3"
+    },
+    {
+      "key": "canonical/ready",
+      "file": "records/canonical-ready.json.gz",
+      "sha256": "9a79bd24d1804d06f6855430cb48ef70ab706ef6c1b6300868c5c2b4967de1ca",
+      "original_sha256": "5d3e53faaeb47e55e6dbcb1f4fd896113fd1c4470f5df0077cda3b5de1182c7e"
+    },
+    {
+      "key": "canonical/complete",
+      "file": "records/canonical-complete.json.gz",
+      "sha256": "6e9cb28fb43567dc9225a431aac3f34e08c82afe5a7a082abce87eaa3580e857",
+      "original_sha256": "034fc913d46ab89efeb6f82125c21a28b3f8716173294771663b8b163197cc19"
+    },
+    {
+      "key": "canonical/restarted",
+      "file": "records/canonical-restarted.json.gz",
+      "sha256": "9b517f3bda142273e8223a107e760b3173976152a7e470f93f619ffa6e91fd10",
+      "original_sha256": "6b3e0a0670ee0c33767ee37ff25b34bfaa8de96ef6ab75c8d69df5bd54ad8302"
+    },
+    {
+      "key": "workflow/before",
+      "file": "records/workflow-before.json.gz",
+      "sha256": "026e18bbf4e35e96846fd17fa98ea7b28b66a485e37a637ba37dc6ea961628c6",
+      "original_sha256": "7d6eb07419dfdd3716ad8837cbcb45aeaacb74b972b730d5ca04d6a03d449cb9"
+    },
+    {
+      "key": "workflow/ready",
+      "file": "records/workflow-ready.json.gz",
+      "sha256": "04535bbc7a33ca2b81c2898f435de21c391dc358b35ac45552a2b799eb306cc4",
+      "original_sha256": "e1d0416def090a474772a8c900e7d6736b529b0adcf1075aaf44044a68430b2d"
+    },
+    {
+      "key": "workflow/complete",
+      "file": "records/workflow-complete.json.gz",
+      "sha256": "6bdb893945e1f89a14edb35555c1544133f9d1e151332f0c2acf0a431dd80d07",
+      "original_sha256": "cd30343dc516fe97f3cda17238c4cffbe3708314fdcda2ecb7d3886640793e2a"
+    },
+    {
+      "key": "workflow/restarted",
+      "file": "records/workflow-restarted.json.gz",
+      "sha256": "21a55528487b6fa55cb76e03a59d480fa315f15238b21455a1d53baac343832d",
+      "original_sha256": "76c4c5ebf5cafdc00d1f39a8acbafe45a6885182b5fd3703e0d20f1f539ab6f7"
+    }
+  ],
+  "retrieval": "Private evidence attachment named above; authenticated retrieval pointer is in the continuation task, never public metadata.",
+  "reproduce": "See archive reproduction text. Use exact operand evidence attempt1 records; no accepted paid execution rerun."
+}
