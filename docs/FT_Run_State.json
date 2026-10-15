@@ -4,10 +4,10 @@
   "status": "running",
   "run_id": "ft7-b3b2-20261015T0339Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-15T04:09:00Z",
-  "expected_head": "45e898c0775166b0b499453ba8d0224e0bf28a00",
-  "current_batch": "FT7.1b2b3b2",
-  "next_batch": "Preregister and implement complete owned-domain tie-only choice integration and live movement/consumer outcome staging, with matched feedback controls and exact restart; FT7.1b2b3b parent remains pending",
+  "lease_expires_at": "2026-10-15T04:27:00Z",
+  "expected_head": "7e8e2b5a56afdc31104c6c058d0382dfed7da6b7",
+  "current_batch": "FT7.1b2b3b2a",
+  "next_batch": "Finish live suffix outcome staging audit, then complete owned-domain tie-only paid choice integration; parent gates remain pending",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -104,7 +104,8 @@
     "FT7.1b2b2a",
     "FT7.1b2b2b",
     "FT7.1b2b3a",
-    "FT7.1b2b3b1"
+    "FT7.1b2b3b1",
+    "FT7.1b2b3b2a"
   ],
   "publication": {
     "mode": "read-only pinned dependencies plus new development",
@@ -985,5 +986,25 @@
     },
     "parent_gate": "FT7.1b2b3 remains open for actual paid reserve preparation and autonomous tie-only later owned choices with controls and exact restart; FT8 unchanged",
     "source_publication": "verified"
+  },
+  "live_outcome_progress": {
+    "batch": "FT7.1b2b3b2a",
+    "accepted": false,
+    "protocol_commit": "a061c0a6e7e7d5c4868fc36d553f6683885538e1",
+    "frozen_commit": "7e8e2b5a56afdc31104c6c058d0382dfed7da6b7",
+    "methods_required": 10,
+    "records_required": 16,
+    "predecessor_identities": 368,
+    "first_attempt": {
+      "frozen_commit": "e37f14cfb96490cd9252e1f02578774fb43a4a1c",
+      "method_bodies": 0,
+      "saved_records": 2,
+      "audited_records": 1,
+      "failure": "New auditor projected native wallet to two fields; runtime stores complete native attrs",
+      "preserved": true
+    },
+    "current_attempt": 2,
+    "source_unchanged": true,
+    "claim": "Live suffix outcome staging only; complete owned-domain and tie-only causality remain pending"
   }
 }
