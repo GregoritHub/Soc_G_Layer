@@ -1744,6 +1744,16 @@
     "continuation_freeze_commit": "f1b07f1e34fc3bb67bce713fdba0838e85479764",
     "continuation_frozen_identities": 392,
     "original_388_exact": true,
-    "remaining_records": "workflow masks 8 through 15 only; reuse all 32 original exact saved records and independent audits, without repeating their paid work"
+    "remaining_records": "workflow masks 8 through 15 only; reuse all 32 original exact saved records and independent audits, without repeating their paid work",
+    "progress_evidence": {
+      "file": "FT7_1b2b3b2b2b2b2b2b1b_Paid_Window_Progress_Evidence_20261015.zip",
+      "sha256": "d533c97fe2db4097aa6de122410dc8356d1de612b2eddcc008a4418c798f86f7",
+      "manifest_members": 46,
+      "original_records": 32,
+      "actual_methods": 0,
+      "original_source_capsule_members": 7,
+      "continuation_source_capsule_members": 4,
+      "contains_continued_results": false
+    }
   }
 }

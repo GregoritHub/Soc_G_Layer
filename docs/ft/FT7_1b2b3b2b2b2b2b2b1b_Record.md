@@ -63,3 +63,20 @@ was detected before any remote mutation; the current remote head and explicit
 base tree were re-read before publishing the amendment. Every save again
 verified the complete public tree with no paths removed. Auxiliary read-only
 process/pending-file probes did not modify source, raw evidence or gate rules.
+
+Private progress evidence:
+FT7_1b2b3b2b2b2b2b2b1b_Paid_Window_Progress_Evidence_20261015.zip,
+SHA256 d533c97fe2db4097aa6de122410dc8356d1de612b2eddcc008a4418c798f86f7.
+All 46 outer members, original/continuation source capsules (7/4 members),
+the exact 81-member request-window input, its 7/7 source capsules, and the
+nested 66-member intake with 7/10 source capsules and 20-member original
+input were verified. This archive contains the original 32 records and
+prospective continuation source only, not later continuation results.
+
+An auxiliary recursive packaging check initially assumed every historical
+source capsule had SHA256.json. Two older source capsules instead carry
+complete source-freeze manifests. Corrected readback verified each member
+against that frozen format and the enclosing archive's exact capsule hash.
+The already-written archive was not rebuilt or overwritten; it was uploaded
+once after complete verification. No engine source, raw evidence or gate
+criterion changed.
