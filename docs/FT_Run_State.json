@@ -1,12 +1,12 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft7-fresh-task-20261015T1335Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-15T14:25:00Z",
-  "expected_head": "8b5fdb56c24d4d1aab91d8a40f06a2afa1b8072e",
-  "current_batch": "FT7.1b2b3b2b2b2b2b2a",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "22066a138f726a5d3f0734dd4cf5723126044548",
+  "current_batch": null,
   "next_batch": "FT7.1b2b3b2b2b2b2b2b (planned, not preregistered): route-free fresh skill work and separately bound current request/admission integration, newly paid comparisons for changed inputs, genuine same-priority/native-cost ties across distinct actual elements, autonomous live history-only choice, chosen paid movement/downstream use, matched feedback-off/history-removal and full comparison/preparation/live-staging composition/restart. Preserve older unresolved demand/TD5 and all FT8 obligations.",
   "completed_batches": [
     "FT0.1",
@@ -313,7 +313,7 @@
     "prior_failed_attempts": 6
   },
   "latest_acceptance_record": "docs/ft/FT7_1b2b3b2b2b2b2b2a_Record.md",
-  "latest_acceptance_commit": null,
+  "latest_acceptance_commit": "22066a138f726a5d3f0734dd4cf5723126044548",
   "engineering_continuation": {
     "batch": "FT7.1b2b3b",
     "accepted": false,
@@ -1572,7 +1572,14 @@
     "accepted": true,
     "scope": "Fresh route-free task intake on exact fulfilled sources only; parent live tie-only choice remains mandatory.",
     "saved_records": 42,
-    "methods": 8
+    "methods": 8,
+    "acceptance_commit": "22066a138f726a5d3f0734dd4cf5723126044548",
+    "publication_verified": {
+      "head": "22066a138f726a5d3f0734dd4cf5723126044548",
+      "blobs": 468,
+      "all_local_public_blob_identities_exact": true,
+      "removed_paths": 0
+    }
   },
   "continuation_save_diagnostic": {
     "failed_commit": "e0a9c5c8eae1c8970568e6048cf9c3275fa042b2",
