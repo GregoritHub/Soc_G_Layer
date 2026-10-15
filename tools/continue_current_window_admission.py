@@ -40,6 +40,12 @@ def main():
                     raise ValueError('exact closed prefix or accepted input changed')
         if binding['original_source']!=source:raise ValueError('source binding')
     verify()
+    if set(binding['files'])!=set(roots):raise ValueError('exact three binding roots')
+    existing={str(path.relative_to(a.output)) for path in a.output.rglob('*') if path.is_file()}
+    if existing!=set(binding['files']['original_output']):raise ValueError('complete initial closed-prefix file domain')
+    for protected in (a.output,a.paid,a.capacity,a.public,ROOT):
+        if a.operations==protected or protected in a.operations.parents or a.operations in protected.parents:
+            raise ValueError('disjoint fresh operational output required')
     outcome=read(a.output/'outcome.json')
     if outcome['status']!='checkpoint' or outcome['active_children']!=0 or not outcome['source_unchanged']:
         raise ValueError('only quiescent nonfailed checkpoint can continue')
