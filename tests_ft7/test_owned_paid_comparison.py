@@ -91,7 +91,7 @@ class OwnedPaidComparisonTests(unittest.TestCase):
             if d.get('ftpc'):d['required']-=1;v=replace(v,attributes=attributes(d))
             versions.append(v)
         txs[first]=replace(tx,versions=tuple(versions))
-        forged=SimpleNamespace(world=SimpleNamespace(journal=lambda:tuple(txs)),access=e.access)
+        forged=SimpleNamespace(world=SimpleNamespace(journal=lambda:tuple(txs),checkpoint=e.world.checkpoint),access=e.access)
         with self.assertRaises(ValueError):audit_owned_paid_comparison(forged,old,row[2],row[3],row[4])
 
     def test_foreign_result_rejected(self):
