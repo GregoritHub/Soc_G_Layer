@@ -80,3 +80,15 @@ against that frozen format and the enclosing archive's exact capsule hash.
 The already-written archive was not rebuilt or overwritten; it was uploaded
 once after complete verification. No engine source, raw evidence or gate
 criterion changed.
+
+At 18:25 UTC the eight missing workflow stages completed with exact typed
+roundtrips, full independent audits, terminal idempotence and unchanged
+392-identity source. Together with the original 32 preserved records, all
+forty required saved records now independently audit. Each completed workflow
+branch pays 22,181 energy/time over all 510 windows with zero view rejections;
+the fifteen branches cover all 7,650 declared workflow requests. Canonical
+branches pay 67/67. These are independent branch costs after the accepted
+5/5 intake, not cumulative expense or wallet replenishment. The original
+eight actual methods are now being executed as bounded stages; no gate
+acceptance is claimed yet. An auxiliary process-list diagnostic again failed
+without affecting the active execution handles, raw records or source.
