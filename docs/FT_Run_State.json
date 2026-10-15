@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft7-fresh-request-20261015T1449Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-15T16:14:58Z",
-  "expected_head": "b4e85a1ca1aad005cbf47cb59dbab6eb3d06c848",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "25e4073705cfefe3a5efc5e461379995b544d834",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1a",
   "next_batch": "FT7.1b2b3b2b2b2b2b2b1b (planned, not preregistered): actual newly paid complete accessible-window native comparison, separately bound source/native-prefix composition and restart; then route-free fresh skill work, current TD5/capacity admission, genuine distinct-element same-priority/native-cost ties, autonomous live history-only choice, chosen paid movement/downstream use, matched feedback controls and full preparation/live-staging composition. No old-bound override or receipt reuse for changed inputs; all FT8 obligations intact.",
   "completed_batches": [
@@ -317,7 +317,7 @@
     "prior_failed_attempts": 6
   },
   "latest_acceptance_record": "docs/ft/FT7_1b2b3b2b2b2b2b2b1a_Record.md",
-  "latest_acceptance_commit": null,
+  "latest_acceptance_commit": "25e4073705cfefe3a5efc5e461379995b544d834",
   "engineering_continuation": {
     "batch": "FT7.1b2b3b",
     "accepted": false,
@@ -1717,6 +1717,13 @@
       "workflow_bound": 8
     },
     "scope": "Complete declared request grammar only; all comparisons unpaid, no native-view eligibility, TD5 or choice authority.",
-    "secondary_automatic_preparation": "Stopped on CONNECT tunnel HTTP403; retained verified primary base used without alternate source transfer."
+    "secondary_automatic_preparation": "Stopped on CONNECT tunnel HTTP403; retained verified primary base used without alternate source transfer.",
+    "acceptance_commit": "25e4073705cfefe3a5efc5e461379995b544d834",
+    "public_tree_verification": {
+      "head": "25e4073705cfefe3a5efc5e461379995b544d834",
+      "blobs": 487,
+      "all_local_public_blob_identities_exact": true,
+      "paths_removed": 0
+    }
   }
 }
