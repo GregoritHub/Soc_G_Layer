@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft7-capacity-continuation-20261015T213522Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-15T22:05:22Z",
-  "expected_head": "e2a270a35dfba1160d1518d87d68e2b132d8ecbc",
+  "lease_expires_at": "2026-10-15T22:22:00Z",
+  "expected_head": "9300ea91510b523a70cacf286330faeecc8a7881",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1c",
   "current_window_capacity_progress": {
     "status": "bounded_continuation_running_not_accepted",
