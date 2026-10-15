@@ -4,10 +4,10 @@
   "status": "running",
   "run_id": "ft-reuse-oct15-1792024259179",
   "active_worker": true,
-  "lease_expires_at": "2026-10-15T01:25:31.000Z",
-  "expected_head": "926ab7fa19432ea9b105cd160ee030bdb64c2501",
-  "current_batch": "FT7.1b2b3",
-  "next_batch": "FT7.1b2b3: prospectively register integrated native reserve/history binding and tie-only later owned choices; then ordered-pair/population and unchanged FT8-FT9 gates",
+  "lease_expires_at": "2026-10-15T01:43:36.000Z",
+  "expected_head": "a92be13518479f891fbf0563d08ffb4e2fb1b470",
+  "current_batch": "FT7.1b2b3a",
+  "next_batch": "FT7.1b2b3a frozen exact reserve/history receipt binding running; FT7.1b2b3b actual paid reserve preparation and tie-only later owned choice mandatory",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -133,7 +133,7 @@
     "batch": "FT7.1b2b2b",
     "frozen_commit": "83d057cb5700c6fa0676cc5d83b422c622d420b4",
     "saved_audit_frozen_commit": "c5b0b8927a564c8ac8706e21e3f8a28372616191",
-    "source_publication": "pending remote verification"
+    "source_publication": "verified"
   },
   "conditioning_release": {
     "policy": "success-v1",
@@ -264,11 +264,15 @@
     "prior_failed_attempts": 6
   },
   "latest_acceptance_record": "docs/ft/FT7_1b2b2b_Acceptance_Record.md",
-  "latest_acceptance_commit": "acceptance commit containing this state",
+  "latest_acceptance_commit": "e5162597018672e39e4565fad27c64e2ed78a18d",
   "engineering_continuation": {
-    "batch": "FT7.1b2b3",
+    "batch": "FT7.1b2b3a",
     "accepted": false,
-    "permission": "Technical coding, testing, diagnosis, lawful repairs and retries through FT9 belong to the agent without renewed user approval. Preserve criteria except the explicitly approved comparison amendment; FT8 unchanged."
+    "frozen_commit": "a92be13518479f891fbf0563d08ffb4e2fb1b470",
+    "registered_methods": 8,
+    "registered_saved_records": 24,
+    "predecessor_identities": 352,
+    "claim": "Native accounting observer only, no choice effect; b3 parent remains open"
   },
   "prior_comparison_hold": {
     "kind": "registered_comparison_conflicts_with_unchanged_route_contract",
