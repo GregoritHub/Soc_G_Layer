@@ -4,9 +4,9 @@
   "status": "running",
   "run_id": "ft-role-domain-20261015T0936-7c12",
   "active_worker": true,
-  "lease_expires_at": "2026-10-15T10:06:00Z",
-  "expected_head": "e6987e9fa5c5449c78fb5bf8253d154bfd50c1c3",
-  "current_batch": "FT7.1b2b3b2b2b2b1",
+  "lease_expires_at": "2026-10-15T10:23:00Z",
+  "expected_head": "ad5b60cac57317bb51194659847f2796497e51c9",
+  "current_batch": "FT7.1b2b3b2b2b2b2a",
   "next_batch": "FT7.1b2b3b2b2b2b2: complete owned role alternatives and fresh route-free task/skill panel, genuine same-priority/native-cost distinct-element tie, live history-caused selection, actual chosen movement/consumer, matched feedback-off/history-removal and full preparation/staging composition. Parent FT7/FT8/FT9 and all denominators unchanged.",
   "completed_batches": [
     "FT0.1",
@@ -1393,5 +1393,14 @@
       "all_local_git_blob_identities_exact": true,
       "no_paths_removed": true
     }
+  },
+  "role_domain_progress": {
+    "status": "frozen_gate_running",
+    "protocol_commit": "013a5c1c9d68cf7888e37fb7174a15f9933b4988",
+    "freeze_commit": "ad5b60cac57317bb51194659847f2796497e51c9",
+    "record_count": 8,
+    "registered_methods": 8,
+    "predecessor_identities": 428,
+    "claim": "Paid-observation role domain only; no new comparison payment, admission, movement or history choice"
   }
 }
