@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft7-role-paid-20261015T1037Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-15T11:07:00Z",
-  "expected_head": "1372969121fc7606e84930580f7e189cfb83b882",
+  "lease_expires_at": "2026-10-15T11:20:00Z",
+  "expected_head": "c7dda21b29709b48aa1910c9be0218938c9153fe",
   "current_batch": "FT7.1b2b3b2b2b2b2b1",
   "next_batch": "FT7.1b2b3b2b2b2b2b: prospectively fixed route-free fresh task/skill work, newly paid role-dependent comparison, genuine same-priority/native-cost distinct-element ties, separately versioned live history-only choice, actual chosen movement/downstream use, matched feedback-off/history-removal and full staging composition/restart. Preserve older unresolved demand, TD5 and all FT8 denominators.",
   "completed_batches": [
@@ -1454,5 +1454,12 @@
       "all_local_git_blob_identities_exact": true,
       "no_paths_removed": true
     }
+  },
+  "paid_role_progress": {
+    "batch": "FT7.1b2b3b2b2b2b2b1",
+    "status": "frozen_not_evaluated",
+    "accepted": false,
+    "protocol_commit": "c7dda21b29709b48aa1910c9be0218938c9153fe",
+    "prior_identities": 341
   }
 }
