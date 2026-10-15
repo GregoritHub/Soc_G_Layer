@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft7-capacity-continuation-20261015T213522Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-15T22:22:00Z",
-  "expected_head": "f4a3a104a5a876c924d3acd6f66f19890fe93e5e",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "64341a34a6fb90221ae440f9d683c4e29bddb6bb",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1c",
   "current_window_capacity_progress": {
     "status": "passed",
@@ -61,7 +61,14 @@
       "nested_initial_progress_members": 40
     },
     "owned_processes_remaining": 0,
-    "completed_utc": "2026-10-15T22:12:06.354252+00:00"
+    "completed_utc": "2026-10-15T22:12:06.354252+00:00",
+    "acceptance_commit": "64341a34a6fb90221ae440f9d683c4e29bddb6bb",
+    "public_tree_verification": {
+      "head": "64341a34a6fb90221ae440f9d683c4e29bddb6bb",
+      "blobs": 520,
+      "all_local_public_blob_identities_exact": true,
+      "paths_removed": 0
+    }
   },
   "next_batch": "Prospectively register full current TD5 operand/cost integration and route-free fresh skills/needed paid recall organization. Changed inputs require new binding and payment. Establish genuine same-priority/native-cost distinct-element ties, autonomous history-only choice, chosen paid movement/use, matched controls and full staging. Preserve original four-facet demand, old prefixes, oldest-first priority and all FT8 obligations. No accepted gate or passing stage reruns.",
   "completed_batches": [
@@ -247,7 +254,8 @@
       "historical_identities": 210,
       "repair_freeze_identities": 20,
       "prior_http403_not_retried": true
-    }
+    },
+    "acceptance_commit": "64341a34a6fb90221ae440f9d683c4e29bddb6bb"
   },
   "conditioning_release": {
     "policy": "success-v1",
@@ -1932,5 +1940,6 @@
     ],
     "acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2"
   },
-  "prior_paid_window_acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2"
+  "prior_paid_window_acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2",
+  "latest_acceptance_commit": "64341a34a6fb90221ae440f9d683c4e29bddb6bb"
 }

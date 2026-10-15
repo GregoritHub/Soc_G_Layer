@@ -182,3 +182,8 @@ history-only choice, chosen paid movement/use, matched controls and full staging
 No forced ties, old-label override, refill, old-wrapper regeneration or bypass
 of older unresolved need is permitted. Parent FT7–FT9 and all FT8 obligations
 remain unfinished; no substantive blocker is established.
+
+Acceptance was saved at 64341a34a6fb90221ae440f9d683c4e29bddb6bb.
+The complete 520-blob public tree and every local/public Git blob identity were
+verified, with no paths removed. Ownership is released at this verified
+checkpoint; no owned processes or unfinished stages remain for this subgate.
