@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft7-window-payment-20261015T163521000Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-15T18:47:00.000Z",
-  "expected_head": "c95e2d1bb9dc1b5c9fdf88ff29bcebbe2aaae980",
+  "lease_expires_at": "2026-10-15T19:08:00.000Z",
+  "expected_head": "545f880d7f2c66b8376a995af77963b0e442aaa5",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1b",
   "next_batch": "Complete frozen FT7.1b2b3b2b2b2b2b2b1b evaluation and independent saved audits; then separately preregister current TD5/capacity integration and route-free skill work. All FT8 obligations unchanged.",
   "completed_batches": [
@@ -1738,7 +1738,11 @@
     "predecessor_identities": 468,
     "accepted_paid_work_rerun": false,
     "audited_records_at_checkpoint": 40,
-    "methods_executed_at_checkpoint": 0,
+    "methods_executed_at_checkpoint": 2,
+    "methods_passed_at_checkpoint": [
+      "test_exact_full_panel",
+      "test_exact_partial_restart"
+    ],
     "original_attempt": "Execution session lost after 32 exact independently audited records; no logged traceback or final gate summary; zero actual test methods. Exact cause not established. All raw/source/log preserved; unsaved mask-8 state unverified.",
     "continuation_amendment_commit": "3c54668e93b2ec8d5ebfb42bb83d823cf89accc8",
     "continuation_freeze_commit": "f1b07f1e34fc3bb67bce713fdba0838e85479764",
