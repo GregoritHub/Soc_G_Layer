@@ -3,6 +3,7 @@ from dataclasses import dataclass
 from hashlib import sha256
 from functools import lru_cache
 from hle.contracts import Record
+from hle_unified import codec
 from hle_unified.selection_records import dumps, loads, fields_of
 from hle_unified.operation_records import OperationRequest
 from hle_unified.operations import OperationEngine, record, address, job_address
@@ -15,6 +16,18 @@ from .owned_role_domain_audit import audit_role_payload
 
 
 def digest(text): return sha256(text.encode()).hexdigest()
+
+
+def snapshot_text(snapshot,setting):
+    if setting=='canonical':return dumps(snapshot)
+    def pack(value):
+        if type(value) is dict:
+            if any(type(k) is not str for k in value):raise ValueError('string snapshot keys required')
+            return ('map',tuple((k,pack(value[k])) for k in sorted(value)))
+        if type(value) is tuple:return ('tuple',tuple(pack(x) for x in value))
+        if type(value) is list:return ('list',tuple(pack(x) for x in value))
+        return ('leaf',value)
+    return codec.dumps(pack(snapshot))
 
 
 @dataclass(frozen=True)
@@ -63,7 +76,7 @@ def ballot(engine, text):
             required=1+len(s['items'])+len(rows)+sum(x['examined'] for x in rows)
         projection=tuple({k:row[k] for k in keys} for row in rows)
         result.append(dict(ordinal=ordinal,request_sha256=digest(dumps(fields_of(r))),
-            rejection=None,required=required,snapshot_sha256=digest(dumps(s)),
+            rejection=None,required=required,snapshot_sha256=digest(snapshot_text(s,d['setting'])),
             candidates=projection,nominee=None if nominee is None else nominee['cell']))
     return result
 

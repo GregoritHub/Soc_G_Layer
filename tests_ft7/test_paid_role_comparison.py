@@ -3,12 +3,14 @@ from pathlib import Path
 import unittest
 from unittest.mock import patch
 from dataclasses import replace
+from hle_unified import codec
+from hle_unified.records import Definition,SourceStatus
 from hle_unified.material import attrs,attributes
 from hle_unified.selection_records import dumps,loads
 from hle_unified.operations import address,record
 from full_theory.paid_role_comparison import (PaidCanonicalRoleEngine,PaidWorkflowRoleEngine,
-    RoleComparisonRequest,prepare_role_comparison,step_role_comparison,digest)
-from full_theory.paid_role_comparison_audit import audit_paid_roles
+    RoleComparisonRequest,prepare_role_comparison,step_role_comparison,digest,snapshot_text)
+from full_theory.paid_role_comparison_audit import audit_paid_roles,snapshot_digest
 from tests_ft7.test_social_live_outcome import read_record
 from tests_ft7.test_owned_paid_comparison import paid_type
 
@@ -22,6 +24,20 @@ def inputs(setting):return read_record(Path(os.environ['FT7_PAID_ROLES_INPUT'])/
 
 class PaidRoleComparisonTests(unittest.TestCase):
     def test_full_paid_domain(self):
+        original={'relation':{'definition':Definition(None,SourceStatus.UNSPECIFIED)},'tuple':(1,True),'list':[1,True]}
+        text=snapshot_text(original,'workflow')
+        def unpack(node):
+            tag,value=node
+            if tag=='leaf':return value
+            if tag=='map':return {k:unpack(v) for k,v in value}
+            values=[unpack(v) for v in value]
+            return tuple(values) if tag=='tuple' else values
+        self.assertEqual(unpack(codec.loads(text)),original)
+        self.assertEqual(digest(text),snapshot_digest(original,'workflow'))
+        changed={'relation':{'definition':Definition('different',SourceStatus.ENGINEERING)},'tuple':(1,True),'list':[1,True]}
+        self.assertNotEqual(text,snapshot_text(changed,'workflow'))
+        self.assertNotEqual(snapshot_text([1],'workflow'),snapshot_text((1,),'workflow'))
+        self.assertEqual(snapshot_text({'plain':(1,True)},'canonical'),dumps({'plain':(1,True)}))
         for setting,count in (('canonical',1728),('workflow',3612)):
             _,_,rows,result=raw(setting,'complete')
             self.assertEqual(len(rows),count);self.assertEqual(result['assignments'],rows)

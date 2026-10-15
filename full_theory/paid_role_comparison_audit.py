@@ -2,6 +2,7 @@
 from hashlib import sha256
 from itertools import product
 from collections import OrderedDict
+from hle_unified import codec
 from hle_unified.selection_records import SelectionRequest,fields_of,dumps,loads
 from hle_unified.workflow_selection_records import WorkflowSelectionRequest,WorkflowCapacitySelectionRequest
 from hle_unified.records import Procedure,Account
@@ -17,6 +18,19 @@ from .owned_role_domain_audit import audit_role_payload
 
 
 def digest(text):return sha256(text.encode()).hexdigest()
+
+
+def snapshot_digest(value,setting):
+    if setting=='canonical':return digest(dumps(value))
+    def canonical(node):
+        kind=type(node)
+        if kind is dict:
+            if not all(type(key) is str for key in node):raise ValueError('snapshot key type')
+            entries=tuple((key,canonical(item)) for key,item in sorted(node.items()))
+            return 'map',entries
+        if kind in (tuple,list):return ('tuple' if kind is tuple else 'list',tuple(map(canonical,node)))
+        return 'leaf',node
+    return digest(codec.dumps(canonical(value)))
 
 
 _REFERENCE_CACHE=OrderedDict()
@@ -67,7 +81,7 @@ def reconstruct(old,roles,prepared):
               'effort','score','examined','deferred') if d['setting']=='canonical' else
               ('cell','recipe','inputs','eligible','priority','preference','effort','coverage','examined','deferred'))
         output.append(dict(ordinal=ordinal,request_sha256=digest(dumps(fields)),rejection=None,
-            required=required,snapshot_sha256=digest(dumps(s)),candidates=tuple({k:x[k] for k in keys} for x in rows),
+            required=required,snapshot_sha256=snapshot_digest(s,d['setting']),candidates=tuple({k:x[k] for k in keys} for x in rows),
             nominee=None if nominee is None else nominee['cell']))
     _REFERENCE_CACHE[cache_key]=dumps(output)
     while len(_REFERENCE_CACHE)>2:_REFERENCE_CACHE.popitem(last=False)
