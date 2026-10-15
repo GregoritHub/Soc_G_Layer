@@ -124,3 +124,20 @@ actual methods in total. The two isolated all-mask methods remain running;
 their completion, exact merge and unchanged final aggregate remain required.
 The existing continuation archive still contains its original four passes;
 later results will be preserved separately without overwriting that archive.
+
+At approximately 19:26 UTC the pending tool call reported "aborted by user"
+during a context/runtime reset. At 19:27:04 both isolated Python processes
+were absent; each log contained its method-start line only, with no result
+or traceback. Exact underlying cause beyond this interruption is unknown.
+Both incomplete attempt-1 directories and stdout logs are preserved, with
+per-method interruption notes binding their exact log hashes. Neither method
+is counted as passed or as an assertion failure. All six completed passes,
+392 source identities and all 52 evidence files in each of the three outputs
+were reverified exact. No raw record or paid branch is regenerated.
+
+The already committed bounded-continuation method gate expressly allows a
+separately numbered attempt following a recorded execution interruption.
+Only the two unfinished actual methods may use attempt 2, under unchanged
+runtime, auditor, tool, bodies and criteria. The earlier six passes must not
+be repeated. The original isolated-method proof and exact final merge remain
+mandatory; interrupted attempt-1 logs stay separately preserved.
