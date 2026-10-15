@@ -1,5 +1,7 @@
 # Full Theory job register — Soc G Layer
 
+[progress] FT7.1b2b3b2b2b2b2b2b1c current-window capacity/preparation bridge is implemented and frozen, not accepted. Protocol 367bdd57a8c5aa9bb0b8da9f8379c280b7916d3a; freeze bff1df3180f339cc99dd3dd413e90435648e755a, 399 identities with all prior 392 exact. Eight actual methods, forty full independent saved audits and 476 predecessor identities remain mandatory. No accepted paid work is rerun, no old task credit is borrowed, and no full TD5 cost-domain or execution authority is claimed. See the new Record; all parent and FT8 obligations remain unchanged.
+
 [source_defined] Continuation revision 1.1 governs. Inherited repaired acceptance is preserved; recovery passed on 12 October 2026. All thirty parent IDs are retained.
 
 | Job | Status | Evidence / next action |

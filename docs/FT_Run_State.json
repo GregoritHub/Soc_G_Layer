@@ -6,7 +6,20 @@
   "active_worker": true,
   "lease_expires_at": "2026-10-15T21:09:00Z",
   "expected_head": "d33dd30395af601583c625433bba2e649fa44eaf",
-  "current_batch": "FT7.1b2b3b2b2b2b2b2b1b",
+  "current_batch": "FT7.1b2b3b2b2b2b2b2b1c",
+  "current_window_capacity_progress": {
+    "status": "implemented_frozen_not_accepted",
+    "protocol_commit": "367bdd57a8c5aa9bb0b8da9f8379c280b7916d3a",
+    "implementation_commit": "f3ef21778bce2fd2b4f1c176267955b9c7055a1e",
+    "freeze_commit": "bff1df3180f339cc99dd3dd413e90435648e755a",
+    "frozen_identities": 399,
+    "prior_identities_exact": 392,
+    "required_methods": 8,
+    "required_saved_records": 40,
+    "required_predecessor_identities": 476,
+    "new_native_work": false,
+    "record": "docs/ft/FT7_1b2b3b2b2b2b2b2b1c_Record.md"
+  },
   "next_batch": "Planned, not preregistered: separately bound current TD5/capacity integration, route-free fresh skill work and any new payment required by changed inputs; genuine same-priority/native-cost distinct-element ties, autonomous live history-only choice, chosen paid movement/downstream use, matched feedback controls and full preparation/live-staging composition. All FT8 obligations remain unchanged.",
   "completed_batches": [
     "FT0.1",
