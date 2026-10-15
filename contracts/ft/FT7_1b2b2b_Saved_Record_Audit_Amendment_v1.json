@@ -1,0 +1,16 @@
+{
+  "batch": "FT7.1b2b2b",
+  "version": "bounded-audit-of-exact-saved-native-records-v1",
+  "input_freeze": "83d057cb5700c6fa0676cc5d83b422c622d420b4",
+  "diagnosis": "All 14 exact method bodies passed and the complete aggregate typed raw file was persisted. Reloading/checksum-canonicalizing the 2.2 GiB aggregate exceeded the 8 GiB process memory cap; exit 137 and cgroup OOM are preserved.",
+  "correction": [
+    "Keep the original frozen evaluator, tests, controllers, auditors, method log and aggregate raw file unchanged. Independently hash every original frozen source identity before and after the bounded audit.",
+    "Add a separately frozen bounded saved-record reader. Stream the exact canonical outer envelope, validate all fields and the full original U2 payload checksum. Decode one exact typed record at a time, require canonical typed decode/encode equality, and preserve each as its own compressed typed envelope. Require each saved compressed record to reload exactly.",
+    "Run the unchanged independent audit_saved routine on all 24 decoded native records. Preserve exact record-key domain, both settings, all controls, exact journal/native reconstruction, immutable prefixes, route/recall eligibility and paid downstream use.",
+    "Verify the recorded 14 exact passed method IDs and full unmodified method-body log under the exact unchanged original freeze. This is the independent saved-evidence stage of the same complete method run, not another engine run or a substitution of a count for bodies.",
+    "Only accept when both the actual frozen method run and the separately frozen full saved-record audit pass with unchanged witness source. If checksum, identity, completeness, roundtrip or any audit fails, preserve failure and leave gate unaccepted."
+  ],
+  "criteria": "14 actual method bodies, 338 predecessor identities, 24 exact saved records, all typed roundtrips and independent audits; FT8 and all claim boundaries unchanged. No gate or source semantics relaxed.",
+  "reader_freeze": "contracts/ft/FT7_1b2b2b_Saved_Audit_Source_Freeze_v1.json",
+  "failure_preservation": "Original attempts 1-6, all source capsules, the full raw file and both logs remain preserved."
+}
