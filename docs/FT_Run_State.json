@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "5d513e0abc87d0c5d7da08df5d384953f816b61f",
+  "status": "running",
+  "run_id": "ft7-owned-choice-20261015T0432Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-15T05:04:00Z",
+  "expected_head": "8790bbc8b7c849c975e22d95ce25a2a0b81cac5c",
   "current_batch": "FT7.1b2b3b2b",
   "next_batch": "Prospectively implement complete current owned candidate domain and autonomous tie-only paid choice, matched feedback-off/history-removal controls and exact integration with accepted paid preparation and live outcome staging; parent FT7 and FT8–FT9 remain pending.",
   "completed_batches": [
