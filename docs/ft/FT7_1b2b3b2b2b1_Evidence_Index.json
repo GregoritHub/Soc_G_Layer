@@ -1,0 +1,88 @@
+{
+  "batch": "FT7.1b2b3b2b2b1",
+  "archive": {
+    "filename": "FT7_1b2b3b2b2b1_Owned_Operand_Evidence_20261015.zip",
+    "bytes": 38033714,
+    "sha256": "476cd4891f551d8c5743684fc19556440c2dedc625f9bc345a753a588c68b42d",
+    "manifest_members": 31,
+    "all_members_verified": true
+  },
+  "protocol_commit": "8dd19d301b9d11c825300402318f063911b4d0c5",
+  "frozen_commit": "a1f97d2b3f0593c79ce1ca5484e92397717c7435",
+  "records": [
+    {
+      "key": "canonical/before",
+      "file": "records/canonical-before.json.gz",
+      "sha256": "c3e6186325af74ddffe70a43d59092421020aea865bb1d354c28fd219ebc2dc3",
+      "original_sha256": "06ab5546165d5e321a132187a3339e765c4bdf059f999d91cdfa02e07f8e63b4"
+    },
+    {
+      "key": "canonical/partial",
+      "file": "records/canonical-partial.json.gz",
+      "sha256": "fb6e8cadfe30c932a98ea454d699e7af4128f00f5f0ab8ab3b69e3427a70a52c",
+      "original_sha256": "225479a4bb68072d82a827f63e58c2e5cdb02e9fa1499f284077c0eabd262d30"
+    },
+    {
+      "key": "canonical/ready",
+      "file": "records/canonical-ready.json.gz",
+      "sha256": "5d3e53faaeb47e55e6dbcb1f4fd896113fd1c4470f5df0077cda3b5de1182c7e",
+      "original_sha256": "0be8b0751013cf139570a871e88743802debcca37d81d31e6d5d64f0c5800b45"
+    },
+    {
+      "key": "canonical/complete",
+      "file": "records/canonical-complete.json.gz",
+      "sha256": "034fc913d46ab89efeb6f82125c21a28b3f8716173294771663b8b163197cc19",
+      "original_sha256": "9c2929345bac3835af1cf4073503ca0de85f673d27a7d0cfeb49bf1035e62fd1"
+    },
+    {
+      "key": "canonical/restarted",
+      "file": "records/canonical-restarted.json.gz",
+      "sha256": "6b3e0a0670ee0c33767ee37ff25b34bfaa8de96ef6ab75c8d69df5bd54ad8302",
+      "original_sha256": "264204374c1b9526a294e596e986373c2a0aa2ae651a1864f7559a9bf1cb609b"
+    },
+    {
+      "key": "canonical/cancelled",
+      "file": "records/canonical-cancelled.json.gz",
+      "sha256": "ded56928254097365956c753f8ef7c4dceac4a6480c78b70391e7ed7d4c98220",
+      "original_sha256": "58cf616896587f25431b674bd733e96eafb70d9047ddfe7858ccfe0f9f903b17"
+    },
+    {
+      "key": "workflow/before",
+      "file": "records/workflow-before.json.gz",
+      "sha256": "7d6eb07419dfdd3716ad8837cbcb45aeaacb74b972b730d5ca04d6a03d449cb9",
+      "original_sha256": "af99d629fa1b8c19c409e4ffd44d6b4eda4fc30bd613cecfb452eb9e27004edd"
+    },
+    {
+      "key": "workflow/partial",
+      "file": "records/workflow-partial.json.gz",
+      "sha256": "36553587d51d644a1437936547a18f22995e8ee5fdf861c624345390ea95686b",
+      "original_sha256": "0cbc248ea6e8983d5354b2879c638f57fdb5178b0503ee9de4ec8089f6ca68b5"
+    },
+    {
+      "key": "workflow/ready",
+      "file": "records/workflow-ready.json.gz",
+      "sha256": "e1d0416def090a474772a8c900e7d6736b529b0adcf1075aaf44044a68430b2d",
+      "original_sha256": "a36e4eab10fecff01b49c011d042a0f501925d31ad69b256692b0ce0a4cdaa22"
+    },
+    {
+      "key": "workflow/complete",
+      "file": "records/workflow-complete.json.gz",
+      "sha256": "cd30343dc516fe97f3cda17238c4cffbe3708314fdcda2ecb7d3886640793e2a",
+      "original_sha256": "41fe3ecf709fb2f3b47318f2da41e978bc267ea4bbb64359960ba5bd888514a1"
+    },
+    {
+      "key": "workflow/restarted",
+      "file": "records/workflow-restarted.json.gz",
+      "sha256": "76c4c5ebf5cafdc00d1f39a8acbafe45a6885182b5fd3703e0d20f1f539ab6f7",
+      "original_sha256": "0a9e4089c9851dc63c8dbec23a490dc349c51e179ce7bd91a44f50fe59bb17e8"
+    },
+    {
+      "key": "workflow/cancelled",
+      "file": "records/workflow-cancelled.json.gz",
+      "sha256": "3a723e0b462279efae1e406d1adf681cf90629d21d81909d2a14d00202c12e09",
+      "original_sha256": "17816ac5053effae8368fdc2c9c74ec6c88c62232352f0fb539a69dae491b0e0"
+    }
+  ],
+  "retrieval": "Existing private evidence attachment named above; exact authenticated retrieval pointer remains in continuation task, not public metadata.",
+  "reproduce": "See archive reproduction text; use original paid comparison attempt4 records, no accepted paid rerun."
+}
