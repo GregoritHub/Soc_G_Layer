@@ -5,6 +5,7 @@ from hle_unified.operation_records import OperationRequest
 from hle_unified.material import attrs
 from hle_unified.operations import address
 from hle_unified.compact import unseal
+from hle_unified.records import Account
 from hle_unified.development_audit import audit as audit_native
 from hle_unified.workflow_selection_audit import extent as previous_extent
 from .owned_proposal_domain_audit import audit_owned_proposal_domain
@@ -73,9 +74,11 @@ def audit_owned_paid_comparison(engine, source_engine, source, binding, domain):
             require(delta==0 and op['finished_tick']==index and op['status'] in ('succeeded','cancelled'),
                 'registered terminal transition')
             event=versions.get(op['result'].identity)
-            require(event is not None and attrs(event)==dict(actor=actor,primitive='bind',context=r['context'],
-                outcome=op['status'],operation=previous.ref,event=event.ref,**{'participant.0':actor}),
-                'exact terminal event')
+            require(event is not None and event.facet(Account).at.tick==index,'native event chronology')
+            expected_event=dict(actor=actor,primitive='bind',context=r['context'],outcome=op['status'],
+                operation=previous.ref,event=event.ref,**{'participant.0':actor})
+            if d['setting']=='workflow':expected_event['workflow_tick']=index
+            require(attrs(event)==expected_event,'exact terminal event')
             allowed.add(event.ref.identity)
             if op['status']=='succeeded':
                 require(pd['status']=='ready' and op['completed']==op['spent']==required,'fully paid settlement')
