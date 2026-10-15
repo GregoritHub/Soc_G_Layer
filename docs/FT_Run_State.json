@@ -6,8 +6,8 @@
   "active_worker": true,
   "lease_expires_at": "2026-10-15T05:04:00Z",
   "expected_head": "8790bbc8b7c849c975e22d95ce25a2a0b81cac5c",
-  "current_batch": "FT7.1b2b3b2b",
-  "next_batch": "Prospectively implement complete current owned candidate domain and autonomous tie-only paid choice, matched feedback-off/history-removal controls and exact integration with accepted paid preparation and live outcome staging; parent FT7 and FT8–FT9 remain pending.",
+  "current_batch": "FT7.1b2b3b2b1",
+  "next_batch": "FT7.1b2b3b2b2: preregister and implement versioned actual paid comparison/choice with complete TD5 admission/domain, fresh paid owned work yielding a genuine tie, matched feedback-off/history-removal controls, actual chosen work/downstream use and exact preparation/live-staging composition/restart; then remaining FT7–FT9.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -52,11 +52,12 @@
     "FT7.1b2b2",
     "FT7.1b2b3a",
     "FT7.1b2b3b1",
-    "FT7.1b2b3b2a"
+    "FT7.1b2b3b2a",
+    "FT7.1b2b3b2b1"
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT7_1b2b3b2a_Record.md",
+  "latest_record": "docs/ft/FT7_1b2b3b2b1_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
@@ -106,7 +107,8 @@
     "FT7.1b2b2b",
     "FT7.1b2b3a",
     "FT7.1b2b3b1",
-    "FT7.1b2b3b2a"
+    "FT7.1b2b3b2a",
+    "FT7.1b2b3b2b1"
   ],
   "publication": {
     "mode": "read-only pinned dependencies plus new development",
@@ -115,79 +117,29 @@
     "standalone_ft9_release": false
   },
   "local_acceptance": {
-    "batch": "FT7.1b2b3b2a",
+    "batch": "FT7.1b2b3b2b1",
     "passed": true,
     "methods": 10,
     "failures": 0,
     "errors": 0,
-    "predecessor_identities": 368,
-    "saved_records": 16,
-    "exact_method_domain": true,
+    "predecessor_identities": 378,
+    "saved_records": 6,
     "typed_roundtrip_exact": true,
     "independent_audits": true,
     "source_unchanged": true,
-    "frozen_identities": 286,
-    "claim": "New paid live suffix outcome staging only; no candidate-domain, tie-only choice or parent acceptance",
-    "protocol_commit": "a061c0a6e7e7d5c4868fc36d553f6683885538e1",
-    "first_frozen_commit": "e37f14cfb96490cd9252e1f02578774fb43a4a1c",
-    "audit_amendment_commit": "68dd0ea4247b6232f1ac8b097c8bbd91bdfd1209",
-    "frozen_commit": "7e8e2b5a56afdc31104c6c058d0382dfed7da6b7",
+    "frozen_identities": 295,
+    "claim": "Complete bounded owned native proposal inventory only; no TD5 admission, paid comparison, history-caused choice or parent acceptance",
+    "exact_method_domain": true,
+    "protocol_commit": "069a3cbafc930d0feb62bc42d778e0619d122dcd",
+    "frozen_commit": "739d837a24db1e9e01d22e7e7ecb2bc97cc45bc9",
+    "prior_286_identities_unchanged": true,
+    "new_failed_attempts": 0,
     "archive": {
-      "filename": "FT7_1b2b3b2a_Live_Outcome_Staging_Evidence_20261015.zip",
-      "bytes": 62822750,
-      "sha256": "5676a0df8aace98f1eab8ed4ace91e0560ade29d9c2b07f484d0b9534f1e37bc",
-      "manifest_members": 39,
-      "all_members_verified": true,
-      "nested_failed_source_members": 7,
-      "nested_failed_source_verified": true
-    },
-    "clean_preparation": {
-      "passed": true,
-      "frozen_commit": "7e8e2b5a56afdc31104c6c058d0382dfed7da6b7",
-      "frozen_identities": 286,
-      "all_exact": true,
-      "prior_277_exact": true,
-      "manual_overlay": false,
-      "engine_gate_rerun": false,
-      "layer_files": 281,
-      "sealed_baseline_files": 1093,
-      "historical_files": 210,
-      "repair_freeze_files": 20,
-      "verified_recovery_archive_members": 209
-    },
-    "input_hashes": {
-      "native/canonical/harder": {
-        "file": "records/01.json.gz",
-        "sha256": "ec17ea4529d340c1d1b4cc7418e5d4fa24933a8e2b437972a3214fadfc5bb9a3"
-      },
-      "native/canonical/partial-movement": {
-        "file": "records/06.json.gz",
-        "sha256": "2a76c1ef515634c9a7ca403b1d5afb02e987567095b5f5abda47620ff123bb32"
-      },
-      "native/workflow/harder": {
-        "file": "records/09.json.gz",
-        "sha256": "a7a8172af9d8eb76180249330729fc5e1650e04ba227890fba57979b0578decc"
-      },
-      "native/workflow/partial-movement": {
-        "file": "records/14.json.gz",
-        "sha256": "e6e74d1bcff4deee52e25f9eae2cce35740c2dfa97f2c5508f3112abc1ddbbb1"
-      },
-      "binding/canonical/harder": {
-        "file": "units/01/record.json.gz",
-        "sha256": "4903bc79a0768bd48eecc8b1ba9b2c0fa992348921521b4ecf2f1be7c4c33d53"
-      },
-      "binding/canonical/partial-movement": {
-        "file": "units/06/record.json.gz",
-        "sha256": "425a8156c75138734e31503754b0340c2c83d486ccb51e3affcd790e7359f1e1"
-      },
-      "binding/workflow/harder": {
-        "file": "units/09/record.json.gz",
-        "sha256": "ab7c723ce6171a588eea6e519457dd3e6e74104e611f878f6e3a0d9158e5006e"
-      },
-      "binding/workflow/partial-movement": {
-        "file": "units/14/record.json.gz",
-        "sha256": "4222c3b0948cc8e91865926830a39e638353d0308a2ac63684ebc0e09dccb9c4"
-      }
+      "filename": "FT7_1b2b3b2b1_Owned_Proposal_Domain_Evidence_20261015.zip",
+      "bytes": 17396180,
+      "sha256": "3973f24b472e90ff047f5d61c16e3b987860c2d5478a62234dde213fc3212945",
+      "manifest_members": 20,
+      "all_members_verified": true
     }
   },
   "conditioning_release": {
@@ -318,13 +270,13 @@
     "source_publication": "verified",
     "prior_failed_attempts": 6
   },
-  "latest_acceptance_record": "docs/ft/FT7_1b2b3b2a_Record.md",
-  "latest_acceptance_commit": "5d513e0abc87d0c5d7da08df5d384953f816b61f",
+  "latest_acceptance_record": "docs/ft/FT7_1b2b3b2b1_Record.md",
+  "latest_acceptance_commit": null,
   "engineering_continuation": {
     "batch": "FT7.1b2b3b",
     "accepted": false,
-    "required_next": "Preregister and implement actual paid reserve preparation plus autonomous tie-only later owned choices, complete owned candidate domain, feedback controls, matched main costs and integrated exact restart; then remaining FT7–FT9",
-    "scope": "FT7.1b2b3a is an accounting observer only. Actual choice causality and live reserve/history staging remain mandatory.",
+    "required_next": "FT7.1b2b3b2b2: preregister and implement versioned actual paid comparison/choice with complete TD5 admission/domain, fresh paid owned work yielding a genuine tie, matched feedback-off/history-removal controls, actual chosen work/downstream use and exact preparation/live-staging composition/restart; then remaining FT7–FT9.",
+    "scope": "Bounded owned native proposal inventory, paid preparation and live outcome staging accepted separately. Complete TD5 domain and actual autonomous history-caused choice remain mandatory.",
     "permission": "Technical coding, testing, diagnosis, lawful repairs and retries through FT9 belong to the agent without renewed user approval. Preserve criteria except the explicitly approved comparison amendment; FT8 unchanged."
   },
   "prior_comparison_hold": {
@@ -346,7 +298,8 @@
   "planned_subbatches": [
     "FT7.1b2b3b",
     "FT7.1b2b3b2",
-    "FT7.1b2b3b2b"
+    "FT7.1b2b3b2b",
+    "FT7.1b2b3b2b2"
   ],
   "prior_ft7_1b2b2b_acceptance": {
     "passed": true,
@@ -1092,6 +1045,111 @@
         "claim": "Exact prepared inputs; execute the declared tests separately."
       },
       "engine_gate_rerun": false
+    }
+  },
+  "prior_ft7_1b2b3b2a_acceptance": {
+    "batch": "FT7.1b2b3b2a",
+    "passed": true,
+    "methods": 10,
+    "failures": 0,
+    "errors": 0,
+    "predecessor_identities": 368,
+    "saved_records": 16,
+    "exact_method_domain": true,
+    "typed_roundtrip_exact": true,
+    "independent_audits": true,
+    "source_unchanged": true,
+    "frozen_identities": 286,
+    "claim": "New paid live suffix outcome staging only; no candidate-domain, tie-only choice or parent acceptance",
+    "protocol_commit": "a061c0a6e7e7d5c4868fc36d553f6683885538e1",
+    "first_frozen_commit": "e37f14cfb96490cd9252e1f02578774fb43a4a1c",
+    "audit_amendment_commit": "68dd0ea4247b6232f1ac8b097c8bbd91bdfd1209",
+    "frozen_commit": "7e8e2b5a56afdc31104c6c058d0382dfed7da6b7",
+    "archive": {
+      "filename": "FT7_1b2b3b2a_Live_Outcome_Staging_Evidence_20261015.zip",
+      "bytes": 62822750,
+      "sha256": "5676a0df8aace98f1eab8ed4ace91e0560ade29d9c2b07f484d0b9534f1e37bc",
+      "manifest_members": 39,
+      "all_members_verified": true,
+      "nested_failed_source_members": 7,
+      "nested_failed_source_verified": true
+    },
+    "clean_preparation": {
+      "passed": true,
+      "frozen_commit": "7e8e2b5a56afdc31104c6c058d0382dfed7da6b7",
+      "frozen_identities": 286,
+      "all_exact": true,
+      "prior_277_exact": true,
+      "manual_overlay": false,
+      "engine_gate_rerun": false,
+      "layer_files": 281,
+      "sealed_baseline_files": 1093,
+      "historical_files": 210,
+      "repair_freeze_files": 20,
+      "verified_recovery_archive_members": 209
+    },
+    "input_hashes": {
+      "native/canonical/harder": {
+        "file": "records/01.json.gz",
+        "sha256": "ec17ea4529d340c1d1b4cc7418e5d4fa24933a8e2b437972a3214fadfc5bb9a3"
+      },
+      "native/canonical/partial-movement": {
+        "file": "records/06.json.gz",
+        "sha256": "2a76c1ef515634c9a7ca403b1d5afb02e987567095b5f5abda47620ff123bb32"
+      },
+      "native/workflow/harder": {
+        "file": "records/09.json.gz",
+        "sha256": "a7a8172af9d8eb76180249330729fc5e1650e04ba227890fba57979b0578decc"
+      },
+      "native/workflow/partial-movement": {
+        "file": "records/14.json.gz",
+        "sha256": "e6e74d1bcff4deee52e25f9eae2cce35740c2dfa97f2c5508f3112abc1ddbbb1"
+      },
+      "binding/canonical/harder": {
+        "file": "units/01/record.json.gz",
+        "sha256": "4903bc79a0768bd48eecc8b1ba9b2c0fa992348921521b4ecf2f1be7c4c33d53"
+      },
+      "binding/canonical/partial-movement": {
+        "file": "units/06/record.json.gz",
+        "sha256": "425a8156c75138734e31503754b0340c2c83d486ccb51e3affcd790e7359f1e1"
+      },
+      "binding/workflow/harder": {
+        "file": "units/09/record.json.gz",
+        "sha256": "ab7c723ce6171a588eea6e519457dd3e6e74104e611f878f6e3a0d9158e5006e"
+      },
+      "binding/workflow/partial-movement": {
+        "file": "units/14/record.json.gz",
+        "sha256": "4222c3b0948cc8e91865926830a39e638353d0308a2ac63684ebc0e09dccb9c4"
+      }
+    }
+  },
+  "owned_proposal_progress": {
+    "batch": "FT7.1b2b3b2b1",
+    "accepted": true,
+    "scope": "Complete bounded owned native proposal inventory only; no TD5 admission, paid comparison, history-caused choice or parent acceptance",
+    "protocol_commit": "069a3cbafc930d0feb62bc42d778e0619d122dcd",
+    "frozen_commit": "739d837a24db1e9e01d22e7e7ecb2bc97cc45bc9",
+    "actual_methods": 10,
+    "actual_saved_records": 6,
+    "predecessor_identities": 378,
+    "frozen_identities": 295,
+    "paid_comparison": false,
+    "execution_authority": false,
+    "old_native_primary_ties_observed": false,
+    "source_verification": {
+      "batch": "FT7.1b2b3b2b1",
+      "frozen_evaluator": "739d837a24db1e9e01d22e7e7ecb2bc97cc45bc9",
+      "fresh_reproduction_identities": 295,
+      "previous_unchanged_identities": 286,
+      "manual_overlay_required": false,
+      "sealed_baseline": 1093,
+      "historical_references": 210,
+      "repair_freeze": 20,
+      "prepared_archive_members": 209,
+      "native_input_archive_members_verified": 141,
+      "binding_input_archive_members_verified": 648,
+      "verification_diagnostic": "Initial optional previous-freeze lookup used nonexistent v2 filename after all 295 current identities passed; corrected to actual v1 path and verified all 286 prior identities. No evaluator or source mutation or rerun.",
+      "passed": true
     }
   }
 }

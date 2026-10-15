@@ -1,0 +1,67 @@
+{
+  "batch": "FT7.1b2b3b2b1",
+  "archive": {
+    "filename": "FT7_1b2b3b2b1_Owned_Proposal_Domain_Evidence_20261015.zip",
+    "bytes": 17396180,
+    "sha256": "3973f24b472e90ff047f5d61c16e3b987860c2d5478a62234dde213fc3212945",
+    "manifest_members": 20,
+    "all_members_verified": true
+  },
+  "protocol_commit": "069a3cbafc930d0feb62bc42d778e0619d122dcd",
+  "frozen_commit": "739d837a24db1e9e01d22e7e7ecb2bc97cc45bc9",
+  "records": [
+    {
+      "key": "canonical/harder",
+      "file": "records/canonical-harder.json.gz",
+      "sha256": "ca54883f5f7a5bff970d4679e24dae2bd5dd9b6dd1381eab14b0922b59c98326"
+    },
+    {
+      "key": "canonical/partial-movement",
+      "file": "records/canonical-partial-movement.json.gz",
+      "sha256": "7d1a2eeb26d3a229ebe5613b188cac046c6e67e79898d288bde4b533a576c54f"
+    },
+    {
+      "key": "canonical/live",
+      "file": "records/canonical-live.json.gz",
+      "sha256": "6dc303498df3927a883a626169f630f5e9486f4193899ad3d2b419d731dd79ed"
+    },
+    {
+      "key": "workflow/harder",
+      "file": "records/workflow-harder.json.gz",
+      "sha256": "0f6448028d97f709b00dd1cff01f5e7367b2130eb4b78abe481b6dbfa2ecc109"
+    },
+    {
+      "key": "workflow/partial-movement",
+      "file": "records/workflow-partial-movement.json.gz",
+      "sha256": "639b0419cdca082ccacbe16084e2fc1e104b4c41d4611ae19f0aeebec549d572"
+    },
+    {
+      "key": "workflow/live",
+      "file": "records/workflow-live.json.gz",
+      "sha256": "554d5ca0efa7d532161a023743cfc234dd826fc6f46b73f7b1b6e286842e18e1"
+    }
+  ],
+  "source_verification": {
+    "batch": "FT7.1b2b3b2b1",
+    "frozen_evaluator": "739d837a24db1e9e01d22e7e7ecb2bc97cc45bc9",
+    "fresh_reproduction_identities": 295,
+    "previous_unchanged_identities": 286,
+    "manual_overlay_required": false,
+    "sealed_baseline": 1093,
+    "historical_references": 210,
+    "repair_freeze": 20,
+    "prepared_archive_members": 209,
+    "native_input_archive_members_verified": 141,
+    "binding_input_archive_members_verified": 648,
+    "verification_diagnostic": "Initial optional previous-freeze lookup used nonexistent v2 filename after all 295 current identities passed; corrected to actual v1 path and verified all 286 prior identities. No evaluator or source mutation or rerun.",
+    "passed": true
+  },
+  "new_failed_attempts": 0,
+  "all_historical_failures_preserved": true,
+  "private_retrieval": "Exact filename and SHA256; authorized continuation context contains the private retrieval pointer.",
+  "reproduction": "See ft71b2b3b2b1-reproduction.txt inside archive. Do not rerun accepted gate merely for continuation.",
+  "inputs": {
+    "native_archive_sha256": "3114e31cab6490dbb7a87a7fb10e592d570e4b9e6f2b95a51cb6b2b1fc060616",
+    "binding_archive_sha256": "0e97d520c21a4e595239b573a85851948d950c70a0870f59d10fff822ce6732e"
+  }
+}
