@@ -61,7 +61,7 @@ class FreshTaskIntake:
         self.source_native_sha256 = digest(native); self.expected_native_sha256 = digest(native)
         self.start_count = len(engine.world.journal()); self.context = old.context
         self.task = task; self.draft = codec.dumps(fresh); self.payload = proposition.object
-        self.original_particulars = old.particulars
+        self.original_particulars = tuple((a.delivery,a.key) for a in old.particulars)
         self.jobs = ('ft-fresh-read:' + key, 'ft-fresh-bind:' + key)
         if any((actor, k) in engine._jobs for k in self.jobs):
             raise ValueError('cannot adopt existing task work')
@@ -92,7 +92,7 @@ class FreshTaskIntake:
                 request = OperationRequest(key, actor, 'read', self.context, delivery=delivery)
             else:
                 request = OperationRequest(key, actor, 'bind', self.context, binding=self.task,
-                    evidence=self.original_particulars + (DetailAddress(delivery, 'ft.fresh.payload'),))
+                    evidence=tuple(DetailAddress(*a) for a in self.original_particulars) + (DetailAddress(delivery, 'ft.fresh.payload'),))
             engine.start(cid + ':start', request)
         status = engine.job_status(actor, key)
         if status['status'] not in ('succeeded','failed','cancelled'):

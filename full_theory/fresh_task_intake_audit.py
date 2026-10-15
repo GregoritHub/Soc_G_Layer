@@ -67,7 +67,7 @@ def audit_fresh_task_intake(engine, original, source, binding, text):
     read = 'ft-fresh-read:' + key; bind = 'ft-fresh-bind:' + key; delivery = read + ':delivery'
     require(d['draft'] == codec.dumps(expected) and d['payload'] == encode(payload)
         and d['context'] == old.context and d['task'] == task and d['jobs'] == (read,bind)
-        and d['original_particulars'] == old.particulars, 'independent route-free draft reconstruction')
+        and d['original_particulars'] == tuple((a.delivery,a.key) for a in old.particulars), 'independent route-free draft reconstruction')
     require(task.identity not in original.world._heads and not any((actor,k) in original._jobs for k in (read,bind)),
         'genuinely fresh task and work')
     prior = tuple(original.world.journal()); txs = tuple(engine.world.journal())

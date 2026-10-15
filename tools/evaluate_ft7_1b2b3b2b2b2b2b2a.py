@@ -13,6 +13,8 @@ def freeze():
     prior=ROOT/'contracts/ft'/PRIOR
     names=set(json.loads(prior.read_text()))|{str(prior.relative_to(ROOT))}
     names.update(('contracts/ft/'+PREFIX+'_Protocol_v1.json','contracts/ft/'+PREFIX+'_Protocol_v1.sha256',
+        'contracts/ft/'+PREFIX+'_Source_Freeze_v1.json',
+        'contracts/ft/'+PREFIX+'_Encoding_Amendment_v2.json','contracts/ft/'+PREFIX+'_Encoding_Amendment_v2.sha256',
         'full_theory/fresh_task_intake.py','full_theory/fresh_task_intake_audit.py',
         'tests_ft7/test_fresh_task_intake.py','tools/evaluate_ft7_1b2b3b2b2b2b2b2a.py'))
     return {n:digest(ROOT/n) for n in sorted(names)}
@@ -47,12 +49,14 @@ def main(archive,out):
     from tests_ft7.test_social_live_outcome import engine_type
     from tools.evaluate_ft6_3b import ids
     out.mkdir(parents=True,exist_ok=False);(out/'records').mkdir()
-    before=freeze();registered=json.loads((ROOT/('contracts/ft/'+PREFIX+'_Source_Freeze_v1.json')).read_text())
+    before=freeze();registered=json.loads((ROOT/('contracts/ft/'+PREFIX+'_Source_Freeze_v2.json')).read_text())
     if before!=registered:raise ValueError('registered source freeze differs')
     prior=json.loads((ROOT/'contracts/ft'/PRIOR).read_text())
     if any(before[n]!=h for n,h in prior.items()):raise ValueError('accepted source changed')
     pp=ROOT/('contracts/ft/'+PREFIX+'_Protocol_v1.json');p=json.loads(pp.read_text())
     if digest(pp)!=pp.with_suffix('.sha256').read_text().split()[0]:raise ValueError('protocol hash')
+    amendment=ROOT/('contracts/ft/'+PREFIX+'_Encoding_Amendment_v2.json')
+    if digest(amendment)!=amendment.with_suffix('.sha256').read_text().split()[0]:raise ValueError('amendment hash')
     if digest(archive)!=p['input']['sha256']:raise ValueError('exact input archive required')
     with ZipFile(archive) as z:
         manifest=json.loads(z.read('SHA256.json'))
