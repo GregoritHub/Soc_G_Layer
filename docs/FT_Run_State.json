@@ -1754,7 +1754,17 @@
     "original_388_exact": true,
     "isolated_method_protocol_commit": "7aeef6b5498d870218112d09862f8b9e69d69600",
     "isolated_method_protocol_sha256": "a2bc3b282cfec72eec331d325774169da51121b38ce969bf639c903cf3c4d240",
-    "isolated_methods_running": [],
+    "isolated_methods_running": ["test_full_native_payment", "test_no_admission_or_history_authority"],
+    "isolated_method_current_attempt": 2,
+    "isolated_method_attempt2_started_at": "2026-10-15T19:30:03Z",
+    "method_recovery_evidence": {
+      "file": "FT7_1b2b3b2b2b2b2b2b1b_Method_Recovery_Evidence_20261015.zip",
+      "sha256": "758b6ca276c524a7552ab0052727271d20b5c7c92ae53203196c865f9cbee8d2",
+      "manifest_members": 28,
+      "actual_methods_passed": 6,
+      "preserved_interrupted_attempts": 2,
+      "includes_running_attempt2_logs": false
+    },
     "isolated_method_next_attempt": 2,
     "isolated_attempt1_interruption": "At approximately 19:26 UTC a tool call reported aborted by user during a context/runtime reset. At 19:27:04 both Python processes were absent, with method-start logs only and no result or traceback. Exact underlying cause is not established. All 392 source identities, each copy's 52 evidence files and six completed methods reverified exact. Per-method interruption notes bind exact log hashes. Existing prospective continuation protocol permits numbered attempt 2 for these unfinished methods only; no paid branch or passing method repeats.",
     "isolation": "Two fresh output copies, each matching all 52 immutable evidence files. Each runs one unchanged original method through the original frozen continuation tool. The serial queue completed both remaining adversarial controls, bringing the completed total to six. Exact merge and unchanged aggregate gate remain required; no runtime/test edits or new paid branch.",

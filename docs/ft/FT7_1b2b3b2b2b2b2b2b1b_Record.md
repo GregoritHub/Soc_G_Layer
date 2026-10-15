@@ -141,3 +141,14 @@ Only the two unfinished actual methods may use attempt 2, under unchanged
 runtime, auditor, tool, bodies and criteria. The earlier six passes must not
 be repeated. The original isolated-method proof and exact final merge remain
 mandatory; interrupted attempt-1 logs stay separately preserved.
+
+The two numbered attempt-2 methods started at 19:30:03 UTC in their original
+isolated outputs, with all frozen source and gate criteria unchanged. At
+19:35 UTC both processes were active; no completed result is claimed yet.
+The six exact completed passes and both interrupted attempt-1 logs/notes are
+now privately preserved in the separate 28-member
+FT7_1b2b3b2b2b2b2b2b1b_Method_Recovery_Evidence_20261015.zip,
+SHA256 758b6ca276c524a7552ab0052727271d20b5c7c92ae53203196c865f9cbee8d2.
+Every member was verified. This archive binds the exact earlier all-record
+companion and excludes the running attempt-2 logs; it does not replace any
+prior archive or establish acceptance.
