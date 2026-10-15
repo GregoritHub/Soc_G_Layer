@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft-role-domain-20261015T0936-7c12",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-15T10:23:00Z",
-  "expected_head": "cec9525ce6620db84ab862eb833269cb15bfcd25",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "c41545528ecb3b7c788737e804e08d3390f538b8",
   "current_batch": "FT7.1b2b3b2b2b2b2a",
   "next_batch": "FT7.1b2b3b2b2b2b2b: prospectively fixed route-free fresh task/skill work, newly paid role-dependent comparison, genuine same-priority/native-cost distinct-element ties, separately versioned live history-only choice, actual chosen movement/downstream use, matched feedback-off/history-removal and full staging composition/restart. Preserve older unresolved demand, TD5 and all FT8 denominators.",
   "completed_batches": [
@@ -295,7 +295,7 @@
     "prior_failed_attempts": 6
   },
   "latest_acceptance_record": "docs/ft/FT7_1b2b3b2b2b2b2a_Record.md",
-  "latest_acceptance_commit": null,
+  "latest_acceptance_commit": "c41545528ecb3b7c788737e804e08d3390f538b8",
   "engineering_continuation": {
     "batch": "FT7.1b2b3b",
     "accepted": false,
@@ -1419,7 +1419,15 @@
     "comparison_paid": false,
     "execution_authorized": false,
     "history_choice": false,
-    "scope": "Declared explicit-paid-observation role grammar only; no live choice or parent acceptance"
+    "scope": "Declared explicit-paid-observation role grammar only; no live choice or parent acceptance",
+    "acceptance_commit": "c41545528ecb3b7c788737e804e08d3390f538b8",
+    "public_tree_verification": {
+      "commit": "c41545528ecb3b7c788737e804e08d3390f538b8",
+      "blobs": 434,
+      "all_local_git_blob_identities_exact": true,
+      "no_paths_removed": true
+    },
+    "post_save_verification_note": "Auxiliary freeze check initially used partial publication root and hit missing dependency-backed path; corrected full-runtime checks pass. Source/gate unchanged; see record."
   },
   "prior_ft7_1b2b3b2b2b2b1_acceptance": {
     "batch": "FT7.1b2b3b2b2b2b1",
