@@ -109,7 +109,7 @@ class SocialReuseController(AutonomousReuseController):
         if self.organization is None:
             view = engine.participant_view(self.actor)
             refs = tuple(sorted((b.ref for b in view._heads.values()
-                if (b.cue,b.context)==(dem.cue,dem.context)
+                if (b.cue,b.context)==(dem.cue,dem.context) and b.ref.identity.namespace=='workshop'
                 and not any(p.relation=='u8.reorganize' and type(p.object) is int and p.object>0
                             for p in b.content)),key=dumps))
             self.organization = dict(cue=archive,view=view.bytes(),refs=refs,index=0,events=[],complete=False)

@@ -124,7 +124,7 @@ def audit_social_reuse(engine,checkpoint):
             if b.ref.identity not in heads or b.ref.revision>heads[b.ref.identity].ref.revision:
                 heads[b.ref.identity]=b
         required_refs=tuple(sorted((b.ref for b in heads.values()
-            if (b.cue,b.context)==(dem['cue'],dem['context'])
+            if (b.cue,b.context)==(dem['cue'],dem['context']) and b.ref.identity.namespace=='workshop'
             and not any(p.relation=='u8.reorganize' and type(p.object) is int and p.object>0 for p in b.content)),key=dumps))
         require(organization['refs']==required_refs and organization['cue']==reference('suit:Wand'),'exact organization domain')
         qualified_versions={v.ref:v for tx in txs[:ready] for v in tx.versions}
