@@ -1,13 +1,13 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft71-approved-comparison-20261015",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-15T00:53:35.070Z",
-  "expected_head": "0d56002ad84a810b11fb68685f44a366ea0d330b",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "44f35cc0fbc251e024843398a71fb1344a214fdf",
   "current_batch": "FT7.1b2b2b",
-  "next_batch": "Await explicit FT7.1b2b2b registered-comparison ruling; do not repeat the incompatible gate",
+  "next_batch": "FT7.1b2b2b approved split comparison implementation and recall repair; freeze and full gate; then FT7.1b2b3",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -51,21 +51,12 @@
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT7_1b2b2b_Protocol_Conflict_Record.md",
+  "latest_record": "docs/ft/FT7_1b2b2b_Reopening_Record.md",
   "automation": {
     "enabled": false,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
   },
-  "blocker": {
-    "kind": "registered_comparison_conflicts_with_unchanged_route_contract",
-    "batch": "FT7.1b2b2b",
-    "record": "docs/ft/FT7_1b2b2b_Protocol_Conflict_Record.md",
-    "proof": "All eight origins enumerated. Only seats 1 and 8 admit four-facet retained reuse; neither has an ordinary/n/cp alternative covering four facets. With support forbidden and certificate revoked, deferral is compulsory, contradicting completed equal-main-cost control.",
-    "required_ruling": "May the comparison be split: retain the strict four-facet/no-support case as success versus honest deferral, and test matched-cost retained priority on a separately registered lower-facet demand, explicitly accounting for FT8 matched-cost obligations?",
-    "not_a_two_failure_stop": true,
-    "third_attempt_run": false,
-    "frozen_files_verified": 242
-  },
+  "blocker": null,
   "recovery": {
     "status": "passed",
     "inherited_methods": 751,
@@ -291,7 +282,23 @@
       "claim": "unsupported requalification and scoped later retained reuse; integrated reserve/history feedback remains pending"
     },
     "diagnostic": "docs/ft/FT7_1b2b2b_Boundary_Diagnostic.json",
-    "required_next": "Resolve the recorded comparison criterion conflict before another gate. Recall truncation remains a separate unresolved engineering issue.",
-    "permission": "Routine repairs remain authorized; no silent criterion weakening or inherited route-contract change is authorized."
+    "required_next": "FT7.1b2b2b approved split comparison implementation and recall repair; freeze and full gate; then FT7.1b2b3",
+    "permission": "Technical coding/testing repairs and retries are the agent's responsibility under standing authorization; no renewed user opinion needed."
+  },
+  "prior_comparison_hold": {
+    "kind": "registered_comparison_conflicts_with_unchanged_route_contract",
+    "batch": "FT7.1b2b2b",
+    "record": "docs/ft/FT7_1b2b2b_Protocol_Conflict_Record.md",
+    "proof": "All eight origins enumerated. Only seats 1 and 8 admit four-facet retained reuse; neither has an ordinary/n/cp alternative covering four facets. With support forbidden and certificate revoked, deferral is compulsory, contradicting completed equal-main-cost control.",
+    "required_ruling": "May the comparison be split: retain the strict four-facet/no-support case as success versus honest deferral, and test matched-cost retained priority on a separately registered lower-facet demand, explicitly accounting for FT8 matched-cost obligations?",
+    "not_a_two_failure_stop": true,
+    "third_attempt_run": false,
+    "frozen_files_verified": 242
+  },
+  "comparison_ruling": {
+    "approved": true,
+    "date": "2026-10-14 America/New_York",
+    "amendment": "contracts/ft/FT7_1b2b2b_Split_Comparison_Amendment_v1.json",
+    "FT8_unchanged": true
   }
 }
