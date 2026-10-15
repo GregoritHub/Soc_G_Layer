@@ -5,7 +5,7 @@
   "run_id": null,
   "active_worker": false,
   "lease_expires_at": null,
-  "expected_head": "44f35cc0fbc251e024843398a71fb1344a214fdf",
+  "expected_head": "ab86087436ef1d571a51d1eb6dad6cf6216b6f04",
   "current_batch": "FT7.1b2b2b",
   "next_batch": "FT7.1b2b2b approved split comparison implementation and recall repair; freeze and full gate; then FT7.1b2b3",
   "completed_batches": [
@@ -53,7 +53,7 @@
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
   "latest_record": "docs/ft/FT7_1b2b2b_Reopening_Record.md",
   "automation": {
-    "enabled": false,
+    "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
   },
   "blocker": null,
@@ -169,7 +169,7 @@
   },
   "standing_repair_authorization": {
     "date": "2026-10-14",
-    "scope": "Routine repairs and retries through FT9 without renewed approval; acceptance criteria remain intact; FT7.1b2a reopened."
+    "scope": "Technical coding, testing, diagnosis, lawful repairs and retries through FT9 belong to the agent without renewed user approval. Preserve criteria except the explicitly approved comparison amendment; FT8 unchanged."
   },
   "prior_ft7_1b2a_attempt": {
     "passed": false,
