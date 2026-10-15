@@ -1,0 +1,8 @@
+{
+  "batch": "FT7.1b2b3b2b2b2b2b2a",
+  "version": 2,
+  "failed_freeze": "f38043a3f67a03fbba8f645a571f632d493b89b2",
+  "failure": "Attempt1 stopped while serializing before record: selection_records.dumps cannot encode DetailAddress in original_particulars. Zero saved records/methods/new paid work.",
+  "correction": "Keep exact original DetailAddress values in native bind requests, but store their primitive (delivery,key) pairs in new adapter checkpoint; reconstruct DetailAddress at bind. Independent auditor reconstructs and verifies those pairs separately. No changes to task panel, operation/evidence semantics, costs, controls or acceptance domain.",
+  "preservation": "Exact v1 source capsule and attempt1 files/log retained. New v2 freeze includes prior v1 freeze and this amendment/hash; predecessor357identities immutable."
+}
