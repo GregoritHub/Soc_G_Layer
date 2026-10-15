@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft7-current-admission-20261015T0740Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-15T08:10:00Z",
-  "expected_head": "6189046ddaa5f8055b49c15542f31203f3c4f96b",
+  "lease_expires_at": "2026-10-15T08:07:00Z",
+  "expected_head": "0fca7c352b2695ffbc7f7a9694ca828e31e1e10c",
   "current_batch": "FT7.1b2b3b2b2b2a",
   "next_batch": "FT7.1b2b3b2b2b2: preregister complete current TD5 route/admission domain, genuine fresh paid priority/native-cost tie, new live history-caused tie-only policy, actual chosen paid movement/downstream use, matched feedback-off/history-removal controls and exact preparation/live-staging composition; then remaining FT7–FT9.",
   "completed_batches": [
@@ -1278,5 +1278,10 @@
       "repair_freeze": 20,
       "recovery_members": 209
     }
+  },
+  "current_admission_progress": {
+    "batch": "FT7.1b2b3b2b2b2a",
+    "status": "preregistered",
+    "accepted": false
   }
 }
