@@ -2,12 +2,29 @@
 from copy import deepcopy
 from hashlib import sha256
 from hle_unified.selection_records import dumps, loads
+from hle_unified.conditioning_audit import completed_use
 from .reserve import ReserveLedger
 from .use_history import UseHistoryLedger, classifications_for, native_snapshot
 
 
 def _hash(text):
     return sha256(text.encode()).hexdigest()
+
+
+def _segment_ends(transactions, actor, start, end):
+    counts = completed_use(transactions[:start])[1][actor]
+    ends = []; current = start
+    for boundary in range(start + 1, end + 1):
+        observed = completed_use(transactions[:boundary])[1][actor]
+        if any(observed[e] - counts[e] > 9 for e in counts):
+            if boundary - 1 == current:
+                raise ValueError('one transaction exceeds registered observer delta bound')
+            ends.append(boundary - 1); current = boundary - 1
+            counts = completed_use(transactions[:current])[1][actor]
+            if any(observed[e] - counts[e] > 9 for e in counts):
+                raise ValueError('one transaction exceeds registered observer delta bound')
+    if current < end:ends.append(end)
+    return ends
 
 
 def _prefixes(source):
@@ -57,7 +74,7 @@ class SocialPostUseBinding:
         admission = attempts[0]['inventory']['at_tick']
         identity = 'ft-post-social:' + self.reuse_sha256[:20]
 
-        def observe(end, kind, tag, demand_id):
+        def observe_one(end, kind, tag, demand_id):
             nonlocal start
             if not start <= end <= len(txs):
                 raise ValueError('accounting windows overlap or escape native journal')
@@ -73,6 +90,14 @@ class SocialPostUseBinding:
             self.windows.append(dict(kind=kind, start=start, end=end, tag=tag,
                 demand_id=demand_id, event=event))
             start = end
+
+        def observe(end, kind, tag, demand_id):
+            if not start <= end <= len(txs):
+                raise ValueError('accounting interval escapes native journal')
+            for boundary in _segment_ends(txs, self.actor, start, end):
+                observe_one(boundary, kind, tag, demand_id)
+            if len(history.events) != history.event_count:
+                raise ValueError('observer cannot evict immutable original history events')
 
         observe(episodes[0][0], 'preparation', 'rehearsal', identity + ':preparation')
         for index, (begin, end, operation) in enumerate(episodes):

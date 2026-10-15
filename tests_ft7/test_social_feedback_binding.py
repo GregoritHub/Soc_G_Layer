@@ -29,7 +29,8 @@ class SocialFeedbackBindingTests(unittest.TestCase):
         e,s=saved('canonical/live');b=SocialPostUseBinding(e,s);r=loads(b.checkpoint())
         self.assertEqual(loads(r['reserve_prefix'])['balance'],3)
         self.assertEqual([x['completion']['balance_after'] for x in r['reserve_bindings']], [2,1,0])
-        self.assertEqual([x['tag'] for x in r['windows']],['rehearsal','independent','independent','rehearsal','independent'])
+        self.assertEqual(len([x for x in r['windows'] if x['kind']=='independent-practice']),2)
+        self.assertTrue(all(x['tag']==('independent' if x['kind'] in ('independent-practice','later-use') else 'rehearsal') for x in r['windows']))
         self.assertTrue(any(loads(r['history'])['scores'].values()))
 
     def test_strict_deferral_grants_no_later_credit(self):

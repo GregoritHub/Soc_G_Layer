@@ -56,7 +56,19 @@ def audit_social_feedback_binding(engine, source, checkpoint):
     expected += [(a,b,'independent-practice','independent',identity+':practice:'+str(i)) for i,(a,b,op) in enumerate(episodes)]
     expected += [(episodes[-1][1],admission,'preparation','rehearsal',identity+':later-preparation'),
         (admission,len(txs),'later-use','independent' if r['phase']=='complete' else 'failed' if r['phase'] in ('deferred','failed','cancelled') else 'rehearsal',later_id)]
-    expected = [x for x in expected if x[0]!=x[1]]
+    semantic = expected; expected = []
+    for begin,end,kind,tag,demand_id in semantic:
+        if not 0 <= begin <= end <= len(txs):raise ValueError('semantic interval escapes journal')
+        left = begin; baseline = completed_use(txs[:left])[1][d['actor']]
+        for at in range(begin+1,end+1):
+            counts = completed_use(txs[:at])[1][d['actor']]
+            if max(counts[e]-baseline[e] for e in ELEMENTS) > 9:
+                if at-1 <= left:raise ValueError('atomic native transaction exceeds observer bound')
+                expected.append((left,at-1,kind,tag,demand_id));left=at-1
+                baseline=completed_use(txs[:left])[1][d['actor']]
+                if max(counts[e]-baseline[e] for e in ELEMENTS)>9:raise ValueError('atomic native transaction exceeds observer bound')
+        if left<end:expected.append((left,end,kind,tag,demand_id))
+    if now_h['event_count'] != len(now_h['events']):raise ValueError('immutable history prefix was evicted')
     if len(d['windows']) != len(expected) or now_h['event_count']-prior_h['event_count'] != len(expected):
         raise ValueError('accounting window domain differs')
     new_events = now_h['events'][len(prior_h['events']):]

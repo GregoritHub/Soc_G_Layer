@@ -8,6 +8,7 @@ def digest(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def freeze():
     names=set(json.loads((ROOT/'contracts/ft/FT7_1b2b2b_Saved_Audit_Source_Freeze_v1.json').read_text()))
     names.update(('contracts/ft/FT7_1b2b2b_Saved_Audit_Source_Freeze_v1.json','contracts/ft/FT7_1b2b3a_Protocol_v1.json','contracts/ft/FT7_1b2b3a_Protocol_v1.sha256','full_theory/social_feedback_binding.py','full_theory/social_feedback_binding_audit.py','tests_ft7/test_social_feedback_binding.py','tools/evaluate_ft7_1b2b3a.py','tools/prepare_workspace.py'))
+    names.update(str(p.relative_to(ROOT)) for p in (ROOT/'contracts/ft').glob('FT7_1b2b3a_*Amendment*') if p.is_file())
     return {n:digest(ROOT/n) for n in sorted(names)}
 
 def main(source,out):
