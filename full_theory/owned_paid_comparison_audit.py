@@ -4,6 +4,7 @@ from hle_unified.selection_records import loads, dumps, fields_of
 from hle_unified.operation_records import OperationRequest
 from hle_unified.material import attrs
 from hle_unified.operations import address
+from hle_unified.compact import unseal
 from hle_unified.development_audit import audit as audit_native
 from hle_unified.workflow_selection_audit import extent as previous_extent
 from .owned_proposal_domain_audit import audit_owned_proposal_domain
@@ -18,7 +19,13 @@ def audit_owned_paid_comparison(engine, source_engine, source, binding, domain):
     key='ft-owned-comparison:'+sha256(source.encode()).hexdigest()[:24]
     old=tuple(source_engine.world.journal());txs=tuple(engine.world.journal())
     require(txs[:len(old)]==old,'exact original journal prefix')
-    require(engine.access.checkpoint()==source_engine.access.checkpoint(),'participant access unchanged')
+    access=unseal(engine.access.checkpoint(),engine.access.SCHEMA)
+    source_access=unseal(source_engine.access.checkpoint(),source_engine.access.SCHEMA)
+    require(set(access)==set(source_access)=={'world','nodes','events'} and
+        access['nodes']==source_access['nodes'] and access['events']==source_access['events'],
+        'participant access nodes and events unchanged')
+    require(access['world']==engine.world.checkpoint() and source_access['world']==source_engine.world.checkpoint(),
+        'access paired with exact respective native world')
     def extent(op):
         if not op.get('ftpc'):return previous_extent(op)
         require(op['required']==required and op['route_prepare']==required and

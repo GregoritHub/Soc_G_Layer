@@ -154,6 +154,8 @@
   "contracts/ft/FT7_1b2b3b2b1_Protocol_v1.json": "e2d32f5377623b8ccd9d9ffcc90828b98b68010b83816a54b2859ca37ff10c9e",
   "contracts/ft/FT7_1b2b3b2b1_Protocol_v1.sha256": "77ee8a08a86fd5ec78e2b42d14f1d6fdbb0055b0d8ed8727db6720a97c89b7af",
   "contracts/ft/FT7_1b2b3b2b1_Source_Freeze_v1.json": "6ad9fd973003c4f1696410bd3d2a46a0b470f01d12a0fed8ba4f17831f893398",
+  "contracts/ft/FT7_1b2b3b2b2a_Access_Audit_Amendment_v1.json": "f28baade2cc15125e110c6ad3837a4e55115db6419c7bbbced1853087729b2a8",
+  "contracts/ft/FT7_1b2b3b2b2a_Access_Audit_Amendment_v1.sha256": "24a7b4033777ac3b6d7d1ab2219ce033ade44ea419b08ccd60549014871d8e29",
   "contracts/ft/FT7_1b2b3b2b2a_Protocol_v1.json": "05ff23299daedd55bdc1e124b68d9da1268275de0f0b7dd8f9be60e173b312d0",
   "contracts/ft/FT7_1b2b3b2b2a_Protocol_v1.sha256": "bc3f5a61007678d1e6d1e185fadfd45524bfeeeb7dae1e655848808ef23dd044",
   "contracts/ft/FT_Selected_Engineering_Policies_v1.json": "7d236db4b0c6d29c8c423d38a7096e3c7f0f3d1edbdb9a87f21790e33c9b2002",
@@ -188,7 +190,7 @@
   "full_theory/orientation.py": "0e971c6997dde4b92a168d3cca06d0c9db9f701f3f904ae9a3973cb87302b509",
   "full_theory/orientation_audit.py": "da30c69c77c46d4fb587def271697377d6a2467a9b64e8dd82c429457b8e3580",
   "full_theory/owned_paid_comparison.py": "d90014103caf382f39879a091f94c4093b2d5219aac0716d51186bafb4b36570",
-  "full_theory/owned_paid_comparison_audit.py": "8d653893ee45cb0842c7b77662765594a3eb5a10330304991e168b98ca46e275",
+  "full_theory/owned_paid_comparison_audit.py": "7fe28ee1a6bb1591df13c0510d8a9f2a899dd05d6aa4f25533f1de567e584ad4",
   "full_theory/owned_proposal_domain.py": "a7c67723e229a61054949ccccae4bd3e196219ff98e9a86c19742b085b200f92",
   "full_theory/owned_proposal_domain_audit.py": "764be7bc0450fccdff6e30a7e9103c9231f9f898ceadcec3c733c2fe18348122",
   "full_theory/packet_channel.py": "f67ab2a95bb7861c2990cfa9be97191a3de884e533045721addca1490c678c2f",
@@ -303,6 +305,6 @@
   "tools/evaluate_ft7_1b2b3b1.py": "4610e297d1c0d1558a6aae7487e65e0928a6dede69e682f4231c8363247cdf24",
   "tools/evaluate_ft7_1b2b3b2a.py": "f617f4147fc909ef03a957619c87f6e9e621c15213e9c0257ae18414bab5fd86",
   "tools/evaluate_ft7_1b2b3b2b1.py": "4c7f45294b5a8e6964ef048f78a4442be0c5dd65692f8d8a60beb13aa9c3caef",
-  "tools/evaluate_ft7_1b2b3b2b2a.py": "cae2e3372dec6f84b76db12fd510d62b8f6f80fb39af6116d6bd68718ec487c5",
+  "tools/evaluate_ft7_1b2b3b2b2a.py": "67d2b85054e9171c8b48e2b42625036545e60f6a25b8523a3635c89753ee90a5",
   "tools/prepare_workspace.py": "7ad1d1068af68f3fa7b0c38ee32475541da03ddd68fa8e46f696ff3cf04e8d8a"
 }

@@ -10,6 +10,7 @@ def freeze():
     prior=ROOT/'contracts/ft/FT7_1b2b3b2b1_Source_Freeze_v1.json'
     names=set(json.loads(prior.read_text()))|{str(prior.relative_to(ROOT))}
     names.update(('contracts/ft/'+PREFIX+'_Protocol_v1.json','contracts/ft/'+PREFIX+'_Protocol_v1.sha256',
+        'contracts/ft/'+PREFIX+'_Access_Audit_Amendment_v1.json','contracts/ft/'+PREFIX+'_Access_Audit_Amendment_v1.sha256',
         'full_theory/owned_paid_comparison.py','full_theory/owned_paid_comparison_audit.py',
         'tests_ft7/test_owned_paid_comparison.py','tools/evaluate_ft7_1b2b3b2b2a.py',
         'hle_unified/operations.py','hle_unified/operation_audit.py','hle_unified/shell.py','hle_unified/compact.py'))
