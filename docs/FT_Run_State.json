@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft7-window-payment-20261015T163521000Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-15T18:13:17.000Z",
-  "expected_head": "943b2b255e8992f0e518e695c90f9e2297b6cd3f",
+  "lease_expires_at": "2026-10-15T18:31:00.000Z",
+  "expected_head": "f1b07f1e34fc3bb67bce713fdba0838e85479764",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1b",
   "next_batch": "Complete frozen FT7.1b2b3b2b2b2b2b2b1b evaluation and independent saved audits; then separately preregister current TD5/capacity integration and route-free skill work. All FT8 obligations unchanged.",
   "completed_batches": [
@@ -1729,7 +1729,7 @@
   },
   "paid_window_progress": {
     "batch": "FT7.1b2b3b2b2b2b2b2b1b",
-    "status": "evaluation_running",
+    "status": "bounded_continuation_running",
     "accepted": false,
     "protocol_commit": "bf1007571fb4b7120e45668d7a19ecc4640fab36",
     "implementation_commit": "120d80e954e6aabe77dfb0872eee4ef9308ede2b",
@@ -1737,7 +1737,13 @@
     "frozen_identities": 388,
     "predecessor_identities": 468,
     "accepted_paid_work_rerun": false,
-    "audited_records_at_checkpoint": 30,
-    "methods_executed_at_checkpoint": 0
+    "audited_records_at_checkpoint": 32,
+    "methods_executed_at_checkpoint": 0,
+    "original_attempt": "Execution session lost after 32 exact independently audited records; no logged traceback or final gate summary; zero actual test methods. Exact cause not established. All raw/source/log preserved; unsaved mask-8 state unverified.",
+    "continuation_amendment_commit": "3c54668e93b2ec8d5ebfb42bb83d823cf89accc8",
+    "continuation_freeze_commit": "f1b07f1e34fc3bb67bce713fdba0838e85479764",
+    "continuation_frozen_identities": 392,
+    "original_388_exact": true,
+    "remaining_records": "workflow masks 8 through 15 only; reuse all 32 original exact saved records and independent audits, without repeating their paid work"
   }
 }

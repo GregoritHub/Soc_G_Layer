@@ -1,6 +1,6 @@
 # FT7.1b2b3b2b2b2b2b2b1b — paid accessible-window comparison
 
-Status: frozen evaluation in progress; **not accepted**.
+Status: bounded continuation in progress after execution-session loss; **not accepted**.
 
 Protocol: bf1007571fb4b7120e45668d7a19ecc4640fab36.
 Implementation: 120d80e954e6aabe77dfb0872eee4ef9308ede2b.
@@ -37,3 +37,29 @@ fresh skills, distinct-element native-cost ties, live history-only choice,
 chosen movement/downstream use, matched controls and parent FT7–FT9 remain
 unfinished. All FT8 obligations and historical transfer restrictions remain
 unchanged.
+
+## Interrupted attempt and prospective continuation
+
+At 17:53 UTC on 15 October, the existing execution handle became unknown
+and its evaluator process was absent. Its log ends with workflow/mask-7
+independently audited, with no traceback or final summary. The underlying
+cause beyond execution-session loss is not established. All 32 indexed raw
+records and 32 passing independent audits survive exactly; zero actual test
+methods began. Unsaved mask-8 work has no verified state or payment claim.
+
+Prospective continuation amendment 3c54668e93b2ec8d5ebfb42bb83d823cf89accc8
+binds every surviving file and log hash. The bounded reader/tool was frozen
+at f1b07f1e34fc3bb67bce713fdba0838e85479764 with 392 identities, all original
+388 and earlier accepted 381 exact. Runtime, independent auditor, original
+evaluator and all eight registered actual test bodies are unchanged.
+Only missing workflow masks 8–15 may generate new records; existing raw
+records resume readback, never payment. The eight original methods execute
+separately only after all forty records assemble. Passing completed stages
+cannot be rerun. Full acceptance still requires all forty exact records,
+their full independent audits and all eight actual methods.
+
+The interruption also cleared in-memory save metadata. A missing helper
+was detected before any remote mutation; the current remote head and explicit
+base tree were re-read before publishing the amendment. Every save again
+verified the complete public tree with no paths removed. Auxiliary read-only
+process/pending-file probes did not modify source, raw evidence or gate rules.
