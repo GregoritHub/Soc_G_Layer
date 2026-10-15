@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft7-window-payment-20261015T163521000Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-15T17:18:19.000Z",
-  "expected_head": "ea8d9af46134405531a65bafe7ed17df0250ca69",
+  "lease_expires_at": "2026-10-15T17:37:12.000Z",
+  "expected_head": "0e1e4a073c5214f5fd5e8a2a7daed7368f2550b6",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1b",
   "next_batch": "Complete frozen FT7.1b2b3b2b2b2b2b2b1b evaluation and independent saved audits; then separately preregister current TD5/capacity integration and route-free skill work. All FT8 obligations unchanged.",
   "completed_batches": [
@@ -65,7 +65,7 @@
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT7_1b2b3b2b2b2b2b2b1a_Record.md",
+  "latest_record": "docs/ft/FT7_1b2b3b2b2b2b2b2b1b_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
@@ -1736,6 +1736,8 @@
     "frozen_commit": "ea8d9af46134405531a65bafe7ed17df0250ca69",
     "frozen_identities": 388,
     "predecessor_identities": 468,
-    "accepted_paid_work_rerun": false
+    "accepted_paid_work_rerun": false,
+    "audited_records_at_checkpoint": 22,
+    "methods_executed_at_checkpoint": 0
   }
 }
