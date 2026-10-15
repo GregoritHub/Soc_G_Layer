@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "4cae2970894f71100459c4454736d78c591472d5",
+  "status": "running",
+  "run_id": "ft71b2b3b-20261015T0240Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-15T03:10:00Z",
+  "expected_head": "64b692617396bc7c3837af0a933ededdca27a70a",
   "current_batch": "FT7.1b2b3b",
   "next_batch": "Preregister and implement actual paid reserve preparation plus autonomous tie-only later owned choices, complete owned candidate domain, feedback controls, matched main costs and integrated exact restart; then remaining FT7–FT9",
   "completed_batches": [
