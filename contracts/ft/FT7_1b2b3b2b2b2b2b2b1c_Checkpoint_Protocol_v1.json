@@ -1,0 +1,33 @@
+{
+  "schema": "ft-bounded-launcher-checkpoint-v1",
+  "batch": "FT7.1b2b3b2b2b2b2b2b1c",
+  "status": "prospective_operational_checkpoint_only",
+  "frozen_evaluator_commit": "bff1df3180f339cc99dd3dd413e90435648e755a",
+  "frozen_identities": 399,
+  "prior_identities_exact": 392,
+  "reason": "The original serial launcher has no checkpoint sentinel and is in a separate PID namespace. Do not signal, enter, or modify that namespace. Use only the launcher's existing exclusive-log guard at a not-yet-started stage.",
+  "target": "workflow/mask-2",
+  "procedure": [
+    "Read surviving stages and process command lines. Require target record, report and log absent and current child strictly earlier in the registered sequence.",
+    "Create the target launcher log exclusively with an explicit intentional-boundary marker bound to this protocol hash. This is not an evaluation log or result.",
+    "Let every already-started child finish normally. The unchanged launcher must stop at its exclusive log-open guard before starting the target child.",
+    "Preserve exact launcher exception output and marker; classify this as a planned operational stop, not an executed method or engine gate failure.",
+    "Before releasing ownership, require no surviving owned launcher/evaluator process; verify all closed stages, source freeze, accepted inputs and predecessor identities; package immutable private evidence.",
+    "On continuation, never rerun passing stages. Invoke the unchanged frozen evaluator only for missing registered records, with fresh separately named operational logs. Preserve the marker rather than overwrite it.",
+    "After all forty records, execute all eight original actual methods separately and unchanged finish. No acceptance until the entire original gate passes."
+  ],
+  "acceptance_unchanged": {
+    "records": 40,
+    "actual_methods": 8,
+    "predecessor_identities": 476,
+    "full_independent_audits": true
+  },
+  "runtime_changed": false,
+  "auditor_changed": false,
+  "evaluator_changed": false,
+  "test_bodies_changed": false,
+  "new_native_work": false,
+  "passing_stage_rerun": false,
+  "authority_expansion": false,
+  "failure_rule": "An actual child failure is not a clean checkpoint; preserve and diagnose it under the standing prospective-repair rule. Do not label a missing stage as passed."
+}
