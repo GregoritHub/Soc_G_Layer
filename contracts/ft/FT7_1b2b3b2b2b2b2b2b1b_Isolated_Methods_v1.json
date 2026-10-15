@@ -1,0 +1,240 @@
+{
+  "batch": "FT7.1b2b3b2b2b2b2b2b1b",
+  "version": 1,
+  "kind": "prospective isolated saved-method execution only",
+  "original_protocol_commit": "bf1007571fb4b7120e45668d7a19ecc4640fab36",
+  "original_freeze_commit": "ea8d9af46134405531a65bafe7ed17df0250ca69",
+  "continuation_amendment_commit": "3c54668e93b2ec8d5ebfb42bb83d823cf89accc8",
+  "continuation_freeze_commit": "f1b07f1e34fc3bb67bce713fdba0838e85479764",
+  "source": "All 392 frozen continuation identities remain exact, including original 388 and accepted preceding 381. No runtime, auditor, original evaluator, continuation tool or actual test body is changed. This operational protocol and its hash are separately committed before isolated copies or method execution; the existing source freeze remains the exact runtime used by every invocation.",
+  "observed": "All forty registered raw records have exact typed roundtrips and full independent passing audits; the original 32 remain preserved. Four actual methods have completed successfully. The existing serial queue continues only its two remaining forged-source/protected-result methods. No earlier accepted gate or completed method is repeated.",
+  "isolated_methods": [
+    "test_full_native_payment",
+    "test_no_admission_or_history_authority"
+  ],
+  "isolation": "Create two fresh output directories, each with byte-exact copies of the forty immutable raw records, eight continuation stage reports, bridge and assembled aggregate files bound below. No method-result directories are copied. Each isolated directory executes exactly one listed remaining method through the unchanged frozen continuation CLI. No concurrent invocation writes another output directory. At most three method processes may run concurrently, including the existing serial queue.",
+  "execution": "Invoke tools/continue_ft7_1b2b3b2b2b2b2b2b1b.py INPUT ORIGINAL_PRIOR ISOLATED_OUTPUT method REGISTERED_NAME. The original 40-record assembly, original input/log/source checks, full typed roundtrip, 468 predecessor identities, exact actual method body and before/after source/raw checks remain mandatory in each invocation. No record action or new paid branch is allowed.",
+  "merge": "After both isolated invocations terminate, verify each result reports exactly its registered actual method, one method, zero failures/errors, passed=true, source_unchanged=true and exactly the original 392-identity freeze. Reverify every isolated raw record, stage, bridge and assembled aggregate against the committed binding below and the central output. Preserve the exact logs and all unsuccessful/interrupted attempts. Copy only each completed method's exact attempt directory into the previously absent corresponding central method directory, checking byte identities before and after. Record a merge proof with complete input bindings and method/log hashes. No result rewriting, invented success or overwritten earlier evidence is permitted.",
+  "aggregate": "After all eight exact actual methods pass, invoke the unchanged frozen finish action on the central output. Its unchanged 40-record/8-method/468-predecessor/392-source gate remains mandatory. Independent record audits are retained exactly, not substituted by method counts. Any failed method remains an unaccepted gate and requires diagnosis/prospective repair. An interruption preserves partial output and obeys the existing numbered-attempt rule.",
+  "claim_boundary": "This changes only process/output isolation, not the accepted domain or tests. No new admission, skill, live history choice, movement, downstream use, parent FT7-FT9 acceptance, FT8 weakening, native bound change, wallet refill or historical transfer bypass.",
+  "evidence_binding": {
+    "index": [
+      {
+        "key": "canonical/before",
+        "file": "records/canonical-before.json.gz",
+        "sha256": "b9eb910adc06cdbd917f92c35a63a9bc2968da893e60c02661343fa8de06e144"
+      },
+      {
+        "key": "canonical/partial",
+        "file": "records/canonical-partial.json.gz",
+        "sha256": "ebe1e7f50ec0fba29da7239dca35971d406d93f012382c5d35926da840c3f5d4"
+      },
+      {
+        "key": "canonical/ready",
+        "file": "records/canonical-ready.json.gz",
+        "sha256": "683f8ba46677909e1167aa86fe73c88edf23c60c4c71b4e1dbbc80e59aa1e41f"
+      },
+      {
+        "key": "canonical/mask-1",
+        "file": "records/canonical-mask-1.json.gz",
+        "sha256": "4ab8e52e56b99c0d64e802afea616a2ce335ecd1ba23f431c1231b829694cf2d"
+      },
+      {
+        "key": "canonical/restarted",
+        "file": "records/canonical-restarted.json.gz",
+        "sha256": "9fb8df826fbd036958ef4aa76e30f8b1a2df3f83704959832435896cfd20a144"
+      },
+      {
+        "key": "canonical/cancelled",
+        "file": "records/canonical-cancelled.json.gz",
+        "sha256": "c833aa8ce81dbcdfb2a11002d4fff887225bb3c3bb25a630e731ae33d21bbed0"
+      },
+      {
+        "key": "canonical/mask-2",
+        "file": "records/canonical-mask-2.json.gz",
+        "sha256": "76b4fb0aa08e287a0b5163fc204626c277f5ed96bb11437f7ae12744b27c853b"
+      },
+      {
+        "key": "canonical/mask-3",
+        "file": "records/canonical-mask-3.json.gz",
+        "sha256": "d2c1ad25b06e6f74bd4ab57ff0096dd9716b5e489879761966a6e10ecb087ae6"
+      },
+      {
+        "key": "canonical/mask-4",
+        "file": "records/canonical-mask-4.json.gz",
+        "sha256": "df6d082d3bc7294fb5f4b8bc679237138f93c74d93c371f839c52426f0f046cd"
+      },
+      {
+        "key": "canonical/mask-5",
+        "file": "records/canonical-mask-5.json.gz",
+        "sha256": "b132f6464844b58bc683ba56715cc88eaf500b80e4567babbd809be581b476dd"
+      },
+      {
+        "key": "canonical/mask-6",
+        "file": "records/canonical-mask-6.json.gz",
+        "sha256": "9e43e01fe2c8281c20cb1e3e1bee14e14aa5f532d0debc1b68a7aa56250e38af"
+      },
+      {
+        "key": "canonical/mask-7",
+        "file": "records/canonical-mask-7.json.gz",
+        "sha256": "3b7d400414b3e89f8400c37d7c39697aa5e4ff659559fb479d91740090c5839a"
+      },
+      {
+        "key": "canonical/mask-8",
+        "file": "records/canonical-mask-8.json.gz",
+        "sha256": "054a204f2a28cefe7d2d6d0acb28b34de5d26f62e8214b3a52c070e99a42ed86"
+      },
+      {
+        "key": "canonical/mask-9",
+        "file": "records/canonical-mask-9.json.gz",
+        "sha256": "2824a37124e5f126a06a5c131c1006b9e178cd18a0466366a0421725cb594de2"
+      },
+      {
+        "key": "canonical/mask-10",
+        "file": "records/canonical-mask-10.json.gz",
+        "sha256": "f54f2de91cc3b16db503923e784c3ca6d8d1f5b0f8a0825cd119a65b82c53f2b"
+      },
+      {
+        "key": "canonical/mask-11",
+        "file": "records/canonical-mask-11.json.gz",
+        "sha256": "079ddc222bfe91f4174d61876b9e75fcfb7a048bc6f2409d83f720e8ac5dfa07"
+      },
+      {
+        "key": "canonical/mask-12",
+        "file": "records/canonical-mask-12.json.gz",
+        "sha256": "71c2a62652988ae8f3af46661e0ea2f2715b9b46e460a12a59b22b19312586eb"
+      },
+      {
+        "key": "canonical/mask-13",
+        "file": "records/canonical-mask-13.json.gz",
+        "sha256": "f5b743df10049f573a26f7d03c0f065b6c0ed533ae5316e7ad79d3fb95eb4e81"
+      },
+      {
+        "key": "canonical/mask-14",
+        "file": "records/canonical-mask-14.json.gz",
+        "sha256": "156402ae08bbd7025af9cdc5b7620ab433bfece1fcb997f439102c1eac9e9949"
+      },
+      {
+        "key": "canonical/mask-15",
+        "file": "records/canonical-mask-15.json.gz",
+        "sha256": "b77b2db1508047815a2b0936a9de6aa6d4f9fa7f1ceaf73f63707dfcbcfb1a80"
+      },
+      {
+        "key": "workflow/before",
+        "file": "records/workflow-before.json.gz",
+        "sha256": "ccfaaf3e6eae53d2874a69b7b99a746c382db04e5513f3750ceb4af285229122"
+      },
+      {
+        "key": "workflow/partial",
+        "file": "records/workflow-partial.json.gz",
+        "sha256": "f5ba73338ddde6a37ba7f7feeef8a45334b8264d37b92c0237bfb44ba6ab8fa7"
+      },
+      {
+        "key": "workflow/ready",
+        "file": "records/workflow-ready.json.gz",
+        "sha256": "637a7c6a5ddf722a252c69edc9c5320e814e03dab5ed699c65766f6c9648ae04"
+      },
+      {
+        "key": "workflow/mask-1",
+        "file": "records/workflow-mask-1.json.gz",
+        "sha256": "b67617baf3444179a7f56a0b9e8a0fd3a2f9910f19f3868e13985eb4123e3d4e"
+      },
+      {
+        "key": "workflow/restarted",
+        "file": "records/workflow-restarted.json.gz",
+        "sha256": "eef9cfe2f2c8e2df5a1b8b86afa6c7890a705e3c7c4a5692c5069f0a5d845568"
+      },
+      {
+        "key": "workflow/cancelled",
+        "file": "records/workflow-cancelled.json.gz",
+        "sha256": "cc3d02eada6b516b569016591a59b0b43dab47b9333526369b33fffa63865dc1"
+      },
+      {
+        "key": "workflow/mask-2",
+        "file": "records/workflow-mask-2.json.gz",
+        "sha256": "9f659d9a5b4ce356b67bef4ec5e77cd0f54869a3cea16bfb3fcf82d2b994e480"
+      },
+      {
+        "key": "workflow/mask-3",
+        "file": "records/workflow-mask-3.json.gz",
+        "sha256": "44fa5017cb442900deb26637dfbde231ed920093e27c2cde6094c90048e72641"
+      },
+      {
+        "key": "workflow/mask-4",
+        "file": "records/workflow-mask-4.json.gz",
+        "sha256": "0aab4ef684e2ca80be97be8827642d747adbc79ecf71028aa698838bc81bbb09"
+      },
+      {
+        "key": "workflow/mask-5",
+        "file": "records/workflow-mask-5.json.gz",
+        "sha256": "8eea2c07488126dda1007ed63873e0e893f801e6ad08185c0a82f2f8a1540461"
+      },
+      {
+        "key": "workflow/mask-6",
+        "file": "records/workflow-mask-6.json.gz",
+        "sha256": "f50e266d5a8beb95ce326be9a8467119f353c54ff2c068e8c2996151be88e6e1"
+      },
+      {
+        "key": "workflow/mask-7",
+        "file": "records/workflow-mask-7.json.gz",
+        "sha256": "9163ecb063d6a78104270bbdc51103b8dc4eee1370326b212df45e162c981f06"
+      },
+      {
+        "key": "workflow/mask-8",
+        "file": "records/workflow-mask-8.json.gz",
+        "sha256": "d2cdbaae56892552de174fb49e3ac86c6f35f37c868072d7a8f5d49adc607938"
+      },
+      {
+        "key": "workflow/mask-9",
+        "file": "records/workflow-mask-9.json.gz",
+        "sha256": "d990864d2807d68067d92ea9981b455cf7ee8908709f5c4ede298bef184f97df"
+      },
+      {
+        "key": "workflow/mask-10",
+        "file": "records/workflow-mask-10.json.gz",
+        "sha256": "4862f2d046a3c875d845df17b487f9d888dd372c63776180805411cfd0b41f08"
+      },
+      {
+        "key": "workflow/mask-11",
+        "file": "records/workflow-mask-11.json.gz",
+        "sha256": "668ef756c786230a935d2f6feb4822efcf1d003dabd9e94ada16fa0096aa4725"
+      },
+      {
+        "key": "workflow/mask-12",
+        "file": "records/workflow-mask-12.json.gz",
+        "sha256": "65f89f9fc301022d7d05ec84dce8f37b7270483c62da3db334eff8a863d55e38"
+      },
+      {
+        "key": "workflow/mask-13",
+        "file": "records/workflow-mask-13.json.gz",
+        "sha256": "971051b9c8d6126c6e781a056c51decd9cd48201d466b1123eb0e29fe99c3137"
+      },
+      {
+        "key": "workflow/mask-14",
+        "file": "records/workflow-mask-14.json.gz",
+        "sha256": "b7439f1c1921a3095d4abfafcef726342d6cbbdc3e9fd3bc60ad4332ad354634"
+      },
+      {
+        "key": "workflow/mask-15",
+        "file": "records/workflow-mask-15.json.gz",
+        "sha256": "b917b485858726d9759a883068a42bda28854be4557406aa1f98ca53deda5b5d"
+      }
+    ],
+    "files": {
+      "bridge.json": "20cb018a7a94ee58dd204b5320741701975fdebee0fad26b3b3627fd360946e8",
+      "record_index.json": "17b60f80ef20b39f361f8b55e25d08c045f0bde18fdd83ac9cf120eecafbc67a",
+      "decoded_audits.json": "17cd8b499d89cf1cba761eb3043f3fddb1b3e6ab828c0724a064c705a9b118a9",
+      "cost_readback.json": "662156be2ee6bfb94043ebc1a41a981192f98746f8d73b9d45c2c767bfe7f1a3"
+    },
+    "stages": {
+      "stages/record-10.json": "c7660d24df0187b4b833f7518698abbe0a317fdded92789e7997fc0da97d4f6f",
+      "stages/record-11.json": "21b2885592a28ddc36bbc89a9a7af4b4d7e97a21611f8f1eadc0684f7aac4099",
+      "stages/record-12.json": "5c0715b76f05275fdf001cd38078ea2314f4201129ea66aa4e13447c92b54784",
+      "stages/record-13.json": "6c75d71e5d0599bf671ab52046d76c656a0238486900edd376d1d56d15eb6f4c",
+      "stages/record-14.json": "2c2154d62a368a500f332bad1fccc5c0c8a762dc0e1351365749aa1b801be0a3",
+      "stages/record-15.json": "0a1a536d31edccbd1fb85afcd02f5c88a6901b1f02a859ef06265e7fbbd95994",
+      "stages/record-8.json": "fc53a7da4e49fba27900d12276079a209329a6442d91ba5e7e934b8d9dd1a7fd",
+      "stages/record-9.json": "93e72fbefce63222e1ad8035e8845c22b064b2318970b2945d21b22fd8efed05"
+    }
+  }
+}
