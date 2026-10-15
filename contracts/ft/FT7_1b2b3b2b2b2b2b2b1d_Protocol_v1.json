@@ -1,0 +1,107 @@
+{
+  "version": "ft-current-window-admission-protocol-v1",
+  "batch": "FT7.1b2b3b2b2b2b2b2b1d",
+  "entry_acceptance": "64341a34a6fb90221ae440f9d683c4e29bddb6bb",
+  "prior_freeze": "FT7_1b2b3b2b2b2b2b2b1c_Source_Freeze_v1.json",
+  "input": {
+    "capacity": {
+      "filename": "FT7_1b2b3b2b2b2b2b2b1c_Current_Capacity_Acceptance_Evidence_20261015.zip",
+      "sha256": "90425d729251536e7e5e5a551d5e3f90aa354e94a991ca2a4d30f515bf10b44b",
+      "members": 226
+    },
+    "closure": {
+      "filename": "FT7_1b2b3b2b2b2b2b2b1b_Paid_Window_Closure_Evidence_20261015.zip",
+      "sha256": "dba48e49429cdc26014e0b83de854c8323bc88078b4ab0b8860a318092fde54a",
+      "members": 45
+    },
+    "continuation": {
+      "filename": "FT7_1b2b3b2b2b2b2b2b1b_Paid_Window_Continuation_Evidence_20261015.zip",
+      "sha256": "23b64825003f50a22ba0072e48e7f94b3f2c6c5f70201cde516d8812b811a470",
+      "members": 79
+    },
+    "request": {
+      "filename": "FT7_1b2b3b2b2b2b2b2b1a_Request_Window_Evidence_20261015.zip",
+      "sha256": "6eca9ead0be9da26575d6e39b48ba3005de63a85fc6672760119caeccea063b6",
+      "members": 81
+    }
+  },
+  "modules": [
+    "full_theory/current_window_admission.py",
+    "full_theory/current_window_admission_audit.py",
+    "tools/evaluate_ft7_current_window_admission.py"
+  ],
+  "tests": "tests_ft7/test_current_window_admission.py",
+  "registered_tests": [
+    "test_exact_full_panel",
+    "test_lifecycle_withholds_domain",
+    "test_restart_exact",
+    "test_every_cost_and_priority_join",
+    "test_window_operand_cost_forgery_rejected",
+    "test_capacity_and_input_pairing_rejected",
+    "test_old_nominees_and_bounded_cells",
+    "test_native_and_prefixes_unchanged"
+  ],
+  "saved_records": [
+    "canonical/before",
+    "canonical/partial",
+    "canonical/ready",
+    "canonical/mask-1",
+    "canonical/mask-2",
+    "canonical/mask-3",
+    "canonical/mask-4",
+    "canonical/mask-5",
+    "canonical/mask-6",
+    "canonical/mask-7",
+    "canonical/mask-8",
+    "canonical/mask-9",
+    "canonical/mask-10",
+    "canonical/mask-11",
+    "canonical/mask-12",
+    "canonical/mask-13",
+    "canonical/mask-14",
+    "canonical/mask-15",
+    "canonical/restarted",
+    "canonical/cancelled",
+    "workflow/before",
+    "workflow/partial",
+    "workflow/ready",
+    "workflow/mask-1",
+    "workflow/mask-2",
+    "workflow/mask-3",
+    "workflow/mask-4",
+    "workflow/mask-5",
+    "workflow/mask-6",
+    "workflow/mask-7",
+    "workflow/mask-8",
+    "workflow/mask-9",
+    "workflow/mask-10",
+    "workflow/mask-11",
+    "workflow/mask-12",
+    "workflow/mask-13",
+    "workflow/mask-14",
+    "workflow/mask-15",
+    "workflow/restarted",
+    "workflow/cancelled"
+  ],
+  "predecessor_identities": 484,
+  "prior_source_identities": 399,
+  "runtime_rule": [
+    "First independently audit the exact accepted current-capacity bridge and complete paid comparison/source/intake chain. No source regeneration or accepted paid execution.",
+    "Only settled comparison exposes windows/operands/costs. Restore predebit snapshots from exact accepted intake, bind their hashes and native rows/nominees to settled comparison. Recheck current snapshots differ only in wallet; current wallet must equal capacity bridge.",
+    "For every declared request window retain every canonical 33/workflow 32 cell, including empty/ineligible cells, and every native-ordered operand bundle examined within the unchanged alternatives bound. Preserve sentinel/deferred flags and exact per-window native nominees; no unbounded/unknown role coverage.",
+    "Reuse accepted native bounded operand expansion; strip only descriptive reason text from native proposal values, retaining exact proposal values. No factoring of content, recipes, operands, costs or nominees across windows.",
+    "Cross each exact option with retained/ordinary/n/cp/support means in existing TD5 order. Exact total estimates are native effort plus per-mean overhead plus current unpaid preparation energy/time. All terms remain visible even when structurally ineligible. Native effort is an estimate, not executed cost. Support additionally requires a native social recipe.",
+    "Reject work in priority order for ineligible mean, ineligible native proposal, non-integer/negative effort, invalid social recipe, or insufficient current wallet. Add one zero-cost defer candidate. Diagnostic nominee minimizes priority,time,energy,stable identity; identity includes window,cell,operand ordinal,bundle and mean.",
+    "No native command, reserve event, history credit, changed demand, refill, forced tie, old-label override or execution authority. No selected work is executed. Complete-domain claim is only within exact paid current window/operand grammar."
+  ],
+  "independent_audit": "Imports neither new builder nor participant selectors. Reconstruct snapshots from owned view/journal, native rows via independent references, operand grammar via existing independent reference_bundles, and every new candidate/cost/priority/nominee independently. Full typed output equality, current capacity audit and exact native unchanged check mandatory.",
+  "execution": {
+    "records_workers": 4,
+    "method_workers": 2,
+    "output": "current-window-admission-attempt1",
+    "stop_before_utc": "2026-10-15T23:20:00+00:00",
+    "lease_margin_seconds": 300,
+    "rule": "Fresh exclusive output/init; disjoint per-record and per-method logs/targets. All 40 record reports before actual methods; all 8 exact methods before finish. Stop new launches on first failure, STOP, deadline or lease/owner change; wait existing children without signalling. Never rerun passing stages. Preserve failures/interrupted raw; existing raw without report may resume exact audit only after documented diagnosis. Failed bodies require prospective correction; no automatic retry."
+  },
+  "claim_boundary": "Read-only current TD5/estimated-cost diagnostic join across complete accepted window and bounded operand grammar only. Not full future role/skill coverage, actual preparation, live history-only choice, chosen movement/use, matched controls or parent FT7/FT8/FT9 acceptance."
+}
