@@ -1,14 +1,14 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft7-window-admission-20261015T223300Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-15T23:55:52Z",
-  "expected_head": "f26934e2568eb96390f5bd8b9b719e618879e972",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "f72e518a289404a1afeb67ff2bf48634c0068fff",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1d",
   "current_window_admission_progress": {
-    "status": "frozen_evaluation_running_not_accepted",
+    "status": "partial_checkpoint_not_accepted",
     "implementation_commit": "a79669120939bfb0ee5f2dd7914a45b44f3c5696",
     "freeze_commit": "86c613185216ae09b76ef1a1dbd764847ec2c31e",
     "frozen_identities": 406,
@@ -18,15 +18,57 @@
     "required_saved_records": 40,
     "required_predecessor_identities": 484,
     "actual_methods_completed": 0,
-    "saved_records_completed": 27,
+    "saved_records_completed": 31,
     "record_launches_closed_at_deadline": 31,
     "active_records_at_deadline": 4,
     "continuation_protocol_commit": "92abf8cee4203a3e9527e80d869385ba72acda13",
     "continuation_implementation_commit": "f26934e2568eb96390f5bd8b9b719e618879e972",
-    "continuation_status": "implemented_not_frozen_not_invoked_waiting_for_original_quiescence",
+    "continuation_status": "frozen_not_invoked_ready_for_missing_stages",
     "new_native_work": false,
     "accepted": false,
-    "record": "docs/ft/FT7_1b2b3b2b2b2b2b2b1d_Record.md"
+    "record": "docs/ft/FT7_1b2b3b2b2b2b2b2b1d_Record.md",
+    "owned_processes_remaining": 0,
+    "original_outcome": "checkpoint",
+    "stop_reason": "prospective deadline",
+    "original_children_failed": 0,
+    "original_children_interrupted": 0,
+    "remaining_records": [
+      "workflow/mask-9",
+      "workflow/mask-10",
+      "workflow/mask-11",
+      "workflow/mask-12",
+      "workflow/mask-13",
+      "workflow/mask-14",
+      "workflow/mask-15",
+      "workflow/restarted",
+      "workflow/cancelled"
+    ],
+    "remaining_methods": [
+      "test_exact_full_panel",
+      "test_lifecycle_withholds_domain",
+      "test_restart_exact",
+      "test_every_cost_and_priority_join",
+      "test_window_operand_cost_forgery_rejected",
+      "test_capacity_and_input_pairing_rejected",
+      "test_old_nominees_and_bounded_cells",
+      "test_native_and_prefixes_unchanged"
+    ],
+    "continuation_protocol_sha256": "a8602bc91ef506325968f6a9dbac34975064d66c2a5acfa477c290f411978400",
+    "continuation_freeze_commit": "f72e518a289404a1afeb67ff2bf48634c0068fff",
+    "continuation_frozen_identities": 4,
+    "closed_prefix_files": 161,
+    "accepted_raw_inputs_bound": 80,
+    "evidence": {
+      "filename": "FT7_1b2b3b2b2b2b2b2b1d_Current_Window_Admission_Progress_Evidence_20261015.zip",
+      "sha256": "f1fa2508594b437b641b9a77a9a05f10a7013ea103d6adc39f2e74feb2d4b41a",
+      "manifest_members": 179,
+      "bytes": 4935925,
+      "all_members_verified": true,
+      "nested_capacity_members": 226,
+      "nested_checkpoint_members": 97,
+      "nested_initial_members": 40
+    },
+    "final_aggregate_passed": false
   },
   "current_window_capacity_progress": {
     "status": "passed",
@@ -91,7 +133,7 @@
       "paths_removed": 0
     }
   },
-  "next_batch": "Prospectively register full current TD5 operand/cost integration and route-free fresh skills/needed paid recall organization. Changed inputs require new binding and payment. Establish genuine same-priority/native-cost distinct-element ties, autonomous history-only choice, chosen paid movement/use, matched controls and full staging. Preserve original four-facet demand, old prefixes, oldest-first priority and all FT8 obligations. No accepted gate or passing stage reruns.",
+  "next_batch": "Resume only nine missing B1D workflow records (masks 9–15, restarted, cancelled) with the separately frozen continuation, then all eight original exact methods and unchanged finish. Never restart original run/init or rerun passing stages/accepted paid work. Thereafter prospectively implement route-free fresh skills/needed paid recall organization, changed-input new payments, genuine distinct-element ties, autonomous history-only choice, chosen paid work/use, matched controls and full staging. All FT8 obligations remain intact.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -151,7 +193,7 @@
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT7_1b2b3b2b2b2b2b2b1c_Record.md",
+  "latest_record": "docs/ft/FT7_1b2b3b2b2b2b2b2b1d_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
