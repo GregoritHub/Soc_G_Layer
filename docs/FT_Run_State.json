@@ -1,12 +1,12 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "5d032e1af62417e69b9bbbe4c10f78701b3706c1",
-  "current_batch": "FT7.1b2b3b2b2b1",
+  "status": "running",
+  "run_id": "ft7-current-admission-20261015T0740Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-15T08:10:00Z",
+  "expected_head": "6189046ddaa5f8055b49c15542f31203f3c4f96b",
+  "current_batch": "FT7.1b2b3b2b2b2a",
   "next_batch": "FT7.1b2b3b2b2b2: preregister complete current TD5 route/admission domain, genuine fresh paid priority/native-cost tie, new live history-caused tie-only policy, actual chosen paid movement/downstream use, matched feedback-off/history-removal controls and exact preparation/live-staging composition; then remaining FT7–FT9.",
   "completed_batches": [
     "FT0.1",
