@@ -1,0 +1,6 @@
+{
+  "contracts/ft/FT7_1b2b3b2b2b2b2b2b1d_Continuation_Closed_Prefix_v1.json": "92d59d1d6a5ea1a066da693aa60548f37a58dcf2b8c84909998fe7d1b42eb9c2",
+  "contracts/ft/FT7_1b2b3b2b2b2b2b2b1d_Continuation_Protocol_v1.json": "a8602bc91ef506325968f6a9dbac34975064d66c2a5acfa477c290f411978400",
+  "contracts/ft/FT7_1b2b3b2b2b2b2b2b1d_Continuation_Protocol_v1.sha256": "bb0b1f8161715c8150df4626fd13ed5ce0d765c4f14ddf5a295483ba29c18026",
+  "tools/continue_current_window_admission.py": "979dbebfb82fd9cd37d8ba568057af3b52be5271ec056af551c7b34fd24cfc48"
+}
