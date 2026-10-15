@@ -5,9 +5,9 @@
   "run_id": "ft71b2b3b-20261015T0240Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-15T03:10:00Z",
-  "expected_head": "1617a018153a380cac721ebffeaa8bca57b4bf9f",
-  "current_batch": "FT7.1b2b3b1",
-  "next_batch": "Preregister and implement actual paid reserve preparation plus autonomous tie-only later owned choices, complete owned candidate domain, feedback controls, matched main costs and integrated exact restart; then remaining FT7–FT9",
+  "expected_head": "fde88bb472388d4ff1932a51a70b3b0fa970da11",
+  "current_batch": "FT7.1b2b3b2",
+  "next_batch": "Preregister and implement complete owned-domain tie-only choice integration and live movement/consumer outcome staging, with matched feedback controls and exact restart; FT7.1b2b3b parent remains pending",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -50,11 +50,12 @@
     "FT7.1b2b2a",
     "FT7.1b2b2b",
     "FT7.1b2b2",
-    "FT7.1b2b3a"
+    "FT7.1b2b3a",
+    "FT7.1b2b3b1"
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT7_1b2b3a_Record.md",
+  "latest_record": "docs/ft/FT7_1b2b3b1_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
@@ -112,6 +113,268 @@
     "standalone_ft9_release": false
   },
   "local_acceptance": {
+    "batch": "FT7.1b2b3b1",
+    "passed": true,
+    "methods": 8,
+    "failures": 0,
+    "errors": 0,
+    "predecessor_identities": 360,
+    "saved_records": 8,
+    "exact_method_domain": true,
+    "typed_roundtrip_exact": true,
+    "independent_audits": true,
+    "source_unchanged": true,
+    "frozen_identities": 277,
+    "input_hashes": {
+      "native/canonical/harder": "ec17ea4529d340c1d1b4cc7418e5d4fa24933a8e2b437972a3214fadfc5bb9a3",
+      "native/workflow/harder": "a7a8172af9d8eb76180249330729fc5e1650e04ba227890fba57979b0578decc",
+      "binding/canonical/harder": "4903bc79a0768bd48eecc8b1ba9b2c0fa992348921521b4ecf2f1be7c4c33d53",
+      "binding/workflow/harder": "ab7c723ce6171a588eea6e519457dd3e6e74104e611f878f6e3a0d9158e5006e"
+    },
+    "claim": "Fresh exact paid reserve preparation only; no parent or autonomous tie-only choice acceptance",
+    "frozen_commit": "fde88bb472388d4ff1932a51a70b3b0fa970da11",
+    "protocol_commit": "be77b4071ff34a6026de2b21cfdd87b18d1b2719",
+    "archive": {
+      "filename": "FT7_1b2b3b1_Paid_Preparation_Evidence_20261015.zip",
+      "bytes": 2562839,
+      "sha256": "d1b7e202ff019c29b32ba7ae7e0d996c5854d1bf66f067b13be674db26ba3a8d",
+      "manifest_members": 22,
+      "all_members_verified": true
+    },
+    "setup_repair": {
+      "passed": true,
+      "frozen_identities": 270,
+      "bad": [],
+      "prior_changed": [
+        "tools/prepare_workspace.py"
+      ],
+      "automatic_setup_identity": "7ad1d1068af68f3fa7b0c38ee32475541da03ddd68fa8e46f696ff3cf04e8d8a",
+      "existing_output_rejected": true,
+      "source_setup_unchanged": true,
+      "preparation": {
+        "passed": true,
+        "base": "fdede6f16721f06422d0798a79d84170969b83f8",
+        "held": "c8bef62d623b55054594d1328dfd649c52811641",
+        "dependency_recipe_sha256": "df4bcf2319f6478f211f2f160a7afa086e7fa2f5500de3b214dbb00987dd1974",
+        "layer_files": 265,
+        "repair_freeze_files": 20,
+        "baseline_files": 1093,
+        "historical_files": 210,
+        "verified_archive_members": 209,
+        "claim": "Exact prepared inputs; execute the declared tests separately."
+      },
+      "engine_gate_rerun": false
+    }
+  },
+  "conditioning_release": {
+    "policy": "success-v1",
+    "engineering_gate": "accepted",
+    "subtype_assignment": null,
+    "full_subtype_claim": "held pending author interpretation",
+    "evidence_index": "docs/ft/FT6_3b_Evidence_Index.json"
+  },
+  "reopening": {
+    "authorization": "Reopen FT7.1b1 to compare the existing all-cell workflow engine against the unchanged self-only control.",
+    "date": "2026-10-14",
+    "prior_hold_retained": true,
+    "scope": "Matched comparison; no inherited engine, self-only control, authority, payment or release gate changes.",
+    "resolution": "Ten comparison checks and all 16 original all-cell methods passed; 24 decoded independent audits; unchanged self-only reproduces exact held records."
+  },
+  "prior_hold": {
+    "reason": "standing two-failure stop rule",
+    "attempts": 2,
+    "methods_each": 16,
+    "failures_each": 4,
+    "errors_each": 3,
+    "evidence_index": "docs/ft/FT7_1b1_Held_Evidence_Index.json",
+    "required_ruling": "Reopen for prospectively registered existing all-cell workflow comparison, or retain v1 and hold full workflow/parent release claim"
+  },
+  "social_workflow_policy": {
+    "class": "WorkflowFinalSelectionEngine",
+    "version": "c7-workflow-selection-v4",
+    "default_changed": false,
+    "control": "WorkflowSelectionEngine v1 unchanged"
+  },
+  "prior_ft7_1b2a_hold": {
+    "kind": "two_failure_stop",
+    "batch": "FT7.1b2a",
+    "attempts": 2,
+    "first": "0 method bodies; native DetailAddress checkpoint serialization rejected",
+    "second": "15/15 exact method bodies passed; descriptive dictionary passed to unsupported native codec; saved raw/readback gate not reached",
+    "required_ruling": "Reopen FT7.1b2a for evidence-writer-only correction and unchanged full gate; no engine or inherited semantics change"
+  },
+  "standing_repair_authorization": {
+    "date": "2026-10-14",
+    "scope": "Technical coding, testing, diagnosis, lawful repairs and retries through FT9 belong to the agent without renewed user approval. Preserve criteria except the explicitly approved comparison amendment; FT8 unchanged."
+  },
+  "prior_ft7_1b2a_attempt": {
+    "passed": false,
+    "status": "held",
+    "batch": "FT7.1b2a",
+    "methods": 15,
+    "failures": 0,
+    "errors": 0,
+    "method_suite_passed": true,
+    "exact_method_ids": true,
+    "predecessor_identities": 297,
+    "primary_scenarios": 14,
+    "exact_restart_comparisons": 4,
+    "source_unchanged": true,
+    "frozen_source_files": 206,
+    "saved_native_records": 0,
+    "raw_roundtrip_verified": false,
+    "decoded_full_independent_audit": false,
+    "error": "ValueError: unsupported U2 wire value; descriptive report dictionary passed to record-only codec",
+    "stop": "second failed gate after checkpoint correction",
+    "claim": "Behavioral methods passed; no full FT7.1b2a acceptance or independent capability claim",
+    "initial_frozen_commit": "564fdbbe8763052b6b106b71f1e01ae967577023",
+    "corrected_frozen_commit": "87251a465eb57b1b3ed7663698e829a602e3463e",
+    "evidence_writer_repair_commit": "f1bf4ff521d62c5f1e14f0b4c8ee13b3473879ac",
+    "repair_format_check": {
+      "passed": true,
+      "report_roundtrip_exact": true,
+      "raw_tuple_roundtrip_exact": true,
+      "actual_engine_run": false,
+      "scope": "representative typed report schema and native raw tuple persistence only; not acceptance"
+    }
+  },
+  "prior_ft7_1b2a_acceptance": {
+    "batch": "FT7.1b2a",
+    "passed": true,
+    "methods": 15,
+    "failures": 0,
+    "errors": 0,
+    "exact_methods": true,
+    "predecessor_identities": 297,
+    "scenarios": 14,
+    "restart_pairs": 4,
+    "saved_records": 22,
+    "raw_roundtrip_exact": true,
+    "decoded_independent_audits": true,
+    "source_unchanged": true,
+    "registered_freeze": true,
+    "protocol_sha256": "6f751a0634d1a4ecbf3fb599306a13ffcadf7ef3f8ca513f7b89618487ff39bf",
+    "configuration": {
+      "canonical": "SelectionEngine",
+      "workflow": "WorkflowFinalSelectionEngine v4 explicit",
+      "reserve": "load-v1",
+      "conditioning": "success-v1",
+      "defaults_changed": false
+    },
+    "parent_gate": "FT7.1b2b independent training/closure, changed-support retained reuse and later tie-only feedback remain pending",
+    "claim": "Autonomous paid peer reply and recipient support causality, no independent capability or psychology claim",
+    "frozen_commit": "8c231c7613b2c0845c6a567ffab556860824bbd9",
+    "source_publication": "verified"
+  },
+  "prior_ft7_1b2b1_acceptance": {
+    "passed": true,
+    "methods": 14,
+    "failures": 0,
+    "errors": 0,
+    "exact_methods": true,
+    "predecessor_identities": 312,
+    "saved_records": 18,
+    "exact_record_domain": true,
+    "raw_roundtrip_exact": true,
+    "decoded_independent_audits": true,
+    "source_unchanged": true,
+    "registered_freeze": true,
+    "protocol_sha256": "94ee8061d8319c3b248ac0a2b3709f6b2cf5e29a11525423ee6b928b2ed05d1d",
+    "configuration": {
+      "canonical": "SelectionEngine",
+      "workflow": "WorkflowFinalSelectionEngine v4 explicit",
+      "reserve": "load-v1 unchanged in accepted social prefix",
+      "conditioning": "success-v1; supported social prefix has zero independent credit",
+      "defaults_changed": false
+    },
+    "claim": "native owned guarded training only; no FT closure/certificate/reuse or feedback acceptance",
+    "parent_gate": "FT7.1b2b2 closure/reuse and FT7.1b2b3 feedback remain mandatory",
+    "batch": "FT7.1b2b1",
+    "frozen_commit": "1ff9b0000f062b5ba216c821be691258c91546ef",
+    "source_publication": "verified",
+    "prior_failed_attempts": 6
+  },
+  "latest_acceptance_record": "docs/ft/FT7_1b2b3a_Record.md",
+  "latest_acceptance_commit": "4cae2970894f71100459c4454736d78c591472d5",
+  "engineering_continuation": {
+    "batch": "FT7.1b2b3b",
+    "accepted": false,
+    "required_next": "Preregister and implement actual paid reserve preparation plus autonomous tie-only later owned choices, complete owned candidate domain, feedback controls, matched main costs and integrated exact restart; then remaining FT7–FT9",
+    "scope": "FT7.1b2b3a is an accounting observer only. Actual choice causality and live reserve/history staging remain mandatory.",
+    "permission": "Technical coding, testing, diagnosis, lawful repairs and retries through FT9 belong to the agent without renewed user approval. Preserve criteria except the explicitly approved comparison amendment; FT8 unchanged."
+  },
+  "prior_comparison_hold": {
+    "kind": "registered_comparison_conflicts_with_unchanged_route_contract",
+    "batch": "FT7.1b2b2b",
+    "record": "docs/ft/FT7_1b2b2b_Protocol_Conflict_Record.md",
+    "proof": "All eight origins enumerated. Only seats 1 and 8 admit four-facet retained reuse; neither has an ordinary/n/cp alternative covering four facets. With support forbidden and certificate revoked, deferral is compulsory, contradicting completed equal-main-cost control.",
+    "required_ruling": "May the comparison be split: retain the strict four-facet/no-support case as success versus honest deferral, and test matched-cost retained priority on a separately registered lower-facet demand, explicitly accounting for FT8 matched-cost obligations?",
+    "not_a_two_failure_stop": true,
+    "third_attempt_run": false,
+    "frozen_files_verified": 242
+  },
+  "comparison_ruling": {
+    "approved": true,
+    "date": "2026-10-14 America/New_York",
+    "amendment": "contracts/ft/FT7_1b2b2b_Split_Comparison_Amendment_v1.json",
+    "FT8_unchanged": true
+  },
+  "planned_subbatches": [
+    "FT7.1b2b3b",
+    "FT7.1b2b3b2"
+  ],
+  "prior_ft7_1b2b2b_acceptance": {
+    "passed": true,
+    "methods": 14,
+    "failures": 0,
+    "errors": 0,
+    "exact_methods": true,
+    "actual_method_bodies_passed": true,
+    "method_witness_freeze": "83d057cb5700c6fa0676cc5d83b422c622d420b4",
+    "predecessor_identities": 338,
+    "saved_records": 24,
+    "exact_record_domain": true,
+    "raw_roundtrip_exact": true,
+    "aggregate_checksum_verified": {
+      "passed": true,
+      "records": 24,
+      "payload_sha256": "7828ae5340448d039b2af11d07006696759538389731d5164b45352766651969"
+    },
+    "decoded_independent_audits": true,
+    "source_unchanged": true,
+    "registered_freeze": true,
+    "protocol_sha256": "2da7f69807e3a297291c9aa8035598584e69fcbdb3aadb3f5d525af0870f8bc1",
+    "claim": "Strict success-versus-deferral and separate one-facet equal-main-cost retained priority; FT8 unchanged; integrated reserve/history feedback pending",
+    "batch": "FT7.1b2b2b",
+    "frozen_commit": "83d057cb5700c6fa0676cc5d83b422c622d420b4",
+    "saved_audit_frozen_commit": "c5b0b8927a564c8ac8706e21e3f8a28372616191",
+    "source_publication": "verified"
+  },
+  "setup_repair": {
+    "passed": true,
+    "frozen_identities": 270,
+    "bad": [],
+    "prior_changed": [
+      "tools/prepare_workspace.py"
+    ],
+    "automatic_setup_identity": "7ad1d1068af68f3fa7b0c38ee32475541da03ddd68fa8e46f696ff3cf04e8d8a",
+    "existing_output_rejected": true,
+    "source_setup_unchanged": true,
+    "preparation": {
+      "passed": true,
+      "base": "fdede6f16721f06422d0798a79d84170969b83f8",
+      "held": "c8bef62d623b55054594d1328dfd649c52811641",
+      "dependency_recipe_sha256": "df4bcf2319f6478f211f2f160a7afa086e7fa2f5500de3b214dbb00987dd1974",
+      "layer_files": 265,
+      "repair_freeze_files": 20,
+      "baseline_files": 1093,
+      "historical_files": 210,
+      "verified_archive_members": 209,
+      "claim": "Exact prepared inputs; execute the declared tests separately."
+    },
+    "engine_gate_rerun": false
+  },
+  "prior_ft7_1b2b3a_acceptance": {
     "batch": "FT7.1b2b3a",
     "passed": true,
     "methods": 8,
@@ -722,212 +985,5 @@
     },
     "parent_gate": "FT7.1b2b3 remains open for actual paid reserve preparation and autonomous tie-only later owned choices with controls and exact restart; FT8 unchanged",
     "source_publication": "verified"
-  },
-  "conditioning_release": {
-    "policy": "success-v1",
-    "engineering_gate": "accepted",
-    "subtype_assignment": null,
-    "full_subtype_claim": "held pending author interpretation",
-    "evidence_index": "docs/ft/FT6_3b_Evidence_Index.json"
-  },
-  "reopening": {
-    "authorization": "Reopen FT7.1b1 to compare the existing all-cell workflow engine against the unchanged self-only control.",
-    "date": "2026-10-14",
-    "prior_hold_retained": true,
-    "scope": "Matched comparison; no inherited engine, self-only control, authority, payment or release gate changes.",
-    "resolution": "Ten comparison checks and all 16 original all-cell methods passed; 24 decoded independent audits; unchanged self-only reproduces exact held records."
-  },
-  "prior_hold": {
-    "reason": "standing two-failure stop rule",
-    "attempts": 2,
-    "methods_each": 16,
-    "failures_each": 4,
-    "errors_each": 3,
-    "evidence_index": "docs/ft/FT7_1b1_Held_Evidence_Index.json",
-    "required_ruling": "Reopen for prospectively registered existing all-cell workflow comparison, or retain v1 and hold full workflow/parent release claim"
-  },
-  "social_workflow_policy": {
-    "class": "WorkflowFinalSelectionEngine",
-    "version": "c7-workflow-selection-v4",
-    "default_changed": false,
-    "control": "WorkflowSelectionEngine v1 unchanged"
-  },
-  "prior_ft7_1b2a_hold": {
-    "kind": "two_failure_stop",
-    "batch": "FT7.1b2a",
-    "attempts": 2,
-    "first": "0 method bodies; native DetailAddress checkpoint serialization rejected",
-    "second": "15/15 exact method bodies passed; descriptive dictionary passed to unsupported native codec; saved raw/readback gate not reached",
-    "required_ruling": "Reopen FT7.1b2a for evidence-writer-only correction and unchanged full gate; no engine or inherited semantics change"
-  },
-  "standing_repair_authorization": {
-    "date": "2026-10-14",
-    "scope": "Technical coding, testing, diagnosis, lawful repairs and retries through FT9 belong to the agent without renewed user approval. Preserve criteria except the explicitly approved comparison amendment; FT8 unchanged."
-  },
-  "prior_ft7_1b2a_attempt": {
-    "passed": false,
-    "status": "held",
-    "batch": "FT7.1b2a",
-    "methods": 15,
-    "failures": 0,
-    "errors": 0,
-    "method_suite_passed": true,
-    "exact_method_ids": true,
-    "predecessor_identities": 297,
-    "primary_scenarios": 14,
-    "exact_restart_comparisons": 4,
-    "source_unchanged": true,
-    "frozen_source_files": 206,
-    "saved_native_records": 0,
-    "raw_roundtrip_verified": false,
-    "decoded_full_independent_audit": false,
-    "error": "ValueError: unsupported U2 wire value; descriptive report dictionary passed to record-only codec",
-    "stop": "second failed gate after checkpoint correction",
-    "claim": "Behavioral methods passed; no full FT7.1b2a acceptance or independent capability claim",
-    "initial_frozen_commit": "564fdbbe8763052b6b106b71f1e01ae967577023",
-    "corrected_frozen_commit": "87251a465eb57b1b3ed7663698e829a602e3463e",
-    "evidence_writer_repair_commit": "f1bf4ff521d62c5f1e14f0b4c8ee13b3473879ac",
-    "repair_format_check": {
-      "passed": true,
-      "report_roundtrip_exact": true,
-      "raw_tuple_roundtrip_exact": true,
-      "actual_engine_run": false,
-      "scope": "representative typed report schema and native raw tuple persistence only; not acceptance"
-    }
-  },
-  "prior_ft7_1b2a_acceptance": {
-    "batch": "FT7.1b2a",
-    "passed": true,
-    "methods": 15,
-    "failures": 0,
-    "errors": 0,
-    "exact_methods": true,
-    "predecessor_identities": 297,
-    "scenarios": 14,
-    "restart_pairs": 4,
-    "saved_records": 22,
-    "raw_roundtrip_exact": true,
-    "decoded_independent_audits": true,
-    "source_unchanged": true,
-    "registered_freeze": true,
-    "protocol_sha256": "6f751a0634d1a4ecbf3fb599306a13ffcadf7ef3f8ca513f7b89618487ff39bf",
-    "configuration": {
-      "canonical": "SelectionEngine",
-      "workflow": "WorkflowFinalSelectionEngine v4 explicit",
-      "reserve": "load-v1",
-      "conditioning": "success-v1",
-      "defaults_changed": false
-    },
-    "parent_gate": "FT7.1b2b independent training/closure, changed-support retained reuse and later tie-only feedback remain pending",
-    "claim": "Autonomous paid peer reply and recipient support causality, no independent capability or psychology claim",
-    "frozen_commit": "8c231c7613b2c0845c6a567ffab556860824bbd9",
-    "source_publication": "verified"
-  },
-  "prior_ft7_1b2b1_acceptance": {
-    "passed": true,
-    "methods": 14,
-    "failures": 0,
-    "errors": 0,
-    "exact_methods": true,
-    "predecessor_identities": 312,
-    "saved_records": 18,
-    "exact_record_domain": true,
-    "raw_roundtrip_exact": true,
-    "decoded_independent_audits": true,
-    "source_unchanged": true,
-    "registered_freeze": true,
-    "protocol_sha256": "94ee8061d8319c3b248ac0a2b3709f6b2cf5e29a11525423ee6b928b2ed05d1d",
-    "configuration": {
-      "canonical": "SelectionEngine",
-      "workflow": "WorkflowFinalSelectionEngine v4 explicit",
-      "reserve": "load-v1 unchanged in accepted social prefix",
-      "conditioning": "success-v1; supported social prefix has zero independent credit",
-      "defaults_changed": false
-    },
-    "claim": "native owned guarded training only; no FT closure/certificate/reuse or feedback acceptance",
-    "parent_gate": "FT7.1b2b2 closure/reuse and FT7.1b2b3 feedback remain mandatory",
-    "batch": "FT7.1b2b1",
-    "frozen_commit": "1ff9b0000f062b5ba216c821be691258c91546ef",
-    "source_publication": "verified",
-    "prior_failed_attempts": 6
-  },
-  "latest_acceptance_record": "docs/ft/FT7_1b2b3a_Record.md",
-  "latest_acceptance_commit": "4cae2970894f71100459c4454736d78c591472d5",
-  "engineering_continuation": {
-    "batch": "FT7.1b2b3b",
-    "accepted": false,
-    "required_next": "Preregister and implement actual paid reserve preparation plus autonomous tie-only later owned choices, complete owned candidate domain, feedback controls, matched main costs and integrated exact restart; then remaining FT7–FT9",
-    "scope": "FT7.1b2b3a is an accounting observer only. Actual choice causality and live reserve/history staging remain mandatory.",
-    "permission": "Technical coding, testing, diagnosis, lawful repairs and retries through FT9 belong to the agent without renewed user approval. Preserve criteria except the explicitly approved comparison amendment; FT8 unchanged."
-  },
-  "prior_comparison_hold": {
-    "kind": "registered_comparison_conflicts_with_unchanged_route_contract",
-    "batch": "FT7.1b2b2b",
-    "record": "docs/ft/FT7_1b2b2b_Protocol_Conflict_Record.md",
-    "proof": "All eight origins enumerated. Only seats 1 and 8 admit four-facet retained reuse; neither has an ordinary/n/cp alternative covering four facets. With support forbidden and certificate revoked, deferral is compulsory, contradicting completed equal-main-cost control.",
-    "required_ruling": "May the comparison be split: retain the strict four-facet/no-support case as success versus honest deferral, and test matched-cost retained priority on a separately registered lower-facet demand, explicitly accounting for FT8 matched-cost obligations?",
-    "not_a_two_failure_stop": true,
-    "third_attempt_run": false,
-    "frozen_files_verified": 242
-  },
-  "comparison_ruling": {
-    "approved": true,
-    "date": "2026-10-14 America/New_York",
-    "amendment": "contracts/ft/FT7_1b2b2b_Split_Comparison_Amendment_v1.json",
-    "FT8_unchanged": true
-  },
-  "planned_subbatches": [
-    "FT7.1b2b3b"
-  ],
-  "prior_ft7_1b2b2b_acceptance": {
-    "passed": true,
-    "methods": 14,
-    "failures": 0,
-    "errors": 0,
-    "exact_methods": true,
-    "actual_method_bodies_passed": true,
-    "method_witness_freeze": "83d057cb5700c6fa0676cc5d83b422c622d420b4",
-    "predecessor_identities": 338,
-    "saved_records": 24,
-    "exact_record_domain": true,
-    "raw_roundtrip_exact": true,
-    "aggregate_checksum_verified": {
-      "passed": true,
-      "records": 24,
-      "payload_sha256": "7828ae5340448d039b2af11d07006696759538389731d5164b45352766651969"
-    },
-    "decoded_independent_audits": true,
-    "source_unchanged": true,
-    "registered_freeze": true,
-    "protocol_sha256": "2da7f69807e3a297291c9aa8035598584e69fcbdb3aadb3f5d525af0870f8bc1",
-    "claim": "Strict success-versus-deferral and separate one-facet equal-main-cost retained priority; FT8 unchanged; integrated reserve/history feedback pending",
-    "batch": "FT7.1b2b2b",
-    "frozen_commit": "83d057cb5700c6fa0676cc5d83b422c622d420b4",
-    "saved_audit_frozen_commit": "c5b0b8927a564c8ac8706e21e3f8a28372616191",
-    "source_publication": "verified"
-  },
-  "setup_repair": {
-    "passed": true,
-    "frozen_identities": 270,
-    "bad": [],
-    "prior_changed": [
-      "tools/prepare_workspace.py"
-    ],
-    "automatic_setup_identity": "7ad1d1068af68f3fa7b0c38ee32475541da03ddd68fa8e46f696ff3cf04e8d8a",
-    "existing_output_rejected": true,
-    "source_setup_unchanged": true,
-    "preparation": {
-      "passed": true,
-      "base": "fdede6f16721f06422d0798a79d84170969b83f8",
-      "held": "c8bef62d623b55054594d1328dfd649c52811641",
-      "dependency_recipe_sha256": "df4bcf2319f6478f211f2f160a7afa086e7fa2f5500de3b214dbb00987dd1974",
-      "layer_files": 265,
-      "repair_freeze_files": 20,
-      "baseline_files": 1093,
-      "historical_files": 210,
-      "verified_archive_members": 209,
-      "claim": "Exact prepared inputs; execute the declared tests separately."
-    },
-    "engine_gate_rerun": false
   }
 }

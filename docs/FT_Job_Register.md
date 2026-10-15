@@ -30,7 +30,8 @@
 | FT7.1b2b2b | accepted, approved bounded split | 14 exact methods, 338 predecessor identities and 24 exact saved audits; strict complete/defer plus separate completed one-facet equal-main-cost retained priority. FT8 intact; see FT7_1b2b2b_Acceptance_Record.md |
 | FT7.1b2b3 | parent pending; accounting observer accepted | FT7.1b2b3a: 8 methods, 352 predecessor identities, 24 exact saved binding audits. Actual paid preparation and tie-only later owned choice remain mandatory |
 | FT7.1b2b3a | accepted, native receipt binding only | Immutable supported prefix, two independent training outcomes and later completion/deferral accounting; see FT7_1b2b3a_Record.md |
-| FT7.1b2b3b | pending | Actual paid reserve preparation, autonomous complete owned tie domain, feedback controls, matched main cost and exact restart |
+| FT7.1b2b3b | parent pending; paid preparation subgate accepted | Autonomous complete owned tie domain, feedback controls, matched main cost and integrated movement/consumer restart remain mandatory |
+| FT7.1b2b3b1 | accepted, paid task preparation only | Eight exact methods, 360 predecessor identities and eight saved audits; exact partial-read restart, no independent credit or completion claim |
 | FT7.2 | pending | Full Theory plan gate |
 | FT7.3 | pending | Full Theory plan gate |
 | FT8.1 | pending | Full Theory plan gate |
