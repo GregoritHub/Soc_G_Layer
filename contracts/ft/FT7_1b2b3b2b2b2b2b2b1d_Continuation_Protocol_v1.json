@@ -1,0 +1,21 @@
+{
+  "version": "ft-current-window-admission-continuation-v1",
+  "scope": "Operational continuation only; original 406-identity source, eight exact methods, forty full independent records and 484 predecessor identities unchanged.",
+  "original_protocol_commit": "ac106a6a754716b015c16d2f516405eb22e2da99",
+  "original_freeze_commit": "86c613185216ae09b76ef1a1dbd764847ec2c31e",
+  "original_output": "current-window-admission-attempt1",
+  "module": "tools/continue_current_window_admission.py",
+  "binding_file": "contracts/ft/FT7_1b2b3b2b2b2b2b2b1d_Continuation_Closed_Prefix_v1.json",
+  "rules": [
+    "Never invoke before original run outcome exists with active_children=0, source_unchanged=true and status=checkpoint. Failed/interrupted original attempts require separate diagnosis/correction, not this protocol.",
+    "Before continuation execution, publish and freeze exact SHA256 bindings for every closed original output file, exact accepted capacity/paid raw inputs, original 406 source identities and this operational protocol/module/binding. No active logs enter the binding.",
+    "Use original frozen evaluator stage CLI without modifying its source, runtime, auditor or actual test bodies. At most four disjoint missing record workers; all forty exact reports before at most two missing actual-method workers; all eight exact passing results before unchanged finish alone.",
+    "Existing record reports, method results and prefix outputs are immutable and must match their frozen hashes. Existing passing stages never rerun. Every prior launch must have a matching closed job with exit_code=0 and passed=true.",
+    "Fresh exclusive operational output and per-child logs. Each launch/closure verifies original source, operational freeze, all bound prefix files and all accepted raw inputs. New stage outputs must validate exact key/method/source/raw hash, not counts alone.",
+    "Require explicit owner plus current running public state and a lease with more than 300 seconds remaining before each launch. Require an explicit absolute UTC stop time after start and no more than 30 minutes later; record it in immutable plan. Stop new launches on first child/verification failure, STOP marker, deadline, or ownership/lease change. Wait active children naturally; no signals, namespace changes, automatic retries or paid input regeneration.",
+    "Write exact closed job metadata, logs/hashes and outcome. Status checkpoint is not acceptance; acceptance requires original unchanged finish and all original conditions. Subsequent continuation requires a fresh numbered output and prospectively bound complete prior-output prefix; no reuse of an existing operational run."
+  ],
+  "record_workers": 4,
+  "method_workers": 2,
+  "lease_margin_seconds": 300
+}
