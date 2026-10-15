@@ -1,6 +1,7 @@
 # FT7.1b2b3b2b2b2b2b2b1c — current-window capacity bridge
 
-Status: implemented and frozen, **not accepted**.
+Status: **accepted, bounded read-only capacity/preparation bridge only**.
+Earlier partial-status entries below are preserved history.
 
 Prospective protocol: 367bdd57a8c5aa9bb0b8da9f8379c280b7916d3a.
 Implementation: f3ef21778bce2fd2b4f1c176267955b9c7055a1e.
@@ -136,3 +137,48 @@ wallet/preparation. Each result records one actual method, zero errors/failures
 and unchanged source. The remaining four actual methods and final aggregate are
 still mandatory; this progress observation is not gate acceptance or a new
 durable raw archive. Original markers and all prior evidence remain preserved.
+
+## Complete bounded acceptance — 15 October 2026 UTC
+
+All eight exact original actual methods passed separately, each with one method,
+zero failures/errors and unchanged source. All forty exact saved projections
+passed typed roundtrip and full independent native/source/intake/domain/payment/
+capacity audits. The unchanged final aggregate passed at 22:12:06 UTC, verifying
+all 476 exact predecessor identities and 399 frozen identities, with all 392
+preceding source identities exact. The separate operational three-file freeze
+and all 79 prior output files are exact. No accepted paid gate, passing stage or
+method was rerun. No new failed attempt or interrupted child occurred; all
+historical failures and the original planned-boundary marker remain preserved.
+
+The complete archive is
+FT7_1b2b3b2b2b2b2b2b1c_Current_Capacity_Acceptance_Evidence_20261015.zip,
+SHA256 90425d729251536e7e5e5a551d5e3f90aa354e94a991ca2a4d30f515bf10b44b.
+All 226 manifest members, nested exact 97-member checkpoint and its nested
+40-member initial progress archive were verified. It includes all eight actual
+method results and complete logs, forty projection records/audits, unchanged
+final index/summary, terminated operational logs/results, original and separate
+operational source freezes, and private exact-companion bindings. The accepted
+45/79/81-member inputs and forty paid raw identities were rechecked. One upload;
+no overwrite or duplicate artifact. No owned evaluator/runner remains active.
+
+Both settings still honestly lack an applicable recalled certificate and
+structurally sufficient alternative work mean; support is not permitted. All
+settled masks bind the same four-facet/load-one requirement, one unpaid
+preparation read and current wallets 197,913/197,913 canonical or
+175,815/175,815 workflow. No mean is selected, no work is authorized, and no
+native/reserve/history event was added. Deferral eligibility is descriptive.
+The not_recalled reason does not alone diagnose recall truncation.
+
+Auxiliary handoff-output and prompt-length checks were resolved before any bad
+mutation; stale in-memory save metadata was replaced with fresh remote reads.
+These were bookkeeping checks, not engine failures or gate changes. All saves
+used explicit nonempty base trees and expected heads, followed by complete
+public-tree identity verification. Historical denied transfers were not retried.
+
+Next work remains prospective: full current TD5 operand/cost domain, route-free
+fresh skills and any needed paid recall organization, fresh payments for changed
+inputs, genuine same-priority/native-cost distinct-element ties, autonomous
+history-only choice, chosen paid movement/use, matched controls and full staging.
+No forced ties, old-label override, refill, old-wrapper regeneration or bypass
+of older unresolved need is permitted. Parent FT7–FT9 and all FT8 obligations
+remain unfinished; no substantive blocker is established.

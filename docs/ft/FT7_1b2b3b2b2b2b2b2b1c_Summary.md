@@ -1,27 +1,31 @@
-# Current-window capacity bridge — partial verification
+# Current-window capacity bridge — bounded acceptance
 
-Implemented and frozen; **not accepted**. All 399 source identities and 392
-predecessor source identities remain exact. No accepted paid work was repeated.
+Passed all eight exact actual methods, 476 exact predecessor identities and forty
+exact saved projections with full independent audits and typed roundtrip.
+All 399 frozen identities, including all 392 preceding identities, remain exact.
+The unchanged final aggregate passed. No accepted paid work or passing stage was
+rerun; all prior failures, interruptions and the planned boundary remain preserved.
 
-Twenty-four saved projections passed typed roundtrip and full independent
-native/source/intake/domain/payment/capacity audits: all twenty canonical records
-and workflow before, partial, ready and mask 1. The settled workflow record binds
-all 510 windows. Current wallets are 197,913/197,913 canonical and
-175,815/175,815 workflow. One preparation read remains unpaid; comparison and
-intake receipts confer no preparation or execution credit.
+The read-only bridge binds the current owned fresh task, original four-facet
+load-one/no-support requirement, current wallet, recalled scoped capacity, six
+ordered means and one unpaid preparation read. Each settled workflow projection
+binds all 510 exact windows; canonical binds one. Only common structural inputs
+are factored, never content eligibility, operands, costs or per-window nominees.
 
-The bridge preserves the four-facet demand and all old prefixes. No applicable
-recalled certificate or structurally sufficient alternative work mean is exposed;
-support is not permitted. No mean is selected. This is not full TD5 operand/cost
-admission, live choice, movement/use, fresh skill or parent acceptance.
+Current wallets remain 197,913/197,913 canonical and 175,815/175,815 workflow.
+No applicable recalled certificate or structurally sufficient alternative work
+mean is exposed; support is not permitted. No mean is selected. Comparison and
+intake receipts confer no preparation credit. Old prefixes and native state stay
+exact; no execution, history, reserve completion or new payment occurs.
 
-A prospective launcher-only boundary stopped before workflow mask 2, after mask 1
-finished normally. No stage was interrupted. The verified private checkpoint has
-97 manifest members plus the exact nested 40-member initial progress archive.
+The 226-member acceptance archive contains every exact method/result/log and
+projection/audit, final aggregate, separate operational freeze and exact nested
+97-member checkpoint/40-member initial progress. All members were verified.
+All owned children terminated; no new failure or interrupted stage occurred.
 
-Next: only workflow masks 2–15, restarted and cancelled; then all eight exact
-actual methods and the unchanged final aggregate. All 476 predecessor identities,
-forty final records and full independent audits remain mandatory. Preserve the
-boundary marker, use fresh invocation logs, and never rerun passing stages.
-Ownership is released; no substantive blocker. FT7–FT9 remain unfinished and all
-FT8 requirements remain unchanged. See the Record and Evidence Index.
+Next: separately registered full current TD5 operand/cost integration, route-free
+fresh skills/needed paid recall organization, new payment for changed inputs,
+genuine same-priority/native-cost distinct-element ties, autonomous history-only
+choice, chosen paid work/use and matched controls/full staging. This bridge is
+not any of those later gates. FT7–FT9 and all FT8 obligations remain unfinished.
+See the Record and Evidence Index.

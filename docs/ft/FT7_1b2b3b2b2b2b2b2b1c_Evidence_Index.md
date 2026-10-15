@@ -1,9 +1,24 @@
 # Current-window capacity bridge evidence
 
-Status: partial verification only; zero actual methods completed, no acceptance.
+Status: complete bounded acceptance; all eight exact actual methods, forty exact
+saved independent audits and unchanged final aggregate passed.
 Private retrieval identifiers are deliberately absent from this public index.
 
-## Current checkpoint
+## Complete acceptance
+
+Filename: FT7_1b2b3b2b2b2b2b2b1c_Current_Capacity_Acceptance_Evidence_20261015.zip
+
+SHA256: `90425d729251536e7e5e5a551d5e3f90aa354e94a991ca2a4d30f515bf10b44b`
+
+All 226 manifest members verified. Includes all forty projections and full
+independent audits, all eight exact method results/complete logs, 476 predecessor
+identities, final method/record indexes and aggregate, original 399-identity source
+freeze, separate three-identity operational freeze, closed operational logs,
+preflight and exact private companion bindings. Includes the exact 97-member
+checkpoint below and its nested forty-member initial progress archive. All 79
+prior output files remain byte-exact. No process or incomplete method is pending.
+
+## Preserved earlier checkpoint
 
 Filename: FT7_1b2b3b2b2b2b2b2b1c_Current_Capacity_Checkpoint_Evidence_20261015.zip
 
@@ -39,12 +54,14 @@ records against the exact durable bytes. The checkpoint rechecked all forty raw
 identities; it does not regenerate accepted comparison payments. Exact retrieval
 bindings are in PRIVATE_COMPANIONS.json inside the private evidence.
 
-## Continuation
+## Reproduction and next work
 
-Restore the exact checkpoint and lawful retained/prepared runtime; verify all
-manifest and frozen identities first. Do not retry denied dependency transfers.
-Preserve the workflow-mask-2 launcher marker as operational evidence. Invoke only
-the sixteen missing record stages with fresh separate logs, then the eight
-registered method stages and unchanged finish. Never rerun init into existing
-output, restart the original all-stage launcher, overwrite evidence, or infer
-gate acceptance from this partial record count.
+Verify the exact manifests and frozen identities in a lawful retained/prepared
+runtime. The accepted 45/79/81-member companions and all forty paid raw identities
+remain exact. Private retrieval bindings are inside the evidence, not public.
+Do not retry denied dependency transfers, regenerate accepted paid work or rerun
+passing stages/methods. Preserve the original launcher marker and all failures.
+
+Acceptance covers only the read-only current-capacity/preparation bridge. Full
+TD5 operand/cost admission, fresh skills, live tie-only history choice, chosen
+paid movement/use, matched controls and all parent FT7–FT9 gates remain pending.
