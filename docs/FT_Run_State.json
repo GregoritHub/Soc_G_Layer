@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft7-owned-alternatives-20261015T0647Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-15T07:35:00Z",
-  "expected_head": "1de860fa4a89c97fcd76082a982857e2004cda16",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "5d032e1af62417e69b9bbbe4c10f78701b3706c1",
   "current_batch": "FT7.1b2b3b2b2b1",
   "next_batch": "FT7.1b2b3b2b2b2: preregister complete current TD5 route/admission domain, genuine fresh paid priority/native-cost tie, new live history-caused tie-only policy, actual chosen paid movement/downstream use, matched feedback-off/history-removal controls and exact preparation/live-staging composition; then remaining FT7–FT9.",
   "completed_batches": [
@@ -275,7 +275,7 @@
     "prior_failed_attempts": 6
   },
   "latest_acceptance_record": "docs/ft/FT7_1b2b3b2b2b1_Record.md",
-  "latest_acceptance_commit": null,
+  "latest_acceptance_commit": "5d032e1af62417e69b9bbbe4c10f78701b3706c1",
   "engineering_continuation": {
     "batch": "FT7.1b2b3b",
     "accepted": false,
@@ -1215,14 +1215,21 @@
   "operand_domain_progress": {
     "batch": "FT7.1b2b3b2b2b1",
     "accepted": true,
-    "status": "accepted_checkpoint_saving",
+    "status": "accepted",
     "protocol_commit": "8dd19d301b9d11c825300402318f063911b4d0c5",
     "frozen_commit": "a1f97d2b3f0593c79ce1ca5484e92397717c7435",
     "canonical_alternatives": 22,
     "workflow_alternatives": 14,
     "execution_authorized": false,
     "scope": "Exact bounded operand expansion only; no TD5 admission, live history-caused choice or parent acceptance",
-    "bookkeeping_correction_commit": "1de860fa4a89c97fcd76082a982857e2004cda16"
+    "bookkeeping_correction_commit": "1de860fa4a89c97fcd76082a982857e2004cda16",
+    "acceptance_commit": "5d032e1af62417e69b9bbbe4c10f78701b3706c1",
+    "public_tree_verification": {
+      "commit": "5d032e1af62417e69b9bbbe4c10f78701b3706c1",
+      "blobs": 401,
+      "all_local_git_blob_identities_exact": true,
+      "no_paths_removed": true
+    }
   },
   "prior_ft7_1b2b3b2b2a_acceptance": {
     "batch": "FT7.1b2b3b2b2a",
