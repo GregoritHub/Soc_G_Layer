@@ -1,6 +1,8 @@
 # Soc G Layer
 
-Latest bounded progress, 15 October 2026 UTC: FT7.1b2b3b2b2b2b2a passed eight exact methods, 428 predecessor identities and eight independently audited saved role domains. Completed paid preparation exposes 1,728 canonical and 3,612 workflow assignments under the declared paid-observation grammar; absent roles, foreign material, unacquired procedures and native view rejections are retained. Before/partial states are empty and restart exact. All 341 frozen and prior 334 identities remain exact. No accepted paid work rerun or new failed gate. New role-dependent comparison remains unpaid; admission, live history choice, chosen movement and matched controls remain pending. FT7–FT9 are unfinished. See `docs/ft/FT7_1b2b3b2b2b2b2a_Record.md`.
+Latest bounded acceptance, 15 October 2026 UTC: FT7.1b2b3b2b2b2b2b1 passed eight exact methods, 436 predecessor identities and twelve independently audited saved records. The complete declared role product now has actual new paid comparison: 91,584 energy/time canonical and 99,330 workflow, retaining all 1,806 native workflow rejections. Partial/ready/cancelled states grant no result; settlement and restart are exact. All 357 frozen and 341 preceding identities remain exact. Three diagnosed failed attempts are preserved; no accepted paid work was rerun. This is not TD5 admission or live history-caused choice. Parent FT7–FT9 remain unfinished. See `docs/ft/FT7_1b2b3b2b2b2b2b1_Record.md`.
+
+Dated snapshots below are historical; this latest acceptance and the current run-state govern.
 
 Full Theory engine continuation. The repaired FT3 recovery gate passed on 12 October 2026: all 751 inherited method identities, 30 FT controls and both positive retention witnesses passed with unchanged source. See `docs/ft/Recovery_Record_20261012.md`.
 

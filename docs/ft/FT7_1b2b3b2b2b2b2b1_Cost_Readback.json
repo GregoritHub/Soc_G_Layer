@@ -1,0 +1,28 @@
+{
+  "batch": "FT7.1b2b3b2b2b2b2b1",
+  "source": "attempt4 exact saved native worlds; existing OperationStore.restore and current wallet heads, without engine command execution",
+  "units": ["energy", "time"],
+  "canonical": {
+    "assignments": 1728, "native_rejections": 0,
+    "required_unit_counts": {"63":576,"48":1152},
+    "valid_comparison_cost": 91584, "rejection_validation_cost": 0, "new_comparison_cost": 91584,
+    "wallets_each_unit": {"before":198149,"partial":198148,"ready":106565,"complete":106565},
+    "prior_original_comparison_cost":63, "prior_preparation_cost":2,
+    "original_comparison_plus_read_plus_new_comparison":91649
+  },
+  "workflow": {
+    "assignments": 3612, "native_rejections": 1806,
+    "required_unit_counts": {"54":1806,"1":1806},
+    "valid_comparison_cost": 97524, "rejection_validation_cost": 1806, "new_comparison_cost": 99330,
+    "wallets_each_unit": {"before":198098,"partial":198097,"ready":98768,"complete":98768},
+    "prior_original_comparison_cost":54, "prior_preparation_cost":2,
+    "original_comparison_plus_read_plus_new_comparison":99386
+  },
+  "rejection_charge": "One prospectively declared validation unit per rejected assignment; new engineering cost hypothesis, not a native successful comparison.",
+  "scope": "Actual comparison cost only. Native candidate effort remains an estimate; no movement/downstream work, full-route cost or matched-main-cost control is established.",
+  "snapshot_timing": "Comparison snapshots precede new aggregate debit; later admission must recheck wallet and oldest current demand.",
+  "execution_authorized": false,
+  "history_choice": false,
+  "td5_admitted": false,
+  "reserve_or_history_credit": false
+}

@@ -4,10 +4,10 @@
   "status": "running",
   "run_id": "ft7-role-paid-20261015T1037Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-15T12:45:38Z",
-  "expected_head": "fa66b86d06cc842e84b9064b1efb8e3e4e2b95ff",
+  "lease_expires_at": "2026-10-15T13:07:06Z",
+  "expected_head": "af09ba17987dc7889c77cda4462b638d771ab942",
   "current_batch": "FT7.1b2b3b2b2b2b2b1",
-  "next_batch": "FT7.1b2b3b2b2b2b2b: prospectively fixed route-free fresh task/skill work, newly paid role-dependent comparison, genuine same-priority/native-cost distinct-element ties, separately versioned live history-only choice, actual chosen movement/downstream use, matched feedback-off/history-removal and full staging composition/restart. Preserve older unresolved demand, TD5 and all FT8 denominators.",
+  "next_batch": "FT7.1b2b3b2b2b2b2b2 (planned, not preregistered): route-free fresh task/skill work, genuine same-priority/native-cost ties across actual distinct elements, separately versioned live history-only choice, actual chosen movement/downstream use, matched feedback-off/history-removal and full comparison/preparation/live-staging composition/restart. Preserve older unresolved demand/TD5; changed inputs require new proof and paid comparison; all FT8 denominators unchanged.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -58,7 +58,8 @@
     "FT7.1b2b3b2b2b1",
     "FT7.1b2b3b2b2b2a",
     "FT7.1b2b3b2b2b2b1",
-    "FT7.1b2b3b2b2b2b2a"
+    "FT7.1b2b3b2b2b2b2a",
+    "FT7.1b2b3b2b2b2b2b1"
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
@@ -128,43 +129,35 @@
     "standalone_ft9_release": false
   },
   "local_acceptance": {
-    "batch": "FT7.1b2b3b2b2b2b1",
+    "batch": "FT7.1b2b3b2b2b2b2b1",
     "passed": true,
-    "methods": 10,
+    "methods": 8,
     "failures": 0,
     "errors": 0,
-    "predecessor_identities": 418,
-    "saved_records": 8,
+    "predecessor_identities": 436,
+    "saved_records": 12,
     "typed_roundtrip_exact": true,
     "independent_audits": true,
     "source_unchanged": true,
-    "frozen_identities": 334,
-    "accepted_comparison_rerun": false,
-    "claim": "Actual comparison-to-preparation composition only; no live choice or parent acceptance",
-    "protocol_commit": "698d6d07005ab2550440b7057a32d7bc7ca3f7d3",
-    "frozen_commit": "7f34cd6aa0417dff694e2864734d7a7aca6f96c4",
-    "prior_327_identities_unchanged": true,
-    "new_failed_attempts": 0,
+    "frozen_identities": 357,
+    "accepted_paid_work_rerun": false,
+    "claim": "Paid complete declared role comparison only; no TD5 or live choice acceptance",
+    "protocol_commit": "c7dda21b29709b48aa1910c9be0218938c9153fe",
+    "frozen_commit": "a8dda4cbc291e5bad37d9af8ba50e6506f97fa7b",
+    "prior_341_identities_unchanged": true,
+    "failed_attempts_preserved": 3,
     "archive": {
-      "filename": "FT7_1b2b3b2b2b2b1_Compared_Preparation_Evidence_20261015.zip",
-      "bytes": 28262101,
-      "sha256": "0bfad01e984beadf4f6d9fbd733d62090ca1e19b8cb29d652ba481d19db97fcb",
-      "manifest_members": 22,
-      "all_members_verified": true,
-      "nested_source_members": 7
-    },
-    "clean_preparation": {
-      "passed": true,
-      "frozen_identities": 334,
-      "prior_identities": 327,
-      "bad": [],
-      "changed": [],
-      "manual_overlay": false,
-      "accepted_gate_rerun": false,
-      "sealed_baseline": 1093,
-      "historical_references": 210,
-      "repair_freeze": 20,
-      "recovery_members": 209
+      "filename": "FT7_1b2b3b2b2b2b2b1_Paid_Role_Comparison_Evidence_20261015.zip",
+      "bytes": 94899561,
+      "sha256": "18f404d5567e7477d1c9dd0a0b41c85dbe9d519dec9e35d5b4c44a3ef2a4713a",
+      "manifest_members": 61,
+      "nested_source_members": [
+        16,
+        7,
+        10,
+        13
+      ],
+      "all_members_verified": true
     }
   },
   "conditioning_release": {
@@ -295,13 +288,13 @@
     "source_publication": "verified",
     "prior_failed_attempts": 6
   },
-  "latest_acceptance_record": "docs/ft/FT7_1b2b3b2b2b2b2a_Record.md",
-  "latest_acceptance_commit": "c41545528ecb3b7c788737e804e08d3390f538b8",
+  "latest_acceptance_record": "docs/ft/FT7_1b2b3b2b2b2b2b1_Record.md",
+  "latest_acceptance_commit": null,
   "engineering_continuation": {
     "batch": "FT7.1b2b3b",
     "accepted": false,
-    "required_next": "FT7.1b2b3b2b2b2b2: complete owned role alternatives and fresh route-free task/skill panel, genuine same-priority/native-cost distinct-element tie, live history-caused selection, actual chosen movement/consumer, matched feedback-off/history-removal and full preparation/staging composition. Parent FT7/FT8/FT9 and all denominators unchanged.",
-    "scope": "Bounded proposals, paid comparison, operand/current admission, paid preparation and live outcome staging accepted in recorded scopes. Comparison-to-preparation now composes exactly; full role domain, actual autonomous history-caused choice, movement/consumer and matched controls remain mandatory.",
+    "required_next": "FT7.1b2b3b2b2b2b2b2 (planned, not preregistered): route-free fresh task/skill work, genuine same-priority/native-cost ties across actual distinct elements, separately versioned live history-only choice, actual chosen movement/downstream use, matched feedback-off/history-removal and full comparison/preparation/live-staging composition/restart. Preserve older unresolved demand/TD5; changed inputs require new proof and paid comparison; all FT8 denominators unchanged.",
+    "scope": "Declared paid-observation role domain and actual complete role-dependent comparison accepted in recorded scopes, with immutable old source/history prefixes. Current capacity-request TD5 integration, genuine owned distinct-element tie, live history-caused choice and chosen paid movement/consumer with matched controls remain mandatory. Parent FT7-FT9 unfinished.",
     "permission": "Technical coding, testing, diagnosis, lawful repairs and retries through FT9 belong to the agent without renewed user approval. Preserve criteria except the explicitly approved comparison amendment; FT8 unchanged."
   },
   "prior_comparison_hold": {
@@ -327,7 +320,8 @@
     "FT7.1b2b3b2b2",
     "FT7.1b2b3b2b2b",
     "FT7.1b2b3b2b2b2b2",
-    "FT7.1b2b3b2b2b2b2b"
+    "FT7.1b2b3b2b2b2b2b",
+    "FT7.1b2b3b2b2b2b2b2"
   ],
   "prior_ft7_1b2b2b_acceptance": {
     "passed": true,
@@ -1457,8 +1451,8 @@
   },
   "paid_role_progress": {
     "batch": "FT7.1b2b3b2b2b2b2b1",
-    "status": "attempt4_running",
-    "accepted": false,
+    "status": "accepted",
+    "accepted": true,
     "protocol_commit": "c7dda21b29709b48aa1910c9be0218938c9153fe",
     "prior_identities": 341,
     "amendment_commit": "701ec4bddd57a0e965f46108ea3e9a85de21339e",
@@ -1471,7 +1465,72 @@
     "attempt3_canonical_saved_audits": 6,
     "frozen_commit": "a8dda4cbc291e5bad37d9af8ba50e6506f97fa7b",
     "attempt4_saved_audits": 12,
-    "attempt4_stage": "all twelve records independently audited; exact eight-method suite running",
-    "attempt4_methods_passed_so_far": 1
-  }
+    "attempt4_stage": "complete bounded gate passed",
+    "attempt4_methods_passed_so_far": 8,
+    "methods": 8,
+    "saved_records": 12,
+    "predecessor_identities": 436,
+    "frozen_identities": 357,
+    "source_unchanged": true,
+    "accepted_paid_work_rerun": false,
+    "comparison_paid": true,
+    "execution_authorized": false,
+    "td5_admitted": false,
+    "history_choice": false,
+    "archive": {
+      "filename": "FT7_1b2b3b2b2b2b2b1_Paid_Role_Comparison_Evidence_20261015.zip",
+      "bytes": 94899561,
+      "sha256": "18f404d5567e7477d1c9dd0a0b41c85dbe9d519dec9e35d5b4c44a3ef2a4713a",
+      "manifest_members": 61,
+      "nested_source_members": [
+        16,
+        7,
+        10,
+        13
+      ],
+      "all_members_verified": true
+    },
+    "scope": "Paid complete declared role comparison only; no TD5 or live choice acceptance"
+  },
+  "prior_compared_preparation_local_acceptance": {
+    "batch": "FT7.1b2b3b2b2b2b1",
+    "passed": true,
+    "methods": 10,
+    "failures": 0,
+    "errors": 0,
+    "predecessor_identities": 418,
+    "saved_records": 8,
+    "typed_roundtrip_exact": true,
+    "independent_audits": true,
+    "source_unchanged": true,
+    "frozen_identities": 334,
+    "accepted_comparison_rerun": false,
+    "claim": "Actual comparison-to-preparation composition only; no live choice or parent acceptance",
+    "protocol_commit": "698d6d07005ab2550440b7057a32d7bc7ca3f7d3",
+    "frozen_commit": "7f34cd6aa0417dff694e2864734d7a7aca6f96c4",
+    "prior_327_identities_unchanged": true,
+    "new_failed_attempts": 0,
+    "archive": {
+      "filename": "FT7_1b2b3b2b2b2b1_Compared_Preparation_Evidence_20261015.zip",
+      "bytes": 28262101,
+      "sha256": "0bfad01e984beadf4f6d9fbd733d62090ca1e19b8cb29d652ba481d19db97fcb",
+      "manifest_members": 22,
+      "all_members_verified": true,
+      "nested_source_members": 7
+    },
+    "clean_preparation": {
+      "passed": true,
+      "frozen_identities": 334,
+      "prior_identities": 327,
+      "bad": [],
+      "changed": [],
+      "manual_overlay": false,
+      "accepted_gate_rerun": false,
+      "sealed_baseline": 1093,
+      "historical_references": 210,
+      "repair_freeze": 20,
+      "recovery_members": 209
+    }
+  },
+  "prior_role_domain_acceptance_commit": "c41545528ecb3b7c788737e804e08d3390f538b8"
 }

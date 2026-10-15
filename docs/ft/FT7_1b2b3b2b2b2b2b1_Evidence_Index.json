@@ -1,0 +1,279 @@
+{
+  "batch": "FT7.1b2b3b2b2b2b2b1",
+  "protocol_commit": "c7dda21b29709b48aa1910c9be0218938c9153fe",
+  "frozen_commit": "a8dda4cbc291e5bad37d9af8ba50e6506f97fa7b",
+  "input": {
+    "filename": "FT7_1b2b3b2b2b2b2a_Owned_Role_Evidence_20261015.zip",
+    "sha256": "9368bb8dabc0d824113b977a4a050d304fa407d09f90de5e47157516c4fc1b8d",
+    "manifest_members": 20,
+    "nested_source_members": 7,
+    "all_members_verified": true
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "failed",
+      "frozen_commit": "8364c31c3096175db45bc7345a13aa04ac05ec4e",
+      "valid_saved_records": 0,
+      "method_bodies": 0,
+      "cause": "Before-record outer codec rejected descriptive containers; incomplete output preserved."
+    },
+    {
+      "attempt": 2,
+      "status": "failed",
+      "frozen_commit": "7e05d38b59a740facdcf83dd6d6f1b2a602d3dae",
+      "valid_saved_records": 3,
+      "method_bodies": 0,
+      "cause": "Canonical paid ready; settlement failed for omitted primitive field. No receipt."
+    },
+    {
+      "attempt": 3,
+      "status": "failed",
+      "frozen_commit": "c80f5a357d9b3b4cb9f359b3880b6f14b7f4fa51",
+      "valid_saved_records": 6,
+      "method_bodies": 0,
+      "cause": "All canonical records audited; workflow native Definition unsupported by descriptive snapshot codec before workflow work."
+    },
+    {
+      "attempt": 4,
+      "status": "passed",
+      "frozen_commit": "a8dda4cbc291e5bad37d9af8ba50e6506f97fa7b",
+      "valid_saved_records": 12,
+      "method_bodies": 8,
+      "predecessor_identities": 436
+    }
+  ],
+  "retrieval": "Private evidence attachment named above; authenticated retrieval pointer is in the continuation task, never public metadata.",
+  "reproduce": "See paid-role-reproduction.txt in the archive. Restore exact accepted role-domain attempt1; no accepted prerequisite paid work rerun.",
+  "archive": {
+    "filename": "FT7_1b2b3b2b2b2b2b1_Paid_Role_Comparison_Evidence_20261015.zip",
+    "bytes": 94899561,
+    "sha256": "18f404d5567e7477d1c9dd0a0b41c85dbe9d519dec9e35d5b4c44a3ef2a4713a",
+    "manifest_members": 61,
+    "nested_source_members": [
+      16,
+      7,
+      10,
+      13
+    ],
+    "all_members_verified": true
+  },
+  "actual_methods": [
+    "tests_ft7.test_paid_role_comparison.PaidRoleComparisonTests.test_cancel_no_refund",
+    "tests_ft7.test_paid_role_comparison.PaidRoleComparisonTests.test_exact_native_debits",
+    "tests_ft7.test_paid_role_comparison.PaidRoleComparisonTests.test_exact_restart_and_idempotence",
+    "tests_ft7.test_paid_role_comparison.PaidRoleComparisonTests.test_forged_result_rejected",
+    "tests_ft7.test_paid_role_comparison.PaidRoleComparisonTests.test_full_paid_domain",
+    "tests_ft7.test_paid_role_comparison.PaidRoleComparisonTests.test_partial_and_ready_no_result",
+    "tests_ft7.test_paid_role_comparison.PaidRoleComparisonTests.test_protected_evidence",
+    "tests_ft7.test_paid_role_comparison.PaidRoleComparisonTests.test_wrong_pair_and_unsettled"
+  ],
+  "records": [
+    {
+      "key": "canonical/before",
+      "file": "paid-role-attempt4/records/canonical-before.json.gz",
+      "sha256": "c58cbf452576573b1487eac32aea5852d64367bc6ef8c32ef3a3e611c34fddb3",
+      "input_sha256": "1dc107ea1f92d85b01c0e52a7d7d2afc545a437d4975f0b9890515d10d51350c"
+    },
+    {
+      "key": "canonical/partial",
+      "file": "paid-role-attempt4/records/canonical-partial.json.gz",
+      "sha256": "b781eabd0b77c649ef98986940224a501b73989341b9b46a0e4ae69b1f99fca8",
+      "input_sha256": "1dc107ea1f92d85b01c0e52a7d7d2afc545a437d4975f0b9890515d10d51350c"
+    },
+    {
+      "key": "canonical/ready",
+      "file": "paid-role-attempt4/records/canonical-ready.json.gz",
+      "sha256": "1484e12be2007567d50ae27f9c528edcb588ca3ac47f02bd28271f4f84e1674b",
+      "input_sha256": "1dc107ea1f92d85b01c0e52a7d7d2afc545a437d4975f0b9890515d10d51350c"
+    },
+    {
+      "key": "canonical/complete",
+      "file": "paid-role-attempt4/records/canonical-complete.json.gz",
+      "sha256": "76fd70ca72e3ff2b3ea530f50b80409dba9e6814149093b2903fcebb7a297165",
+      "input_sha256": "1dc107ea1f92d85b01c0e52a7d7d2afc545a437d4975f0b9890515d10d51350c"
+    },
+    {
+      "key": "canonical/restarted",
+      "file": "paid-role-attempt4/records/canonical-restarted.json.gz",
+      "sha256": "646f97ae5167f9ea9bc01de611bf433e6750d4047b52617b60b526ad12875534",
+      "input_sha256": "1dc107ea1f92d85b01c0e52a7d7d2afc545a437d4975f0b9890515d10d51350c"
+    },
+    {
+      "key": "canonical/cancelled",
+      "file": "paid-role-attempt4/records/canonical-cancelled.json.gz",
+      "sha256": "8fe643989279dab7af2d7fe81347a10737bf4ec8dd9eee1c03650b05ed1e1e7a",
+      "input_sha256": "1dc107ea1f92d85b01c0e52a7d7d2afc545a437d4975f0b9890515d10d51350c"
+    },
+    {
+      "key": "workflow/before",
+      "file": "paid-role-attempt4/records/workflow-before.json.gz",
+      "sha256": "40f1affb13f01f62bd5935117eb9e60872ceb4af54e6e63fac8fb90b69666e69",
+      "input_sha256": "593a9f10dd2db98cfc8499ef42ab28ce33662d3f760071d9cde88c828bd1456f"
+    },
+    {
+      "key": "workflow/partial",
+      "file": "paid-role-attempt4/records/workflow-partial.json.gz",
+      "sha256": "a19ab2b3566f4532b2f5eb8fb144450859db2338addb231f398288cf96579092",
+      "input_sha256": "593a9f10dd2db98cfc8499ef42ab28ce33662d3f760071d9cde88c828bd1456f"
+    },
+    {
+      "key": "workflow/ready",
+      "file": "paid-role-attempt4/records/workflow-ready.json.gz",
+      "sha256": "cf266a07c66a619118c2e5777bff1b9143743e79400c66e94ae290f2a0303852",
+      "input_sha256": "593a9f10dd2db98cfc8499ef42ab28ce33662d3f760071d9cde88c828bd1456f"
+    },
+    {
+      "key": "workflow/complete",
+      "file": "paid-role-attempt4/records/workflow-complete.json.gz",
+      "sha256": "6a72b4093a6f5e4b20e99a717ec6e23e75c550e706d6804d08a47314a8d02f7f",
+      "input_sha256": "593a9f10dd2db98cfc8499ef42ab28ce33662d3f760071d9cde88c828bd1456f"
+    },
+    {
+      "key": "workflow/restarted",
+      "file": "paid-role-attempt4/records/workflow-restarted.json.gz",
+      "sha256": "d4ea1ce7171d8a8380bdd68e7c121c58990bb496700d8e23d9be3a1f099d0da2",
+      "input_sha256": "593a9f10dd2db98cfc8499ef42ab28ce33662d3f760071d9cde88c828bd1456f"
+    },
+    {
+      "key": "workflow/cancelled",
+      "file": "paid-role-attempt4/records/workflow-cancelled.json.gz",
+      "sha256": "d602fe14d327f956b40bd6ed350c1cc31a438332f46e2d4203b8ef77743296ff",
+      "input_sha256": "593a9f10dd2db98cfc8499ef42ab28ce33662d3f760071d9cde88c828bd1456f"
+    }
+  ],
+  "audits": {
+    "canonical/before": {
+      "passed": true,
+      "status": "before",
+      "assignments": 1728,
+      "rejected": 0,
+      "required": 91584,
+      "spent": 0,
+      "receipts": 0,
+      "execution_authorized": false,
+      "history_choice": false
+    },
+    "canonical/partial": {
+      "passed": true,
+      "status": "partial",
+      "assignments": 1728,
+      "rejected": 0,
+      "required": 91584,
+      "spent": 1,
+      "receipts": 0,
+      "execution_authorized": false,
+      "history_choice": false
+    },
+    "canonical/ready": {
+      "passed": true,
+      "status": "ready",
+      "assignments": 1728,
+      "rejected": 0,
+      "required": 91584,
+      "spent": 91584,
+      "receipts": 0,
+      "execution_authorized": false,
+      "history_choice": false
+    },
+    "canonical/complete": {
+      "passed": true,
+      "status": "succeeded",
+      "assignments": 1728,
+      "rejected": 0,
+      "required": 91584,
+      "spent": 91584,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false
+    },
+    "canonical/restarted": {
+      "passed": true,
+      "status": "succeeded",
+      "assignments": 1728,
+      "rejected": 0,
+      "required": 91584,
+      "spent": 91584,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false
+    },
+    "canonical/cancelled": {
+      "passed": true,
+      "status": "cancelled",
+      "assignments": 1728,
+      "rejected": 0,
+      "required": 91584,
+      "spent": 1,
+      "receipts": 0,
+      "execution_authorized": false,
+      "history_choice": false
+    },
+    "workflow/before": {
+      "passed": true,
+      "status": "before",
+      "assignments": 3612,
+      "rejected": 1806,
+      "required": 99330,
+      "spent": 0,
+      "receipts": 0,
+      "execution_authorized": false,
+      "history_choice": false
+    },
+    "workflow/partial": {
+      "passed": true,
+      "status": "partial",
+      "assignments": 3612,
+      "rejected": 1806,
+      "required": 99330,
+      "spent": 1,
+      "receipts": 0,
+      "execution_authorized": false,
+      "history_choice": false
+    },
+    "workflow/ready": {
+      "passed": true,
+      "status": "ready",
+      "assignments": 3612,
+      "rejected": 1806,
+      "required": 99330,
+      "spent": 99330,
+      "receipts": 0,
+      "execution_authorized": false,
+      "history_choice": false
+    },
+    "workflow/complete": {
+      "passed": true,
+      "status": "succeeded",
+      "assignments": 3612,
+      "rejected": 1806,
+      "required": 99330,
+      "spent": 99330,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false
+    },
+    "workflow/restarted": {
+      "passed": true,
+      "status": "succeeded",
+      "assignments": 3612,
+      "rejected": 1806,
+      "required": 99330,
+      "spent": 99330,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false
+    },
+    "workflow/cancelled": {
+      "passed": true,
+      "status": "cancelled",
+      "assignments": 3612,
+      "rejected": 1806,
+      "required": 99330,
+      "spent": 1,
+      "receipts": 0,
+      "execution_authorized": false,
+      "history_choice": false
+    }
+  }
+}
