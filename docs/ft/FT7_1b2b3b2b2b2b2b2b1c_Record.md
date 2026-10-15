@@ -39,3 +39,21 @@ This bridge is not full TD5 operand/cost admission or execution authority.
 No fresh skill, distinct-element tie, history-only choice, chosen movement/use,
 matched feedback control, full staging or parent FT7–FT9 acceptance follows.
 Every remaining FT8 denominator and matched-main-cost obligation is unchanged.
+
+## Bounded progress checkpoint
+
+Eight exact canonical projections passed typed roundtrip and full independent
+native/source/intake/domain/payment/capacity audits: before, partial, ready and
+settled masks 1–5. The settled cases honestly report no applicable recalled
+capacity (not recalled/outside trained bounds), insufficient structural
+dimensionality and no allowed consenting support. No route is selected; current
+wallet is 197,913/197,913 and one preparation read remains unpaid. This is a
+measured capacity limitation, not permission to lower the inherited demand.
+
+Exact closed logs, records and new frozen source are privately preserved in
+FT7_1b2b3b2b2b2b2b2b1c_Current_Capacity_Progress_Evidence_20261015.zip,
+SHA256 d682b2207bf9571dbad22efba3196b76c32cf35a9dab5c027f6ba0960db261de.
+All 40 manifest members were verified. The archive requires the exact accepted
+input companions and excludes running logs. It was uploaded once; private
+retrieval identifiers are not public. Remaining stages continue serially, with
+zero actual method bodies completed and no gate acceptance claimed.
