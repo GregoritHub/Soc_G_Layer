@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft7-window-payment-20261015T163521000Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-15T19:24:00.000Z",
-  "expected_head": "7aeef6b5498d870218112d09862f8b9e69d69600",
+  "lease_expires_at": "2026-10-15T19:37:32.000Z",
+  "expected_head": "706b9d2a68c173ce3af18e4fb4a0fae9cf9e74cd",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1b",
   "next_batch": "Complete frozen FT7.1b2b3b2b2b2b2b2b1b evaluation and independent saved audits; then separately preregister current TD5/capacity integration and route-free skill work. All FT8 obligations unchanged.",
   "completed_batches": [
@@ -1738,12 +1738,14 @@
     "predecessor_identities": 468,
     "accepted_paid_work_rerun": false,
     "audited_records_at_checkpoint": 40,
-    "methods_executed_at_checkpoint": 4,
+    "methods_executed_at_checkpoint": 6,
     "methods_passed_at_checkpoint": [
       "test_exact_full_panel",
       "test_exact_partial_restart",
       "test_no_early_receipt",
-      "test_cancel_and_terminal_idempotence"
+      "test_cancel_and_terminal_idempotence",
+      "test_forged_source_and_domain_rejected",
+      "test_protected_result_and_forged_extent"
     ],
     "original_attempt": "Execution session lost after 32 exact independently audited records; no logged traceback or final gate summary; zero actual test methods. Exact cause not established. All raw/source/log preserved; unsaved mask-8 state unverified.",
     "continuation_amendment_commit": "3c54668e93b2ec8d5ebfb42bb83d823cf89accc8",
@@ -1753,7 +1755,7 @@
     "isolated_method_protocol_commit": "7aeef6b5498d870218112d09862f8b9e69d69600",
     "isolated_method_protocol_sha256": "a2bc3b282cfec72eec331d325774169da51121b38ce969bf639c903cf3c4d240",
     "isolated_methods_running": ["test_full_native_payment", "test_no_admission_or_history_authority"],
-    "isolation": "Two fresh output copies, each matching all 52 immutable evidence files. Each runs one unchanged original method through the original frozen continuation tool. Existing serial queue retains the forged-source and protected-result controls. Exact merge and unchanged aggregate gate remain required; no runtime/test edits or new paid branch.",
+    "isolation": "Two fresh output copies, each matching all 52 immutable evidence files. Each runs one unchanged original method through the original frozen continuation tool. The serial queue completed both remaining adversarial controls, bringing the completed total to six. Exact merge and unchanged aggregate gate remain required; no runtime/test edits or new paid branch.",
     "continuation_evidence": {
       "file": "FT7_1b2b3b2b2b2b2b2b1b_Paid_Window_Continuation_Evidence_20261015.zip",
       "sha256": "23b64825003f50a22ba0072e48e7f94b3f2c6c5f70201cde516d8812b811a470",

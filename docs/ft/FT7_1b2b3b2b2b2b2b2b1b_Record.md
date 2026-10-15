@@ -117,3 +117,10 @@ It includes all forty exact raw records, eight completed continuation stage
 reports, four passing actual method results, and the isolated-method protocol.
 Still-running method logs/results are deliberately excluded from this
 immutable checkpoint. It was uploaded once, without altering any prior archive.
+
+At 19:07 UTC the serial queue completed successfully: forged source/domain
+and protected-result/forged-extent methods both passed, for six completed
+actual methods in total. The two isolated all-mask methods remain running;
+their completion, exact merge and unchanged final aggregate remain required.
+The existing continuation archive still contains its original four passes;
+later results will be preserved separately without overwriting that archive.
