@@ -1,0 +1,10 @@
+{
+  "batch": "FT7.1b2b2b",
+  "version": "exact-native-access-reader-v1",
+  "failed_attempt": 5,
+  "methods": 0,
+  "saved_records": 0,
+  "diagnosis": "The organization audit used the generic situated access reader, but the saved native access checkpoint uses the unchanged U4 NativeAccess schema. Paid mutable organization completed; restore audit failed before method bodies.",
+  "correction": "Read the exact saved NativeAccess schema through NativeAccess.restore, the owned-access projection/replay reader; no selector, scheduler or operation executor is used by the independent auditor. Preserve exact qualified snapshot, all cue-only revision checks and the 32-visit independent eligibility reconstruction.",
+  "gate": "14 exact methods, 24 exact saved records, 338 predecessors; all native source and accepted source identities unchanged. Preserve attempts 1 through 5."
+}
