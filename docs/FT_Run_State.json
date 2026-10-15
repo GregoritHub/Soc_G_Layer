@@ -5,9 +5,9 @@
   "run_id": "ft-role-domain-20261015T0936-7c12",
   "active_worker": true,
   "lease_expires_at": "2026-10-15T10:23:00Z",
-  "expected_head": "ad5b60cac57317bb51194659847f2796497e51c9",
+  "expected_head": "cec9525ce6620db84ab862eb833269cb15bfcd25",
   "current_batch": "FT7.1b2b3b2b2b2b2a",
-  "next_batch": "FT7.1b2b3b2b2b2b2: complete owned role alternatives and fresh route-free task/skill panel, genuine same-priority/native-cost distinct-element tie, live history-caused selection, actual chosen movement/consumer, matched feedback-off/history-removal and full preparation/staging composition. Parent FT7/FT8/FT9 and all denominators unchanged.",
+  "next_batch": "FT7.1b2b3b2b2b2b2b: prospectively fixed route-free fresh task/skill work, newly paid role-dependent comparison, genuine same-priority/native-cost distinct-element ties, separately versioned live history-only choice, actual chosen movement/downstream use, matched feedback-off/history-removal and full staging composition/restart. Preserve older unresolved demand, TD5 and all FT8 denominators.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -57,11 +57,12 @@
     "FT7.1b2b3b2b2a",
     "FT7.1b2b3b2b2b1",
     "FT7.1b2b3b2b2b2a",
-    "FT7.1b2b3b2b2b2b1"
+    "FT7.1b2b3b2b2b2b1",
+    "FT7.1b2b3b2b2b2b2a"
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT7_1b2b3b2b2b2b1_Record.md",
+  "latest_record": "docs/ft/FT7_1b2b3b2b2b2b2a_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
@@ -116,7 +117,8 @@
     "FT7.1b2b3b2b2a",
     "FT7.1b2b3b2b2b1",
     "FT7.1b2b3b2b2b2a",
-    "FT7.1b2b3b2b2b2b1"
+    "FT7.1b2b3b2b2b2b1",
+    "FT7.1b2b3b2b2b2b2a"
   ],
   "publication": {
     "mode": "read-only pinned dependencies plus new development",
@@ -292,8 +294,8 @@
     "source_publication": "verified",
     "prior_failed_attempts": 6
   },
-  "latest_acceptance_record": "docs/ft/FT7_1b2b3b2b2b2b1_Record.md",
-  "latest_acceptance_commit": "18316840e6791fb751b40bcb1c664054ba421938",
+  "latest_acceptance_record": "docs/ft/FT7_1b2b3b2b2b2b2a_Record.md",
+  "latest_acceptance_commit": null,
   "engineering_continuation": {
     "batch": "FT7.1b2b3b",
     "accepted": false,
@@ -323,7 +325,8 @@
     "FT7.1b2b3b2b",
     "FT7.1b2b3b2b2",
     "FT7.1b2b3b2b2b",
-    "FT7.1b2b3b2b2b2b2"
+    "FT7.1b2b3b2b2b2b2",
+    "FT7.1b2b3b2b2b2b2b"
   ],
   "prior_ft7_1b2b2b_acceptance": {
     "passed": true,
@@ -1395,12 +1398,52 @@
     }
   },
   "role_domain_progress": {
-    "status": "frozen_gate_running",
+    "batch": "FT7.1b2b3b2b2b2b2a",
+    "accepted": true,
+    "status": "accepted",
     "protocol_commit": "013a5c1c9d68cf7888e37fb7174a15f9933b4988",
-    "freeze_commit": "ad5b60cac57317bb51194659847f2796497e51c9",
-    "record_count": 8,
-    "registered_methods": 8,
+    "frozen_commit": "ad5b60cac57317bb51194659847f2796497e51c9",
+    "methods": 8,
+    "saved_records": 8,
     "predecessor_identities": 428,
-    "claim": "Paid-observation role domain only; no new comparison payment, admission, movement or history choice"
+    "frozen_identities": 341,
+    "accepted_paid_work_rerun": false,
+    "assignments": {
+      "canonical": 1728,
+      "workflow": 3612
+    },
+    "native_view_rejections": {
+      "canonical": 0,
+      "workflow": 1806
+    },
+    "comparison_paid": false,
+    "execution_authorized": false,
+    "history_choice": false,
+    "scope": "Declared explicit-paid-observation role grammar only; no live choice or parent acceptance"
+  },
+  "prior_ft7_1b2b3b2b2b2b1_acceptance": {
+    "batch": "FT7.1b2b3b2b2b2b1",
+    "accepted": true,
+    "status": "accepted",
+    "protocol_commit": "698d6d07005ab2550440b7057a32d7bc7ca3f7d3",
+    "frozen_commit": "7f34cd6aa0417dff694e2864734d7a7aca6f96c4",
+    "methods": 10,
+    "saved_records": 8,
+    "predecessor_identities": 418,
+    "comparison_rerun": false,
+    "preparation_cost": {
+      "energy": 2,
+      "time": 2
+    },
+    "execution_authorized": false,
+    "history_choice": false,
+    "scope": "Actual comparison-to-preparation composition only; no live choice or parent acceptance",
+    "acceptance_commit": "18316840e6791fb751b40bcb1c664054ba421938",
+    "public_tree_verification": {
+      "commit": "18316840e6791fb751b40bcb1c664054ba421938",
+      "blobs": 423,
+      "all_local_git_blob_identities_exact": true,
+      "no_paths_removed": true
+    }
   }
 }
