@@ -1,0 +1,48 @@
+{
+  "batch": "FT7.1b2b3a",
+  "parent": "FT7.1b2b3 remains unaccepted until real tie-only later owned choice and paid reserve preparation gates pass",
+  "version": "immutable-post-social-reserve-history-binding-v1",
+  "authorization": "Standing technical repair and continuation authority, 14 October 2026",
+  "input": {
+    "batch": "FT7.1b2b2b",
+    "acceptance_commit": "e5162597018672e39e4565fad27c64e2ed78a18d",
+    "records": 24,
+    "aggregate_payload_sha256": "7828ae5340448d039b2af11d07006696759538389731d5164b45352766651969",
+    "archive_sha256": "3114e31cab6490dbb7a87a7fb10e592d570e4b9e6f2b95a51cb6b2b1fc060616"
+  },
+  "scope": [
+    "Restore the exact original supported social completion reserve/load-v1 and history/success-v1 ledgers. Never regenerate an old native wrapper against a newer checkpoint. Preserve all old events and chain hashes as an exact prefix.",
+    "Observe exact paid native journal extension with four contiguous windows: preparation through first response start as rehearsal; each of the two completed independent training episodes from actual response to successful independent practice as independent; subsequent closure/requalification/organization/later preparation as rehearsal; later owned route/consumer as independent only after actual successful downstream settlement. Deferral is failed, unfinished later work is rehearsal and grants no independent credit. Omit zero-length windows, never omit paid-use deltas.",
+    "Bind two distinct native independently successful practice episodes at unchanged original load to reserve admissions/completions. Their preparation formula must remain exact. Bind one later admission at owned route inventory, unchanged demand load; complete only on actual successful movement and downstream consumer. Pure deferral and partial work have no interruption or completion debit, no replenishment or supplied preparation receipt. Preserve any unmet preparation debt.",
+    "Exact receipts identify actual operation versions, positive required/completed/spent native work, actor, timestamps and independently observed practice independence; original native state and resource costs never change.",
+    "Independently audit all source native prefixes and reuse records, all history deltas/semantic tags, reserve formulas, event prefixes and source pairing. No controller/selector/executor imported by the new independent auditor.",
+    "This subgate adds an exact prospective accounting observer over already committed paid evidence. It does not establish choice causality, satisfy reserve preparation obligations through labels, or complete the FT7 parent. FT7.1b2b3b must execute real later owned ties and payment controls. FT8 matched-main-cost requirements and all denominators remain intact."
+  ],
+  "window_policy": "Each completed native response-content-observation-practice episode is one independent outcome; other preparation is conservatively rehearsal. Existing score cap8, recent window32, reserve capacity8, defaultinitial4, TIM and dimensionality unchanged.",
+  "registered_tests": [
+    "test_exact_immutable_social_prefix",
+    "test_two_independent_practices_bind_debits",
+    "test_strict_deferral_grants_no_later_credit",
+    "test_harder_deferral_preserves_preparation_debt",
+    "test_partial_consumer_has_no_completion_debit",
+    "test_both_settings_roundtrip",
+    "test_forged_history_rejected",
+    "test_forged_reserve_rejected"
+  ],
+  "predecessor_identities": 352,
+  "saved_record_domain": "Exactly the 24 FT7.1b2b2b keys, preserved per-record source hashes and typed roundtrips",
+  "gate": {
+    "methods": 8,
+    "saved_records": 24,
+    "exact_predecessors": 352,
+    "source_unchanged": true,
+    "independent_full_audits": true,
+    "freeze_before_acceptance": true
+  },
+  "modules": [
+    "full_theory/social_feedback_binding.py",
+    "full_theory/social_feedback_binding_audit.py",
+    "tools/evaluate_ft7_1b2b3a.py"
+  ],
+  "tests": "tests_ft7/test_social_feedback_binding.py"
+}
