@@ -11,6 +11,8 @@ def freeze():
     prior=ROOT/'contracts/ft/FT7_1b2b3b2b2b2b2a_Source_Freeze_v1.json'
     names=set(json.loads(prior.read_text()))|{str(prior.relative_to(ROOT))}
     names.update(('contracts/ft/'+PREFIX+'_Protocol_v1.json','contracts/ft/'+PREFIX+'_Protocol_v1.sha256',
+        'contracts/ft/'+PREFIX+'_Amendment_v2.json','contracts/ft/'+PREFIX+'_Amendment_v2.sha256',
+        'contracts/ft/'+PREFIX+'_Source_Freeze_v1.json',
         'full_theory/paid_role_comparison.py','full_theory/paid_role_comparison_audit.py',
         'tests_ft7/test_paid_role_comparison.py','tools/evaluate_ft7_1b2b3b2b2b2b2b1.py'))
     return {n:digest(ROOT/n) for n in sorted(names)}
@@ -29,7 +31,7 @@ def predecessors():
 
 def main(original,out):
     from hle_unified import codec
-    from hle_unified.selection_records import loads
+    from hle_unified.selection_records import loads,dumps
     from full_theory.owned_role_domain_audit import audit_owned_role_domain
     from full_theory.paid_role_comparison import prepare_role_comparison,step_role_comparison
     from full_theory.paid_role_comparison_audit import reconstruct,audit_paid_roles
@@ -38,7 +40,7 @@ def main(original,out):
     from tests_ft7.test_paid_role_comparison import role_type
     from tools.evaluate_ft6_3b import ids
     out.mkdir(parents=True,exist_ok=False);(out/'records').mkdir()
-    before=freeze();registered=json.loads((ROOT/('contracts/ft/'+PREFIX+'_Source_Freeze_v1.json')).read_text())
+    before=freeze();registered=json.loads((ROOT/('contracts/ft/'+PREFIX+'_Source_Freeze_v2.json')).read_text())
     if before!=registered:raise ValueError('source freeze differs')
     prior=json.loads((ROOT/'contracts/ft/FT7_1b2b3b2b2b2b2a_Source_Freeze_v1.json').read_text())
     if any(before[n]!=h for n,h in prior.items()):raise ValueError('accepted source changed')
@@ -56,11 +58,11 @@ def main(original,out):
         del comparison,source;gc.collect()
         print(setting+': exact accepted input independently audited',flush=True)
         expected=reconstruct(old,row[10],row[9]);required=sum(x['required'] for x in expected)
-        e,r=prepare_role_comparison(old,row[10],row[9]);actor=loads(row[10])['request']['actor']
+        e,r=prepare_role_comparison(old,row[10],row[9],tuple(row[1:8]));actor=loads(row[10])['request']['actor']
         def save(stage,engine):
             key=setting+'/'+stage;native=engine.checkpoint()
             result=None if (actor,r.key) not in engine._jobs else engine.role_result(actor,r.key)
-            data=(key,native,expected,result);dest=out/'records'/(setting+'-'+stage+'.json.gz')
+            data=(key,native,dumps(expected),dumps(result));dest=out/'records'/(setting+'-'+stage+'.json.gz')
             with gzip.open(dest,'wt',encoding='ascii') as f:f.write(codec.dumps(data)+'\n')
             index.append(dict(key=key,file=str(dest.relative_to(out)),sha256=digest(dest),input_sha256=item['sha256']))
             (out/'record_index.json').write_text(json.dumps(index,indent=2)+'\n')

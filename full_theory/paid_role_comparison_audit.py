@@ -84,7 +84,13 @@ def audit_paid_roles(engine,old,roles,prepared):
         if index==0:
             require(kind=='start' and command[1]==key+':start' and len(command)==3,'exact start command')
             q=command[2]
-            require(type(q).__name__=='RoleComparisonRequest' and fields_of(q)==dict(key=key,roles=roles,prepared=prepared),'bound role request')
+            require(type(q).__name__=='RoleComparisonRequest' and set(fields_of(q))=={'key','roles','prepared','evidence'} and
+                (q.key,q.roles,q.prepared)==(key,roles,prepared) and type(q.evidence) is tuple and len(q.evidence)==7,
+                'bound role request and immutable source proof')
+            p=loads(prepared)
+            require(tuple(digest(x) for x in q.evidence)==tuple(p[n] for n in (
+                'source_native_sha256','source_sha256','binding_sha256','domain_sha256',
+                'comparison_native_sha256','operands_sha256','admission_sha256')),'all original source identities')
         elif kind=='advance':
             require(len(command)==5 and command[2:4]==(actor,key) and type(command[4]) is int and command[4]>0,'exact advance domain')
             current=attrs(next(v for v in txs[len(before)+index-1].versions if v.ref.identity==address('u4.operation',actor,key).identity))

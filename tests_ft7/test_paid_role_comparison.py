@@ -14,7 +14,9 @@ from tests_ft7.test_owned_paid_comparison import paid_type
 
 
 def role_type(setting):return PaidCanonicalRoleEngine if setting=='canonical' else PaidWorkflowRoleEngine
-def raw(setting,stage):return read_record(Path(os.environ['FT7_PAID_ROLES_OUTPUT'])/'records'/(setting+'-'+stage+'.json.gz'))
+def raw(setting,stage):
+    key,native,rows,result=read_record(Path(os.environ['FT7_PAID_ROLES_OUTPUT'])/'records'/(setting+'-'+stage+'.json.gz'))
+    return key,native,loads(rows),loads(result)
 def inputs(setting):return read_record(Path(os.environ['FT7_PAID_ROLES_INPUT'])/'records'/(setting+'-complete.json.gz'))
 
 
@@ -50,24 +52,29 @@ class PaidRoleComparisonTests(unittest.TestCase):
     def test_exact_restart_and_idempotence(self):
         for setting in ('canonical','workflow'):
             self.assertEqual(raw(setting,'complete')[1:],raw(setting,'restarted')[1:])
-            row=inputs(setting);r=RoleComparisonRequest('ft-role-comparison:'+digest(row[10]),row[10],row[9])
+            row=inputs(setting);r=RoleComparisonRequest('ft-role-comparison:'+digest(row[10]),row[10],row[9],tuple(row[1:8]))
             native=raw(setting,'complete')[1];e=role_type(setting).restore(native)
             step_role_comparison(e,r);step_role_comparison(e,r)
             self.assertEqual(e.checkpoint(),native)
 
     def test_protected_evidence(self):
-        row=inputs('canonical');old=paid_type('canonical').restore(row[8]);e,r=prepare_role_comparison(old,row[10],row[9])
+        row=inputs('canonical');old=paid_type('canonical').restore(row[8]);e,r=prepare_role_comparison(old,row[10],row[9],tuple(row[1:8]))
         actor=loads(row[10])['request']['actor'];ref=address('ftrc.result',actor,r.key)
         before=e.checkpoint()
         with self.assertRaises(ValueError):e.declare('forged-role-evidence',(record(ref,'Forged result',dict(payload='fake')),))
         self.assertEqual(before,e.checkpoint())
 
     def test_wrong_pair_and_unsettled(self):
-        row=inputs('canonical');old=paid_type('canonical').restore(row[8]);e,r=prepare_role_comparison(old,row[10],row[9])
+        row=inputs('canonical');old=paid_type('canonical').restore(row[8]);e,r=prepare_role_comparison(old,row[10],row[9],tuple(row[1:8]))
         forged=loads(row[10]);forged['native_sha256']='0'*64
         with self.assertRaises(ValueError):step_role_comparison(e,replace(r,roles=dumps(forged)))
+        for field in ('required','receipts'):
+            p=loads(row[9]);p[field]=0 if field=='required' else [dict(p['receipts'][0],energy=0)]
+            prepared=dumps(p);d=loads(row[10]);d['preparation_sha256']=digest(prepared);roles=dumps(d)
+            forged=RoleComparisonRequest('ft-role-comparison:'+digest(roles),roles,prepared,tuple(row[1:8]))
+            with self.assertRaises(ValueError):step_role_comparison(e,forged)
         partial=read_record(Path(os.environ['FT7_PAID_ROLES_INPUT'])/'records/canonical-partial.json.gz')
-        old=paid_type('canonical').restore(partial[8]);e,r=prepare_role_comparison(old,partial[10],partial[9])
+        old=paid_type('canonical').restore(partial[8]);e,r=prepare_role_comparison(old,partial[10],partial[9],tuple(partial[1:8]))
         with self.assertRaises(ValueError):step_role_comparison(e,r)
 
     def test_forged_result_rejected(self):

@@ -1,6 +1,7 @@
 """New paid role-domain comparison; never TD5 or movement authority."""
 from dataclasses import dataclass
 from hashlib import sha256
+from functools import lru_cache
 from hle.contracts import Record
 from hle_unified.selection_records import dumps, loads, fields_of
 from hle_unified.operation_records import OperationRequest
@@ -21,6 +22,25 @@ class RoleComparisonRequest(Record):
     key: str
     roles: str
     prepared: str
+    evidence: tuple
+
+
+@lru_cache(maxsize=2)
+def validate_source(native,roles,prepared,evidence,setting):
+    from hle_unified.selection_execution import SelectionEngine
+    from hle_unified.workflow_selection_execution import WorkflowFinalSelectionEngine
+    from .owned_role_domain_audit import audit_owned_role_domain
+    if type(evidence) is not tuple or len(evidence)!=7 or any(type(x) is not str for x in evidence):
+        raise ValueError('exact immutable source chain required')
+    cls=PaidCanonicalComparisonEngine if setting=='canonical' else PaidWorkflowComparisonEngine
+    native_cls=SelectionEngine if setting=='canonical' else WorkflowFinalSelectionEngine
+    old=cls.restore(native);comparison=cls.restore(evidence[4]);original=native_cls.restore(evidence[0])
+    audit_owned_role_domain(old,comparison,original,evidence[1],evidence[2],evidence[3],
+        evidence[5],evidence[6],prepared,roles)
+    p=loads(prepared)
+    if type(p['required']) is not int or p['required']<=0 or len(p['receipts'])!=p['required']:
+        raise ValueError('fully paid preparation required')
+    return True
 
 
 def ballot(engine, text):
@@ -68,6 +88,7 @@ class _RoleComparison:
         if type(request) is not RoleComparisonRequest:return super()._start(cid,request)
         d=loads(request.roles);p=loads(request.prepared);r=d['request'];actor=r['actor'];key=request.key
         native=seal(self.BASE_SCHEMA,unseal(self.checkpoint(),self.SCHEMA))
+        validate_source(native,request.roles,request.prepared,request.evidence,self.SETTING)
         view=self.participant_view(actor)
         audit_role_payload(view.snapshot,p['request'],self.SETTING,len(p['receipts'])==p['required'],
             request.roles,digest(native),digest(request.prepared),digest(view.bytes()))
@@ -137,9 +158,9 @@ class PaidWorkflowRoleEngine(_RoleComparison,PaidWorkflowComparisonEngine):
     def _registry():return {**PaidWorkflowComparisonEngine._registry(),'RoleComparisonRequest':RoleComparisonRequest}
 
 
-def prepare_role_comparison(engine,roles,prepared):
+def prepare_role_comparison(engine,roles,prepared,evidence):
     cls=PaidCanonicalRoleEngine if loads(roles)['setting']=='canonical' else PaidWorkflowRoleEngine
-    return cls.from_native(engine.checkpoint()),RoleComparisonRequest('ft-role-comparison:'+digest(roles),roles,prepared)
+    return cls.from_native(engine.checkpoint()),RoleComparisonRequest('ft-role-comparison:'+digest(roles),roles,prepared,evidence)
 
 
 def step_role_comparison(engine,request,*,work_limit=1,settle=True):
