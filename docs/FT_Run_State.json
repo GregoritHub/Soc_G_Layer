@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft7-role-paid-20261015T1037Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-15T13:07:06Z",
-  "expected_head": "af09ba17987dc7889c77cda4462b638d771ab942",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "e8852cdf7f849c3f00a601d6a682ebf4544a3f2b",
   "current_batch": "FT7.1b2b3b2b2b2b2b1",
   "next_batch": "FT7.1b2b3b2b2b2b2b2 (planned, not preregistered): route-free fresh task/skill work, genuine same-priority/native-cost ties across actual distinct elements, separately versioned live history-only choice, actual chosen movement/downstream use, matched feedback-off/history-removal and full comparison/preparation/live-staging composition/restart. Preserve older unresolved demand/TD5; changed inputs require new proof and paid comparison; all FT8 denominators unchanged.",
   "completed_batches": [
@@ -289,7 +289,7 @@
     "prior_failed_attempts": 6
   },
   "latest_acceptance_record": "docs/ft/FT7_1b2b3b2b2b2b2b1_Record.md",
-  "latest_acceptance_commit": null,
+  "latest_acceptance_commit": "e8852cdf7f849c3f00a601d6a682ebf4544a3f2b",
   "engineering_continuation": {
     "batch": "FT7.1b2b3b",
     "accepted": false,
@@ -1490,7 +1490,14 @@
       ],
       "all_members_verified": true
     },
-    "scope": "Paid complete declared role comparison only; no TD5 or live choice acceptance"
+    "scope": "Paid complete declared role comparison only; no TD5 or live choice acceptance",
+    "acceptance_commit": "e8852cdf7f849c3f00a601d6a682ebf4544a3f2b",
+    "public_tree_verification": {
+      "commit": "e8852cdf7f849c3f00a601d6a682ebf4544a3f2b",
+      "blobs": 454,
+      "all_local_git_blob_identities_exact": true,
+      "no_paths_removed": true
+    }
   },
   "prior_compared_preparation_local_acceptance": {
     "batch": "FT7.1b2b3b2b2b2b1",
