@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "held",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "470f5044bd94cc7f02cc47c9b73b0fb401290996",
+  "status": "running",
+  "run_id": "ft71-approved-comparison-20261015",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-15T00:53:35.070Z",
+  "expected_head": "0d56002ad84a810b11fb68685f44a366ea0d330b",
   "current_batch": "FT7.1b2b2b",
   "next_batch": "Await explicit FT7.1b2b2b registered-comparison ruling; do not repeat the incompatible gate",
   "completed_batches": [
