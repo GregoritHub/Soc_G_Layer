@@ -1,0 +1,12 @@
+{
+  "batch": "FT7.1b2b3b2b2a",
+  "version": 1,
+  "failed_freeze": "981e1df860a1fc74d9eb53c07a08826b638612b3",
+  "attempt": 3,
+  "method_bodies": 0,
+  "saved_records": 10,
+  "audited_records": 9,
+  "diagnosis": "Inherited WorkflowEngine._event appends workflow_tick equal to Account.at.tick; the new exact-event auditor omitted that required inherited field. Actual saved workflow comparison succeeded at 54 time/energy; canonical six and workflow before/partial/ready already audited.",
+  "correction": "Reconstruct exact workflow terminal attributes including workflow_tick equal to native transaction index and event Account.at.tick. Canonical event schema unchanged. Include inherited workflow_execution.py in freeze. New runtime, ten exact methods, twelve exact saved states, 388 predecessor identities, payment/TD5/history scope and all FT8 gates remain unchanged.",
+  "preservation": "Preserve attempt 3 log, ten raw saved records, nine audit outputs and complete nine-member source capsule. Re-freeze before unchanged full bounded retry."
+}
