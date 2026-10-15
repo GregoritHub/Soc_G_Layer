@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "fa6f1e4b1ce064c1b1cebf15196f0b4fef76467a",
+  "status": "running",
+  "run_id": "ft71b2b2b-contract-review-20261015T0008Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-15T00:38:00Z",
+  "expected_head": "6f6e40dcc09301d6aeab9fe53932eda1f8a26ef8",
   "current_batch": "FT7.1b2b2b",
   "next_batch": "FT7.1b2b2b engineering repair: bounded recall and strict-demand matched-cost admission; preregister concrete changed conditions before another run; then FT7.1b2b3 integrated feedback",
   "completed_batches": [
