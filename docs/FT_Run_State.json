@@ -1,12 +1,12 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "bc27f28123b1e590b457c918664d5641dd978946",
-  "current_batch": "FT7.1b2b3b2b2a",
+  "status": "running",
+  "run_id": "ft7-owned-alternatives-20261015T0647Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-15T07:17:00Z",
+  "expected_head": "ed0657561d9d29e4c65a4e2c208d135fb6201277",
+  "current_batch": "FT7.1b2b3b2b2b1",
   "next_batch": "FT7.1b2b3b2b2b: preregister complete current TD5 admission/route/recipe and bounded operand domain, fresh paid owned work producing a genuine priority/native-cost tie, autonomous history-caused tie-only choice, actual chosen work/downstream use, matched feedback-off/history-removal controls and exact preparation/live-staging composition/restart; then remaining FT7–FT9.",
   "completed_batches": [
     "FT0.1",
