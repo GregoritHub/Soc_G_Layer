@@ -4,10 +4,10 @@
   "status": "running",
   "run_id": "ft-reuse-oct15-1792024259179",
   "active_worker": true,
-  "lease_expires_at": "2026-10-15T01:00:59.179Z",
-  "expected_head": "eae48e69cc1cfb7e785a4c6b26a6fc9095a39fa5",
+  "lease_expires_at": "2026-10-15T01:25:31.000Z",
+  "expected_head": "c5b0b8927a564c8ac8706e21e3f8a28372616191",
   "current_batch": "FT7.1b2b2b",
-  "next_batch": "FT7.1b2b2b approved split comparison implementation and recall repair; freeze and full gate; then FT7.1b2b3",
+  "next_batch": "FT7.1b2b2b: all 14 frozen methods passed; complete bounded independent audit of all 24 exact persisted records; then FT7.1b2b3",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
