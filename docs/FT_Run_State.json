@@ -1,12 +1,12 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": "2026-10-15T07:10:00Z",
-  "expected_head": "4dbfa80aca6da03e79872800cbdff316bf1cca12",
-  "current_batch": "FT7.1b2b3b2b2a",
+  "status": "running",
+  "run_id": "ft7-owned-alternatives-20261015T0647Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-15T07:35:00Z",
+  "expected_head": "a1f97d2b3f0593c79ce1ca5484e92397717c7435",
+  "current_batch": "FT7.1b2b3b2b2b1",
   "next_batch": "FT7.1b2b3b2b2b: preregister complete current TD5 admission/route/recipe and bounded operand domain, fresh paid owned work producing a genuine priority/native-cost tie, autonomous history-caused tie-only choice, actual chosen work/downstream use, matched feedback-off/history-removal controls and exact preparation/live-staging composition/restart; then remaining FT7–FT9.",
   "completed_batches": [
     "FT0.1",
@@ -1235,7 +1235,7 @@
   "operand_domain_progress": {
     "batch": "FT7.1b2b3b2b2b1",
     "accepted": false,
-    "status": "preregistered",
+    "status": "gate_passed_saving",
     "scope": "Bounded examined operand alternatives from existing paid comparison; TD5 and live choice still owed"
   }
 }
