@@ -101,7 +101,7 @@ class _RoleComparison:
                  profile=self._profiles[actor],cursor=self._cursors[actor]))
         candidates=record(address('ftrc.candidates',actor,key),'Unsettled role comparison',dict(payload=dumps(rows)))
         op=fields_of(OperationRequest(key,actor,'bind',r['context']));op.pop('participants');op.pop('evidence')
-        op.update(record_type='operation',ftrc=True,policy=self.ROLE_POLICY,setting=self.SETTING,
+        op.update(record_type='operation',ftrc=True,primitive='bind',policy=self.ROLE_POLICY,setting=self.SETTING,
             required=required,completed=0,spent=0,status='pending',failure=None,result=None,
             route_prepare=required,route_execute=0,started_tick=self._now().tick,
             snapshot=snapshot.ref,candidates=candidates.ref,assignments=len(rows),

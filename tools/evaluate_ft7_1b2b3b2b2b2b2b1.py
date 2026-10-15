@@ -13,6 +13,8 @@ def freeze():
     names.update(('contracts/ft/'+PREFIX+'_Protocol_v1.json','contracts/ft/'+PREFIX+'_Protocol_v1.sha256',
         'contracts/ft/'+PREFIX+'_Amendment_v2.json','contracts/ft/'+PREFIX+'_Amendment_v2.sha256',
         'contracts/ft/'+PREFIX+'_Source_Freeze_v1.json',
+        'contracts/ft/'+PREFIX+'_Amendment_v3.json','contracts/ft/'+PREFIX+'_Amendment_v3.sha256',
+        'contracts/ft/'+PREFIX+'_Source_Freeze_v2.json',
         'full_theory/paid_role_comparison.py','full_theory/paid_role_comparison_audit.py',
         'tests_ft7/test_paid_role_comparison.py','tools/evaluate_ft7_1b2b3b2b2b2b2b1.py'))
     return {n:digest(ROOT/n) for n in sorted(names)}
@@ -40,7 +42,7 @@ def main(original,out):
     from tests_ft7.test_paid_role_comparison import role_type
     from tools.evaluate_ft6_3b import ids
     out.mkdir(parents=True,exist_ok=False);(out/'records').mkdir()
-    before=freeze();registered=json.loads((ROOT/('contracts/ft/'+PREFIX+'_Source_Freeze_v2.json')).read_text())
+    before=freeze();registered=json.loads((ROOT/('contracts/ft/'+PREFIX+'_Source_Freeze_v3.json')).read_text())
     if before!=registered:raise ValueError('source freeze differs')
     prior=json.loads((ROOT/'contracts/ft/FT7_1b2b3b2b2b2b2a_Source_Freeze_v1.json').read_text())
     if any(before[n]!=h for n,h in prior.items()):raise ValueError('accepted source changed')

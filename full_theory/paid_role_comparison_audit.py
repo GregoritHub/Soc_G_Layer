@@ -1,6 +1,7 @@
 """Independent full role comparison/payment reconstruction, no selector imports."""
 from hashlib import sha256
 from itertools import product
+from collections import OrderedDict
 from hle_unified.selection_records import SelectionRequest,fields_of,dumps,loads
 from hle_unified.workflow_selection_records import WorkflowSelectionRequest,WorkflowCapacitySelectionRequest
 from hle_unified.records import Procedure,Account
@@ -18,11 +19,18 @@ from .owned_role_domain_audit import audit_role_payload
 def digest(text):return sha256(text.encode()).hexdigest()
 
 
+_REFERENCE_CACHE=OrderedDict()
+
+
 def reconstruct(old,roles,prepared):
     d=loads(roles);p=loads(prepared);view=old.participant_view(d['request']['actor'])
     audit_role_payload(view.snapshot,p['request'],d['setting'],len(p['receipts'])==p['required'],roles,
         digest(old.checkpoint()),digest(prepared),digest(view.bytes()))
     if not d['settled']:raise ValueError('settled role source required')
+    cache_key=(digest(old.checkpoint()),roles,prepared)
+    if cache_key in _REFERENCE_CACHE:
+        _REFERENCE_CACHE.move_to_end(cache_key)
+        return loads(_REFERENCE_CACHE[cache_key])
     output=[]
     for ordinal,values in enumerate(product(*(d['pools'][n] for n in d['role_order']))):
         fields=dict(d['request']);fields.update((n,v['value']) for n,v in zip(d['role_order'],values))
@@ -61,6 +69,8 @@ def reconstruct(old,roles,prepared):
         output.append(dict(ordinal=ordinal,request_sha256=digest(dumps(fields)),rejection=None,
             required=required,snapshot_sha256=digest(dumps(s)),candidates=tuple({k:x[k] for k in keys} for x in rows),
             nominee=None if nominee is None else nominee['cell']))
+    _REFERENCE_CACHE[cache_key]=dumps(output)
+    while len(_REFERENCE_CACHE)>2:_REFERENCE_CACHE.popitem(last=False)
     return output
 
 
@@ -115,7 +125,7 @@ def audit_paid_roles(engine,old,roles,prepared):
     opid=address('u4.operation',actor,key).identity;snap=address('ftrc.snapshot',actor,key)
     ballot=address('ftrc.candidates',actor,key);resultref=address('ftrc.result',actor,key)
     base=fields_of(OperationRequest(key,actor,'bind',r['context']));base.pop('participants');base.pop('evidence')
-    base.update(record_type='operation',ftrc=True,policy='ft-paid-owned-role-comparison-v1',setting=d['setting'],
+    base.update(record_type='operation',ftrc=True,primitive='bind',policy='ft-paid-owned-role-comparison-v1',setting=d['setting'],
         required=required,route_prepare=required,route_execute=0,snapshot=snap,candidates=ballot,assignments=len(rows),
         **{'participant.0':actor,'lock.0':actor,'input.0':r['demand'],'dependency.0':old.law})
     require(all(i not in heads for i in (opid,snap.identity,ballot.identity,resultref.identity)),'fresh work')
