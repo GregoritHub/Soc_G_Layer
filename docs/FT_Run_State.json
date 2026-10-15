@@ -4,10 +4,10 @@
   "status": "running",
   "run_id": "ft7-window-payment-20261015T163521000Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-15T17:05:21.000Z",
-  "expected_head": "2f524c96aac8714ee9f15577351f4774715ce4a1",
+  "lease_expires_at": "2026-10-15T17:18:19.000Z",
+  "expected_head": "ea8d9af46134405531a65bafe7ed17df0250ca69",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1b",
-  "next_batch": "FT7.1b2b3b2b2b2b2b2b1b (planned, not preregistered): actual newly paid complete accessible-window native comparison, separately bound source/native-prefix composition and restart; then route-free fresh skill work, current TD5/capacity admission, genuine distinct-element same-priority/native-cost ties, autonomous live history-only choice, chosen paid movement/downstream use, matched feedback controls and full preparation/live-staging composition. No old-bound override or receipt reuse for changed inputs; all FT8 obligations intact.",
+  "next_batch": "Complete frozen FT7.1b2b3b2b2b2b2b2b1b evaluation and independent saved audits; then separately preregister current TD5/capacity integration and route-free skill work. All FT8 obligations unchanged.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -125,7 +125,8 @@
     "FT7.1b2b3b2b2b2b2b1",
     "FT7.1b2b3b2b2b2b2b2a",
     "FT7.1b2b3b2b2b2b2b2b1",
-    "FT7.1b2b3b2b2b2b2b2b1a"
+    "FT7.1b2b3b2b2b2b2b2b1a",
+    "FT7.1b2b3b2b2b2b2b2b1b"
   ],
   "publication": {
     "mode": "read-only pinned dependencies plus new development",
@@ -1725,5 +1726,16 @@
       "all_local_public_blob_identities_exact": true,
       "paths_removed": 0
     }
+  },
+  "paid_window_progress": {
+    "batch": "FT7.1b2b3b2b2b2b2b2b1b",
+    "status": "evaluation_running",
+    "accepted": false,
+    "protocol_commit": "bf1007571fb4b7120e45668d7a19ecc4640fab36",
+    "implementation_commit": "120d80e954e6aabe77dfb0872eee4ef9308ede2b",
+    "frozen_commit": "ea8d9af46134405531a65bafe7ed17df0250ca69",
+    "frozen_identities": 388,
+    "predecessor_identities": 468,
+    "accepted_paid_work_rerun": false
   }
 }
