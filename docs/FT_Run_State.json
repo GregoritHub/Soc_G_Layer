@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft7-current-admission-20261015T0740Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-15T08:07:00Z",
-  "expected_head": "c1d48db23d17151f1837f9ec83c33b1eb0b1b705",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "a23186a12e2a525697b18d33191ad2b3692c6a64",
   "current_batch": "FT7.1b2b3b2b2b2a",
   "next_batch": "FT7.1b2b3b2b2b2b: derive required native material/peer role alternatives from owned paid evidence; preregister fresh route-free task/skill panel and actual paid work yielding genuine priority/native-cost ties across distinct elements; separately version live history choice and execute chosen movement/downstream use with matched feedback-off/history-removal controls and exact preparation/staging composition. Existing bounded request-role inventory is not full future coverage. Then remaining FT7–FT9.",
   "completed_batches": [
@@ -277,7 +277,7 @@
     "prior_failed_attempts": 6
   },
   "latest_acceptance_record": "docs/ft/FT7_1b2b3b2b2b2a_Record.md",
-  "latest_acceptance_commit": null,
+  "latest_acceptance_commit": "a23186a12e2a525697b18d33191ad2b3692c6a64",
   "engineering_continuation": {
     "batch": "FT7.1b2b3b",
     "accepted": false,
@@ -1284,14 +1284,21 @@
   "current_admission_progress": {
     "batch": "FT7.1b2b3b2b2b2a",
     "accepted": true,
-    "status": "acceptance_saving",
+    "status": "accepted",
     "protocol_commit": "a7cfc9d5e7cf07bd4fa8389accff1d11048f7fc1",
     "frozen_commit": "c1d48db23d17151f1837f9ec83c33b1eb0b1b705",
     "canonical_candidates": 111,
     "workflow_candidates": 71,
     "execution_authorized": false,
     "history_choice": false,
-    "scope": "Current TD5 admission and bounded estimated-cost domain only; no live history-caused choice or parent acceptance"
+    "scope": "Current TD5 admission and bounded estimated-cost domain only; no live history-caused choice or parent acceptance",
+    "acceptance_commit": "a23186a12e2a525697b18d33191ad2b3692c6a64",
+    "public_tree_verification": {
+      "commit": "a23186a12e2a525697b18d33191ad2b3692c6a64",
+      "blobs": 412,
+      "all_local_git_blob_identities_exact": true,
+      "no_paths_removed": true
+    }
   },
   "prior_ft7_1b2b3b2b2b1_acceptance": {
     "batch": "FT7.1b2b3b2b2b1",
