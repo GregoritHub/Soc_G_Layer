@@ -1,13 +1,13 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft71b2b2-20261014T2336Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-15T00:20:00Z",
-  "expected_head": "b2eebab69de197e6390d7e6d8ca614c9d2454f7e",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "fa6f1e4b1ce064c1b1cebf15196f0b4fef76467a",
   "current_batch": "FT7.1b2b2b",
-  "next_batch": "FT7.1b2b2b: stricter no-support requalification and later scoped retained reuse; then FT7.1b2b3 reserve/history integration",
+  "next_batch": "FT7.1b2b2b engineering repair: bounded recall and strict-demand matched-cost admission; preregister concrete changed conditions before another run; then FT7.1b2b3 integrated feedback",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -51,7 +51,7 @@
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT7_1b2b2a_Record.md",
+  "latest_record": "docs/ft/FT7_1b2b2b_Progress_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
@@ -257,5 +257,32 @@
     "frozen_commit": "1ff9b0000f062b5ba216c821be691258c91546ef",
     "source_publication": "verified",
     "prior_failed_attempts": 6
+  },
+  "latest_acceptance_record": "docs/ft/FT7_1b2b2a_Record.md",
+  "latest_acceptance_commit": "2bfc3a883bd7aac545f2d93462f2a62e134ae856",
+  "engineering_continuation": {
+    "batch": "FT7.1b2b2b",
+    "accepted": false,
+    "attempts": 2,
+    "frozen_commit": "fa6f1e4b1ce064c1b1cebf15196f0b4fef76467a",
+    "latest_attempt": {
+      "passed": false,
+      "methods": 0,
+      "failures": 0,
+      "errors": 1,
+      "exact_methods": true,
+      "predecessor_identities": 338,
+      "saved_records": 4,
+      "exact_record_domain": false,
+      "raw_roundtrip_exact": true,
+      "decoded_independent_audits": true,
+      "source_unchanged": true,
+      "registered_freeze": true,
+      "protocol_sha256": "2da7f69807e3a297291c9aa8035598584e69fcbdb3aadb3f5d525af0870f8bc1",
+      "claim": "unsupported requalification and scoped later retained reuse; integrated reserve/history feedback remains pending"
+    },
+    "diagnostic": "docs/ft/FT7_1b2b2b_Boundary_Diagnostic.json",
+    "required_next": "Prospective engineering design preserving recall, dimensionality and common acceptance criteria. No identical rerun. Escalate only if an indispensable inherited-contract change or substantive ruling is established.",
+    "permission": "Standing routine-repair authorization applies; no permission stop imposed."
   }
 }
