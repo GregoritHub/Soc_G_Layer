@@ -92,3 +92,28 @@ branches pay 67/67. These are independent branch costs after the accepted
 eight actual methods are now being executed as bounded stages; no gate
 acceptance is claimed yet. An auxiliary process-list diagnostic again failed
 without affecting the active execution handles, raw records or source.
+
+Four unchanged actual methods subsequently passed: full panel, exact partial
+restart, no early receipt, and cancellation/terminal idempotence. Each has
+one exact unittest result, zero failures/errors and unchanged source/raw
+identities. The other four remain required; this is not acceptance by counts.
+
+Prospective operational protocol 7aeef6b5498d870218112d09862f8b9e69d69600
+(SHA256 a2bc3b282cfec72eec331d325774169da51121b38ce969bf639c903cf3c4d240)
+allows the full-payment and no-admission/history-authority methods to run in
+separate fresh saved-output copies. All 52 bound evidence files match in
+each copy; no process writes another output directory. The original frozen
+continuation tool, all eight actual bodies and all 392 source identities
+remain unchanged. Exact result/log merging, all eight actual passes and the
+unchanged aggregate finish gate remain mandatory. No new paid branch runs.
+
+The complete raw-record checkpoint is privately preserved in
+FT7_1b2b3b2b2b2b2b2b1b_Paid_Window_Continuation_Evidence_20261015.zip,
+SHA256 23b64825003f50a22ba0072e48e7f94b3f2c6c5f70201cde516d8812b811a470.
+All 79 outer members and every nested progress/input/source member were
+verified, including the exact 46-member original progress archive and its
+7/4 source capsules, 81-member input and nested 7/7/66/7/10/20 members.
+It includes all forty exact raw records, eight completed continuation stage
+reports, four passing actual method results, and the isolated-method protocol.
+Still-running method logs/results are deliberately excluded from this
+immutable checkpoint. It was uploaded once, without altering any prior archive.
