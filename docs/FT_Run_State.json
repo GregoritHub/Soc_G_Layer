@@ -4,11 +4,11 @@
   "status": "running",
   "run_id": "ft7-window-admission-20261015T223300Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-15T23:01:35Z",
-  "expected_head": "ac106a6a754716b015c16d2f516405eb22e2da99",
+  "lease_expires_at": "2026-10-15T23:17:51Z",
+  "expected_head": "8c66f6ba1fffd8e4ebc7a8863ab74df421c285ab",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1d",
   "current_window_admission_progress": {
-    "status": "frozen_evaluation_pending_not_accepted",
+    "status": "frozen_evaluation_running_not_accepted",
     "implementation_commit": "a79669120939bfb0ee5f2dd7914a45b44f3c5696",
     "freeze_commit": "86c613185216ae09b76ef1a1dbd764847ec2c31e",
     "frozen_identities": 406,
@@ -18,7 +18,7 @@
     "required_saved_records": 40,
     "required_predecessor_identities": 484,
     "actual_methods_completed": 0,
-    "saved_records_completed": 0,
+    "saved_records_completed": 16,
     "new_native_work": false,
     "accepted": false,
     "record": "docs/ft/FT7_1b2b3b2b2b2b2b2b1d_Record.md"
