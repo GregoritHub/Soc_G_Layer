@@ -1,6 +1,6 @@
 # Soc G Layer
 
-Latest bounded progress, 15 October 2026 UTC: FT7.1b2b3b1 passed eight exact methods and eight independently audited saved records for actual paid task preparation and exact partial-read restart. The setup self-overlay gap is repaired. This does not accept live tie-only choice or parent FT7: complete owned choice integration, matched controls and full movement/consumer outcome staging remain next. See `docs/ft/FT7_1b2b3b1_Record.md`.
+Latest bounded progress, 15 October 2026 UTC: FT7.1b2b3b2a passed ten exact methods, 368 predecessor identities and 16 independently audited saved records for actual paid live movement/consumer outcome staging and both exact partial restarts. Earlier paid preparation remains accepted. Complete owned-domain tie-only choice and matched feedback controls remain pending; no parent FT7 or FT8 acceptance is claimed. See `docs/ft/FT7_1b2b3b2a_Record.md`.
 
 Full Theory engine continuation. The repaired FT3 recovery gate passed on 12 October 2026: all 751 inherited method identities, 30 FT controls and both positive retention witnesses passed with unchanged source. See `docs/ft/Recovery_Record_20261012.md`.
 

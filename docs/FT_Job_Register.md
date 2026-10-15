@@ -30,8 +30,11 @@
 | FT7.1b2b2b | accepted, approved bounded split | 14 exact methods, 338 predecessor identities and 24 exact saved audits; strict complete/defer plus separate completed one-facet equal-main-cost retained priority. FT8 intact; see FT7_1b2b2b_Acceptance_Record.md |
 | FT7.1b2b3 | parent pending; accounting observer accepted | FT7.1b2b3a: 8 methods, 352 predecessor identities, 24 exact saved binding audits. Actual paid preparation and tie-only later owned choice remain mandatory |
 | FT7.1b2b3a | accepted, native receipt binding only | Immutable supported prefix, two independent training outcomes and later completion/deferral accounting; see FT7_1b2b3a_Record.md |
-| FT7.1b2b3b | parent pending; paid preparation subgate accepted | Autonomous complete owned tie domain, feedback controls, matched main cost and integrated movement/consumer restart remain mandatory |
+| FT7.1b2b3b | parent pending; preparation and live outcome staging accepted | Complete owned tie domain, autonomous history-caused choice and matched feedback controls remain mandatory |
 | FT7.1b2b3b1 | accepted, paid task preparation only | Eight exact methods, 360 predecessor identities and eight saved audits; exact partial-read restart, no independent credit or completion claim |
+| FT7.1b2b3b2 | parent pending | Live staging accepted; complete owned-domain tie-only choice integration and matched controls remain mandatory |
+| FT7.1b2b3b2a | accepted, live outcome staging only | 10 exact methods, 368 predecessor identities, 16 saved audits and 286 unchanged frozen identities; exact movement and consumer restarts |
+| FT7.1b2b3b2b | planned, not registered or implemented | Complete current owned candidate domain, live tie-only choice and matched feedback controls |
 | FT7.2 | pending | Full Theory plan gate |
 | FT7.3 | pending | Full Theory plan gate |
 | FT8.1 | pending | Full Theory plan gate |
@@ -56,3 +59,5 @@ Author-approved split supersedes the ruling-required status above. See FT7_1b2b2
 [measured] FT7.1b2b2b accepted on 15 October 2026 UTC. This supersedes earlier reopened/unaccepted and theory-hold snapshots without erasing failures. Exact actual method run and separately frozen bounded saved-record audit both passed. The durable evidence includes all six attempts; FT8 obligations remain intact. Next FT7.1b2b3; no blocker.
 
 [measured] FT7.1b2b3a passed its complete bounded accounting-observer subgate. One diagnosed failure is preserved. Source/native payments and the original reserve/history prefix are unchanged; parent choice causality is not accepted. Next FT7.1b2b3b; no blocker.
+
+[measured] FT7.1b2b3b2a passed actual live outcome staging. The first wallet-auditor format failure is preserved; the prospective audit-only correction passed the complete gate. Partial states gain no outcome credit; actual paid downstream completion settles once. No candidate-domain or choice-causality acceptance follows. See FT7_1b2b3b2a_Record.md.
