@@ -5,9 +5,9 @@
   "run_id": "ft7-window-payment-20261015T163521000Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-15T20:37:05.000Z",
-  "expected_head": "21dca65de06396a9bc56e4e39fbad16df48bdf0d",
+  "expected_head": "7ebdd933e6733b8d74b2440ce6b40181aab54ac9",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1b",
-  "next_batch": "Complete frozen FT7.1b2b3b2b2b2b2b2b1b evaluation and independent saved audits; then separately preregister current TD5/capacity integration and route-free skill work. All FT8 obligations unchanged.",
+  "next_batch": "Planned, not preregistered: separately bound current TD5/capacity integration, route-free fresh skill work and any new payment required by changed inputs; genuine same-priority/native-cost distinct-element ties, autonomous live history-only choice, chosen paid movement/downstream use, matched feedback controls and full preparation/live-staging composition. All FT8 obligations remain unchanged.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -61,7 +61,8 @@
     "FT7.1b2b3b2b2b2b2a",
     "FT7.1b2b3b2b2b2b2b1",
     "FT7.1b2b3b2b2b2b2b2a",
-    "FT7.1b2b3b2b2b2b2b2b1a"
+    "FT7.1b2b3b2b2b2b2b2b1a",
+    "FT7.1b2b3b2b2b2b2b2b1b"
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
@@ -135,59 +136,70 @@
     "standalone_ft9_release": false
   },
   "local_acceptance": {
-    "batch": "FT7.1b2b3b2b2b2b2b2b1a",
-    "passed": true,
-    "methods": 8,
-    "failures": 0,
+    "batch": "FT7.1b2b3b2b2b2b2b2b1b",
+    "claim": "Full payment for exact declared current window grammar only. No full role/skill coverage, current TD5/capacity admission, distinct-element tie, live history-only choice, movement/downstream use or parent FT7/FT8/FT9 acceptance. Snapshot PREDEBIT; later admission rechecks current wallet/demand. Changed input needs separate binding/new payment. All FT8 denominators/matched-main-cost obligations unchanged.",
     "errors": 0,
-    "predecessor_identities": 460,
-    "saved_records": 32,
-    "typed_roundtrip_exact": true,
+    "failures": 0,
+    "frozen_identities": 392,
     "independent_audits": true,
+    "methods": 8,
+    "new_records": 8,
+    "original_frozen_identities": 388,
+    "original_interrupted_attempt_preserved": true,
+    "original_records_preserved": 32,
+    "passed": true,
+    "predecessor_identities": 468,
+    "saved_records": 40,
     "source_unchanged": true,
-    "frozen_identities": 381,
-    "prior_accepted_identities": 367,
-    "prior_failed_gate_identities": 374,
-    "prior_failed_gate_accepted": false,
-    "new_paid_work": false,
-    "claim": "Read-only current paid-owned bounded accessible-content request enumeration only. All comparisons unpaid, execution_authorized=false,td5_admitted=false,history_choice=false. No skill, native-view validity, native-cost tie, live choice, movement, history/reserve credit or parent FT7–FT9 acceptance. Failed b1 remains unaccepted; all original FT8 obligations intact.",
-    "protocol_commit": "b2b26787c2baf8e09beb7e379d99e0e328dd2402",
-    "frozen_commit": "b4e85a1ca1aad005cbf47cb59dbab6eb3d06c848",
+    "typed_roundtrip_exact": true,
+    "protocol_commit": "bf1007571fb4b7120e45668d7a19ecc4640fab36",
+    "original_frozen_commit": "ea8d9af46134405531a65bafe7ed17df0250ca69",
+    "continuation_amendment_commit": "3c54668e93b2ec8d5ebfb42bb83d823cf89accc8",
+    "frozen_commit": "f1b07f1e34fc3bb67bce713fdba0838e85479764",
+    "isolated_method_protocol_commit": "7aeef6b5498d870218112d09862f8b9e69d69600",
+    "prior_accepted_identities": 381,
     "accepted_paid_work_rerun": false,
+    "prior_failed_b1_accepted": false,
     "canonical_requests_per_task": 1,
     "workflow_requests_per_task": 510,
     "fixed_tasks_per_setting": 15,
-    "workflow_inventory_per_task": 9,
-    "native_workflow_accessible_bound": 8,
-    "canonical_requests": 15,
     "workflow_requests": 7650,
-    "original_failed_paid_gate_remains_unaccepted": true,
+    "workflow_rejections": 0,
+    "execution_authorized": false,
+    "td5_admitted": false,
+    "history_choice": false,
     "archive": {
-      "filename": "FT7_1b2b3b2b2b2b2b2b1a_Request_Window_Evidence_20261015.zip",
-      "sha256": "6eca9ead0be9da26575d6e39b48ba3005de63a85fc6672760119caeccea063b6",
-      "manifest_members": 81,
-      "bytes": 57353482,
-      "nested_members": {
-        "fresh-comparison-source-v1.zip": 7,
-        "request-window-source-v1.zip": 7,
-        "accepted_intake_archive": 66,
-        "intake_failed_source": 7,
-        "intake_corrected_source": 10,
-        "original_owned_proposal_archive": 20
-      },
+      "filename": "FT7_1b2b3b2b2b2b2b2b1b_Paid_Window_Closure_Evidence_20261015.zip",
+      "sha256": "dba48e49429cdc26014e0b83de854c8323bc88078b4ab0b8860a318092fde54a",
+      "manifest_members": 45,
+      "bytes": 240568,
       "all_members_verified": true
     },
+    "required_companion": {
+      "filename": "FT7_1b2b3b2b2b2b2b2b1b_Paid_Window_Continuation_Evidence_20261015.zip",
+      "sha256": "23b64825003f50a22ba0072e48e7f94b3f2c6c5f70201cde516d8812b811a470",
+      "manifest_members": 79,
+      "required": true,
+      "all_members_and_nested_archives_verified": true
+    },
     "preparation": {
-      "primary_automatic_preparation_identities": 374,
-      "new_project_files_added_exactly": 6,
-      "all_prior_374_unchanged": true,
-      "baseline": 1093,
-      "historical": 210,
-      "repair_freeze": 20,
-      "recovery_members": 209,
-      "second_automatic_preparation_passed": false,
-      "secondary_clone_denial": "CONNECT tunnel HTTP403; stopped without retry or alternate transfer"
-    }
+      "retained_verified_runtime": true,
+      "new_automatic_dependency_rebuild": false,
+      "baseline_identities": 1093,
+      "historical_identities": 210,
+      "repair_freeze_identities": 20,
+      "prior_http403_not_retried": true
+    },
+    "actual_method_ids": [
+      "tests_ft7.test_paid_window_comparison.PaidWindowComparisonTests.test_exact_full_panel",
+      "tests_ft7.test_paid_window_comparison.PaidWindowComparisonTests.test_full_native_payment",
+      "tests_ft7.test_paid_window_comparison.PaidWindowComparisonTests.test_no_early_receipt",
+      "tests_ft7.test_paid_window_comparison.PaidWindowComparisonTests.test_exact_partial_restart",
+      "tests_ft7.test_paid_window_comparison.PaidWindowComparisonTests.test_cancel_and_terminal_idempotence",
+      "tests_ft7.test_paid_window_comparison.PaidWindowComparisonTests.test_forged_source_and_domain_rejected",
+      "tests_ft7.test_paid_window_comparison.PaidWindowComparisonTests.test_protected_result_and_forged_extent",
+      "tests_ft7.test_paid_window_comparison.PaidWindowComparisonTests.test_no_admission_or_history_authority"
+    ]
   },
   "conditioning_release": {
     "policy": "success-v1",
@@ -317,13 +329,13 @@
     "source_publication": "verified",
     "prior_failed_attempts": 6
   },
-  "latest_acceptance_record": "docs/ft/FT7_1b2b3b2b2b2b2b2b1a_Record.md",
-  "latest_acceptance_commit": "25e4073705cfefe3a5efc5e461379995b544d834",
+  "latest_acceptance_record": "docs/ft/FT7_1b2b3b2b2b2b2b2b1b_Record.md",
+  "latest_acceptance_commit": null,
   "engineering_continuation": {
     "batch": "FT7.1b2b3b",
     "accepted": false,
-    "required_next": "FT7.1b2b3b2b2b2b2b2b1b (planned, not preregistered): actual newly paid complete accessible-window native comparison, separately bound source/native-prefix composition and restart; then route-free fresh skill work, current TD5/capacity admission, genuine distinct-element same-priority/native-cost ties, autonomous live history-only choice, chosen paid movement/downstream use, matched feedback controls and full preparation/live-staging composition. No old-bound override or receipt reuse for changed inputs; all FT8 obligations intact.",
-    "scope": "Fresh task intake and complete bounded owned request grammar accepted. Original fresh paid-comparison gate remains failed with exact canonical partial evidence. Complete newly paid domain comparison, fresh skills/current admission and live tie-only causality remain mandatory; parent FT7–FT9 unfinished.",
+    "required_next": "Planned, not preregistered: separately bound current TD5/capacity integration, route-free fresh skill work and any new payment required by changed inputs; genuine same-priority/native-cost distinct-element ties, autonomous live history-only choice, chosen paid movement/downstream use, matched feedback controls and full preparation/live-staging composition. All FT8 obligations remain unchanged.",
+    "scope": "Complete declared request-window comparison payment accepted in its bounded scope only. Fresh skill/current admission/live choice and all parent FT7–FT9 work remain unfinished. Failed b1 remains unaccepted.",
     "permission": "Technical coding, testing, diagnosis, lawful repairs and retries through FT9 belong to the agent without renewed user approval. Preserve criteria except the explicitly approved comparison amendment; FT8 unchanged."
   },
   "prior_comparison_hold": {
@@ -1729,8 +1741,8 @@
   },
   "paid_window_progress": {
     "batch": "FT7.1b2b3b2b2b2b2b2b1b",
-    "status": "numbered_actual_method_continuation_after_interruption",
-    "accepted": false,
+    "status": "passed",
+    "accepted": true,
     "protocol_commit": "bf1007571fb4b7120e45668d7a19ecc4640fab36",
     "implementation_commit": "120d80e954e6aabe77dfb0872eee4ef9308ede2b",
     "frozen_commit": "ea8d9af46134405531a65bafe7ed17df0250ca69",
@@ -1738,14 +1750,16 @@
     "predecessor_identities": 468,
     "accepted_paid_work_rerun": false,
     "audited_records_at_checkpoint": 40,
-    "methods_executed_at_checkpoint": 6,
+    "methods_executed_at_checkpoint": 8,
     "methods_passed_at_checkpoint": [
       "test_exact_full_panel",
-      "test_exact_partial_restart",
+      "test_full_native_payment",
       "test_no_early_receipt",
+      "test_exact_partial_restart",
       "test_cancel_and_terminal_idempotence",
       "test_forged_source_and_domain_rejected",
-      "test_protected_result_and_forged_extent"
+      "test_protected_result_and_forged_extent",
+      "test_no_admission_or_history_authority"
     ],
     "original_attempt": "Execution session lost after 32 exact independently audited records; no logged traceback or final gate summary; zero actual test methods. Exact cause not established. All raw/source/log preserved; unsaved mask-8 state unverified.",
     "continuation_amendment_commit": "3c54668e93b2ec8d5ebfb42bb83d823cf89accc8",
@@ -1754,7 +1768,7 @@
     "original_388_exact": true,
     "isolated_method_protocol_commit": "7aeef6b5498d870218112d09862f8b9e69d69600",
     "isolated_method_protocol_sha256": "a2bc3b282cfec72eec331d325774169da51121b38ce969bf639c903cf3c4d240",
-    "isolated_methods_running": ["test_full_native_payment", "test_no_admission_or_history_authority"],
+    "isolated_methods_running": [],
     "isolated_method_current_attempt": 2,
     "isolated_method_attempt2_started_at": "2026-10-15T19:30:03Z",
     "method_recovery_evidence": {
@@ -1787,6 +1801,15 @@
       "original_source_capsule_members": 7,
       "continuation_source_capsule_members": 4,
       "contains_continued_results": false
-    }
+    },
+    "final_aggregate_passed": true,
+    "closure_evidence": {
+      "filename": "FT7_1b2b3b2b2b2b2b2b1b_Paid_Window_Closure_Evidence_20261015.zip",
+      "sha256": "dba48e49429cdc26014e0b83de854c8323bc88078b4ab0b8860a318092fde54a",
+      "manifest_members": 45,
+      "bytes": 240568,
+      "all_members_verified": true
+    },
+    "isolated_merge_proof_sha256": "ccb511b1cae6b2222666b5b4420dc9e1e45037e9267752ac24980025071c21d7"
   }
 }

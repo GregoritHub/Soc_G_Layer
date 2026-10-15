@@ -1,0 +1,399 @@
+{
+  "batch": "FT7.1b2b3b2b2b2b2b2b1b",
+  "scope": "Independent complete branches after accepted 5/5 intake; not cumulative expense, wallet replenishment, full-route costs or matched-control costs.",
+  "branches": {
+    "canonical/1": {
+      "required": 67,
+      "energy": 67,
+      "time": 67,
+      "wallet_before": {
+        "energy": 197980,
+        "time": 197980
+      },
+      "wallet_after": {
+        "energy": 197913,
+        "time": 197913
+      }
+    },
+    "canonical/2": {
+      "required": 67,
+      "energy": 67,
+      "time": 67,
+      "wallet_before": {
+        "energy": 197980,
+        "time": 197980
+      },
+      "wallet_after": {
+        "energy": 197913,
+        "time": 197913
+      }
+    },
+    "canonical/3": {
+      "required": 67,
+      "energy": 67,
+      "time": 67,
+      "wallet_before": {
+        "energy": 197980,
+        "time": 197980
+      },
+      "wallet_after": {
+        "energy": 197913,
+        "time": 197913
+      }
+    },
+    "canonical/4": {
+      "required": 67,
+      "energy": 67,
+      "time": 67,
+      "wallet_before": {
+        "energy": 197980,
+        "time": 197980
+      },
+      "wallet_after": {
+        "energy": 197913,
+        "time": 197913
+      }
+    },
+    "canonical/5": {
+      "required": 67,
+      "energy": 67,
+      "time": 67,
+      "wallet_before": {
+        "energy": 197980,
+        "time": 197980
+      },
+      "wallet_after": {
+        "energy": 197913,
+        "time": 197913
+      }
+    },
+    "canonical/6": {
+      "required": 67,
+      "energy": 67,
+      "time": 67,
+      "wallet_before": {
+        "energy": 197980,
+        "time": 197980
+      },
+      "wallet_after": {
+        "energy": 197913,
+        "time": 197913
+      }
+    },
+    "canonical/7": {
+      "required": 67,
+      "energy": 67,
+      "time": 67,
+      "wallet_before": {
+        "energy": 197980,
+        "time": 197980
+      },
+      "wallet_after": {
+        "energy": 197913,
+        "time": 197913
+      }
+    },
+    "canonical/8": {
+      "required": 67,
+      "energy": 67,
+      "time": 67,
+      "wallet_before": {
+        "energy": 197980,
+        "time": 197980
+      },
+      "wallet_after": {
+        "energy": 197913,
+        "time": 197913
+      }
+    },
+    "canonical/9": {
+      "required": 67,
+      "energy": 67,
+      "time": 67,
+      "wallet_before": {
+        "energy": 197980,
+        "time": 197980
+      },
+      "wallet_after": {
+        "energy": 197913,
+        "time": 197913
+      }
+    },
+    "canonical/10": {
+      "required": 67,
+      "energy": 67,
+      "time": 67,
+      "wallet_before": {
+        "energy": 197980,
+        "time": 197980
+      },
+      "wallet_after": {
+        "energy": 197913,
+        "time": 197913
+      }
+    },
+    "canonical/11": {
+      "required": 67,
+      "energy": 67,
+      "time": 67,
+      "wallet_before": {
+        "energy": 197980,
+        "time": 197980
+      },
+      "wallet_after": {
+        "energy": 197913,
+        "time": 197913
+      }
+    },
+    "canonical/12": {
+      "required": 67,
+      "energy": 67,
+      "time": 67,
+      "wallet_before": {
+        "energy": 197980,
+        "time": 197980
+      },
+      "wallet_after": {
+        "energy": 197913,
+        "time": 197913
+      }
+    },
+    "canonical/13": {
+      "required": 67,
+      "energy": 67,
+      "time": 67,
+      "wallet_before": {
+        "energy": 197980,
+        "time": 197980
+      },
+      "wallet_after": {
+        "energy": 197913,
+        "time": 197913
+      }
+    },
+    "canonical/14": {
+      "required": 67,
+      "energy": 67,
+      "time": 67,
+      "wallet_before": {
+        "energy": 197980,
+        "time": 197980
+      },
+      "wallet_after": {
+        "energy": 197913,
+        "time": 197913
+      }
+    },
+    "canonical/15": {
+      "required": 67,
+      "energy": 67,
+      "time": 67,
+      "wallet_before": {
+        "energy": 197980,
+        "time": 197980
+      },
+      "wallet_after": {
+        "energy": 197913,
+        "time": 197913
+      }
+    },
+    "workflow/1": {
+      "required": 22181,
+      "energy": 22181,
+      "time": 22181,
+      "wallet_before": {
+        "energy": 197996,
+        "time": 197996
+      },
+      "wallet_after": {
+        "energy": 175815,
+        "time": 175815
+      }
+    },
+    "workflow/2": {
+      "required": 22181,
+      "energy": 22181,
+      "time": 22181,
+      "wallet_before": {
+        "energy": 197996,
+        "time": 197996
+      },
+      "wallet_after": {
+        "energy": 175815,
+        "time": 175815
+      }
+    },
+    "workflow/3": {
+      "required": 22181,
+      "energy": 22181,
+      "time": 22181,
+      "wallet_before": {
+        "energy": 197996,
+        "time": 197996
+      },
+      "wallet_after": {
+        "energy": 175815,
+        "time": 175815
+      }
+    },
+    "workflow/4": {
+      "required": 22181,
+      "energy": 22181,
+      "time": 22181,
+      "wallet_before": {
+        "energy": 197996,
+        "time": 197996
+      },
+      "wallet_after": {
+        "energy": 175815,
+        "time": 175815
+      }
+    },
+    "workflow/5": {
+      "required": 22181,
+      "energy": 22181,
+      "time": 22181,
+      "wallet_before": {
+        "energy": 197996,
+        "time": 197996
+      },
+      "wallet_after": {
+        "energy": 175815,
+        "time": 175815
+      }
+    },
+    "workflow/6": {
+      "required": 22181,
+      "energy": 22181,
+      "time": 22181,
+      "wallet_before": {
+        "energy": 197996,
+        "time": 197996
+      },
+      "wallet_after": {
+        "energy": 175815,
+        "time": 175815
+      }
+    },
+    "workflow/7": {
+      "required": 22181,
+      "energy": 22181,
+      "time": 22181,
+      "wallet_before": {
+        "energy": 197996,
+        "time": 197996
+      },
+      "wallet_after": {
+        "energy": 175815,
+        "time": 175815
+      }
+    },
+    "workflow/8": {
+      "energy": 22181,
+      "required": 22181,
+      "time": 22181,
+      "wallet_after": {
+        "energy": 175815,
+        "time": 175815
+      },
+      "wallet_before": {
+        "energy": 197996,
+        "time": 197996
+      }
+    },
+    "workflow/9": {
+      "energy": 22181,
+      "required": 22181,
+      "time": 22181,
+      "wallet_after": {
+        "energy": 175815,
+        "time": 175815
+      },
+      "wallet_before": {
+        "energy": 197996,
+        "time": 197996
+      }
+    },
+    "workflow/10": {
+      "energy": 22181,
+      "required": 22181,
+      "time": 22181,
+      "wallet_after": {
+        "energy": 175815,
+        "time": 175815
+      },
+      "wallet_before": {
+        "energy": 197996,
+        "time": 197996
+      }
+    },
+    "workflow/11": {
+      "energy": 22181,
+      "required": 22181,
+      "time": 22181,
+      "wallet_after": {
+        "energy": 175815,
+        "time": 175815
+      },
+      "wallet_before": {
+        "energy": 197996,
+        "time": 197996
+      }
+    },
+    "workflow/12": {
+      "energy": 22181,
+      "required": 22181,
+      "time": 22181,
+      "wallet_after": {
+        "energy": 175815,
+        "time": 175815
+      },
+      "wallet_before": {
+        "energy": 197996,
+        "time": 197996
+      }
+    },
+    "workflow/13": {
+      "energy": 22181,
+      "required": 22181,
+      "time": 22181,
+      "wallet_after": {
+        "energy": 175815,
+        "time": 175815
+      },
+      "wallet_before": {
+        "energy": 197996,
+        "time": 197996
+      }
+    },
+    "workflow/14": {
+      "energy": 22181,
+      "required": 22181,
+      "time": 22181,
+      "wallet_after": {
+        "energy": 175815,
+        "time": 175815
+      },
+      "wallet_before": {
+        "energy": 197996,
+        "time": 197996
+      }
+    },
+    "workflow/15": {
+      "energy": 22181,
+      "required": 22181,
+      "time": 22181,
+      "wallet_after": {
+        "energy": 175815,
+        "time": 175815
+      },
+      "wallet_before": {
+        "energy": 197996,
+        "time": 197996
+      }
+    }
+  },
+  "comparison_only": true,
+  "snapshot": "PREDEBIT",
+  "future_admission_must_recheck_current_wallet_and_demand": true
+}

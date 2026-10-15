@@ -1,0 +1,32 @@
+{
+  "batch": "FT7.1b2b3b2b2b2b2b2b1b",
+  "archive": {
+    "filename": "FT7_1b2b3b2b2b2b2b2b1b_Paid_Window_Closure_Evidence_20261015.zip",
+    "sha256": "dba48e49429cdc26014e0b83de854c8323bc88078b4ab0b8860a318092fde54a",
+    "manifest_members": 45,
+    "bytes": 240568,
+    "all_members_verified": true
+  },
+  "required_companion": {
+    "filename": "FT7_1b2b3b2b2b2b2b2b1b_Paid_Window_Continuation_Evidence_20261015.zip",
+    "sha256": "23b64825003f50a22ba0072e48e7f94b3f2c6c5f70201cde516d8812b811a470",
+    "manifest_members": 79,
+    "required": true,
+    "all_members_and_nested_archives_verified": true
+  },
+  "input": {
+    "filename": "FT7_1b2b3b2b2b2b2b2b1a_Request_Window_Evidence_20261015.zip",
+    "sha256": "6eca9ead0be9da26575d6e39b48ba3005de63a85fc6672760119caeccea063b6",
+    "manifest_members": 81,
+    "in_exact_companion": true
+  },
+  "contents": [
+    "All eight exact actual method results/logs, final aggregate, exact merge proof and source identities",
+    "Both interrupted isolated attempt-1 logs and notes; completed methods use their original successful attempts",
+    "All forty raw records and eight independent continuation stages are byte-exact in the required companion",
+    "Companion includes the exact original 46-member interrupted evidence archive, source capsules and accepted input chain",
+    "Auxiliary publication privacy diagnostic; no runtime or gate change"
+  ],
+  "retrieval": "Use both exact private filenames and SHA-256 values. The closure archive's private_companion_binding.json contains the companion retrieval pointer. Private identifiers are retained only in the continuation task and private evidence.",
+  "claim": "Full payment for exact declared current window grammar only. No full role/skill coverage, current TD5/capacity admission, distinct-element tie, live history-only choice, movement/downstream use or parent FT7/FT8/FT9 acceptance. Snapshot PREDEBIT; later admission rechecks current wallet/demand. Changed input needs separate binding/new payment. All FT8 denominators/matched-main-cost obligations unchanged."
+}

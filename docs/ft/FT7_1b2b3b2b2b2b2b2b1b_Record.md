@@ -1,6 +1,32 @@
 # FT7.1b2b3b2b2b2b2b2b1b — paid accessible-window comparison
 
-Status: bounded continuation in progress after execution-session loss; **not accepted**.
+Status: **accepted in the bounded comparison-payment scope** on 15 October 2026 UTC.
+
+All eight exact original actual methods passed, with zero failures/errors. The
+unchanged final aggregate passed all forty exact saved records, typed roundtrips,
+full independent native/source/domain/payment audits, 468 predecessor identities
+and all 392 frozen source identities (original 388 and preceding 381 exact).
+The two isolated methods completed as attempt 2 in 2605.345 and 2619.503 seconds;
+their interrupted attempt-1 logs remain preserved. Exact 52-file/source/result
+checks preceded their byte-exact merge. No paid branch or earlier passing method
+was repeated. The failed b1 predecessor remains unaccepted.
+
+Each independent complete branch pays 67/67 canonical or 22,181/22,181 workflow
+after its accepted 5/5 intake. Workflow covers all 7,650 declared requests with
+zero rejections. These are comparison costs only, not cumulative expense or
+full-route/matched-control costs. PREDEBIT snapshots confer no current admission,
+fresh skill, distinct-element tie, live history choice, movement, downstream use
+or parent FT7–FT9 acceptance. All FT8 obligations remain intact.
+
+The verified 45-member closure archive is FT7_1b2b3b2b2b2b2b2b1b_Paid_Window_Closure_Evidence_20261015.zip
+(SHA256 dba48e49429cdc26014e0b83de854c8323bc88078b4ab0b8860a318092fde54a). It requires the
+already durable 79-member continuation companion (SHA256 23b64825003f50a22ba0072e48e7f94b3f2c6c5f70201cde516d8812b811a470),
+whose forty raw records match exactly. Both outer manifests and every nested
+source/input archive were verified; private retrieval pointers are not published.
+No fresh automatic dependency rebuild or retry of the earlier HTTP403 occurred.
+
+## Preserved implementation and progress history
+
 
 Protocol: bf1007571fb4b7120e45668d7a19ecc4640fab36.
 Implementation: 120d80e954e6aabe77dfb0872eee4ef9308ede2b.
