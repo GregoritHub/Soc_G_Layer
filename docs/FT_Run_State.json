@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft7-owned-choice-20261015T0432Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-15T05:04:00Z",
-  "expected_head": "8790bbc8b7c849c975e22d95ce25a2a0b81cac5c",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "567f4c7349cc1dce7eacb659021e2be26da40ad8",
   "current_batch": "FT7.1b2b3b2b1",
   "next_batch": "FT7.1b2b3b2b2: preregister and implement versioned actual paid comparison/choice with complete TD5 admission/domain, fresh paid owned work yielding a genuine tie, matched feedback-off/history-removal controls, actual chosen work/downstream use and exact preparation/live-staging composition/restart; then remaining FT7–FT9.",
   "completed_batches": [
@@ -271,7 +271,7 @@
     "prior_failed_attempts": 6
   },
   "latest_acceptance_record": "docs/ft/FT7_1b2b3b2b1_Record.md",
-  "latest_acceptance_commit": null,
+  "latest_acceptance_commit": "567f4c7349cc1dce7eacb659021e2be26da40ad8",
   "engineering_continuation": {
     "batch": "FT7.1b2b3b",
     "accepted": false,
@@ -1148,8 +1148,15 @@
       "prepared_archive_members": 209,
       "native_input_archive_members_verified": 141,
       "binding_input_archive_members_verified": 648,
-      "verification_diagnostic": "Initial optional previous-freeze lookup used nonexistent v2 filename after all 295 current identities passed; corrected to actual v1 path and verified all 286 prior identities. No evaluator or source mutation or rerun.",
+      "verification_diagnostic": "Initial optional previous-freeze lookup used nonexistent v2 filename after all295 current identities passed; corrected to actual v1 path and verified all286 prior identities. No evaluator or source mutation or rerun.",
       "passed": true
+    },
+    "acceptance_commit": "567f4c7349cc1dce7eacb659021e2be26da40ad8",
+    "public_tree_verification": {
+      "commit": "567f4c7349cc1dce7eacb659021e2be26da40ad8",
+      "blobs": 373,
+      "all_local_git_blob_identities_exact": true,
+      "no_paths_removed": true
     }
   }
 }
