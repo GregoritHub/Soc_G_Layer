@@ -12,6 +12,7 @@ def freeze():
         'contracts/ft/FT7_1b2b3b2a_Protocol_v1.json','contracts/ft/FT7_1b2b3b2a_Protocol_v1.sha256',
         'full_theory/social_live_outcome.py','full_theory/social_live_outcome_audit.py',
         'tests_ft7/test_social_live_outcome.py','tools/evaluate_ft7_1b2b3b2a.py'))
+    names.update(str(p.relative_to(ROOT)) for p in (ROOT/'contracts/ft').glob('FT7_1b2b3b2a_*Amendment*') if p.is_file())
     return {n:digest(ROOT/n) for n in sorted(names)}
 
 def predecessors():

@@ -41,7 +41,7 @@ def audit_social_live_outcome(engine, original, source, binding, checkpoint):
         rows=[attrs(v) for t in txs[:at] for v in t.versions
               if attrs(v).get('record_type')=='wallet' and attrs(v).get('actor')==d['actor']]
         require(bool(rows),'wallet absent')
-        return {k:rows[-1][k] for k in ('energy','time')}
+        return rows[-1]
     at=len(old);phase=r['phase']
     for i,(event,actual) in enumerate(zip(d['events'],extra)):
         require(set(event)=={'index','before','after','phase_before','phase','work_limit',

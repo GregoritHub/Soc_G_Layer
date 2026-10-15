@@ -148,6 +148,8 @@
   "contracts/ft/FT7_1b2b3b1_Source_Freeze_v1.json": "1eefdfdf021036be71c708f36efca77c8e5c36b11617eedc595c84a28a8a4f47",
   "contracts/ft/FT7_1b2b3b2a_Protocol_v1.json": "6780b6ed0046403118730fca20cab3200a731cd7680d074ba4ed9a7b69fba99d",
   "contracts/ft/FT7_1b2b3b2a_Protocol_v1.sha256": "b48e5972e1a40dfc10727e5241e963f45087f8f8b7368a5f225128241e132d8f",
+  "contracts/ft/FT7_1b2b3b2a_Wallet_Audit_Amendment_v1.json": "0a0ec62afb394cc349bac63c39e4a2d1b47f2106a4d71378a9d9932923718e2b",
+  "contracts/ft/FT7_1b2b3b2a_Wallet_Audit_Amendment_v1.sha256": "4ef10e6ebc7685f464eaf762322846d003b20854d267e53abf03db6d1beb629a",
   "contracts/ft/FT_Selected_Engineering_Policies_v1.json": "7d236db4b0c6d29c8c423d38a7096e3c7f0f3d1edbdb9a87f21790e33c9b2002",
   "contracts/ft/FT_Setup_Self_Overlay_Source_Freeze_v1.json": "e23c9b842fb8547cfd675ec33b7dc3030173e38dabeceb42a09595853318fe3d",
   "full_theory/__init__.py": "dcd9ba23a829fd009b017d400a7497bf11f2f6e86dce0dc2c9f5a399e123b7c5",
@@ -207,7 +209,7 @@
   "full_theory/social_feedback_binding.py": "64ad1c01a2d4e0103bc8e755b3d87d63ed4c024259142f322b142b6cf68d6bc3",
   "full_theory/social_feedback_binding_audit.py": "41ae75fb8ab4760ae302057f861be79627a50d6b99b3612f43933c9dcf3b7dbd",
   "full_theory/social_live_outcome.py": "fe51efaa8ebbddc7eed88d7fe5bdc2387698cd56ba1bde4d01edc1fcb02ef697",
-  "full_theory/social_live_outcome_audit.py": "cf7c781ce31baa52e27b8230a388207b78bd316fa23f1d21b96eed7a4b71f731",
+  "full_theory/social_live_outcome_audit.py": "384ce39d95e59c521725d2b0e961ce8cd2864640b6bc76b2c55ffaf277946a4b",
   "full_theory/social_preparation.py": "9fd79d8a6e5bc6cc1d5ad49755040bd4d341248bdedc8eb991a5e45cff8ce79f",
   "full_theory/social_preparation_audit.py": "eb0e5fac3687cf4099dc4846decbbad7960c4a42f19539226e3df2d540777c98",
   "full_theory/social_reuse.py": "271938f5a094735fa6ea4aaccb97274c99bb546725ac4af1e32ea1fe08438fd4",
@@ -281,6 +283,6 @@
   "tools/evaluate_ft7_1b2b2b.py": "b6c6665272901bb76e1d26f12b9d4053c849699090be5a2674eed544d2769b0b",
   "tools/evaluate_ft7_1b2b3a.py": "046a1ef4e2237b4c0701c67a242f1855422155099ff8cd6f42971b9e259ce031",
   "tools/evaluate_ft7_1b2b3b1.py": "4610e297d1c0d1558a6aae7487e65e0928a6dede69e682f4231c8363247cdf24",
-  "tools/evaluate_ft7_1b2b3b2a.py": "2c5c790b1c7fbf64854d7c29cffc05d5ceb759f736c1a6450a490e0ea3551503",
+  "tools/evaluate_ft7_1b2b3b2a.py": "f617f4147fc909ef03a957619c87f6e9e621c15213e9c0257ae18414bab5fd86",
   "tools/prepare_workspace.py": "7ad1d1068af68f3fa7b0c38ee32475541da03ddd68fa8e46f696ff3cf04e8d8a"
 }
