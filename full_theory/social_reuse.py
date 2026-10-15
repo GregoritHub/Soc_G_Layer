@@ -9,7 +9,11 @@ from hle_unified.workflow_records import WorkflowRequest
 from hle_unified.shell_records import EncounterRequest
 from hle_unified.development_policy import opportunity
 from hle_unified.records import ObjectRef
-from hle_unified.material import attrs
+from hle_unified.material import attrs, attributes
+from hle_unified.store import next_version
+from hle_unified.cognitive_records import reference
+from hle_unified.operation_records import OperationRequest
+from hle_unified.particulars import Selector
 from .content import ContentBridge
 from .retention import Demand
 from .demand_controller import IntegratedDemandController
@@ -52,6 +56,7 @@ class SocialReuseController(AutonomousReuseController):
         self.consumer_key = None
         self.events = []
         self.terminal = None
+        self.organization = None
 
     def _qualification_key(self,kind):
         return 'ft-no-support:' + sha256(dumps((self.actor,self.prefix_count)).encode()).hexdigest()[:16] + ':' + str(self.qualification_index) + ':' + kind
@@ -89,7 +94,7 @@ class SocialReuseController(AutonomousReuseController):
             certificate = self.ledger.certify(self.certificate_key,self.actor,dem,original['native_capacity'],uses)
             self.qualified_native = engine.checkpoint(); self.qualified_access = engine.access.checkpoint()
             self.ready_boundary = len(engine.world.journal()); self.prior_need_refs = _owned_need_refs(engine,self.actor)
-            self.phase = 'scan'
+            self.phase = 'organize'
         else:
             raise ValueError('invalid unsupported qualification phase')
         row = dict(index=len(self.qualification_events),phase_before=phase,phase=self.phase,
@@ -98,9 +103,48 @@ class SocialReuseController(AutonomousReuseController):
         self.qualification_events.append(row)
         return deepcopy(row)
 
+    def _organize(self,engine,work_limit):
+        dem = self.requalification_demand
+        archive = reference('suit:Wand')
+        if self.organization is None:
+            view = engine.participant_view(self.actor)
+            refs = tuple(sorted((b.ref for b in view._heads.values()
+                if (b.cue,b.context)==(dem.cue,dem.context)
+                and not any(p.relation=='u8.reorganize' and type(p.object) is int and p.object>0
+                            for p in b.content)),key=dumps))
+            self.organization = dict(cue=archive,view=view.bytes(),refs=refs,index=0,events=[],complete=False)
+        org = self.organization
+        bridge = ContentBridge(engine)
+        key = self._qualification_key('archive-read')
+        delivery = key + ':delivery'
+        if (self.actor,key) not in engine._jobs:
+            engine.disclose(delivery,self.actor,archive,(Selector('archive-cue','name',('label',)),))
+        work = bridge.execute(OperationRequest(key,self.actor,'read',dem.context,delivery=delivery),quantum=work_limit)
+        org['events'].append(dict(kind='read',work=work))
+        if work['status']!='succeeded':return deepcopy(org)
+        while org['index'] < len(org['refs']):
+            ref = org['refs'][org['index']]
+            prior = engine.participant_view(self.actor)._bindings[ref]
+            key = self._qualification_key('archive-' + str(org['index']))
+            original = engine.world.resolve(ref)
+            revised = next_version(original,attributes=attributes(dict(attrs(original),cue=archive)))
+            if (self.actor,key) not in engine._jobs:
+                engine.declare(key+':draft',(revised,))
+            work = bridge.execute(OperationRequest(key,self.actor,'bind',dem.context,
+                binding=revised.ref,evidence=prior.particulars),quantum=work_limit)
+            org['events'].append(dict(kind='bind',original=ref,revised=revised.ref,work=work))
+            if work['status']!='succeeded':return deepcopy(org)
+            org['index'] += 1
+        org['complete'] = True
+        self.phase = 'scan'
+        return deepcopy(org)
+
     def step(self,engine,historical_state,demand=None,*,work_limit=1):
         if engine is not self.ledger.engine or type(work_limit) is not int or work_limit < 1:
             raise ValueError('paired engine and positive exact bound required')
+        if self.phase=='organize':
+            if demand is not None:raise ValueError('later demand must follow paid organization')
+            return self._organize(engine,work_limit)
         if self.phase.startswith('qualify-'):
             if demand is not None:raise ValueError('later demand must follow unsupported certification')
             return self._qualify(engine,work_limit)
@@ -115,7 +159,7 @@ class SocialReuseController(AutonomousReuseController):
             actor=self.actor,setting=self.setting,prefix_checkpoint=self.prefix_checkpoint,prefix_native=self.prefix_native,
             prefix_count=self.prefix_count,source_certificate_key=self.source_certificate_key,certificate_key=self.certificate_key,
             requalification_demand=self.requalification_demand.record(),plan=self.plan,qualification_events=self.qualification_events,
-            qualification_work=self.bridge.events,qualification_index=self.qualification_index,qualified_native=self.qualified_native,
+            qualification_work=self.bridge.events,qualification_index=self.qualification_index,organization=self.organization,qualified_native=self.qualified_native,
             qualified_access=self.qualified_access,ready_boundary=self.ready_boundary,prior_need_refs=self.prior_need_refs,
             retention=_ledger_record(self.ledger),demand_controller=self.demand_controller.checkpoint(),
             route_policy=self.route_policy.checkpoint(engine),required=self.required,request=request,phase=self.phase,
@@ -128,7 +172,7 @@ class SocialReuseController(AutonomousReuseController):
         d = loads(text);obj = cls.__new__(cls)
         for name in ('actor','setting','prefix_checkpoint','prefix_native','prefix_count','source_certificate_key',
             'certificate_key','plan','qualification_events','qualification_index','qualified_native','qualified_access',
-            'ready_boundary','prior_need_refs','required','phase','consumer_key','events','terminal'):
+            'ready_boundary','prior_need_refs','required','phase','consumer_key','events','terminal','organization'):
             setattr(obj,name,deepcopy(d[name]))
         obj.requalification_demand = Demand(**d['requalification_demand'])
         obj.ledger = _restore_ledger(d['retention'],engine)

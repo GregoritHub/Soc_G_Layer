@@ -65,8 +65,9 @@ def later(e,c,mode='live'):
             ca.seed(e,'later-wrong-cue-content',encode(dict(kind='stance',tasks=rows,consent=True,hypothetical=False)),target=target,cue=cue,relation='c7w.data')
         body=dict(kind='workflow_need',priorities=(10,0,0,0),externalize=False);relation='c7ws.need'
     ca.seed(e,'later-owned-need',encode(body),target=target,cue=cue,relation=relation)
-    if mode=='revoked':c.ledger.revoke(c.certificate_key,'matched independent evidence removal')
-    return replace(c.requalification_demand,target=target,cue=cue,load=2 if mode=='harder' else 1)
+    if mode in ('revoked','lower-revoked'):c.ledger.revoke(c.certificate_key,'matched independent evidence removal')
+    return replace(c.requalification_demand,target=target,cue=cue,load=2 if mode=='harder' else 1,
+        requirements=('experience',) if mode.startswith('lower-') else c.requalification_demand.requirements)
 
 def finish(e,c,d):
     for _ in range(32-len(c.events)):
@@ -82,7 +83,7 @@ class SocialReuseTests(unittest.TestCase):
         for setting in ('canonical','workflow'):
             e,c=prepare(setting);cls.bases[setting]=(type(e),e.checkpoint(),c.checkpoint(e))
             typ,native,wrapper=cls.bases[setting]
-            for mode in ('live','revoked','harder','wrong-cue','partial-movement','insufficient-dimension'):
+            for mode in ('live','revoked','harder','wrong-cue','partial-movement','insufficient-dimension','lower-live','lower-revoked'):
                 e=typ.restore(native);c=SocialReuseController.restore(wrapper,e);d=later(e,c,mode)
                 if mode=='partial-movement':
                     c.step(e,state('eii'),d,work_limit=1000000)
@@ -114,7 +115,7 @@ class SocialReuseTests(unittest.TestCase):
                 cls.restarts[setting+'/'+split]=(e,c,other,restored,pn,pw)
 
     def test_exact_panel(self):
-        self.assertEqual(set(self.witnesses),{s+'/'+m for s in ('canonical','workflow') for m in ('live','revoked','harder','wrong-cue','partial-movement','insufficient-dimension')})
+        self.assertEqual(set(self.witnesses),{s+'/'+m for s in ('canonical','workflow') for m in ('live','revoked','harder','wrong-cue','partial-movement','insufficient-dimension','lower-live','lower-revoked')})
         self.assertEqual(len(self.restarts),4)
 
     def test_unsupported_requalification_has_two_fresh_exposures(self):
@@ -153,14 +154,27 @@ class SocialReuseTests(unittest.TestCase):
             self.assertGreater(movement['spent'],0);self.assertGreater(consumer['spent'],0)
             self.assertEqual(consumer['source.0'],movement.get('binding') or movement.get('result'))
 
-    def test_revocation_changes_choice_at_matched_main_cost(self):
-        for s in ('canonical','workflow'):
-            e,a,_=self.witnesses[s+'/live'];other,b,_=self.witnesses[s+'/revoked']
-            self.assertEqual(a.phase,b.phase);self.assertEqual(b.phase,'complete')
-            self.assertEqual(a.route_policy.attempts[0]['selected']['name'],'retained');self.assertNotEqual(b.route_policy.attempts[0]['selected']['name'],'retained')
-            for suffix in (':movement',':retained-consumer'):
-                self.assertEqual(e.job_status(a.actor,a.request.key+suffix)['spent'],other.job_status(b.actor,b.request.key+suffix)['spent'])
+    def test_strict_revocation_defers_without_matched_cost_claim(self):
+        for setting in ('canonical','workflow'):
+            e,a,d=self.witnesses[setting+'/live'];other,b,bd=self.witnesses[setting+'/revoked']
+            self.assertEqual(a.phase,'complete');self.assertEqual(b.phase,'deferred')
+            self.assertEqual(d.requirements,('experience','norms','situation','time'));self.assertEqual(d,bd)
+            self.assertEqual(b.route_policy.attempts[0]['selected']['name'],'defer')
+            self.assertIsNone(b.consumer_key);self.assertIsNone(b.terminal['settlement'])
             self.assertEqual(a.ledger.history,b.ledger.history)
+
+    def test_lower_facet_revocation_changes_choice_at_matched_main_cost(self):
+        for setting in ('canonical','workflow'):
+            e,a,d=self.witnesses[setting+'/lower-live'];other,b,bd=self.witnesses[setting+'/lower-revoked']
+            self.assertEqual(a.phase,b.phase);self.assertEqual(b.phase,'complete')
+            self.assertEqual(d.requirements,('experience',));self.assertEqual(d,bd)
+            self.assertEqual(a.route_policy.attempts[0]['selected']['name'],'retained')
+            self.assertNotEqual(b.route_policy.attempts[0]['selected']['name'],'retained')
+            for suffix in (':movement',':retained-consumer'):
+                cost=e.job_status(a.actor,a.request.key+suffix)['spent']
+                self.assertGreater(cost,0);self.assertEqual(cost,other.job_status(b.actor,b.request.key+suffix)['spent'])
+            self.assertEqual(a.ledger.history,b.ledger.history)
+            self.assertEqual(a.qualified_native,b.qualified_native);self.assertEqual(a.organization,b.organization)
 
     def test_harder_and_wrong_cue_not_applicable(self):
         for s in ('canonical','workflow'):

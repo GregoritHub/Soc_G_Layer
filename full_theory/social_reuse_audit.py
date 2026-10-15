@@ -4,6 +4,10 @@ from hashlib import sha256
 from hle_unified.selection_records import dumps,loads
 from hle_unified.compact import unseal
 from hle_unified.material import OperationStore,attrs
+from hle_unified.records import Account
+from hle_unified.cognitive_records import reference
+from hle_unified.particulars import AccessLedger
+from .retention import Demand, no_easier
 from hle_unified.development_audit import audit as audit_development
 from hle_unified.workflow_selection_audit import extent as inherited_extent
 from .retention_audit import audit_retention
@@ -19,7 +23,7 @@ def audit_social_reuse(engine,checkpoint):
         'source_certificate_key','certificate_key','requalification_demand','plan','qualification_events',
         'qualification_work','qualification_index','qualified_native','qualified_access','ready_boundary',
         'prior_need_refs','retention','demand_controller','route_policy','required','request','phase',
-        'consumer_key','events','terminal'}
+        'consumer_key','events','terminal','organization'}
     def require(ok,reason):
         if not ok:raise ValueError('social reuse audit: '+reason)
     def journal(native):
@@ -81,7 +85,7 @@ def audit_social_reuse(engine,checkpoint):
             require(cert is not None and cert==dict(original,key=certificate_key,scope=dict(dem,load=original['scope']['load']),closure=exposures[-1]),'exact independent stricter certificate')
             certs.append(cert);ready=offset
             prior=tuple(sorted({b.ref for b in s.bindings if len(b.content)==1 and b.content[0].relation in ('c6.need','c7ws.need')},key=dumps))
-            phase='scan'
+            phase='organize'
         else:require(False,'qualification after terminal')
         require(event['phase']==phase and event['episode_index']==index,'qualification phase')
         if event['phase_before']!='qualify-expose':require(event['exposure'] is None,'extra exposure')
@@ -108,6 +112,51 @@ def audit_social_reuse(engine,checkpoint):
         require(journal(d['qualified_native'])==txs[:ready],'immutable qualification boundary')
     else:
         require(d['qualified_native'] is None and d['qualified_access'] is None and not d['events'] and d['phase']==phase,'premature reuse')
+    organization=d['organization']
+    if organization is not None:
+        require(ready is not None,'organization before certification')
+        snapshot=_snapshot(organization['view'])
+        require(snapshot.actor==d['actor'],'organization actor')
+        qualified_access=AccessLedger.restore(d['qualified_access'])
+        require(qualified_access.view(d['actor']).bytes()==organization['view'],'exact complete qualified organization snapshot')
+        heads={}
+        for b in snapshot.bindings:
+            if b.ref.identity not in heads or b.ref.revision>heads[b.ref.identity].ref.revision:
+                heads[b.ref.identity]=b
+        required_refs=tuple(sorted((b.ref for b in heads.values()
+            if (b.cue,b.context)==(dem['cue'],dem['context'])
+            and not any(p.relation=='u8.reorganize' and type(p.object) is int and p.object>0 for p in b.content)),key=dumps))
+        require(organization['refs']==required_refs and organization['cue']==reference('suit:Wand'),'exact organization domain')
+        qualified_versions={v.ref:v for tx in txs[:ready] for v in tx.versions}
+        require(all(b.ref in qualified_versions and qualified_versions[b.ref].facet(Account).content==b.content
+                    for b in snapshot.bindings),'organization uses qualified owned content')
+        index=0;read_complete=False;org_cost=0
+        for event in organization['events']:
+            work=event['work'];record=attrs(versions[work['operation']])
+            require(record['actor']==d['actor'] and record['context']==dem['context']
+                    and record['started_tick']>=ready and work['status']==record['status'],'organization paid work identity')
+            if event['kind']=='read':
+                require(record['primitive']=='read' and record['input.0']==organization['cue'],'actual archive cue read')
+                read_complete=work['status']=='succeeded'
+            else:
+                require(read_complete and index<len(required_refs) and event['original']==required_refs[index],'organization revision order')
+                original=versions[event['original']];revised=versions[event['revised']]
+                require(revised.ref.identity==original.ref.identity and revised.ref.revision==original.ref.revision+1
+                    and revised.previous==original.ref and revised.facets==original.facets
+                    and revised.writer==original.writer and revised.label==original.label and revised.roles==original.roles
+                    and revised.occurrence==original.occurrence and revised.lifecycle==original.lifecycle
+                    and attrs(revised)==dict(attrs(original),cue=organization['cue']),'cue-only revision preserves content/history')
+                require(record['primitive']=='bind' and record['binding']==revised.ref
+                    and tuple((record['evidence.delivery.'+str(i)],record['evidence.key.'+str(i)]) for i in range(len(heads[original.ref.identity].particulars)))==tuple((a.delivery,a.key) for a in heads[original.ref.identity].particulars),'exact organization bind')
+                if work['status']=='succeeded':index+=1
+            if work['status']=='succeeded':paid(work['operation'])
+            org_cost+=work['before']['energy']-work['after']['energy']
+        require(index==organization['index'] and organization['complete']==(read_complete and index==len(required_refs)),'organization completion')
+        if organization['complete']:
+            require(organization['events'] and org_cost>0,'organization cannot be free')
+            require(d['phase']!='organize','completed organization phase')
+    else:
+        require(not d['events'] and d['phase'] in ('organize',phase),'later reuse before organization')
     fulfillment=audit_fulfillment(txs,engine.access.checkpoint(),d['demand_controller'])
     route=audit_route_policy(txs,engine.access.checkpoint(),d['route_policy'],engine.checkpoint())
     events=d['events'];attempts=loads(d['route_policy'])['attempts']
@@ -118,6 +167,25 @@ def audit_social_reuse(engine,checkpoint):
         require(d['required']['support_allowed']==(),'unsupported later demand required')
     if attempts:
         require(tuple(attempts[0]['retention_events'])==tuple(retained_events),'choice used other retention evidence')
+        require(organization is not None and organization['complete'],'choice before complete paid organization')
+        snapshot=_snapshot(attempts[0]['inventory']['view']);bindings={b.ref:b for b in snapshot.bindings};heads={}
+        for b in snapshot.bindings:
+            if b.ref.identity not in heads or b.ref.revision>heads[b.ref.identity].ref.revision:heads[b.ref.identity]=b
+        required=Demand(**d['required']);queue=[b.ref for b in heads.values() if (b.cue,b.context)==(required.cue,required.context)]
+        roots=len(queue);seen=set();visited=[];cursor=0
+        while cursor<len(queue) and len(visited)<32:
+            ref=queue[cursor];cursor+=1;b=bindings.get(ref)
+            if ref in seen or b is None or b.context!=required.context:continue
+            seen.add(ref);visited.append(ref);queue.extend(b.links)
+        truncated=any(r not in seen and r in bindings and bindings[r].context==required.context for r in queue[cursor:])
+        cert=expected_certs[certificate_key]
+        reason=('revoked_evidence' if certificate_key in d['retention']['revoked'] else
+            'outside_trained_demand_bounds' if not no_easier(Demand(**cert['scope']),required) else
+            'no_present_access' if cert['binding'] not in bindings or bindings[cert['binding']].endorsement.value in ('retracted','disputed') else
+            'not_recalled' if truncated or cert['binding'] not in visited else 'owned_recalled_scoped_capacity')
+        require(attempts[0]['retained'][0]['reason']==reason
+            and attempts[0]['retained'][0]['eligible']==(reason=='owned_recalled_scoped_capacity'),'independent bounded recall eligibility')
+
     selected=None if not attempts else attempts[0]['selected']['name']
     terminal=d['terminal'];require(terminal is None or events and terminal==events[-1],'reuse terminal')
     if d['phase']=='complete':
@@ -135,4 +203,5 @@ def audit_social_reuse(engine,checkpoint):
             require(not option['eligible'],'skipped eligible retained choice')
     else:require(not fulfillment['fulfilled'],'unfulfilled claimed completion')
     return dict(passed=True,phase=d['phase'],qualification_exposures=len(exposures),qualified=bool(certs),selected=selected,
-        retained=selected=='retained',revoked=certificate_key in d['retention']['revoked'],fulfilled=fulfillment['fulfilled'])
+        retained=selected=='retained',revoked=certificate_key in d['retention']['revoked'],fulfilled=fulfillment['fulfilled'],organization_revisions=0 if organization is None else organization['index'],
+        recall=None if not attempts else dict(roots=roots,visited=len(visited),truncated=truncated,reason=reason))
