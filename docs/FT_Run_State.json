@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft-reuse-oct15-1792024259179",
   "active_worker": true,
-  "lease_expires_at": "2026-10-15T01:43:36.000Z",
-  "expected_head": "a92be13518479f891fbf0563d08ffb4e2fb1b470",
+  "lease_expires_at": "2026-10-15T01:55:00.000Z",
+  "expected_head": "b1a69956df8401f264b67b4716b21ef54941226a",
   "current_batch": "FT7.1b2b3a",
   "next_batch": "FT7.1b2b3a frozen exact reserve/history receipt binding running; FT7.1b2b3b actual paid reserve preparation and tie-only later owned choice mandatory",
   "completed_batches": [
@@ -268,11 +268,25 @@
   "engineering_continuation": {
     "batch": "FT7.1b2b3a",
     "accepted": false,
-    "frozen_commit": "a92be13518479f891fbf0563d08ffb4e2fb1b470",
-    "registered_methods": 8,
-    "registered_saved_records": 24,
-    "predecessor_identities": 352,
-    "claim": "Native accounting observer only, no choice effect; b3 parent remains open"
+    "frozen_commit": "b1a69956df8401f264b67b4716b21ef54941226a",
+    "attempts": 2,
+    "prior_attempt": {
+      "methods": 8,
+      "errors": 8,
+      "records": 0,
+      "preserved": true,
+      "diagnosis": "Exact long-window use-history ordinal rejection; accepted history code unchanged"
+    },
+    "current_attempt": {
+      "methods": 8,
+      "failures": 0,
+      "errors": 0,
+      "saved_audit": "in progress",
+      "required_records": 24,
+      "source_identities": 266
+    },
+    "required_next": "Complete all 24 exact saved native/ledger audits and durable evidence; then FT7.1b2b3b actual reserve preparation and tie-only later owned choice",
+    "parent_FT7_pending": true
   },
   "prior_comparison_hold": {
     "kind": "registered_comparison_conflicts_with_unchanged_route_contract",
