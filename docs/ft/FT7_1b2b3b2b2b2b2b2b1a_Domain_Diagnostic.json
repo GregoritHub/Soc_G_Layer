@@ -1,0 +1,349 @@
+{
+  "passed": true,
+  "records": 32,
+  "request_totals": {
+    "canonical": 15,
+    "workflow": 7650
+  },
+  "rows": {
+    "canonical/mask-1": {
+      "requests": 1,
+      "inventory": 0,
+      "subset_sizes": null,
+      "native_identity_exact": true
+    },
+    "canonical/restarted": {
+      "requests": 1,
+      "inventory": 0,
+      "subset_sizes": null,
+      "native_identity_exact": true
+    },
+    "canonical/mask-2": {
+      "requests": 1,
+      "inventory": 0,
+      "subset_sizes": null,
+      "native_identity_exact": true
+    },
+    "canonical/mask-3": {
+      "requests": 1,
+      "inventory": 0,
+      "subset_sizes": null,
+      "native_identity_exact": true
+    },
+    "canonical/mask-4": {
+      "requests": 1,
+      "inventory": 0,
+      "subset_sizes": null,
+      "native_identity_exact": true
+    },
+    "canonical/mask-5": {
+      "requests": 1,
+      "inventory": 0,
+      "subset_sizes": null,
+      "native_identity_exact": true
+    },
+    "canonical/mask-6": {
+      "requests": 1,
+      "inventory": 0,
+      "subset_sizes": null,
+      "native_identity_exact": true
+    },
+    "canonical/mask-7": {
+      "requests": 1,
+      "inventory": 0,
+      "subset_sizes": null,
+      "native_identity_exact": true
+    },
+    "canonical/mask-8": {
+      "requests": 1,
+      "inventory": 0,
+      "subset_sizes": null,
+      "native_identity_exact": true
+    },
+    "canonical/mask-9": {
+      "requests": 1,
+      "inventory": 0,
+      "subset_sizes": null,
+      "native_identity_exact": true
+    },
+    "canonical/mask-10": {
+      "requests": 1,
+      "inventory": 0,
+      "subset_sizes": null,
+      "native_identity_exact": true
+    },
+    "canonical/mask-11": {
+      "requests": 1,
+      "inventory": 0,
+      "subset_sizes": null,
+      "native_identity_exact": true
+    },
+    "canonical/mask-12": {
+      "requests": 1,
+      "inventory": 0,
+      "subset_sizes": null,
+      "native_identity_exact": true
+    },
+    "canonical/mask-13": {
+      "requests": 1,
+      "inventory": 0,
+      "subset_sizes": null,
+      "native_identity_exact": true
+    },
+    "canonical/mask-14": {
+      "requests": 1,
+      "inventory": 0,
+      "subset_sizes": null,
+      "native_identity_exact": true
+    },
+    "canonical/mask-15": {
+      "requests": 1,
+      "inventory": 0,
+      "subset_sizes": null,
+      "native_identity_exact": true
+    },
+    "workflow/mask-1": {
+      "requests": 510,
+      "inventory": 9,
+      "subset_sizes": {
+        "1": 9,
+        "2": 36,
+        "3": 84,
+        "4": 126,
+        "5": 126,
+        "6": 84,
+        "7": 36,
+        "8": 9
+      },
+      "native_identity_exact": true
+    },
+    "workflow/restarted": {
+      "requests": 510,
+      "inventory": 9,
+      "subset_sizes": {
+        "1": 9,
+        "2": 36,
+        "3": 84,
+        "4": 126,
+        "5": 126,
+        "6": 84,
+        "7": 36,
+        "8": 9
+      },
+      "native_identity_exact": true
+    },
+    "workflow/mask-2": {
+      "requests": 510,
+      "inventory": 9,
+      "subset_sizes": {
+        "1": 9,
+        "2": 36,
+        "3": 84,
+        "4": 126,
+        "5": 126,
+        "6": 84,
+        "7": 36,
+        "8": 9
+      },
+      "native_identity_exact": true
+    },
+    "workflow/mask-3": {
+      "requests": 510,
+      "inventory": 9,
+      "subset_sizes": {
+        "1": 9,
+        "2": 36,
+        "3": 84,
+        "4": 126,
+        "5": 126,
+        "6": 84,
+        "7": 36,
+        "8": 9
+      },
+      "native_identity_exact": true
+    },
+    "workflow/mask-4": {
+      "requests": 510,
+      "inventory": 9,
+      "subset_sizes": {
+        "1": 9,
+        "2": 36,
+        "3": 84,
+        "4": 126,
+        "5": 126,
+        "6": 84,
+        "7": 36,
+        "8": 9
+      },
+      "native_identity_exact": true
+    },
+    "workflow/mask-5": {
+      "requests": 510,
+      "inventory": 9,
+      "subset_sizes": {
+        "1": 9,
+        "2": 36,
+        "3": 84,
+        "4": 126,
+        "5": 126,
+        "6": 84,
+        "7": 36,
+        "8": 9
+      },
+      "native_identity_exact": true
+    },
+    "workflow/mask-6": {
+      "requests": 510,
+      "inventory": 9,
+      "subset_sizes": {
+        "1": 9,
+        "2": 36,
+        "3": 84,
+        "4": 126,
+        "5": 126,
+        "6": 84,
+        "7": 36,
+        "8": 9
+      },
+      "native_identity_exact": true
+    },
+    "workflow/mask-7": {
+      "requests": 510,
+      "inventory": 9,
+      "subset_sizes": {
+        "1": 9,
+        "2": 36,
+        "3": 84,
+        "4": 126,
+        "5": 126,
+        "6": 84,
+        "7": 36,
+        "8": 9
+      },
+      "native_identity_exact": true
+    },
+    "workflow/mask-8": {
+      "requests": 510,
+      "inventory": 9,
+      "subset_sizes": {
+        "1": 9,
+        "2": 36,
+        "3": 84,
+        "4": 126,
+        "5": 126,
+        "6": 84,
+        "7": 36,
+        "8": 9
+      },
+      "native_identity_exact": true
+    },
+    "workflow/mask-9": {
+      "requests": 510,
+      "inventory": 9,
+      "subset_sizes": {
+        "1": 9,
+        "2": 36,
+        "3": 84,
+        "4": 126,
+        "5": 126,
+        "6": 84,
+        "7": 36,
+        "8": 9
+      },
+      "native_identity_exact": true
+    },
+    "workflow/mask-10": {
+      "requests": 510,
+      "inventory": 9,
+      "subset_sizes": {
+        "1": 9,
+        "2": 36,
+        "3": 84,
+        "4": 126,
+        "5": 126,
+        "6": 84,
+        "7": 36,
+        "8": 9
+      },
+      "native_identity_exact": true
+    },
+    "workflow/mask-11": {
+      "requests": 510,
+      "inventory": 9,
+      "subset_sizes": {
+        "1": 9,
+        "2": 36,
+        "3": 84,
+        "4": 126,
+        "5": 126,
+        "6": 84,
+        "7": 36,
+        "8": 9
+      },
+      "native_identity_exact": true
+    },
+    "workflow/mask-12": {
+      "requests": 510,
+      "inventory": 9,
+      "subset_sizes": {
+        "1": 9,
+        "2": 36,
+        "3": 84,
+        "4": 126,
+        "5": 126,
+        "6": 84,
+        "7": 36,
+        "8": 9
+      },
+      "native_identity_exact": true
+    },
+    "workflow/mask-13": {
+      "requests": 510,
+      "inventory": 9,
+      "subset_sizes": {
+        "1": 9,
+        "2": 36,
+        "3": 84,
+        "4": 126,
+        "5": 126,
+        "6": 84,
+        "7": 36,
+        "8": 9
+      },
+      "native_identity_exact": true
+    },
+    "workflow/mask-14": {
+      "requests": 510,
+      "inventory": 9,
+      "subset_sizes": {
+        "1": 9,
+        "2": 36,
+        "3": 84,
+        "4": 126,
+        "5": 126,
+        "6": 84,
+        "7": 36,
+        "8": 9
+      },
+      "native_identity_exact": true
+    },
+    "workflow/mask-15": {
+      "requests": 510,
+      "inventory": 9,
+      "subset_sizes": {
+        "1": 9,
+        "2": 36,
+        "3": 84,
+        "4": 126,
+        "5": 126,
+        "6": 84,
+        "7": 36,
+        "8": 9
+      },
+      "native_identity_exact": true
+    }
+  },
+  "new_paid_work": false,
+  "source_identities": 381,
+  "claim": "Exact declared request grammar only; native eligibility and comparison remain unpaid and unproven."
+}

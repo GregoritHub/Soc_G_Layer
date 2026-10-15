@@ -1,0 +1,27 @@
+# FT7.1b2b3b2b2b2b2b2b1a — complete bounded owned request windows
+
+Status: PASSED in the declared request-grammar scope on 15 October 2026 UTC. The earlier paid-comparison gate FT7.1b2b3b2b2b2b2b2b1 remains FAILED and unaccepted.
+
+Prospective protocol `b2b26787c2baf8e09beb7e379d99e0e328dd2402`, implementation `751a4136fa6937c32042e6b4fd317efeef0711be` and frozen evaluator `b4e85a1ca1aad005cbf47cb59dbab6eb3d06c848` passed all eight exact actual method bodies, all 460 exact predecessor identities and all 32 exact saved records. Every record passed typed roundtrip and independent source/intake/payment/request-domain audit. All 381 frozen identities, including 374 preceding identities and 367 accepted predecessor identities, remain unchanged. The 460 predecessor identities include eight unexecuted methods of the failed paid gate; preserving those identities does not accept that gate. No accepted paid work was rerun.
+
+## Actual scope
+
+Each of the fifteen fixed task masks in each setting reads the exact accepted completed intake. Canonical preserves one unchanged original native request per task. Workflow retains all nine current paid matching owned content references and enumerates every nonempty subset of size one through eight: 510 requests per task, 7,650 across the fifteen independent task branches. Subset counts by size are 9, 36, 84, 126, 126, 84, 36 and 9; each reference occurs in 255 subsets. Maximal eight-item subsets alone would omit smaller whole-visible-set recipe possibilities.
+
+The new `owned-accessible-window-domain-v2` label is separate from unchanged `owned-native-request-v1`, whose nine-input rejection is retained explicitly. The native eight-input bound, native alternatives limit, old policy labels and original source/controller/reserve/history prefixes remain exact. No content is discarded or revised; no role, route, recipe, winner or success is supplied. The fresh task is proved current, owned and oldest eligible; older unresolved demand is not bypassed. Partial intake, forged payment/domain/source and invalid native nine-input requests are rejected. Native checkpoints and restarted domains are byte-exact.
+
+This gate performs no new native work and grants no payment receipt, native-view validity, admission or execution authority. All comparisons remain UNPAID. `native_view_probed=false`, `comparison_paid=false`, `execution_authorized=false`, `td5_admitted=false` and `history_choice=false`; the existing receipt covers intake only. No fresh skill, genuine cost/priority tie, live history choice, movement, downstream use, reserve/history credit or parent acceptance follows.
+
+## Preserved failure and operational evidence
+
+The prior paid-comparison attempt at `2762cd21ee1148eeda5945ce984b1af72c55eaaa` saved and independently audited twenty canonical records before workflow request formation rejected nine content references under the unchanged native bound of eight. Zero actual test method bodies, zero saved workflow records and zero new workflow paid comparisons ran. Each completed canonical branch paid 67 energy/time after its existing 5/5 intake; these are independent branches, not cumulative live expense. Its exact source, partial records, log and diagnosis are preserved without promotion to acceptance.
+
+Primary automatic preparation verified all 374 preceding frozen identities, 1,093 sealed baseline files, 210 historical references, twenty repair-freeze entries and 209 recovery members. An optional second preparation hit CONNECT tunnel HTTP403 and was stopped without retry or alternate transfer. The six new project files were added exactly to the retained verified primary base; all prior files stayed exact, and the new 381-file freeze and retained baseline were verified. This is NOT a second fresh automatic 381-file rebuild. No source-access workaround occurred.
+
+Read-only auxiliary progress/path/archive-format errors were corrected and disclosed in the private evidence; they changed no source, gate or native state. After upload, an output-parser error was resolved by the persisted file identity and exact filename/size metadata; no duplicate upload was made.
+
+## Evidence and next work
+
+Private artifact: `FT7_1b2b3b2b2b2b2b2b1a_Request_Window_Evidence_20261015.zip`, SHA-256 `6eca9ead0be9da26575d6e39b48ba3005de63a85fc6672760119caeccea063b6`, 57353482 bytes. All 81 manifest members verified; both new/failed source capsules contain seven verified members. The exact accepted intake input retains all 66 outer members and its 7/10-member source capsules and 20-member original input. Private retrieval identifiers are excluded from public metadata. See the Summary, Evidence_Index and Domain_Diagnostic JSON files.
+
+Next FT7.1b2b3b2b2b2b2b2b1b is planned, not preregistered: full newly paid accessible-window native comparison with separate exact source/native-prefix composition and restart. Existing canonical partial evidence may only be reused under a prospectively proved exact-input bridge; it does not cover workflow or changed inputs. Then route-free fresh skill work, current TD5/capacity admission, genuine same-priority/native-cost ties across distinct actual elements, autonomous live history-only choice, actual chosen paid movement/downstream use, matched feedback-off/history-removal and full preparation/live-staging composition remain mandatory. Parent FT7, ordered pairs/populations and FT8–FT9 remain unfinished; every FT8 denominator and matched-main-cost obligation is unchanged. No substantive theory blocker is established.

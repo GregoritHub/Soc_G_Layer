@@ -1,0 +1,33 @@
+{
+  "batch": "FT7.1b2b3b2b2b2b2b2b1a",
+  "archive": {
+    "filename": "FT7_1b2b3b2b2b2b2b2b1a_Request_Window_Evidence_20261015.zip",
+    "sha256": "6eca9ead0be9da26575d6e39b48ba3005de63a85fc6672760119caeccea063b6",
+    "manifest_members": 81,
+    "bytes": 57353482,
+    "nested_members": {
+      "fresh-comparison-source-v1.zip": 7,
+      "request-window-source-v1.zip": 7,
+      "accepted_intake_archive": 66,
+      "intake_failed_source": 7,
+      "intake_corrected_source": 10,
+      "original_owned_proposal_archive": 20
+    },
+    "all_members_verified": true
+  },
+  "input": {
+    "filename": "FT7_1b2b3b2b2b2b2b2a_Fresh_Task_Intake_Evidence_20261015.zip",
+    "sha256": "b446c4b66c44e42b0a1bbcd75c10149cd6283fcc67804296648b306c67ee592a",
+    "manifest_members": 66
+  },
+  "contents": [
+    "All 32 unchanged-native/domain records, independent audits and eight-method log",
+    "Exact 460 predecessor identities and 381 frozen source identities",
+    "Original failed paid gate: 20 canonical partial records, audits, log and seven-member source capsule",
+    "New seven-member source capsule and exact accepted input archive",
+    "Read-only domain totals, full retained-base verification, failure/access diagnostics and reproduction instructions"
+  ],
+  "retrieval": "Exact private filename and SHA-256 identify the saved attachment; private retrieval pointer retained only in continuation task.",
+  "new_paid_work": false,
+  "failed_paid_gate_accepted": false
+}
