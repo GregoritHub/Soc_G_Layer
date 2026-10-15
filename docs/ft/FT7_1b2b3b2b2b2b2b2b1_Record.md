@@ -1,0 +1,13 @@
+# FT7.1b2b3b2b2b2b2b2b1 — fresh-task paid comparison composition
+
+Status: implemented and frozen; bounded gate in progress, not yet accepted.
+
+Prospective protocol `59569de4178857e01e43ad2b47fde0e6d6a4871f` fixes all 30 accepted completed task-intake branches. Implementation `2f3039aba893b189fdb91da1f550144412bac4e9` separately derives each fresh current owned demand and the unchanged route-free native request. The original controller/source/reserve/history remain exact, and no older current unresolved need may be skipped. Optional roles remain absent; no skill, route, recipe, success or winner is supplied.
+
+Freeze `2762cd21ee1148eeda5945ce984b1af72c55eaaa` binds 374 identities, including all 367 preceding identities unchanged. The registered gate requires eight exact actual methods, 452 exact predecessor identities and 40 exact saved native records. Accepted intake and earlier paid gates are not rerun. Actual new native comparisons retain original per-cell policies and nominees; only fully paid settlement exposes a new protected result/receipt. Partial, ready and cancellation states do not. Exact partial restart and terminal idempotence are required.
+
+This is bounded original-role comparison composition only, not fresh skill work, complete role/operand coverage, current TD5/capacity admission, a genuine distinct-element priority/cost tie, history-caused choice, movement/downstream use or parent acceptance. Snapshots are predebit; any later admission must inspect the current wallet and demand. All FT8 denominators and matched-main-cost requirements remain intact.
+
+Primary automatic preparation reproduces the frozen source and verifies 1,093 sealed baseline files, 210 historical references, 20 repair-freeze entries and 209 recovery archive members. An optional second preparation was stopped after a dependency clone returned CONNECT tunnel HTTP403; its log and incomplete output are preserved. No alternate transfer or retry was used. The already complete verified primary runtime continues the gate. A preliminary preparation predating the final test-only edit was not used for acceptance. Auxiliary read-only missing-path and process-list diagnostics changed no engine state.
+
+Next mandatory work remains route-free fresh skill work, separately bound current admission and new paid comparisons for changed inputs, genuine same-priority/native-cost ties across distinct actual elements, autonomous live history-only choice, chosen paid movement/downstream use, matched feedback-off/history-removal controls and full preparation/live-staging composition/restart. Parent FT7, ordered pairs/populations and FT8–FT9 remain unfinished.
