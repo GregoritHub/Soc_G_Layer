@@ -5,7 +5,7 @@
   "run_id": "ft-role-20261015T0840-9f3c",
   "active_worker": true,
   "lease_expires_at": "2026-10-15T09:35:00Z",
-  "expected_head": "7f34cd6aa0417dff694e2864734d7a7aca6f96c4",
+  "expected_head": "87d00427663222efa57f275853688dbfaf5802e3",
   "current_batch": "FT7.1b2b3b2b2b2b1",
   "next_batch": "FT7.1b2b3b2b2b2b2: complete owned role alternatives and fresh route-free task/skill panel, genuine same-priority/native-cost distinct-element tie, live history-caused selection, actual chosen movement/consumer, matched feedback-off/history-removal and full preparation/staging composition. Parent FT7/FT8/FT9 and all denominators unchanged.",
   "completed_batches": [
@@ -56,11 +56,12 @@
     "FT7.1b2b3b2b1",
     "FT7.1b2b3b2b2a",
     "FT7.1b2b3b2b2b1",
-    "FT7.1b2b3b2b2b2a"
+    "FT7.1b2b3b2b2b2a",
+    "FT7.1b2b3b2b2b2b1"
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT7_1b2b3b2b2b2a_Record.md",
+  "latest_record": "docs/ft/FT7_1b2b3b2b2b2b1_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
@@ -124,29 +125,43 @@
     "standalone_ft9_release": false
   },
   "local_acceptance": {
-    "batch": "FT7.1b2b3b2b2b2a",
+    "batch": "FT7.1b2b3b2b2b2b1",
     "passed": true,
     "methods": 10,
     "failures": 0,
     "errors": 0,
-    "predecessor_identities": 408,
+    "predecessor_identities": 418,
     "saved_records": 8,
     "typed_roundtrip_exact": true,
     "independent_audits": true,
     "source_unchanged": true,
-    "frozen_identities": 327,
-    "paid_execution_rerun": false,
-    "claim": "Current TD5 admission and bounded estimated-cost domain only; no live history-caused choice or parent acceptance",
-    "protocol_commit": "a7cfc9d5e7cf07bd4fa8389accff1d11048f7fc1",
-    "frozen_commit": "c1d48db23d17151f1837f9ec83c33b1eb0b1b705",
-    "prior_320_identities_unchanged": true,
+    "frozen_identities": 334,
+    "accepted_comparison_rerun": false,
+    "claim": "Actual comparison-to-preparation composition only; no live choice or parent acceptance",
+    "protocol_commit": "698d6d07005ab2550440b7057a32d7bc7ca3f7d3",
+    "frozen_commit": "7f34cd6aa0417dff694e2864734d7a7aca6f96c4",
+    "prior_327_identities_unchanged": true,
     "new_failed_attempts": 0,
     "archive": {
-      "filename": "FT7_1b2b3b2b2b2a_Current_Admission_Evidence_20261015.zip",
-      "bytes": 25493663,
-      "sha256": "171d55d650b3da759880db91ccae7f7c6ef44c5c4f06d56aebb00dfe273ea1c7",
-      "manifest_members": 27,
-      "all_members_verified": true
+      "filename": "FT7_1b2b3b2b2b2b1_Compared_Preparation_Evidence_20261015.zip",
+      "bytes": 28262101,
+      "sha256": "0bfad01e984beadf4f6d9fbd733d62090ca1e19b8cb29d652ba481d19db97fcb",
+      "manifest_members": 22,
+      "all_members_verified": true,
+      "nested_source_members": 7
+    },
+    "clean_preparation": {
+      "passed": true,
+      "frozen_identities": 334,
+      "prior_identities": 327,
+      "bad": [],
+      "changed": [],
+      "manual_overlay": false,
+      "accepted_gate_rerun": false,
+      "sealed_baseline": 1093,
+      "historical_references": 210,
+      "repair_freeze": 20,
+      "recovery_members": 209
     }
   },
   "conditioning_release": {
@@ -277,13 +292,13 @@
     "source_publication": "verified",
     "prior_failed_attempts": 6
   },
-  "latest_acceptance_record": "docs/ft/FT7_1b2b3b2b2b2a_Record.md",
-  "latest_acceptance_commit": "a23186a12e2a525697b18d33191ad2b3692c6a64",
+  "latest_acceptance_record": "docs/ft/FT7_1b2b3b2b2b2b1_Record.md",
+  "latest_acceptance_commit": null,
   "engineering_continuation": {
     "batch": "FT7.1b2b3b",
     "accepted": false,
-    "required_next": "FT7.1b2b3b2b2b: preregister complete current TD5 admission/route/recipe and bounded operand domain, fresh paid owned work producing a genuine priority/native-cost tie, autonomous history-caused tie-only choice, actual chosen work/downstream use, matched feedback-off/history-removal controls and exact preparation/live-staging composition/restart; then remaining FT7–FT9.",
-    "scope": "Bounded native proposal inventory, actual paid comparison/restart, paid preparation and live outcome staging accepted separately. Complete TD5 domain and actual autonomous history-caused choice remain mandatory.",
+    "required_next": "FT7.1b2b3b2b2b2b2: complete owned role alternatives and fresh route-free task/skill panel, genuine same-priority/native-cost distinct-element tie, live history-caused selection, actual chosen movement/consumer, matched feedback-off/history-removal and full preparation/staging composition. Parent FT7/FT8/FT9 and all denominators unchanged.",
+    "scope": "Bounded proposals, paid comparison, operand/current admission, paid preparation and live outcome staging accepted in recorded scopes. Comparison-to-preparation now composes exactly; full role domain, actual autonomous history-caused choice, movement/consumer and matched controls remain mandatory.",
     "permission": "Technical coding, testing, diagnosis, lawful repairs and retries through FT9 belong to the agent without renewed user approval. Preserve criteria except the explicitly approved comparison amendment; FT8 unchanged."
   },
   "prior_comparison_hold": {
@@ -307,7 +322,8 @@
     "FT7.1b2b3b2",
     "FT7.1b2b3b2b",
     "FT7.1b2b3b2b2",
-    "FT7.1b2b3b2b2b"
+    "FT7.1b2b3b2b2b",
+    "FT7.1b2b3b2b2b2b2"
   ],
   "prior_ft7_1b2b2b_acceptance": {
     "passed": true,
@@ -1326,5 +1342,49 @@
       "manifest_members": 31,
       "all_members_verified": true
     }
+  },
+  "prior_ft7_1b2b3b2b2b2a_acceptance": {
+    "batch": "FT7.1b2b3b2b2b2a",
+    "passed": true,
+    "methods": 10,
+    "failures": 0,
+    "errors": 0,
+    "predecessor_identities": 408,
+    "saved_records": 8,
+    "typed_roundtrip_exact": true,
+    "independent_audits": true,
+    "source_unchanged": true,
+    "frozen_identities": 327,
+    "paid_execution_rerun": false,
+    "claim": "Current TD5 admission and bounded estimated-cost domain only; no live history-caused choice or parent acceptance",
+    "protocol_commit": "a7cfc9d5e7cf07bd4fa8389accff1d11048f7fc1",
+    "frozen_commit": "c1d48db23d17151f1837f9ec83c33b1eb0b1b705",
+    "prior_320_identities_unchanged": true,
+    "new_failed_attempts": 0,
+    "archive": {
+      "filename": "FT7_1b2b3b2b2b2a_Current_Admission_Evidence_20261015.zip",
+      "bytes": 25493663,
+      "sha256": "171d55d650b3da759880db91ccae7f7c6ef44c5c4f06d56aebb00dfe273ea1c7",
+      "manifest_members": 27,
+      "all_members_verified": true
+    }
+  },
+  "compared_preparation_progress": {
+    "batch": "FT7.1b2b3b2b2b2b1",
+    "accepted": true,
+    "status": "accepted",
+    "protocol_commit": "698d6d07005ab2550440b7057a32d7bc7ca3f7d3",
+    "frozen_commit": "7f34cd6aa0417dff694e2864734d7a7aca6f96c4",
+    "methods": 10,
+    "saved_records": 8,
+    "predecessor_identities": 418,
+    "comparison_rerun": false,
+    "preparation_cost": {
+      "energy": 2,
+      "time": 2
+    },
+    "execution_authorized": false,
+    "history_choice": false,
+    "scope": "Actual comparison-to-preparation composition only; no live choice or parent acceptance"
   }
 }
