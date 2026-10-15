@@ -28,7 +28,9 @@
 | FT7.1 | training, closure and scoped reuse accepted; parent pending | FT7.1b2b2b: 14 exact methods, 338 predecessor identities, 24 saved audits. FT7.1b2b3 reserve/history feedback remains mandatory |
 | FT7.1b2b2a | accepted, bounded closure/certificate | 12 exact methods, 326 predecessor identities, 22 saved native records independently audited; stricter no-support requalification and actual later reuse remain FT7.1b2b2b |
 | FT7.1b2b2b | accepted, approved bounded split | 14 exact methods, 338 predecessor identities and 24 exact saved audits; strict complete/defer plus separate completed one-facet equal-main-cost retained priority. FT8 intact; see FT7_1b2b2b_Acceptance_Record.md |
-| FT7.1b2b3 | pending | Integrated native reserve/history binding and tie-only feedback on later owned choices |
+| FT7.1b2b3 | parent pending; accounting observer accepted | FT7.1b2b3a: 8 methods, 352 predecessor identities, 24 exact saved binding audits. Actual paid preparation and tie-only later owned choice remain mandatory |
+| FT7.1b2b3a | accepted, native receipt binding only | Immutable supported prefix, two independent training outcomes and later completion/deferral accounting; see FT7_1b2b3a_Record.md |
+| FT7.1b2b3b | pending | Actual paid reserve preparation, autonomous complete owned tie domain, feedback controls, matched main cost and exact restart |
 | FT7.2 | pending | Full Theory plan gate |
 | FT7.3 | pending | Full Theory plan gate |
 | FT8.1 | pending | Full Theory plan gate |
@@ -51,3 +53,5 @@
 Author-approved split supersedes the ruling-required status above. See FT7_1b2b2b_Reopening_Record.md. Strict contrast does not discharge FT8 matched-cost obligations.
 
 [measured] FT7.1b2b2b accepted on 15 October 2026 UTC. This supersedes earlier reopened/unaccepted and theory-hold snapshots without erasing failures. Exact actual method run and separately frozen bounded saved-record audit both passed. The durable evidence includes all six attempts; FT8 obligations remain intact. Next FT7.1b2b3; no blocker.
+
+[measured] FT7.1b2b3a passed its complete bounded accounting-observer subgate. One diagnosed failure is preserved. Source/native payments and the original reserve/history prefix are unchanged; parent choice causality is not accepted. Next FT7.1b2b3b; no blocker.
