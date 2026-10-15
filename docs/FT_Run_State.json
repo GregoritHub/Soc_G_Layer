@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "18316840e6791fb751b40bcb1c664054ba421938",
+  "status": "running",
+  "run_id": "ft-role-domain-20261015T0936-7c12",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-15T10:06:00Z",
+  "expected_head": "e6987e9fa5c5449c78fb5bf8253d154bfd50c1c3",
   "current_batch": "FT7.1b2b3b2b2b2b1",
   "next_batch": "FT7.1b2b3b2b2b2b2: complete owned role alternatives and fresh route-free task/skill panel, genuine same-priority/native-cost distinct-element tie, live history-caused selection, actual chosen movement/consumer, matched feedback-off/history-removal and full preparation/staging composition. Parent FT7/FT8/FT9 and all denominators unchanged.",
   "completed_batches": [
