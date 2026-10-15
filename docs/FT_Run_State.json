@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft7-role-paid-20261015T1037Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-15T12:23:56Z",
-  "expected_head": "6b2c52863228a71dd61511e3ba5f440b3633b57d",
+  "lease_expires_at": "2026-10-15T12:45:38Z",
+  "expected_head": "fa66b86d06cc842e84b9064b1efb8e3e4e2b95ff",
   "current_batch": "FT7.1b2b3b2b2b2b2b1",
   "next_batch": "FT7.1b2b3b2b2b2b2b: prospectively fixed route-free fresh task/skill work, newly paid role-dependent comparison, genuine same-priority/native-cost distinct-element ties, separately versioned live history-only choice, actual chosen movement/downstream use, matched feedback-off/history-removal and full staging composition/restart. Preserve older unresolved demand, TD5 and all FT8 denominators.",
   "completed_batches": [
@@ -1470,7 +1470,8 @@
     "failed_attempt3_freeze": "c80f5a357d9b3b4cb9f359b3880b6f14b7f4fa51",
     "attempt3_canonical_saved_audits": 6,
     "frozen_commit": "a8dda4cbc291e5bad37d9af8ba50e6506f97fa7b",
-    "attempt4_saved_audits": 10,
-    "attempt4_stage": "both settings settled; workflow restart and remaining controls running"
+    "attempt4_saved_audits": 12,
+    "attempt4_stage": "all twelve records independently audited; exact eight-method suite running",
+    "attempt4_methods_passed_so_far": 1
   }
 }
