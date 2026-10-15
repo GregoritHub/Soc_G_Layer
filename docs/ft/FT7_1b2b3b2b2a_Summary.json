@@ -1,0 +1,48 @@
+{
+  "batch": "FT7.1b2b3b2b2a",
+  "passed": true,
+  "methods": 10,
+  "failures": 0,
+  "errors": 0,
+  "predecessor_identities": 388,
+  "saved_records": 12,
+  "typed_roundtrip_exact": true,
+  "independent_audits": true,
+  "source_unchanged": true,
+  "frozen_identities": 313,
+  "original_paid_freeze": "ed4b85a7ed4ebe80491b4a4fcd98ccc6ff9887b8",
+  "original_frozen_identities": 311,
+  "paid_execution_rerun": false,
+  "claim": "Actual native paid owned comparison and restart only; no TD5 admission, history-caused choice, movement or parent acceptance",
+  "protocol_commit": "3b6614e8b541bb9074aa56efd91c05c23b10020c",
+  "first_frozen_commit": "8822951be8ae9d9d0aedff7b07a5099b444ba793",
+  "access_amendment_commit": "eb4b68bbb199d333916c4dc58ecc4d3f7e96968f",
+  "chronology_amendment_commit": "e2e8c4469e6623a5b71a51e453fe158a931fc93b",
+  "saved_reader_amendment_commit": "3d53fc6388a686cde0dfd0758cd8f8505ec2db4e",
+  "saved_reader_frozen_commit": "3430079d6ff2f11f1f361dffd31c75f2eb78b382",
+  "prior_295_identities_unchanged": true,
+  "all_failed_attempts_preserved": true,
+  "archive": {
+    "filename": "FT7_1b2b3b2b2a_Paid_Comparison_Evidence_20261015.zip",
+    "bytes": 76061088,
+    "sha256": "83aaabc862b1fc09055761f2a994ad79106696e89ccc566391b1f5c21b56672b",
+    "manifest_members": 80,
+    "all_members_verified": true,
+    "nested_failed_source_members": [
+      7,
+      9,
+      11
+    ],
+    "nested_failed_source_verified": true
+  },
+  "clean_preparation": {
+    "passed": true,
+    "identities": 313,
+    "prior_295_exact": true,
+    "manual_overlay": false,
+    "sealed_baseline": 1093,
+    "historical_references": 210,
+    "repair_freeze": 20,
+    "recovery_members": 209
+  }
+}

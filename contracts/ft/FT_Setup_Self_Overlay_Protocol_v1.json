@@ -1,0 +1,16 @@
+{
+  "version": "ft-setup-self-overlay-v1",
+  "scope": "Setup-only repair; no accepted engine witness or acceptance gate rerun",
+  "diagnosis": "The current tracked-layer allowlist omits tools/prepare_workspace.py, leaving a stale inherited setup tool in the output; the FT7.1b2b3a reproduction required a separately recorded exact copy.",
+  "change": "Include exactly tools/prepare_workspace.py in the tracked project-owned overlay; do not widen other tool prefixes or change pinned dependencies.",
+  "checks": [
+    "Fresh preparation succeeds from exact held and repair archives with pinned local read-only source checkouts",
+    "Output setup bytes equal current project setup bytes without a manual copy",
+    "All 270 prior frozen identities except the prospectively changed setup tool remain exact",
+    "All prior frozen files including the revised setup tool match the new freeze",
+    "Preparation retains 1093 sealed baseline files, 210 historical reference files, 20 repair-freeze files and 209 verified archive members",
+    "Existing output rejection preserves existing work",
+    "Source freeze unchanged after bounded preparation verification"
+  ],
+  "limits": "No standalone FT9 acceptance, no parent FT7 acceptance, no baseline/default/FT8 change; historical accepted freezes remain immutable."
+}

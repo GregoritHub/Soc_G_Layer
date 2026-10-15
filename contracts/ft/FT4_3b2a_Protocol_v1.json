@@ -1,0 +1,51 @@
+{
+  "batch": "FT4.3b2a",
+  "parent_job": "FT4.3",
+  "policy": "ft-autonomous-capability-discovery-v1",
+  "status": "prospective",
+  "scope": "Extend accepted honest autonomous closure with deterministic discovery and certification of actual owned, paid, independent development evidence in the same demand scope. The caller supplies no capacity reference, content-use key, successful candidate, route or success flag. This sub-batch stops at an independently reconstructed guarded capability certificate; FT4.3b2b retains later autonomous retained-route reuse, evidence ablation, unavailable support, opposition integration and the final FT4 gate.",
+  "modules": [
+    "full_theory/autonomous_capability.py",
+    "full_theory/autonomous_capability_audit.py",
+    "tools/evaluate_ft4_3b2a.py"
+  ],
+  "test_directory": "tests_ft4",
+  "method_ids": [
+    "test_discovers_and_certifies_owned_capability_in_both_settings",
+    "test_discovery_accepts_no_capacity_use_or_success_input",
+    "test_honest_closure_must_precede_certification",
+    "test_supported_duplicate_and_insufficient_training_stay_open",
+    "test_candidate_order_is_committed_and_stable",
+    "test_wrong_scope_and_unrelated_content_use_are_rejected",
+    "test_certificate_is_applicable_only_inside_trained_bounds",
+    "test_removing_recall_or_revoking_evidence_preserves_closure_history",
+    "test_checkpoint_continuation_is_exact",
+    "test_independent_auditor_rejects_forged_capacity_use_order_and_claim",
+    "test_all_ft4_3b1_and_predecessor_method_identities_remain_exact"
+  ],
+  "fixtures": {
+    "docs/ft/FT_Configuration_Contract_v1.md": "d582a935b161b5e0ffb8e8a332d027f36cc54c7698ebecac79dc774b80efc94f",
+    "full_theory/autonomous_closure.py": "77a4570c5cd0facbb68c144a6811aa965c1d45403778232056cf966483ff2b56",
+    "full_theory/autonomous_closure_audit.py": "305569e76658d5bc330d6625fe51cc60b4d802a7059472d38b2532cf040bb7bc",
+    "full_theory/retention.py": "76e604a5a1d8ed7b73b58f391dad74d59e7d2ba868c51f271c14801e8174c29b",
+    "full_theory/retention_audit.py": "9595b3770cf81ae663b5675d3e95e921f2e7d6250c0dd5dbbc68a5589fbf2f50",
+    "tests_ft4/test_autonomous_closure.py": "14fa99e4dc4e1cdfadc6d4699ced93930d6befbe31385961d27d0f1bdc636e33",
+    "tests_ft3/test_retention.py": "6d94c74e03edf05a4ce0e6c1f106e293712afffa4ee3cc2c3f9e3de9b1cb7863"
+  },
+  "settings": ["canonical", "workflow"],
+  "rules": [
+    "The controller is paired to one closed accepted AutonomousClosureController, the same native engine, actor and exact Demand. Its public step accepts only a positive scan bound; it accepts no capacity reference, practice reference, content-use key, certificate key, candidate, route, desired result or success flag.",
+    "Candidates come only from the actor's detached native development view and committed paid job history. A candidate requires an actual native capacity in the same context and cue, at least two distinct independent unsupported practice examples over at least two target identities, and one distinct fully paid routed content use for each example.",
+    "Each content use must have the demand context, serve one of that practice example's exact targets, begin no earlier than its paid response completion and finish no later than its paid practice completion. One operation may not satisfy two examples.",
+    "Eligible uses are matched to examples deterministically by example order and committed operation order. Capacity candidates sort by their paid operation completion, stable capacity identity and exact use identities. Mapping or construction order cannot choose the winner.",
+    "The accepted RetentionLedger remains authoritative for certification and applicability. The discovered certificate claims guarded content participation only, records no material competence, grants no TIM or dimensionality change and preserves permanent closure history separately from present applicability.",
+    "At most one new certificate is created. Supported, duplicate, foreign, unpaid, incomplete, out-of-scope, chronologically unrelated or insufficient-load evidence cannot certify and leaves the controller open with an explicit reason.",
+    "Checkpoint restoration is paired to the exact native engine and exact honest-closure checkpoint and preserves the discovery event sequence and retention ledger byte-for-byte.",
+    "An independent auditor imports no autonomous-capability controller. It invokes the accepted closure and retention auditors, reconstructs native capacities, practices, paid content-use chronology and candidate order from raw committed records, and rejects forged actor, scope, payment, independence, support, duplicate, use, order, load, claim or certificate links.",
+    "TIM, seat dimensionality, native resource defaults, accepted subordinate policies and inherited source remain unchanged.",
+    "Acceptance requires the eleven exact new methods plus all one hundred seven exact FT4.1-FT4.3b1 predecessor methods, both-setting certificate witnesses, a strict source freeze and unchanged source. Passing accepts FT4.3b2a only; FT4.3b2b retains later reuse, evidence removal, unavailable support, opposition and final parent/common FT4 acceptance."
+  ],
+  "gate": "One hundred eighteen exact methods pass with zero failures/errors; canonical and workflow witnesses each begin from independently auditable honest closure, discover and certify one exact paid independent native capacity without caller-selected evidence, remain applicable inside trained bounds under independent reconstruction, match the registered source freeze and leave source unchanged.",
+  "next": "FT4.3b2b autonomous retained-route reuse, evidence ablation, unavailable support, opposition and final common FT4 gate",
+  "stop": "Preserve failures; two gate failures after correction stops."
+}

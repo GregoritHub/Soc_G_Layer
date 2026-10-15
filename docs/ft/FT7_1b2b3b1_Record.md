@@ -1,0 +1,13 @@
+# FT7.1b2b3b1 accepted paid task preparation
+
+[measured] On 15 October 2026 UTC the bounded preparation subgate passed at frozen source `fde88bb472388d4ff1932a51a70b3b0fa970da11`: all eight exact methods, all 360 predecessor method identities and all eight saved native/adapter records. Typed roundtrip, independent native/source/task/read/history audits and exact partial-read restart passed with all 277 frozen identities unchanged. There were no failed new attempts. All older failed evidence remains preserved. No accepted predecessor test bodies were rerun.
+
+Both original harder-demand sources retained one unpaid preparation unit with reserve balance 1. The adapter derives the exact owned task and original admission from the accepted source, then executes a fresh native disclosure/read. At one unit paid, no preparation receipt exists and history remains byte-exact. At two native time and energy units paid and committed, the exact task-definition receipt satisfies that preparation unit. Resumed and uninterrupted native/adapter checkpoints match exactly; repeated terminal steps do not charge or credit again. Forged receipts/history and wrong native pairing are rejected.
+
+Original reserve balance, completion state and every prior ledger event remain unchanged. Ordinary reading supplies no new Model A processing count and no independent-use credit. The source remains an honest deferral: payment of preparation is not a successful route, capacity, replenishment or task completion. The full accepted source chain is independently audited, not regenerated against the changed native checkpoint.
+
+[measured] The separately registered setup self-overlay repair also passed fresh preparation. Only the setup tool changed among the preceding 270 identities; the other 269 and all pinned dependencies remain exact. The tool now copies its own exact current bytes automatically. See FT_Setup_Self_Overlay_Record.md. This is not standalone FT9 delivery.
+
+[derived] This subgate establishes actual paid preparation and read-level outcome staging/restart only. Parent FT7.1b2b3b still owes complete owned candidate generation, oldest-first/TD5 priority and native-cost gates, an actual tie-only history effect on chosen work and downstream use, feedback-off/history-removal controls at matched main costs, and integrated movement/consumer outcome staging/restart. Those requirements are not reduced by this subgate. Parent FT7, ordered pairs/populations, FT8 and FT9 remain unfinished. All denominators, defaults, TIM, dimensions and theoretical boundaries are unchanged. No current theory blocker.
+
+Evidence and exact reproduction: FT7_1b2b3b1_Evidence_Index.json and FT7_1b2b3b1_Summary.json.

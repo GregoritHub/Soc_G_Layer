@@ -1,0 +1,26 @@
+{
+  "batch": "FT7.1b2b3b2b2b1",
+  "passed": true,
+  "methods": 10,
+  "failures": 0,
+  "errors": 0,
+  "predecessor_identities": 398,
+  "saved_records": 12,
+  "typed_roundtrip_exact": true,
+  "independent_audits": true,
+  "source_unchanged": true,
+  "frozen_identities": 320,
+  "paid_execution_rerun": false,
+  "claim": "Exact bounded operand expansion only; no TD5 admission, live history-caused choice or parent acceptance",
+  "protocol_commit": "8dd19d301b9d11c825300402318f063911b4d0c5",
+  "frozen_commit": "a1f97d2b3f0593c79ce1ca5484e92397717c7435",
+  "prior_313_identities_unchanged": true,
+  "new_failed_attempts": 0,
+  "archive": {
+    "filename": "FT7_1b2b3b2b2b1_Owned_Operand_Evidence_20261015.zip",
+    "bytes": 38033714,
+    "sha256": "476cd4891f551d8c5743684fc19556440c2dedc625f9bc345a753a588c68b42d",
+    "manifest_members": 31,
+    "all_members_verified": true
+  }
+}

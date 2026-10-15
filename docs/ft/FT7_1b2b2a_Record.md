@@ -1,0 +1,11 @@
+# FT7.1b2b2a — owned content closure and scoped certificate accepted
+
+[measured] The first frozen gate at `1941ddde40701f4a9517e459eee55bc6d95287be` passed all 12 exact methods, preserved 326 predecessor method identities and independently reconstructed all 22 saved native records, including their immutable training and autonomous social prefixes. Exact raw readback, partial use/Shell restart and unchanged registered source passed. No accepted predecessor suite was rerun or changed.
+
+[derived] The controller derives a named demand from its first owned training episode, discovers that episode's actual complement-to-native paid return path, then executes two fresh paid uses of the same exact content. Each use is followed by a paid encounter using current received facts. Unchanged retention rules require non-vacuous clearance and stable continuity before certification from actual independent native practices.
+
+[measured] Canonical SelectionEngine and explicit workflow-v4 both closed and certified. Supported training closed content but earned no independent certificate. Missing correction, incomplete Shell evidence, active forecast and interrupted continuity did not certify. Partial paid work granted no closure. Forged scope, return, owner, prefix, closure and certificate links were rejected. TIM, dimensionality, inherited semantics, native payments, baseline and defaults remain unchanged.
+
+[open] The certificate conservatively retains the original permitted-support demand bound; no unsupported applicability or later reuse is inferred. FT7.1b2b2b is prospectively registered to require two fresh paid exposures under the stricter no-support demand before a new certificate and later autonomous reuse on a novel target/changed partner. FT7.1b2b3 still owes integrated post-training reserve/history binding and tie-only feedback. Parent FT7.1/FT7 and FT8–FT9 remain unfinished. No material competence, subtype, theory-register closure or empirical psychology claim follows.
+
+Exact private evidence filename/hash and reproduction instructions are in `FT7_1b2b2a_Evidence_Index.json`. All 15 archive manifest members verified. No failed acceptance attempt in this sub-batch; historical failures remain preserved. No blocker.

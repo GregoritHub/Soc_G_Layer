@@ -1544,5 +1544,10 @@
     "status": "designing_not_registered",
     "accepted": false,
     "scope": "Fresh route-free task intake on exact fulfilled sources only; parent live tie-only choice remains mandatory."
+  },
+  "continuation_save_diagnostic": {
+    "failed_commit": "e0a9c5c8eae1c8970568e6048cf9c3275fa042b2",
+    "cause": "Lease publication omitted base_tree_sha after prior-turn in-memory metadata was unavailable; detected immediately by full-tree verification.",
+    "repair": "Restore exact prior 454-blob tree as explicit base, retaining only the authorized new lease; no engine execution or accepted source changed."
   }
 }

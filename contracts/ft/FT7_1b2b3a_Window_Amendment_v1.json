@@ -1,0 +1,14 @@
+{
+  "batch": "FT7.1b2b3a",
+  "version": "bounded-native-use-window-partition-v1",
+  "diagnosis": "Attempt 1 reaches the unchanged accepted use-history validator with more than ten same-element classifications in a long preparation window. It sorts exact ordinal identities lexically, so ordinal 10 precedes ordinal 2 and the validator rejects the honest delta. Preserve accepted history source and the failed exact run.",
+  "correction": [
+    "Keep all inherited and previously accepted history/reserve code unchanged. Partition each registered semantic interval prospectively into maximal contiguous native transaction windows whose completed-use delta for every element is at most nine. Flush before the first transaction exceeding that limit; reject any single transaction exceeding it. No journal transaction or paid-use delta may be omitted or duplicated.",
+    "Preserve the original five semantic intervals, their outcome tags and exact source scope. A semantic interval may have several explicitly saved observer turns. Independent reconstruction derives the same maximal boundaries directly from native completed-use counts, verifies every numeric ordinal and tag and audits unchanged history transitions.",
+    "The selected policy remains success-v1 (no decay), cap8 and recent32 remain unchanged. Reject a binding whose new events would evict any immutable original prefix event. No rewritten identity, muted validation, prefix replacement or native payment modification.",
+    "All 8 exact methods, 352 predecessor identities, 24 saved records, full independent audits and native-unchanged checks remain mandatory. No choice-causality or parent acceptance follows. Preserve failed attempt 1 before a corrected freeze."
+  ],
+  "max_delta_per_element_per_observer_turn": 9,
+  "source_freeze": "contracts/ft/FT7_1b2b3a_Source_Freeze_v1.json",
+  "acceptance_gate_unchanged": true
+}

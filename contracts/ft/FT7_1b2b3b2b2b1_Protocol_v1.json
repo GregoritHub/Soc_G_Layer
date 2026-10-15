@@ -1,0 +1,50 @@
+{
+  "batch": "FT7.1b2b3b2b2b1",
+  "version": 1,
+  "title": "Exact bounded operand alternatives behind the settled paid comparison",
+  "scope": "Implementation sub-batch of FT7.1b2b3b2b2b. Expand every actually examined operand bundle, not only each old selector's per-cell nominee. Does not authorize movement or close TD5/live-choice causality.",
+  "inputs": {
+    "paid_archive": "FT7_1b2b3b2b2a_Paid_Comparison_Evidence_20261015.zip",
+    "paid_sha256": "83aaabc862b1fc09055761f2a994ad79106696e89ccc566391b1f5c21b56672b",
+    "source_freeze": "3430079d6ff2f11f1f361dffd31c75f2eb78b382",
+    "records": "Exact original attempt4 twelve records; do not rerun accepted paid execution."
+  },
+  "algorithm": [
+    "Validate original source/binding/domain and full paid extension with accepted independent auditor.",
+    "Derive operation status from protected native records. Before/partial/ready/cancelled produce no expanded candidate authority; only settled comparison exposes its paid examined domain.",
+    "Enumerate native bundle grammar in original stable item order, bounded at request.alternatives plus one sentinel per cell. Preserve original recall/foreign truncation and cell-deferred flags.",
+    "For each exact bundle, evaluate its native proposal on a restricted item projection retaining all non-item scope, authority, material, profile and wallet fields. For workflow retain the original full-domain comparison affordability requirement, never the cheaper projection quote. This is a pure computation and writes no native state.",
+    "Publish exact typed operand references and recipe identities, native effect fields and effort estimates, with distinct complete-within-bound and unbounded-search completeness claims. Empty cells remain explicit with reasons. Reconstruct old per-cell best rows; never relabel or override old nominees.",
+    "A separate auditor independently enumerates typed bundles without importing this generator or participant selector, then uses existing independent native reference audits on individual bundles; verifies counts/order/sentinels/estimates/original-best projection and exact source pairing.",
+    "No new native work, preparation discharge, TD5 admission, reserve/history credit, tied choice or completion is claimed. Later live controller must revalidate current state and execute actual selected work."
+  ],
+  "registered_tests": [
+    "test_exact_cell_and_examined_domain",
+    "test_original_nominees_unchanged",
+    "test_no_early_expansion",
+    "test_paid_pair_required",
+    "test_exact_saved_roundtrip",
+    "test_native_and_ledgers_unchanged",
+    "test_omitted_bundle_rejected",
+    "test_forged_effort_rejected",
+    "test_reordered_cells_rejected",
+    "test_false_execution_authority_rejected"
+  ],
+  "saved_records": [
+    "canonical/before",
+    "canonical/partial",
+    "canonical/ready",
+    "canonical/complete",
+    "canonical/restarted",
+    "canonical/cancelled",
+    "workflow/before",
+    "workflow/partial",
+    "workflow/ready",
+    "workflow/complete",
+    "workflow/restarted",
+    "workflow/cancelled"
+  ],
+  "predecessor_identities": 398,
+  "gate": "All ten exact actual method bodies; all twelve exact saved expansion records; typed roundtrip and full independent original native/source/payment and new operand audits; all 313 preceding identities exact; frozen source unchanged; failures preserved.",
+  "remaining_parent_gate": "Complete TD5 admission and current route domain preserving retained/ordinary/n/cp/support/defer, fresh paid owned genuine priority/native-cost tie, new explicit live choice policy, chosen paid work/downstream use, matched feedback-off/history-removal controls, preparation/staging composition and exact restart. No cross-priority manufactured tie. FT8 denominators and acceptance criteria unchanged."
+}

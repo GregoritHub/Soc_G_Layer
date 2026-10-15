@@ -1,0 +1,109 @@
+{
+  "version": "ft7.1b2a-protocol-v1",
+  "job": "FT7.1b2a",
+  "parent": "FT7.1b2 and FT7.1 remain pending",
+  "split": {
+    "FT7.1b2a": "autonomous peer production/request coupling and paid recipient later use",
+    "FT7.1b2b": "actual independent training/closure and scoped retained reuse under changed support, integrated tie-only feedback on later owned choices"
+  },
+  "configuration": {
+    "canonical": "SelectionEngine",
+    "workflow": "WorkflowFinalSelectionEngine v4 explicit",
+    "reserve": "load-v1",
+    "conditioning": "success-v1",
+    "defaults_changed": false
+  },
+  "prospective_policy": {
+    "version": "owned-incoming-offer-reply-v1",
+    "order": [
+      "sender-owned paid public offer discovery",
+      "next-turn paid peer uptake",
+      "peer-owned snapshot and stance discovery",
+      "fixed reply protocol typed from incoming offer, no supplied request",
+      "bounded paid native reply work",
+      "next-turn paid recipient uptake",
+      "unchanged SocialSupportCycle owned choice and later consumer"
+    ],
+    "selection": "stable serialized reference order among same-scope offers and current paid same-scope owned stances; newest stance revisions only",
+    "bound": "one pair, one offer and one reply per cycle; missing opportunity or stance remains deferred; availability blocks that participant work; no invented assent",
+    "request_key": "sha256 of actor, exact offer and stance refs; no evaluator-selected recipe or output",
+    "evidence": "exact paid owned participant view before request; actual input refs in native job; sender public output discovered from completed own operation"
+  },
+  "fixed_panel": {
+    "settings": [
+      "canonical",
+      "workflow"
+    ],
+    "scenarios": [
+      "consented",
+      "nonconsent",
+      "no-offer",
+      "no-stance",
+      "peer-withdrawn",
+      "partial-peer",
+      "recipient-withdrawn"
+    ],
+    "horizon": 40,
+    "quantum": 1000000,
+    "partial_quantum": 1,
+    "records": 14,
+    "restart_records": 4,
+    "restarts": [
+      "partial-peer",
+      "partial-recipient"
+    ],
+    "initial_variants_per_setting": [
+      "consented",
+      "nonconsent",
+      "no-stance",
+      "no-offer"
+    ]
+  },
+  "registered_tests": [
+    "test_exact_panel",
+    "test_no_supplied_peer_recipe_or_output",
+    "test_paid_offer_to_peer_owned_request",
+    "test_reply_is_paid_and_uses_exact_offer_and_stance",
+    "test_recipient_later_use_consumes_generated_reply",
+    "test_nonconsent_changes_outcome_at_matched_peer_cost",
+    "test_missing_offer_grants_no_peer_work",
+    "test_missing_stance_is_honest_deferral",
+    "test_peer_withdrawal_grants_no_uptake",
+    "test_partial_reply_has_no_public_output_or_receiver_cycle",
+    "test_recipient_withdrawal_keeps_reply_pending",
+    "test_exact_restart_during_peer_and_recipient_work",
+    "test_forged_request_receipt_or_source_rejected",
+    "test_supported_history_and_reserve_remain_exact",
+    "test_predecessor_identities_exact"
+  ],
+  "matched_controls": {
+    "nonconsent": "same offer/task/skills and paid reply main cost; peer-owned consent differs",
+    "missing_offer": "same fixture without lawful transmission; no paid peer work",
+    "missing_stance": "same scoped opportunity but no independent peer stance",
+    "withdrawal": "availability only; no payments by absent participant",
+    "partial": "one unit work cannot count as completed reply or receiver benefit"
+  },
+  "audit": {
+    "imports": "records/constants and previously accepted independent auditors only, no peer producer/selector/executor/scheduler",
+    "checks": [
+      "owned paid source discovery",
+      "paid offer uptake",
+      "request reconstructed from peer snapshot",
+      "actual exact native reply inputs and scope",
+      "reply authority and paid public output",
+      "paid receiver uptake and actual downstream use",
+      "raw/native pairing",
+      "exact partial restart",
+      "adversarial request/receipt/source forgery rejection",
+      "no independent capability or credit from supported completion"
+    ]
+  },
+  "preserve": {
+    "predecessor_methods": 297,
+    "accepted_original_tests_unchanged": true,
+    "self_only_control_unchanged": true,
+    "no_parent_gate_waiver": true
+  },
+  "fixture_sha256": "2d4ce792a2248369287e7a47921f4a3826d9789f539478ac07c893c778ebfb68",
+  "stop": "Two failed implementation gates after correction; required semantic change/ruling; unrecoverable source/access blocker"
+}

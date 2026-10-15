@@ -1,0 +1,83 @@
+# Full Theory job register — Soc G Layer
+
+[source_defined] Continuation revision 1.1 governs. Inherited repaired acceptance is preserved; recovery passed on 12 October 2026. All thirty parent IDs are retained.
+
+| Job | Status | Evidence / next action |
+| --- | --- | --- |
+| FT0.1 | accepted, inherited | Pinned FT records; verified recovery |
+| FT0.2 | accepted, inherited | Pinned FT records; verified recovery |
+| FT0.3 | accepted, inherited | Pinned FT records; verified recovery |
+| FT1.1 | accepted, inherited | Pinned FT records; verified recovery |
+| FT1.2 | accepted, inherited | Pinned FT records; verified recovery |
+| FT1.3 | accepted, inherited | Pinned FT records; verified recovery |
+| FT2.1 | accepted, inherited | Pinned FT records; verified recovery |
+| FT2.2 | accepted, inherited | Pinned FT records; verified recovery |
+| FT2.3 | accepted, inherited | Pinned FT records; verified recovery |
+| FT3.1 | accepted, inherited | Pinned FT records; verified recovery |
+| FT3.2 | accepted, inherited | Pinned FT records; verified recovery |
+| FT3.3 | accepted, inherited | Pinned FT records; verified recovery |
+| FT4.1 | accepted | 30 exact methods; canonical/workflow fulfillment reconstructed; frozen source unchanged |
+| FT4.2 | accepted | 83 exact methods; paid native choice, cp fee, priority/support/retention, actual traversal and declared consecutive paid opposition independently reconstructed |
+| FT4.3 | accepted | 130-method common FT4 gate passed; later retained-route settlement, matched revocation, unavailable support, conflicts, harder demand and paid opposition independently reconstructed |
+| FT5.1 | accepted | 16 exact methods; three-policy integer reserve accounting independently reconstructed; no duplicate interruption or replenishment loop; native FT4 state unchanged |
+| FT5.2 | accepted | 15 exact integration methods; three-policy completion and actual paid interruption independently reconstructed; all 171 predecessor identities exact |
+| FT5.3 | accepted | Target-sensitive partial order; 432-cell fixed grid and 216 token pairs independently reconstructed; load-v1 selected by the prospective minimal-candidate rule; parent FT5 accepted |
+| FT6.1 | accepted | 13 exact methods; actual committed paid-use deltas, four tags, three policies, saturation, four-turn decay, recovery and bounded replay independently reconstructed; scores remain behaviorally inert |
+| FT6.2 | accepted | 13 exact methods; tie-only history effect and its feedback-off/history-removal controls, actual chosen paid work, six paid n episodes and measured DCNH-pair occupancy independently reconstructed |
+| FT6.3 | accepted, engineering hypothesis | FT6.3b 12/12 methods; 228 saved records reconstructed; six exact paid training replays; unique H persistence; causal controls; success-v1 selected; full subtype interpretation held |
+| FT7.1 | training, closure and scoped reuse accepted; parent pending | FT7.1b2b2b: 14 exact methods, 338 predecessor identities, 24 saved audits. FT7.1b2b3 reserve/history feedback remains mandatory |
+| FT7.1b2b2a | accepted, bounded closure/certificate | 12 exact methods, 326 predecessor identities, 22 saved native records independently audited; stricter no-support requalification and actual later reuse remain FT7.1b2b2b |
+| FT7.1b2b2b | accepted, approved bounded split | 14 exact methods, 338 predecessor identities and 24 exact saved audits; strict complete/defer plus separate completed one-facet equal-main-cost retained priority. FT8 intact; see FT7_1b2b2b_Acceptance_Record.md |
+| FT7.1b2b3 | parent pending; accounting observer accepted | FT7.1b2b3a: 8 methods, 352 predecessor identities, 24 exact saved binding audits. Actual paid preparation and tie-only later owned choice remain mandatory |
+| FT7.1b2b3a | accepted, native receipt binding only | Immutable supported prefix, two independent training outcomes and later completion/deferral accounting; see FT7_1b2b3a_Record.md |
+| FT7.1b2b3b | parent pending; preparation and live outcome staging accepted | Complete owned tie domain, autonomous history-caused choice and matched feedback controls remain mandatory |
+| FT7.1b2b3b1 | accepted, paid task preparation only | Eight exact methods, 360 predecessor identities and eight saved audits; exact partial-read restart, no independent credit or completion claim |
+| FT7.1b2b3b2 | parent pending | Live staging accepted; complete owned-domain tie-only choice integration and matched controls remain mandatory |
+| FT7.1b2b3b2a | accepted, live outcome staging only | 10 exact methods, 368 predecessor identities, 16 saved audits and 286 unchanged frozen identities; exact movement and consumer restarts |
+| FT7.1b2b3b2b | parent pending; bounded native proposal prerequisite accepted | Complete TD5 domain, actual paid tie-only choice and matched controls remain mandatory |
+| FT7.1b2b3b2b1 | accepted, bounded owned native proposals only | 10 exact methods, 378 predecessor identities, six saved audits, all 295 frozen identities unchanged; no execution authority |
+| FT7.1b2b3b2b2 | in progress, parent not accepted | Paid comparison prerequisite accepted; complete TD5 domain and live tie-only choice remain mandatory |
+| FT7.1b2b3b2b2a | accepted, paid comparison and restart only | 10 exact methods, 388 predecessor identities, 12 saved independent audits; all 313 reader identities exact, unchanged runtime/auditor and prior 295 source identities |
+| FT7.1b2b3b2b2b | in progress; operand and bounded admission prerequisites accepted | Complete TD5 admission/domain, genuine owned tie, actual chosen work/use, matched feedback controls and exact composition/restart |
+| FT7.2 | pending | Full Theory plan gate |
+| FT7.3 | pending | Full Theory plan gate |
+| FT8.1 | pending | Full Theory plan gate |
+| FT8.2 | pending | Full Theory plan gate |
+| FT8.3 | pending | Full Theory plan gate |
+| FT9.1 | pending | Full Theory plan gate |
+| FT9.2 | pending | Full Theory plan gate |
+| FT9.3 | pending | Full Theory plan gate |
+
+[derived] FT4 closes the bounded engineering cycle from owned demand through paid later retained reuse. FT5 selects load-v1 with exact reserve accounting. Parent FT6 accepts the bounded conditioning engineering hypothesis: FT6.3b independently reconstructed the accepted 228-record grid and six paid training episodes, verified causal choice contrasts and held-out persistence, and selected success-v1 by the unchanged prospective rule. Score decay produced no distinct changed-condition choice; fixed bias shares the measured occupancy. Full subtype interpretation, TD6/TD7 and C/D registers remain open. No default, native law, TIM, certificate or permanent history changed. FT7.1a ordered paid transport is accepted after the independently detected recipient-authority gap was corrected prospectively and its exact forgery rejected. FT7.1b1 is held after the first and corrected gates failed. The canonical paid peer-operand/consumer chain is verified, but the workflow fixture uses the v1 self-only selector and cannot propose the required social crossing. No further attempt occurs until the required reopening ruling; parent FT7.1 and FT7-FT9 remain unfinished. Historical publication restrictions and failed attempts remain accounted for.
+
+[measured] On 14 October 2026 the author reopened FT7.1b1 for the existing all-cell versus unchanged self-only comparison. The comparison and original all-cell acceptance gate passed at frozen source 0d78d7d75e4a87a344137a82a209af1f7a6ecf77. This supersedes the earlier operational hold, preserving its failures. Next FT7.1b2; no full parent social or theory claim.
+
+[measured] FT7.1b2a: first setup failed checkpoint evidence-address serialization; corrected run passed 15 exact methods and 297 predecessor identities, then descriptive report serialization failed before saved native evidence. Both attempts are held. No third acceptance run occurred; reviewable writer repair and targeted format check are preserved. Continuation paused under the common two-failure stop rule.
+
+[measured] FT7.1b2a reopened under 14 October standing routine-repair authorization and accepted after the unchanged full gate passed. Historical hold paragraphs above are preserved history, superseded by docs/ft/FT7_1b2a_Acceptance_Record.md. Next FT7.1b2b; no current blocker.
+
+[measured] FT7.1b2b1 accepted after six preserved diagnosed failures: both settings form native guarded capacity from two actual paid independent practices; supported and missing-correction controls do not. All 18 saved native records and immutable social prefixes independently reconstruct. No FT closure/certificate or full parent acceptance is claimed. Next FT7.1b2b2; no blocker.
+
+Author-approved split supersedes the ruling-required status above. See FT7_1b2b2b_Reopening_Record.md. Strict contrast does not discharge FT8 matched-cost obligations.
+
+[measured] FT7.1b2b2b accepted on 15 October 2026 UTC. This supersedes earlier reopened/unaccepted and theory-hold snapshots without erasing failures. Exact actual method run and separately frozen bounded saved-record audit both passed. The durable evidence includes all six attempts; FT8 obligations remain intact. Next FT7.1b2b3; no blocker.
+
+[measured] FT7.1b2b3a passed its complete bounded accounting-observer subgate. One diagnosed failure is preserved. Source/native payments and the original reserve/history prefix are unchanged; parent choice causality is not accepted. Next FT7.1b2b3b; no blocker.
+
+[measured] FT7.1b2b3b2a passed actual live outcome staging. The first wallet-auditor format failure is preserved; the prospective audit-only correction passed the complete gate. Partial states gain no outcome credit; actual paid downstream completion settles once. No candidate-domain or choice-causality acceptance follows. See FT7_1b2b3b2a_Record.md.
+
+[measured] FT7.1b2b3b2b1 passed the complete bounded native proposal prerequisite without modifying accepted source or executing accepted gates. Original native winners remain descriptive; no comparison payment or autonomous history-caused choice is claimed. The saved sources have no old-native primary-ranking tie; next paid owned work must establish one lawfully under a new versioned policy. See FT7_1b2b3b2b1_Record.md.
+
+[measured] FT7.1b2b3b2b2a passed actual paid native comparison and restart. Four failed attempts are preserved. A prospectively frozen saved reader and repaired adversarial mock validated the same 12 original records and all ten actual methods without regenerating paid work. No TD5 execution authority or history-caused choice follows; FT8 unchanged. See FT7_1b2b3b2b2a_Record.md.
+
+[measured] FT7.1b2b3b2b2b1 accepted: ten exact methods, 398 predecessor identities, twelve exact records and all 320 frozen identities; prior 313 unchanged. All examined operand bundles are independently reconstructed from settled paid snapshots (22 canonical / 14 workflow), with original nominees unchanged and no execution authority. No new failure or accepted paid rerun. Next b2: current TD5/live tie-only choice and composition; parent FT7–FT9 unfinished. See FT7_1b2b3b2b2b1_Record.md. Ownership bookkeeping correction is disclosed there.
+
+[measured] FT7.1b2b3b2b2b2a accepted: ten exact methods, 408 predecessor identities, eight exact saved independent audits, 327 frozen identities and all prior 320 unchanged. Current paid request/retention/geometry/cost reconstruction yields 111 canonical and 71 workflow joined candidates including deferral. Both sources remain deferred with unpaid preparation debt1; no receipt or history credit. Next b2b: owned role coverage, fresh paid true tie, actual chosen work/use and matched feedback/composition controls. Parent FT7–FT9 and all FT8 denominators remain open/unchanged. See FT7_1b2b3b2b2b2a_Record.md.
+
+[measured] FT7.1b2b3b2b2b2b1 accepted: ten exact methods, 418 predecessor identities, eight saved native/adapter audits and 334 frozen identities; prior 327 unchanged. Fresh preparation costs 2/2 after the exact accepted 63/63 canonical or 54/54 workflow comparison. Partial gains no receipt/history; exact completion/restart retains original social/history prefixes and reserve with no independent credit. No new failure or accepted gate rerun. Next b2: owned roles, genuine distinct-element tie, live history choice, chosen work/use and matched full-staging controls; parent FT7–FT9 and FT8 requirements remain pending/intact.
+
+[measured] FT7.1b2b3b2b2b2b2a accepted: eight exact methods, 428 predecessor identities, eight saved independent audits and 341 frozen identities; prior 334 unchanged. Paid-observation role enumeration exposes 1,728 canonical / 3,612 workflow assignments only after preparation completion. Full-product native view probes retain all 1,806 workflow rejections; successful views grant no authority. No accepted paid work rerun or new failed gate. New role-dependent comparison is unpaid, and both harder sources remain deferred. Next b2b: fresh route-free paid work, genuine distinct-element tie, autonomous live history choice, chosen work/use, matched controls and full staging composition. Parent FT7–FT9 and all FT8 requirements remain unfinished/unchanged. See FT7_1b2b3b2b2b2b2a_Record.md.
+
+[progress] FT7.1b2b3b2b2b2b2b1 is implemented and frozen, not accepted. Three diagnosed attempts are preserved: tuple-writer/preparation-guard gap; missing primitive at settlement after canonical payment; workflow snapshot encoding after all six canonical records passed. Prospective corrections retain the eight-method/436-predecessor/12-record gate and all 341 accepted source identities. Attempt 4 runs at a8dda4cbc291e5bad37d9af8ba50e6506f97fa7b (357 frozen identities); targeted workflow encoding retains all 3,612 assignments. See FT7_1b2b3b2b2b2b2b1_Record.md. No accepted gate rerun or substantive blocker; full parent work remains mandatory.
+
+[measured] FT7.1b2b3b2b2b2b2b1 accepted: eight exact actual methods, 436 predecessor identities, twelve saved full independent audits, 357 frozen identities and all prior 341 unchanged. Actual complete role-comparison cost is 91,584/91,584 canonical and 99,330/99,330 workflow; 1,806 workflow view rejections remain. Partial/ready/cancelled grant no receipt; settlement once, restart exact, cancellation nonrefundable. All three failed attempts and source capsules retained. No accepted paid work rerun, TD5/live choice/movement/reserve/history credit or parent acceptance. Next b2b2 planned, not preregistered: route-free fresh task/skill work, genuine same-priority/native-cost distinct-element ties, live history-only choice, chosen paid work/use, matched controls and full staging composition. FT8 requirements and denominators unchanged.

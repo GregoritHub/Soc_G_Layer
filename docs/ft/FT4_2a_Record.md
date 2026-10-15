@@ -1,0 +1,9 @@
+# FT4.2a — structural route means accepted
+
+[machine-checked] Frozen source `1f27d41f3c0ee0813cceb26187c387fc23863b34` passed all 40 exact registered FT4.1 and FT4.2a methods on 12 October 2026 with zero failures or errors and unchanged evaluated source. The new gate covered all 16 inherited TIM frames × 8 active seats and independently reconstructed canonical and workflow inventories from raw native journals and participant observations.
+
+[derived] The inventory accepts only an exact current, fully paid, actor-owned route-free request. It records ordinary-lap, n-portage, cp-portage and explicit deferral without selecting a successful content route or mutating the engine. n retains zero geometric overhead while keeping all native content cost separate. cp preserves the accepting/producing coordinate, flips the ring, conjugates a lap to the reverse orientation, and requires a separately identified two-energy/two-time orientation read. An unaffordable cp remains visible and ineligible; it never becomes free access. TIM, dimensionality, wallet, cursor, participant view and native checkpoint remain unchanged.
+
+[machine-checked] Raw logs, exact method IDs, source freeze, 128-cell geometry grid, both native checkpoints, both means inventories and the preserved pre-freeze run are saved as `FT4_2a_Evidence_20261012.zip`, SHA-256 `fab0456a68698f9dfdaf00ec2636da41f05663249ef6b3bb6fc29305f7442eee`. Retrieve privately by exact filename and verify `SHA256SUMS`. Reproduce after dependency preparation with `python3 tools/evaluate_ft4_2a.py /absolute/fresh-output`.
+
+[open] FT4.2a fixes structural identity and overhead admission only. FT4.2b must add applicable recalled capacity, exact consenting support, paid cp overhead execution, deterministic priority and launch through the existing paid selector. No full FT4.2 choice, autonomous cycle or psychological validation is claimed.

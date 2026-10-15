@@ -1,0 +1,11 @@
+{
+  "version": "ft7.1b2b1-native-record-readers-amendment-v1",
+  "attempt": 5,
+  "failed_freeze": "210d581db38a570a75015b97769e26d64eac2cf8",
+  "observed": "Primary native training completed but initial restore rejected operation-store envelope as generic compact-store schema; zero test bodies accepted.",
+  "repairs": [
+    "Read prefix world using exact hle-unified-operation-store-v1 OperationStore storage reader.",
+    "Audit U8 development work with the native independent development auditor. Its surfaces do not have the Account/paid_threshold schema used by canonical/workflow content steps. Continue auditing all canonical/workflow content work with unchanged content auditor, and independently verify every native payment and response/content/practice link."
+  ],
+  "unchanged": "All exact methods, scenarios, saved record domain, native contracts and acceptance criteria; no auditor or source in any accepted batch changes."
+}

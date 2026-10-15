@@ -1,0 +1,53 @@
+{
+  "batch": "FT5.2a",
+  "parent_job": "FT5.2",
+  "policy": "ft-native-reserve-binding-v1",
+  "status": "prospective",
+  "scope": "Bind FT5.1 preparation obligations and replenishment gains to distinct committed paid native work without repricing grade-v1, treating reserve as permission or charging a native job twice. This sub-batch freezes the native evidence interface only. FT5.2b retains integration of the three declared reserve policies into autonomous candidate dynamics, and FT5.3 retains depletion, recovery and policy selection.",
+  "modules": [
+    "full_theory/native_reserve.py",
+    "full_theory/native_reserve_audit.py",
+    "tools/evaluate_ft5_2a.py"
+  ],
+  "test_directory": "tests_ft5",
+  "method_ids": [
+    "test_paid_post_admission_preparation_binds_both_settings",
+    "test_partial_preparation_stays_visible_and_demand_pending",
+    "test_preexisting_foreign_failed_and_unpaid_work_are_rejected",
+    "test_native_job_cannot_be_double_bound_or_double_charged",
+    "test_actual_paid_a5_uptake_replenishes_both_settings",
+    "test_partial_or_forged_uptake_cannot_replenish",
+    "test_finite_token_packet_and_native_receipt_reuse_are_rejected",
+    "test_null_comparator_records_paid_binding_without_reserve_effect",
+    "test_checkpoint_continuation_is_exact",
+    "test_independent_auditor_reconstructs_native_bindings",
+    "test_independent_auditor_rejects_forged_payment_order_and_role",
+    "test_grade_prices_wallet_tim_dimension_and_ft4_state_are_unchanged",
+    "test_ft5_1_and_ft4_predecessor_method_identity_remains_exact"
+  ],
+  "fixtures": {
+    "contracts/ft/FT5_1_Protocol_v1.json": "1940827a7e0666a561aadf4d54bbcece8cfecdc4fab51553547d9c1d86995a69",
+    "contracts/ft/FT5_1_Source_Freeze_v1.json": "6a43f4d6f7a931c1bda5765c7e9ed43a14f28fc3565e3f4a2011f8970a9d0543",
+    "full_theory/reserve.py": "aba132cd98b4e6b587b51778d4ec7b569437ace86d56de69171b65c0e9c02fe5",
+    "full_theory/reserve_audit.py": "8d7ce284a0d0bc392cfe875d690b66e2e2ec0463bf770733802b6b153de35b38",
+    "full_theory/content.py": "6dc4a65ad22ccaa2afe1ac4a3ab87020519a07a5cf7e0a8f3cb80b0bc04c5974",
+    "full_theory/content_audit.py": "45e84c8ff1488e849d3266dc8c1efbf5931e8c2a0a2d13d6c105f918cae49c34",
+    "hle_unified/operations.py": "2babeec501bcd39e60d647a3c438a7f92b92bc83916ea5538db55771389df285"
+  },
+  "rules": [
+    "A native reserve binding is paired to one exact native engine and one FT5.1 ReserveLedger whose actor owns every credited operation. It never owns or edits the native wallet, TIM, seat dimensionality, facet charge, closure or capability state.",
+    "Admission is performed through the binding. It records the exact native job identities already present at that boundary, then delegates the immutable demand identity and load to FT5.1. Zero reserve still admits a pending demand and never forbids a route.",
+    "Each preparation unit is one distinct, newly created after-admission native job for the same actor whose authoritative status is succeeded, completed equals required, spent is at least required and required is positive. A job may satisfy at most one preparation unit and may not also be credited as replenishment.",
+    "Preparation may be bound incrementally but never beyond the exact FT5.1 obligation. Until all units are bound the obligation remains visible and the demand remains pending. Binding observes already paid work and performs no native debit, refund, repricing or reserve delta.",
+    "Replenishment requires one exact ContentBridge uptake event for the same actor at seat A5, backed by its distinct authoritative succeeded paid native read job and exact operation receipt. The packet, native job, operation receipt and finite FT5.1 token are one-use identities.",
+    "The binding derives the FT5.1 provisional receipt identity from the actual native operation receipt. Callers cannot supply a paid flag, seat, receipt identity, reserve gain or native status. FT5.1 alone applies the policy gain, capacity bound and finite-token rule.",
+    "The null comparator must still prove and record actual paid native preparation or uptake when those binding methods are invoked, but its reserve delta remains zero and its token remains unconsumed under the accepted FT5.1 contract.",
+    "The checkpoint commits the paired native state hash, exact reserve checkpoint, admission boundaries, preparation obligations and bindings, replenishment bindings and every used native job, packet and receipt identity. Restore rejects a different engine or inconsistent replay.",
+    "The independent auditor imports neither native_reserve nor ReserveLedger. It independently audits the embedded FT5.1 checkpoint, queries authoritative native job state, reconstructs admission order, obligations, one-use identities and role constraints, and rejects forged payment, actor, seat, receipt, packet or native-state linkage.",
+    "Acceptance requires the thirteen exact new methods, all sixteen FT5.1 identities and all one hundred thirty FT4 identities, registered fixtures, a strict source freeze and unchanged source.",
+    "Passing accepts only the paid native evidence binding. It does not yet let reserve alter autonomous route candidates, elect a release reserve policy, settle C13/TD4, validate psychology or complete FT5.2-FT9."
+  ],
+  "gate": "Thirteen exact FT5.2a methods pass with zero failures/errors; preparation and replenishment are independently reconstructible from actual distinct paid native work in both settings; partial, pre-admission, foreign, unpaid, duplicate and forged evidence is rejected; grade-v1 prices and native state meanings are unchanged; all 146 predecessor identities remain exact.",
+  "next": "FT5.2b integrate null, load-v1 and grade-load-v1 through separate autonomous candidate-dynamics interfaces",
+  "stop": "Preserve failures; two gate failures after correction stops."
+}

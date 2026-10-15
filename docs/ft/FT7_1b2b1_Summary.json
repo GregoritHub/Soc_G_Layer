@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "methods": 14,
+  "failures": 0,
+  "errors": 0,
+  "exact_methods": true,
+  "predecessor_identities": 312,
+  "saved_records": 18,
+  "exact_record_domain": true,
+  "raw_roundtrip_exact": true,
+  "decoded_independent_audits": true,
+  "source_unchanged": true,
+  "registered_freeze": true,
+  "protocol_sha256": "94ee8061d8319c3b248ac0a2b3709f6b2cf5e29a11525423ee6b928b2ed05d1d",
+  "configuration": {
+    "canonical": "SelectionEngine",
+    "workflow": "WorkflowFinalSelectionEngine v4 explicit",
+    "reserve": "load-v1 unchanged in accepted social prefix",
+    "conditioning": "success-v1; supported social prefix has zero independent credit",
+    "defaults_changed": false
+  },
+  "claim": "native owned guarded training only; no FT closure/certificate/reuse or feedback acceptance",
+  "parent_gate": "FT7.1b2b2 closure/reuse and FT7.1b2b3 feedback remain mandatory"
+}

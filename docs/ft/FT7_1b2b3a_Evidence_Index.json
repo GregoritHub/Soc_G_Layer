@@ -1,0 +1,27 @@
+{
+  "batch": "FT7.1b2b3a",
+  "archive": {
+    "filename": "FT7_1b2b3a_Reserve_History_Binding_Evidence_20261015.zip",
+    "bytes": 2571660,
+    "sha256": "0e97d520c21a4e595239b573a85851948d950c70a0870f59d10fff822ce6732e",
+    "manifest_members": 648,
+    "all_members_verified": true
+  },
+  "frozen_commit": "b1a69956df8401f264b67b4716b21ef54941226a",
+  "source_input_archive": "FT7_1b2b2b_Split_Comparison_Evidence_20261015.zip",
+  "source_input_archive_sha256": "3114e31cab6490dbb7a87a7fb10e592d570e4b9e6f2b95a51cb6b2b1fc060616",
+  "failed_attempts_preserved": [
+    1
+  ],
+  "interrupted_attempts_preserved": [
+    2
+  ],
+  "saved_reader_frozen_commit": "316bfca224f41cb74ac30b406a33439dc15194aa",
+  "methods": 8,
+  "records": 24,
+  "predecessor_identities": 352,
+  "retrieve": "Authorized hosted continuation retains the exact private pointer; search the exact archive filename in private files. No private identifiers are published.",
+  "reproduce": "Prepare the frozen reader runtime and verify original266 plus reader270 identities (including the exact setup-tool copy). For NUMBER 1 through24, at most two concurrently: python3 tools/audit_ft7_1b2b3a_saved.py /absolute/split-evidence/saved-audit /absolute/binding-evidence/attempt2 /absolute/fresh-saved-audit NUMBER; then use finalize instead of NUMBER. Verify original actual method pass without rerunning bodies.",
+  "claim": "Exact immutable-prefix native reserve/history accounting observer only; no choice causality; FT7.1b2b3b and FT8-FT9 mandatory",
+  "historical_full_gate": "tools/evaluate_ft7_1b2b3a.py is preserved for historical full reproduction only; no accepted engine gate needs rerunning for continuation."
+}

@@ -1,0 +1,71 @@
+{
+  "batch": "FT7.1b2b3b2b2b2b1",
+  "archive": {
+    "filename": "FT7_1b2b3b2b2b2b1_Compared_Preparation_Evidence_20261015.zip",
+    "bytes": 28262101,
+    "sha256": "0bfad01e984beadf4f6d9fbd733d62090ca1e19b8cb29d652ba481d19db97fcb",
+    "manifest_members": 22,
+    "all_members_verified": true,
+    "nested_source_members": 7
+  },
+  "protocol_commit": "698d6d07005ab2550440b7057a32d7bc7ca3f7d3",
+  "frozen_commit": "7f34cd6aa0417dff694e2864734d7a7aca6f96c4",
+  "input": {
+    "filename": "FT7_1b2b3b2b2b2a_Current_Admission_Evidence_20261015.zip",
+    "sha256": "171d55d650b3da759880db91ccae7f7c6ef44c5c4f06d56aebb00dfe273ea1c7",
+    "manifest_members": 27,
+    "all_members_verified": true
+  },
+  "records": [
+    {
+      "key": "canonical/before",
+      "file": "records/canonical-before.json.gz",
+      "sha256": "65996fc2b26ac398ccd49e723ebde3eb9e261485c2290e76d28a45c11e8568ef",
+      "input_sha256": "6e9cb28fb43567dc9225a431aac3f34e08c82afe5a7a082abce87eaa3580e857"
+    },
+    {
+      "key": "canonical/partial",
+      "file": "records/canonical-partial.json.gz",
+      "sha256": "224b29c0356dd02a16a431c27c8b3ae8c114a14676856722924a3b29cc095996",
+      "input_sha256": "6e9cb28fb43567dc9225a431aac3f34e08c82afe5a7a082abce87eaa3580e857"
+    },
+    {
+      "key": "canonical/complete",
+      "file": "records/canonical-complete.json.gz",
+      "sha256": "f1c3881a7baac5fc6e47543d57636f1e57ad86f2b203642b47490cf937485066",
+      "input_sha256": "6e9cb28fb43567dc9225a431aac3f34e08c82afe5a7a082abce87eaa3580e857"
+    },
+    {
+      "key": "canonical/restarted",
+      "file": "records/canonical-restarted.json.gz",
+      "sha256": "5bd34bbb7c8b4a9a76d756fcf2c34bafdb42a35041431a1b548acb8cc9f52434",
+      "input_sha256": "6e9cb28fb43567dc9225a431aac3f34e08c82afe5a7a082abce87eaa3580e857"
+    },
+    {
+      "key": "workflow/before",
+      "file": "records/workflow-before.json.gz",
+      "sha256": "b5995f0054cdf411efc5d2caba18b082d4fe569c5ea6482412fafb26e0b3dd5f",
+      "input_sha256": "6bdb893945e1f89a14edb35555c1544133f9d1e151332f0c2acf0a431dd80d07"
+    },
+    {
+      "key": "workflow/partial",
+      "file": "records/workflow-partial.json.gz",
+      "sha256": "a75c86e335a672d733aa6dca613d28a0aa228ec872bf056cb5f33be14dc71885",
+      "input_sha256": "6bdb893945e1f89a14edb35555c1544133f9d1e151332f0c2acf0a431dd80d07"
+    },
+    {
+      "key": "workflow/complete",
+      "file": "records/workflow-complete.json.gz",
+      "sha256": "8899e155b48c68e8f319e7b6b3295c2b99f5c5824089285561345b2d6270b946",
+      "input_sha256": "6bdb893945e1f89a14edb35555c1544133f9d1e151332f0c2acf0a431dd80d07"
+    },
+    {
+      "key": "workflow/restarted",
+      "file": "records/workflow-restarted.json.gz",
+      "sha256": "ae63b14bf72b01c92dc97e232fa6787ac664cfd7fc41054fcb15e27c358b3e14",
+      "input_sha256": "6bdb893945e1f89a14edb35555c1544133f9d1e151332f0c2acf0a431dd80d07"
+    }
+  ],
+  "retrieval": "Private evidence attachment named above; authenticated retrieval pointer is in the continuation task, never public metadata.",
+  "reproduce": "See composition-reproduction.txt in the archive. Restore exact current-admission attempt1 records; no accepted paid comparison or earlier gate rerun."
+}

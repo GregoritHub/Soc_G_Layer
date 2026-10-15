@@ -1,0 +1,57 @@
+{
+  "batch": "FT7.1b2b3b2b2a",
+  "version": 1,
+  "parent": "FT7.1b2b3b2b2",
+  "scope": "Versioned actual native paid owned comparison and exact restart only; no TD5 admission, history-caused choice, movement or parent acceptance.",
+  "source_checkpoint": "7475b8a7ff70373b600f8694dcf28a42d4e52eda",
+  "inputs": {
+    "native_archive_sha256": "3114e31cab6490dbb7a87a7fb10e592d570e4b9e6f2b95a51cb6b2b1fc060616",
+    "binding_archive_sha256": "0e97d520c21a4e595239b573a85851948d950c70a0870f59d10fff822ce6732e"
+  },
+  "rules": [
+    "New explicit engine schemas and ftpc audit namespace; unchanged old selectors, source files, policy labels, defaults, original native journal/access and immutable social reserve/history prefixes.",
+    "Derive oldest current paid owned request using accepted owned proposal builder on exact source/binding pair. No evaluator candidate, route or recipe supplied.",
+    "Native comparator computes existing full bounded33/32 cell inventory; quotes exact accepted comparison extent; actual generic native operation lifecycle debits wallet, reserves actor and persists command history. New flag ftpc, primitive bind, policy ft-owned-paid-comparison-v1; never masquerades as c6/c7ws selection.",
+    "Partial or ready-uncommitted work gives no comparison receipt/result. Full commit supplies exactly one paid comparison receipt, no movement, no TD5 admission, no reserve or history outcome credit. Cancelled partial work retains spent cost and no result.",
+    "Current paid snapshot must be unchanged at settlement except wallet. Protected comparison records cannot be authored or disclosed as participant knowledge; result accessor only returns completed own comparison.",
+    "Independent auditor imports no new executor/builder/controller. Audit exact accepted source and domain separately, full native payment/development audit with explicit extent extension, complete new transaction/operation/snapshot/receipt/result fields and exact paid wallet deltas; reject unregistered suffix operations.",
+    "Before,partial,ready,complete,restarted,cancelled records for both exact accepted harder sources. Restart after one paid unit has byte-exact final native checkpoint with uninterrupted branch using identical commands.",
+    "Parent next step still requires complete current TD5 route/recipe/operand domain, genuine admitted native-cost tie, actual history-caused choice and paid work/downstream use, feedback-off/history-removal matched main costs and full composition/restart. All FT8 denominators unchanged."
+  ],
+  "registered_tests": [
+    "test_exact_paid_extents",
+    "test_no_early_result",
+    "test_complete_result_no_movement",
+    "test_exact_partial_restart",
+    "test_terminal_idempotence",
+    "test_cancel_no_refund_or_result",
+    "test_source_and_ledgers_unchanged",
+    "test_independent_saved_audit",
+    "test_forged_extent_rejected",
+    "test_foreign_result_rejected"
+  ],
+  "saved_records": [
+    "canonical/before",
+    "canonical/partial",
+    "canonical/ready",
+    "canonical/complete",
+    "canonical/restarted",
+    "canonical/cancelled",
+    "workflow/before",
+    "workflow/partial",
+    "workflow/ready",
+    "workflow/complete",
+    "workflow/restarted",
+    "workflow/cancelled"
+  ],
+  "predecessor_identities": 388,
+  "modules": [
+    "full_theory/owned_paid_comparison.py",
+    "full_theory/owned_paid_comparison_audit.py",
+    "tools/evaluate_ft7_1b2b3b2b2a.py"
+  ],
+  "test_directory": "tests_ft7",
+  "freeze_before_evaluation": true,
+  "failures_preserved": true,
+  "no_accepted_gate_rerun": true
+}

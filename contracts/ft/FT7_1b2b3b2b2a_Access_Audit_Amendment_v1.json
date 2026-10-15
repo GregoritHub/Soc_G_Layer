@@ -1,0 +1,8 @@
+{
+  "batch": "FT7.1b2b3b2b2a",
+  "version": 1,
+  "failed_freeze": "8822951be8ae9d9d0aedff7b07a5099b444ba793",
+  "diagnosis": "Attempt 1 saved canonical before/partial; before audited. Access checkpoint embeds the native world, so whole-envelope equality incorrectly rejected legitimate new paid comparison transactions. Access nodes/events are unchanged; original native journal is an exact prefix. Zero method bodies ran.",
+  "correction": "Audit exact access nodes/events independently, bind each access envelope to its own exact native world, and retain the full native prefix/suffix/payment audit. Runtime and all exact methods/12 records/388 predecessor identities remain unchanged. Preserve failed source, logs and both saved records; freeze amended auditor/evaluator before the unchanged complete gate.",
+  "unchanged_scope": "No route execution, TD5 admission, history credit, parent acceptance or FT8 denominator change."
+}

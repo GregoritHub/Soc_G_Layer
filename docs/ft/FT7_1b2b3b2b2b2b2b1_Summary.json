@@ -1,0 +1,32 @@
+{
+  "batch": "FT7.1b2b3b2b2b2b2b1",
+  "passed": true,
+  "methods": 8,
+  "failures": 0,
+  "errors": 0,
+  "predecessor_identities": 436,
+  "saved_records": 12,
+  "typed_roundtrip_exact": true,
+  "independent_audits": true,
+  "source_unchanged": true,
+  "frozen_identities": 357,
+  "accepted_paid_work_rerun": false,
+  "claim": "Paid complete declared role comparison only; no TD5 or live choice acceptance",
+  "protocol_commit": "c7dda21b29709b48aa1910c9be0218938c9153fe",
+  "frozen_commit": "a8dda4cbc291e5bad37d9af8ba50e6506f97fa7b",
+  "prior_341_identities_unchanged": true,
+  "failed_attempts_preserved": 3,
+  "archive": {
+    "filename": "FT7_1b2b3b2b2b2b2b1_Paid_Role_Comparison_Evidence_20261015.zip",
+    "bytes": 94899561,
+    "sha256": "18f404d5567e7477d1c9dd0a0b41c85dbe9d519dec9e35d5b4c44a3ef2a4713a",
+    "manifest_members": 61,
+    "nested_source_members": [
+      16,
+      7,
+      10,
+      13
+    ],
+    "all_members_verified": true
+  }
+}

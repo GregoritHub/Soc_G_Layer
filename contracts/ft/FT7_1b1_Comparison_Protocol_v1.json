@@ -1,0 +1,64 @@
+{
+  "batch": "FT7.1b1",
+  "version": "comparison-v1",
+  "authorization": "Reopen FT7.1b1 to compare the existing all-cell workflow engine against the unchanged self-only control.",
+  "input_checkpoint": "b8bed1da304ce16c7f35c96b7d1295e11e0a0766",
+  "scope": "Compare existing WorkflowFinalSelectionEngine v4 with unchanged WorkflowSelectionEngine v1. No engine, wrapper, audit, fixture, original test or default changes. Preserve both historical failed attempts.",
+  "arms": {
+    "self-only": "WorkflowSelectionEngine",
+    "all-cell": "WorkflowFinalSelectionEngine"
+  },
+  "fixtures": "Call unchanged tests_ft7.test_social_cycle.SocialCycleTests fixture and methods in each arm. Bind only its workflow engine constructor to the existing v4 class in the all-cell arm. Canonical constructor is unchanged. Same tasks, skills, TIM, native authority, consent, initial wallet, demand and paid input preparation; no new skill or competence assignment. Compare pre-cycle native journals exactly.",
+  "prerequisites": {
+    "tasks": "Existing workflow maintain/care and handover/transfer after maintain, actor-owned; unchanged fixture scheduling and scope.",
+    "skill_source": "Unchanged setup_workflow/setup_c3 initial law and profiles, independent of selector arm. No external successful route, output, procedure or capability is supplied.",
+    "competence": "Paid reply competence=false remains false. Actual content, payment, authority, selected movement and paid later consumer determine success."
+  },
+  "panel": {
+    "scenarios_per_arm": 10,
+    "restart_records_per_arm": 2,
+    "arms": 2,
+    "total_saved_records": 24,
+    "horizon": 32,
+    "work_limit": 1000000,
+    "partial_limit": 1
+  },
+  "registered_methods": [
+    "test_exact_ten_scenario_domain_and_two_restart_records",
+    "test_paid_peer_packet_enables_owned_support_choice_in_both_settings",
+    "test_owned_need_forms_request_without_supplied_recipe_or_success",
+    "test_exact_reply_is_actual_selected_native_operand",
+    "test_paid_consumer_uses_selected_movement_output_and_same_scope",
+    "test_nonconsent_changes_choice_at_fixed_sender_main_cost",
+    "test_no_packet_has_no_owned_support_and_preserves_deferred_need",
+    "test_withdrawal_keeps_packet_pending_and_never_launches_route",
+    "test_partial_uptake_grants_no_content_or_completion_credit",
+    "test_supported_settlement_debits_load_v1_once",
+    "test_success_v1_supported_history_grants_zero_independent_credit",
+    "test_duplicate_terminal_step_is_idempotent",
+    "test_partial_restart_is_exact_in_both_settings",
+    "test_forged_support_receipt_operand_or_history_is_rejected",
+    "test_no_certificate_or_permanent_history_is_minted",
+    "test_all_281_predecessor_method_identities_remain_exact"
+  ],
+  "registered_comparison_checks": [
+    "original_source_unchanged",
+    "exact_method_identities_both_arms",
+    "same_precycle_native_journals",
+    "canonical_records_identical",
+    "self_only_records_equal_held_attempt",
+    "self_only_failure_signature_preserved",
+    "exact_24_record_domain",
+    "exact_saved_roundtrip",
+    "all_decoded_independent_audits_pass",
+    "exact_partial_restart_each_arm"
+  ],
+  "control": "Self-only must reproduce corrected held result (16 methods, 4 failures, 3 errors) and all 12 saved native/wrapper records exactly. Do not reinterpret these failures as FT7.1b1 acceptance.",
+  "effect": "Report native candidate counts, selector policy, selected recipe, phase, paid movement/consumer costs, exact peer operand, reserve/history and all-cell original gate result; outcomes not assumed. Existing v4 varies policy enumeration and its existing ranking/coverage rules as a bundle, so no enumeration-only causal claim.",
+  "gate": "Comparison valid iff all registered comparison checks pass. FT7.1b1 may be accepted under explicit v4 configuration only if all original 16 all-cell methods pass with zero failures/errors and all comparison checks pass. Otherwise preserve measured failure and hold parent release; no tuning or source correction is authorized by this comparison protocol. Original v1 remains unchanged and its earlier gates remain failed.",
+  "freeze": "Hash all original FT7.1b1 frozen files, original freeze manifest, inherited workflow selector/policy/audit/content, this protocol/hash and new evaluator before a single bounded run. Verify original manifest exact before and after.",
+  "implementation_modules": [
+    "tools/compare_ft7_1b1.py"
+  ],
+  "next": "FT7.1b2 only if original all-cell acceptance requirements pass; no parent FT7 or theory validation claim."
+}

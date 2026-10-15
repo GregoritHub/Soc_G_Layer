@@ -1,0 +1,78 @@
+{
+  "canonical/before": {
+    "settled": false,
+    "candidates": 0,
+    "preparation_due": null,
+    "nominee": null,
+    "wallet": null,
+    "execution_authorized": false
+  },
+  "canonical/ready": {
+    "settled": false,
+    "candidates": 0,
+    "preparation_due": null,
+    "nominee": null,
+    "wallet": null,
+    "execution_authorized": false
+  },
+  "canonical/complete": {
+    "settled": true,
+    "candidates": 111,
+    "preparation_due": 1,
+    "nominee": "defer",
+    "wallet": [
+      198151,
+      198151
+    ],
+    "execution_authorized": false
+  },
+  "canonical/restarted": {
+    "settled": true,
+    "candidates": 111,
+    "preparation_due": 1,
+    "nominee": "defer",
+    "wallet": [
+      198151,
+      198151
+    ],
+    "execution_authorized": false
+  },
+  "workflow/before": {
+    "settled": false,
+    "candidates": 0,
+    "preparation_due": null,
+    "nominee": null,
+    "wallet": null,
+    "execution_authorized": false
+  },
+  "workflow/ready": {
+    "settled": false,
+    "candidates": 0,
+    "preparation_due": null,
+    "nominee": null,
+    "wallet": null,
+    "execution_authorized": false
+  },
+  "workflow/complete": {
+    "settled": true,
+    "candidates": 71,
+    "preparation_due": 1,
+    "nominee": "defer",
+    "wallet": [
+      198100,
+      198100
+    ],
+    "execution_authorized": false
+  },
+  "workflow/restarted": {
+    "settled": true,
+    "candidates": 71,
+    "preparation_due": 1,
+    "nominee": "defer",
+    "wallet": [
+      198100,
+      198100
+    ],
+    "execution_authorized": false
+  }
+}

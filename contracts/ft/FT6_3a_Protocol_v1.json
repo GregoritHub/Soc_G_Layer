@@ -1,0 +1,77 @@
+{
+  "batch": "FT6.3a",
+  "parent_job": "FT6.3",
+  "protocol_version": "1.0",
+  "prospective": true,
+  "scope": "Freeze the matched FT6 evaluation panel and execute the three feedback policies across five history regimes, six held-out demands and six changed demands using exact candidate ties and real paid chosen executions. Add history-removal and feedback-off causal controls and a fixed-bias comparator. This sub-batch records the full grid and counterexamples; FT6.3b independently audits the frozen result and applies the common FT6 stabilization/release gate.",
+  "source_contract": {
+    "configuration": "docs/ft/FT_Configuration_Contract_v1.md TD6, TD7 and FT6",
+    "continuation_plan": "Full Theory Engine Batched Plan revision 1.1, FT6.3 and FT6 gate",
+    "accepted_predecessor": "FT6.2 tie-only feedback, actual paid choice binding and measured n-pair episodes accepted",
+    "unchanged_boundaries": "TIM, seat dimensionality, native semantic law, grade-v1 wallet law, load-v1 reserve, certificate scope and H.retained remain unchanged"
+  },
+  "fixed_factorial": {
+    "policies": ["null", "success-v1", "success-decay-v1"],
+    "history_regimes": ["independent-use", "no-use", "supported-use", "failed-use", "fixed-bias"],
+    "schedule": {
+      "held_out": ["H0", "H1", "H2", "H3", "H4", "H5"],
+      "changed": ["C0", "C1", "C2", "C3", "C4", "C5"]
+    },
+    "primary_cells": 180,
+    "construction": "Each of 15 policy/history cells receives the same ordered six held-out then six changed demand IDs. Demand fixtures and both alternatives are fixed before history is applied. Every alternative is preflighted on an exact isolated native clone; the chosen alternative is executed on its paired clone and must bind to its prospective paid element multiset.",
+    "matching": "Within each demand, alternatives are equally eligible and tied on TD5 priority, exact estimated native time and exact extra energy. Only feedback score or, when inactive/tied, stable identity may differ. Fixtures do not inspect target answers, realized success or desired occupancy when constructing candidates.",
+    "boundedness": "At most two exact alternatives per demand, twelve demands per cell and fifteen primary cells. Raw event detail is saved privately; the repository retains scenario identities, hashes, aggregate results and exact evidence hashes."
+  },
+  "history_regimes": {
+    "independent-use": "Six completed paid training episodes classified independent. Their exact element deltas create the only nonzero conditioning score under non-null policies.",
+    "no-use": "Same native baseline and elapsed history turns, with no post-baseline paid use and all scores zero.",
+    "supported-use": "The same paid element deltas as independent-use, classified supported; no independent credit.",
+    "failed-use": "The same completed paid element deltas occur inside attempts with failed outcomes and are classified failed; no independent credit or success claim.",
+    "fixed-bias": "History scores are removed and feedback is disabled. A prospectively fixed stable-identity order favors the same initial alternative as the trained condition. It is an external comparator, never relabeled as conditioning."
+  },
+  "causal_controls": {
+    "history_removal": "For every independent-use non-null row, replace the ledger with an exact same-actor, same-TIM zero-score ledger at the evaluation boundary; do not change candidates, native fixture or stable identities.",
+    "feedback_off": "For every independent-use non-null row, retain the exact trained ledger but call the accepted chooser with feedback=false; do not change candidates or native fixture.",
+    "expected_discrimination": "A claimed conditioning effect requires the trained choice to differ from both controls in at least one held-out demand and the chosen request's actual paid completion to match its declared elements. Fixed bias must remain distinguishable by its lack of score dependence and changed-condition response.",
+    "failure_policy": "Unsupported, failed and no-use histories must not mint independent score. Null policy must remain behaviorally identical to feedback-off for the same candidates. All counterexamples remain in the grid."
+  },
+  "stabilization_measurement": {
+    "training": "The latest six completed paid n training episodes are evaluated by the accepted unique four-of-six measured occupancy rule.",
+    "held_out": "A stabilization candidate requires the same unique DCNH n-pair in at least four of the six held-out completed compensation episodes. Non-n choices, incomplete work and ties cannot be counted as occupancy evidence.",
+    "changed": "The six changed demands measure persistence or shift but do not retroactively alter the held-out criterion. success-decay-v1 receives exactly four declared idle turns for affected elements before C4; success-v1 and null receive the same turn schedule without score decay.",
+    "boundary": "FT6.3a reports candidate stabilization only. It never applies the 2+1 formula or assigns a subtype. FT6.3b decides only the engineering policy/gate; author interpretation remains held."
+  },
+  "selection_rule_for_ft6_3b": {
+    "success-decay-v1": "Eligible release policy if it passes the causal and held-out stabilization criteria and, after the exact changed-condition/idle intervention, changes at least one C4-C5 choice relative to success-v1 without violating any invariant.",
+    "success-v1": "Fallback eligible policy if it passes the causal and held-out stabilization criteria and success-decay-v1 fails a registered invariant or produces no distinct changed-condition response.",
+    "null": "Selected only if neither non-null policy passes the causal and stabilization criteria; in that case conditioning remains an observation/control and the FT6 behavioral gate is held.",
+    "no_tuning": "The ordering and criterion are prospective. No rate, threshold, candidate identity, history tag or demand fixture may change after inspecting grid outcomes."
+  },
+  "registered_tests": [
+    "test_factorial_has_exact_three_by_five_by_twelve_identity_domain",
+    "test_fixture_hashes_and_candidate_ties_are_frozen_before_history",
+    "test_all_candidates_are_preflighted_by_actual_paid_native_completion",
+    "test_independent_supported_failed_and_no_use_histories_reconstruct_exactly",
+    "test_primary_grid_executes_all_180_cells_without_scheduled_success",
+    "test_every_chosen_request_binds_to_its_actual_paid_element_multiset",
+    "test_null_policy_matches_feedback_off_for_each_fixed_candidate_set",
+    "test_history_removal_and_feedback_off_are_exact_one_factor_controls",
+    "test_fixed_bias_is_score_independent_and_prospectively_identified",
+    "test_held_out_occupancy_counts_only_completed_paid_n_episodes",
+    "test_changed_schedule_applies_exact_four_turn_decay_before_c4",
+    "test_ties_counterexamples_and_non_n_choices_are_preserved",
+    "test_independent_auditor_reconstructs_full_grid_and_control_contrasts",
+    "test_ft6_2_and_all_predecessor_method_identity_remain_exact"
+  ],
+  "invariants": [
+    "No evaluator-provided answer, desired route, desired DCNH cell or realized outcome enters candidate construction or choice.",
+    "Each chosen behavior is an existing paid native execution; candidate labels, counters and preflight results cannot substitute for the scheduled chosen completion.",
+    "The same fixed demand/candidate fixtures are reused across matched policy/history cells. Only the declared history, feedback switch or fixed stable order differs.",
+    "Decay changes only bounded scores. It cannot revoke content, access, certificates or H.retained.",
+    "A cell that cannot execute its chosen paid behavior remains a preserved failure and contributes no occupancy episode.",
+    "Measured occupancy, stabilization and subtype interpretation remain three distinct claims."
+  ],
+  "gate": "Fourteen exact FT6.3a methods pass with zero failures/errors; all 180 primary cells and declared controls have exact identities; every candidate is prospectively preflighted and every chosen behavior binds to actual paid native completion; three policies, five histories, six held-out then six changed demands, exact decay, history-removal, feedback-off and fixed-bias contrasts reconstruct independently; ties and counterexamples persist; all FT6.2-and-earlier method identities remain exact; frozen source is unchanged. Passing records the grid but does not accept the parent FT6.3 gate until FT6.3b.",
+  "next": "FT6.3a implementation, fixed scenario hashes, bounded grid and private raw evidence, then FT6.3b independent parent-gate decision",
+  "theory_boundary": "Passing is an engineering causal evaluation. It does not validate psychology, establish the 2+1 formula, elect a subtype, close TD6/TD7 or alter any C/D register."
+}

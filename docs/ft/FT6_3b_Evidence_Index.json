@@ -1,0 +1,28 @@
+{
+  "batch": "FT6.3b",
+  "archive_name": "FT6_3b_Stabilization_Evidence_20261014.zip",
+  "archive_sha256": "1d0cf94fb126009efc44785ec8641dffcf563b117ab65921c7f05d59143d7bd8",
+  "archive_bytes": 584181,
+  "members": {
+    "acceptance/source_freeze.json": "75ff8a064813b7b33f590feaa6962391bf9df95ee4852017593e470bcd6c1ec1",
+    "acceptance/training_paid_evidence.json": "09d59b0866bc450aa11534d745b2b91730bc3098dcbd9145aad071651d10a76a",
+    "acceptance/audits.json": "4a93314416688017a6f682aedff1fd9b3da975593d1ca37d8549b74e01eef693",
+    "acceptance/controls.log": "71bfe5d2b40347b2ddc3e27df7fa99f6c197aff0e562cb4602b65d1340f632ce",
+    "acceptance/predecessor_ids.json": "8795fe04453266dddae39d6d8bf0f558ac57a956aaf085534727a4c3aa4b5bce",
+    "acceptance/method_ids.json": "5dbd96077feabfed8ba5da50444e488ae696b3c982cd5830a19f461bd1d15458",
+    "acceptance/decision.json": "f5092009c7e96e23f8ec54e37129c596e76ddf833cbf5601f80d49804f989174",
+    "acceptance/summary.json": "1b1a8f585b725a3b4a3208410c9f6e9e7706e7d32c280809b02385164dd139ec",
+    "acceptance/evidence_hashes.json": "66bc53a24f6f407d4658ead7d35e6f38cfcf0fd14cdac402c5afcbe0e267996c",
+    "checkpoint/full_theory/conditioning_release.py": "a3807fb72ac5c5aa4e85562f7430e9adc6a3c4e5d57107da1342799f064d0098",
+    "checkpoint/full_theory/conditioning_release_audit.py": "0ee4bfc55743aaae019b708adfa2d095c2069b85692b9f602d69111b1e2a9d24",
+    "checkpoint/tools/evaluate_ft6_3b.py": "bd85dccc4e492e2f8e6e8cbeb7ac4d4f42e7bc33edb9aac53c8d13999282ac45",
+    "checkpoint/tests_ft6/test_conditioning_release.py": "f4f09fcaa9096de7704f3be650d566aca5f7c89b3c231c01a0fbb35057667feb",
+    "checkpoint/contracts/ft/FT6_3b_Protocol_v1.json": "858350d3da6f062b64dc1e2ff598d2b7ef8f676d8744bcddd6a09e53b4819b72",
+    "checkpoint/contracts/ft/FT6_3b_Protocol_v1.sha256": "cecacffef028c4fbea006eb93aafee7dd02d3893cfa90c716fd505fa8ef5b2d0",
+    "checkpoint/contracts/ft/FT6_3b_Source_Freeze_v1.json": "75ff8a064813b7b33f590feaa6962391bf9df95ee4852017593e470bcd6c1ec1",
+    "checkpoint/docs/ft/FT6_3b_Record.md": "dc6f9cc418ebc6fed113b668fb340a7007c949bb3cc44d12d2a1e95b1d380818"
+  },
+  "input_archive_name": "FT6_3a_Corrected_Acceptance_Evidence_20261014.zip",
+  "input_archive_sha256": "2b3e796928868c1b02c56f4cc7886d8c8feac36925bb504f8c222e0eb7edde66",
+  "retrieval": "Retrieve the exact private filenames in the continuation task. Verify the archive SHA-256 and every SHA256.json member. No private identifiers are published."
+}

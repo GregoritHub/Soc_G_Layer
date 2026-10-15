@@ -1,0 +1,46 @@
+{
+  "schema": "ft4-route-means-inventory-protocol-v1",
+  "job": "FT4.2a",
+  "parent_job": "FT4.2",
+  "policy": "owned-structural-means-v1",
+  "status": "prospectively registered before governed code",
+  "claim": "Construct, from an exact current route-free native request and the actor's paid participant view, an immutable inventory of ordinary-lap, n-compensation, cp-access and explicit-deferral means. This sub-batch fixes structural identities, overhead accounting and negative reasons only. It does not choose a successful content route, mutate the native cursor, execute work, infer social consent or claim fulfillment.",
+  "split": {
+    "this_subbatch": "FT4.2a owns structural means and cp overhead admission.",
+    "remaining_parent": "FT4.2b must add applicable recalled capacity, exact consenting support, paid overhead execution, deterministic priority and launch through the existing paid selector. The common FT4.2 gate remains open."
+  },
+  "implementation_limit": {
+    "modules": [
+      "full_theory/route_means.py",
+      "full_theory/route_means_audit.py",
+      "tools/evaluate_ft4_2a.py"
+    ],
+    "test_directory": "tests_ft4",
+    "bounded_evaluation": "all 16 inherited TIM frames x 8 active seats, both accepted content settings, exact 10 registered methods"
+  },
+  "rules": [
+    "The request must be an existing SelectionRequest or WorkflowSelectionRequest whose exact demand is current, paid, actor-owned and visible under the inherited native view contract.",
+    "The actor's TIM, current active element, current seat and energy/time wallet come from the native engine. The inventory cannot accept evaluator-supplied geometry or affordability.",
+    "Ordinary means names the inherited estafette lap seat and element. It adds no FT overhead; all native comparison and content work remain separately payable.",
+    "n means the inherited n portage of the current seat. Its geometric overhead is zero under TD5, but it never discounts or supplies native content processing.",
+    "cp means the inherited cp portage of the current seat. It preserves the accepting/producing coordinate, flips the ring coordinate and conjugates an ordinary lap to the reverse lap. One traversal requires exactly one separately identified orientation read costing two native energy and two native time units.",
+    "cp is eligible only when both current native wallet quantities can pay the full overhead. Insufficient resources retain the option with an exact reason; zero resources never become free access.",
+    "Deferral is always explicit and contains the unresolved request and reasons. No structural means is a completion claim or a selected route.",
+    "TIM, dimensionality, request, participant view, wallet, native cursor and native checkpoints remain byte-identical while the inventory is constructed.",
+    "The independent auditor reconstructs structural transforms, fields, overhead, affordability and non-mutation without importing the inventory module, controller, selector policy, scheduler or executors."
+  ],
+  "method_ids": [
+    "test_both_native_request_settings_are_accepted",
+    "test_all_types_and_seats_match_reference_geometry",
+    "test_n_has_zero_overhead_but_keeps_content_cost_separate",
+    "test_cp_costs_exact_orientation_read",
+    "test_cp_preserves_accepting_and_flips_ring",
+    "test_cp_conjugates_lap_to_reverse_orientation",
+    "test_unaffordable_cp_remains_visible_and_ineligible",
+    "test_inventory_never_selects_or_mutates_native_state",
+    "test_stale_foreign_and_route_named_requests_are_rejected",
+    "test_independent_auditor_rejects_tampered_geometry_cost_and_scope"
+  ],
+  "gate": "All ten exact methods and the declared 128-cell geometry grid pass with unchanged frozen source in both accepted settings. This accepts FT4.2a only; FT4.2 remains open until b supplies recalled/support admission, paid execution, deterministic choice and native launch.",
+  "next_batch": "FT4.2b paid route-means choice and launch through the inherited selector."
+}

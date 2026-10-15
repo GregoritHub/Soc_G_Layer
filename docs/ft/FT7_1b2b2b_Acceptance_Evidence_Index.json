@@ -1,0 +1,28 @@
+{
+  "batch": "FT7.1b2b2b",
+  "archive": {
+    "filename": "FT7_1b2b2b_Split_Comparison_Evidence_20261015.zip",
+    "sha256": "3114e31cab6490dbb7a87a7fb10e592d570e4b9e6f2b95a51cb6b2b1fc060616",
+    "bytes": 212428607,
+    "manifest_members": 141,
+    "all_members_verified": true,
+    "prior_manifest_members_verified": 39
+  },
+  "summary": "docs/ft/FT7_1b2b2b_Acceptance_Summary.json",
+  "cost_readback": "docs/ft/FT7_1b2b2b_Cost_Readback.json",
+  "native_records": 24,
+  "failed_attempts_preserved": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "method_freeze": "83d057cb5700c6fa0676cc5d83b422c622d420b4",
+  "saved_audit_freeze": "c5b0b8927a564c8ac8706e21e3f8a28372616191",
+  "retrieve": "Authorized hosted continuation retains the exact private pointer; search the exact archive filename in private files. No private identifiers are public.",
+  "reproduce": "Prepare pinned runtime with tools/prepare_workspace.py and authorized recovery archives; Python 3.12; python3 tools/audit_ft7_1b2b2b_saved.py /absolute/extracted/attempt6 /absolute/fresh-output",
+  "source_changes": "Paid mutable cue organization and approved split tests; bounded evidence reader; prepared-runtime audit/comparison overlays. Inherited source and defaults unchanged.",
+  "aggregate_payload_sha256": "7828ae5340448d039b2af11d07006696759538389731d5164b45352766651969"
+}

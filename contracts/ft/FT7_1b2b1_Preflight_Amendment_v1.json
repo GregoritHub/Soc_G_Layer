@@ -1,0 +1,20 @@
+{
+  "version": "ft7.1b2b1-preflight-amendment-v1",
+  "acceptance_criteria_unchanged": true,
+  "fixture_sha256": "5dec647f834cdf03346bfc5862f7fd00ce0611732c1b4e274962fbaf91bf7df5",
+  "preflight_attempts": [
+    {
+      "kind": "construction only; no new method gate",
+      "error": "ValueError: Ego composition cannot relabel the actual output aspect",
+      "cause": "older helper hardcodes Ne composition for IEE while social fixture is EII",
+      "repair": "independent paid observed model opportunities only; no relabeling or Ego composition in fixture"
+    },
+    {
+      "kind": "construction only; no new method gate",
+      "error": "ValueError: native content scope differs from its typed result",
+      "cause": "actor job enumeration includes non-content routed binding",
+      "repair": "reject candidate whose Account and content referent fail existing semantic scope contract; auditor independently applies same structural validation"
+    }
+  ],
+  "boundary": "Candidates are owned paid I/ITS outputs, including private transforms of formerly supplied support. Native training credit still requires subsequent actual unsupported responses and independent practice; no social completion is itself credited. No FT retention/certificate claim in this split."
+}

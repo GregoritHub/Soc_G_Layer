@@ -1,0 +1,17 @@
+{
+  "batch": "FT7.1b2b3a",
+  "version": "resumable-saved-binding-audit-v1",
+  "diagnosis": "Environment/tool runtime reset interrupted the full saved-record stage after all 8 methods passed and all eight canonical primary records were saved and independently audited. Source and outputs remain exact. No final gate pass.",
+  "correction": [
+    "Preserve exact original method log, method IDs, 266-file source capsule and eight saved binding records. Never rerun accepted paid engine methods or replace the actual eight-method pass with a count.",
+    "Add a separately frozen per-record audit tool over the same exact 24 accepted source records and unchanged binding/auditor source. For surviving records require exact equality with the deterministically reconstructed binding. For missing records compute only the accounting observer over the same committed source; no native paid work is run.",
+    "Each independent unit reconstructs and fully audits the original saved native/prefix source, saves/reloads its exact binding and independently audits it, checks native unchanged and the entire frozen source before/after, and emits a durable bounded receipt. At most two independent units concurrently; disjoint output paths; resumable completed receipts must be revalidated for exact input/output/freeze identity before skipping.",
+    "Finalize only after verifying all 24 exact record keys, typed readbacks and full independent audit receipts, original eight exact passed method-body IDs/log, 352 predecessor identities and unchanged original plus reader source. Preserve all interrupted outputs. Every criterion and parent/FT8 boundary remains unchanged."
+  ],
+  "methods": 8,
+  "records": 24,
+  "predecessor_identities": 352,
+  "original_freeze": "b1a69956df8401f264b67b4716b21ef54941226a",
+  "reader": "tools/audit_ft7_1b2b3a_saved.py",
+  "reader_freeze": "contracts/ft/FT7_1b2b3a_Saved_Audit_Source_Freeze_v1.json"
+}

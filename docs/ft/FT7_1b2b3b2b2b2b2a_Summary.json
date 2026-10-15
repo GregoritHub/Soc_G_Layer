@@ -1,0 +1,15 @@
+{
+  "batch": "FT7.1b2b3b2b2b2b2a",
+  "passed": true,
+  "methods": 8,
+  "failures": 0,
+  "errors": 0,
+  "predecessor_identities": 428,
+  "saved_records": 8,
+  "typed_roundtrip_exact": true,
+  "independent_audits": true,
+  "source_unchanged": true,
+  "frozen_identities": 341,
+  "accepted_paid_work_rerun": false,
+  "claim": "Paid role vocabulary only; no newly paid comparison, admission or live choice"
+}

@@ -1,0 +1,8 @@
+{
+  "batch": "FT7.1b2b2b",
+  "version": "apply-bounded-audit-tools-in-prepared-workspace-v1",
+  "diagnosis": "The existing workspace preparation layer filter copies tools/evaluate_ft but does not copy the new separately frozen tools/audit_ft saved-record reader. The documented saved-record audit command would therefore be missing from a newly prepared runtime.",
+  "correction": "Extend only the project-owned tool overlay prefix filter to tools/audit_ft alongside tools/evaluate_ft. Keep all pinned source repositories read-only, archive hashes, dependency recipe, FT3 repair freeze, historical manifest and sealed baseline checks unchanged. No engine source, method source or saved-audit source freeze changes.",
+  "verification": "Prepare a fresh runtime from the exact locally surviving pinned Git checkouts and the verified held/repair archives. Verify the new reader, all current project-owned source and its freezes by byte identity; run no accepted engine gate again.",
+  "scope": "Routine reproduction-tool repair under standing authorization; not FT9 standalone delivery or a new engine acceptance."
+}

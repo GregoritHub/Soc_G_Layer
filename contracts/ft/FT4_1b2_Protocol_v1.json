@@ -1,0 +1,46 @@
+{
+  "schema": "ft4-outcome-integration-protocol-v1",
+  "job": "FT4.1b2",
+  "parent_job": "FT4.1",
+  "policy": "paid-outcome-fulfillment-v1",
+  "status": "prospectively registered before governed code",
+  "claim": "Integrate admitted needs, route-free native requests, recorded historical pressure, suspension and explicit fulfillment. Fulfillment requires an exact fully paid native movement output consumed by a later fully paid native operation in the same actor, context and semantic target. A selected route, completed comparison or movement label never suffices.",
+  "implementation_limit": {
+    "modules": [
+      "full_theory/demand_controller.py",
+      "full_theory/fulfillment_audit.py",
+      "tools/evaluate_ft4_1c.py"
+    ],
+    "test_directory": "tests_ft4",
+    "bounded_evaluation": "both content settings, 28 exact FT4.1 methods and declared integration controls"
+  },
+  "controller": [
+    "One versioned controller owns only the demand ledger and controller-event order. Native engines retain ownership of access, payment, jobs, outputs and wallets.",
+    "Each cycle observes the actor view and historical state, admits or suspends exact owned needs, records pressure, then forms at most one route-free native request by the accepted b1 policy.",
+    "Unscoped pressure is visible but cannot fabricate a task or request. Missing, disputed, retracted, inaccessible or unsupported work remains visible and unfulfilled.",
+    "Settlement accepts a named demand, selection job, native movement job and later consumer job. It does not execute or repair them. Repeated settlement is idempotent.",
+    "Exact checkpoint restoration preserves ledger, event order, pending work and the next request."
+  ],
+  "fulfillment": [
+    "The admitted demand is current, pending and actor-owned at settlement.",
+    "The comparison job succeeded with complete paid extent and its exact input demand equals the admitted binding.",
+    "The native movement job succeeded with complete paid route extent and is the comparison decision's actual child.",
+    "The later consumer succeeded with complete paid route extent, consumes the exact movement output and has the same actor, context and semantic target as the demand.",
+    "Consumer output must be an actual native result. Failure, cancellation, partial work, missing output, wrong scope, wrong actor, stale demand, label-only evidence and unsupported output preserve pending status."
+  ],
+  "audit": "Independently reconstruct admission, current ownership, comparison, child linkage, payment, realized movement output, later exact consumption and demand scope from raw native journal/access evidence plus controller events. The auditor may use record codecs and structural constants but may not import the demand controller, request generator, participant selector, scheduler or executors.",
+  "method_ids": [
+    "test_controller_forms_requests_in_both_settings",
+    "test_unscoped_pressure_does_not_create_demand",
+    "test_actual_paid_consumption_fulfills_both_settings",
+    "test_selection_or_movement_alone_never_fulfills",
+    "test_partial_failed_and_cancelled_work_stays_pending",
+    "test_wrong_actor_context_target_and_output_rejected",
+    "test_withdrawal_suspends_before_settlement",
+    "test_duplicate_settlement_is_idempotent",
+    "test_checkpoint_exact_continuation",
+    "test_auditor_rejects_forged_child_payment_and_scope"
+  ],
+  "gate": "All ten exact integration methods and all twenty accepted admission/request methods pass with unchanged frozen source. Canonical and workflow positive witnesses must be independently reconstructed. Parent FT4.1 passes only this demand-formation gate; FT4.2 route-choice and FT4.3 autonomous closure/reuse remain open.",
+  "next_batch": "FT4.2: connect the integrated controller to lawful paid choice among ordinary, n, cp, consenting support and deferral under owned evidence and affordability."
+}

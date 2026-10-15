@@ -1,0 +1,44 @@
+{
+  "batch": "FT7.1b2b3b2b2b2a",
+  "version": 1,
+  "title": "Current TD5 admission joined to the exact paid operand domain",
+  "scope": "Bounded integration prerequisite; no live choice, movement, debt discharge or parent acceptance.",
+  "input": {
+    "filename": "FT7_1b2b3b2b2b1_Owned_Operand_Evidence_20261015.zip",
+    "sha256": "476cd4891f551d8c5743684fc19556440c2dedc625f9bc345a753a588c68b42d",
+    "records": "Eight exact before/ready/complete/restarted records; no paid rerun"
+  },
+  "algorithm": [
+    "Audit exact original source/binding and paid operand checkpoint before deriving current state. Keep original wrappers immutable.",
+    "Before settlement, expose no admission. After settlement, re-form oldest owned request from current participant view and original unresolved-demand controller; reject differences from paid request or any changed non-wallet comparison input.",
+    "Restore the original retention ledger into a separate copy bound to current native. Re-evaluate all original certificate keys, current recall, dimensions, support consent and all six ordered TD5 means using unchanged policy. Preserve original relay; never append a route event or mutate native.",
+    "Join every bounded operand option to each of retained/ordinary/n/cp/support in fixed order. Keep ineligible alternatives with reasons. Support requires a social native recipe. Include current two-unit preparation reads still due and cp overhead separately. Native effort remains an estimate, not a paid receipt. Recheck current wallet against the entire estimate.",
+    "Rank admissible candidates by original TD5 priority then total estimated native time and energy then stable structural identity; otherwise explicit defer. This diagnostic nominee is separately labeled, never replaces old native nominees and authorizes no execution.",
+    "Independent auditor imports no new generator or route policy. It verifies original paid operand audit, current request via independent request auditor, native route-means audit, independent retained eligibility and all exact admission/price/candidate/ordering fields. Saved original source/social/history prefixes unchanged."
+  ],
+  "registered_tests": [
+    "test_exact_complete_domain",
+    "test_no_unsettled_admission",
+    "test_current_wallet_not_old_snapshot",
+    "test_harder_deferral_preserved",
+    "test_restart_exact",
+    "test_native_and_prefixes_unchanged",
+    "test_omitted_mean_rejected",
+    "test_preparation_price_forgery_rejected",
+    "test_priority_forgery_rejected",
+    "test_false_authority_rejected"
+  ],
+  "saved_records": [
+    "canonical/before",
+    "canonical/ready",
+    "canonical/complete",
+    "canonical/restarted",
+    "workflow/before",
+    "workflow/ready",
+    "workflow/complete",
+    "workflow/restarted"
+  ],
+  "predecessor_identities": 408,
+  "gate": "All ten exact actual methods, eight typed exact saved records independently audited, 408 predecessor identities and all320 previous frozen identities unchanged. Preserve failures. Synthetic adversarial assertions do not constitute paid causal evidence.",
+  "remaining": "Fresh owned paid work yielding genuine history-sensitive cost tie; explicit live policy, actual chosen movement/downstream use, matched controls and exact preparation/staging composition. Parent FT7–FT9 and all FT8 criteria unchanged."
+}

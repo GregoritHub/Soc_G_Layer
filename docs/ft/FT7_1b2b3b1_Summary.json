@@ -1,0 +1,54 @@
+{
+  "batch": "FT7.1b2b3b1",
+  "passed": true,
+  "methods": 8,
+  "failures": 0,
+  "errors": 0,
+  "predecessor_identities": 360,
+  "saved_records": 8,
+  "exact_method_domain": true,
+  "typed_roundtrip_exact": true,
+  "independent_audits": true,
+  "source_unchanged": true,
+  "frozen_identities": 277,
+  "input_hashes": {
+    "native/canonical/harder": "ec17ea4529d340c1d1b4cc7418e5d4fa24933a8e2b437972a3214fadfc5bb9a3",
+    "native/workflow/harder": "a7a8172af9d8eb76180249330729fc5e1650e04ba227890fba57979b0578decc",
+    "binding/canonical/harder": "4903bc79a0768bd48eecc8b1ba9b2c0fa992348921521b4ecf2f1be7c4c33d53",
+    "binding/workflow/harder": "ab7c723ce6171a588eea6e519457dd3e6e74104e611f878f6e3a0d9158e5006e"
+  },
+  "claim": "Fresh exact paid reserve preparation only; no parent or autonomous tie-only choice acceptance",
+  "frozen_commit": "fde88bb472388d4ff1932a51a70b3b0fa970da11",
+  "protocol_commit": "be77b4071ff34a6026de2b21cfdd87b18d1b2719",
+  "archive": {
+    "filename": "FT7_1b2b3b1_Paid_Preparation_Evidence_20261015.zip",
+    "bytes": 2562839,
+    "sha256": "d1b7e202ff019c29b32ba7ae7e0d996c5854d1bf66f067b13be674db26ba3a8d",
+    "manifest_members": 22,
+    "all_members_verified": true
+  },
+  "setup_repair": {
+    "passed": true,
+    "frozen_identities": 270,
+    "bad": [],
+    "prior_changed": [
+      "tools/prepare_workspace.py"
+    ],
+    "automatic_setup_identity": "7ad1d1068af68f3fa7b0c38ee32475541da03ddd68fa8e46f696ff3cf04e8d8a",
+    "existing_output_rejected": true,
+    "source_setup_unchanged": true,
+    "preparation": {
+      "passed": true,
+      "base": "fdede6f16721f06422d0798a79d84170969b83f8",
+      "held": "c8bef62d623b55054594d1328dfd649c52811641",
+      "dependency_recipe_sha256": "df4bcf2319f6478f211f2f160a7afa086e7fa2f5500de3b214dbb00987dd1974",
+      "layer_files": 265,
+      "repair_freeze_files": 20,
+      "baseline_files": 1093,
+      "historical_files": 210,
+      "verified_archive_members": 209,
+      "claim": "Exact prepared inputs; execute the declared tests separately."
+    },
+    "engine_gate_rerun": false
+  }
+}

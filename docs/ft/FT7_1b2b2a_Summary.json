@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "methods": 12,
+  "failures": 0,
+  "errors": 0,
+  "exact_methods": true,
+  "predecessor_identities": 326,
+  "saved_records": 22,
+  "exact_record_domain": true,
+  "raw_roundtrip_exact": true,
+  "decoded_independent_audits": true,
+  "source_unchanged": true,
+  "registered_freeze": true,
+  "protocol_sha256": "fe343b03c205c2214f223f9f068d01dfebe872ee47d4fb011fcf824e7eb8bcf5",
+  "configuration": {
+    "canonical": "SelectionEngine",
+    "workflow": "WorkflowFinalSelectionEngine v4 explicit",
+    "defaults_changed": false
+  },
+  "claim": "owned content closure and guarded certificate only; changed-support reuse and reserve/history feedback remain pending"
+}

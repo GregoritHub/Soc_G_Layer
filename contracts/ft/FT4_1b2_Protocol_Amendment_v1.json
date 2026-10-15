@@ -1,0 +1,8 @@
+{
+  "schema": "ft4-outcome-integration-protocol-amendment-v1",
+  "amends": "FT4_1b2_Protocol_v1.json",
+  "status": "prospectively registered before governed code",
+  "correction": "The implementation_limit bounded_evaluation text says 28 exact FT4.1 methods. The declared method IDs are 12 FT4.1a plus 8 FT4.1b1 plus 10 FT4.1b2, for 30 exact methods. The gate already states all ten new and all twenty accepted methods, so this amendment corrects only that arithmetic label.",
+  "effective_bounded_evaluation": "both content settings, 30 exact FT4.1 methods and declared integration controls",
+  "unchanged": "All substantive rules, method identities, controls, claim boundaries and gates of FT4_1b2_Protocol_v1 remain unchanged."
+}

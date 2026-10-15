@@ -1,0 +1,130 @@
+{
+  "canonical/before": {
+    "status": "before",
+    "cells": 0,
+    "alternatives": 0,
+    "multi_operand_cells": [],
+    "deferred_cells": [],
+    "unbounded_search_complete": false,
+    "execution_authorized": false
+  },
+  "canonical/partial": {
+    "status": "partial",
+    "cells": 0,
+    "alternatives": 0,
+    "multi_operand_cells": [],
+    "deferred_cells": [],
+    "unbounded_search_complete": false,
+    "execution_authorized": false
+  },
+  "canonical/ready": {
+    "status": "ready",
+    "cells": 0,
+    "alternatives": 0,
+    "multi_operand_cells": [],
+    "deferred_cells": [],
+    "unbounded_search_complete": false,
+    "execution_authorized": false
+  },
+  "canonical/complete": {
+    "status": "succeeded",
+    "cells": 33,
+    "alternatives": 22,
+    "multi_operand_cells": [
+      8,
+      9,
+      14,
+      15
+    ],
+    "deferred_cells": [],
+    "unbounded_search_complete": true,
+    "execution_authorized": false
+  },
+  "canonical/restarted": {
+    "status": "succeeded",
+    "cells": 33,
+    "alternatives": 22,
+    "multi_operand_cells": [
+      8,
+      9,
+      14,
+      15
+    ],
+    "deferred_cells": [],
+    "unbounded_search_complete": true,
+    "execution_authorized": false
+  },
+  "canonical/cancelled": {
+    "status": "cancelled",
+    "cells": 0,
+    "alternatives": 0,
+    "multi_operand_cells": [],
+    "deferred_cells": [],
+    "unbounded_search_complete": false,
+    "execution_authorized": false
+  },
+  "workflow/before": {
+    "status": "before",
+    "cells": 0,
+    "alternatives": 0,
+    "multi_operand_cells": [],
+    "deferred_cells": [],
+    "unbounded_search_complete": false,
+    "execution_authorized": false
+  },
+  "workflow/partial": {
+    "status": "partial",
+    "cells": 0,
+    "alternatives": 0,
+    "multi_operand_cells": [],
+    "deferred_cells": [],
+    "unbounded_search_complete": false,
+    "execution_authorized": false
+  },
+  "workflow/ready": {
+    "status": "ready",
+    "cells": 0,
+    "alternatives": 0,
+    "multi_operand_cells": [],
+    "deferred_cells": [],
+    "unbounded_search_complete": false,
+    "execution_authorized": false
+  },
+  "workflow/complete": {
+    "status": "succeeded",
+    "cells": 32,
+    "alternatives": 14,
+    "multi_operand_cells": [
+      24,
+      25,
+      26,
+      27
+    ],
+    "deferred_cells": [],
+    "unbounded_search_complete": true,
+    "execution_authorized": false
+  },
+  "workflow/restarted": {
+    "status": "succeeded",
+    "cells": 32,
+    "alternatives": 14,
+    "multi_operand_cells": [
+      24,
+      25,
+      26,
+      27
+    ],
+    "deferred_cells": [],
+    "unbounded_search_complete": true,
+    "execution_authorized": false
+  },
+  "workflow/cancelled": {
+    "status": "cancelled",
+    "cells": 0,
+    "alternatives": 0,
+    "multi_operand_cells": [],
+    "deferred_cells": [],
+    "unbounded_search_complete": false,
+    "execution_authorized": false
+  }
+}
