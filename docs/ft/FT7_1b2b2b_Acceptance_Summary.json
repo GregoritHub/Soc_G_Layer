@@ -1,0 +1,102 @@
+{
+  "passed": true,
+  "methods": 14,
+  "failures": 0,
+  "errors": 0,
+  "exact_methods": true,
+  "actual_method_bodies_passed": true,
+  "method_witness_freeze": "83d057cb5700c6fa0676cc5d83b422c622d420b4",
+  "predecessor_identities": 338,
+  "saved_records": 24,
+  "exact_record_domain": true,
+  "raw_roundtrip_exact": true,
+  "aggregate_checksum_verified": {
+    "passed": true,
+    "records": 24,
+    "payload_sha256": "7828ae5340448d039b2af11d07006696759538389731d5164b45352766651969"
+  },
+  "decoded_independent_audits": true,
+  "source_unchanged": true,
+  "registered_freeze": true,
+  "protocol_sha256": "2da7f69807e3a297291c9aa8035598584e69fcbdb3aadb3f5d525af0870f8bc1",
+  "claim": "Approved strict success-versus-deferral and separate one-facet equal-main-cost retained priority only; FT8 matched-cost obligations and every denominator unchanged; integrated reserve/history feedback and parent FT7 remain pending",
+  "batch": "FT7.1b2b2b",
+  "frozen_commit": "83d057cb5700c6fa0676cc5d83b422c622d420b4",
+  "saved_audit_frozen_commit": "c5b0b8927a564c8ac8706e21e3f8a28372616191",
+  "configuration": {
+    "canonical": "SelectionEngine",
+    "workflow": "WorkflowFinalSelectionEngine v4 explicit",
+    "defaults_changed": false
+  },
+  "comparison_readback": {
+    "canonical/strict": {
+      "same_qualified_native": true,
+      "same_paid_organization": true,
+      "same_demand": true,
+      "same_owned_admission": true,
+      "movement_cost_match": false,
+      "consumer_cost_match": false,
+      "completion": [
+        "complete",
+        "deferred"
+      ],
+      "claim": "strict success-versus-deferral; does not satisfy FT8 matched-cost claim"
+    },
+    "canonical/lower": {
+      "same_qualified_native": true,
+      "same_paid_organization": true,
+      "same_demand": true,
+      "same_owned_admission": true,
+      "movement_cost_match": true,
+      "consumer_cost_match": true,
+      "completion": [
+        "complete",
+        "complete"
+      ],
+      "claim": "bounded one-facet completed equal-main-cost retained-priority contrast"
+    },
+    "workflow/strict": {
+      "same_qualified_native": true,
+      "same_paid_organization": true,
+      "same_demand": true,
+      "same_owned_admission": true,
+      "movement_cost_match": false,
+      "consumer_cost_match": false,
+      "completion": [
+        "complete",
+        "deferred"
+      ],
+      "claim": "strict success-versus-deferral; does not satisfy FT8 matched-cost claim"
+    },
+    "workflow/lower": {
+      "same_qualified_native": true,
+      "same_paid_organization": true,
+      "same_demand": true,
+      "same_owned_admission": true,
+      "movement_cost_match": true,
+      "consumer_cost_match": true,
+      "completion": [
+        "complete",
+        "complete"
+      ],
+      "claim": "bounded one-facet completed equal-main-cost retained-priority contrast"
+    }
+  },
+  "clean_workspace": {
+    "passed": true,
+    "frozen_files": 256,
+    "reader_present": true,
+    "comparison_tool_present": true,
+    "engine_gate_rerun": false,
+    "missing": [],
+    "bad": []
+  },
+  "archive": {
+    "filename": "FT7_1b2b2b_Split_Comparison_Evidence_20261015.zip",
+    "sha256": "3114e31cab6490dbb7a87a7fb10e592d570e4b9e6f2b95a51cb6b2b1fc060616",
+    "bytes": 212428607,
+    "manifest_members": 141,
+    "all_members_verified": true,
+    "prior_manifest_members_verified": 39
+  }
+}

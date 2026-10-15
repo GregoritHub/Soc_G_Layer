@@ -5,9 +5,9 @@
   "run_id": "ft-reuse-oct15-1792024259179",
   "active_worker": true,
   "lease_expires_at": "2026-10-15T01:25:31.000Z",
-  "expected_head": "c5b0b8927a564c8ac8706e21e3f8a28372616191",
-  "current_batch": "FT7.1b2b2b",
-  "next_batch": "FT7.1b2b2b: all 14 frozen methods passed; complete bounded independent audit of all 24 exact persisted records; then FT7.1b2b3",
+  "expected_head": "926ab7fa19432ea9b105cd160ee030bdb64c2501",
+  "current_batch": "FT7.1b2b3",
+  "next_batch": "FT7.1b2b3: prospectively register integrated native reserve/history binding and tie-only later owned choices; then ordered-pair/population and unchanged FT8-FT9 gates",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -47,11 +47,13 @@
     "FT7.1b1",
     "FT7.1b2a",
     "FT7.1b2b1",
-    "FT7.1b2b2a"
+    "FT7.1b2b2a",
+    "FT7.1b2b2b",
+    "FT7.1b2b2"
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT7_1b2b2b_Reopening_Record.md",
+  "latest_record": "docs/ft/FT7_1b2b2b_Acceptance_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
@@ -108,27 +110,30 @@
   },
   "local_acceptance": {
     "passed": true,
-    "methods": 12,
+    "methods": 14,
     "failures": 0,
     "errors": 0,
     "exact_methods": true,
-    "predecessor_identities": 326,
-    "saved_records": 22,
+    "actual_method_bodies_passed": true,
+    "method_witness_freeze": "83d057cb5700c6fa0676cc5d83b422c622d420b4",
+    "predecessor_identities": 338,
+    "saved_records": 24,
     "exact_record_domain": true,
     "raw_roundtrip_exact": true,
+    "aggregate_checksum_verified": {
+      "passed": true,
+      "records": 24,
+      "payload_sha256": "7828ae5340448d039b2af11d07006696759538389731d5164b45352766651969"
+    },
     "decoded_independent_audits": true,
     "source_unchanged": true,
     "registered_freeze": true,
-    "protocol_sha256": "fe343b03c205c2214f223f9f068d01dfebe872ee47d4fb011fcf824e7eb8bcf5",
-    "configuration": {
-      "canonical": "SelectionEngine",
-      "workflow": "WorkflowFinalSelectionEngine v4 explicit",
-      "defaults_changed": false
-    },
-    "claim": "owned content closure and guarded certificate only; changed-support reuse and reserve/history feedback remain pending",
-    "batch": "FT7.1b2b2a",
-    "frozen_commit": "1941ddde40701f4a9517e459eee55bc6d95287be",
-    "source_publication": "verified"
+    "protocol_sha256": "2da7f69807e3a297291c9aa8035598584e69fcbdb3aadb3f5d525af0870f8bc1",
+    "claim": "Strict success-versus-deferral and separate one-facet equal-main-cost retained priority; FT8 unchanged; integrated reserve/history feedback pending",
+    "batch": "FT7.1b2b2b",
+    "frozen_commit": "83d057cb5700c6fa0676cc5d83b422c622d420b4",
+    "saved_audit_frozen_commit": "c5b0b8927a564c8ac8706e21e3f8a28372616191",
+    "source_publication": "pending remote verification"
   },
   "conditioning_release": {
     "policy": "success-v1",
@@ -258,32 +263,12 @@
     "source_publication": "verified",
     "prior_failed_attempts": 6
   },
-  "latest_acceptance_record": "docs/ft/FT7_1b2b2a_Record.md",
-  "latest_acceptance_commit": "2bfc3a883bd7aac545f2d93462f2a62e134ae856",
+  "latest_acceptance_record": "docs/ft/FT7_1b2b2b_Acceptance_Record.md",
+  "latest_acceptance_commit": "acceptance commit containing this state",
   "engineering_continuation": {
-    "batch": "FT7.1b2b2b",
+    "batch": "FT7.1b2b3",
     "accepted": false,
-    "attempts": 2,
-    "frozen_commit": "fa6f1e4b1ce064c1b1cebf15196f0b4fef76467a",
-    "latest_attempt": {
-      "passed": false,
-      "methods": 0,
-      "failures": 0,
-      "errors": 1,
-      "exact_methods": true,
-      "predecessor_identities": 338,
-      "saved_records": 4,
-      "exact_record_domain": false,
-      "raw_roundtrip_exact": true,
-      "decoded_independent_audits": true,
-      "source_unchanged": true,
-      "registered_freeze": true,
-      "protocol_sha256": "2da7f69807e3a297291c9aa8035598584e69fcbdb3aadb3f5d525af0870f8bc1",
-      "claim": "unsupported requalification and scoped later retained reuse; integrated reserve/history feedback remains pending"
-    },
-    "diagnostic": "docs/ft/FT7_1b2b2b_Boundary_Diagnostic.json",
-    "required_next": "FT7.1b2b2b approved split comparison implementation and recall repair; freeze and full gate; then FT7.1b2b3",
-    "permission": "Technical coding/testing repairs and retries are the agent's responsibility under standing authorization; no renewed user opinion needed."
+    "permission": "Technical coding, testing, diagnosis, lawful repairs and retries through FT9 belong to the agent without renewed user approval. Preserve criteria except the explicitly approved comparison amendment; FT8 unchanged."
   },
   "prior_comparison_hold": {
     "kind": "registered_comparison_conflicts_with_unchanged_route_contract",

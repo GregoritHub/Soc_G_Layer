@@ -25,9 +25,10 @@
 | FT6.1 | accepted | 13 exact methods; actual committed paid-use deltas, four tags, three policies, saturation, four-turn decay, recovery and bounded replay independently reconstructed; scores remain behaviorally inert |
 | FT6.2 | accepted | 13 exact methods; tie-only history effect and its feedback-off/history-removal controls, actual chosen paid work, six paid n episodes and measured DCNH-pair occupancy independently reconstructed |
 | FT6.3 | accepted, engineering hypothesis | FT6.3b 12/12 methods; 228 saved records reconstructed; six exact paid training replays; unique H persistence; causal controls; success-v1 selected; full subtype interpretation held |
-| FT7.1 | FT7.1a/FT7.1b1/FT7.1b2a/FT7.1b2b1 accepted in scope | Owned native training: 14 exact methods and 18 decoded audits. FT7.1b2b2 closure/scoped reuse and FT7.1b2b3 integrated reserve/history feedback remain pending |
+| FT7.1 | training, closure and scoped reuse accepted; parent pending | FT7.1b2b2b: 14 exact methods, 338 predecessor identities, 24 saved audits. FT7.1b2b3 reserve/history feedback remains mandatory |
 | FT7.1b2b2a | accepted, bounded closure/certificate | 12 exact methods, 326 predecessor identities, 22 saved native records independently audited; stricter no-support requalification and actual later reuse remain FT7.1b2b2b |
-| FT7.1b2b2b | reopened, revised comparison registered; implementation pending | Exhaustive unchanged geometry proves the registered strict four-facet/no-support completed equal-cost revocation comparison incompatible with route admission. Two failed attempts preserved; no third run. See FT7_1b2b2b_Protocol_Conflict_Record.md |
+| FT7.1b2b2b | accepted, approved bounded split | 14 exact methods, 338 predecessor identities and 24 exact saved audits; strict complete/defer plus separate completed one-facet equal-main-cost retained priority. FT8 intact; see FT7_1b2b2b_Acceptance_Record.md |
+| FT7.1b2b3 | pending | Integrated native reserve/history binding and tie-only feedback on later owned choices |
 | FT7.2 | pending | Full Theory plan gate |
 | FT7.3 | pending | Full Theory plan gate |
 | FT8.1 | pending | Full Theory plan gate |
@@ -48,3 +49,5 @@
 [measured] FT7.1b2b1 accepted after six preserved diagnosed failures: both settings form native guarded capacity from two actual paid independent practices; supported and missing-correction controls do not. All 18 saved native records and immutable social prefixes independently reconstruct. No FT closure/certificate or full parent acceptance is claimed. Next FT7.1b2b2; no blocker.
 
 Author-approved split supersedes the ruling-required status above. See FT7_1b2b2b_Reopening_Record.md. Strict contrast does not discharge FT8 matched-cost obligations.
+
+[measured] FT7.1b2b2b accepted on 15 October 2026 UTC. This supersedes earlier reopened/unaccepted and theory-hold snapshots without erasing failures. Exact actual method run and separately frozen bounded saved-record audit both passed. The durable evidence includes all six attempts; FT8 obligations remain intact. Next FT7.1b2b3; no blocker.
