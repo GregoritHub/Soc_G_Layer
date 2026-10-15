@@ -205,7 +205,7 @@ def method_stage(args, protocol, before, index):
         errors=len(result.errors), passed=result.wasSuccessful() and result.testsRun==1 and unchanged,
         source_unchanged=unchanged, source_freeze=before)
     write_new(attempt/'result.json', report)
-    print(json.dumps(report,default=str),flush=True)
+    print(json.dumps({k:v for k,v in report.items() if k!='source_freeze'}),flush=True)
     if not report['passed']:
         raise SystemExit(1)
 
