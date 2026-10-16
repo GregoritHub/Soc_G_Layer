@@ -1,0 +1,39 @@
+{
+  "version": "ft-owned-rehearsal-a10-rejection-closure-v1",
+  "batch": "FT7.Owned.Rehearsal.A10R",
+  "reason": "Attempt2 closed exit1 at native preflight: workflow-use-personal-v1 accepts personal, not intention. Last fixed-plan intention must remain visible as an unpaid rejected candidate, not be relabelled, removed or forced successful.",
+  "original_freeze": "8ce21d6481a64c77ac00913bab0299d84e82a379",
+  "prior_freeze": "contracts/ft/FT7_Owned_Rehearsal_A10_Source_Freeze_v2.json",
+  "prior_identities": 526,
+  "original_output": "owned-rehearsal-a10-attempt2",
+  "required_original_records": 7,
+  "source_preservation": "All 526 original identities remain exact. Separate wrapper/runtime, independent wrapper auditor, one bounded continuation tool and one test file. Original v1 adapter remains immutable inside wrapper.",
+  "binding": "Before invocation bind complete closed attempt1/attempt2 trees and failed source capsules, exact two A5 native+adapter pairs, all original frozen identities; verify zero original workers. Never invoke original evaluator or repeat canonical work/controls or the five completed workflow main candidates.",
+  "continuation": "Copy original seven typed records byte-exact. Wrap their v1 adapters with zero rejection suffix. Restore only workflow-current index5 for original main continuation; apply narrow native preflight rejection once. Independent full audit original base plus separate rejection witness. Restart control begins original workflow one-unit partial because no workflow restart began; it alone executes its five not-yet-run control jobs and same rejection. Cancellation control begins same partial and cancels without new debit. Preserve all existing canonical controls. Exact v2 native+adapter complete/restart equality; terminal no-op.",
+  "rejection": "Only workflow fixed plan row kind=intention and recipe=workflow-use-personal-v1; native start raises exact ValueError('native output consumer required'), native checkpoint unchanged and job absent. No catch for any other exception or mutated native state. Immutable base v1 checkpoint retained; separate rejected result has source/recipe/index/request/native hashes and exact message, zero debit. Auditor independently enumerates via unchanged v1 audit, decodes kind, reconstructs full request and invokes native preflight to require same exact no-mutation rejection. No paid job or completion receipt invented.",
+  "versioning": "ft-owned-content-rehearsal-a10r-v1; wrapper contains exact v1 base and rejected suffix; logical phase complete only when base index plus rejected suffix covers all original plan rows. Original source adapters, selectors, labels, currencies, need, geometry, recall32, reserve/history and old failures stay immutable.",
+  "gate": {
+    "original_methods": [
+      "test_plan_complete_and_route_free",
+      "test_exact_paid_native_suffix",
+      "test_partial_without_credit",
+      "test_restart_exact",
+      "test_cancel_nonrefundable",
+      "test_forgery_and_pairing_rejected"
+    ],
+    "additional_method": "test_narrow_rejection_evidence",
+    "records": 10,
+    "original_forgeries": 16,
+    "additional_rejection_forgeries": 6,
+    "restarts_exact": 2,
+    "source_unchanged": true,
+    "prior_exact": 526
+  },
+  "limits": {
+    "max_steps": 256,
+    "work_quantum": 1000000,
+    "cooperative_deadline": true,
+    "lease_required": true
+  },
+  "scope": "Auxiliary mechanism including honest rejection only; no main demand settlement, admission, acquisition, comparison, history-choice or independent credit. No parent acceptance or FT8 changes. A10 original failure remains failed; A10R separately evaluated."
+}
