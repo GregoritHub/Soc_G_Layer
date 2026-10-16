@@ -1,0 +1,25 @@
+{
+  "version": "ft-current-domain-quotation-a12e2-native-envelope-amendment-v1",
+  "batch": "FT7.PostProcessing.CurrentQuotation.A12E2",
+  "registered_at": "2026-10-16T21:51:00+00:00",
+  "failed_attempt": "current-domain-quotation-a12e2-attempt1",
+  "failed_attempt_result": {
+    "error": "invalid compact envelope",
+    "native_views": 0,
+    "saved_quote_reports": 0,
+    "saved_audits": 0,
+    "method_bodies": 0,
+    "paid_work": 0
+  },
+  "diagnosis": "Each accepted A12E1 current_native field is the exact A12D/A12D2 wrapper checkpoint. The base SelectionEngine or WorkflowFinalSelectionEngine cannot directly restore that wrapper schema. The protocol requires restoring the immutable base native selection state from the saved current native state; the implementation omitted the established unseal-current-schema then seal-base-schema bridge used by earlier accepted quotation code.",
+  "correction": "In both runtime and independent audit, unseal the saved current native using its own declared schema, reseal the identical state with the unchanged base selection schema, and restore only that base engine. Keep the original current-native hash as the registered input and compare its state byte-exact before/after. Update the source-identity count from 608 to 610 after adding this amendment and hash.",
+  "gate_unchanged": true,
+  "prohibitions": [
+    "No A12D/A12D2 adapter restore or processing call",
+    "No payment or native command",
+    "No accepted A12E1/A12D2/A12C replay",
+    "No source-window, task, route, winner, cost or authority change"
+  ],
+  "ft8_unchanged": true
+}
+
