@@ -1,0 +1,27 @@
+{
+  "version": "ft-current-window-admission-continuation2-v1",
+  "scope": "Operational missing-only continuation after original and continuation1 are both quiescent; original 406 source identities, eight actual methods, forty exact audits and unchanged finish remain mandatory.",
+  "original_protocol_commit": "ac106a6a754716b015c16d2f516405eb22e2da99",
+  "original_freeze_commit": "86c613185216ae09b76ef1a1dbd764847ec2c31e",
+  "prior_operational_freeze_commit": "f72e518a289404a1afeb67ff2bf48634c0068fff",
+  "module": "tools/continue_current_window_admission2.py",
+  "binding_file": "contracts/ft/FT7_1b2b3b2b2b2b2b2b1d_Continuation2_Closed_Prefix_v1.json",
+  "prior_operations": [
+    "current-window-admission-continuation1"
+  ],
+  "output": "current-window-admission-continuation2",
+  "record_workers": 4,
+  "method_workers": 2,
+  "lease_margin_seconds": 300,
+  "rules": [
+    "Do not invoke until original output and every declared prior operational run have an outcome with active_children=0, source_unchanged=true and status=checkpoint. A failed or interrupted job requires a separate diagnosis/correction, never an automatic retry.",
+    "After prior quiescence, bind the complete exact current original-output file domain, complete file domain of each prior operational directory, all forty capacity raw and all forty paid raw inputs, original 406 source identities and prior operational four-identity source. Commit and freeze this module, protocol, protocol hash and closed-prefix binding as four separate operational identities before invocation.",
+    "Verify every prior launch has exactly one closed passing exit-zero job and exact log hash. Cross-check the union of record/method jobs against exact reports/results with no duplicate targets. Existing passing stages, raw files and method directories remain immutable; incomplete raw without report or method directory without result rejects continuation.",
+    "Compute pending registered records and exact original methods from validated reports; do not supply counts as substitutes. Use original frozen evaluator stage CLI. At most four missing record workers, then all forty exact reports before at most two missing method workers, then all eight exact passing actual methods before unchanged finish alone.",
+    "Use fresh exclusive operational output named current-window-admission-continuation2, disjoint from runtime, public, original-output, all prior operations and accepted inputs. Never restart original run/init or a previous continuation, overwrite logs, regenerate paid evidence, or signal processes.",
+    "Before every launch and after every closure verify original406, prior operational4, current operational4, every bound closed-prefix file and eighty accepted raw records. Initial file domains must match exactly; original output may then grow only through new disjoint stage outputs.",
+    "Require a current unique running owner and lease with more than300seconds remaining before each launch. Fix an absolute UTC launch deadline after invocation and within30minutes, recorded in immutable plan. Stop new launches on first failure, STOP, deadline, ownership change or lease margin; wait active children naturally without signal or automatic retry.",
+    "Write exact launch/job/log/outcome records; checkpoint is not acceptance. Acceptance requires the original unchanged aggregate and all original obligations. Subsequent continuation needs a newly registered complete prior-prefix binding, separate freeze and fresh numbered output; no repeated invocation.",
+    "No original runtime, auditor, evaluator, tests, native payment, demand, priority, candidate, wallet, receipt, history, reserve, FT8 denominator or acceptance condition changes. This is process coordination only."
+  ]
+}
