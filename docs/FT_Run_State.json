@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft7-owned-skill-2026-10-16T08:29:38.609Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-16T09:18:03.000Z",
-  "expected_head": "f0257b705fb30d4024c7b57ea4c8e6f855e11f50",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "e87218cc23138fe01876a65ce13f39c91d21f652",
   "current_batch": "FT7.Skill.Intake.A1",
   "current_window_admission_progress": {
     "status": "passed",
@@ -2239,7 +2239,7 @@
     "acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2"
   },
   "prior_paid_window_acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2",
-  "latest_acceptance_commit": "64341a34a6fb90221ae440f9d683c4e29bddb6bb",
+  "latest_acceptance_commit": "e87218cc23138fe01876a65ce13f39c91d21f652",
   "latest_local_acceptance": {
     "batch": "FT7.Skill.Intake.A1",
     "passed": true,
@@ -2275,7 +2275,7 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T09:15:47.000Z",
+  "updated_at": "2026-10-16T09:17:06.000Z",
   "skill_intake_a1": {
     "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
@@ -2308,7 +2308,10 @@
       "bytes": 112962487,
       "manifest_members": 59
     },
-    "recall_repaired": false
+    "recall_repaired": false,
+    "acceptance_commit": "e87218cc23138fe01876a65ce13f39c91d21f652",
+    "ownership_released_at": "2026-10-16T09:17:06.000Z",
+    "owned_workers_at_release": 0
   },
   "prior_b1d_local_acceptance": {
     "batch": "FT7.1b2b3b2b2b2b2b2b1d",
