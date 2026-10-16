@@ -1,0 +1,8 @@
+{
+  "version": "ft-canonical-quotation-a8-continuation1-closure-amendment-v1",
+  "base_protocol": "a9430f370937d4d9e71ae751afb406350fe9f9d7",
+  "diagnosis": "Exact /proc argv discovery found pid22688 but os.kill(SIGINT) returned ProcessLookupError. Session36445 still reported quote progress; no delivered signal or interrupt claimed. No signal retry/workaround. Original evaluator retains its own fixed deadline guard.",
+  "change": "Replace prerequisite terminal KeyboardInterrupt with original evaluator natural SystemExit('ownership/lease/deadline') after its fixed deadline, confirmed exit and zero surviving exact worker. Preserve signal lookup failure in evidence. Other continuation criteria, full audits/costs/source identities unchanged.",
+  "no_paid_work": true,
+  "no_acceptance_change": true
+}
