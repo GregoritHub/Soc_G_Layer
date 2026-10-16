@@ -1,0 +1,309 @@
+{
+  "batch": "FT7.PostProcessing.CurrentDomain.A12E1",
+  "version": 1,
+  "status": "prospectively_registered_not_implemented_not_executed",
+  "required_parent": "Complete A12D2 accepted gate; no implementation until its full 50 bindings/eight methods/aggregate are accepted and exact raw evidence is accessible.",
+  "prior_source_freeze": "contracts/ft/FT7_Cue_Processing_Panel_A12D2_Source_Freeze_v1.json",
+  "prior_identities": 594,
+  "inputs": {
+    "canonical-01": {
+      "path": "legacy/records/canonical-complete.json.gz",
+      "raw_sha256": "b16b9cb983244f210679761cfe7039c7fab81fe74468d912e4b96665a7e946d9",
+      "native_sha256": "6f3796063f7050444dccf9baa00991c7a8637cd733edc71a3b2b3a61fb8e61c1",
+      "adapter_sha256": "f0caed7896a581395e50a046de45c90e253ddf072e893ea9e308e00f179d2f29",
+      "raw_arity": 4,
+      "source_version": "a12d-v1"
+    },
+    "canonical-02": {
+      "path": "records/canonical-02-complete.json.gz",
+      "raw_sha256": "c781f436e6b67aabd40908556f3e7b4a00363214ff0f8345931faa0ccd44d3f9",
+      "native_sha256": "0f4811c155b1af237a1b02e87a1366be467196c3f0860815078376d4994b77b1",
+      "adapter_sha256": "4e2c2aeb881cae882c2c952445541bfc5fef368e8635a9cc3b1adc9bee683cdd",
+      "raw_arity": 5,
+      "source_version": "a12d2-v2"
+    },
+    "canonical-03": {
+      "path": "records/canonical-03-complete.json.gz",
+      "raw_sha256": "225594b8d165afbc520f38a4656c809c3e81071b304889d34527b8865f757937",
+      "native_sha256": "70155dbedd47890ace62638fc7395ebf74e842e5d742a2f547c5146cd96860b1",
+      "adapter_sha256": "3bffb80e30a19d10cb1c11d85ce553abcd858f47a54349031e48a7c324c228e3",
+      "raw_arity": 5,
+      "source_version": "a12d2-v2"
+    },
+    "canonical-04": {
+      "path": "records/canonical-04-complete.json.gz",
+      "raw_sha256": "0bc66450d36b616796ba51bdbe7e1a3401a1177ae36379199e08d4caef49794d",
+      "native_sha256": "37877e6e2f17c6f9627b8c535679178e0b318a14004dadc967d984197e769767",
+      "adapter_sha256": "191c16f4eb17cbc91f4fb2d755afe4a93de735e827e4392c8649a52998462f60",
+      "raw_arity": 5,
+      "source_version": "a12d2-v2"
+    },
+    "canonical-05": {
+      "path": "records/canonical-05-complete.json.gz",
+      "raw_sha256": "479c3170c9b4a12a245d86a3e8463351ce073ea8f02fa752333f260e5b49ee8c",
+      "native_sha256": "2cbc84167dc059169a34856efbf28718c9a6dc827a44855aa3ed3893d8be68e4",
+      "adapter_sha256": "d7bb230c87691497031152412f7faba74167249c08eb303d9e867a569a33974a",
+      "raw_arity": 5,
+      "source_version": "a12d2-v2"
+    },
+    "canonical-06": {
+      "path": "records/canonical-06-complete.json.gz",
+      "raw_sha256": "492ae86a577d000f27345ab830ade862e4a9af0ed0d5f659a5a0b7d63556aa8d",
+      "native_sha256": "0ff910cedc01b596ddc9a59557f15ea46377df18bda3c46f52854c3e718adfef",
+      "adapter_sha256": "7d3b102f7d495d86faa1a14c86bfc07436e9089b12d366d0c20291d371927f9a",
+      "raw_arity": 5,
+      "source_version": "a12d2-v2"
+    },
+    "canonical-07": {
+      "path": "records/canonical-07-complete.json.gz",
+      "raw_sha256": "e03c0ae3b0b237bf9169cbf9e56e51c3afc0cd1fd49205ea28f86e3b075c6f7a",
+      "native_sha256": "4ac23ecaa0aa25fa0a10b6b6f26ca743c688684d2f157116db513ce662846e9c",
+      "adapter_sha256": "8981bfb605970584d8e2d7b422899fea1c01b8d58573ac9268c696485dca0b6d",
+      "raw_arity": 5,
+      "source_version": "a12d2-v2"
+    },
+    "canonical-08": {
+      "path": "records/canonical-08-complete.json.gz",
+      "raw_sha256": "4633dd5088adada75c01622b56552c1a7f74fca38b6c63c17e0936c509a8c394",
+      "native_sha256": "07fd74f385f36f0d6e777d5b00ebd1727f3d31cb33cb835fbb8f23b40380f7b1",
+      "adapter_sha256": "aba0b1368cbf987025cb27c0b2b22b816d1cf7a86c712e35933597c206179ef4",
+      "raw_arity": 5,
+      "source_version": "a12d2-v2"
+    },
+    "canonical-09": {
+      "path": "records/canonical-09-complete.json.gz",
+      "raw_sha256": "e30650bdbe8e69fed6795fa6dc085f21da2e8520862560ebcfefdbd145c1e80b",
+      "native_sha256": "ec2899366d470760005e552712e99703310888295a9ddc89f5456410ded2a831",
+      "adapter_sha256": "525ff68238c5ce2f09ae685287bf4d21edff08e6b8c0d52dda3fc763f4a51de3",
+      "raw_arity": 5,
+      "source_version": "a12d2-v2"
+    },
+    "canonical-10": {
+      "path": "records/canonical-10-complete.json.gz",
+      "raw_sha256": "a9de5d99336452050511b0491f010bb3b75ca5dea4c9fbf81d9720979205e93f",
+      "native_sha256": "85f4a3622f60278b51577ecb3f2aabc0caf35ee55f9a2d569ccaa6745669b2b9",
+      "adapter_sha256": "0c8b6b4f222a423865247c94fd0aefb9e58a7076a02212c5b7051b6ab80acedd",
+      "raw_arity": 5,
+      "source_version": "a12d2-v2"
+    },
+    "canonical-11": {
+      "path": "records/canonical-11-complete.json.gz",
+      "raw_sha256": "f081ffe4f46504a44d226481e5070a936d4005dffb978c3948a521c73b05771d",
+      "native_sha256": "1b4ca84f96a33574b1e5e828028e4f33874a645c489cdc545fdcf7afa209a655",
+      "adapter_sha256": "e32d2e132a859acbc9c1f1adfdebb9ffce470e03492cf9a73ac5ee164e2d269f",
+      "raw_arity": 5,
+      "source_version": "a12d2-v2"
+    },
+    "canonical-12": {
+      "path": "records/canonical-12-complete.json.gz",
+      "raw_sha256": "163cc4a74ad929f6b58bf2267aeb986b671066392f13933d048ddcffd3334c6f",
+      "native_sha256": "6ecb8a5f241b75564f82d783f99e104991f59b650b71508f039592af8da33866",
+      "adapter_sha256": "f8f7cb7c43c96005e4338c926341619a7fc136327e719df610b0484d7de31a5a",
+      "raw_arity": 5,
+      "source_version": "a12d2-v2"
+    },
+    "canonical-13": {
+      "path": "records/canonical-13-complete.json.gz",
+      "raw_sha256": "1e299e4dca09e86b81aac13db3e4d31eba2f4bca5f21ca97ea24e94a6ec9c8f8",
+      "native_sha256": "a28950bc37e09e98373d38e355abe8d5e9913e0c3e09d122a5b3fb0df33c8773",
+      "adapter_sha256": "688c976cb70baec9f77f0abc5d949e6c78fa4a0ad229762d78969f713df40303",
+      "raw_arity": 5,
+      "source_version": "a12d2-v2"
+    },
+    "canonical-14": {
+      "path": "records/canonical-14-complete.json.gz",
+      "raw_sha256": "0e4f3e4ed2d3b34fe0435fbae52a051207c6ba2588dd40e641ca1aef5505eec5",
+      "native_sha256": "a69e4323bfb80bd5ab30c9e54f3a08ddefb91180efa92c52ad50553c839d1664",
+      "adapter_sha256": "f9b90c29d39665496d7aff9eda0875679c5a802a078b6aa49365a4fbd175b8c9",
+      "raw_arity": 5,
+      "source_version": "a12d2-v2"
+    },
+    "canonical-15": {
+      "path": "records/canonical-15-complete.json.gz",
+      "raw_sha256": "0e0444ae77de843f8e4b8d5a95621ae2c49497b46a1166e0dd1d8809468100aa",
+      "native_sha256": "b45259e6205d830692316711577d7b6427d81d9c249b3a1bfbf6509337578eae",
+      "adapter_sha256": "2ab57e46ad97a0bb8344cfe8c38504b21360577eeea0512db775f4aede889727",
+      "raw_arity": 5,
+      "source_version": "a12d2-v2"
+    },
+    "workflow-01": {
+      "path": "legacy/records/workflow-complete.json.gz",
+      "raw_sha256": "9b3a0011ccbe808a0d90b134faaa12199ea307c199064e310774a2014b2b194e",
+      "native_sha256": "b28d040071e27f84bde3767c8c19eb5a54dab49325a747649b142e107d725cf7",
+      "adapter_sha256": "cffe4176fc8e323d0ae9ad44f4bd7e96f160265b667f8c75179391c702957f40",
+      "raw_arity": 4,
+      "source_version": "a12d-v1"
+    },
+    "workflow-02": {
+      "path": "records/workflow-02-complete.json.gz",
+      "raw_sha256": "17c656b9867a8e1b066093bc5c33bd9ac9ccd85a51e7d0913cd96c4597cbec6d",
+      "native_sha256": "fb06d847589c00b047632c0f9e999045126ce622d74ac7afeabc6561dc9dc9d9",
+      "adapter_sha256": "707fe8bd827e81e22e92dcad774066610e2b9b7ac84e4fd40df23aa20d7898a6",
+      "raw_arity": 5,
+      "source_version": "a12d2-v2"
+    },
+    "workflow-03": {
+      "path": "records/workflow-03-complete.json.gz",
+      "raw_sha256": "118f86bc9335aa365c219f76cf13160bbd0e1c5d7db0f08d710d21bb1a580129",
+      "native_sha256": "e9bb7d5743cabb9a8f031b1abe3567b05aa9e704bd0ddbf5a80d6aad9cbb1e0a",
+      "adapter_sha256": "6dbc0a6cc9d3ae5fc1b61e0d81a8d118ce3b8543ac776cc7ff94ef4c23fc79ae",
+      "raw_arity": 5,
+      "source_version": "a12d2-v2"
+    },
+    "workflow-04": {
+      "path": "records/workflow-04-complete.json.gz",
+      "raw_sha256": "63d2ab9fef7df490683ab93f6de7912aa4ca4695257d2801dd7dc74b821d895f",
+      "native_sha256": "bc6df2efecb1a6709af1697e6386bcf7385ed6c4cbf1969abbb81bb8c8ae7fb8",
+      "adapter_sha256": "d2fccb399ba7b5500af6654009491fde65c79b567cab6f4a3f9a3a86fb1a3b29",
+      "raw_arity": 5,
+      "source_version": "a12d2-v2"
+    },
+    "workflow-05": {
+      "path": "records/workflow-05-complete.json.gz",
+      "raw_sha256": "c590b2affea5a1089182a2f19b18c5741b0e80e4a8bcbaaac00e438e3e44ec76",
+      "native_sha256": "7b81a2da492e65c452160efb7a98ec571016e83f04b0547ebd5c9e50ac58dd1d",
+      "adapter_sha256": "76e1777783644558a721ee742e781425af2e0d49c9525e86a61c33f85292c64c",
+      "raw_arity": 5,
+      "source_version": "a12d2-v2"
+    },
+    "workflow-06": {
+      "path": "records/workflow-06-complete.json.gz",
+      "raw_sha256": "cc4b495e3af8cd83d0b60eaedc6a7e5fcab07d9b772a14aa3ff7562b88a4a6cb",
+      "native_sha256": "0d605e8b3619dc509a88ea883a459a81bb45ad9a6967fbf89a49c7a85a6c5f26",
+      "adapter_sha256": "2c89ad3df082297ebf1b0fbec4b6acf15558eeb38168a6ddfdd710388dec9fa9",
+      "raw_arity": 5,
+      "source_version": "a12d2-v2"
+    },
+    "workflow-07": {
+      "path": "records/workflow-07-complete.json.gz",
+      "raw_sha256": "86576a4b7745de826ee2aed02a3795871b44ec6e126059d60c806a4ff5483915",
+      "native_sha256": "29afdf292b54f7195933096d1bc9158eaedc977289c5a73337781693e77a59de",
+      "adapter_sha256": "a4608b918914ff313192b3a1c42f8700195090e55d459f57b8e5e57ad76677d3",
+      "raw_arity": 5,
+      "source_version": "a12d2-v2"
+    },
+    "workflow-08": {
+      "path": "records/workflow-08-complete.json.gz",
+      "raw_sha256": "eb2953c52deca463bddd586db7470e358d50c7227ab0cdaefda57c2fc10d21c6",
+      "native_sha256": "21adcd9e63efbef9ceb723425b6f1c8baf929ca9afccba7f312908223b8fc09f",
+      "adapter_sha256": "819748e2b8db6c3180c12018a9e5427aa65df8275a52566c5254410945514a10",
+      "raw_arity": 5,
+      "source_version": "a12d2-v2"
+    },
+    "workflow-09": {
+      "path": "records/workflow-09-complete.json.gz",
+      "raw_sha256": "992732b0c088aa46971b1337fd1e2732f634e9af62f5e971949876296d77d692",
+      "native_sha256": "b3b3a5b9eb6ab40fb2b269cd5345a1526f7e74a5a439adc3fdf2bb9644e29a7e",
+      "adapter_sha256": "626a79a45cc988c0041c922c399b82902ac0d659573115d8156e19e1b19cb40c",
+      "raw_arity": 5,
+      "source_version": "a12d2-v2"
+    },
+    "workflow-10": {
+      "path": "records/workflow-10-complete.json.gz",
+      "raw_sha256": "8e1c0d50348a81e6b9f25bef94b213ef3a0df8b11ae90cc6ae7cd14a05460f05",
+      "native_sha256": "795737b7a179dadedba857db83a839a2d904c4ae5fd127e3bfb6f70035052dd1",
+      "adapter_sha256": "d37a1e954e3fadcc0db271c80d46271b5e7de2d1487235e03c79f945f4dcd766",
+      "raw_arity": 5,
+      "source_version": "a12d2-v2"
+    },
+    "workflow-11": {
+      "path": "records/workflow-11-complete.json.gz",
+      "raw_sha256": "5f0a563449b21db5ca44e26e41e4dda61942c74bb4a8da265b18b46a688400e4",
+      "native_sha256": "9c754680c2d5ba418237cd1ba9ebd26518f7698b39221655e26951a03e93d888",
+      "adapter_sha256": "603806b9d054e5cfc858236acad47838c1a54778a2d4832e81deaf7ef797f0ba",
+      "raw_arity": 5,
+      "source_version": "a12d2-v2"
+    },
+    "workflow-12": {
+      "path": "records/workflow-12-complete.json.gz",
+      "raw_sha256": "60df968daab917da8bc3822dc3822c3cd4291a61f1440ab80d8488e1d0530c24",
+      "native_sha256": "5a8bc4d664e2bc40a9cabe61ec6181b544763b94048396404dc01c96ec223c9e",
+      "adapter_sha256": "c2fd6ff0e4d6ea5451414f77c954c11c53584ec943b66a9a87db119ff8e687ff",
+      "raw_arity": 5,
+      "source_version": "a12d2-v2"
+    },
+    "workflow-13": {
+      "path": "records/workflow-13-complete.json.gz",
+      "raw_sha256": "2f4a9e1496a620b8ac20f366adc9331c24382a6feceb1c4a4172df1906365e0e",
+      "native_sha256": "eae7a9deb2d56b2c552c7183ac277e99378f5c68a6a07974fed97ebfc0c82772",
+      "adapter_sha256": "763da7c0ffa53fa2bfbf17106b846bc04249926ab14a3da04587149ab8303898",
+      "raw_arity": 5,
+      "source_version": "a12d2-v2"
+    },
+    "workflow-14": {
+      "path": "records/workflow-14-complete.json.gz",
+      "raw_sha256": "93f3235fc26710aa74eee9ae9f2444e14b138fb9393c5a1a14706c8cf2be6ca1",
+      "native_sha256": "e29e031349d2acbf78a798853d426dedcd0ec091984f3fe5350661d27db2ce00",
+      "adapter_sha256": "5d7b19bc49db0a6c445cf82e8b0e3a53675107857a6c7478821da21206b0b088",
+      "raw_arity": 5,
+      "source_version": "a12d2-v2"
+    },
+    "workflow-15": {
+      "path": "records/workflow-15-complete.json.gz",
+      "raw_sha256": "ec9da8abc66abe60f3b5d65e3b0ed72976d64e43ff46bf29b916ae973a77cb62",
+      "native_sha256": "b212b97e53a88b1d4b95ade757e0a40d082196691b9549cac0dccdf97c5a85c7",
+      "adapter_sha256": "be3b87e45f43f16a6acba1a89f3256b7320b7a82824af84ea1aa4e274a6a1c46",
+      "raw_arity": 5,
+      "source_version": "a12d2-v2"
+    }
+  },
+  "question": "What is the complete current explicitly observed task/window/role request grammar after the fixed30 paid processing branches? Establish this exact domain before new payment quotes and TD5 comparisons; stale A12C receipts do not cover changed actor inputs.",
+  "source": "All30 exact complete primaries: masks1 are unchanged accepted A12D v1 four-field raws; masks2..15 are accepted A12D2 v2 five-field raws. Preserve both schemas, immutable original controller/reserve/history and exact original A12C source windows. Load saved bytes/typed access only; no engine restore, native executor, selection view, native policy call, new native payment or old paid replay in this projection batch.",
+  "task": "Reconstruct the current latest owned paid task and unchanged full demand from the current participant view. Recheck every older owned need against the immutable original controller outcomes; never bypass older unresolved demands. Preserve required four facets, original weights/priorities, support restrictions, deadline and non-role request fields. Current form_request selects the actual oldest request, not an evaluator-supplied winner.",
+  "windows": "Canonical retains the current original request with full non-role fields. Workflow enumerates every nonempty subset of current paid same-context/cue/target c7w.data content, size at most the unchanged native8 limit. Preserve the existing declared inventory bound16 and reject overflow rather than prune. Stable typed ordering, exact complete factorized product, no native eligibility claim.",
+  "roles": "Use the accepted explicit paid-particular role grammar: canonical stock/tool/repair_stock/procedure/peer/group; workflow stock/relation/procedure/peer/group. Each pool includes None and every explicitly supported alternative, including foreign, damaged, depleted, stale, unacquired or name-only alternatives. Direct material evidence requires typed quantity, owner and custodian. Also include target references from completed actor-owned paid inspection/read receipts with matching source/delivery/context, explicit successful inspection outcome, typed target/owner/custodian; never infer fields from target names. Procedure references require an observed Procedure value; workflow relation candidates retain every explicitly observed source reference as opaque grammar only. Peers/groups follow the existing typed actor/member fields, excluding self as peer. Canonical normalizes only latest explicitly observed revisions; workflow preserves exact observed revisions. Every alternative retains exact particulars/receipt proof; no hidden world resolution or outcome pruning.",
+  "factorization": "Create a separately versioned immutable report and ordinal-to-request reader. Full product of legal content windows and all role pools, stable typed order and exact integer mixed-radix bijection. Use WorkflowCapacitySelectionRequest only for non-None procedure, otherwise unchanged WorkflowSelectionRequest; canonical SelectionRequest unchanged. New namespace/labels only. Do not monkey-patch old A12C/A6 builders or reuse their receipts. Do not cap the Cartesian denominator or substitute sampling for factor completeness.",
+  "audit": "Independent reconstruction from saved native/access bytes and immutable source windows, without importing new runtime/planner/selector/executor. Independently establish current task/oldest need, paid content inventory, all explicit role evidence, revision handling, radices/product, request class/non-role invariance and exact source bindings. Exhaust every pool/proof and each legal window; prove Cartesian ordinal coverage algebraically with every-factor boundary checks and inverse mapping, without native comparison probes. Do not import form_request, paid_pools or material_vocabulary in the independent auditor; reconstruct their declared grammar independently from typed saved evidence.",
+  "methods": [
+    "test_all_thirty_exact_input_bindings",
+    "test_complete_current_windows_and_role_proofs",
+    "test_factorized_request_bijection",
+    "test_unchanged_oldest_task_and_prefixes",
+    "test_stale_missing_and_forged_evidence_rejected",
+    "test_zero_native_work_and_exact_saved_reports"
+  ],
+  "gate": "30 exact typed saved domain reports and full independent audits, six new actual methods, complete aggregate, all594 predecessors unchanged and new source freeze before evaluation. Exact copied source/protocol/report hashes, exclusive bounded job starts/outcomes, atomic fsync/readback and backup. Persist new outputs privately with exact downloaded hash/member verification; preserve every failure. No old processing/comparison/gate replay.",
+  "claims": "Only complete coverage of the explicitly declared current paid-observation grammar. No native eligibility, complete future/hidden role coverage, new comparison payment, capacity, Shell clearance, main execution, history credit/history choice or parentFT7–FT9 acceptance. All FT8 costs and denominators intact.",
+  "next": "Obtain exact native comparison funding/quotes and freshly pay complete current changed-input comparisons under existing prices; then complete current TD5 role/operand/cost admission. Preserve genuine distinct-element same-priority/native-cost ties, autonomous history-only choice, actual chosen paid movement/downstream use and matched controls. No wallet refill, stale receipt reuse, forced tie, selected successful fixture, old-cue certificate transfer or theory/baseline change.",
+  "operations": "Unique30minute same-owner leases, expected-head updates with nonempty base tree and full remote tree/head verification. Three new implementation/tool modules maximum, one test directory, one bounded evaluation and one short record per checkpoint. Routine diagnosed repairs prospectively amended/frozen; all failures preserved. Release ownership at a verified checkpoint.",
+  "ft8_unchanged": true,
+  "no_accepted_stage_replay": true,
+  "parent_acceptance_commit": "e955ebca0aab7b845e8824665053731ef59c4814",
+  "modules": [
+    "full_theory/post_processing_domain.py",
+    "full_theory/post_processing_domain_audit.py",
+    "tools/evaluate_ft7_post_processing_domain.py"
+  ],
+  "tests": "tests_ft7/test_post_processing_domain.py",
+  "source_evidence": {
+    "filename": "FT7_Cue_Processing_Panel_A12D2_Generated_Evidence_20261016.zip",
+    "sha256": "cbbadb487508dbe9ad6ce65c4922fd32ecf2460223690facf381559767a2e173",
+    "bytes": 121648518,
+    "members": 339,
+    "member_prefix": "attempt1/",
+    "ordered_parts": [
+      {
+        "filename": "FT7_Cue_Processing_Panel_A12D2_Generated_Evidence_20261016.zip.part01",
+        "sha256": "7c50ce7e1bb3647427fbb2586ef05d788a6d4f9cdceb5380683b10a029236cd3",
+        "bytes": 45000000
+      },
+      {
+        "filename": "FT7_Cue_Processing_Panel_A12D2_Generated_Evidence_20261016.zip.part02",
+        "sha256": "65fca1b4c7d890798c0eaf4e03b79d5f5df049481a7a1725adc1673df1fab627",
+        "bytes": 45000000
+      },
+      {
+        "filename": "FT7_Cue_Processing_Panel_A12D2_Generated_Evidence_20261016.zip.part03",
+        "sha256": "e47ff2f05f27a29ffa41d94d05e32d5ad5d3978aef823488e9178c09c9286ede",
+        "bytes": 31648518
+      }
+    ],
+    "validation_companion": {
+      "filename": "FT7_Cue_Processing_Panel_A12D2_Validated_Evidence_20261016.zip",
+      "sha256": "23b31bcd1499890c65a47a2d52f049a3519188217e5f0d2e9112f52f1eb1db8d",
+      "bytes": 187860,
+      "members": 262
+    }
+  },
+  "required_negative_controls": "At least12 output corruptions per setting covering input pair, native/adapter/controller/demand, window/role omission, value/provenance, revisions, radices/count/order and authority; plus4 input-pair forgeries per setting. Exact rejection required. Full source freeze before/after; all594 predecessors exact. Saved projections reconstructed/roundtripped exactly; no accepted processing audit or method is reinvoked."
+}
