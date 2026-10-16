@@ -5,7 +5,7 @@
   "run_id": "ft7-observation-refresh-2026-10-16T10:35:25.665Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-16T11:48:06.955Z",
-  "expected_head": "fb3817feecd1fbc8eba329ac097422a4cf53cf46",
+  "expected_head": "f6db28ae97902faeb145683ddd54a8cc5a567f8b",
   "current_batch": "FT7.Skill.Refresh.A3",
   "current_window_admission_progress": {
     "status": "passed",
@@ -363,7 +363,7 @@
       "paths_removed": 0
     }
   },
-  "next_batch": "Separately register fresh paid observation/current-input binding and new comparisons after A2 skill/material changes; broaden lawful paid recall organization. Then genuine distinct-element same-priority/native-cost ties, autonomous history-only choice, chosen paid work/downstream use, matched controls/full staging, parent FT7 pairs/populations and unchanged FT8–FT9. No accepted A2/A1/B1D or setup gate replay; clean full dependency reconstruction and standalone FT9 remain unproven.",
+  "next_batch": "Prospectively register the changed-input observed-reference domain and new paid comparisons after A3, with broader lawful paid recall organization. Then genuine distinct-element same-priority/native-cost ties, autonomous history-only choice, chosen paid work/downstream use, matched controls/full staging, parent FT7 pairs/populations and unchanged FT8–FT9. Do not replay accepted A3/A2/A1/B1D/setup gates. Preserve old source/social/history prefixes and separately bind extensions. Current setup does not include the new continuation tool; future standalone preparation still needs explicit coverage and its FT9 gate.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -683,7 +683,7 @@
     "source_publication": "verified",
     "prior_failed_attempts": 6
   },
-  "latest_acceptance_record": "docs/ft/FT7_Skill_Intake_A1_Record.md",
+  "latest_acceptance_record": "docs/ft/FT7_Skill_Refresh_A3_Record.md",
   "engineering_continuation": {
     "batch": "FT7.1b2b3b",
     "accepted": false,
@@ -2241,36 +2241,59 @@
   "prior_paid_window_acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2",
   "latest_acceptance_commit": "89f3272cb4eb8f59311aa5c7308c4d05fdb642c5",
   "latest_local_acceptance": {
-    "batch": "FT.Setup.ToolOverlay.A1",
+    "batch": "FT7.Skill.Refresh.A3",
     "passed": true,
-    "methods": [
-      "test_all_frozen_layer_files",
-      "test_copy_exact_public_bytes",
-      "test_exact_extension",
-      "test_existing_output_preserved",
-      "test_old_filter_preserved",
-      "test_unsafe_overlay_path_rejected"
-    ],
-    "failures": 0,
-    "errors": 0,
-    "pinned_public_blobs": 601,
-    "overlay_files": 459,
-    "additional_tools": [
-      "tools/audit_owned_repair_practice_saved.py",
-      "tools/check_owned_material_inspection_saved.py",
-      "tools/continue_ft7_1b2b3b2b2b2b2b2b1b.py",
-      "tools/continue_owned_material_inspection.py",
-      "tools/evaluate_owned_material_inspection.py",
-      "tools/evaluate_owned_repair_practice.py",
-      "tools/evaluate_recall_feasibility.py"
-    ],
-    "prior_source_identities": 439,
-    "source_identities": 449,
-    "sole_filter_ast_delta": true,
-    "dependency_rebuilds": 0,
-    "native_work": 0,
-    "accepted_test_replays": 0,
-    "ft9_accepted": false
+    "methods": 6,
+    "saved_records": 12,
+    "rejection_probes": 22,
+    "exact_restart_pairs": 2,
+    "original_source_identities": 456,
+    "continuation_source_identities": 461,
+    "prior_identities_exact": 449,
+    "original_records_copied_exact": 9,
+    "actual_method_invocations": 1,
+    "accepted_paid_work_replayed": false,
+    "original_exit_code": 1,
+    "original_outcome": "registered operational deadline",
+    "continuation_exit_code": 0,
+    "continuation_closed_at": "2026-10-16T11:24:59.427639+00:00",
+    "owned_workers_remaining": 0,
+    "canonical": {
+      "inventory": 22,
+      "nonmaterial_rejections": 14,
+      "receipts": 8,
+      "energy": 40,
+      "time": 40,
+      "revision2_observations": 3
+    },
+    "workflow": {
+      "inventory": 25,
+      "nonmaterial_rejections": 15,
+      "receipts": 10,
+      "energy": 50,
+      "time": 50,
+      "revision2_observations": 3
+    },
+    "retained": {
+      "baseline": 1093,
+      "repair": 20,
+      "historical": 210,
+      "all_exact": true,
+      "dependency_access": false,
+      "native_work": false
+    },
+    "archive": {
+      "filename": "FT7_Skill_Refresh_A3_Evidence_20261016.zip",
+      "sha256": "3e2e0a50a3490c6b519ed58e86a63cf00b8ff96b81042458f4eb654a608d3faf",
+      "bytes": 117687772,
+      "manifest_members": 51,
+      "all_members_verified": true
+    },
+    "main_execution_authorized": false,
+    "comparison_paid": false,
+    "td5_admitted": false,
+    "history_choice": false,
+    "parent_accepted": false
   },
   "recall_feasibility_progress": {
     "status": "diagnostic_pass",
@@ -2296,7 +2319,7 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T11:18:06.955Z",
+  "updated_at": "2026-10-16T11:27:48.262Z",
   "skill_intake_a1": {
     "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
@@ -2433,7 +2456,7 @@
     }
   },
   "skill_refresh_a3": {
-    "status": "running_not_accepted",
+    "status": "accepted",
     "protocol_commit": "d09304d5973230b5acacb19a90184a90a26c4d1c",
     "freeze_commit": "f6c0ef716b553e6ff5f67fde53dee510b3eab81b",
     "source_identities": 456,
@@ -2457,14 +2480,18 @@
       "output": "owned-material-refresh-a3-continuation1",
       "operations": "owned-material-refresh-a3-continuation1-operations",
       "copied_original_records": 9,
-      "current_stage": "workflow/restart",
-      "fixed_deadline_unchanged": true
+      "current_stage": "closed_pass",
+      "fixed_deadline_unchanged": true,
+      "exit_code": 0,
+      "closed_at": "2026-10-16T11:24:59.427639+00:00",
+      "original_records_copied_exact": 9,
+      "actual_method_invocations": 1
     },
-    "accepted": false,
+    "accepted": true,
     "parent_accepted": false,
     "canonical_records_passed": 6,
-    "workflow_records_passed": 4,
-    "actual_methods_started": 0,
+    "workflow_records_passed": 6,
+    "actual_methods_started": 6,
     "canonical_checkpoint": {
       "filename": "FT7_Skill_Refresh_A3_Canonical_Checkpoint_20261016.zip",
       "sha256": "4ba20a5f0384fadc5870f90dfcd8d884851a319335a51dd1c4a00e42500de380",
@@ -2486,6 +2513,20 @@
         "energy": 50,
         "time": 50
       }
-    }
-  }
+    },
+    "methods": 6,
+    "records": 12,
+    "probes": 22,
+    "owned_workers_remaining": 0,
+    "archive": {
+      "filename": "FT7_Skill_Refresh_A3_Evidence_20261016.zip",
+      "sha256": "3e2e0a50a3490c6b519ed58e86a63cf00b8ff96b81042458f4eb654a608d3faf",
+      "bytes": 117687772,
+      "manifest_members": 51,
+      "all_members_verified": true
+    },
+    "record": "docs/ft/FT7_Skill_Refresh_A3_Record.md",
+    "summary": "docs/ft/FT7_Skill_Refresh_A3_Summary.json"
+  },
+  "prior_setup_acceptance_commit": "89f3272cb4eb8f59311aa5c7308c4d05fdb642c5"
 }

@@ -1,0 +1,55 @@
+{
+  "batch": "FT7.Skill.Refresh.A3",
+  "passed": true,
+  "methods": 6,
+  "saved_records": 12,
+  "rejection_probes": 22,
+  "exact_restart_pairs": 2,
+  "original_source_identities": 456,
+  "continuation_source_identities": 461,
+  "prior_identities_exact": 449,
+  "original_records_copied_exact": 9,
+  "actual_method_invocations": 1,
+  "accepted_paid_work_replayed": false,
+  "original_exit_code": 1,
+  "original_outcome": "registered operational deadline",
+  "continuation_exit_code": 0,
+  "continuation_closed_at": "2026-10-16T11:24:59.427639+00:00",
+  "owned_workers_remaining": 0,
+  "canonical": {
+    "inventory": 22,
+    "nonmaterial_rejections": 14,
+    "receipts": 8,
+    "energy": 40,
+    "time": 40,
+    "revision2_observations": 3
+  },
+  "workflow": {
+    "inventory": 25,
+    "nonmaterial_rejections": 15,
+    "receipts": 10,
+    "energy": 50,
+    "time": 50,
+    "revision2_observations": 3
+  },
+  "retained": {
+    "baseline": 1093,
+    "repair": 20,
+    "historical": 210,
+    "all_exact": true,
+    "dependency_access": false,
+    "native_work": false
+  },
+  "archive": {
+    "filename": "FT7_Skill_Refresh_A3_Evidence_20261016.zip",
+    "sha256": "3e2e0a50a3490c6b519ed58e86a63cf00b8ff96b81042458f4eb654a608d3faf",
+    "bytes": 117687772,
+    "manifest_members": 51,
+    "all_members_verified": true
+  },
+  "main_execution_authorized": false,
+  "comparison_paid": false,
+  "td5_admitted": false,
+  "history_choice": false,
+  "parent_accepted": false
+}
