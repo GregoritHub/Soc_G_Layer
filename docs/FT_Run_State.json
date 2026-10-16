@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft7-admission-recovery-20261016T004323Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-16T01:31:04.000Z",
-  "expected_head": "67fe36ace4bfa819b7ded7febed46a517a42b2c1",
+  "lease_expires_at": "2026-10-16T01:50:10.000Z",
+  "expected_head": "68d739e4d081c1b929021d5bddd1d9906c9f2344",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1d",
   "current_window_admission_progress": {
     "status": "continuation_running_not_accepted",
@@ -80,7 +80,7 @@
       "native_replay": false
     },
     "continuation_run": {
-      "status": "running",
+      "status": "deadline_passed_waiting_active_children",
       "owner": "ft7-admission-recovery-20261016T004323Z",
       "output": "current-window-admission-continuation1",
       "stop_at": "2026-10-16T01:14:21.000Z",
@@ -102,7 +102,8 @@
       ],
       "unstarted_records": [
         "workflow/cancelled"
-      ]
+      ],
+      "new_launches_allowed": false
     },
     "continuation2": {
       "status": "implemented_not_frozen_not_invoked",
