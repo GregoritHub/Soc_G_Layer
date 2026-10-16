@@ -130,8 +130,8 @@
   "run_id": "ft7-cue-continuation-20261016T1814Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-16T19:16:48.251992+00:00",
-  "expected_head": "f7422749459650814ce6968819f895ad56d49ea2",
-  "current_batch": "FT7.Owned.CueProcessing.A12D prospective native opportunity processing",
+  "expected_head": "af72f9da175a2b276a49f960dade28fd05fba7ae",
+  "current_batch": "FT7.Owned.CueProcessing.A12D accepted",
   "canonical_quotation_a8": {
     "status": "passed",
     "accepted": true,
@@ -545,7 +545,7 @@
       "paths_removed": 0
     }
   },
-  "next_batch": "Prospectively register actual route-free new-cue skill/closure and complete current TD5 role/operand/cost integration from saved A12C states; then genuine distinct-element ties and live history choice, chosen work/use, matched controls and remaining FT7\u2013FT9. Never replay accepted A12C/A12B or use old comparison receipts for changed inputs.",
+  "next_batch": "Prospectively extend actual new-cue processing over remaining28 fixed A12C task branches, retaining all12 A12D records/audits exact and never replaying two completed primaries or passing controls. Then newly pay changed-input comparisons and integrate complete current TD5, genuine history-sensitive ties, chosen work/use, matched controls and remaining FT7\u2013FT9. All original four-facet/authority/FT8 gates intact.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -609,7 +609,8 @@
     "FT.Setup.ToolOverlay.A2",
     "FT7.Owned.Rehearsal.A10R",
     "FT.Setup.ToolOverlay.A3",
-    "FT7.Fresh.CueComparison.A12C"
+    "FT7.Fresh.CueComparison.A12C",
+    "FT7.Owned.CueProcessing.A12D"
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
@@ -3137,8 +3138,8 @@
     "acceptance_commit": "bd78f0aec0a76a0c700a6824cc4d7793604a15b7"
   },
   "cue_processing_a12d": {
-    "status": "running_saved_audits",
-    "accepted": false,
+    "status": "accepted",
+    "accepted": true,
     "mask": 1,
     "settings": [
       "canonical",
@@ -3169,6 +3170,57 @@
       "bytes": 5453460,
       "members": 29,
       "saved_readback_exact": true
-    }
+    },
+    "passed": true,
+    "records": 12,
+    "audits": 12,
+    "methods": 8,
+    "forgery_probes": 40,
+    "closed_jobs": 21,
+    "all_backups_exact": true,
+    "source_unchanged": true,
+    "accepted_stage_replays": 0,
+    "comparison_paid": false,
+    "execution_authorized": false,
+    "td5_admitted": false,
+    "independent_credit": false,
+    "clearance_claim": false,
+    "skill_acquired": false,
+    "ft8_unchanged": true,
+    "canonical": {
+      "targets": 3,
+      "complete": 3,
+      "energy": 96,
+      "time": 96,
+      "cursor_before": "ni",
+      "cursor_after": "si",
+      "intents": [
+        "engage",
+        "engage",
+        "engage"
+      ]
+    },
+    "workflow": {
+      "targets": 3,
+      "complete": 3,
+      "energy": 99,
+      "time": 99,
+      "cursor_before": "ni",
+      "cursor_after": "si",
+      "intents": [
+        "engage",
+        "engage",
+        "engage"
+      ]
+    },
+    "evidence": {
+      "filename": "FT7_Cue_Processing_A12D_Validated_Evidence_20261016.zip",
+      "sha256": "f633cdd3c9d5e60d0df3ff61c4f95e8d0b71e8af0f0499201cc288cf4c504cad",
+      "bytes": 19518149,
+      "members": 129,
+      "saved_readback_exact": true
+    },
+    "record": "docs/ft/FT7_Cue_Processing_A12D_Record.md",
+    "summary": "docs/ft/FT7_Cue_Processing_A12D_Summary.json"
   }
 }

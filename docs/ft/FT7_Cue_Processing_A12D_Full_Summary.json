@@ -1,0 +1,510 @@
+{
+  "passed": true,
+  "records": 12,
+  "methods": [
+    "test_cancel_no_refund",
+    "test_complete_domain",
+    "test_forgery_rejected",
+    "test_partial_ready",
+    "test_restart_exact",
+    "test_scope_prefixes",
+    "test_terminal_idempotence",
+    "test_wrong_input_rejected"
+  ],
+  "probes": [
+    {
+      "setting": "canonical",
+      "field": "plan",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "source_native_sha256",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "source_windows_sha256",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "expected_native_sha256",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "controller_prefix",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "reserve",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "history",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "results",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "index",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "comparison_paid",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "execution_authorized",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "history_choice",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "independent_credit",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "clearance_claim",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "skill_acquired",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "debit",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "cursor_after",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "item",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "plan",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "source_native_sha256",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "source_windows_sha256",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "expected_native_sha256",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "controller_prefix",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "reserve",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "history",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "results",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "index",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "comparison_paid",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "execution_authorized",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "history_choice",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "independent_credit",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "clearance_claim",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "skill_acquired",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "debit",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "cursor_after",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "item",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "wrong_source_windows",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "changed_native_pair",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "wrong_source_windows",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "changed_native_pair",
+      "rejected": true
+    }
+  ],
+  "reports": [
+    {
+      "passed": true,
+      "setting": "canonical",
+      "phase": "active",
+      "targets": 3,
+      "completed": 0,
+      "spent": 0,
+      "energy": 0,
+      "time": 0,
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "clearance_claim": false,
+      "skill_acquired": false,
+      "comparison_paid": false,
+      "execution_authorized": false,
+      "history_choice": false,
+      "intents": [],
+      "cursor_before": "ni",
+      "cursor_after": "ni",
+      "record": "canonical-before",
+      "record_sha256": "1379cf0e83847b0021c68f495e8c643b1ed8919b483a5f430a0131a64d80d016"
+    },
+    {
+      "passed": true,
+      "setting": "canonical",
+      "phase": "active",
+      "targets": 3,
+      "completed": 0,
+      "spent": 1,
+      "energy": 1,
+      "time": 1,
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "clearance_claim": false,
+      "skill_acquired": false,
+      "comparison_paid": false,
+      "execution_authorized": false,
+      "history_choice": false,
+      "intents": [],
+      "cursor_before": "ni",
+      "cursor_after": "ni",
+      "record": "canonical-partial",
+      "record_sha256": "dc0a5206cc29970384401ebf819693a8edaa6f465e357a91a0e0d6afd4a51e9c"
+    },
+    {
+      "passed": true,
+      "setting": "canonical",
+      "phase": "active",
+      "targets": 3,
+      "completed": 0,
+      "spent": 33,
+      "energy": 33,
+      "time": 33,
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "clearance_claim": false,
+      "skill_acquired": false,
+      "comparison_paid": false,
+      "execution_authorized": false,
+      "history_choice": false,
+      "intents": [],
+      "cursor_before": "ni",
+      "cursor_after": "si",
+      "record": "canonical-ready",
+      "record_sha256": "d9cb24df3ac03e5110616d184384d7e9501efeae4f0bef83f0a47b5ecd834596"
+    },
+    {
+      "passed": true,
+      "setting": "canonical",
+      "phase": "complete",
+      "targets": 3,
+      "completed": 3,
+      "spent": 96,
+      "energy": 96,
+      "time": 96,
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "clearance_claim": false,
+      "skill_acquired": false,
+      "comparison_paid": false,
+      "execution_authorized": false,
+      "history_choice": false,
+      "intents": [
+        "engage",
+        "engage",
+        "engage"
+      ],
+      "cursor_before": "ni",
+      "cursor_after": "si",
+      "record": "canonical-complete",
+      "record_sha256": "b16b9cb983244f210679761cfe7039c7fab81fe74468d912e4b96665a7e946d9"
+    },
+    {
+      "passed": true,
+      "setting": "canonical",
+      "phase": "complete",
+      "targets": 3,
+      "completed": 3,
+      "spent": 96,
+      "energy": 96,
+      "time": 96,
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "clearance_claim": false,
+      "skill_acquired": false,
+      "comparison_paid": false,
+      "execution_authorized": false,
+      "history_choice": false,
+      "intents": [
+        "engage",
+        "engage",
+        "engage"
+      ],
+      "cursor_before": "ni",
+      "cursor_after": "si",
+      "record": "canonical-restarted",
+      "record_sha256": "b82f9cc94db747cbe40d0798e541630980200c1cb449e9698c0817944950c83c"
+    },
+    {
+      "passed": true,
+      "setting": "canonical",
+      "phase": "cancelled",
+      "targets": 3,
+      "completed": 0,
+      "spent": 1,
+      "energy": 1,
+      "time": 1,
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "clearance_claim": false,
+      "skill_acquired": false,
+      "comparison_paid": false,
+      "execution_authorized": false,
+      "history_choice": false,
+      "intents": [],
+      "cursor_before": "ni",
+      "cursor_after": "ni",
+      "record": "canonical-cancelled",
+      "record_sha256": "eafc8cb2f667b6a929c30f5508e87e26235d9f98361a684842417db84b0c9aa2"
+    },
+    {
+      "passed": true,
+      "setting": "workflow",
+      "phase": "active",
+      "targets": 3,
+      "completed": 0,
+      "spent": 0,
+      "energy": 0,
+      "time": 0,
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "clearance_claim": false,
+      "skill_acquired": false,
+      "comparison_paid": false,
+      "execution_authorized": false,
+      "history_choice": false,
+      "intents": [],
+      "cursor_before": "ni",
+      "cursor_after": "ni",
+      "record": "workflow-before",
+      "record_sha256": "bd29f73b5ddfd7b6fec12e3589fbf795257f086b8007215c859096316b357aa7"
+    },
+    {
+      "passed": true,
+      "setting": "workflow",
+      "phase": "active",
+      "targets": 3,
+      "completed": 0,
+      "spent": 1,
+      "energy": 1,
+      "time": 1,
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "clearance_claim": false,
+      "skill_acquired": false,
+      "comparison_paid": false,
+      "execution_authorized": false,
+      "history_choice": false,
+      "intents": [],
+      "cursor_before": "ni",
+      "cursor_after": "ni",
+      "record": "workflow-partial",
+      "record_sha256": "4cd45f2551ca2725ade35c28d4662c8ec07f24ecd76da1e8543ff8016d3e1c81"
+    },
+    {
+      "passed": true,
+      "setting": "workflow",
+      "phase": "active",
+      "targets": 3,
+      "completed": 0,
+      "spent": 34,
+      "energy": 34,
+      "time": 34,
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "clearance_claim": false,
+      "skill_acquired": false,
+      "comparison_paid": false,
+      "execution_authorized": false,
+      "history_choice": false,
+      "intents": [],
+      "cursor_before": "ni",
+      "cursor_after": "si",
+      "record": "workflow-ready",
+      "record_sha256": "353f9d52b9f1abd72b7d6cb1514865e989cd06461f0fc308098f8b177215dbc0"
+    },
+    {
+      "passed": true,
+      "setting": "workflow",
+      "phase": "complete",
+      "targets": 3,
+      "completed": 3,
+      "spent": 99,
+      "energy": 99,
+      "time": 99,
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "clearance_claim": false,
+      "skill_acquired": false,
+      "comparison_paid": false,
+      "execution_authorized": false,
+      "history_choice": false,
+      "intents": [
+        "engage",
+        "engage",
+        "engage"
+      ],
+      "cursor_before": "ni",
+      "cursor_after": "si",
+      "record": "workflow-complete",
+      "record_sha256": "9b3a0011ccbe808a0d90b134faaa12199ea307c199064e310774a2014b2b194e"
+    },
+    {
+      "passed": true,
+      "setting": "workflow",
+      "phase": "complete",
+      "targets": 3,
+      "completed": 3,
+      "spent": 99,
+      "energy": 99,
+      "time": 99,
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "clearance_claim": false,
+      "skill_acquired": false,
+      "comparison_paid": false,
+      "execution_authorized": false,
+      "history_choice": false,
+      "intents": [
+        "engage",
+        "engage",
+        "engage"
+      ],
+      "cursor_before": "ni",
+      "cursor_after": "si",
+      "record": "workflow-restarted",
+      "record_sha256": "63ac78fc3fd7e2b76c675bd3ffa17749318c09482f5ae591e940d6cd764b381e"
+    },
+    {
+      "passed": true,
+      "setting": "workflow",
+      "phase": "cancelled",
+      "targets": 3,
+      "completed": 0,
+      "spent": 1,
+      "energy": 1,
+      "time": 1,
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "clearance_claim": false,
+      "skill_acquired": false,
+      "comparison_paid": false,
+      "execution_authorized": false,
+      "history_choice": false,
+      "intents": [],
+      "cursor_before": "ni",
+      "cursor_after": "ni",
+      "record": "workflow-cancelled",
+      "record_sha256": "1e7cba79f76bb88b30d60daef355ca8983c84c036c62a3fb8a4e70f19bacd3b9"
+    }
+  ],
+  "source_identities": 588,
+  "prior_identities": 582,
+  "comparison_paid": false,
+  "execution_authorized": false,
+  "td5_admitted": false,
+  "history_choice": false,
+  "independent_credit": false,
+  "clearance_claim": false,
+  "skill_acquired": false,
+  "parent_accepted": false,
+  "ft8_unchanged": true,
+  "accepted_stage_replays": 0
+}

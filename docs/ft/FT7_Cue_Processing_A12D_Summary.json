@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "records": 12,
+  "audits": 12,
+  "methods": 8,
+  "forgery_probes": 40,
+  "closed_jobs": 21,
+  "source_identities": 588,
+  "prior_identities": 582,
+  "all_backups_exact": true,
+  "source_unchanged": true,
+  "accepted_stage_replays": 0,
+  "comparison_paid": false,
+  "execution_authorized": false,
+  "td5_admitted": false,
+  "history_choice": false,
+  "independent_credit": false,
+  "clearance_claim": false,
+  "skill_acquired": false,
+  "parent_accepted": false,
+  "ft8_unchanged": true,
+  "canonical": {
+    "targets": 3,
+    "complete": 3,
+    "energy": 96,
+    "time": 96,
+    "cursor_before": "ni",
+    "cursor_after": "si",
+    "intents": [
+      "engage",
+      "engage",
+      "engage"
+    ]
+  },
+  "workflow": {
+    "targets": 3,
+    "complete": 3,
+    "energy": 99,
+    "time": 99,
+    "cursor_before": "ni",
+    "cursor_after": "si",
+    "intents": [
+      "engage",
+      "engage",
+      "engage"
+    ]
+  },
+  "evidence": {
+    "filename": "FT7_Cue_Processing_A12D_Validated_Evidence_20261016.zip",
+    "sha256": "f633cdd3c9d5e60d0df3ff61c4f95e8d0b71e8af0f0499201cc288cf4c504cad",
+    "bytes": 19518149,
+    "members": 129,
+    "saved_readback_exact": true
+  }
+}
