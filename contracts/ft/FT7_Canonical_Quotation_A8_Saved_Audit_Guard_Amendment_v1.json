@@ -1,0 +1,6 @@
+{
+  "version": "ft-canonical-quotation-a8-saved-audit-guard-amendment-v1",
+  "protocol": "eaec2a04cc1af133b68f7bc0a13b704e34a1a40c",
+  "clarification": "Preserve the original21 input/output forgery controls unchanged. The two deliberately invalid native/domain pairs may call the original Quotation constructor solely to exercise its pinned-input guard, which must raise ValueError before saved-state decoding. Never construct a Quotation on valid inputs, call row/request/native selection views, restore an engine or issue native commands in the saved-only reader.",
+  "scope": "Operational saved-reader exception only; no pricing, full-row auditor, six-method gate or previous-source change."
+}
