@@ -5,10 +5,10 @@
   "run_id": "ft7-forgery-recovery2-20261016T044200Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-16T05:12:00.000Z",
-  "expected_head": "6c1a767ce2a2c99b2230bed8376b85fdf00c2fdb",
+  "expected_head": "d85f6aa9e498fcc66c8bfc6d9bd0e6b322eda25e",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1d",
   "current_window_admission_progress": {
-    "status": "method_recovery1_running_not_accepted",
+    "status": "method_recovery2_running_not_accepted",
     "implementation_commit": "a79669120939bfb0ee5f2dd7914a45b44f3c5696",
     "freeze_commit": "86c613185216ae09b76ef1a1dbd764847ec2c31e",
     "frozen_identities": 406,
@@ -27,7 +27,7 @@
     "new_native_work": false,
     "accepted": false,
     "record": "docs/ft/FT7_1b2b3b2b2b2b2b2b1d_Record.md",
-    "owned_processes_remaining": 0,
+    "owned_processes_remaining": 2,
     "original_outcome": "checkpoint",
     "stop_reason": "prospective deadline",
     "original_children_failed": 0,
@@ -230,7 +230,7 @@
       "acceptance_claim": false
     },
     "recovered_finish1": {
-      "status": "implemented_not_frozen_not_invoked",
+      "status": "inapplicable_not_frozen_not_invoked",
       "protocol_commit": "892a9cc60be01c89dde0a8f348ab6f26415b7d9b",
       "protocol_sha256": "c1570d49f926e3c418ee088581f8180808595f8f6135bb4724cf23db4c5c2f9c",
       "implementation_commit": "765737207187abdf07b29d4665d0ec0030704db8",
@@ -239,7 +239,50 @@
       "output": "current-window-admission-final1",
       "operations": "current-window-admission-final1-operations",
       "compile_and_help_passed": true,
-      "original406_unchanged": true
+      "original406_unchanged": true,
+      "inapplicable_reason": "Recovery1 lost its session; exact closed outcome prerequisite absent."
+    },
+    "method_recovery2": {
+      "status": "running",
+      "invoked": true,
+      "execution_session": 64586,
+      "output": "current-window-admission-method-recovery2",
+      "operations": "current-window-admission-method-recovery2-operations",
+      "protocol_commit": "ae18aac76b55fa241723c80d3482e123e2382186",
+      "protocol_sha256": "88c005d66e730940205dc2d2567d38bc233f4e293db447f425f7ca34e19753e3",
+      "implementation_commit": "b6196f7e57d73216ebd74a2356d41838649c439b",
+      "freeze_commit": "1fd7e2f4250211f220aa95719c725990c2f7f74d",
+      "binding_sha256": "1043dba0288f92c7cb743f5802a9794e9fc23da81b572910bf47f79d08cb1b5e",
+      "original_source_unchanged": 406,
+      "prior_operational_identities": 12,
+      "passed_methods_preserved": 7,
+      "active_children": 1,
+      "method": "test_window_operand_cost_forgery_rejected",
+      "stop_at": "2026-10-16T05:12:00.000Z",
+      "sole_evaluator_worker": true,
+      "aggregate_run": false
+    },
+    "recovered_finish2": {
+      "status": "implemented_not_frozen_not_invoked",
+      "protocol_commit": "ce908154d2fff8c10875fb3c68c88ba8320b3127",
+      "protocol_sha256": "2d5c1ad08d35479ba2afe1c94b58fec6a7d19e524ccb4dee897a30f3af6014ff",
+      "implementation_commit": "d85f6aa9e498fcc66c8bfc6d9bd0e6b322eda25e",
+      "required": "Recovery2 closed exact eighth pass/active0; complete nine roots/80raw/original406/prior16 binding and four-identity freeze; fresh final2 output; unchanged finish only."
+    },
+    "second_interruption_evidence": {
+      "filename": "FT7_1b2b3b2b2b2b2b2b1d_Second_Method_Interruption_Evidence_20261016.zip",
+      "sha256": "603b5e790a1b7d98ea2f0d841a218948bfd5561d5df2aa46cc862314d37fa5ff",
+      "members": 217,
+      "bytes": 19232774,
+      "all_members_verified": true,
+      "nested_members": [
+        250,
+        222,
+        179,
+        226,
+        97,
+        40
+      ]
     }
   },
   "current_window_capacity_progress": {

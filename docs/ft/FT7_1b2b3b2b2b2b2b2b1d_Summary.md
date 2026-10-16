@@ -1,5 +1,11 @@
 # Current-window admission progress summary
 
+Current update, 16 October 2026 UTC: B1D remains NOT ACCEPTED, with forty saved audits and seven exact original methods passed. Recovery1 session97404 is absent, with no current surviving worker, two closed passing jobs and one unfinished forgery method; no outcome or exit code is fabricated, and the underlying interruption cause remains unknown. Frozen Method_Recovery2 now runs only that unchanged unfinished body as the sole evaluator worker. All seven passes, forty records, original406/prior399 and484 predecessor identities are preserved. The exact second interruption is archived with217 verified members; no passing stage or accepted paid gate was rerun. Conditional Recovered_Finish2 is implemented but not frozen or invoked; it requires the eighth pass, quiescence and a new complete binding/freeze. Old finalizer1 is inapplicable.
+
+Second interruption evidence: FT7_1b2b3b2b2b2b2b2b1d_Second_Method_Interruption_Evidence_20261016.zip, SHA256 603b5e790a1b7d98ea2f0d841a218948bfd5561d5df2aa46cc862314d37fa5ff,217 verified members,19232774bytes; exact nested250/222/179/226/97/40 archives. Recovery2 protocol ae18aac76b55fa241723c80d3482e123e2382186, implementation b6196f7e57d73216ebd74a2356d41838649c439b, freeze 1fd7e2f4250211f220aa95719c725990c2f7f74d. The prior input binding includes194 recovered files and9 recovery1 operational files plus191 original/26 continuation1/23 continuation2/80 raw. Prior dated instructions below are preserved history and superseded; never reinvoke old launchers.
+
+## Prior dated progress (superseded)
+
 Status: seven original methods and forty saved audits passed; NOT ACCEPTED.
 
 | Obligation | Verified | Required |
