@@ -4,6 +4,7 @@ from hashlib import sha256
 from pathlib import Path
 
 from hle_unified import codec
+from hle_unified.compact import seal, unseal
 from hle_unified.material import attrs
 from hle_unified.operation_records import SIGNATURES
 from hle_unified.operations import wallet_address
@@ -85,20 +86,20 @@ class CurrentDomainQuotationAudit:
             "complete current domain",
         )
         cls = SelectionEngine if setting == "canonical" else WorkflowFinalSelectionEngine
-        self.engine = cls.restore(native)
+        self.native_state = unseal(native, loads(native)["schema"])
+        self.engine = cls.restore(seal(cls.SCHEMA, self.native_state))
         self.native = native
         self.domain = domain
         self.setting = setting
         self.mask = mask
         self.raw_sha256 = raw_sha256
         self.d = d
-        self.before = self.engine.checkpoint()
         self.wallet_ref = self.engine.world.head(wallet_address(d["actor"]).identity)
         self.wallet = attrs(self.wallet_ref)
         self.view = self.engine.participant_view(d["actor"])
 
     def unchanged(self):
-        return self.engine.checkpoint() == self.before
+        return unseal(self.engine.checkpoint(), self.engine.SCHEMA) == self.native_state
 
     def row(self, ordinal):
         request = request_at(self.domain, ordinal)

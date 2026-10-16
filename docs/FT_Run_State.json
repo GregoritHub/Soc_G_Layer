@@ -129,9 +129,9 @@
   "status": "running",
   "run_id": "ft7-a12e2-20261016T213945Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-16T22:17:56+00:00",
-  "expected_head": "36a692f5d540f22585b85561460dc06493c6baaf",
-  "current_batch": "A12E2 corrected 608-identity source frozen; bounded evaluation ready",
+  "lease_expires_at": "2026-10-16T22:23:00+00:00",
+  "expected_head": "f9a15f331cea26506ead1497262dbc364b93f4b4",
+  "current_batch": "A12E2 native-envelope correction frozen for numbered attempt2; not yet invoked",
   "canonical_quotation_a8": {
     "status": "passed",
     "accepted": true,
@@ -3352,7 +3352,7 @@
     "ft8_unchanged": true
   },
   "current_domain_quotation_a12e2": {
-    "status": "audit_correction_frozen_not_executed",
+    "status": "attempt1_zero_work_failure_preserved_attempt2_frozen_not_executed",
     "accepted": false,
     "protocol": "contracts/ft/FT7_Current_Domain_Quotation_A12E2_Protocol_v1.json",
     "protocol_commit": "da70ddb619c8de44166a3a0bcd65866dc18bd1eb",
@@ -3366,10 +3366,22 @@
     "implementation_commit": "a0c132aa46f6334ffc664530b02ff09ef8d0f675",
     "prior_freeze_commit": "572f98abeb0735ba7600c95cbf6bcd34b760b36c",
     "audit_amendment_commit": "bc8f19f57c25664aaf145df512b3c1f65a318f00",
-    "freeze_commit": "36a692f5d540f22585b85561460dc06493c6baaf",
+    "audit_correction_freeze_commit": "36a692f5d540f22585b85561460dc06493c6baaf",
+    "native_envelope_amendment_commit": "f9a15f331cea26506ead1497262dbc364b93f4b4",
+    "freeze_commit": null,
     "freeze_file": "contracts/ft/FT7_Current_Domain_Quotation_A12E2_Source_Freeze_v1.json",
-    "freeze_sha256": "24ecdde10f8d2874e95ba6da0dc4f2661e94cec5d5761f7414a7d11e242fe303",
-    "source_identities": 608,
+    "freeze_sha256": "eeb89b1c592981971ae1e5a5ab8a3a495a6473c3bb02c9fc135c58a2f1db33a0",
+    "source_identities": 610,
+    "failed_attempts": [
+      {
+        "attempt": "current-domain-quotation-a12e2-attempt1",
+        "error": "invalid compact envelope",
+        "native_views": 0,
+        "saved_quote_reports": 0,
+        "saved_audits": 0,
+        "method_bodies": 0
+      }
+    ],
     "native_work": 0,
     "comparison_paid": false,
     "accepted_stage_replays": 0,
