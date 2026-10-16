@@ -5,7 +5,7 @@
   "run_id": "ft7-observation-refresh-2026-10-16T10:35:25.665Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-16T11:31:27.719Z",
-  "expected_head": "ea3958bc3486872ce850ff18f5769710938038a7",
+  "expected_head": "c0fe0d919cd017f40350236e325ac3e9f9edab0e",
   "current_batch": "FT7.Skill.Refresh.A3",
   "current_window_admission_progress": {
     "status": "passed",
@@ -2296,7 +2296,7 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T11:01:27.719Z",
+  "updated_at": "2026-10-16T11:08:46.333Z",
   "skill_intake_a1": {
     "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
@@ -2448,8 +2448,15 @@
     "conditional_continuation": {
       "protocol_commit": "e49096ba62af851948c6a36320a56e0c60f5c1e1",
       "implementation_commit": "ea3958bc3486872ce850ff18f5769710938038a7",
-      "frozen": false,
-      "invoked": false
+      "frozen": true,
+      "invoked": true,
+      "freeze_commit": "c0fe0d919cd017f40350236e325ac3e9f9edab0e",
+      "source_identities": 461,
+      "session": 47984,
+      "stop_at": "2026-10-16T11:29:00+00:00",
+      "output": "owned-material-refresh-a3-continuation1",
+      "operations": "owned-material-refresh-a3-continuation1-operations",
+      "copied_original_records": 9
     },
     "accepted": false,
     "parent_accepted": false,
@@ -2462,6 +2469,9 @@
       "bytes": 24994170,
       "members": 19,
       "all_members_verified": true
-    }
+    },
+    "original_exit_code": 1,
+    "original_closed_at": "2026-10-16T11:03:28.772763+00:00",
+    "original_outcome": "registered operational deadline; nine audited records; zero method invocations; zero workers verified"
   }
 }
