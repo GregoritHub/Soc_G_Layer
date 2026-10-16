@@ -5,7 +5,7 @@
   "run_id": "ft7-owned-rehearsal-a10-2026-10-16T15:38:03.294Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-16T16:38:42.000Z",
-  "expected_head": "28db7e93319ddc5a7f7620783d74718e7d7d2440",
+  "expected_head": "8ba4bc4610f6de762956b9dd9ab86c075261b41c",
   "current_batch": "FT7.Owned.Rehearsal.A10R",
   "canonical_quotation_a8": {
     "status": "passed",
@@ -2361,7 +2361,7 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T16:08:42Z",
+  "updated_at": "2026-10-16T16:13:08Z",
   "skill_intake_a1": {
     "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
@@ -2773,12 +2773,29 @@
     "failure": "workflow intention is not a valid use-personal native input; no output-consumer identity missing",
     "no_accepted_stage_replay": true,
     "rejection_closure": {
-      "status": "digest_corrected_not_invoked",
+      "status": "running",
       "failed_freeze": "20a593626af16a92f09f6e960006575f2b4e4d0a",
       "failed_exit_code": 1,
       "new_paid_work": 0,
       "methods": 0,
-      "protocol_commit": "6e0fac45fd4316a76298c77c50f5065af0fe4a6f"
+      "protocol_commit": "6e0fac45fd4316a76298c77c50f5065af0fe4a6f",
+      "digest_protocol_commit": "6e0fac45fd4316a76298c77c50f5065af0fe4a6f",
+      "implementation_commit": "a6b103c8d04d3b6b8a48aacf0673d486e00d7937",
+      "freeze_commit": "6c7abe61fb7d7fcc3811925fcd39501e6389faee",
+      "source_identities": 543,
+      "prior_identities": 534,
+      "session": 81991,
+      "output": "owned-rehearsal-a10r-continuation2",
+      "stop_at": "2026-10-16T16:33:00+00:00",
+      "invoked": true,
+      "accepted": false,
+      "original_paid_main_replay": false
     }
+  },
+  "setup_tool_overlay_a3": {
+    "status": "conditional_protocol_only",
+    "protocol_commit": "8ba4bc4610f6de762956b9dd9ab86c075261b41c",
+    "requires": "A10R continuation2 closed and zero workers; exact old setup preserved. One exact historical continuation inclusion only.",
+    "invoked": false
   }
 }
