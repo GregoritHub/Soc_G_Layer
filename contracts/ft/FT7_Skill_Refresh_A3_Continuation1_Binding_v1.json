@@ -1,0 +1,33 @@
+{
+  "schema": "ft-skill-refresh-a3-continuation1-binding-v1",
+  "original_stop_at": "2026-10-16T11:03:25.665Z",
+  "original_exit_code": 1,
+  "original_closed_at": "2026-10-16T11:03:28.772763+00:00",
+  "verified_workers": 0,
+  "permission_denials": 0,
+  "original_methods_invoked": 0,
+  "closed_records": 9,
+  "prior": {
+    "workflow-read-partial.json.gz": "8c8d6f732c3fafc94cf31b0170cf86aeb28d7db5e6d92f663835084557413ba3",
+    "canonical-complete.json.gz": "0846fb5922eb3a94fa2fb05889021fc5147fac3be2a95c84c507354bd934ee28",
+    "canonical-restarted.json.gz": "f1090d94f35b15ee199b3a0c14285b317114a8f8010db3541161c700890626f1",
+    "probes.json": "55f6870f46f15536bc54a127833fdb7392814f6571bd21b8e0e48748fbc8e4ef",
+    "canonical-read-partial.json.gz": "9983137c4a9b6e2b175332809cc1c16cf3d3d5e0122fd347073b652512bf8dca",
+    "workflow-inspect-partial.json.gz": "496700aaac9d6c50469d36544f818addc74e83c75eef60146236f65625030a3f",
+    "canonical-inspect-partial.json.gz": "3f17e83a2f11ed1a191c56eb66d1f8d647460c4300017dae7fc6d2df7eceaec2",
+    "workflow-before.json.gz": "9de45bec925cdc1ad6f909c5f56cabf34e6612e08bf8ba948f189117284ef7ee",
+    "canonical-before.json.gz": "c2cfac49adfb651138d0afb366765adca8f7fed0296b4ef511b3cb457a5f9390",
+    "canonical-cancelled.json.gz": "7906718ad95b1641b66e33701010994a1746d3dd3157e5e4d78241a0ef43945c",
+    "progress.json": "c68b6fa9135186351d635a902fb99cb607f2526579d24e3d01239e8c889329fe"
+  },
+  "prior_ops": {
+    "events.jsonl": "ee39f1fcfa2c9933b5b5e39f4a4e51c556d95f412643d737f82f09a087d08929",
+    "current.json.gz": "657eb5aa9fe2511f0f4930e38f6940ee0fddde039a8a5e610f1ab3b50598ae6f"
+  },
+  "accepted_inputs": {
+    "canonical-complete.json.gz": "19e3195ff3785dc1569d20760e08411e77a6f6d03c889fe695256d4ab2e33c2f",
+    "workflow-complete.json.gz": "bdf88635c76f0e629b7b15b1c483e91e207bb0820c5da8ebe36bbd11131ce72a"
+  },
+  "original_freeze_sha256": "82e0b50b73507fea86a295d0e5a6a9151e582f62446129b4670c32675a3dd4b5",
+  "prior_freeze_sha256": "c18c9a1715c552056a13c67c14ad2fc53c4b3c95cd13647570733a9099d2abca"
+}
