@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "methods": [
+    "test_all_authority_false",
+    "test_complete_panel",
+    "test_exact_payload_and_prefixes",
+    "test_history_partition",
+    "test_input_mismatch_rejected",
+    "test_report_forgery_rejected"
+  ],
+  "failures": 0,
+  "errors": 0,
+  "audits": [
+    {
+      "passed": true,
+      "setting": "canonical",
+      "cues": 2,
+      "descriptors": 30,
+      "historical": 15,
+      "new_unpaid": 15,
+      "fulfilled_needs": 1
+    },
+    {
+      "passed": true,
+      "setting": "workflow",
+      "cues": 2,
+      "descriptors": 30,
+      "historical": 15,
+      "new_unpaid": 15,
+      "fulfilled_needs": 1
+    }
+  ],
+  "forgery_probes": 14,
+  "source_identities": 568,
+  "prior_identities": 560,
+  "archive_members": 20,
+  "native_work": 0,
+  "engine_restores": 0,
+  "accepted_replays": 0,
+  "intake_paid": false,
+  "admission_claim": false
+}
