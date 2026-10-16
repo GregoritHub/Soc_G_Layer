@@ -5,7 +5,9 @@ from pathlib import Path
 
 from hle_unified import codec
 from hle_unified.material import attrs
+from hle_unified.operation_records import SIGNATURES
 from hle_unified.operations import wallet_address
+from hle_unified.records import Procedure
 from hle_unified.selection_audit import reference as canonical_reference
 from hle_unified.selection_execution import SelectionEngine
 from hle_unified.selection_records import dumps, fields_of, loads
@@ -118,6 +120,44 @@ class CurrentDomainQuotationAudit:
                 "foreign_total": None,
                 "items": None,
             }
+        if self.setting == "workflow":
+            procedure_ref = getattr(request, "procedure", None)
+            definition = None
+            acquired = ()
+            if procedure_ref is not None:
+                definitions = [
+                    particular.value
+                    for particular in self.view.resolve(procedure_ref)
+                    if type(particular.value) is Procedure
+                ]
+                require(len(definitions) == 1, "paid exact care procedure")
+                procedure = definitions[0]
+                require(
+                    procedure.executor == "u4.care.v1"
+                    and procedure.inputs == SIGNATURES["care"]
+                    and not procedure.steps
+                    and not procedure.preconditions
+                    and not procedure.effects,
+                    "supported native care procedure",
+                )
+                definition = {
+                    "executor": procedure.executor,
+                    "inputs": procedure.inputs,
+                    "preconditions": procedure.preconditions,
+                    "steps": procedure.steps,
+                    "effects": procedure.effects,
+                }
+                acquired = tuple(
+                    (row.procedure, row.context, row.receipt)
+                    for row in self.view.snapshot.acquired
+                    if row.procedure == procedure_ref and row.context == request.context
+                )
+            snapshot = dict(
+                snapshot,
+                policy="c7-workflow-selection-v4",
+                procedure=definition,
+                acquired=acquired,
+            )
         if self.setting == "canonical":
             rows = [dict(canonical_reference(snapshot, cell), cell=cell) for cell in range(33)]
             nominee = min(
