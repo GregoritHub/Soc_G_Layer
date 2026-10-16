@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft7-observed-fields-a5-2026-10-16T12:34:01.000Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-16T13:26:55.000Z",
-  "expected_head": "83278218bb649201445b012dbab46298b4cf59d4",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "72b36c43df4c359f4066fe689bad79569e6d702c",
   "current_batch": "FT.Setup.ToolOverlay.A2",
   "current_window_admission_progress": {
     "status": "passed",
@@ -2244,14 +2244,15 @@
     "acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2"
   },
   "prior_paid_window_acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2",
-  "latest_acceptance_commit": "6fe952810490b9f8c29cdfb0d4306abe874143a9",
+  "latest_acceptance_commit": "72b36c43df4c359f4066fe689bad79569e6d702c",
   "latest_local_acceptance": {
     "batch": "FT.Setup.ToolOverlay.A2",
     "passed": true,
     "methods": 6,
     "copied": 501,
     "source_identities": 481,
-    "engine_work": false
+    "engine_work": false,
+    "acceptance_commit": "72b36c43df4c359f4066fe689bad79569e6d702c"
   },
   "recall_feasibility_progress": {
     "status": "diagnostic_pass",
@@ -2277,7 +2278,7 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T12:56:55.000Z",
+  "updated_at": "2026-10-16T13:01:29.000Z",
   "skill_intake_a1": {
     "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
@@ -2563,7 +2564,15 @@
         41
       ]
     },
-    "acceptance_commit": "6fe952810490b9f8c29cdfb0d4306abe874143a9"
+    "acceptance_commit": "6fe952810490b9f8c29cdfb0d4306abe874143a9",
+    "ownership_released_at": "2026-10-16T13:01:29.000Z",
+    "owned_workers_at_release": 0,
+    "public_tree_verification": {
+      "commit": "6fe952810490b9f8c29cdfb0d4306abe874143a9",
+      "blobs": 652,
+      "all_local_public_blob_identities_exact": true,
+      "no_paths_removed": true
+    }
   },
   "setup_tool_overlay_a2": {
     "status": "accepted",
@@ -2585,7 +2594,16 @@
     "record": "docs/ft/FT_Setup_Tool_Overlay_A2_Record.md",
     "summary": "docs/ft/FT_Setup_Tool_Overlay_A2_Summary.json",
     "native_work": 0,
-    "dependency_rebuilds": 0
+    "dependency_rebuilds": 0,
+    "acceptance_commit": "72b36c43df4c359f4066fe689bad79569e6d702c",
+    "ownership_released_at": "2026-10-16T13:01:29.000Z",
+    "owned_workers_at_release": 0,
+    "public_tree_verification": {
+      "commit": "72b36c43df4c359f4066fe689bad79569e6d702c",
+      "blobs": 660,
+      "all_local_public_blob_identities_exact": true,
+      "no_paths_removed": true
+    }
   },
   "latest_engine_acceptance": {
     "batch": "FT7.Observed.Fields.A5",
