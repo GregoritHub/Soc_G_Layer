@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft7-observation-refresh-2026-10-16T10:35:25.665Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-16T11:20:02.702Z",
-  "expected_head": "43ca6ad429e68de3a02dba2df5b402564a729e90",
+  "lease_expires_at": "2026-10-16T11:31:27.719Z",
+  "expected_head": "ea3958bc3486872ce850ff18f5769710938038a7",
   "current_batch": "FT7.Skill.Refresh.A3",
   "current_window_admission_progress": {
     "status": "passed",
@@ -2296,7 +2296,7 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T10:50:02.702Z",
+  "updated_at": "2026-10-16T11:01:27.719Z",
   "skill_intake_a1": {
     "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
@@ -2447,11 +2447,21 @@
     "operations": "owned-material-refresh-a3-operations",
     "conditional_continuation": {
       "protocol_commit": "e49096ba62af851948c6a36320a56e0c60f5c1e1",
-      "implementation_commit": "43ca6ad429e68de3a02dba2df5b402564a729e90",
+      "implementation_commit": "ea3958bc3486872ce850ff18f5769710938038a7",
       "frozen": false,
       "invoked": false
     },
     "accepted": false,
-    "parent_accepted": false
+    "parent_accepted": false,
+    "canonical_records_passed": 6,
+    "workflow_records_passed": 3,
+    "actual_methods_started": 0,
+    "canonical_checkpoint": {
+      "filename": "FT7_Skill_Refresh_A3_Canonical_Checkpoint_20261016.zip",
+      "sha256": "4ba20a5f0384fadc5870f90dfcd8d884851a319335a51dd1c4a00e42500de380",
+      "bytes": 24994170,
+      "members": 19,
+      "all_members_verified": true
+    }
   }
 }
