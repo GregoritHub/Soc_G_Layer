@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "f72e518a289404a1afeb67ff2bf48634c0068fff",
+  "status": "running",
+  "run_id": "ft7-admission-recovery-20261016T004323Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-16T01:13:23.000Z",
+  "expected_head": "a4319f1a6cade4c3d14fe11c55241ce9c8f4fb0a",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1d",
   "current_window_admission_progress": {
     "status": "partial_checkpoint_not_accepted",
@@ -68,7 +68,13 @@
       "nested_checkpoint_members": 97,
       "nested_initial_members": 40
     },
-    "final_aggregate_passed": false
+    "final_aggregate_passed": false,
+    "continuation_recovery": {
+      "started_utc": "2026-10-16T00:43:23Z",
+      "status": "restoring_exact_private_inputs_and_local_dependencies",
+      "original_continuation_invoked": false,
+      "denied_dependency_access_retried": false
+    }
   },
   "current_window_capacity_progress": {
     "status": "passed",
