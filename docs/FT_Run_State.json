@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft7-admission-recovery-20261016T004323Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-16T01:13:23.000Z",
-  "expected_head": "a4319f1a6cade4c3d14fe11c55241ce9c8f4fb0a",
+  "lease_expires_at": "2026-10-16T01:15:21.000Z",
+  "expected_head": "4c67b333016129ab2b6d4957308aa9a45e6cf6bf",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1d",
   "current_window_admission_progress": {
     "status": "partial_checkpoint_not_accepted",
@@ -71,9 +71,26 @@
     "final_aggregate_passed": false,
     "continuation_recovery": {
       "started_utc": "2026-10-16T00:43:23Z",
-      "status": "restoring_exact_private_inputs_and_local_dependencies",
-      "original_continuation_invoked": false,
-      "denied_dependency_access_retried": false
+      "verified_utc": "2026-10-16T00:45:21Z",
+      "status": "exact_local_restoration_verified",
+      "source_identities": 406,
+      "operational_identities": 4,
+      "baseline_files": 1093,
+      "historical_files": 210,
+      "repair_files": 20,
+      "closed_prefix_files": 161,
+      "accepted_raw_records": 80,
+      "remote_dependency_access": false,
+      "native_replay": false
+    },
+    "continuation_run": {
+      "status": "ready_to_invoke",
+      "owner": "ft7-admission-recovery-20261016T004323Z",
+      "output": "current-window-admission-continuation1",
+      "stop_at": "2026-10-16T01:14:21.000Z",
+      "records_pending": 9,
+      "actual_methods_pending": 8,
+      "original_source_unchanged": true
     }
   },
   "current_window_capacity_progress": {
