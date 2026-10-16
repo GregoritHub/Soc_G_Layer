@@ -1,0 +1,21 @@
+{
+  "batch": "FT7.Recall.PreservedRootFloor.A11P",
+  "version": 1,
+  "scope": "Packaging-only byte-exact evaluator alias; no A11 gate replay, engine work or full dependency reconstruction.",
+  "source": "tools/evaluate_preserved_recall_floor.py",
+  "alias": "tools/evaluate_ft7_preserved_recall_floor.py",
+  "prior_source_freeze": "contracts/ft/FT7_Preserved_Recall_Floor_A11_Source_Freeze_v1.json",
+  "prior_identities": 556,
+  "checks": [
+    "alias_bytes_equal_accepted_source",
+    "actual_setup_filter_selects_alias",
+    "exact_prior_source_unchanged"
+  ],
+  "implementation": "Copy accepted source bytes to convention-named alias. Preserve original file and all setup code. Extract and execute actual existing layer_files assignment over declared two-path input, not a guessed predicate.",
+  "freeze_before_checks": true,
+  "acceptance_commit": "ca4be6cd0ca98a2a8c72d905df79b80e2237c1dc",
+  "new_tools": [
+    "tools/evaluate_ft7_preserved_recall_floor.py",
+    "tools/evaluate_ft7_recall_alias_packaging.py"
+  ]
+}
