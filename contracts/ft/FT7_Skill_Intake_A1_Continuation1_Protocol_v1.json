@@ -1,0 +1,36 @@
+{
+  "version": "ft-skill-intake-a1-continuation-v1",
+  "batch": "FT7.Skill.Intake.A1.Continuation1",
+  "original_freeze_commit": "36f1277133dd765d6441d8e549d8306d979a9d22",
+  "prior_freeze": "FT7_Skill_Intake_A1_Saved_Source_Freeze_v1.json",
+  "original_invocation": {
+    "closed_exit": 1,
+    "stop_at": "2026-10-16T08:56:00.243216+00:00",
+    "reason": "fixed operational deadline guard",
+    "saved_records": 10,
+    "actual_test_methods": 0,
+    "original_pid_absent": true
+  },
+  "input_files": {
+    "canonical-before.json.gz": "3cf949ea51e3917621e9739a26b009600eefba5c637568a8f3af401e65eed028",
+    "canonical-cancelled.json.gz": "5cb7ebcb806a864b6cdb7fd5579ac50673885cc11bd8d9cd5679a0ab3ee9e24f",
+    "canonical-complete.json.gz": "463ed0982c5463e83f541eddf79bda88b6418251fa7002f59c63ec8f8d733790",
+    "canonical-inspect-partial.json.gz": "26ad7493e10f10b9a201c94312270dffdb7e12ac64957179df3aa331a5d205a1",
+    "canonical-read-partial.json.gz": "1c6ba894b8d2d3b81c1bf06843e1a8662630b0905d1473ee35142108c1a98474",
+    "canonical-restarted.json.gz": "fe4ecf08b355be68cf3877a35d31e51582e9232b202e7c6090bd1cd26dd7dbdd",
+    "operational_stop.json": "6b20d845f19d172440b52653429bea17a70499e5e21709a00b4222b0069c5fb0",
+    "progress.json": "b601093e1b2613ad900102def77b78c3cae0aa0322b834dcae2c751c6f802297",
+    "workflow-before.json.gz": "04500c500fab4c7591a120e7aeaca7840415257a1533319d328904352eb2663e",
+    "workflow-complete.json.gz": "7764100fe60679aa2b1a060f21c42adb62e6d32d1549084068ca94873dcb18f1",
+    "workflow-inspect-partial.json.gz": "a55ee75b142ac1b76583b3cdbf81d640365f5e30dcf475e60c43ef5a3c4bfd44",
+    "workflow-read-partial.json.gz": "ffef8f89e712250220aa5105c87daece3c61e59fe60e05ec8df1f074fa8030e1"
+  },
+  "scope": "Finish only missing workflow restarted/cancelled records and invoke the unchanged original six aggregate methods once. Copy all ten existing records exactly; do not rerun canonical work or either complete main branch. Existing source/auditor and all original gates unchanged.",
+  "interruption": "No workflow restarted/cancelled record exists. The in-memory interrupted restart suffix was not persisted; its exact extent is unknown and is not represented as zero or as a completed branch. Original outcome and ten exact records remain intact. New continuation restarts only this unfinished control from the saved read-partial checkpoint, with step-by-step durable progress.",
+  "lifecycle": "Fresh output and operations directories. Validate original complete 12-file binding, exact original input archive/pair, all423 prior identities. Persist current native+adapter checkpoint before and after every new step, plus append-only step metadata. Save new raw records BEFORE independent audit; rejection must preserve raw. Exact restarted final pair must equal original saved workflow-complete; terminal calls idempotent. Restore original inspect-partial once and perform cancellation only. Run original three saved authority/source/plan probes after restart, then unchanged six methods over all12 passing records. No prior passing body replay.",
+  "modules": [
+    "tools/continue_owned_material_inspection.py"
+  ],
+  "stop": "Current owner/unexpired lease/deadline before new work; on guard exit preserve last durable checkpoint and operational stop. No automatic repeat of a completed stage.",
+  "acceptance": "Full original12 record/sixmethod gate plus separately frozen four saved payment/receipt rejection probes. No skill acquisition, recall repair, main admission, live choice or parent acceptance."
+}
