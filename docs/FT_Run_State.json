@@ -5,10 +5,10 @@
   "run_id": "ft7-admission-final-20261016T023350Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-16T03:27:08.101Z",
-  "expected_head": "a15962485b3188b89e20b239575731c6729fdebe",
+  "expected_head": "9465cf2c9a816106f66f4dda10ab0e6b3d9b7ba1",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1d",
   "current_window_admission_progress": {
-    "status": "method_recovery1_frozen_not_invoked_not_accepted",
+    "status": "method_recovery1_running_not_accepted",
     "implementation_commit": "a79669120939bfb0ee5f2dd7914a45b44f3c5696",
     "freeze_commit": "86c613185216ae09b76ef1a1dbd764847ec2c31e",
     "frozen_identities": 406,
@@ -27,7 +27,7 @@
     "new_native_work": false,
     "accepted": false,
     "record": "docs/ft/FT7_1b2b3b2b2b2b2b2b1d_Record.md",
-    "owned_processes_remaining": 0,
+    "owned_processes_remaining": 3,
     "original_outcome": "checkpoint",
     "stop_reason": "prospective deadline",
     "original_children_failed": 0,
@@ -172,8 +172,8 @@
       "inapplicable_reason": "Requires fully closed passing prior runs; continuation2 was interrupted. Preserve unused protocol; separate recovery required."
     },
     "method_recovery1": {
-      "status": "frozen_not_invoked",
-      "invoked": false,
+      "status": "running",
+      "invoked": true,
       "protocol_commit": "eec7b3c6cd8a09edcc6ef6efcecdf90ee0eea1ab",
       "protocol_sha256": "e77894a218c34507a99f216775b3e65a12311cecbe6d34ba84f09e112b576318",
       "implementation_commit": "3f734eda7f4c72a3fa16e60a68b86c2a0412277f",
@@ -192,7 +192,9 @@
         "filename": "FT7_1b2b3b2b2b2b2b2b1d_Method_Interruption_Evidence_20261016.zip",
         "sha256": "a4fc22ab7ad7ac4345254881250a75602f229bf54cf751ed63cee5a47fd7ec68",
         "members": 250
-      }
+      },
+      "stop_at": "2026-10-16T03:26:29.761Z",
+      "execution_session": 97404
     }
   },
   "current_window_capacity_progress": {
