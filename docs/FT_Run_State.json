@@ -5,7 +5,7 @@
   "run_id": "ft7-admission-final-20261016T023350Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-16T03:27:08.101Z",
-  "expected_head": "9465cf2c9a816106f66f4dda10ab0e6b3d9b7ba1",
+  "expected_head": "a5aeadb6bfc196fdafc63147bbbc5bc92f48c78f",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1d",
   "current_window_admission_progress": {
     "status": "method_recovery1_running_not_accepted",
@@ -17,7 +17,7 @@
     "required_methods": 8,
     "required_saved_records": 40,
     "required_predecessor_identities": 484,
-    "actual_methods_completed": 5,
+    "actual_methods_completed": 6,
     "saved_records_completed": 40,
     "record_launches_closed_at_deadline": 31,
     "active_records_at_deadline": 4,
@@ -35,7 +35,6 @@
     "remaining_records": [],
     "remaining_methods": [
       "test_window_operand_cost_forgery_rejected",
-      "test_old_nominees_and_bounded_cells",
       "test_native_and_prefixes_unchanged"
     ],
     "continuation_protocol_sha256": "a8602bc91ef506325968f6a9dbac34975064d66c2a5acfa477c290f411978400",
@@ -183,7 +182,6 @@
       "passed_methods_preserved": 5,
       "pending_methods": [
         "test_window_operand_cost_forgery_rejected",
-        "test_old_nominees_and_bounded_cells",
         "test_native_and_prefixes_unchanged"
       ],
       "output": "current-window-admission-method-recovery1",
@@ -194,7 +192,10 @@
         "members": 250
       },
       "stop_at": "2026-10-16T03:26:29.761Z",
-      "execution_session": 97404
+      "execution_session": 97404,
+      "new_methods_passed": [
+        "test_old_nominees_and_bounded_cells"
+      ]
     }
   },
   "current_window_capacity_progress": {
@@ -260,7 +261,7 @@
       "paths_removed": 0
     }
   },
-  "next_batch": "Invoke frozen continuation2 only for workflow/cancelled, then all eight original actual methods after the complete forty-record barrier, then unchanged finish. Never restart original run/init or continuation1, or rerun passing stages/accepted paid work. Thereafter route-free fresh skills/needed paid recall organization, changed-input payments, genuine distinct-element ties, history-only choice, chosen paid work/use, matched controls and full staging; FT8 unchanged.",
+  "next_batch": "Wait active isolated recovery controls naturally; never reinvoke old launchers or passing stages. Complete unchanged finish only after all eight original bodies; then route-free fresh skills/paid recall organization, changed-input payments, genuine distinct-element ties, history-only choice, chosen paid work/use, matched controls and full staging. FT8 unchanged.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
