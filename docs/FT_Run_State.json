@@ -4,12 +4,12 @@
   "preserved_recall_floor_a11": {"status":"accepted","protocol_commit":"e22ffed2deb4b43d4c11cc57a09c91a9a903fced","implementation_commit":"d334ded5543461ab768ed746b441b3a031f7f698","freeze_commit":"60f972eeaa0e737ec9d11910da20305c705e44bf","methods":6,"saved_reports":2,"forgery_probes":16,"source_identities":556,"prior_identities":549,"floors":{"canonical":38,"workflow":36},"native_work":0,"engine_restores":0,"accepted_replays":0,"evidence":{"filename":"FT7_Preserved_Recall_Floor_A11_Evidence_20261016.zip","sha256":"6153b3464e8bf03158aae70ce0a2c09625c4244a5d20e0d24b5c6d702bb1d429","bytes":9044162,"members":17},"scope":"Generated current cue roots and original links/context preserved; not all lawful organization impossibility or current admission."},
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "85343104bbd94f0603d17c5138b11f2e1a986ba0",
-  "current_batch": "FT7.Fresh.ObservedCuePanel.A12A accepted; ownership released; A12B paid intake next",
+  "status": "running",
+  "run_id": "ft7-cue-intake-a12b-2026-10-16T17:10:39Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-16T17:40:39.000Z",
+  "expected_head": "9d59e831fdf677c2c340a6890cedfcfe42e1ec0e",
+  "current_batch": "FT7.Fresh.CueIntake.A12B prospective implementation",
   "canonical_quotation_a8": {
     "status": "passed",
     "accepted": true,
@@ -2366,7 +2366,7 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T17:05:32Z",
+  "updated_at": "2026-10-16T17:10:39Z",
   "skill_intake_a1": {
     "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
