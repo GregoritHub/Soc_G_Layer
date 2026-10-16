@@ -129,9 +129,9 @@
   "status": "running",
   "run_id": "ft7-a12e2-20261016T213945Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-16T22:50:00+00:00",
-  "expected_head": "ce250eee53887396b9ac635c9e483dcd8fb2d0d4",
-  "current_batch": "A12E2 decoded-domain continuation extended; all 15 canonical branches retained exact, 15 workflow branches remain unclosed",
+  "lease_expires_at": "2026-10-16T23:16:00+00:00",
+  "expected_head": "d6ef83b147d91321752fd9d2279c64c39806516d",
+  "current_batch": "A12E2 procedure-audit recovery running; workflow-07 exact quote retained and audit-only, other workflow branches unclosed",
   "canonical_quotation_a8": {
     "status": "passed",
     "accepted": true,
