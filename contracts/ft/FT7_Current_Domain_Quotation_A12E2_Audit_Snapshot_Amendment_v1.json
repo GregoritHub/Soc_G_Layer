@@ -1,0 +1,18 @@
+{
+  "version": "ft-current-domain-quotation-a12e2-audit-snapshot-amendment-v1",
+  "batch": "FT7.PostProcessing.CurrentQuotation.A12E2",
+  "registered_at": "2026-10-16T21:48:00+00:00",
+  "parent_freeze_commit": "572f98abeb0735ba7600c95cbf6bcd34b760b36c",
+  "status": "prospective_before_any_a12e2_evaluation",
+  "diagnosis": "Static source review showed the independent A12E2 workflow snapshot path reused the older route-free helper projection, whose v4 procedure/acquired fields are fixed to null/empty. A12E1 includes explicit procedure alternatives, so full audit must independently reconstruct the native v4 procedure definition and acquired receipt tuple before comparing snapshot and candidate hashes.",
+  "correction": "Change only full_theory/current_domain_quotation_audit.py to reconstruct the exact optional native care Procedure definition and acquired tuple from saved paid access. Update the evaluator's source-identity count from 606 to 608 after adding this amendment and hash. Runtime quotation, request grammar, cost formula, 30 inputs, six methods, full audit, negative controls and all authority boundaries remain unchanged.",
+  "prohibitions": [
+    "No A12E2 evaluation or native view before the corrected source freeze",
+    "No import of the new quotation runtime into the independent auditor",
+    "No accepted A12E1/A12D2/A12C replay",
+    "No payment, execution, route, winner, success or authority change"
+  ],
+  "gate_unchanged": true,
+  "ft8_unchanged": true
+}
+
