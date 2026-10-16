@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft7-observation-refresh-2026-10-16T10:35:25.665Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-16T11:31:27.719Z",
-  "expected_head": "c0fe0d919cd017f40350236e325ac3e9f9edab0e",
+  "lease_expires_at": "2026-10-16T11:48:06.955Z",
+  "expected_head": "fb3817feecd1fbc8eba329ac097422a4cf53cf46",
   "current_batch": "FT7.Skill.Refresh.A3",
   "current_window_admission_progress": {
     "status": "passed",
@@ -2296,7 +2296,7 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T11:08:46.333Z",
+  "updated_at": "2026-10-16T11:18:06.955Z",
   "skill_intake_a1": {
     "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
@@ -2456,12 +2456,14 @@
       "stop_at": "2026-10-16T11:29:00+00:00",
       "output": "owned-material-refresh-a3-continuation1",
       "operations": "owned-material-refresh-a3-continuation1-operations",
-      "copied_original_records": 9
+      "copied_original_records": 9,
+      "current_stage": "workflow/restart",
+      "fixed_deadline_unchanged": true
     },
     "accepted": false,
     "parent_accepted": false,
     "canonical_records_passed": 6,
-    "workflow_records_passed": 3,
+    "workflow_records_passed": 4,
     "actual_methods_started": 0,
     "canonical_checkpoint": {
       "filename": "FT7_Skill_Refresh_A3_Canonical_Checkpoint_20261016.zip",
@@ -2472,6 +2474,18 @@
     },
     "original_exit_code": 1,
     "original_closed_at": "2026-10-16T11:03:28.772763+00:00",
-    "original_outcome": "registered operational deadline; nine audited records; zero method invocations; zero workers verified"
+    "original_outcome": "registered operational deadline; nine audited records; zero method invocations; zero workers verified",
+    "main_complete_costs": {
+      "canonical": {
+        "receipts": 8,
+        "energy": 40,
+        "time": 40
+      },
+      "workflow": {
+        "receipts": 10,
+        "energy": 50,
+        "time": 50
+      }
+    }
   }
 }
