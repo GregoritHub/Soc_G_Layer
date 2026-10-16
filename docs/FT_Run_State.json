@@ -5,7 +5,7 @@
   "run_id": "ft7-admission-final-20261016T023350Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-16T03:44:31.743Z",
-  "expected_head": "f573be1e3f3a2a3811a208ca66bfde151393a14b",
+  "expected_head": "765737207187abdf07b29d4665d0ec0030704db8",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1d",
   "current_window_admission_progress": {
     "status": "method_recovery1_running_not_accepted",
@@ -211,6 +211,18 @@
       "paid_replay": false,
       "mutation": false,
       "acceptance_claim": false
+    },
+    "recovered_finish1": {
+      "status": "implemented_not_frozen_not_invoked",
+      "protocol_commit": "892a9cc60be01c89dde0a8f348ab6f26415b7d9b",
+      "protocol_sha256": "c1570d49f926e3c418ee088581f8180808595f8f6135bb4724cf23db4c5c2f9c",
+      "implementation_commit": "765737207187abdf07b29d4665d0ec0030704db8",
+      "invoked": false,
+      "requires": "Only if method recovery closes with checkpoint and all eight original methods passed; bind every closed recovered/prior output and80raw, freeze four operational identities, then run unchanged finish in fresh disjoint final1 output/operations. Never if aggregate already exists.",
+      "output": "current-window-admission-final1",
+      "operations": "current-window-admission-final1-operations",
+      "compile_and_help_passed": true,
+      "original406_unchanged": true
     }
   },
   "current_window_capacity_progress": {
