@@ -1,0 +1,26 @@
+{
+  "version": "ft-current-window-admission-method-recovery2-v1",
+  "scope": "One unfinished original body after second execution-session loss. Preserve all seven passing methods, all forty saved records and every interrupted byte. Original runtime, auditor, tests and evaluator unchanged.",
+  "module": "tools/recover_current_window_admission_forgery.py",
+  "binding_file": "contracts/ft/FT7_1b2b3b2b2b2b2b2b1d_Method_Recovery2_Input_Binding_v1.json",
+  "output": "current-window-admission-method-recovery2",
+  "operations": "current-window-admission-method-recovery2-operations",
+  "lease_margin_seconds": 300,
+  "method": "test_window_operand_cost_forgery_rejected",
+  "prior_operational_freezes": [
+    "FT7_1b2b3b2b2b2b2b2b1d_Continuation_Source_Freeze_v1.json",
+    "FT7_1b2b3b2b2b2b2b2b1d_Continuation2_Source_Freeze_v1.json",
+    "FT7_1b2b3b2b2b2b2b2b1d_Method_Recovery1_Source_Freeze_v1.json"
+  ],
+  "rules": [
+    "Recheck current remote ownership and read-only current process table. No survivor, permission denial or overlapping original worker may be ignored. No signals, namespace entry, paid replay, record regeneration or automatic retries.",
+    "Bind every file of original output, continuation1, interrupted continuation2, interrupted recovery1 output and recovery1 operations; all80 accepted raw inputs; original406 and prior12 operational source identities. Freeze new runner/protocol/hash/binding4 before invocation.",
+    "Verify forty exact saved reports/raw hashes/independent verdicts,484 exact predecessor IDs, seven exact original passing results and unique closed parent exit-zero jobs. Original31 plus continuation1 eight plus continuation2 six plus recovery1 two jobs:47 unique closed targets. Preserve continuation2 two unclosed launches and recovery1 one unclosed launch, no outcomes or exit codes invented.",
+    "Fresh disjoint numbered output copies all recovery1 output bytes except its unfinished forgery method directory. All seven passes and forty records copied byte-exact; originals and partial logs remain immutable and bound. Copied original outcome/jobs inside output are historical; authoritative new operations live separately.",
+    "Changed execution condition: launch only the unfinished forgery body as the sole evaluator worker, without concurrent diagnostic or native-prefix audit jobs. Keep the owning execution session under observation until natural closure. Earlier underlying interruption cause remains unknown; no claim of engine failure or guaranteed remedy.",
+    "Call original frozen evaluator method CLI once for the exact unchanged registered body. No substitute test, AST rewrite, cache, monkeypatch, reduced cases or audit shortcut. Preserve both settings and all five forgery modes.",
+    "Unique current lease must have >300 seconds at launch; UTC launch deadline future<=30minutes. Stop new launches on deadline, ownership change, STOP or any failure. Let active child close naturally, even after deadline. No automatic retry or signals.",
+    "After child exit, verify immutable sources/inputs/copied prefixes and exact original result. Write exclusive closed job/outcome, preserve errors. This recovery performs ONLY one method and NO aggregate. All eight results plus original unchanged finish remain mandatory; a new prospective bound/frozen finalizer is needed because Recovered_Finish1 requires recovery1 closure which no longer holds.",
+    "Never reinvoke original run/init, continuation1/2, recovery1 or recovery2. Existing Recovered_Finish1 and Continuation3 remain unused/inapplicable. A later interrupted attempt needs new prospective numbered binding/freeze. Keep all FT8 obligations, parent boundaries and private identifier restrictions."
+  ]
+}
