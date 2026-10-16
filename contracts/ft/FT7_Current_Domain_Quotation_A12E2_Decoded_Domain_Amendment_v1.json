@@ -1,0 +1,37 @@
+{
+  "version": "ft-current-domain-quotation-a12e2-decoded-domain-amendment-v1",
+  "batch": "FT7.PostProcessing.CurrentQuotation.A12E2",
+  "registered_at": "2026-10-16T22:09:00+00:00",
+  "parent_freeze_commit": "d3ccf1b19137a9653633f257411150206951d549",
+  "interrupted_continuation": "current-domain-quotation-a12e2-continuation1-parts",
+  "retained_closed_branches": {
+    "attempt3": ["canonical-01", "canonical-02"],
+    "continuation1": [
+      "canonical-03", "canonical-04", "canonical-05", "canonical-06",
+      "canonical-07", "canonical-08", "canonical-09", "canonical-10",
+      "canonical-11", "canonical-12", "canonical-13", "canonical-14",
+      "canonical-15"
+    ]
+  },
+  "interruption_result": {
+    "workflow_branches_started": [
+      "workflow-01", "workflow-02", "workflow-03", "workflow-04",
+      "workflow-05", "workflow-06", "workflow-07", "workflow-08"
+    ],
+    "workflow_quote_reports": 0,
+    "workflow_audits": 0,
+    "workflow_closed_jobs": 0,
+    "native_mutations": 0,
+    "paid_work": 0
+  },
+  "diagnosis": "Measured workflow quotation could not close inside the fixed launch margin because each ordinal called request_at(domain, ordinal), decoding the same immutable typed A12E1 domain text again. The native view, policy, quote formula and required complete Cartesian cardinality were not the bottleneck and remain unchanged.",
+  "correction": "In each of the two already separate A12E2 runtime and independent-audit modules, reconstruct the exact request directly from that class's typed domain value decoded once at construction. Preserve the same mixed-radix coordinates, fields, namespace key, SelectionRequest/WorkflowSelectionRequest/WorkflowCapacitySelectionRequest class rule and every ordered ordinal. Do not change A12E1 source. Retain all 15 closed canonical reports and audits byte-exact, launch only the 15 unfinished workflow branches, then perform the registered saved-only merge and unchanged six-method aggregate. Update the frozen source count from 614 to 616 after adding this amendment and digest.",
+  "gate_unchanged": true,
+  "prohibitions": [
+    "No pruning, sampling, memoized native-view result or quote approximation",
+    "No replay of any closed canonical branch",
+    "No modification of accepted A12E1 request construction source",
+    "No payment, native command, execution, route, winner, success or authority change"
+  ],
+  "ft8_unchanged": true
+}
