@@ -1,0 +1,31 @@
+{
+  "version": "ft-current-domain-quotation-a12e2-procedure-audit-amendment-v2",
+  "batch": "FT7.PostProcessing.CurrentQuotation.A12E2",
+  "registered_at": "2026-10-16T22:39:00+00:00",
+  "parent_freeze_commit": "ce250eee53887396b9ac635c9e483dcd8fb2d0d4",
+  "failed_continuation": "current-domain-quotation-a12e2-continuation3-parts",
+  "failure": {
+    "branch": "workflow-07",
+    "stage": "independent_audit",
+    "error": "current-domain quotation audit: supported native care procedure",
+    "quote_assignments": 12384,
+    "quote_required": 239424,
+    "quote_record_sha256": "2ac3885bbb23ec0415a0ed0d938f25d8937a28905cede2be947edb562814a90b",
+    "quote_record_backup_exact": true,
+    "quote_job_closed_pass": true,
+    "audit_reports": 0,
+    "method_bodies": 0,
+    "native_mutations": 0,
+    "paid_work": 0
+  },
+  "diagnosis": "The first audit-snapshot amendment incorrectly fixed the optional workflow procedure to the care executor and care signature. Every current A12E1 workflow procedure alternative is instead the exact paid repair procedure u4.repair.v1 with SIGNATURES['repair']; the independently resolved definition has empty preconditions, steps and effects. The runtime quotation correctly used the native engine and completed workflow-07; only the independent definition assertion was wrong.",
+  "correction": "Change only the independent auditor's procedure assertion to require executor u4.repair.v1, inputs SIGNATURES['repair'], and unchanged empty preconditions, steps and effects. Extend the evaluator with a saved-quote audit-only branch mode that imports workflow-07's exact report, backup and closed quote outcome, verifies their registered hashes and typed binding, performs only the corrected full independent audit and required workflow forgery panel, and emits a normal closed branch root. Never rerun workflow-07's 12,384 runtime quotation rows. Other unfinished workflow branches use the unchanged runtime quotation plus corrected auditor. Update the frozen source count from 616 to 618 after adding this amendment and digest.",
+  "gate_unchanged": true,
+  "prohibitions": [
+    "No replay of the successful workflow-07 quotation",
+    "No acceptance of workflow-07 without its complete corrected independent audit",
+    "No change to runtime quotation, request domain, native procedure, native policy or cost",
+    "No payment, native command, execution, route, winner, success or authority change"
+  ],
+  "ft8_unchanged": true
+}
