@@ -1,0 +1,23 @@
+{
+  "version": "ft-current-window-admission-recovered-finish2-v1",
+  "scope": "Conditional original unchanged aggregate only after single-worker Recovery2 closes with exact eighth original pass; no test or native work.",
+  "module": "tools/finish_current_window_admission_recovery2.py",
+  "binding_file": "contracts/ft/FT7_1b2b3b2b2b2b2b2b1d_Recovered_Finish2_Input_Binding_v1.json",
+  "output": "current-window-admission-final2",
+  "operations": "current-window-admission-final2-operations",
+  "lease_margin_seconds": 300,
+  "prior_operational_freezes": [
+    "FT7_1b2b3b2b2b2b2b2b1d_Continuation_Source_Freeze_v1.json",
+    "FT7_1b2b3b2b2b2b2b2b1d_Continuation2_Source_Freeze_v1.json",
+    "FT7_1b2b3b2b2b2b2b2b1d_Method_Recovery1_Source_Freeze_v1.json",
+    "FT7_1b2b3b2b2b2b2b2b1d_Method_Recovery2_Source_Freeze_v1.json"
+  ],
+  "rules": [
+    "Never invoke until Recovery2 operations has closed checkpoint active_children0, source unchanged, single original forgery job exit0/pass, exact launch/job/log/outcome and all8 original passed results/all40saved audits/484IDs/original406/prior399. Reject existing aggregate.",
+    "Prospectively bind all nine roots: original,prior1,prior2,recovery1,recovery1_operations,recovered,recovery_operations,paid,capacity. Complete five historical prefixes plus two recovered prefixes;80raw; original406 and prior16 operational source. Freeze runner/protocol/hash/binding4 before launch.",
+    "Preserve interrupted recovery1 and continuation2 with no invented outcomes/exitcodes; old finalizer1/continuation3 inapplicable and unused. Exact copied historical original jobs/outcome in recovery outputs remain historical, not new completion proof.",
+    "Reject surviving B1D processes with read-only current process inventory. Permission failure stops; no namespace entry or signals. Require current unique running lease>300secs and futureUTCdeadline<=30min.",
+    "Fresh disjoint final2 output and ops; copy entire recovery2 output byte-exact. Invoke only original frozen evaluator finish once, not run/init/method/record; no accepted or passing rerun, regenerated record or native payment.",
+    "Verify complete bound/copy/source identities after child exit. Require original unchanged summary8/40/484/406/399,zeroerrors/failures,nativeunchangedtrue,newnativeworkfalse; preserve exclusive launch/job/log/outcome. No automatic retries. FT7parent/FT8/FT9 unchanged."
+  ]
+}
