@@ -1,0 +1,6 @@
+{
+  "contracts/ft/FT7_1b2b3b2b2b2b2b2b1d_Method_Recovery2_Input_Binding_v1.json": "1043dba0288f92c7cb743f5802a9794e9fc23da81b572910bf47f79d08cb1b5e",
+  "contracts/ft/FT7_1b2b3b2b2b2b2b2b1d_Method_Recovery2_Protocol_v1.json": "88c005d66e730940205dc2d2567d38bc233f4e293db447f425f7ca34e19753e3",
+  "contracts/ft/FT7_1b2b3b2b2b2b2b2b1d_Method_Recovery2_Protocol_v1.sha256": "750e13dbbd29e077ea9fb9c566ab2a1609d38ab695fc0e34a8e3ffffa11848fd",
+  "tools/recover_current_window_admission_forgery.py": "d5b5cae6e2cecc5250d0a7381e2dfec7bd3bec0fbba3db8a3102e06125e8dbe8"
+}
