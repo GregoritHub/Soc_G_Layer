@@ -1,0 +1,46 @@
+{
+  "version": "ft-td5-universal-veto-a9-protocol-v1",
+  "batch": "FT7.Comparison.Design.A9",
+  "entry_head": "d1efc53e47653b4d2f40898717d66b69942598d9",
+  "prior_freeze": "contracts/ft/FT7_Canonical_Quotation_A8_Saved_Audit_Source_Freeze_v1.json",
+  "inputs": {
+    "canonical": {
+      "native_sha256": "03948fc18b149d5935c3d381432c05d361cd4678bdaceecfd2bb5c6fd717e3ee",
+      "domain_sha256": "17894dd39469ecfabc3f20729808b18a345d72c3452354a7b5b18a516c566ab2",
+      "capacity_sha256": "2d5315881624aa63d3420e922a1e5b20afe99f3550901047fac2d2f38201a476",
+      "assignments": 5832
+    },
+    "workflow": {
+      "native_sha256": "9b16ec1fd67959eb1ab7a9bcbbca50c28723d7f5abc3bd864865090d91a3c7ae",
+      "domain_sha256": "8d7f6148fa5c0e2a70d6d834f6df7b01a7460a003333160d38ba5667d751d0ce",
+      "capacity_sha256": "0889c7bacec30519d432c7cdc71f80ea5d2b5089ca26b32cb2cc4d329185d8d0",
+      "assignments": 4920480
+    }
+  },
+  "policy": [
+    "Conservative versioned pre-comparison veto only. Exact accepted A5 native/A6 domain/B1C mask1 capacity provenance required. No restored engine, native selector/view, command/payment, quotation replay or old accepted method body.",
+    "Verify all A6 window fields actor/context/cue/target/demand constant and equal current owned paid task; only key and workflow accessible may vary. Role axes whitelist stock/tool/repair_stock/procedure/relation/peer/group; exact product cardinality and nonempty factors. Bind entire A6 bytes: no role discarded, no Cartesian enumeration or price sharing.",
+    "Read current profile/cursor from committed native journal and current actor view from exact saved access. Runtime cursor uses unchanged progress; independent auditor manually walks route charges. Current owned paid need receipt and source/capacity/controller provenance checked. Accepted capacity supplies unchanged required facets/support bounds only, not current eligibility.",
+    "Recompute current recall32 with native traversal; independent auditor reconstructs ordered current roots and links with own BFS. Retained veto if current recall is truncated (existing RetentionLedger.applicable rejects every certificate then) OR current origin dimension cannot cover requirements. This is a sufficient failure proof, not a diagnosis inferred from not_recalled text. Preserve complete visited set/truncation and certificate owned/visited evidence.",
+    "Ordinary/n/cp veto only when destination structural dimension lacks required facets. Ignore budget for these sufficient vetoes; never mistake affordability for authority. Support veto only when required.support_allowed is empty, irrespective of supplied peer/group/relation roles. All five predicates must hold to assert all_work_ineligible. Otherwise unresolved_requires_full_admission; never infer eligibility or select a work route.",
+    "Entire role/content product shares actor/current scope/required demand/current cursor/recall and empty support. Factor-invariance proof covers all declared assignments without substituting unpaid native comparisons. No comparison receipt, launch, TD5 admission, history/credit, debt discharge, reserve change or task fulfillment. Existing exact funding results preserved.",
+    "Gate: six exact methods, both settings complete/restored reports independently audited, 128 synthetic seat/facet/truncation/support cases (8x4x2x2), at least12 output mutations and all3 wrong paired inputs rejected per setting. Generic kernel controls are hypothetical observations only, never native mutations. Preserve all510 preceding identities and freeze before one bounded invocation.",
+    "Acceptance is limited to fail-closed universal veto prerequisite, not solved demand, paid comparison, recall repair or parent FT7-FT9. No new price, fixture, free/shared factorization credit or exclusion of domain assignments. Subsequent live decision controller and route-free fresh panels require separate prospective proof."
+  ],
+  "modules": [
+    "full_theory/universal_td5_veto.py",
+    "full_theory/universal_td5_veto_audit.py",
+    "tools/evaluate_ft7_universal_td5_veto.py"
+  ],
+  "tests": "tests_ft7/test_universal_td5_veto.py",
+  "methods": [
+    "test_full_domain_invariant_coverage",
+    "test_independent_current_state",
+    "test_exact_roundtrip",
+    "test_all_boundary_cases",
+    "test_forgery_rejection",
+    "test_no_authority_or_replay"
+  ],
+  "expected_records": 4,
+  "expected_boundary_cases": 128
+}
