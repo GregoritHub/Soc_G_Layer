@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "622eb345b306de7f6222f18f33a892a8d07fb960",
+  "status": "running",
+  "run_id": "ft7-admission-final-20261016T023350Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-16T03:03:50.000Z",
+  "expected_head": "c6991f5841a2c59a0f8fa570ad09062deffcafd9",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1d",
   "current_window_admission_progress": {
     "status": "partially_verified_not_accepted",
@@ -125,7 +125,9 @@
       "closed_output_files": 177,
       "closed_prior_operations_files": 26,
       "accepted_raw_inputs_bound": 80,
-      "invoked": false
+      "invoked": false,
+      "launch_deadline": "2026-10-16T03:02:50.000Z",
+      "current_owner": "ft7-admission-final-20261016T023350Z"
     },
     "continuation_children_failed": 0,
     "continuation_children_interrupted": 0,
