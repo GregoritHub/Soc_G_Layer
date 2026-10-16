@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": "ft7-finish2-2026-10-16T06:19:52.105Z",
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "ee30c9cc361a42df944237607a75638cdb72ea44",
+  "status": "running",
+  "run_id": "ft7-fresh-skills-2026-10-16T07:29:29.572Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-16T07:59:29.572Z",
+  "expected_head": "850c21a2adf60a8e43e6e6799b4fc92bb71b0e6e",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1d",
   "current_window_admission_progress": {
     "status": "passed",
@@ -314,7 +314,7 @@
     "checkpoint_evidence_manifest_members": 97,
     "checkpoint_protocol_commit": "1287cd5f48c39069e960488e119eb0234805d5c8",
     "checkpoint_protocol_sha256": "f338055f8293b817ed7c8d0fd3bf292c653d483d303bba10f856d642f7f009ca",
-    "completed_panel": "All forty exact projections: before, partial, ready, masks 1\u201315, restarted and cancelled in both settings; full independent audits and exact typed roundtrip.",
+    "completed_panel": "All forty exact projections: before, partial, ready, masks 1–15, restarted and cancelled in both settings; full independent audits and exact typed roundtrip.",
     "remaining_panel": "None for this bounded bridge. All eight exact actual methods and unchanged final aggregate passed.",
     "operational_boundary": "Historical prospective launcher guard before workflow mask 2 remains exact. The separate frozen bounded runner completed only sixteen missing records, all eight original actual methods and unchanged finish, with no failure or interruption. All 79 prior output files unchanged.",
     "accepted_input_raw_exact": 40,
@@ -363,7 +363,7 @@
       "paths_removed": 0
     }
   },
-  "next_batch": "Prospectively register route-free fresh skills and paid recall organization, then changed-input comparisons and genuine history-only choice with matched work/use/full staging. FT7 pair/population and FT8\u2013FT9 remain.",
+  "next_batch": "Prospectively register route-free fresh skills and paid recall organization, then changed-input comparisons and genuine history-only choice with matched work/use/full staging. FT7 pair/population and FT8–FT9 remain.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -684,7 +684,7 @@
     "batch": "FT7.1b2b3b",
     "accepted": false,
     "required_next": "Planned, not preregistered: separately bound current TD5/capacity integration, route-free fresh skill work and any new payment required by changed inputs; genuine same-priority/native-cost distinct-element ties, autonomous live history-only choice, chosen paid movement/downstream use, matched feedback controls and full preparation/live-staging composition. All FT8 obligations remain unchanged.",
-    "scope": "Complete declared request-window comparison payment accepted in its bounded scope only. Fresh skill/current admission/live choice and all parent FT7\u2013FT9 work remain unfinished. Failed b1 remains unaccepted.",
+    "scope": "Complete declared request-window comparison payment accepted in its bounded scope only. Fresh skill/current admission/live choice and all parent FT7–FT9 work remain unfinished. Failed b1 remains unaccepted.",
     "permission": "Technical coding, testing, diagnosis, lawful repairs and retries through FT9 belong to the agent without renewed user approval. Preserve criteria except the explicitly approved comparison amendment; FT8 unchanged."
   },
   "prior_comparison_hold": {
