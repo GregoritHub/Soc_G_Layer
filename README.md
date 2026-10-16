@@ -1,5 +1,7 @@
 # Soc G Layer
 
+[measured] 16 October 2026 UTC: FT7.Changed.Domain.A6 accepted complete factorized changed-input grammar: six methods/four independent saved audits/forty forgeries,487 source identities/prior481 exact. Canonical5,832/workflow4,920,480 assignments; no native comparison/payment/admission/choice. Oldest demand/source/controller/access prefixes unchanged. Funding preflight next; parent FT7–FT9 and FT8 obligations remain open. See FT7_Changed_Input_Domain_A6_Record.md.
+
 Latest setup-only update, 16 October 2026 UTC: **FT.Setup.ToolOverlay.A2 passed** six exact controls and byte-exact copying of501 selected public files. The sole setup change includes the exact A3 continuation tool; all other setup AST and474 predecessor identities are unchanged, with the prior475 bridge verified. A5 acceptance stands. No dependency rebuild/native work or FT9 standalone acceptance. See `docs/ft/FT_Setup_Tool_Overlay_A2_Record.md`.
 
 Latest scoped acceptance, 16 October 2026 UTC: **FT7.Observed.Fields.A5 passed** six exact methods, ten independently audited records and twenty forgery checks. Three fresh exact-revision reads cost6/6 per setting, yielding21 canonical/9 workflow fields; workflow kit/stock remain name-only. Both restarts byte-exact; all475 frozen/prior468 identities exact. No accepted stage replay or main-choice authority. Setup continuation inclusion, changed-input comparisons and parent FT7–FT9 remain open. See `docs/ft/FT7_Observed_Fields_A5_Record.md`.

@@ -1,0 +1,427 @@
+{
+  "passed": true,
+  "methods": [
+    "test_complete_factorization",
+    "test_current_owned_evidence",
+    "test_exact_saved_panel",
+    "test_forgery_rejection",
+    "test_index_bijection",
+    "test_no_native_authority"
+  ],
+  "records": [
+    {
+      "record": "complete",
+      "file": "canonical-complete.json.gz",
+      "sha256": "894349b41ab510ea230be8b708fae3114ebe2aefd565db0776f5a571a47b1189",
+      "passed": true,
+      "setting": "canonical",
+      "windows": 1,
+      "role_sizes": {
+        "stock": 9,
+        "tool": 9,
+        "repair_stock": 9,
+        "procedure": 2,
+        "peer": 2,
+        "group": 2
+      },
+      "assignments": 5832,
+      "observations": 8,
+      "oldest_task_exact": true,
+      "controller_prefix_exact": true,
+      "comparison_paid": false,
+      "execution_authorized": false,
+      "td5_admitted": false,
+      "history_choice": false
+    },
+    {
+      "record": "restored",
+      "file": "canonical-restored.json.gz",
+      "sha256": "d70584840d736e6f2adcd134b61d20aa8e10e6142f4552b38f5457f723debdf0",
+      "passed": true,
+      "setting": "canonical",
+      "windows": 1,
+      "role_sizes": {
+        "stock": 9,
+        "tool": 9,
+        "repair_stock": 9,
+        "procedure": 2,
+        "peer": 2,
+        "group": 2
+      },
+      "assignments": 5832,
+      "observations": 8,
+      "oldest_task_exact": true,
+      "controller_prefix_exact": true,
+      "comparison_paid": false,
+      "execution_authorized": false,
+      "td5_admitted": false,
+      "history_choice": false
+    },
+    {
+      "record": "complete",
+      "file": "workflow-complete.json.gz",
+      "sha256": "e40916fe639aac8af7dc501ec483e6ecf550e9b5ad9a2724c18af82d73fff75c",
+      "passed": true,
+      "setting": "workflow",
+      "windows": 510,
+      "role_sizes": {
+        "stock": 12,
+        "relation": 67,
+        "procedure": 2,
+        "peer": 2,
+        "group": 3
+      },
+      "assignments": 4920480,
+      "observations": 10,
+      "oldest_task_exact": true,
+      "controller_prefix_exact": true,
+      "comparison_paid": false,
+      "execution_authorized": false,
+      "td5_admitted": false,
+      "history_choice": false
+    },
+    {
+      "record": "restored",
+      "file": "workflow-restored.json.gz",
+      "sha256": "c3b213d6bc4754859f00f492e5efdac5b1d2f66fee6b8df3ff6b38d4e7625430",
+      "passed": true,
+      "setting": "workflow",
+      "windows": 510,
+      "role_sizes": {
+        "stock": 12,
+        "relation": 67,
+        "procedure": 2,
+        "peer": 2,
+        "group": 3
+      },
+      "assignments": 4920480,
+      "observations": 10,
+      "oldest_task_exact": true,
+      "controller_prefix_exact": true,
+      "comparison_paid": false,
+      "execution_authorized": false,
+      "td5_admitted": false,
+      "history_choice": false
+    }
+  ],
+  "probes": [
+    {
+      "setting": "canonical",
+      "name": "native",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "fields",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "source",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "controller",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "demand",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "windows",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "pool_omit",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "pool_value",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "pool_evidence",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "count",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "order",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "authority",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "native_pair_builder",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "native_pair_auditor",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "field_pair_builder",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "field_pair_auditor",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "old_pair_builder",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "old_pair_auditor",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "refresh_pair_builder",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "refresh_pair_auditor",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "native",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "fields",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "source",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "controller",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "demand",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "windows",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "pool_omit",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "pool_value",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "pool_evidence",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "count",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "order",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "authority",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "native_pair_builder",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "native_pair_auditor",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "field_pair_builder",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "field_pair_auditor",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "old_pair_builder",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "old_pair_auditor",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "refresh_pair_builder",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "refresh_pair_auditor",
+      "rejected": true
+    },
+    {
+      "setting": "algebra",
+      "name": "negative",
+      "rejected": true
+    },
+    {
+      "setting": "algebra",
+      "name": "upper",
+      "rejected": true
+    },
+    {
+      "setting": "algebra",
+      "name": "bool",
+      "rejected": true
+    },
+    {
+      "setting": "algebra",
+      "name": "zero_radix",
+      "rejected": true
+    },
+    {
+      "setting": "algebra",
+      "name": "digit",
+      "rejected": true
+    },
+    {
+      "setting": "algebra",
+      "name": "arity",
+      "rejected": true
+    }
+  ],
+  "indices": [
+    {
+      "setting": "canonical",
+      "checked": 29,
+      "assignments": 5832,
+      "all_factor_values": true
+    },
+    {
+      "setting": "workflow",
+      "checked": 592,
+      "assignments": 4920480,
+      "all_factor_values": true
+    }
+  ],
+  "prefixes": [
+    {
+      "setting": "canonical",
+      "bindings": 41,
+      "particulars": 194,
+      "receipts": 84,
+      "exact": true,
+      "old_native_sha256": "b6310743f81618af42f2a8528db3202cddfed6e97da0c009ca8b4df099a3b3ae",
+      "native_sha256": "03948fc18b149d5935c3d381432c05d361cd4678bdaceecfd2bb5c6fd717e3ee"
+    },
+    {
+      "setting": "workflow",
+      "bindings": 41,
+      "particulars": 192,
+      "receipts": 85,
+      "exact": true,
+      "old_native_sha256": "3d14a3c9d7c0bfdd1dff24979c264068beed4665e4d416da0bd0450c78e11a06",
+      "native_sha256": "9b16ec1fd67959eb1ab7a9bcbbca50c28723d7f5abc3bd864865090d91a3c7ae"
+    }
+  ],
+  "algebra": [
+    {
+      "radices": [],
+      "rows": 1,
+      "exact": true
+    },
+    {
+      "radices": [
+        1
+      ],
+      "rows": 1,
+      "exact": true
+    },
+    {
+      "radices": [
+        2
+      ],
+      "rows": 2,
+      "exact": true
+    },
+    {
+      "radices": [
+        1,
+        3
+      ],
+      "rows": 3,
+      "exact": true
+    },
+    {
+      "radices": [
+        2,
+        3,
+        4
+      ],
+      "rows": 24,
+      "exact": true
+    },
+    {
+      "radices": [
+        3,
+        1,
+        2,
+        4
+      ],
+      "rows": 24,
+      "exact": true
+    }
+  ],
+  "source_identities": 487,
+  "prior_identities": 481,
+  "native_work_calls": 0,
+  "engine_restore_calls": 0,
+  "accepted_stage_replays": 0,
+  "parent_accepted": false
+}

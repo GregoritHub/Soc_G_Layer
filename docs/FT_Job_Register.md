@@ -1,5 +1,7 @@
 # Full Theory job register — Soc G Layer
 
+[measured] 16 October 2026 UTC: FT7.Changed.Domain.A6 accepted complete factorized changed-input grammar: six methods/four independent saved audits/forty forgeries,487 source identities/prior481 exact. Canonical5,832/workflow4,920,480 assignments; no native comparison/payment/admission/choice. Oldest demand/source/controller/access prefixes unchanged. Funding preflight next; parent FT7–FT9 and FT8 obligations remain open. See FT7_Changed_Input_Domain_A6_Record.md.
+
 [measured] 16 October 2026 UTC: FT.Setup.ToolOverlay.A2 accepted: six new methods and501 exact copied files. One explicit A3 continuation-tool path added; complete remaining setup AST unchanged. Current481 identities/prior475 bridge exact,474 predecessor files unchanged. A5 source preserved before the setup change; zero dependency rebuilds/native work/accepted gate replays. FT9 standalone remains open. See FT_Setup_Tool_Overlay_A2_Record.md.
 
 [measured] 16 October 2026 UTC: FT7.Observed.Fields.A5 accepted in paid exact-field-read scope: six methods, ten exact saved independent audits, twenty forgeries rejected, two exact restarts,475 frozen/prior468 unchanged. Canonical21/workflow9 new fields at6/6 each; name-only workflow kit/stock preserved. No comparison/admission/history/main-work authority or parent FT7–FT9 acceptance. See FT7_Observed_Fields_A5_Record.md. Conditional setup-only A2 protocol is registered; its script change waits for closed A5.
