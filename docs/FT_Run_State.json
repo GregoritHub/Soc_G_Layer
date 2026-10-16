@@ -5,7 +5,7 @@
   "run_id": "ft7-skill-practice-2026-10-16T09:37:19.365Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-16T10:15:52.918Z",
-  "expected_head": "efc247da7ef40fb43e45fce31784329797e4307d",
+  "expected_head": "8961d8f90705f8007f0b41745582403c823b1f7c",
   "current_batch": "FT7.Skill.Practice.A2",
   "current_window_admission_progress": {
     "status": "passed",
@@ -2328,7 +2328,7 @@
     "saved_records": 40
   },
   "skill_practice_a2": {
-    "status": "frozen_not_invoked",
+    "status": "running",
     "accepted": false,
     "protocol_commit": "efc247da7ef40fb43e45fce31784329797e4307d",
     "protocol_sha256": "d5f71f7248c99c23d247f9b25fd9228c297751dd77ba55013e170f4b37831865",
@@ -2338,6 +2338,11 @@
     "required_methods": 6,
     "output": "owned-repair-practice-a2-attempt1",
     "operations": "owned-repair-practice-a2-operations",
-    "no_accepted_work_replay": true
+    "no_accepted_work_replay": true,
+    "freeze_commit": "8961d8f90705f8007f0b41745582403c823b1f7c",
+    "invoked": true,
+    "execution_session": 79939,
+    "started_utc": "2026-10-16T09:46:24.637491+00:00",
+    "stop_at": "2026-10-16T10:13:00+00:00"
   }
 }
