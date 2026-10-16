@@ -4,11 +4,11 @@
   "status": "running",
   "run_id": "ft7-admission-final-20261016T023350Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-16T03:03:50.000Z",
-  "expected_head": "decb862e4a2cee41676138d6d56e68e145c297e1",
+  "lease_expires_at": "2026-10-16T03:17:59.000Z",
+  "expected_head": "eda68e51c648989c850277d6956468f2d96b5dc1",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1d",
   "current_window_admission_progress": {
-    "status": "continuation2_running_not_accepted",
+    "status": "execution_interrupted_recovery_planned_not_accepted",
     "implementation_commit": "a79669120939bfb0ee5f2dd7914a45b44f3c5696",
     "freeze_commit": "86c613185216ae09b76ef1a1dbd764847ec2c31e",
     "frozen_identities": 406,
@@ -17,7 +17,7 @@
     "required_methods": 8,
     "required_saved_records": 40,
     "required_predecessor_identities": 484,
-    "actual_methods_completed": 4,
+    "actual_methods_completed": 5,
     "saved_records_completed": 40,
     "record_launches_closed_at_deadline": 31,
     "active_records_at_deadline": 4,
@@ -27,7 +27,7 @@
     "new_native_work": false,
     "accepted": false,
     "record": "docs/ft/FT7_1b2b3b2b2b2b2b2b1d_Record.md",
-    "owned_processes_remaining": 3,
+    "owned_processes_remaining": 0,
     "original_outcome": "checkpoint",
     "stop_reason": "prospective deadline",
     "original_children_failed": 0,
@@ -35,7 +35,6 @@
     "remaining_records": [],
     "remaining_methods": [
       "test_window_operand_cost_forgery_rejected",
-      "test_capacity_and_input_pairing_rejected",
       "test_old_nominees_and_bounded_cells",
       "test_native_and_prefixes_unchanged"
     ],
@@ -97,7 +96,7 @@
       "exit_code": 0
     },
     "continuation2": {
-      "status": "running_missing_only",
+      "status": "execution_session_lost",
       "protocol_commit": "6ecaa8977e64f114e719343095c69a3decb5a7c2",
       "protocol_sha256": "37633169ba74bbc6955c0668d5452bb6cce10ba4f3abf2957bc8299de024f044",
       "implementation_commit": "5e90318166710ea10681ffd316776a7604418052",
@@ -126,11 +125,32 @@
       "output": "current-window-admission-continuation2",
       "started_utc": "2026-10-16T02:34:13Z",
       "saved_records_completed": 40,
-      "actual_methods_completed": 4,
-      "active_methods": [
-        "test_window_operand_cost_forgery_rejected",
-        "test_capacity_and_input_pairing_rejected"
-      ]
+      "actual_methods_completed": 5,
+      "active_methods": [],
+      "interruption": {
+        "observed_utc": "2026-10-16 02:47:59 UTC",
+        "session": 13027,
+        "error": "exec-server transport disconnected, then Unknown process id",
+        "last_closed_job_utc": "2026-10-16T02:44:03.875729+00:00",
+        "closed_jobs": 6,
+        "unclosed_methods": [
+          "test_window_operand_cost_forgery_rejected",
+          "test_old_nominees_and_bounded_cells"
+        ],
+        "never_started_methods": [
+          "test_native_and_prefixes_unchanged"
+        ],
+        "read_only_current_process_inventory": {
+          "examined": 16,
+          "matching_workers": 0,
+          "permission_denied": 0
+        },
+        "namespace_entry": false,
+        "signals": false,
+        "engine_failure_reported": false,
+        "exact_underlying_cause": "not established",
+        "passed_restart_controls_log": "Saved passing result and parent exit-zero job exist; controls log contains start line only. Preserved without rerunning the passed body."
+      }
     },
     "continuation_children_failed": 0,
     "continuation_children_interrupted": 0,
@@ -144,6 +164,12 @@
       "nested_capacity_members": 226,
       "nested_checkpoint_members": 97,
       "nested_initial_members": 40
+    },
+    "continuation3": {
+      "status": "protocol_only_not_implemented_not_invoked",
+      "protocol_commit": "eda68e51c648989c850277d6956468f2d96b5dc1",
+      "protocol_sha256": "47c15c2c72e994b3dc318c50640127e70069f18c22944e159351ceae7dc2811a",
+      "inapplicable_reason": "Requires fully closed passing prior runs; continuation2 was interrupted. Preserve unused protocol; separate recovery required."
     }
   },
   "current_window_capacity_progress": {
