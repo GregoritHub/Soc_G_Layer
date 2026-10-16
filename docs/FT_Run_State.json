@@ -2,13 +2,13 @@
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
   "status": "running",
-  "run_id": "ft7-forgery-recovery2-20261016T044200Z",
+  "run_id": "ft7-finish2-2026-10-16T06:19:52.105Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-16T05:38:10.000Z",
-  "expected_head": "85d0c65ca5f5fe2533be6d771217e23d45535ede",
+  "lease_expires_at": "2026-10-16T06:49:52.105Z",
+  "expected_head": "b1d3a6834457897a8542f32331118fe8f7bfd523",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1d",
   "current_window_admission_progress": {
-    "status": "method_recovery2_running_not_accepted",
+    "status": "all_methods_passed_aggregate_pending",
     "implementation_commit": "a79669120939bfb0ee5f2dd7914a45b44f3c5696",
     "freeze_commit": "86c613185216ae09b76ef1a1dbd764847ec2c31e",
     "frozen_identities": 406,
@@ -17,7 +17,7 @@
     "required_methods": 8,
     "required_saved_records": 40,
     "required_predecessor_identities": 484,
-    "actual_methods_completed": 7,
+    "actual_methods_completed": 8,
     "saved_records_completed": 40,
     "record_launches_closed_at_deadline": 31,
     "active_records_at_deadline": 4,
@@ -27,15 +27,13 @@
     "new_native_work": false,
     "accepted": false,
     "record": "docs/ft/FT7_1b2b3b2b2b2b2b2b1d_Record.md",
-    "owned_processes_remaining": 2,
+    "owned_processes_remaining": 0,
     "original_outcome": "checkpoint",
     "stop_reason": "prospective deadline",
     "original_children_failed": 0,
     "original_children_interrupted": 0,
     "remaining_records": [],
-    "remaining_methods": [
-      "test_window_operand_cost_forgery_rejected"
-    ],
+    "remaining_methods": [],
     "continuation_protocol_sha256": "a8602bc91ef506325968f6a9dbac34975064d66c2a5acfa477c290f411978400",
     "continuation_freeze_commit": "f72e518a289404a1afeb67ff2bf48634c0068fff",
     "continuation_frozen_identities": 4,
@@ -243,7 +241,7 @@
       "inapplicable_reason": "Recovery1 lost its session; exact closed outcome prerequisite absent."
     },
     "method_recovery2": {
-      "status": "running",
+      "status": "closed_checkpoint",
       "invoked": true,
       "execution_session": 64586,
       "output": "current-window-admission-method-recovery2",
@@ -256,7 +254,7 @@
       "original_source_unchanged": 406,
       "prior_operational_identities": 12,
       "passed_methods_preserved": 7,
-      "active_children": 1,
+      "active_children": 0,
       "method": "test_window_operand_cost_forgery_rejected",
       "stop_at": "2026-10-16T05:12:00.000Z",
       "sole_evaluator_worker": true,
@@ -353,7 +351,7 @@
       "paths_removed": 0
     }
   },
-  "next_batch": "Wait the one active original forgery-rejection method naturally; do not restart recovery. After quiescent all8pass checkpoint, bind and freeze conditional Recovered_Finish1 then run only unchanged aggregate. If current recovery aggregate already passed, never run finalizer. After B1D: prospectively implement paid recall organization/fresh skills, new comparisons after input changes and genuine history-only choice/matched work/use/full staging, with FT8 intact.",
+  "next_batch": "Freeze Recovered_Finish2 complete binding; run unchanged aggregate only. All 8 passed methods and 40 records preserved.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
