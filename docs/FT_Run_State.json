@@ -129,9 +129,9 @@
   "status": "running",
   "run_id": "ft7-cue-continuation-20261016T1814Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-16T19:04:48.270739+00:00",
-  "expected_head": "05bca3240eb75460b95b7c4764454752110687c8",
-  "current_batch": "FT7.Fresh.CueComparison.A12C accepted; next new-cue skill/closure and current admission integration",
+  "lease_expires_at": "2026-10-16T19:07:54.436264+00:00",
+  "expected_head": "bd78f0aec0a76a0c700a6824cc4d7793604a15b7",
+  "current_batch": "FT7.Owned.CueProcessing.A12D prospective native opportunity processing",
   "canonical_quotation_a8": {
     "status": "passed",
     "accepted": true,
@@ -3133,6 +3133,22 @@
     "record": "docs/ft/FT7_Cue_Comparison_A12C_Record.md",
     "summary": "docs/ft/FT7_Cue_Comparison_A12C_Summary.json",
     "clean_dependency_rebuild": false,
-    "setup_evaluator_inclusion_pending": true
+    "setup_evaluator_inclusion_pending": true,
+    "acceptance_commit": "bd78f0aec0a76a0c700a6824cc4d7793604a15b7"
+  },
+  "cue_processing_a12d": {
+    "status": "protocol_registered_before_code",
+    "accepted": false,
+    "mask": 1,
+    "settings": [
+      "canonical",
+      "workflow"
+    ],
+    "method_gate": 8,
+    "record_gate": 12,
+    "source_prefix_identities": 582,
+    "main_execution_authorized": false,
+    "history_choice": false,
+    "parent_accepted": false
   }
 }

@@ -1,0 +1,51 @@
+{
+  "batch": "FT7.Owned.CueProcessing.A12D",
+  "version": 1,
+  "prior_source_freeze": "contracts/ft/FT7_Cue_Comparison_A12C_Source_Freeze_v1.json",
+  "prior_identities": 582,
+  "inputs": {
+    "canonical": {
+      "file": "canonical-01-complete.json.gz",
+      "sha256": "8e0ba4b7ba8bbd70721495ae8b1b93bae3e0fd6e2a88974912e673d2a72e0a10",
+      "native_sha256": "5c9d22682690aa364472827a540b9fd44a4cbd548a441d3afa547ffa14a4ca0d",
+      "windows_sha256": "8a9b002e17587d5e9d8fc43deade4a79b585c41ba522f2c3bc735cf19c62a5cc"
+    },
+    "workflow": {
+      "file": "workflow-01-complete.json.gz",
+      "sha256": "a06fac624fca88255f87119c0372660efbee62722b8e166d4fad1158cb30495e",
+      "native_sha256": "47e96565307d7ff3dbe55c03fb32b380687cb81fa1b37fbf0c7dfffddfbf8975",
+      "windows_sha256": "c6fc5679220fef330b19243343902b11e9b22a56f92d81bcf80aae727e56b92e"
+    }
+  },
+  "archive": {
+    "filename": "FT7_Cue_Comparison_A12C_Validated_Evidence_20261016.zip",
+    "sha256": "8ac562f96b824bd7fe0afaed961d0954d9af390e70510579a705dc6d60c52021",
+    "members": 327
+  },
+  "scope": "Separate actual paid new-cue native situated processing prerequisite on fixed mask1 representative in both settings. All other A12C branches stay unchanged. This is not independent skill/capacity, Shell clearance, main TD5 work/fulfillment, history credit, full-mask/pair coverage or parent acceptance.",
+  "grammar": "Exact accepted complete A12C mask1 native/windows pair only. Each actor derives every distinct target named in its already paid u7.encounter-facts-v1 received particulars for the same context/receiver, including adverse/incomplete cases. Sort targets by typed stable identity, bound<=16. No selection by safety/success/route, no new facts/feedback/roles/pattern fixtures. For each target use every received detail of all latest received fact sources for target/context/receiver, retaining conflicts/unknowns. Native EncounterRequest default engage, target as carrier and ObjectRef(actor,1) as bearer, cue/context from current owned task. Native operation alone computes actual routes, effects, intended action, cost and cursor. No input desired output/route accepted by adapter.",
+  "lifecycle": "Native encounter start/advance/ready/commit for each discovered target; work_limit exact positive, ready may be left uncommitted, cancellation terminal no refund. Complete means every registered encounter job settled succeeded at operation level; intended wait/inspect/rest remains an honest output, not fulfilled demand or cleared Shell. Paid failure is preserved with failed phase. No native configuration, original source, task, comparison, reserve/history/controller rewrite. No source comparison receipt applies to changed actor inputs afterward.",
+  "records": "12 total: both settings before/one-unit partial/first-job ready uncommitted/complete all targets; exact saved-partial restart completed using identical remaining quantum/commit schedule; saved-partial cancellation. Save each record via exclusive atomic fsync, byte/typed readback and independent exact backup before further stages. Source inputs two exact saved A12C records; never rerun A12C generation/audits/tests/finish.",
+  "independent": "Auditor independently groups latest received facts, enumerates exact targets/evidence and request commands, verifies immutable journal/command prefix and exact contiguous event/job/progress/payment/results. Existing independent chronological development/Shell/native auditors reconstruct all semantic outputs, native routes/costs/access and legitimate pattern provenance; old ftwc extent bound to exact immutable source operations. Exact engine restoration checks access/result/cursor replay, without new paid work. No imports of new runtime or effect/selection policies in independent audit.",
+  "methods": [
+    "test_complete_domain",
+    "test_partial_ready",
+    "test_restart_exact",
+    "test_cancel_no_refund",
+    "test_scope_prefixes",
+    "test_wrong_input_rejected",
+    "test_forgery_rejected",
+    "test_terminal_idempotence"
+  ],
+  "gate": "All12 saved records independently audit;8 exact actual methods; fixed source freeze and all582 predecessors exact; source/snapshot/prefix/payment/authority forgeries rejected. Preserve complete target domain and all native adverse outputs, not a required successful main action. Zero mastership/clearance/parent acceptance from empty pattern input. Actual terminal idempotence.",
+  "failure_policy": "Preserve every attempt and job boundary; diagnose/prospectively register corrections and freeze before retries. Do not replay completed paid primary work or passing methods. No identical-failure rerun or weakening of authority/native semantics/FT8/requirements.",
+  "operations": "One expected-head lease owner; refresh30minutes and verify full public tree each save. Exclusive init/generate/control/audit/tests/finish jobs with>=300seconds lease/deadline at launch. Preserve evidence immediately and persist before full validation. Up to three independent saved readers may run concurrently; no dependent mutation overlap in one simulated world.",
+  "new_files": [
+    "full_theory/cue_processing.py",
+    "full_theory/cue_processing_audit.py",
+    "tools/evaluate_ft7_cue_processing.py",
+    "tests_ft7/test_cue_processing.py"
+  ],
+  "ft8_unchanged": true,
+  "no_accepted_replay": true
+}
