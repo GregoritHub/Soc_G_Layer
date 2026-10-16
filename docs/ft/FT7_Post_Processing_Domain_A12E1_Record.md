@@ -1,0 +1,11 @@
+# A12E1 current post-processing domain acceptance
+
+16 October 2026. Accepted in the registered engineering scope only. Prospective protocol: `5f710961be124579a01252f5b1d1bdb82ed1eab6`. Implementation: `70f310815856ccf561b883ac0942ba33fd68accf`. Source freeze: `6f2036b37c41ab294efa5eb7c3ec17052f368d0c`; all 600 identities and all 594 predecessors were exact before and after the evaluation.
+
+The single bounded evaluation projected all 30 accepted complete processing checkpoints. It produced 30 atomically persisted, fsynced, typed-read and byte-backed reports. Thirty new independent audit outcomes reconstructed the current task, oldest-need order, paid content inventory, role evidence, revision rules, factor radices/product and exact bindings. All six new exact methods passed. Forty output/input/algebra forgeries were rejected. All 62 exclusive jobs closed successfully with no failure file.
+
+Only saved participant access and exact immutable A12C source windows were read. No engine was restored; no native view, policy or executor was called; no native work, new payment or accepted-stage replay occurred. Canonical reports retain one current request; workflow reports retain all three legal current content windows. Every declared role pool includes `None` plus every explicitly supported usable or unusable alternative, and the full Cartesian domain is represented by an exact mixed-radix bijection without pruning.
+
+Private evidence `FT7_Post_Processing_Domain_A12E1_Validated_Evidence_20261016.zip` is 46,630,899 bytes, SHA256 `04f4ddb762ebcb335864e4659ad9aa101dde48ee6f3711a465df3d8a791205dd`, with 224 verified manifest members. Private retrieval identities are intentionally absent from public metadata.
+
+This establishes only the complete declared current explicit paid-observation grammar. It does not establish native eligibility, new comparison payment, TD5 admission, execution authority, history credit or history choice, and it does not accept parent FT7–FT9. All FT8 costs and denominators remain intact. Next: fund and freshly pay complete changed-input comparisons, then complete current TD5 roles/operands/costs, genuine ties, autonomous history-only choice, chosen paid work/use, matched controls, pairs/populations and FT8–FT9.
