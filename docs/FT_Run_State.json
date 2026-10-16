@@ -1,10 +1,10 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
+  "status": "running",
+  "run_id": "ft7-canonical-quote-a8-2026-10-16T13:41:05.386Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-16T14:11:05.386Z",
   "expected_head": "72b36c43df4c359f4066fe689bad79569e6d702c",
   "current_batch": "FT7.Comparison.Funding.A7",
   "current_window_admission_progress": {
