@@ -1,0 +1,42 @@
+{
+  "batch": "FT7.Fresh.CueIntake.A12B",
+  "version": 1,
+  "scope": "Actual native paid intake of every new A12A cue/mask descriptor. New version and namespace; no fresh skills, comparison, TD5 admission, history choice or parent acceptance.",
+  "prior_source_freeze": "contracts/ft/FT7_Observed_Cue_Panel_A12A_Source_Freeze_v2.json",
+  "prior_identities": 568,
+  "panel_protocol": "contracts/ft/FT7_Observed_Cue_Panel_A12A_Protocol_v1.json",
+  "archive": {
+    "filename": "FT7_1b2b3b2b1_Owned_Proposal_Domain_Evidence_20261015.zip",
+    "sha256": "3973f24b472e90ff047f5d61c16e3b987860c2d5478a62234dde213fc3212945",
+    "members": 20
+  },
+  "panel_files": {
+    "canonical": "canonical-panel.json",
+    "workflow": "workflow-panel.json"
+  },
+  "grammar": "Use complete independently audited A12A report from exact accepted fulfilled native/source/binding triple. Reject historical_only rows. All 15 masks of the one new cue in each setting, without outcome selection. Each independent branch starts from its exact original fulfilled source; preserve every original need/controller/native prefix. Never bypass A10R pending branch.",
+  "draft": "New ft.cue.task identity keyed by source digest and typed cue/mask digest. Preserve source task except new reference/label, A12A weights/priorities, cue attribute and evidence sources. Include all original task particulars plus every distinct paid label address for the selected cue, and the fresh paid payload disclosure. Evidence sources equal these actual particulars, deduplicated in stable order. Original context/target/links/other attributes/payload exact.",
+  "lifecycle": "declare task, native read of payload2 units, native bind3 units. One-unit partials, explicit ready-without-commit for read/bind, commit without extra debit, terminal idempotence. Cancellation of partial read or partial bind is terminal, preserves all debits, yields no task receipt or ownership; no refunds. No external edits to native internals.",
+  "records": "50 total. For each setting mask1: before/read_partial/read_ready/read_complete/bind_partial/bind_ready/complete (7); masks2..15 complete (14); exact restored read_partial and bind_partial continuation complete (2); cancelled read_partial and bind_partial (2). Restart/cancel use original saved partials, not primary replay. All stages typed roundtrip and independently full native/source/payment/access/command/prefix audited.",
+  "methods": [
+    "test_complete_panel",
+    "test_partial_ready_receipts",
+    "test_exact_restart",
+    "test_cancellation_debits",
+    "test_prefixes_and_no_authority",
+    "test_historical_and_wrong_input_rejected",
+    "test_saved_forgery_rejected",
+    "test_terminal_idempotence"
+  ],
+  "gate": "All50 exact saved records,8 exact actual methods, all568 predecessor source identities unchanged, complete source freeze, native replay and independent auditors. Complete per-case costs5/5; partial/ready no premature ownership. Tests consume saved records; no accepted or primary work replay.",
+  "operations": "One evaluator provides exclusive init/generate/audit/tests/finish jobs. Each job creates start marker exclusively, persists outputs before further work, writes closed outcome only on actual completion. Existing start/outcome forbids reinvocation. Init validates original archive and all members plus exact saved A12A panels. Generation one setting/mask at a time; mask1 emits controls from saved partials. Audit one saved record at a time. Tests/finish require all records audited. Stop launching new jobs if lease/deadline has under300seconds; no fabricated outcome or automatic retry of interrupted work. Continuation preserves exact frozen sources and outcomes. Final aggregate runs only once.",
+  "failure_policy": "Preserve failure start/end/log/source and all written records; diagnose and prospectively register any repair before changed implementation. Never replay completed primary native work to repair evidence/audit. Unknown interrupted jobs need explicit recovery protocol.",
+  "new_files": [
+    "full_theory/cue_task_intake.py",
+    "full_theory/cue_task_intake_audit.py",
+    "tools/evaluate_ft7_cue_task_intake.py",
+    "tests_ft7/test_cue_task_intake.py"
+  ],
+  "ft8_unchanged": true,
+  "no_old_gate_replay": true
+}
