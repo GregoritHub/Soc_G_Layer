@@ -133,3 +133,7 @@ Author-approved split supersedes the ruling-required status above. See FT7_1b2b2
 
 Accepted separate universal TD5 veto at frozen source 27ced080b3e734a35a71fb8126a56625829943d2. One invocation closed exit 0; 6 methods, 4 saved audits, 128 boundaries, 36 rejection probes, source517/prior510 exact. Complete canonical5832/workflow4920480 domain coverage, all work ineligible; zero native work/comparison payment/replays, zero workers. [Record](ft/FT7_Universal_TD5_Veto_A9_Record.md). Current oldest need still deferred; parent FT7 and FT8–FT9 pending. Ownership release follows verified publication.
 
+## 16 October 2026 — FT7.Owned.Rehearsal.A10R
+
+Separate auxiliary rejection closure accepted at frozen source6c7abe61fb7d7fcc3811925fcd39501e6389faee: exit0 at16:22:35.986580UTC, seven actual methods, ten saved independent audits, two exact restarts,16 original plus6 rejection probes,543/prior534 exact. Seven original audits and all completed primary paid work preserved; only previously unstarted workflow controls continued. Costs208/208 canonical and216/216 workflow, including honest paid failures; final incompatible workflow intention rejected before payment. Original A10 attempts and first A10R writer failure remain failed and preserved. Ni/seat8 and truncated32 task recall unchanged descriptively; no new eligibility, history choice or parent acceptance. Evidence91 manifest members verified and saved. [Record](ft/FT7_Owned_Rehearsal_A10R_Record.md). Setup-only A3 gate also closed separately; its record follows.
+

@@ -1,0 +1,183 @@
+{
+  "scope": "Descriptive saved-journal readback; no new admission claim, commands or engine restores.",
+  "records": [
+    {
+      "setting": "canonical",
+      "label": "before",
+      "native_sha256": "03948fc18b149d5935c3d381432c05d361cd4678bdaceecfd2bb5c6fd717e3ee",
+      "cursor": "ni",
+      "seat": 8,
+      "jobs": {},
+      "recall": [
+        {
+          "cue": "ObjectRef(identity=ObjectId(namespace='u5.reference', key='minor:Coin:10'), revision=1)",
+          "visited": 32,
+          "truncated": true
+        },
+        {
+          "cue": "ObjectRef(identity=ObjectId(namespace='u5.reference', key='suit:Wand'), revision=1)",
+          "visited": 3,
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "setting": "canonical",
+      "label": "complete",
+      "native_sha256": "cfa8497e2fa8c1022a3e47d656e2fa040a0f43c687eea4cfd2cb8108062d5ff3",
+      "cursor": "ni",
+      "seat": 8,
+      "jobs": {
+        "ft-rehearsal-a10:03948fc18b149d5935c3d381432c05d361cd4678bdaceecfd2bb5c6fd717e3ee:0": {
+          "completed": 36,
+          "failure": null,
+          "key": "ft-rehearsal-a10:03948fc18b149d5935c3d381432c05d361cd4678bdaceecfd2bb5c6fd717e3ee:0",
+          "recipe_key": "use-system-v1",
+          "required": 36,
+          "status": "succeeded"
+        },
+        "ft-rehearsal-a10:03948fc18b149d5935c3d381432c05d361cd4678bdaceecfd2bb5c6fd717e3ee:1": {
+          "completed": 45,
+          "failure": null,
+          "key": "ft-rehearsal-a10:03948fc18b149d5935c3d381432c05d361cd4678bdaceecfd2bb5c6fd717e3ee:1",
+          "recipe_key": "use-personal-v1",
+          "required": 45,
+          "status": "succeeded"
+        },
+        "ft-rehearsal-a10:03948fc18b149d5935c3d381432c05d361cd4678bdaceecfd2bb5c6fd717e3ee:2": {
+          "completed": 36,
+          "failure": null,
+          "key": "ft-rehearsal-a10:03948fc18b149d5935c3d381432c05d361cd4678bdaceecfd2bb5c6fd717e3ee:2",
+          "recipe_key": "use-system-v1",
+          "required": 36,
+          "status": "succeeded"
+        },
+        "ft-rehearsal-a10:03948fc18b149d5935c3d381432c05d361cd4678bdaceecfd2bb5c6fd717e3ee:3": {
+          "completed": 42,
+          "failure": null,
+          "key": "ft-rehearsal-a10:03948fc18b149d5935c3d381432c05d361cd4678bdaceecfd2bb5c6fd717e3ee:3",
+          "recipe_key": "use-system-v1",
+          "required": 42,
+          "status": "succeeded"
+        },
+        "ft-rehearsal-a10:03948fc18b149d5935c3d381432c05d361cd4678bdaceecfd2bb5c6fd717e3ee:4": {
+          "completed": 25,
+          "failure": "stale_dependency",
+          "key": "ft-rehearsal-a10:03948fc18b149d5935c3d381432c05d361cd4678bdaceecfd2bb5c6fd717e3ee:4",
+          "recipe_key": "use-system-v1",
+          "required": 25,
+          "status": "failed"
+        },
+        "ft-rehearsal-a10:03948fc18b149d5935c3d381432c05d361cd4678bdaceecfd2bb5c6fd717e3ee:5": {
+          "completed": 9,
+          "failure": null,
+          "key": "ft-rehearsal-a10:03948fc18b149d5935c3d381432c05d361cd4678bdaceecfd2bb5c6fd717e3ee:5",
+          "recipe_key": "use-personal-v1",
+          "required": 9,
+          "status": "succeeded"
+        },
+        "ft-rehearsal-a10:03948fc18b149d5935c3d381432c05d361cd4678bdaceecfd2bb5c6fd717e3ee:6": {
+          "completed": 15,
+          "failure": null,
+          "key": "ft-rehearsal-a10:03948fc18b149d5935c3d381432c05d361cd4678bdaceecfd2bb5c6fd717e3ee:6",
+          "recipe_key": "use-personal-v1",
+          "required": 15,
+          "status": "succeeded"
+        }
+      },
+      "recall": [
+        {
+          "cue": "ObjectRef(identity=ObjectId(namespace='u5.reference', key='minor:Coin:10'), revision=1)",
+          "visited": 32,
+          "truncated": true
+        },
+        {
+          "cue": "ObjectRef(identity=ObjectId(namespace='u5.reference', key='suit:Wand'), revision=1)",
+          "visited": 4,
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "setting": "workflow",
+      "label": "before",
+      "native_sha256": "9b16ec1fd67959eb1ab7a9bcbbca50c28723d7f5abc3bd864865090d91a3c7ae",
+      "cursor": "ni",
+      "seat": 8,
+      "jobs": {},
+      "recall": [
+        {
+          "cue": "ObjectRef(identity=ObjectId(namespace='u5.reference', key='minor:Coin:10'), revision=1)",
+          "visited": 32,
+          "truncated": true
+        },
+        {
+          "cue": "ObjectRef(identity=ObjectId(namespace='u5.reference', key='suit:Wand'), revision=1)",
+          "visited": 4,
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "setting": "workflow",
+      "label": "complete",
+      "native_sha256": "9539f0b2caeb1539fd903138981e67b67ac42331838b67d2e3bf06246f38845a",
+      "cursor": "ni",
+      "seat": 8,
+      "jobs": {
+        "ft-rehearsal-a10:9b16ec1fd67959eb1ab7a9bcbbca50c28723d7f5abc3bd864865090d91a3c7ae:0": {
+          "completed": 42,
+          "failure": null,
+          "key": "ft-rehearsal-a10:9b16ec1fd67959eb1ab7a9bcbbca50c28723d7f5abc3bd864865090d91a3c7ae:0",
+          "recipe_key": "workflow-use-system-v1",
+          "required": 42,
+          "status": "succeeded"
+        },
+        "ft-rehearsal-a10:9b16ec1fd67959eb1ab7a9bcbbca50c28723d7f5abc3bd864865090d91a3c7ae:1": {
+          "completed": 42,
+          "failure": null,
+          "key": "ft-rehearsal-a10:9b16ec1fd67959eb1ab7a9bcbbca50c28723d7f5abc3bd864865090d91a3c7ae:1",
+          "recipe_key": "workflow-use-personal-v1",
+          "required": 42,
+          "status": "succeeded"
+        },
+        "ft-rehearsal-a10:9b16ec1fd67959eb1ab7a9bcbbca50c28723d7f5abc3bd864865090d91a3c7ae:2": {
+          "completed": 48,
+          "failure": null,
+          "key": "ft-rehearsal-a10:9b16ec1fd67959eb1ab7a9bcbbca50c28723d7f5abc3bd864865090d91a3c7ae:2",
+          "recipe_key": "workflow-use-system-v1",
+          "required": 48,
+          "status": "succeeded"
+        },
+        "ft-rehearsal-a10:9b16ec1fd67959eb1ab7a9bcbbca50c28723d7f5abc3bd864865090d91a3c7ae:3": {
+          "completed": 48,
+          "failure": null,
+          "key": "ft-rehearsal-a10:9b16ec1fd67959eb1ab7a9bcbbca50c28723d7f5abc3bd864865090d91a3c7ae:3",
+          "recipe_key": "workflow-use-system-v1",
+          "required": 48,
+          "status": "succeeded"
+        },
+        "ft-rehearsal-a10:9b16ec1fd67959eb1ab7a9bcbbca50c28723d7f5abc3bd864865090d91a3c7ae:4": {
+          "completed": 36,
+          "failure": "stale_dependency",
+          "key": "ft-rehearsal-a10:9b16ec1fd67959eb1ab7a9bcbbca50c28723d7f5abc3bd864865090d91a3c7ae:4",
+          "recipe_key": "workflow-use-system-v1",
+          "required": 36,
+          "status": "failed"
+        }
+      },
+      "recall": [
+        {
+          "cue": "ObjectRef(identity=ObjectId(namespace='u5.reference', key='minor:Coin:10'), revision=1)",
+          "visited": 32,
+          "truncated": true
+        },
+        {
+          "cue": "ObjectRef(identity=ObjectId(namespace='u5.reference', key='suit:Wand'), revision=1)",
+          "visited": 4,
+          "truncated": false
+        }
+      ]
+    }
+  ]
+}
