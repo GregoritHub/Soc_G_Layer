@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft7-observation-refresh-2026-10-16T10:35:25.665Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-16T11:48:06.955Z",
-  "expected_head": "f6db28ae97902faeb145683ddd54a8cc5a567f8b",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "aa3462fd9054cc016f49e59e2b21febbe5d25164",
   "current_batch": "FT7.Skill.Refresh.A3",
   "current_window_admission_progress": {
     "status": "passed",
@@ -2239,7 +2239,7 @@
     "acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2"
   },
   "prior_paid_window_acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2",
-  "latest_acceptance_commit": "89f3272cb4eb8f59311aa5c7308c4d05fdb642c5",
+  "latest_acceptance_commit": "aa3462fd9054cc016f49e59e2b21febbe5d25164",
   "latest_local_acceptance": {
     "batch": "FT7.Skill.Refresh.A3",
     "passed": true,
@@ -2293,7 +2293,8 @@
     "comparison_paid": false,
     "td5_admitted": false,
     "history_choice": false,
-    "parent_accepted": false
+    "parent_accepted": false,
+    "acceptance_commit": "aa3462fd9054cc016f49e59e2b21febbe5d25164"
   },
   "recall_feasibility_progress": {
     "status": "diagnostic_pass",
@@ -2319,7 +2320,7 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T11:27:48.262Z",
+  "updated_at": "2026-10-16T11:28:58.740Z",
   "skill_intake_a1": {
     "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
@@ -2526,7 +2527,16 @@
       "all_members_verified": true
     },
     "record": "docs/ft/FT7_Skill_Refresh_A3_Record.md",
-    "summary": "docs/ft/FT7_Skill_Refresh_A3_Summary.json"
+    "summary": "docs/ft/FT7_Skill_Refresh_A3_Summary.json",
+    "acceptance_commit": "aa3462fd9054cc016f49e59e2b21febbe5d25164",
+    "ownership_released_at": "2026-10-16T11:28:58.740Z",
+    "owned_workers_at_release": 0,
+    "public_tree_verification": {
+      "commit": "aa3462fd9054cc016f49e59e2b21febbe5d25164",
+      "blobs": 632,
+      "all_local_public_blob_identities_exact": true,
+      "no_paths_removed": true
+    }
   },
   "prior_setup_acceptance_commit": "89f3272cb4eb8f59311aa5c7308c4d05fdb642c5"
 }
