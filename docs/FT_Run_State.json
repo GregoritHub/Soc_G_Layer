@@ -4,7 +4,7 @@
   "status": "running",
   "run_id": "ft7-owned-rehearsal-a10-2026-10-16T15:38:03.294Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-16T16:27:00.000Z",
+  "lease_expires_at": "2026-10-16T16:38:42.000Z",
   "expected_head": "28db7e93319ddc5a7f7620783d74718e7d7d2440",
   "current_batch": "FT7.Owned.Rehearsal.A10R",
   "canonical_quotation_a8": {
@@ -2361,7 +2361,7 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T15:57:00.000Z",
+  "updated_at": "2026-10-16T16:08:42Z",
   "skill_intake_a1": {
     "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
@@ -2771,6 +2771,14 @@
     "canonical_energy_time": 208,
     "workflow_saved_energy_time": 216,
     "failure": "workflow intention is not a valid use-personal native input; no output-consumer identity missing",
-    "no_accepted_stage_replay": true
+    "no_accepted_stage_replay": true,
+    "rejection_closure": {
+      "status": "digest_corrected_not_invoked",
+      "failed_freeze": "20a593626af16a92f09f6e960006575f2b4e4d0a",
+      "failed_exit_code": 1,
+      "new_paid_work": 0,
+      "methods": 0,
+      "protocol_commit": "6e0fac45fd4316a76298c77c50f5065af0fe4a6f"
+    }
   }
 }
