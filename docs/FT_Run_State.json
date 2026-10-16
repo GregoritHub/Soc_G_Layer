@@ -1,6 +1,3 @@
-Warning: truncated output (original token count: 32360)
-Total output lines: 3407
-
 {
   "a12b_held_release": {
     "status": "held_not_accepted",
@@ -1646,7 +1643,237 @@ Total output lines: 3407
         "passed": true,
         "base": "fdede6f16721f06422d0798a79d84170969b83f8",
         "held": "c8bef62d623b55054594d1328dfd649c52811641",
-        "dependency_recipe_sha256": "df4bcf2319f6478f2…2360 tokens truncated…_exact": true,
+        "dependency_recipe_sha256": "df4bcf2319f6478f211f2f160a7afa086e7fa2f5500de3b214dbb00987dd1974",
+        "layer_files": 265,
+        "repair_freeze_files": 20,
+        "baseline_files": 1093,
+        "historical_files": 210,
+        "verified_archive_members": 209,
+        "claim": "Exact prepared inputs; execute the declared tests separately."
+      },
+      "engine_gate_rerun": false
+    }
+  },
+  "prior_ft7_1b2b3b2a_acceptance": {
+    "batch": "FT7.1b2b3b2a",
+    "passed": true,
+    "methods": 10,
+    "failures": 0,
+    "errors": 0,
+    "predecessor_identities": 368,
+    "saved_records": 16,
+    "exact_method_domain": true,
+    "typed_roundtrip_exact": true,
+    "independent_audits": true,
+    "source_unchanged": true,
+    "frozen_identities": 286,
+    "claim": "New paid live suffix outcome staging only; no candidate-domain, tie-only choice or parent acceptance",
+    "protocol_commit": "a061c0a6e7e7d5c4868fc36d553f6683885538e1",
+    "first_frozen_commit": "e37f14cfb96490cd9252e1f02578774fb43a4a1c",
+    "audit_amendment_commit": "68dd0ea4247b6232f1ac8b097c8bbd91bdfd1209",
+    "frozen_commit": "7e8e2b5a56afdc31104c6c058d0382dfed7da6b7",
+    "archive": {
+      "filename": "FT7_1b2b3b2a_Live_Outcome_Staging_Evidence_20261015.zip",
+      "bytes": 62822750,
+      "sha256": "5676a0df8aace98f1eab8ed4ace91e0560ade29d9c2b07f484d0b9534f1e37bc",
+      "manifest_members": 39,
+      "all_members_verified": true,
+      "nested_failed_source_members": 7,
+      "nested_failed_source_verified": true
+    },
+    "clean_preparation": {
+      "passed": true,
+      "frozen_commit": "7e8e2b5a56afdc31104c6c058d0382dfed7da6b7",
+      "frozen_identities": 286,
+      "all_exact": true,
+      "prior_277_exact": true,
+      "manual_overlay": false,
+      "engine_gate_rerun": false,
+      "layer_files": 281,
+      "sealed_baseline_files": 1093,
+      "historical_files": 210,
+      "repair_freeze_files": 20,
+      "verified_recovery_archive_members": 209
+    },
+    "input_hashes": {
+      "native/canonical/harder": {
+        "file": "records/01.json.gz",
+        "sha256": "ec17ea4529d340c1d1b4cc7418e5d4fa24933a8e2b437972a3214fadfc5bb9a3"
+      },
+      "native/canonical/partial-movement": {
+        "file": "records/06.json.gz",
+        "sha256": "2a76c1ef515634c9a7ca403b1d5afb02e987567095b5f5abda47620ff123bb32"
+      },
+      "native/workflow/harder": {
+        "file": "records/09.json.gz",
+        "sha256": "a7a8172af9d8eb76180249330729fc5e1650e04ba227890fba57979b0578decc"
+      },
+      "native/workflow/partial-movement": {
+        "file": "records/14.json.gz",
+        "sha256": "e6e74d1bcff4deee52e25f9eae2cce35740c2dfa97f2c5508f3112abc1ddbbb1"
+      },
+      "binding/canonical/harder": {
+        "file": "units/01/record.json.gz",
+        "sha256": "4903bc79a0768bd48eecc8b1ba9b2c0fa992348921521b4ecf2f1be7c4c33d53"
+      },
+      "binding/canonical/partial-movement": {
+        "file": "units/06/record.json.gz",
+        "sha256": "425a8156c75138734e31503754b0340c2c83d486ccb51e3affcd790e7359f1e1"
+      },
+      "binding/workflow/harder": {
+        "file": "units/09/record.json.gz",
+        "sha256": "ab7c723ce6171a588eea6e519457dd3e6e74104e611f878f6e3a0d9158e5006e"
+      },
+      "binding/workflow/partial-movement": {
+        "file": "units/14/record.json.gz",
+        "sha256": "4222c3b0948cc8e91865926830a39e638353d0308a2ac63684ebc0e09dccb9c4"
+      }
+    }
+  },
+  "owned_proposal_progress": {
+    "batch": "FT7.1b2b3b2b1",
+    "accepted": true,
+    "scope": "Complete bounded owned native proposal inventory only; no TD5 admission, paid comparison, history-caused choice or parent acceptance",
+    "protocol_commit": "069a3cbafc930d0feb62bc42d778e0619d122dcd",
+    "frozen_commit": "739d837a24db1e9e01d22e7e7ecb2bc97cc45bc9",
+    "actual_methods": 10,
+    "actual_saved_records": 6,
+    "predecessor_identities": 378,
+    "frozen_identities": 295,
+    "paid_comparison": false,
+    "execution_authority": false,
+    "old_native_primary_ties_observed": false,
+    "source_verification": {
+      "batch": "FT7.1b2b3b2b1",
+      "frozen_evaluator": "739d837a24db1e9e01d22e7e7ecb2bc97cc45bc9",
+      "fresh_reproduction_identities": 295,
+      "previous_unchanged_identities": 286,
+      "manual_overlay_required": false,
+      "sealed_baseline": 1093,
+      "historical_references": 210,
+      "repair_freeze": 20,
+      "prepared_archive_members": 209,
+      "native_input_archive_members_verified": 141,
+      "binding_input_archive_members_verified": 648,
+      "verification_diagnostic": "Initial optional previous-freeze lookup used nonexistent v2 filename after all295 current identities passed; corrected to actual v1 path and verified all286 prior identities. No evaluator or source mutation or rerun.",
+      "passed": true
+    },
+    "acceptance_commit": "567f4c7349cc1dce7eacb659021e2be26da40ad8",
+    "public_tree_verification": {
+      "commit": "567f4c7349cc1dce7eacb659021e2be26da40ad8",
+      "blobs": 373,
+      "all_local_git_blob_identities_exact": true,
+      "no_paths_removed": true
+    }
+  },
+  "paid_comparison_progress": {
+    "batch": "FT7.1b2b3b2b2a",
+    "accepted": true,
+    "protocol_commit": "3b6614e8b541bb9074aa56efd91c05c23b10020c",
+    "paid_frozen_commit": "ed4b85a7ed4ebe80491b4a4fcd98ccc6ff9887b8",
+    "saved_reader_frozen_commit": "3430079d6ff2f11f1f361dffd31c75f2eb78b382",
+    "actual_methods": 10,
+    "actual_saved_records": 12,
+    "predecessor_identities": 388,
+    "original_frozen_identities": 311,
+    "reader_frozen_identities": 313,
+    "paid_execution_rerun_for_saved_stage": false,
+    "failed_attempts_preserved": 4,
+    "scope": "Actual native paid owned comparison and restart only; no TD5 admission, history-caused choice, movement or parent acceptance",
+    "acceptance_commit": "bc27f28123b1e590b457c918664d5641dd978946",
+    "public_tree_verification": {
+      "commit": "bc27f28123b1e590b457c918664d5641dd978946",
+      "blobs": 390,
+      "all_local_git_blob_identities_exact": true,
+      "no_paths_removed": true
+    }
+  },
+  "prior_ft7_1b2b3b2b1_acceptance": {
+    "batch": "FT7.1b2b3b2b1",
+    "passed": true,
+    "methods": 10,
+    "failures": 0,
+    "errors": 0,
+    "predecessor_identities": 378,
+    "saved_records": 6,
+    "typed_roundtrip_exact": true,
+    "independent_audits": true,
+    "source_unchanged": true,
+    "frozen_identities": 295,
+    "claim": "Complete bounded owned native proposal inventory only; no TD5 admission, paid comparison, history-caused choice or parent acceptance",
+    "exact_method_domain": true,
+    "protocol_commit": "069a3cbafc930d0feb62bc42d778e0619d122dcd",
+    "frozen_commit": "739d837a24db1e9e01d22e7e7ecb2bc97cc45bc9",
+    "prior_286_identities_unchanged": true,
+    "new_failed_attempts": 0,
+    "archive": {
+      "filename": "FT7_1b2b3b2b1_Owned_Proposal_Domain_Evidence_20261015.zip",
+      "bytes": 17396180,
+      "sha256": "3973f24b472e90ff047f5d61c16e3b987860c2d5478a62234dde213fc3212945",
+      "manifest_members": 20,
+      "all_members_verified": true
+    }
+  },
+  "operand_domain_progress": {
+    "batch": "FT7.1b2b3b2b2b1",
+    "accepted": true,
+    "status": "accepted",
+    "protocol_commit": "8dd19d301b9d11c825300402318f063911b4d0c5",
+    "frozen_commit": "a1f97d2b3f0593c79ce1ca5484e92397717c7435",
+    "canonical_alternatives": 22,
+    "workflow_alternatives": 14,
+    "execution_authorized": false,
+    "scope": "Exact bounded operand expansion only; no TD5 admission, live history-caused choice or parent acceptance",
+    "bookkeeping_correction_commit": "1de860fa4a89c97fcd76082a982857e2004cda16",
+    "acceptance_commit": "5d032e1af62417e69b9bbbe4c10f78701b3706c1",
+    "public_tree_verification": {
+      "commit": "5d032e1af62417e69b9bbbe4c10f78701b3706c1",
+      "blobs": 401,
+      "all_local_git_blob_identities_exact": true,
+      "no_paths_removed": true
+    }
+  },
+  "prior_ft7_1b2b3b2b2a_acceptance": {
+    "batch": "FT7.1b2b3b2b2a",
+    "passed": true,
+    "methods": 10,
+    "failures": 0,
+    "errors": 0,
+    "predecessor_identities": 388,
+    "saved_records": 12,
+    "typed_roundtrip_exact": true,
+    "independent_audits": true,
+    "source_unchanged": true,
+    "frozen_identities": 313,
+    "original_paid_freeze": "ed4b85a7ed4ebe80491b4a4fcd98ccc6ff9887b8",
+    "original_frozen_identities": 311,
+    "paid_execution_rerun": false,
+    "claim": "Actual native paid owned comparison and restart only; no TD5 admission, history-caused choice, movement or parent acceptance",
+    "protocol_commit": "3b6614e8b541bb9074aa56efd91c05c23b10020c",
+    "first_frozen_commit": "8822951be8ae9d9d0aedff7b07a5099b444ba793",
+    "access_amendment_commit": "eb4b68bbb199d333916c4dc58ecc4d3f7e96968f",
+    "chronology_amendment_commit": "e2e8c4469e6623a5b71a51e453fe158a931fc93b",
+    "saved_reader_amendment_commit": "3d53fc6388a686cde0dfd0758cd8f8505ec2db4e",
+    "saved_reader_frozen_commit": "3430079d6ff2f11f1f361dffd31c75f2eb78b382",
+    "prior_295_identities_unchanged": true,
+    "all_failed_attempts_preserved": true,
+    "archive": {
+      "filename": "FT7_1b2b3b2b2a_Paid_Comparison_Evidence_20261015.zip",
+      "bytes": 76061088,
+      "sha256": "83aaabc862b1fc09055761f2a994ad79106696e89ccc566391b1f5c21b56672b",
+      "manifest_members": 80,
+      "all_members_verified": true,
+      "nested_failed_source_members": [
+        7,
+        9,
+        11
+      ],
+      "nested_failed_source_verified": true
+    },
+    "clean_preparation": {
+      "passed": true,
+      "identities": 313,
+      "prior_295_exact": true,
       "manual_overlay": false,
       "sealed_baseline": 1093,
       "historical_references": 210,
