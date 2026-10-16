@@ -1,12 +1,12 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
+  "status": "running",
+  "run_id": "ft7-changed-domain-a6-2026-10-16T13:06:42.798Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-16T13:36:42.798Z",
   "expected_head": "72b36c43df4c359f4066fe689bad79569e6d702c",
-  "current_batch": "FT.Setup.ToolOverlay.A2",
+  "current_batch": "FT7.Changed.Domain.A6",
   "current_window_admission_progress": {
     "status": "passed",
     "implementation_commit": "a79669120939bfb0ee5f2dd7914a45b44f3c5696",
