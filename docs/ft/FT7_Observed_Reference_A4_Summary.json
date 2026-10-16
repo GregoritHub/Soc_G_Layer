@@ -1,0 +1,402 @@
+{
+  "passed": true,
+  "methods": [
+    "test_adversarial_bindings_and_output",
+    "test_exact_records_and_staging",
+    "test_independent_reconstruction",
+    "test_no_authority_or_mutation",
+    "test_restart_and_permutation",
+    "test_revision_policy_and_provenance"
+  ],
+  "records": [
+    {
+      "setting": "canonical",
+      "record": "before",
+      "file": "canonical-before.json.gz",
+      "sha256": "90f2ba01f9c1a45e63ab2b540a4886b0a947089a6dc7f13d9881035eb295f0e3",
+      "projection_sha256": "b3894370434269dd4a861bed4c7184773a4109815f56a5db35f400675ce331f3",
+      "input_sha256": "c2cfac49adfb651138d0afb366765adca8f7fed0296b4ef511b3cb457a5f9390",
+      "unchanged": true,
+      "revision_policy_exact": true,
+      "passed": true,
+      "settled": false,
+      "observations": 0,
+      "alternatives": {},
+      "revision2": 0,
+      "foreign_observations": 0,
+      "native_sha256": "3e4119b5e3b93bbd97dd3ea45f3cfc9b5ada81b9bcb2ebbf8809f8589c93edce",
+      "view_sha256": "f7f107587a2aeccdb7f7367fbc7b35139d7dc1543d42bf047c52c9a1f6753e6a",
+      "native_work": 0
+    },
+    {
+      "setting": "canonical",
+      "record": "inspect-partial",
+      "file": "canonical-inspect-partial.json.gz",
+      "sha256": "1931b93d997bb2b1e2f776bf7bee00be681cc528f1fb96225df6a0ea6f37a8f6",
+      "projection_sha256": "59cc6fa5f168005e2c0b76fd3d20916b0dadf31b16c69a47eeabaefb699e4f2f",
+      "input_sha256": "3f17e83a2f11ed1a191c56eb66d1f8d647460c4300017dae7fc6d2df7eceaec2",
+      "unchanged": true,
+      "revision_policy_exact": true,
+      "passed": true,
+      "settled": false,
+      "observations": 0,
+      "alternatives": {},
+      "revision2": 0,
+      "foreign_observations": 0,
+      "native_sha256": "a20f4cc10e33e6f041e1ae23899833ca1cddc60c8ed945e937e69c214b689a8d",
+      "view_sha256": "f7f107587a2aeccdb7f7367fbc7b35139d7dc1543d42bf047c52c9a1f6753e6a",
+      "native_work": 0
+    },
+    {
+      "setting": "canonical",
+      "record": "read-partial",
+      "file": "canonical-read-partial.json.gz",
+      "sha256": "d042e31a19822ba71865cb918f590bcb27902d76971646b245f3fac8473f69d7",
+      "projection_sha256": "5eae52868d787eaaccd619bdf82a95719a95303bc2008f7384a6af0760e54e5b",
+      "input_sha256": "9983137c4a9b6e2b175332809cc1c16cf3d3d5e0122fd347073b652512bf8dca",
+      "unchanged": true,
+      "revision_policy_exact": true,
+      "passed": true,
+      "settled": false,
+      "observations": 0,
+      "alternatives": {},
+      "revision2": 0,
+      "foreign_observations": 0,
+      "native_sha256": "28990acbc4d3c7a82558771c11b4cd163703d48878e7f86546e32b632ffe6705",
+      "view_sha256": "89b46594394b3bdafae463c604193456b06d8a015a071e0dcf272c230d26d767",
+      "native_work": 0
+    },
+    {
+      "setting": "canonical",
+      "record": "complete",
+      "file": "canonical-complete.json.gz",
+      "sha256": "dfaa4c7c6f7714b3637a73bd32c5922ae562dc354e3f98ada7d59a91fddac0f8",
+      "projection_sha256": "29fdf1e4f101802aeb6cbeafd5d588cb4d6462e2de8fb0a648b791866a745a1e",
+      "input_sha256": "0846fb5922eb3a94fa2fb05889021fc5147fac3be2a95c84c507354bd934ee28",
+      "unchanged": true,
+      "revision_policy_exact": true,
+      "passed": true,
+      "settled": true,
+      "observations": 8,
+      "alternatives": {
+        "stock": 9,
+        "tool": 9,
+        "repair_stock": 9
+      },
+      "revision2": 3,
+      "foreign_observations": 1,
+      "native_sha256": "8546bfbc362f7e9a7679b397435347ffb0a7f8d5b8b05fc983d1a35d4f2b6935",
+      "view_sha256": "8c2b616a83e136130162275d5ae2c8b8879e64a48085a73763c0dc53841e398c",
+      "native_work": 0
+    },
+    {
+      "setting": "canonical",
+      "record": "restarted",
+      "file": "canonical-restarted.json.gz",
+      "sha256": "270d902ce2a07811377f432f9c5925741ed3db228eb4c41b3e5f5e4f4a96523d",
+      "projection_sha256": "29fdf1e4f101802aeb6cbeafd5d588cb4d6462e2de8fb0a648b791866a745a1e",
+      "input_sha256": "f1090d94f35b15ee199b3a0c14285b317114a8f8010db3541161c700890626f1",
+      "unchanged": true,
+      "revision_policy_exact": true,
+      "passed": true,
+      "settled": true,
+      "observations": 8,
+      "alternatives": {
+        "stock": 9,
+        "tool": 9,
+        "repair_stock": 9
+      },
+      "revision2": 3,
+      "foreign_observations": 1,
+      "native_sha256": "8546bfbc362f7e9a7679b397435347ffb0a7f8d5b8b05fc983d1a35d4f2b6935",
+      "view_sha256": "8c2b616a83e136130162275d5ae2c8b8879e64a48085a73763c0dc53841e398c",
+      "native_work": 0
+    },
+    {
+      "setting": "canonical",
+      "record": "cancelled",
+      "file": "canonical-cancelled.json.gz",
+      "sha256": "53b1148ffb6137e3342b1b94e5d16d8baa5df6e147c4bbc28fca51a3d1c2c131",
+      "projection_sha256": "1212dd78db40e0a2714eb10da700ea10f73e448fdb1c934021a3a23502046bc2",
+      "input_sha256": "7906718ad95b1641b66e33701010994a1746d3dd3157e5e4d78241a0ef43945c",
+      "unchanged": true,
+      "revision_policy_exact": true,
+      "passed": true,
+      "settled": false,
+      "observations": 0,
+      "alternatives": {},
+      "revision2": 0,
+      "foreign_observations": 0,
+      "native_sha256": "cc333181d6966d251969dc64886fa623a7eec91e1bd21e5415e75ce33e3e9fc7",
+      "view_sha256": "f7f107587a2aeccdb7f7367fbc7b35139d7dc1543d42bf047c52c9a1f6753e6a",
+      "native_work": 0
+    },
+    {
+      "setting": "workflow",
+      "record": "before",
+      "file": "workflow-before.json.gz",
+      "sha256": "c36bf3adfa5fb7d987388c4d6bddf6ec5da3db2b04a5b2a02ce320aedb9e2986",
+      "projection_sha256": "76de9b1b798e5851a16c824439ffedcef1f20aaa07322123e53e7937d2021f03",
+      "input_sha256": "9de45bec925cdc1ad6f909c5f56cabf34e6612e08bf8ba948f189117284ef7ee",
+      "unchanged": true,
+      "revision_policy_exact": true,
+      "passed": true,
+      "settled": false,
+      "observations": 0,
+      "alternatives": {},
+      "revision2": 0,
+      "foreign_observations": 0,
+      "native_sha256": "7c83e5169d0da4bfd0ba3cd8209c1056e48d7c7179f64ca74e7bb0fad5db0354",
+      "view_sha256": "c8080f7f0a4ff9e688ad3ab799e1ec20a58cda50aee5678044060c69c8df6f40",
+      "native_work": 0
+    },
+    {
+      "setting": "workflow",
+      "record": "inspect-partial",
+      "file": "workflow-inspect-partial.json.gz",
+      "sha256": "d6fc5ea2e1cf5d4e38aaa7b31bdd7a6a276b2c562cacf21d5584af66dd1e740b",
+      "projection_sha256": "fb1743961b9696b3f0d3a68716a8ad663d6e9b5768f0a96f35272ed6256ac1df",
+      "input_sha256": "496700aaac9d6c50469d36544f818addc74e83c75eef60146236f65625030a3f",
+      "unchanged": true,
+      "revision_policy_exact": true,
+      "passed": true,
+      "settled": false,
+      "observations": 0,
+      "alternatives": {},
+      "revision2": 0,
+      "foreign_observations": 0,
+      "native_sha256": "4596d46bb089587324ae9847ef0ac3863edfd855a62f1a2b047ce424bc5ad71b",
+      "view_sha256": "c8080f7f0a4ff9e688ad3ab799e1ec20a58cda50aee5678044060c69c8df6f40",
+      "native_work": 0
+    },
+    {
+      "setting": "workflow",
+      "record": "read-partial",
+      "file": "workflow-read-partial.json.gz",
+      "sha256": "fc7656539b87e1eea479206edc9ee557e37d5615651ecaa403f345f7ebc9ae07",
+      "projection_sha256": "a699535ea6bb75c2c1909247a31e2f55dcab7b10ccd2fed26649d711610529ad",
+      "input_sha256": "8c8d6f732c3fafc94cf31b0170cf86aeb28d7db5e6d92f663835084557413ba3",
+      "unchanged": true,
+      "revision_policy_exact": true,
+      "passed": true,
+      "settled": false,
+      "observations": 0,
+      "alternatives": {},
+      "revision2": 0,
+      "foreign_observations": 0,
+      "native_sha256": "f53b1a4d6aefed085e2c7f538dcb2c82e2f4c5acef6d84667ba28a28109f12a7",
+      "view_sha256": "342406b2615d7e76dcd396be843c40c847bd45cfdf07b14977630d5acf8ba2ea",
+      "native_work": 0
+    },
+    {
+      "setting": "workflow",
+      "record": "complete",
+      "file": "workflow-complete.json.gz",
+      "sha256": "c36b5fba8d8579e14b943ccd5ba1e4eef6b55954f6f8c71bb72ef6b3f977f12b",
+      "projection_sha256": "b82e1aa9d408f3ec7bb954bebd724edda2db6641908404b2aaa9271c6032993e",
+      "input_sha256": "130736a8b4c9c6ae6c11d50292a340763caf584a082fe5d664cf93c202200dcc",
+      "unchanged": true,
+      "revision_policy_exact": true,
+      "passed": true,
+      "settled": true,
+      "observations": 10,
+      "alternatives": {
+        "stock": 12
+      },
+      "revision2": 3,
+      "foreign_observations": 2,
+      "native_sha256": "85bc912a7d1cd953dce103577b89aa202eef1a760571ef3b26541166a7773f16",
+      "view_sha256": "6209fe5f67174e9787485a0b154ea833958e5944cb9e24e06b994b6c41f87b56",
+      "native_work": 0
+    },
+    {
+      "setting": "workflow",
+      "record": "restarted",
+      "file": "workflow-restarted.json.gz",
+      "sha256": "20dd1ad7f845ceb17190bcb59e3cb755120fa76c54296871bc90c806caf48cea",
+      "projection_sha256": "b82e1aa9d408f3ec7bb954bebd724edda2db6641908404b2aaa9271c6032993e",
+      "input_sha256": "4a44667626175b950c96c5815985d6d79b0375e04dac981ec4a07d99444d9280",
+      "unchanged": true,
+      "revision_policy_exact": true,
+      "passed": true,
+      "settled": true,
+      "observations": 10,
+      "alternatives": {
+        "stock": 12
+      },
+      "revision2": 3,
+      "foreign_observations": 2,
+      "native_sha256": "85bc912a7d1cd953dce103577b89aa202eef1a760571ef3b26541166a7773f16",
+      "view_sha256": "6209fe5f67174e9787485a0b154ea833958e5944cb9e24e06b994b6c41f87b56",
+      "native_work": 0
+    },
+    {
+      "setting": "workflow",
+      "record": "cancelled",
+      "file": "workflow-cancelled.json.gz",
+      "sha256": "aabe314e76e4a44e64a0b0620053b4470c9cd80eb99ecf4399045b7bcc7484a9",
+      "projection_sha256": "210853c86c894c6ce2a36b3f56417314825d0f51fbc9c156fd8e5c1195818e38",
+      "input_sha256": "396af4f7ea145d1c96bbcfbe9dc1a3ffd987c1ead2d468893254f448b6889b8d",
+      "unchanged": true,
+      "revision_policy_exact": true,
+      "passed": true,
+      "settled": false,
+      "observations": 0,
+      "alternatives": {},
+      "revision2": 0,
+      "foreign_observations": 0,
+      "native_sha256": "07a6c987ef7fb0e03d0ca81e0589503de55cab1804536fdf6f8ccb4ee79f0abe",
+      "view_sha256": "c8080f7f0a4ff9e688ad3ab799e1ec20a58cda50aee5678044060c69c8df6f40",
+      "native_work": 0
+    }
+  ],
+  "probes": [
+    {
+      "setting": "canonical",
+      "name": "refresh_actor",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "refresh_extra",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "native_pair",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "view_pair",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "unknown_setting",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "output_authority",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "output_reference",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "output_evidence",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "output_missing_observation",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "output_extra",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "refresh_actor",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "refresh_extra",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "native_pair",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "view_pair",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "unknown_setting",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "output_authority",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "output_reference",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "output_evidence",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "output_missing_observation",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "output_extra",
+      "rejected": true
+    }
+  ],
+  "controls": [
+    {
+      "setting": "canonical",
+      "name": "permutation",
+      "passed": true
+    },
+    {
+      "setting": "canonical",
+      "name": "bool_quantity",
+      "passed": true
+    },
+    {
+      "setting": "canonical",
+      "name": "removed_read",
+      "passed": true
+    },
+    {
+      "setting": "canonical",
+      "name": "changed_target",
+      "passed": true
+    },
+    {
+      "setting": "workflow",
+      "name": "permutation",
+      "passed": true
+    },
+    {
+      "setting": "workflow",
+      "name": "bool_quantity",
+      "passed": true
+    },
+    {
+      "setting": "workflow",
+      "name": "removed_read",
+      "passed": true
+    },
+    {
+      "setting": "workflow",
+      "name": "changed_target",
+      "passed": true
+    }
+  ],
+  "source_identities": 468,
+  "prior_identities": 461,
+  "native_work": 0,
+  "comparison_paid": false,
+  "parent_accepted": false
+}

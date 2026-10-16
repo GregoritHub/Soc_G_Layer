@@ -5,7 +5,7 @@
   "run_id": "ft7-observed-reference-a4-2026-10-16T11:36:33.000Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-16T12:06:33.000Z",
-  "expected_head": "4c2cb1b66a35b435c9cc9eb70b7e4499e7beab2a",
+  "expected_head": "488814dd147d03f779573b958f4ad0513c9a3b30",
   "current_batch": "FT7.Observed.Reference.A4",
   "current_window_admission_progress": {
     "status": "passed",
@@ -363,7 +363,7 @@
       "paths_removed": 0
     }
   },
-  "next_batch": "Prospectively register the changed-input observed-reference domain and new paid comparisons after A3, with broader lawful paid recall organization. Then genuine distinct-element same-priority/native-cost ties, autonomous history-only choice, chosen paid work/downstream use, matched controls/full staging, parent FT7 pairs/populations and unchanged FT8–FT9. Do not replay accepted A3/A2/A1/B1D/setup gates. Preserve old source/social/history prefixes and separately bind extensions. Current setup does not include the new continuation tool; future standalone preparation still needs explicit coverage and its FT9 gate.",
+  "next_batch": "Prospectively register paid exact observed-revision field disclosure/read using already owned selector paths, without overriding native selectors. Then complete changed-input request/role domain and new paid comparisons, broader lawful recall organization, distinct-element ties/history-only choice/paid work/downstream use/matched controls/full staging; parent FT7 and FT8-FT9 unfinished.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -425,7 +425,7 @@
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT7_Skill_Refresh_A3_Record.md",
+  "latest_record": "docs/ft/FT7_Observed_Reference_A4_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
@@ -683,7 +683,7 @@
     "source_publication": "verified",
     "prior_failed_attempts": 6
   },
-  "latest_acceptance_record": "docs/ft/FT7_Skill_Refresh_A3_Record.md",
+  "latest_acceptance_record": "docs/ft/FT7_Observed_Reference_A4_Record.md",
   "engineering_continuation": {
     "batch": "FT7.1b2b3b",
     "accepted": false,
@@ -2241,60 +2241,11 @@
   "prior_paid_window_acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2",
   "latest_acceptance_commit": "aa3462fd9054cc016f49e59e2b21febbe5d25164",
   "latest_local_acceptance": {
-    "batch": "FT7.Skill.Refresh.A3",
+    "batch": "FT7.Observed.Reference.A4",
     "passed": true,
     "methods": 6,
-    "saved_records": 12,
-    "rejection_probes": 22,
-    "exact_restart_pairs": 2,
-    "original_source_identities": 456,
-    "continuation_source_identities": 461,
-    "prior_identities_exact": 449,
-    "original_records_copied_exact": 9,
-    "actual_method_invocations": 1,
-    "accepted_paid_work_replayed": false,
-    "original_exit_code": 1,
-    "original_outcome": "registered operational deadline",
-    "continuation_exit_code": 0,
-    "continuation_closed_at": "2026-10-16T11:24:59.427639+00:00",
-    "owned_workers_remaining": 0,
-    "canonical": {
-      "inventory": 22,
-      "nonmaterial_rejections": 14,
-      "receipts": 8,
-      "energy": 40,
-      "time": 40,
-      "revision2_observations": 3
-    },
-    "workflow": {
-      "inventory": 25,
-      "nonmaterial_rejections": 15,
-      "receipts": 10,
-      "energy": 50,
-      "time": 50,
-      "revision2_observations": 3
-    },
-    "retained": {
-      "baseline": 1093,
-      "repair": 20,
-      "historical": 210,
-      "all_exact": true,
-      "dependency_access": false,
-      "native_work": false
-    },
-    "archive": {
-      "filename": "FT7_Skill_Refresh_A3_Evidence_20261016.zip",
-      "sha256": "3e2e0a50a3490c6b519ed58e86a63cf00b8ff96b81042458f4eb654a608d3faf",
-      "bytes": 117687772,
-      "manifest_members": 51,
-      "all_members_verified": true
-    },
-    "main_execution_authorized": false,
-    "comparison_paid": false,
-    "td5_admitted": false,
-    "history_choice": false,
-    "parent_accepted": false,
-    "acceptance_commit": "aa3462fd9054cc016f49e59e2b21febbe5d25164"
+    "records": 12,
+    "source_identities": 468
   },
   "recall_feasibility_progress": {
     "status": "diagnostic_pass",
@@ -2320,7 +2271,7 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T11:28:58.740Z",
+  "updated_at": "2026-10-16T11:49:29.449Z",
   "skill_intake_a1": {
     "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
@@ -2538,5 +2489,28 @@
       "no_paths_removed": true
     }
   },
-  "prior_setup_acceptance_commit": "89f3272cb4eb8f59311aa5c7308c4d05fdb642c5"
+  "prior_setup_acceptance_commit": "89f3272cb4eb8f59311aa5c7308c4d05fdb642c5",
+  "prior_skill_refresh_acceptance_commit": "aa3462fd9054cc016f49e59e2b21febbe5d25164",
+  "observed_reference_a4": {
+    "accepted": true,
+    "methods": 6,
+    "records": 12,
+    "forgery_probes": 20,
+    "grammar_controls": 8,
+    "native_work": 0,
+    "protocol_commit": "7d82c027100c5419facfef2957155356d53cd2f3",
+    "freeze_commit": "488814dd147d03f779573b958f4ad0513c9a3b30",
+    "source_identities": 468,
+    "prior_identities_exact": 461,
+    "record": "docs/ft/FT7_Observed_Reference_A4_Record.md",
+    "summary": "docs/ft/FT7_Observed_Reference_A4_Summary.json",
+    "archive": {
+      "filename": "FT7_Observed_Reference_A4_Evidence_20261016.zip",
+      "sha256": "8d334a22603626c73dc7efb13d658571aede358a77c40f09ec9e674619829ea6",
+      "bytes": 448050,
+      "manifest_members": 41,
+      "all_members_verified": true
+    },
+    "parent_accepted": false
+  }
 }
