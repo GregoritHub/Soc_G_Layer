@@ -1,0 +1,42 @@
+{
+  "version": "ft-canonical-quotation-a8-protocol-v1",
+  "batch": "FT7.Canonical.Quotation.A8",
+  "entry_head": "026348d3f58c11474039d6d64ddf515dcb48b2ca",
+  "prior_freeze": "contracts/ft/FT7_Comparison_Funding_A7_Source_Freeze_v1.json",
+  "input": {
+    "native_sha256": "03948fc18b149d5935c3d381432c05d361cd4678bdaceecfd2bb5c6fd717e3ee",
+    "domain_sha256": "17894dd39469ecfabc3f20729808b18a345d72c3452354a7b5b18a516c566ab2"
+  },
+  "policy": [
+    "Exact accepted A5 canonical native plus A6 complete domain only; no workflow quotation: its unchanged A7 lower bound already exceeds wallet. No engine restore, native commands, paid work, old gate replay or altered source.",
+    "Decode native world/access as immutable saved data. Derive original profile and current cursor from committed journal (runtime uses unchanged progress; auditor independently walks paid route charges); current wallet from actor wallet. No default profile/cursor/wallet or supplied route.",
+    "Enumerate all 5832 A6 canonical assignments in exact ordinal order, every factor retained. Runtime may cache detached actor view and decoded domain only as host computation; every assignment retains original full cost without shared credit. Build SelectionRequest with exact A6 namespace/non-role fields. Verify mapping against original request_at at every individual factor value plus endpoints.",
+    "Call unchanged SelectionEngine.selection_view and _select_policy on read-only facade exposing no command API. Save per ordinal request hash, snapshot hash, candidate projection hash, original nominee cell, all33 examined counts, scanned/foreign counts and required=1+scanned+foreign_total+33+sum(examined). ValueError from native view alone costs1 with exact rejection; other exceptions fail. No snapshot/result exposes payment or selection authority.",
+    "Independent auditor imports no new quotation builder or native selector. Separately decode saved state, independently enumerate itertools Cartesian product, reconstruct owned snapshots with unchanged independent _snapshot and all33 selection_audit.reference cells, derive nominee and native cost. Compare EVERY saved row and total, current wallet, deficit and all claims. No sampling of costs or outputs.",
+    "Complete exact quote may be affordable or insufficient at current wallet; may_launch=false always because no changed-input payment/execution bridge is accepted. Preserve oldest demand and historical defer. No funding refill, pruning, free factorization, new pricing or downstream use.",
+    "One fresh bounded invocation, persisted rows before full independent audit, incremental progress and guarded lease/deadline. Six exact methods: complete ordinal coverage; all independent rows; native immutable; exact aggregate funding; input/output forgery rejection; authority and roundtrip. At least10 output mutations plus two wrong input pairs rejected. Two byte-exact saved representations original/restored via typed codec roundtrip (not paid/engine replay).",
+    "All493 predecessor identities unchanged; freeze before invocation. Preserve failures/partial output; do not rerun closed successful quote/audit work after interruption. This is engineering quotation only; parentFT7-FT9 and FT8cost/denominator obligations unchanged."
+  ],
+  "modules": [
+    "full_theory/canonical_quotation.py",
+    "full_theory/canonical_quotation_audit.py",
+    "tools/evaluate_ft7_canonical_quotation.py"
+  ],
+  "tests": "tests_ft7/test_canonical_quotation.py",
+  "methods": [
+    "test_complete_ordinal_coverage",
+    "test_all_independent_rows",
+    "test_native_immutable",
+    "test_exact_aggregate_funding",
+    "test_forgery_rejection",
+    "test_authority_and_roundtrip"
+  ],
+  "claims": {
+    "may_launch": false,
+    "comparison_paid": false,
+    "execution_authorized": false,
+    "td5_admitted": false,
+    "history_choice": false,
+    "parent_accepted": false
+  }
+}

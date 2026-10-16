@@ -6,7 +6,7 @@
   "active_worker": true,
   "lease_expires_at": "2026-10-16T14:11:05.386Z",
   "expected_head": "72b36c43df4c359f4066fe689bad79569e6d702c",
-  "current_batch": "FT7.Comparison.Funding.A7",
+  "current_batch": "FT7.Canonical.Quotation.A8",
   "current_window_admission_progress": {
     "status": "passed",
     "implementation_commit": "a79669120939bfb0ee5f2dd7914a45b44f3c5696",
