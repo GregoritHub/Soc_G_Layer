@@ -28,6 +28,8 @@ def run():
     parser.add_argument("--finish", action="store_true")
     parser.add_argument("--retain-from")
     parser.add_argument("--parts-root")
+    parser.add_argument("--audit-saved-branch")
+    parser.add_argument("--saved-quote-root")
     args = parser.parse_args()
     root = pathlib.Path(__file__).resolve().parents[1]
     source = pathlib.Path(args.a12e1)
@@ -67,8 +69,8 @@ def run():
             raise SystemExit("ownership/lease/deadline")
 
     def verify_source():
-        if len(freeze) != 616:
-            raise ValueError("exact 616-identity freeze required")
+        if len(freeze) != 618:
+            raise ValueError("exact 618-identity freeze required")
         prior = json.loads(
             (root / "contracts/ft/FT7_Post_Processing_Domain_A12E1_Source_Freeze_v1.json").read_text()
         )
@@ -294,30 +296,76 @@ def run():
                 ):
                     raise ValueError("registered A12E1 binding mismatch: " + label)
 
-                quote_marker = begin_job("quote-" + label)
-                quote = CurrentDomainQuotation(native, domain, setting, mask, sha(raw))
-                rows = []
-                for ordinal in range(entry["assignments"]):
-                    if ordinal % 256 == 0:
-                        guard()
-                    if ordinal % 2048 == 0:
-                        note("quote_progress", branch=label, completed=ordinal)
-                    rows.append(quote.row(ordinal))
-                if not quote.unchanged():
-                    raise ValueError("quotation changed native state: " + label)
-                text = quote.report(rows)
-                if loads(text)["native_state_unchanged"] is not True:
-                    raise ValueError("saved unchanged assertion required")
-                record_data = gzip.compress(text.encode(), mtime=0)
-                persist(output / "records" / (label + ".json.gz"), record_data)
-                if gzip.decompress((output / "records" / (label + ".json.gz")).read_bytes()).decode() != text:
-                    raise ValueError("typed persistent report readback")
-                close_job(
-                    quote_marker,
-                    assignments=len(rows),
-                    required=sum(row["required"] for row in rows),
-                )
-                native_view_calls += len(rows)
+                if args.audit_saved_branch:
+                    if (
+                        args.audit_saved_branch != label
+                        or args.only_branch != label
+                        or not args.saved_quote_root
+                        or label != "workflow-07"
+                    ):
+                        raise ValueError("exact workflow-07 saved-quote audit mode required")
+                    amendment = json.loads(
+                        (
+                            root
+                            / "contracts/ft/FT7_Current_Domain_Quotation_A12E2_Procedure_Audit_Amendment_v2.json"
+                        ).read_text()
+                    )
+                    retained = pathlib.Path(args.saved_quote_root)
+                    record_data = (retained / "records" / (label + ".json.gz")).read_bytes()
+                    retained_backup = retained / "backups" / ("records--" + label + ".json.gz")
+                    outcome = retained / "jobs" / ("quote-" + label + ".outcome.json")
+                    outcome_data = outcome.read_bytes()
+                    outcome_value = json.loads(outcome_data)
+                    if (
+                        sha(record_data) != amendment["failure"]["quote_record_sha256"]
+                        or retained_backup.read_bytes() != record_data
+                        or outcome_value.get("passed") is not True
+                        or outcome_value.get("job") != "quote-" + label
+                        or outcome_value.get("assignments") != entry["assignments"]
+                        or outcome_value.get("required") != amendment["failure"]["quote_required"]
+                    ):
+                        raise ValueError("exact retained workflow-07 quotation required")
+                    text = gzip.decompress(record_data).decode()
+                    report = loads(text)
+                    rows = report["rows"]
+                    if (
+                        report["setting"] != setting
+                        or report["mask"] != mask
+                        or len(rows) != entry["assignments"]
+                        or report["native_sha256"] != entry["native_sha256"]
+                        or report["domain_sha256"] != entry["domain_sha256"]
+                        or report["native_state_unchanged"] is not True
+                    ):
+                        raise ValueError("typed retained workflow-07 quotation binding")
+                    persist(output / "records" / (label + ".json.gz"), record_data)
+                    atomic_bytes(output / "jobs" / outcome.name, outcome_data)
+                    native_view_calls += len(rows)
+                    note("retained_quote", branch=label, assignments=len(rows))
+                else:
+                    quote_marker = begin_job("quote-" + label)
+                    quote = CurrentDomainQuotation(native, domain, setting, mask, sha(raw))
+                    rows = []
+                    for ordinal in range(entry["assignments"]):
+                        if ordinal % 256 == 0:
+                            guard()
+                        if ordinal % 2048 == 0:
+                            note("quote_progress", branch=label, completed=ordinal)
+                        rows.append(quote.row(ordinal))
+                    if not quote.unchanged():
+                        raise ValueError("quotation changed native state: " + label)
+                    text = quote.report(rows)
+                    if loads(text)["native_state_unchanged"] is not True:
+                        raise ValueError("saved unchanged assertion required")
+                    record_data = gzip.compress(text.encode(), mtime=0)
+                    persist(output / "records" / (label + ".json.gz"), record_data)
+                    if gzip.decompress((output / "records" / (label + ".json.gz")).read_bytes()).decode() != text:
+                        raise ValueError("typed persistent report readback")
+                    close_job(
+                        quote_marker,
+                        assignments=len(rows),
+                        required=sum(row["required"] for row in rows),
+                    )
+                    native_view_calls += len(rows)
 
                 audit_marker = begin_job("audit-" + label)
                 auditor = CurrentDomainQuotationAudit(native, domain, setting, mask, sha(raw))
@@ -477,7 +525,7 @@ def run():
             "methods": 6,
             "closed_jobs": 62,
             "failed_jobs": 0,
-            "source_identities": 616,
+            "source_identities": 618,
             "prior_identities": 600,
             "native_view_calls": native_view_calls,
             "audit_view_calls": audit_view_calls,

@@ -156,15 +156,15 @@ class CurrentDomainQuotationAudit:
                     for particular in self.view.resolve(procedure_ref)
                     if type(particular.value) is Procedure
                 ]
-                require(len(definitions) == 1, "paid exact care procedure")
+                require(len(definitions) == 1, "paid exact repair procedure")
                 procedure = definitions[0]
                 require(
-                    procedure.executor == "u4.care.v1"
-                    and procedure.inputs == SIGNATURES["care"]
+                    procedure.executor == "u4.repair.v1"
+                    and procedure.inputs == SIGNATURES["repair"]
                     and not procedure.steps
                     and not procedure.preconditions
                     and not procedure.effects,
-                    "supported native care procedure",
+                    "supported native repair procedure",
                 )
                 definition = {
                     "executor": procedure.executor,
