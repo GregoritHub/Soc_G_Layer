@@ -130,7 +130,7 @@
   "run_id": null,
   "active_worker": false,
   "lease_expires_at": null,
-  "expected_head": "da70ddb619c8de44166a3a0bcd65866dc18bd1eb",
+  "expected_head": "8d42fb4ef50495ec4f9330618ac6192599ff39a8",
   "current_batch": "A12E2 quotation protocol registered; not implemented",
   "canonical_quotation_a8": {
     "status": "passed",
@@ -3340,7 +3340,9 @@
       "sha256": "04f4ddb762ebcb335864e4659ad9aa101dde48ee6f3711a465df3d8a791205dd",
       "bytes": 46630899,
       "members": 224,
-      "saved": true
+      "saved": true,
+      "saved_readback_exact": true,
+      "downloaded_manifest_members_exact": 224
     },
     "record": "docs/ft/FT7_Post_Processing_Domain_A12E1_Record.md",
     "acceptance_commit": "6893ef807cad9ec299b38c79dccb694467d638b8",
