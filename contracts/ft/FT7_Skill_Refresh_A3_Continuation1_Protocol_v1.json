@@ -1,0 +1,20 @@
+{
+  "schema": "ft-skill-refresh-a3-continuation1-v1",
+  "created_utc": "2026-10-16T10:46:56.739Z",
+  "batch": "FT7.Skill.Refresh.A3.Continuation1",
+  "original_protocol_commit": "d09304d5973230b5acacb19a90184a90a26c4d1c",
+  "original_freeze_commit": "f6c0ef716b553e6ff5f67fde53dee510b3eab81b",
+  "original_source_identities": 456,
+  "condition": "Use only after the original A3 evaluator closes at its registered deadline with SystemExit operational guard, zero workers and no six-method invocation. If original gate passes, never invoke this continuation.",
+  "binding": "After closure, bind every original output and operations file by relative path and SHA256, exact two A2 complete raw inputs, current durable tuple, original456 source freeze and prior449. Publish binding and new continuation source freeze before invocation.",
+  "policy": [
+    "Copy every closed original output byte-exact into fresh output. Never overwrite original output/operations or regenerate a saved passed record.",
+    "Resume only an unfinished main or restart stage from its exact durable native/adapter pair. For unstarted restart, start from exact saved read-partial; for unstarted cancel, use saved inspect-partial. Verify already closed final restart pairs without replay.",
+    "Use unchanged new A3 controller/auditor and native work_limit1, same job/command keys and original six methods. Preserve actual paid main completion and every partial branch.",
+    "Exact input-pair/adapter/payment probes already persisted are copied. Missing unpersisted probes may be evaluated read-only through SavedNative; never rerun paid main or acquisition. No original six-method body may have started; invoke the exact six once only after all12 independently audited records and22probes exist.",
+    "Guard live owner/lease and explicit new deadline before each restore/step. Durable-save each step before audit. New operations log records actual closure; no fabricated outcomes. Bind all source before/after. Only this conditional operational tool and contracts are added; original456source unchanged."
+  ],
+  "gate": "All12 original required records, exact2restartpairs,22negative probes and all6 exact original methods; unchanged prior449/original456. This is still A3 observation refresh only, no parent/comparison/history/admission claim.",
+  "why": "Measured per-step durable checkpoint cost may exceed the original fixed deadline; an operational continuation must preserve completed paid work rather than restart it.",
+  "not_invoked": true
+}
