@@ -5,7 +5,7 @@
   "run_id": "ft7-skill-practice-2026-10-16T09:37:19.365Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-16T10:36:12.504Z",
-  "expected_head": "f48f01bc228e1043cab11eecc2514f3d34e37b62",
+  "expected_head": "8430d9b9e2f8af5626f744dda431ff5440aeea1b",
   "current_batch": "FT7.Skill.Practice.A2",
   "current_window_admission_progress": {
     "status": "passed",
@@ -363,7 +363,7 @@
       "paths_removed": 0
     }
   },
-  "next_batch": "Route-free actual paid skill practice/acquisition from accepted inspection observations, broader lawful paid recall organization, and fresh comparisons after changed inputs. Use saved completed mask-1 native branches; do not rerun accepted inspection/control/probe stages. Genuine distinct-element priority/cost ties, history-only choice, chosen paid work/use, matched controls/full staging and parent FT7–FT9 remain; FT8 unchanged.",
+  "next_batch": "Register and repair setup overlay for seven current tools omitted by name prefixes, without native replay; then separately bind fresh paid observations/comparisons after changed skill/material inputs, broader lawful recall organization, genuine distinct-element same-priority/native-cost ties, autonomous history-only choice, chosen paid work/downstream use, matched controls/full staging, parent FT7 pairs/populations and unchanged FT8–FT9. Never rerun accepted A2/A1 or prior gates.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -425,7 +425,7 @@
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT7_Skill_Intake_A1_Record.md",
+  "latest_record": "docs/ft/FT7_Skill_Practice_A2_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
@@ -2241,15 +2241,52 @@
   "prior_paid_window_acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2",
   "latest_acceptance_commit": "e87218cc23138fe01876a65ce13f39c91d21f652",
   "latest_local_acceptance": {
-    "batch": "FT7.Skill.Intake.A1",
+    "batch": "FT7.Skill.Practice.A2",
     "passed": true,
     "methods": 6,
-    "saved_records": 12,
-    "saved_negative_probes": 4,
-    "frozen_identities": 427,
-    "original_frozen_identities": 419,
-    "prior_identities": 412,
-    "claim": "Bounded paid material observation prerequisite only; not skill acquisition, recall repair, main admission, live choice or parent acceptance."
+    "saved_records": 14,
+    "original_negative_probes": 10,
+    "pairing_rejections": 12,
+    "identity_guard_only_ast_bridge": true,
+    "original_source_identities": 434,
+    "source_identities": 439,
+    "prior_identities": 427,
+    "exact_restart_pairs": 2,
+    "costs": {
+      "canonical": {
+        "energy": 19,
+        "time": 19,
+        "failed_practices": 1,
+        "successful_practices": 1,
+        "acquired": 1
+      },
+      "workflow": {
+        "energy": 11,
+        "time": 11,
+        "failed_practices": 0,
+        "successful_practices": 1,
+        "acquired": 1
+      }
+    },
+    "original_exit_code": 0,
+    "saved_exit_code": 0,
+    "saved_native_work": 0,
+    "saved_engine_restores": 0,
+    "saved_test_body_replays": 0,
+    "accepted_stage_replayed": false,
+    "parent_accepted": false,
+    "protocol_commit": "efc247da7ef40fb43e45fce31784329797e4307d",
+    "original_freeze_commit": "8961d8f90705f8007f0b41745582403c823b1f7c",
+    "identity_amendment_commit": "f48f01bc228e1043cab11eecc2514f3d34e37b62",
+    "identity_freeze_commit": "8430d9b9e2f8af5626f744dda431ff5440aeea1b",
+    "evidence": {
+      "filename": "FT7_Skill_Practice_A2_Evidence_20261016.zip",
+      "sha256": "171ede255dd8b770d98ee1eaba7c683f51ae7ac0e01af9b2ebf94b2b268ddfaf",
+      "bytes": 78902621,
+      "manifest_members": 49
+    },
+    "clean_preparation_claimed": false,
+    "scope": "Native practiced repair acquisition only; no main-task live choice, recall repair or parent acceptance."
   },
   "recall_feasibility_progress": {
     "status": "diagnostic_pass",
@@ -2275,7 +2312,7 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T10:06:12.504Z",
+  "updated_at": "2026-10-16T10:12:10.713Z",
   "skill_intake_a1": {
     "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
@@ -2328,11 +2365,11 @@
     "saved_records": 40
   },
   "skill_practice_a2": {
-    "status": "original_passed_identity_reader_frozen",
-    "accepted": false,
+    "status": "accepted",
+    "accepted": true,
     "protocol_commit": "efc247da7ef40fb43e45fce31784329797e4307d",
     "protocol_sha256": "d5f71f7248c99c23d247f9b25fd9228c297751dd77ba55013e170f4b37831865",
-    "source_identities": 434,
+    "source_identities": 439,
     "prior_identities": 427,
     "required_records": 14,
     "required_methods": 6,
@@ -2352,6 +2389,23 @@
     "original_source_unchanged": true,
     "identity_amendment_commit": "f48f01bc228e1043cab11eecc2514f3d34e37b62",
     "identity_source_identities": 439,
-    "saved_output": "owned-repair-practice-a2-saved1"
-  }
+    "saved_output": "owned-repair-practice-a2-saved1",
+    "identity_freeze_commit": "8430d9b9e2f8af5626f744dda431ff5440aeea1b",
+    "identity_saved_exit_code": 0,
+    "pairing_rejections": 12,
+    "record": "docs/ft/FT7_Skill_Practice_A2_Record.md",
+    "archive": {
+      "filename": "FT7_Skill_Practice_A2_Evidence_20261016.zip",
+      "sha256": "171ede255dd8b770d98ee1eaba7c683f51ae7ac0e01af9b2ebf94b2b268ddfaf",
+      "bytes": 78902621,
+      "manifest_members": 49
+    },
+    "owned_workers_remaining": 0,
+    "main_execution_authorized": false,
+    "comparison_paid": false,
+    "td5_admitted": false,
+    "history_choice": false,
+    "parent_accepted": false
+  },
+  "prior_skill_intake_acceptance_commit": "e87218cc23138fe01876a65ce13f39c91d21f652"
 }

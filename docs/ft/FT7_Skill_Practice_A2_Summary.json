@@ -1,0 +1,48 @@
+{
+  "batch": "FT7.Skill.Practice.A2",
+  "passed": true,
+  "methods": 6,
+  "saved_records": 14,
+  "original_negative_probes": 10,
+  "pairing_rejections": 12,
+  "identity_guard_only_ast_bridge": true,
+  "original_source_identities": 434,
+  "source_identities": 439,
+  "prior_identities": 427,
+  "exact_restart_pairs": 2,
+  "costs": {
+    "canonical": {
+      "energy": 19,
+      "time": 19,
+      "failed_practices": 1,
+      "successful_practices": 1,
+      "acquired": 1
+    },
+    "workflow": {
+      "energy": 11,
+      "time": 11,
+      "failed_practices": 0,
+      "successful_practices": 1,
+      "acquired": 1
+    }
+  },
+  "original_exit_code": 0,
+  "saved_exit_code": 0,
+  "saved_native_work": 0,
+  "saved_engine_restores": 0,
+  "saved_test_body_replays": 0,
+  "accepted_stage_replayed": false,
+  "parent_accepted": false,
+  "protocol_commit": "efc247da7ef40fb43e45fce31784329797e4307d",
+  "original_freeze_commit": "8961d8f90705f8007f0b41745582403c823b1f7c",
+  "identity_amendment_commit": "f48f01bc228e1043cab11eecc2514f3d34e37b62",
+  "identity_freeze_commit": "8430d9b9e2f8af5626f744dda431ff5440aeea1b",
+  "evidence": {
+    "filename": "FT7_Skill_Practice_A2_Evidence_20261016.zip",
+    "sha256": "171ede255dd8b770d98ee1eaba7c683f51ae7ac0e01af9b2ebf94b2b268ddfaf",
+    "bytes": 78902621,
+    "manifest_members": 49
+  },
+  "clean_preparation_claimed": false,
+  "scope": "Native practiced repair acquisition only; no main-task live choice, recall repair or parent acceptance."
+}
