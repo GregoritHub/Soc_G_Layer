@@ -130,8 +130,8 @@
   "run_id": "ft7-a12d2-20261016T193600Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-16T20:18:30+00:00",
-  "expected_head": "300aee98e0af58a5a859c9f8d43a2c46b6c6a4bb",
-  "current_batch": "A12D2: all28 new primaries and4 controls closed; generated evidence saved and byte-verified before38 new audits; gate not yet accepted",
+  "expected_head": "df08b48a682b57d28c9af46e2a40f7226121ccbc",
+  "current_batch": "A12D2 accepted: 50 exact bindings, 8 new methods, 48 rejection probes and 73 closed jobs; remaining FT7-FT9 open",
   "canonical_quotation_a8": {
     "status": "passed",
     "accepted": true,
@@ -496,7 +496,7 @@
     "checkpoint_evidence_manifest_members": 97,
     "checkpoint_protocol_commit": "1287cd5f48c39069e960488e119eb0234805d5c8",
     "checkpoint_protocol_sha256": "f338055f8293b817ed7c8d0fd3bf292c653d483d303bba10f856d642f7f009ca",
-    "completed_panel": "All forty exact projections: before, partial, ready, masks 1\u201315, restarted and cancelled in both settings; full independent audits and exact typed roundtrip.",
+    "completed_panel": "All forty exact projections: before, partial, ready, masks 1–15, restarted and cancelled in both settings; full independent audits and exact typed roundtrip.",
     "remaining_panel": "None for this bounded bridge. All eight exact actual methods and unchanged final aggregate passed.",
     "operational_boundary": "Historical prospective launcher guard before workflow mask 2 remains exact. The separate frozen bounded runner completed only sixteen missing records, all eight original actual methods and unchanged finish, with no failure or interruption. All 79 prior output files unchanged.",
     "accepted_input_raw_exact": 40,
@@ -545,7 +545,7 @@
       "paths_removed": 0
     }
   },
-  "next_batch": "Implement and freeze A12D2 v2 source validation/restore, independent audit and evaluator under registered protocol. Preserve all588 predecessors and all12 accepted A12D raw/audits; no mask1 or passing-control replay. Execute only28 unprocessed A12C mask2..15 primary branches, new fixed mask2 controls,38 new independent audits plus12 exact retained bindings,8 new methods and aggregate. Then new changed-input comparisons/current TD5/history choice/work/use/matched controls and remaining FT7\u2013FT9.",
+  "next_batch": "Prospectively register complete current post-processing task/window/role domain from all30 exact accepted primaries, then freshly paid changed-input comparisons and current TD5 roles/operands/costs; genuine history-only tied choice, chosen work/use, matched controls, pairs/populations and FT8-FT9 remain.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -879,7 +879,7 @@
     "batch": "FT7.1b2b3b",
     "accepted": false,
     "required_next": "Planned, not preregistered: separately bound current TD5/capacity integration, route-free fresh skill work and any new payment required by changed inputs; genuine same-priority/native-cost distinct-element ties, autonomous live history-only choice, chosen paid movement/downstream use, matched feedback controls and full preparation/live-staging composition. All FT8 obligations remain unchanged.",
-    "scope": "Complete declared request-window comparison payment accepted in its bounded scope only. Fresh skill/current admission/live choice and all parent FT7\u2013FT9 work remain unfinished. Failed b1 remains unaccepted.",
+    "scope": "Complete declared request-window comparison payment accepted in its bounded scope only. Fresh skill/current admission/live choice and all parent FT7–FT9 work remain unfinished. Failed b1 remains unaccepted.",
     "permission": "Technical coding, testing, diagnosis, lawful repairs and retries through FT9 belong to the agent without renewed user approval. Preserve criteria except the explicitly approved comparison amendment; FT8 unchanged."
   },
   "prior_comparison_hold": {
@@ -2490,7 +2490,7 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T17:44:06Z",
+  "updated_at": "2026-10-16T20:08:30+00:00",
   "skill_intake_a1": {
     "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
@@ -3226,7 +3226,7 @@
     "acceptance_commit": "2cc0161667f8cffc05601be4ada8025c5a9ab1cf"
   },
   "cue_processing_panel_a12d2": {
-    "status": "generation_closed_validation_in_progress_not_accepted",
+    "status": "accepted",
     "closed_new_primary_jobs": 28,
     "closed_new_control_jobs": 4,
     "new_raw_records": 38,
@@ -3260,10 +3260,48 @@
     "new_independent_audits": 38,
     "record_gate": 50,
     "method_gate": 8,
-    "accepted": false,
+    "accepted": true,
     "engine_work": "28 new primary branches and4 new controls; accepted work never replayed",
     "parent_accepted": false,
-    "ft8_unchanged": true
+    "ft8_unchanged": true,
+    "batch": "FT7.Owned.CueProcessing.Panel.A12D2",
+    "passed": true,
+    "prior_identities": 588,
+    "new_controls": 4,
+    "new_full_audits": 38,
+    "retained_exact_audits": 12,
+    "record_bindings": 50,
+    "new_methods": 8,
+    "rejected_probes": 48,
+    "closed_jobs": 73,
+    "failed_jobs": 0,
+    "accepted_stage_replays": 0,
+    "canonical_primary_energy_time": 96,
+    "workflow_primary_energy_time": 99,
+    "targets_each": 3,
+    "all_intents": "engage",
+    "native_cursor": "ni->si",
+    "restart_pairs_exact": 2,
+    "cancellation_paid_each": 1,
+    "refunds": 0,
+    "terminal_idempotence": true,
+    "comparison_paid": false,
+    "execution_authorized": false,
+    "td5_admitted": false,
+    "history_choice": false,
+    "skill_acquired": false,
+    "clearance_claim": false,
+    "independent_credit": false,
+    "validated_evidence": {
+      "filename": "FT7_Cue_Processing_Panel_A12D2_Validated_Evidence_20261016.zip",
+      "sha256": "23b31bcd1499890c65a47a2d52f049a3519188217e5f0d2e9112f52f1eb1db8d",
+      "bytes": 187860,
+      "members": 262,
+      "saved_readback_exact": true,
+      "kind": "validation companion; exact raw/step evidence in generated archive"
+    },
+    "record": "docs/ft/FT7_Cue_Processing_Panel_A12D2_Record.md",
+    "summary": "docs/ft/FT7_Cue_Processing_Panel_A12D2_Summary.json"
   },
   "ownership_released_at": "2026-10-16T18:56:20.846502+00:00",
   "owned_workers_at_release": 0
