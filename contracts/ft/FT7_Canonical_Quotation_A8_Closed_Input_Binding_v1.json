@@ -1,0 +1,21 @@
+{
+  "version": "ft-canonical-quotation-a8-closed-input-binding-v1",
+  "original_exit": {
+    "session": 36445,
+    "exit_code": 1,
+    "observed_closed_at": "2026-10-16T14:04:51.864282+00:00",
+    "reason": "SystemExit: ownership/lease/deadline",
+    "last_audit_progress": 5120,
+    "actual_methods_run": 0,
+    "active_workers_verified": 0
+  },
+  "source_freeze_commit": "3fbfe3b00d803c74259f7abec59d16ad06ab55f2",
+  "files": {
+    "complete.json.gz": "d1623a90b75e3ea47f0697eebf28e76eca2f4c47e0d7741d6301c47a40318979",
+    "events.jsonl": "e4cf35dea6812b489b2f9339e83f35b13cb63897434715987d819c2d2558e660",
+    "rows.jsonl": "e0341036a6cc3897da1b2a593bf0ff1a90254372715f277d81be55a1ebbb1e16"
+  },
+  "quote_closed_rows": 5832,
+  "quote_required": 432864,
+  "quote_must_never_reinvoke": true
+}
