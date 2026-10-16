@@ -15,9 +15,10 @@ def write(p,d):
     with p.open('x') as f:f.write(json.dumps(d,indent=2,sort_keys=True)+'\n')
 def no_survivors():
     found=[];examined=0
+    self_ids={os.getpid(),int(Path('/proc/self').resolve().name)}
     targets={'evaluate_ft7_current_window_admission.py','continue_current_window_admission.py','continue_current_window_admission2.py','recover_current_window_admission_methods.py'}
     for p in Path('/proc').iterdir():
-        if not p.name.isdigit() or int(p.name)==os.getpid():continue
+        if not p.name.isdigit() or int(p.name) in self_ids:continue
         try:args=(p/'cmdline').read_bytes().split(b'\0');examined+=1
         except FileNotFoundError:continue
         if any(Path(x.decode(errors='replace')).name in targets for x in args if x):found.append(int(p.name))
