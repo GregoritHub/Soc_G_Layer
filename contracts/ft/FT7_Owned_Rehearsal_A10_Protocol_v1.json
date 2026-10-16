@@ -1,0 +1,44 @@
+{
+  "version": "ft-owned-content-rehearsal-a10-protocol-v1",
+  "batch": "FT7.Owned.Rehearsal.A10",
+  "scope": "Auxiliary rehearsal of all eligible already-owned content once; not main-task execution, skill acquisition, comparison payment, or choice-causality acceptance.",
+  "inputs": {
+    "canonical": {
+      "native_sha256": "03948fc18b149d5935c3d381432c05d361cd4678bdaceecfd2bb5c6fd717e3ee"
+    },
+    "workflow": {
+      "native_sha256": "9b16ec1fd67959eb1ab7a9bcbbca50c28723d7f5abc3bd864865090d91a3c7ae"
+    }
+  },
+  "prior_freeze": "contracts/ft/FT7_Universal_TD5_Veto_A9_Source_Freeze_v1.json",
+  "prior_identities": 517,
+  "discovery": "Exact A5 native and adapter paired, actor and context from adapter. Enumerate current latest actor-owned, nonretracted/nondisputed, completed paid bind receipts; one c3.data/c7w.data proposition. Canonical kind intention/personal_policy -> use-personal-v1, model/rule -> use-system-v1. Workflow intention/personal -> workflow-use-personal-v1, system/rule -> workflow-use-system-v1. Same context, directly owned target evidence present. Include all, sorted typed source identity; no cursor, cost, success, history or desired route input; maximum32 candidates. Snapshot fixed before work; generated outputs do not enlarge plan.",
+  "execution": "Sequential fresh native requests, exact source/target/context/cue and all current target details, native costs and failure semantics. New key namespace. Work quantum positive integer. Every planned candidate attempted once, preserving paid failures; no main demand settlement, no reserve/history independent credit, no acquisition claim. Current need and prior source/history prefixes immutable. No direct cursor/relay write. Record actual native cursor only; later relay reconciliation and new paid current comparisons require separate proofs.",
+  "staging": "Before, first one-unit partial, complete, partial-restored complete, one-unit partial cancelled per setting; saved typed native+adapter pairs; terminal no-op. Restart comparison exact. Full saved native independent audits including immutable journal/command/access prefixes, exact candidate enumeration and native request/payment/cursor evidence.",
+  "methods": [
+    "test_plan_complete_and_route_free",
+    "test_exact_paid_native_suffix",
+    "test_partial_without_credit",
+    "test_restart_exact",
+    "test_cancel_nonrefundable",
+    "test_forgery_and_pairing_rejected"
+  ],
+  "records": 10,
+  "forgeries_per_setting": 8,
+  "execution_ceiling": {
+    "max_candidates": 32,
+    "max_steps": 256,
+    "work_quantum": 1000000
+  },
+  "acceptance": "Six exact actual methods and ten exact saved independently audited records; all source identities unchanged and all517 prior identities exact. Outcomes are recorded, not forced; an empty plan is a truthful exhaustion, not a positive practice witness. Only scoped mechanism acceptance; no parent FT7 claim.",
+  "prohibitions": [
+    "no prior accepted work replay",
+    "no wallet refill",
+    "no older need bypass",
+    "no recipe selected by evaluator success or target cursor",
+    "no alteration of old policy labels",
+    "no credit for duplicated practice",
+    "no inherited or protected generated revisions",
+    "no FT8 denominator change"
+  ]
+}
