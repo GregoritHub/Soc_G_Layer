@@ -5,11 +5,11 @@
   "run_id": "ft7-canonical-quote-a8-2026-10-16T13:41:05.386Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-16T14:30:18.131Z",
-  "expected_head": "eaec2a04cc1af133b68f7bc0a13b704e34a1a40c",
+  "expected_head": "e2dd6dd43a5ab1f520e907ff7e4f6ef7ce62331f",
   "current_batch": "FT7.Canonical.Quotation.A8",
   "canonical_quotation_a8": {
-    "status": "original_deadline_closed_saved_audit_running",
-    "accepted": false,
+    "status": "passed",
+    "accepted": true,
     "protocol_commit": "517fadd09276cfb094c22d7c2469d2a3c6072ef1",
     "implementation_commit": "af75c258079128cd7980d1a22cbb12a58266deaf",
     "freeze_commit": "3fbfe3b00d803c74259f7abec59d16ad06ab55f2",
@@ -42,7 +42,23 @@
     "saved_implementation_commit": "6ffab0d6495ca7fabde01f7d34b986581ab22ddc",
     "saved_freeze_commit": "24bd9d598c714f091cf1704f597cb7dfd390fe52",
     "new_quotation_rows": 0,
-    "conditional_saved_audit_invoked": true
+    "conditional_saved_audit_invoked": true,
+    "saved_exit_code": 0,
+    "saved_closed_at": "2026-10-16T14:16:51.052497+00:00",
+    "methods": 6,
+    "independent_rows": 5832,
+    "records": 2,
+    "forgery_rejections": 21,
+    "source_unchanged": true,
+    "workers_remaining": 0,
+    "new_native_view_calls": 0,
+    "evidence": {
+      "filename": "FT7_Canonical_Quotation_A8_Evidence_20261016.zip",
+      "sha256": "f03e1e51255208b7dbda6ba224229f8a10bdd9d0ab6d41594bc355d4b190dcaa",
+      "bytes": 2676047,
+      "manifest_members": 14,
+      "all_members_verified": true
+    }
   },
   "current_window_admission_progress": {
     "status": "passed",
@@ -400,7 +416,7 @@
       "paths_removed": 0
     }
   },
-  "next_batch": "Prospectively design cost-preserving changed-input paid comparison with complete-domain coverage. Exact canonical quote required; workflow full Cartesian floor4,920,480 exceeds current wallet175,698, so do not launch/refill/drop alternatives/share old credit. Preserve A6/A7 and prior gates; current actor oldest need/deferral intact. Genuine ties/history-only choice/work/use/controls/staging and FT7 pairs/populations FT8-FT9 remain open.",
+  "next_batch": "Prospectively design lawful complete-domain changed-input comparison or an independently specified route-free fresh panel. Canonical exact432864 exceeds197808 wallet by235056; workflow floor4920480 exceeds175698 by4744782. No unaffordable launch, refill, hidden pruning, free/shared factorization credit, new pricing under old labels or bypass of current oldest need/deferral. A8 is quotation only. Genuine distinct-element ties, autonomous history-only choice, paid chosen work/use, matched controls/full staging and FT7 pairs/populations FT8-FT9 remain open.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -725,7 +741,7 @@
     "source_publication": "verified",
     "prior_failed_attempts": 6
   },
-  "latest_acceptance_record": "docs/ft/FT7_Comparison_Funding_A7_Record.md",
+  "latest_acceptance_record": "docs/ft/FT7_Canonical_Quotation_A8_Record.md",
   "engineering_continuation": {
     "batch": "FT7.1b2b3b",
     "accepted": false,
@@ -2283,15 +2299,18 @@
   "prior_paid_window_acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2",
   "latest_acceptance_commit": "c39c3343000418972c90137844ec12a4411a297a",
   "latest_local_acceptance": {
-    "batch": "FT7.Comparison.Funding.A7",
+    "batch": "FT7.Canonical.Quotation.A8",
     "passed": true,
     "methods": 6,
-    "records": 4,
-    "forgeries": 24,
-    "invalid_integer_controls": 5,
-    "source_identities": 493,
-    "acceptance_commit": "da9dd19544e22596e6559229428c3c5c5459f16a",
-    "exact_publication_commit": "c39c3343000418972c90137844ec12a4411a297a"
+    "records": 2,
+    "independent_rows": 5832,
+    "forgeries": 21,
+    "source_identities": 510,
+    "original_source_identities": 499,
+    "prior_identities": 493,
+    "quote_invocations": 1,
+    "new_native_view_calls": 0,
+    "native_work_calls": 0
   },
   "recall_feasibility_progress": {
     "status": "diagnostic_pass",
@@ -2670,7 +2689,10 @@
     "workflow_wallet": 175698,
     "workflow_deficit": 4744782,
     "canonical_wallet": 197808,
-    "canonical_status": "exact_quote_required",
-    "native_work": 0
+    "canonical_status": "insufficient_exact_quote",
+    "native_work": 0,
+    "canonical_exact_quote": 432864,
+    "canonical_deficit": 235056,
+    "canonical_quote_record": "docs/ft/FT7_Canonical_Quotation_A8_Record.md"
   }
 }
