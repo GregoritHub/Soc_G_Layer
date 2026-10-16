@@ -129,9 +129,9 @@
   "status": "running",
   "run_id": "ft7-a12e2-20261016T213945Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-16T22:09:45+00:00",
-  "expected_head": "1835e26ef9c9dcc44602d58273bc400bfa5e875c",
-  "current_batch": "A12E2 exact current-domain quotation implementation and freeze",
+  "lease_expires_at": "2026-10-16T22:15:07+00:00",
+  "expected_head": "a0c132aa46f6334ffc664530b02ff09ef8d0f675",
+  "current_batch": "A12E2 exact current-domain quotation frozen; bounded evaluation not yet invoked",
   "canonical_quotation_a8": {
     "status": "passed",
     "accepted": true,
@@ -2490,7 +2490,7 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T21:39:45+00:00",
+  "updated_at": "2026-10-16T21:45:07+00:00",
   "skill_intake_a1": {
     "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
@@ -3352,7 +3352,7 @@
     "ft8_unchanged": true
   },
   "current_domain_quotation_a12e2": {
-    "status": "prospectively_registered_not_implemented_not_frozen_not_executed",
+    "status": "implemented_source_freeze_pending_publication_not_executed",
     "accepted": false,
     "protocol": "contracts/ft/FT7_Current_Domain_Quotation_A12E2_Protocol_v1.json",
     "protocol_commit": "da70ddb619c8de44166a3a0bcd65866dc18bd1eb",
@@ -3363,6 +3363,10 @@
     "workflow_assignments_each": 12384,
     "required_quote_reports": 30,
     "required_methods": 6,
+    "implementation_commit": "a0c132aa46f6334ffc664530b02ff09ef8d0f675",
+    "freeze_file": "contracts/ft/FT7_Current_Domain_Quotation_A12E2_Source_Freeze_v1.json",
+    "freeze_sha256": "92820edf6867c9140d09d3860d141e3c744b080c395becf30c6146208d0982f1",
+    "source_identities": 606,
     "native_work": 0,
     "comparison_paid": false,
     "accepted_stage_replays": 0,
