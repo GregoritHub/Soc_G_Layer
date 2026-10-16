@@ -1,0 +1,30 @@
+{
+  "schema": "ft-skill-practice-a2-identity-amendment-v1",
+  "batch": "FT7.Skill.Practice.A2",
+  "diagnosis": {
+    "frozen_commit": "8961d8f90705f8007f0b41745582403c823b1f7c",
+    "read_only_probe": {
+      "setting": "canonical",
+      "forgery": "replace intake actor with workshop/bob while native checkpoint and expected digest remain exact",
+      "constructor_accepted": true,
+      "phase": "exhausted",
+      "skill_acquired": false,
+      "native_work_calls": 0
+    },
+    "gap": "Controller and audit bound native digest but did not pin the exact intake text; strict exact paired input contract is not fully enforced. Positive paid evaluator inputs are independently raw-hash fixed and were not forged.",
+    "acceptance": false
+  },
+  "correction": "After original evaluator exits and its exact source is preserved, add one guard to controller constructor and one to independent audit: exact source native digest maps to exact accepted intake digest. No state-machine, plan, material, payment, native executor, evaluator or six original method changes.",
+  "pairs": {
+    "0eb6ec03ff64f4da8c297527fedb95d71398b7bb066a33f0c080f4881ac7b1d0": "af1b0953418ad0d9bfede22e440cf5de6333c3d5998b866d8867cc007da296a4",
+    "50ed4da94e7a03066d5b1099f1fc78f6e0d5ffa60d8af9a0e68b67735294080e": "652d2b82f47264f3e26a5c6ed6bdbafece3e62a85f844f36f06e4642b3ac0497"
+  },
+  "gate": [
+    "Original frozen evaluator must close normally with all six exact methods, fourteen fully audited original records, ten saved negative probes and exact434 source. It remains preliminary until the new identity check passes.",
+    "Freeze separate saved-only reader with corrected controller/auditor and exact structural AST bridge: removing solely the new explicit intake-guard node reproduces both original modules; all other prior434 files exact. All prior427 accepted identities exact.",
+    "Reader re-audits all fourteen exact original saved native/adapter records with the strengthened auditor, with typed roundtrip and source identity checks. No advance/start/commit/deliver command permitted; original six test methods not invoked again.",
+    "For each setting reject actor forgery, context forgery and irrelevant extra intake field in constructor using saved-view-only facade and in auditor using the saved before engine: twelve explicit pairing rejections. Unchanged native bytes.",
+    "Bind all original output and operation file hashes after closure before reader freeze. Fresh saved-only output, owner/lease/deadline guards, per-record durable results. Keep all original raw and source, diagnosis and actual outcomes."
+  ],
+  "scope": "Identity hardening only. Actual paid practice and acquisition effects retain their original evidence. No accepted gate replay, matched-main-cost downstream claim, recall repair or parent FT7-FT9 acceptance."
+}
