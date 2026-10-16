@@ -126,12 +126,12 @@
   },
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft7-cue-continuation-20261016T1814Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-16T19:16:48.251992+00:00",
-  "expected_head": "af72f9da175a2b276a49f960dade28fd05fba7ae",
-  "current_batch": "FT7.Owned.CueProcessing.A12D accepted",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "cc48912c4a55b93fb4a83c46e29567772c8ff4c6",
+  "current_batch": "A12D accepted; A12D2 full fixed-panel extension prospectively registered, not implemented or executed",
   "canonical_quotation_a8": {
     "status": "passed",
     "accepted": true,
@@ -545,7 +545,7 @@
       "paths_removed": 0
     }
   },
-  "next_batch": "Prospectively extend actual new-cue processing over remaining28 fixed A12C task branches, retaining all12 A12D records/audits exact and never replaying two completed primaries or passing controls. Then newly pay changed-input comparisons and integrate complete current TD5, genuine history-sensitive ties, chosen work/use, matched controls and remaining FT7\u2013FT9. All original four-facet/authority/FT8 gates intact.",
+  "next_batch": "Implement and freeze A12D2 v2 source validation/restore, independent audit and evaluator under registered protocol. Preserve all588 predecessors and all12 accepted A12D raw/audits; no mask1 or passing-control replay. Execute only28 unprocessed A12C mask2..15 primary branches, new fixed mask2 controls,38 new independent audits plus12 exact retained bindings,8 new methods and aggregate. Then new changed-input comparisons/current TD5/history choice/work/use/matched controls and remaining FT7\u2013FT9.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -3037,15 +3037,16 @@
     "probes": 20
   },
   "last_verified_publication": {
-    "head": "026a8319eee86cbfcec4ee645872db8d6c92a6d9",
-    "blobs": 787,
+    "head": "cc48912c4a55b93fb4a83c46e29567772c8ff4c6",
+    "blobs": 826,
     "all_local_public_blob_identities_exact": true,
     "paths_removed": 0,
-    "public_summaries_byte_exact": 3,
-    "source_identities": 576,
-    "prior_identities": 568,
-    "workers_remaining": 0,
-    "note": "Verified held checkpoint, NOT acceptance; ownership-release child verified separately after expected-head update."
+    "source_identities": 588,
+    "prior_identities": 582,
+    "a12c_accepted": true,
+    "a12d_accepted": true,
+    "a12d2_protocol_only": true,
+    "note": "Current verified pre-release tree; ownership-release child is independently full-tree/head verified after expected-head update."
   },
   "a12b_attempt2": {
     "status": "accepted",
@@ -3221,6 +3222,25 @@
       "saved_readback_exact": true
     },
     "record": "docs/ft/FT7_Cue_Processing_A12D_Record.md",
-    "summary": "docs/ft/FT7_Cue_Processing_A12D_Summary.json"
-  }
+    "summary": "docs/ft/FT7_Cue_Processing_A12D_Summary.json",
+    "acceptance_commit": "2cc0161667f8cffc05601be4ada8025c5a9ab1cf"
+  },
+  "cue_processing_panel_a12d2": {
+    "status": "prospectively_registered_not_implemented_not_executed",
+    "protocol_commit": "cc48912c4a55b93fb4a83c46e29567772c8ff4c6",
+    "protocol": "contracts/ft/FT7_Cue_Processing_Panel_A12D2_Protocol_v1.json",
+    "prior_source_identities": 588,
+    "source_task_panel": 30,
+    "new_primary_branches": 28,
+    "exact_retained_a12d_records": 12,
+    "new_independent_audits": 38,
+    "record_gate": 50,
+    "method_gate": 8,
+    "accepted": false,
+    "engine_work": 0,
+    "parent_accepted": false,
+    "ft8_unchanged": true
+  },
+  "ownership_released_at": "2026-10-16T18:56:20.846502+00:00",
+  "owned_workers_at_release": 0
 }
