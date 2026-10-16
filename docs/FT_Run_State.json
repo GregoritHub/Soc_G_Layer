@@ -5,7 +5,7 @@
   "run_id": "ft7-admission-final-20261016T023350Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-16T03:44:31.743Z",
-  "expected_head": "6e57d17ecd8340b379bfdd34e49f1293c7fb467f",
+  "expected_head": "f573be1e3f3a2a3811a208ca66bfde151393a14b",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1d",
   "current_window_admission_progress": {
     "status": "method_recovery1_running_not_accepted",
@@ -198,8 +198,16 @@
       ]
     },
     "read_only_recall_inspection": {
-      "status": "running",
-      "execution_session": 89681,
+      "status": "closed_read_only_diagnostic",
+      "exit_code": 0,
+      "record": "docs/ft/FT7_1b2b3b2b2b2b2b2b1d_Recall_Diagnostic.json",
+      "records": 2,
+      "visited": 32,
+      "truncated_both": true,
+      "canonical_roots": 30,
+      "workflow_roots": 29,
+      "capacity_binding_owned_and_visited_both": true,
+      "native_unchanged": true,
       "paid_replay": false,
       "mutation": false,
       "acceptance_claim": false

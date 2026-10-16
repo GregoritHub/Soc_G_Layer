@@ -1,0 +1,38 @@
+{
+  "status": "read_only_diagnostic_not_acceptance",
+  "scope": "Exact canonical/mask-1 and workflow/mask-1 accepted paid states only; not all masks or future states",
+  "records": [
+    {
+      "setting": "canonical",
+      "paid_raw_sha256": "4ab8e52e56b99c0d64e802afea616a2ce335ecd1ba23f431c1231b829694cf2d",
+      "capacity_raw_sha256": "0023a9f355afb66fc58560b6a8e5381c18d5acb6691ab8a65a7dd90408c9800a",
+      "native_sha256": "60ccb856924227cf58e4eda10bc23825eed594c3cc5bbbec5958f0ecf6712d31",
+      "visited": 32,
+      "truncated": true,
+      "current_cue_roots": 30,
+      "capacity_binding_owned": true,
+      "capacity_binding_visited": true,
+      "native_unchanged": true,
+      "new_payment": false
+    },
+    {
+      "setting": "workflow",
+      "paid_raw_sha256": "b67617baf3444179a7f56a0b9e8a0fd3a2f9910f19f3868e13985eb4123e3d4e",
+      "capacity_raw_sha256": "8d261fa38e4a1f34a28cf1ba0975d3720b4116c9c33c9fa3ead2a8a61ac7bc2a",
+      "native_sha256": "dbde5bef7e2e6ba7bef5562a3dca3355eae1f2aab07730f5b69807eaf28633bc",
+      "visited": 32,
+      "truncated": true,
+      "current_cue_roots": 29,
+      "capacity_binding_owned": true,
+      "capacity_binding_visited": true,
+      "native_unchanged": true,
+      "new_payment": false
+    }
+  ],
+  "interpretation": "The actual traversal flag establishes truncation here; not_recalled alone would not. Native retention rejects truncated traversal even when its binding is visited. Native no_easier intentionally compares family/context/cue and demand bounds, not target equality: novel target transfer is not repaired by changing that inherited rule.",
+  "constraints": [
+    "Keep recall32 and all generated outputs, content/history, current demand and old immutable prefixes exact.",
+    "Any paid organization must be prospectively specified, preserve oldest-demand semantics and pay new comparison costs after changed inputs.",
+    "No capacity admission, fresh skill, choice, execution or parent acceptance follows."
+  ]
+}
