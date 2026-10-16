@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft7-observed-fields-a5-2026-10-16T12:34:01.000Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-16T13:04:01.000Z",
-  "expected_head": "d52dc224f6948cf838eecb14738f1e70bd959766",
+  "lease_expires_at": "2026-10-16T13:11:48.000Z",
+  "expected_head": "259f51b467232ea8fe9520c813cca029afd5be94",
   "current_batch": "FT7.Observed.Fields.A5",
   "current_window_admission_progress": {
     "status": "passed",
@@ -2273,7 +2273,7 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T12:34:01.000Z",
+  "updated_at": "2026-10-16T12:41:48.000Z",
   "skill_intake_a1": {
     "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
@@ -2523,5 +2523,23 @@
       "all_local_public_blob_identities_exact": true,
       "no_paths_removed": true
     }
+  },
+  "observed_fields_a5": {
+    "status": "running",
+    "accepted": false,
+    "protocol_commit": "41e5a30da9d8536c5abc7c001d73123850f80984",
+    "freeze_commit": "259f51b467232ea8fe9520c813cca029afd5be94",
+    "source_identities": 475,
+    "prior_identities": 468,
+    "required_methods": 6,
+    "required_records": 10,
+    "required_probes": 20,
+    "output": "observed-field-reads-a5-attempt1",
+    "operations": "observed-field-reads-a5-operations",
+    "session": 53997,
+    "stop_at": "2026-10-16T13:02:00+00:00",
+    "invoked": true,
+    "no_accepted_stage_replay": true,
+    "parent_accepted": false
   }
 }
