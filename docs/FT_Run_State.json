@@ -5,8 +5,8 @@
   "run_id": "ft7-owned-rehearsal-a10-2026-10-16T15:38:03.294Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-16T16:53:37.000Z",
-  "expected_head": "c46d92a605693bf70f378ec2fa9da81830cec72b",
-  "current_batch": "FT7.Owned.Rehearsal.A10R",
+  "expected_head": "d68597d7e152fafa1a038f85e976a8bf222f5160",
+  "current_batch": "FT.Setup.ToolOverlay.A3",
   "canonical_quotation_a8": {
     "status": "passed",
     "accepted": true,
@@ -482,11 +482,12 @@
     "FT7.Observed.Reference.A4",
     "FT7.Observed.Fields.A5",
     "FT.Setup.ToolOverlay.A2",
-    "FT7.Owned.Rehearsal.A10R"
+    "FT7.Owned.Rehearsal.A10R",
+    "FT.Setup.ToolOverlay.A3"
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT7_Owned_Rehearsal_A10R_Record.md",
+  "latest_record": "docs/ft/FT_Setup_Tool_Overlay_A3_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
@@ -746,7 +747,7 @@
     "source_publication": "verified",
     "prior_failed_attempts": 6
   },
-  "latest_acceptance_record": "docs/ft/FT7_Owned_Rehearsal_A10R_Record.md",
+  "latest_acceptance_record": "docs/ft/FT_Setup_Tool_Overlay_A3_Record.md",
   "engineering_continuation": {
     "batch": "FT7.1b2b3b",
     "accepted": false,
@@ -2302,47 +2303,38 @@
     "acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2"
   },
   "prior_paid_window_acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2",
-  "latest_acceptance_commit": "bf54b1168599df41efb183f7b892cd14c6636fde",
+  "latest_acceptance_commit": "d68597d7e152fafa1a038f85e976a8bf222f5160",
   "latest_local_acceptance": {
-    "batch": "FT7.Owned.Rehearsal.A10R",
+    "batch": "FT.Setup.ToolOverlay.A3",
     "status": "passed",
-    "accepted": true,
-    "scope": "Auxiliary paid rehearsal with separate unpaid native-rejection closure only",
-    "protocol_commit": "42e60ee8199e42e519a0f7043cd3bf12fb2ffc49",
-    "digest_protocol_commit": "6e0fac45fd4316a76298c77c50f5065af0fe4a6f",
-    "implementation_commit": "a6b103c8d04d3b6b8a48aacf0673d486e00d7937",
-    "freeze_commit": "6c7abe61fb7d7fcc3811925fcd39501e6389faee",
-    "methods": 7,
-    "records": 10,
-    "original_records_preserved": 7,
-    "original_forgery_rejections": 16,
-    "additional_rejection_forgeries": 6,
-    "restarts_exact": 2,
-    "source_identities": 543,
-    "prior_identities": 534,
-    "source_unchanged_at_closure": true,
-    "closed_at": "2026-10-16T16:22:35.986580+00:00",
-    "session": 81991,
+    "protocol_commit": "8ba4bc4610f6de762956b9dd9ab86c075261b41c",
+    "requires": "A10R continuation2 closed and zero workers; exact old setup preserved. One exact historical continuation inclusion only.",
+    "invoked": true,
     "exit_code": 0,
-    "workers_remaining": 0,
-    "completed_primary_paid_replays": 0,
-    "accepted_stage_replays": 0,
-    "canonical_energy_time": 208,
-    "workflow_energy_time": 216,
-    "workflow_unpaid_rejections": 1,
-    "main_execution_authorized": false,
-    "comparison_paid": false,
-    "td5_admitted": false,
-    "history_choice": false,
-    "independent_credit": false,
-    "parent_accepted": false,
+    "methods": 6,
+    "copied": 570,
+    "source_identities": 549,
+    "prior_source_identities": 543,
+    "implementation_commit": "ee4312da0d445b9e9b0f00145c5da97823961de6",
+    "freeze_commit": "c46d92a605693bf70f378ec2fa9da81830cec72b",
     "evidence": {
       "filename": "FT7_Owned_Rehearsal_A10R_Evidence_20261016.zip",
       "sha256": "16c760c70eed69515ac9d543281dc4605fc748c792d34a09a4986c4759739138",
       "bytes": 198669714,
       "manifest_members": 91,
       "all_members_verified": true
-    }
+    },
+    "accepted": true,
+    "record": "docs/ft/FT_Setup_Tool_Overlay_A3_Record.md",
+    "public_paths": 743,
+    "sole_exact_path_delta": true,
+    "workers_remaining": 0,
+    "native_work": 0,
+    "dependency_rebuilds": 0,
+    "accepted_gate_replays": 0,
+    "ft9_accepted": false,
+    "old_setup_preserved": true,
+    "public_summary_exact": true
   },
   "recall_feasibility_progress": {
     "status": "diagnostic_pass",
@@ -2368,7 +2360,7 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T16:27:25.000Z",
+  "updated_at": "2026-10-16T16:30:00.000Z",
   "skill_intake_a1": {
     "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
@@ -2734,7 +2726,9 @@
       "bytes": 198669714,
       "manifest_members": 91,
       "all_members_verified": true
-    }
+    },
+    "acceptance_commit": "d68597d7e152fafa1a038f85e976a8bf222f5160",
+    "public_summary_exact": true
   },
   "latest_domain_acceptance": {
     "batch": "FT7.Changed.Domain.A6",
@@ -2866,11 +2860,12 @@
         "new_paid_work": 0,
         "methods": 0,
         "message": "unsupported U2 wire value"
-      }
+      },
+      "acceptance_commit": "d68597d7e152fafa1a038f85e976a8bf222f5160"
     }
   },
   "setup_tool_overlay_a3": {
-    "status": "closed_pass_pending_record",
+    "status": "passed",
     "protocol_commit": "8ba4bc4610f6de762956b9dd9ab86c075261b41c",
     "requires": "A10R continuation2 closed and zero workers; exact old setup preserved. One exact historical continuation inclusion only.",
     "invoked": true,
@@ -2887,7 +2882,18 @@
       "bytes": 198669714,
       "manifest_members": 91,
       "all_members_verified": true
-    }
+    },
+    "accepted": true,
+    "record": "docs/ft/FT_Setup_Tool_Overlay_A3_Record.md",
+    "public_paths": 743,
+    "sole_exact_path_delta": true,
+    "workers_remaining": 0,
+    "native_work": 0,
+    "dependency_rebuilds": 0,
+    "accepted_gate_replays": 0,
+    "ft9_accepted": false,
+    "old_setup_preserved": true,
+    "public_summary_exact": true
   },
   "prior_latest_engine_acceptance": {
     "batch": "FT7.Observed.Fields.A5",

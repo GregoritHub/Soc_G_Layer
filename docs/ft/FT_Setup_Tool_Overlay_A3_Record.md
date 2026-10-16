@@ -1,0 +1,15 @@
+# FT Setup Tool Overlay A3 — exact rehearsal-continuation inclusion
+
+16 October 2026 UTC. **Accepted setup-only correction.** The sole invocation closed exit0: all six exact methods passed and all570 selected files were copied byte-for-byte from the743-path public input snapshot. No native work, dependency rebuild, accepted-stage replay or FT9 standalone acceptance occurred.
+
+The old filter omitted exactly `tools/continue_owned_rehearsal_closure.py`, the preserved historical A10R continuation. The correction adds that one literal to the existing exact-name tuple. Removing only it reproduces the complete old setup AST. All other filtering, safe-path, dependency, archive and existing-output behavior is unchanged; no broad tools-directory permission was added. The separate corrected v2 evaluator was already included by the existing evaluate_ft prefix.
+
+Prospective protocol version2 `8ba4bc4610f6de762956b9dd9ab86c075261b41c` superseded the unused conditional version1 after the A10R digest correction. It required A10R to close and zero evaluators to survive before setup changed. A10R closed exit0 at16:22:35.986580UTC; the saved-only closure verified543 exact source identities and zero workers. Exact old setup bytes (SHA256 `9ca82c7203c63cd0c514f549486dd76dba05b05836d5f5f161084fe0850717af`) were preserved before implementation `ee4312da0d445b9e9b0f00145c5da97823961de6`.
+
+Freeze `c46d92a605693bf70f378ec2fa9da81830cec72b` binds549 identities. The543-predecessor bridge uses preserved old setup bytes; all542 other predecessor identities remain unchanged. Six controls verify exact one-path extension, all frozen public predecessors selected, complete byte-exact copying, exclusion of unrelated/near-match/private paths, traversal rejection and preservation of existing output. No attempt failed.
+
+The743-path binding is the complete implementation-head snapshot before adding its own binding and freeze files. Its source blobs deliberately bind the old setup for the bridge; the new setup is separately frozen. Mutable publication README/docs are outside this source binding. Full-tree publication verification is separate from this bounded setup copy gate.
+
+Evidence: `FT7_Owned_Rehearsal_A10R_Evidence_20261016.zip`, SHA256 `16c760c70eed69515ac9d543281dc4605fc748c792d34a09a4986c4759739138`, 198669714 bytes, all91 manifest members verified. Its setup section includes the actual six-method log, complete570-entry copy manifest, summary, closure, old setup and exact new source/protocol/binding/freeze. Private companion pointers stay inside the archive.
+
+This fixes selection/copy coverage only, not a full fresh dependency reconstruction or standalone delivery. A10R acceptance `d68597d7e152fafa1a038f85e976a8bf222f5160` remains scoped to auxiliary rehearsal with honest rejection and unchanged descriptive recall/cursor. Lawful changed-input organization/skills and comparisons, genuine distinct-element ties, autonomous history-only choice, chosen paid work/use, matched controls/full staging, parent FT7 and FT8–FT9 remain unfinished. All inherited gates and historical publication restrictions remain intact. No terminal blocker.

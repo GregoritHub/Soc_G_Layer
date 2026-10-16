@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "methods": [
+    "test_all_frozen_public_files_selected",
+    "test_copy_exact_bytes",
+    "test_exact_one_path_extension",
+    "test_existing_output_preserved",
+    "test_no_broad_tool_permission",
+    "test_unsafe_path_rejected"
+  ],
+  "errors": 0,
+  "failures": 0,
+  "public_paths": 743,
+  "copied": 570,
+  "source_identities": 549,
+  "prior_source_identities": 543,
+  "sole_exact_path_delta": true,
+  "additional": "tools/continue_owned_rehearsal_closure.py",
+  "dependency_rebuilds": 0,
+  "native_work": 0,
+  "accepted_gate_replays": 0,
+  "ft9_accepted": false
+}
