@@ -131,7 +131,7 @@
   "active_worker": true,
   "lease_expires_at": "2026-10-16T20:06:00+00:00",
   "expected_head": "300aee98e0af58a5a859c9f8d43a2c46b6c6a4bb",
-  "current_batch": "A12D accepted; A12D2 full fixed-panel extension prospectively registered, not implemented or executed",
+  "current_batch": "A12D2 full fixed-panel extension: frozen implementation, new primary generation in progress; no acceptance yet",
   "canonical_quotation_a8": {
     "status": "passed",
     "accepted": true,
@@ -3226,7 +3226,18 @@
     "acceptance_commit": "2cc0161667f8cffc05601be4ada8025c5a9ab1cf"
   },
   "cue_processing_panel_a12d2": {
-    "status": "prospectively_registered_not_implemented_not_executed",
+    "status": "frozen_generation_in_progress_not_accepted",
+    "implementation_commit": "59c3b72512f4b7a57485ecb560819fe3b3056499",
+    "freeze_commit": "19780916484bbfe162b2b7436595ef1e223ed05c",
+    "source_identities": 594,
+    "immediate_evidence": {
+      "filename": "FT7_Cue_Processing_Panel_A12D2_Immediate_Evidence_20261016.zip",
+      "sha256": "92d2f624e0d7f99cc98bdf2900a97fb1cc791ad3569e081189ebdb65cd581cf6",
+      "bytes": 12753378,
+      "members": 64,
+      "saved_readback_exact": true,
+      "saved_before_remaining_native_work": true
+    },
     "protocol_commit": "cc48912c4a55b93fb4a83c46e29567772c8ff4c6",
     "protocol": "contracts/ft/FT7_Cue_Processing_Panel_A12D2_Protocol_v1.json",
     "prior_source_identities": 588,
