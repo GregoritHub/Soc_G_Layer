@@ -1,0 +1,48 @@
+{
+  "batch": "FT7.Fresh.CueIntake.A12B",
+  "accepted": false,
+  "status": "held_evidence_loss",
+  "closed_jobs": 89,
+  "failed_jobs": [
+    "audit-workflow-12-complete"
+  ],
+  "record_paths": 50,
+  "valid_records": 49,
+  "damaged_records": [
+    "workflow-12-complete"
+  ],
+  "independent_audits": 49,
+  "source_identities": 576,
+  "prior_identities": 568,
+  "accepted_primary_replays": 0,
+  "all_job_boundaries_closed": true,
+  "primary_jobs_passed": 30,
+  "control_jobs_passed": 8,
+  "method_bodies_run": 0,
+  "final_aggregate_invoked": false,
+  "surviving_evaluator_workers": 0,
+  "protocol_commit": "5bb83c8e8a2afbf23b68f4962d809d4524c1ab96",
+  "implementation_commit": "c0b69cfdd1d2631a917b0d66daa638795224a21d",
+  "freeze_commit": "0563f056d63b7696d11ad7f16b488b03d6713a02",
+  "freeze_sha256": "b586100af7700b2774df17f343e63ab0a6cc2ed032c5c84c97b47672e953bf08",
+  "record_gate": 50,
+  "method_gate": 8,
+  "missing_record": "workflow-12-complete.json.gz",
+  "original_missing_record_hash": null,
+  "zero_byte_current_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "cause": "unknown",
+  "native_engine_failure_demonstrated": false,
+  "comparison_paid": false,
+  "execution_authorized": false,
+  "td5_admitted": false,
+  "history_choice": false,
+  "ft8_unchanged": true,
+  "evidence": {
+    "filename": "FT7_Cue_Intake_A12B_Progress_Evidence_20261016.zip",
+    "sha256": "3ab1069b729123a56901fb2dc73d0343edb3112043d861a7aaf73b9cc86d2bb1",
+    "bytes": 38185859,
+    "members": 297,
+    "saved_readback_exact": true
+  }
+}
+

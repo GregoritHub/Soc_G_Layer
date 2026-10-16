@@ -1,0 +1,34 @@
+{
+  "batch": "FT7.Fresh.CueIntake.A12B",
+  "status": "held_not_accepted",
+  "archive": {
+    "filename": "FT7_Cue_Intake_A12B_Progress_Evidence_20261016.zip",
+    "sha256": "3ab1069b729123a56901fb2dc73d0343edb3112043d861a7aaf73b9cc86d2bb1",
+    "bytes": 38185859,
+    "members": 297,
+    "saved_readback_exact": true
+  },
+  "contents": [
+    "attempt1/records (49 valid, one preserved zero-byte artifact)",
+    "attempt1/audits (49 passing)",
+    "attempt1/jobs (89 closed start/outcome pairs)",
+    "source/ (frozen new files)",
+    "inputs/ (exact original accepted archive)",
+    "panels/ (accepted A12A descriptors)",
+    "CLOSURE.json",
+    "EVIDENCE_LOSS_DIAGNOSTIC.json",
+    "EXECUTION_READBACK.json",
+    "PACKAGING_INTERRUPTION.json",
+    "PRIVATE_COMPANIONS.json",
+    "REPRODUCTION.txt",
+    "SHA256.json"
+  ],
+  "retrieval": "Find the exact archive filename in the private evidence collection; verify archive SHA256 and every SHA256.json member. Companion retrieval identifiers are inside the archive only.",
+  "missing_original": "workflow-12-complete.json.gz",
+  "prohibitions": [
+    "Do not regenerate the missing original or replay completed paid primary work.",
+    "Do not invoke tests or finish without a prospectively registered exact-evidence recovery.",
+    "Do not infer acceptance from generation outcomes or 49 passing audits."
+  ]
+}
+
