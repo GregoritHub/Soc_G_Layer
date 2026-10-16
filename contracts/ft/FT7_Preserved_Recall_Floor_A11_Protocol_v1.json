@@ -1,0 +1,44 @@
+{
+  "batch": "FT7.Recall.PreservedRootFloor.A11",
+  "version": 1,
+  "scope": "Read-only necessary obstruction for cue-only organization on exact A10R complete states. Not a claim about all native organization, future inputs, TD5 admission, comparison, or paid work.",
+  "prior_source_freeze": "contracts/ft/FT_Setup_Tool_Overlay_A3_Source_Freeze_v1.json",
+  "prior_source_identities": 549,
+  "inputs": {
+    "canonical": "cfa8497e2fa8c1022a3e47d656e2fa040a0f43c687eea4cfd2cb8108062d5ff3",
+    "workflow": "9539f0b2caeb1539fd903138981e67b67ac42331838b67d2e3bf06246f38845a"
+  },
+  "input_labels": [
+    "canonical-complete",
+    "workflow-complete"
+  ],
+  "preserved_namespaces": [
+    "c3.output",
+    "c7w.output",
+    "u8.account",
+    "u11.binding",
+    "u7.binding"
+  ],
+  "cue_key": "minor:Coin:10",
+  "visit_limit": 32,
+  "intervention": "Remove any subset of other current cue roots, keeping all original bindings, links, contexts and generated-root heads unchanged. This is a superset relaxation of cue-only organization, not permission to remove task or other roots. Added bindings cannot reduce this reachability floor. No claim when generated heads/links/contexts change through another lawful native mechanism.",
+  "algorithm": "Traverse closure from all listed preserved current cue roots, respecting exact historical references and context. Produce finite graph and full closure plus first 33 distinct references when available. Independently recompute least fixed point and original native traversal; exact audit, no module-generator reuse in audit.",
+  "known_before_registration": "A10R readback is truncated. Current canonical generated root counts 21 c3.output+7 u8.account+2 u11.binding+2 u7.binding; workflow20 c7w.output+7 u8.account+2 u11.binding+1 u7.binding. Reachability floor not yet evaluated. No new outcome promised.",
+  "methods": [
+    "test_exact_saved_reports",
+    "test_independent_report_forgery_rejection",
+    "test_input_binding_rejection",
+    "test_boundary_32_33",
+    "test_cycles_historical_and_context",
+    "test_root_removal_monotonicity"
+  ],
+  "gate": "Six exact new methods, two exact saved reports and independent readback audits; synthetic 32/33 boundary, cycles/historical/missing/context and exhaustive small-graph mutable-root subsets; reject source/graph/root/witness/count/scope/authority forgery. All549 predecessor identities unchanged. Zero engine restore, commands, paid work or accepted stage replay.",
+  "new_files": [
+    "full_theory/preserved_recall_floor.py",
+    "full_theory/preserved_recall_floor_audit.py",
+    "tools/evaluate_preserved_recall_floor.py",
+    "tests_ft7/test_preserved_recall_floor.py"
+  ],
+  "public_base_head": "1cdfaab1f32eb89d5d5305e31017e60a297d8fb1",
+  "preserve": "Oldest need, original social/history prefixes, generated outputs, all failures, baseline/defaults, source privacy and FT8 denominators unchanged."
+}
