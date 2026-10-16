@@ -129,8 +129,8 @@
   "status": "running",
   "run_id": "ft7-cue-continuation-20261016T1814Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-16T19:07:54.436264+00:00",
-  "expected_head": "bd78f0aec0a76a0c700a6824cc4d7793604a15b7",
+  "lease_expires_at": "2026-10-16T19:16:48.251992+00:00",
+  "expected_head": "f7422749459650814ce6968819f895ad56d49ea2",
   "current_batch": "FT7.Owned.CueProcessing.A12D prospective native opportunity processing",
   "canonical_quotation_a8": {
     "status": "passed",
@@ -3137,7 +3137,7 @@
     "acceptance_commit": "bd78f0aec0a76a0c700a6824cc4d7793604a15b7"
   },
   "cue_processing_a12d": {
-    "status": "protocol_registered_before_code",
+    "status": "running_saved_audits",
     "accepted": false,
     "mask": 1,
     "settings": [
@@ -3149,6 +3149,26 @@
     "source_prefix_identities": 582,
     "main_execution_authorized": false,
     "history_choice": false,
-    "parent_accepted": false
+    "parent_accepted": false,
+    "protocol_commit": "b48bebe9516238e22c93da828b9c81eee13c3711",
+    "implementation_commit": "11cee05edb73b3a3e552104fdc9f7997060a54b6",
+    "freeze_commit": "f7422749459650814ce6968819f895ad56d49ea2",
+    "source_identities": 588,
+    "prior_identities": 582,
+    "primary_branches_closed": 2,
+    "control_branches_closed": 4,
+    "raw_records": 12,
+    "first_complete_audit_passed": true,
+    "canonical_cost": 96,
+    "workflow_cost": 99,
+    "native_cursor_before": "ni",
+    "native_cursor_after": "si",
+    "immediate_evidence": {
+      "filename": "FT7_Cue_Processing_A12D_Immediate_Evidence_20261016.zip",
+      "sha256": "f3e40f62a0ceb22176c1b1b319afa416bbb2d4aece510c54818e92f4994df369",
+      "bytes": 5453460,
+      "members": 29,
+      "saved_readback_exact": true
+    }
   }
 }
