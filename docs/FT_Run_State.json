@@ -4,9 +4,35 @@
   "status": "running",
   "run_id": "ft7-canonical-quote-a8-2026-10-16T13:41:05.386Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-16T14:11:05.386Z",
-  "expected_head": "72b36c43df4c359f4066fe689bad79569e6d702c",
+  "lease_expires_at": "2026-10-16T14:30:18.131Z",
+  "expected_head": "eaec2a04cc1af133b68f7bc0a13b704e34a1a40c",
   "current_batch": "FT7.Canonical.Quotation.A8",
+  "canonical_quotation_a8": {
+    "status": "quote_complete_audit_running",
+    "accepted": false,
+    "protocol_commit": "517fadd09276cfb094c22d7c2469d2a3c6072ef1",
+    "implementation_commit": "af75c258079128cd7980d1a22cbb12a58266deaf",
+    "freeze_commit": "3fbfe3b00d803c74259f7abec59d16ad06ab55f2",
+    "source_identities": 499,
+    "prior_identities": 493,
+    "quoted_rows": 5832,
+    "required_energy": 432864,
+    "required_time": 432864,
+    "available_energy": 197808,
+    "available_time": 197808,
+    "deficit_each": 235056,
+    "quote_invocations": 1,
+    "session": 36445,
+    "native_work_calls": 0,
+    "engine_restore_calls": 0,
+    "closed_quote_evidence": {
+      "filename": "FT7_Canonical_Quotation_A8_Closed_Quote_20261016.zip",
+      "sha256": "8fb7cca65f4f32c36657dded2cb408c043aa29a1091f5dad926e7614af528c2f",
+      "members": 6
+    },
+    "conditional_saved_audit_protocol": "eaec2a04cc1af133b68f7bc0a13b704e34a1a40c",
+    "conditional_continuation_invoked": false
+  },
   "current_window_admission_progress": {
     "status": "passed",
     "implementation_commit": "a79669120939bfb0ee5f2dd7914a45b44f3c5696",
@@ -428,7 +454,7 @@
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT7_Comparison_Funding_A7_Record.md",
+  "latest_record": "docs/ft/FT7_Canonical_Quotation_A8_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
