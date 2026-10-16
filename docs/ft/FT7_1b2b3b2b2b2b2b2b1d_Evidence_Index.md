@@ -1,3 +1,15 @@
+# Current-window admission evidence
+
+Current status:40/40 saved audits and7/8 original methods passed; forgery body active, final aggregate pending. NOT ACCEPTED. Never reinvoke any old launcher or passing stage. Current run-state governs over dated reproduction instructions below.
+
+Latest interruption evidence: FT7_1b2b3b2b2b2b2b2b1d_Method_Interruption_Evidence_20261016.zip, SHA256 a4fc22ab7ad7ac4345254881250a75602f229bf54cf751ed63cee5a47fd7ec68. All250 members verified,14472270bytes; exact nested222/179/226/97/40 archives verified. Contains all40 saved records, five prior passes, both interrupted method logs and complete original/continuation1/continuation2 files including the absent continuation2 outcome. It includes the new recovery protocol/runner/complete191+26+23-file binding and four-identity freeze. Uploaded once; no prior archive overwritten or duplicated.
+
+Two further methods have passed in the still-running isolated recovery. No new archive is packaged until all its children close. The incomplete auxiliary log for the earlier passing restart method remains unchanged; the exact passing result and closed exit-zero parent job are retained. No old outcome or exit code is fabricated.
+
+## Dated closed evidence and historical instructions
+
+The following39-record checkpoint is preserved history. Its never-invoked continuation2 description and invocation instructions are superseded; continuation2 has since run and was interrupted. Do not invoke it again.
+
 # Current-window admission progress evidence
 
 Status: 39 of 40 exact saved audits passed; zero of eight actual methods run. NOT acceptance. Both prior launchers are closed, all jobs passed, no active children remain.

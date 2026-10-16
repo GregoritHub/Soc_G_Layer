@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft7-admission-final-20261016T023350Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-16T03:44:31.743Z",
-  "expected_head": "765737207187abdf07b29d4665d0ec0030704db8",
+  "lease_expires_at": "2026-10-16T03:58:21.490Z",
+  "expected_head": "44c26e90cd209385208ba1753221da5c5977295d",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1d",
   "current_window_admission_progress": {
     "status": "method_recovery1_running_not_accepted",
@@ -17,7 +17,7 @@
     "required_methods": 8,
     "required_saved_records": 40,
     "required_predecessor_identities": 484,
-    "actual_methods_completed": 6,
+    "actual_methods_completed": 7,
     "saved_records_completed": 40,
     "record_launches_closed_at_deadline": 31,
     "active_records_at_deadline": 4,
@@ -27,15 +27,14 @@
     "new_native_work": false,
     "accepted": false,
     "record": "docs/ft/FT7_1b2b3b2b2b2b2b2b1d_Record.md",
-    "owned_processes_remaining": 3,
+    "owned_processes_remaining": 2,
     "original_outcome": "checkpoint",
     "stop_reason": "prospective deadline",
     "original_children_failed": 0,
     "original_children_interrupted": 0,
     "remaining_records": [],
     "remaining_methods": [
-      "test_window_operand_cost_forgery_rejected",
-      "test_native_and_prefixes_unchanged"
+      "test_window_operand_cost_forgery_rejected"
     ],
     "continuation_protocol_sha256": "a8602bc91ef506325968f6a9dbac34975064d66c2a5acfa477c290f411978400",
     "continuation_freeze_commit": "f72e518a289404a1afeb67ff2bf48634c0068fff",
@@ -181,8 +180,7 @@
       "original_source_unchanged": 406,
       "passed_methods_preserved": 5,
       "pending_methods": [
-        "test_window_operand_cost_forgery_rejected",
-        "test_native_and_prefixes_unchanged"
+        "test_window_operand_cost_forgery_rejected"
       ],
       "output": "current-window-admission-method-recovery1",
       "operations": "current-window-admission-method-recovery1-operations",
@@ -194,8 +192,12 @@
       "stop_at": "2026-10-16T03:26:29.761Z",
       "execution_session": 97404,
       "new_methods_passed": [
-        "test_old_nominees_and_bounded_cells"
-      ]
+        "test_old_nominees_and_bounded_cells",
+        "test_native_and_prefixes_unchanged"
+      ],
+      "new_launches_allowed": false,
+      "active_children": 1,
+      "deadline_passed": true
     },
     "read_only_recall_inspection": {
       "status": "closed_read_only_diagnostic",
@@ -288,7 +290,7 @@
       "paths_removed": 0
     }
   },
-  "next_batch": "Wait active isolated recovery controls naturally; never reinvoke old launchers or passing stages. Complete unchanged finish only after all eight original bodies; then route-free fresh skills/paid recall organization, changed-input payments, genuine distinct-element ties, history-only choice, chosen paid work/use, matched controls and full staging. FT8 unchanged.",
+  "next_batch": "Wait the one active original forgery-rejection method naturally; do not restart recovery. After quiescent all8pass checkpoint, bind and freeze conditional Recovered_Finish1 then run only unchanged aggregate. If current recovery aggregate already passed, never run finalizer. After B1D: prospectively implement paid recall organization/fresh skills, new comparisons after input changes and genuine history-only choice/matched work/use/full staging, with FT8 intact.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",

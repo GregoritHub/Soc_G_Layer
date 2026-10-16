@@ -1,31 +1,31 @@
 # Current-window admission progress summary
 
-Status: partial verification, NOT accepted.
+Status: seven original methods and forty saved audits passed; NOT ACCEPTED.
 
-| Obligation | Verified now | Required |
+| Obligation | Verified | Required |
 | --- | ---: | ---: |
 | Canonical saved records | 20 | 20 |
-| Workflow saved records | 19 | 20 |
-| Exact actual method bodies | 0 | 8 |
+| Workflow saved records | 20 | 20 |
+| Exact actual method bodies | 7 | 8 |
 | Exact predecessor identities | 484 | 484 |
-| Unchanged source identities | 406 | 406 |
-| Unchanged prior identities | 399 | 399 |
+| Unchanged original/prior source identities | 406 / 399 | 406 / 399 |
 | Final aggregate | Not run | Pass |
 
-All 39 closed records passed typed roundtrip and full independent native/source/intake/domain/payment/capacity/operand/cost audits. Every launched child exited zero; no failed, interrupted or active child remains. The registered deadlines stopped new launches, not active work. Original31 and continuation1's eight new records are preserved without reruns.
+Only test_window_operand_cost_forgery_rejected remains active. Native-prefix preservation and old-nominee/bounded-cell controls passed in isolated recovery; the five earlier passes and forty records were copied byte-exact. The launch deadline has passed; no new launch, signal, accepted paid replay or passing-stage rerun is allowed. Wait the active child naturally.
 
-Remaining record: workflow cancelled. Then all eight original actual methods and unchanged finish. Never rerun original run/init, continuation1, passing records or accepted paid gates.
+Continuation2 lost its execution session after five methods and the final record passed. Two partial method attempts, all unclosed launch records and the start-only auxiliary log of the passing restart control are preserved. The original passing result and closed exit-zero parent job for that restart remain exact. No engine failure or exact interruption cause is claimed. Recovery uses unchanged original tests/evaluator under a separate prospective four-identity freeze.
 
-| Per closed settled record | Canonical | Workflow |
+Conditional Recovered_Finish1 is implemented, not frozen or invoked. It may run only the unchanged aggregate after all eight original methods pass and recovery closes with zero active children. It must first bind every closed prefix and freeze its four operational identities. Existing launchers must never be restarted.
+
+| Settled record domain | Canonical | Workflow |
 | --- | ---: | ---: |
 | Paid windows | 1 | 510 |
-| Bounded native operands | 22 | 3,056 |
-| Work candidates plus defer | 111 | 15,281 |
-| Current energy/time wallet | 197,913 each | 175,815 each |
-| Diagnostic nominee | defer | defer |
+| Bounded operands | 22 | 3,056 |
+| Candidates including defer | 111 | 15,281 |
+| Energy/time wallet | 197,913 each | 175,815 each |
 
-Preparation remains one unpaid unit quoted 2/2, receipt absent, intake/comparison credit zero. All work candidates remain ineligible. Original demand, native labels/nominees and source/reserve/history prefixes are exact. This read-only diagnostic supplies no execution/history authority or new native work.
+All work remains ineligible; diagnostic nominee is defer. Preparation debt1 is quoted2/2, receipt absent. No factoring of content/recipes/operands/costs/nominees, native work, execution authority, history choice or parent acceptance.
 
-Continuation1 closed with eight passes and no failures. The second four-identity operational continuation is frozen at 45309d2046ca807021f4877cacfd0590b577072b and never invoked. It binds all 177 original-output files, 26 continuation1 files, 80 accepted raw inputs, original406 and prior operational4 identities. New 222-member continuation evidence preserves the exact prior179-member progress. Full original acceptance remains mandatory.
+Separate read-only mask1 diagnosis directly observed visited32/truncated=true in both settings, with30/29 current-cue roots and the capacity binding already owned and visited. This is evidence of truncation in these two exact states, not an inference from not_recalled alone; no repair, new payment or acceptance follows. Full raw diagnostic will be preserved with closed recovery evidence.
 
-See Record and Evidence Index. Parent FT7–FT9 and all FT8 obligations remain unfinished.
+See current Record, state and Evidence Index. FT7/pairs/populations/FT8–FT9 remain unfinished; all FT8 obligations unchanged.
