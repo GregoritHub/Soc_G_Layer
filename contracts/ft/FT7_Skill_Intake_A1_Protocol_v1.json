@@ -1,0 +1,57 @@
+{
+  "version": "ft-owned-material-inspection-a1-v1",
+  "batch": "FT7.Skill.Intake.A1",
+  "entry_head": "c68da7059c88da6275da59b538ab1678c282117e",
+  "entry_acceptance": "850c21a2adf60a8e43e6e6799b4fc92bb71b0e6e",
+  "prior_freeze": "FT7_Recall_Feasibility_A1_Source_Freeze_v1.json",
+  "scope": "Fresh paid material observation prerequisite to route-free skill acquisition; not skill acquisition, recall repair, main-task admission or live choice.",
+  "antecedent": "Mask-1 owned repair procedure unacquired in both settings; directly observed material fields differ. Two-root recall repair remains insufficient. No new inspection outcomes observed before registration.",
+  "input": {
+    "archive_sha256": "4ece02f685fb7df900523bc64983e83e19f3d636994b90bf796f5a1282dca71b",
+    "keys": [
+      "canonical/mask-1",
+      "workflow/mask-1"
+    ],
+    "binding": "Accepted archive paid/capacity indexes and exact native digest; retain current task, demand, original source/history and all protected binding bytes."
+  },
+  "policy": "From the initial owned snapshot only, collect source identities with a name-category particular or an exact integer quantity particular. Normalize to latest explicitly observed source revision, sort by typed stable identity. At most128 identities or reject before work. Attempt native inspect on every source with its owned particulars as evidence; native nonmaterial rejection is recorded without payment/mutation and does not grant knowledge. Successful native inspect costs3 energy/time and still conveys no owned observation until actual event delivery and read2 settle. No hidden material eligibility lookup in controller. Do not invent objects, scope, roles, stock or resources. Inventory remains frozen throughout this finite panel.",
+  "modules": [
+    "full_theory/owned_material_inspection.py",
+    "full_theory/owned_material_inspection_audit.py",
+    "tools/evaluate_owned_material_inspection.py"
+  ],
+  "tests": "tests_ft7/test_owned_material_inspection.py",
+  "records": [
+    "before",
+    "inspect-partial",
+    "read-partial",
+    "complete",
+    "restarted",
+    "cancelled"
+  ],
+  "settings": [
+    "canonical",
+    "workflow"
+  ],
+  "checks": [
+    "exact owned plan and original native/source binding",
+    "actual native lifecycle extents3/2 and all wallet debits; no material changes",
+    "unpaid inspection/partial read withholds owned observation",
+    "exact native+adapter restart from read-partial",
+    "partial inspection cancellation retains debit and has no read/credit",
+    "reject forged prefix/plan/payment/authority; terminal steps idempotent",
+    "unchanged original journal/commands/access/bindings/cursors/profiles/demand/old results; full independent native audit",
+    "all412 prior source identities unchanged; acceptance only after all12 saved audits and six exact new test methods"
+  ],
+  "claims": {
+    "skill_acquired": false,
+    "recall_repaired": false,
+    "comparison_paid": false,
+    "td5_admitted": false,
+    "history_choice": false,
+    "main_execution_authorized": false,
+    "parent_accepted": false
+  },
+  "execution": "Serial bounded evaluator; immutable accepted input records only. Stop at checkpoint between settings if lease/deadline insufficient; never reinvoke a completed paid branch. Preserve failures and preregister corrections before retry.",
+  "next": "Autonomous acquisition using matching actual paid practice and newly owned observations; any changed request/input must receive fresh comparison. Full parent tie/choice/work/use/control/staging and FT8 denominators unchanged."
+}
