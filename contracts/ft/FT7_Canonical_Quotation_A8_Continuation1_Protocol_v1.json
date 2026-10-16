@@ -1,0 +1,21 @@
+{
+  "version": "ft-canonical-quotation-a8-continuation1-v1",
+  "batch": "FT7.Canonical.Quotation.A8.Continuation1",
+  "original_protocol": "517fadd09276cfb094c22d7c2469d2a3c6072ef1",
+  "original_implementation": "af75c258079128cd7980d1a22cbb12a58266deaf",
+  "original_freeze": "3fbfe3b00d803c74259f7abec59d16ad06ab55f2",
+  "original_freeze_file": "contracts/ft/FT7_Canonical_Quotation_A8_Source_Freeze_v1.json",
+  "policy": [
+    "Original guarded A8 evaluation is unaccepted and still quoting at about3.5 rows/second. Its18-minute invocation budget is insufficient for complete5832 quotation and full independent audit. This is operational sizing, not a native failure or pricing change.",
+    "Operator may interrupt ONLY the exact current A8 Python process with SIGINT after verifying its exact argv and absence of any paid-work API; observe actual process/session exit and terminal event. Preserve all files/rows and interruption cause. No signal to any historical or other worker. Do not infer success/exit if unobserved.",
+    "After original worker is closed and zero current A8 workers, bind every original output file byte and original499 source identities. Fresh continuation output only. Copy all saved prefix rows exactly in ordinal order; new Quotation.row calls start at prefix length. All prefix and suffix rows receive the unchanged full independent audit, no costs discounted.",
+    "Continuation evaluator is the original frozen A8 evaluator with only CLI prior-output argument, full binding verification, source-freeze bridge499, exact originalclosednonpass guard and row-prefix copy/start-offset. Original mapping check, complete reports, full independent auditor, forgeries and six methods unchanged. Retain source hash of original evaluator and explicit transformation proof.",
+    "Prior output must contain start, no quote_closed/audit_closed/methods_start/closed_pass, and exactly one terminal closed_nonpass KeyboardInterrupt from operator. Partial rows each complete valid JSON line ordinal0..n-1,n<5832. No prefix repair or truncation. Original records never overwritten. A future interruption needs separately bounded continuation; no successful quote/audit/method replay.",
+    "New lease/deadline checked every128rows as original. Bound maximum60minutes, refresh30minute lease safely before expiry. Preserve all493 prior/original499 identities. Freeze prior files and operational tool before invocation. Parent gates, funding/authority flags and tests unchanged."
+  ],
+  "modules": [
+    "tools/continue_ft7_canonical_quotation.py"
+  ],
+  "tests": "tests_ft7/test_canonical_quotation.py",
+  "next": "Only unfinished quote rows, then original full independent audit and original six method bodies; never accepted paid work."
+}
