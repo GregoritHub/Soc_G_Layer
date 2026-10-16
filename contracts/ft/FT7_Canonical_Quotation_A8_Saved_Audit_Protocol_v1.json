@@ -1,0 +1,29 @@
+{
+  "version": "ft-canonical-quotation-a8-saved-audit-protocol-v1",
+  "batch": "FT7.Canonical.Quotation.A8.SavedAudit",
+  "original_protocol": "517fadd09276cfb094c22d7c2469d2a3c6072ef1",
+  "original_freeze": "3fbfe3b00d803c74259f7abec59d16ad06ab55f2",
+  "policy": [
+    "Conditional only: original A8 quote_closed5832/432864 observed at2026-10-16T13:56:06.373993Z. Original independent audit remains running; no acceptance is claimed. Do not overlap or interrupt it. If original invocation passes, this protocol is inapplicable and never invoked.",
+    "After a natural closed_nonpass SystemExit ownership/lease/deadline event and observed actual exit, require exactly one originalquote_closed and no audit_closed,methods_start orclosed_pass. Bind every original output file byte, exact499 originalsource and zero survivingworker beforefreeze. If closure differs, do not invoke.",
+    "Use exact original complete.json.gz and rows.jsonl; verify all5832exact sequentialrows and their fullreport equality. Never call Quotation, nativeviews, quote.row, engine.restore or any paidwork. Originalquote is preserved once; newstageonly completes the unfinished independent savedaudit with unchanged QuotationAudit and originalreference.",
+    "Full independent reconstruction everyrow, both original/saved-restoredreport audits, original21forgery checks and six exact originalmethods required unchanged. Independent audit prefix from original is unclosed and no stored expectedrows exists; it is not credited as a passing audit. Preserve originalpartial progress as interrupted read-only work, no fabricated outcome.",
+    "New operationalrunner atmost1toolmodule; originalruntime/auditor/tests/evaluator/all499sourceidentities unchanged. Frozen source bridge and completeinputbinding. Maximum35minute freshdeadline, unique currentlease, refresh30minutelease safely. Beforefuturetimeout persist partialevidence; no repeatedsuccessful stages.",
+    "Retain undeliveredSIGINT ProcessLookupError and earlier conditionalprefixcontinuation protocol as unusedhistoricalplanning. This savedstage supplies no newquote orpaidresults, no parentFT7-FT9acceptance, nopricing/domainchange."
+  ],
+  "modules": [
+    "tools/audit_ft7_canonical_quotation_saved.py"
+  ],
+  "methods": [
+    "test_complete_ordinal_coverage",
+    "test_all_independent_rows",
+    "test_native_immutable",
+    "test_exact_aggregate_funding",
+    "test_forgery_rejection",
+    "test_authority_and_roundtrip"
+  ],
+  "required_assignments": 5832,
+  "required_forgeries": 21,
+  "source_original": 499,
+  "prior": 493
+}
