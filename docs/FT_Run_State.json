@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "e87218cc23138fe01876a65ce13f39c91d21f652",
+  "status": "running",
+  "run_id": "ft7-skill-practice-2026-10-16T09:37:19.365Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-16T10:07:19.365Z",
+  "expected_head": "2eca018f167e0f61811379d4498c144ad349acac",
   "current_batch": "FT7.Skill.Intake.A1",
   "current_window_admission_progress": {
     "status": "passed",
