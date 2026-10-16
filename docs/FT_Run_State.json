@@ -1,12 +1,12 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "bf54b1168599df41efb183f7b892cd14c6636fde",
-  "current_batch": "FT7.Comparison.Design.A9",
+  "status": "running",
+  "run_id": "ft7-owned-rehearsal-a10-2026-10-16T15:38:03.294Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-16T16:08:03.294Z",
+  "expected_head": "28db7e93319ddc5a7f7620783d74718e7d7d2440",
+  "current_batch": "FT7.Owned.Rehearsal.A10",
   "canonical_quotation_a8": {
     "status": "passed",
     "accepted": true,
@@ -2361,7 +2361,7 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T14:55:05.274Z",
+  "updated_at": "2026-10-16T15:38:03.294Z",
   "skill_intake_a1": {
     "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
