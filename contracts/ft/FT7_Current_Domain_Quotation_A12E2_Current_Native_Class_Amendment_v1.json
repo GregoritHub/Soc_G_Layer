@@ -1,0 +1,25 @@
+{
+  "version": "ft-current-domain-quotation-a12e2-current-native-class-amendment-v1",
+  "batch": "FT7.PostProcessing.CurrentQuotation.A12E2",
+  "registered_at": "2026-10-16T21:54:00+00:00",
+  "failed_attempt": "current-domain-quotation-a12e2-attempt2",
+  "failed_attempt_result": {
+    "error": "unknown pooled node",
+    "native_views": 0,
+    "saved_quote_reports": 0,
+    "saved_audits": 0,
+    "method_bodies": 0,
+    "paid_work": 0
+  },
+  "diagnosis": "The A12E1 current-native schema is the accepted A12C CueCanonicalEngine or CueWorkflowEngine. Its compact command pool contains the historical CueComparisonRequest nodes required for exact restoration. Resealing identical state under the older SelectionEngine schema correctly rejects those unknown historical command nodes. The accepted current native engine is not the separate A12D/A12D2 processing adapter.",
+  "correction": "Restore the exact accepted CueCanonicalEngine or CueWorkflowEngine from the saved current-native checkpoint and call only its inherited read-only selection view and policy methods. Never call start, advance, commit, cancel, the cue comparison adapter, or an A12D/A12D2 processing adapter. Compare the exact wrapper checkpoint byte-for-byte before and after. Apply the same existing native-class restore in the independent auditor and update the source-identity count from 610 to 612.",
+  "gate_unchanged": true,
+  "prohibitions": [
+    "No command or payment API",
+    "No A12D/A12D2 adapter restore or processing call",
+    "No accepted A12C/A12D/A12D2/A12E1 replay",
+    "No task, request, role, cost, route, winner or authority change"
+  ],
+  "ft8_unchanged": true
+}
+
