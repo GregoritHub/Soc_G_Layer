@@ -1,0 +1,53 @@
+{
+  "version": "ft-current-domain-quotation-a12e2-procedure-rejection-audit-amendment-v3",
+  "batch": "FT7.PostProcessing.CurrentQuotation.A12E2",
+  "registered_at": "2026-10-16T23:33:00+00:00",
+  "parent_freeze_commit": "d6ef83b147d91321752fd9d2279c64c39806516d",
+  "failed_continuation": "current-domain-quotation-a12e2-continuation5-parts",
+  "failure": {
+    "branch": "workflow-07",
+    "stage": "independent_audit_final_equality",
+    "error": "runtime and independent full reconstruction differ: workflow-07",
+    "first_differing_ordinal": 10,
+    "runtime_rejection": "supported native care procedure required",
+    "runtime_candidate_count": 0,
+    "audit_rejection": null,
+    "audit_candidate_count": 32,
+    "audit_rows_completed": 12384,
+    "other_audits_interrupted_after_diagnosis": {
+      "branches": [
+        "workflow-01",
+        "workflow-02",
+        "workflow-03",
+        "workflow-04",
+        "workflow-05",
+        "workflow-06",
+        "workflow-08"
+      ],
+      "rows_each": 6144
+    },
+    "method_bodies": 0,
+    "native_mutations": 0,
+    "paid_work": 0
+  },
+  "diagnosis": "Amendment v2 correctly identified the only resolved procedure as u4.repair.v1 but incorrectly treated that fact as an admissible workflow capacity procedure. The unchanged native WorkflowFinalSelectionEngine accepts only u4.care.v1 with SIGNATURES['care']; therefore every declared repair alternative is intentionally unusable and the runtime returns the exact rejection 'supported native care procedure required'. The independent auditor must reconstruct that rejection rather than construct candidates from the repair procedure.",
+  "saved_quotes": {
+    "workflow-01": "643ecb3d397df9593cc3b0caa16ff1057cc3b853759c37d817c1a561d4342908",
+    "workflow-02": "a3a3934e4d7ef7bd030cec18cb3f8070195c4a2101da7c94da08172b1a39b8d7",
+    "workflow-03": "a3401cd5f1d56f421f48a04f9cbe35701244848bfdb6fde38ffc1afcbf2b6cf3",
+    "workflow-04": "59610b3381c81ae0c945bff9ea7d179883e1df0ee47c93c54b83dffb75d15ebc",
+    "workflow-05": "406e1ae1c07a1440680a9de5e2ad98155da1e194f90b3fe491b234183b13c740",
+    "workflow-06": "cab6af5f07201e82a5df799a3de0650b08d6049539b8d0113abf5312b653fd1c",
+    "workflow-07": "2ac3885bbb23ec0415a0ed0d938f25d8937a28905cede2be947edb562814a90b",
+    "workflow-08": "f67ba56cd8cc161ae2cb06355c599a4cd3b6bf1464246693d0b9d76a3c2e642d"
+  },
+  "correction": "Change only the independent auditor to reproduce the unchanged native validation order: first reconstruct the base snapshot, then resolve the optional procedure, and return the exact paid/supported native care rejection when the resolved definition is missing or is not u4.care.v1 with SIGNATURES['care']. Generalize the evaluator's saved-quote audit-only mode to the eight exactly hashed successful workflow quotations above, verifying each duplicate backup, closed quote outcome and typed source binding before running only the corrected independent audit. Do not replay any of those 99,072 runtime quotation rows. Update the frozen source count from 618 to 620 after adding this amendment and digest.",
+  "gate_unchanged": true,
+  "prohibitions": [
+    "No replay of workflow-01 through workflow-08 successful quotations",
+    "No acceptance without a complete corrected independent audit for every branch",
+    "No change to runtime quotation, native procedure, request domain, native policy or cost",
+    "No payment, native command, execution, route, winner, success or authority change"
+  ],
+  "ft8_unchanged": true
+}
