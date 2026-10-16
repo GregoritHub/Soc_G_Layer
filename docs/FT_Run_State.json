@@ -1,12 +1,12 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "aa3462fd9054cc016f49e59e2b21febbe5d25164",
-  "current_batch": "FT7.Skill.Refresh.A3",
+  "status": "running",
+  "run_id": "ft7-observed-reference-a4-2026-10-16T11:36:33.000Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-16T12:06:33.000Z",
+  "expected_head": "4c2cb1b66a35b435c9cc9eb70b7e4499e7beab2a",
+  "current_batch": "FT7.Observed.Reference.A4",
   "current_window_admission_progress": {
     "status": "passed",
     "implementation_commit": "a79669120939bfb0ee5f2dd7914a45b44f3c5696",
