@@ -1,0 +1,70 @@
+{
+  "schema": "ft-skill-practice-a2-protocol-v1",
+  "batch": "FT7.Skill.Practice.A2",
+  "parent_accepted": false,
+  "accepted_input": "FT7.Skill.Intake.A1 at e87218cc23138fe01876a65ce13f39c91d21f652",
+  "inputs": {
+    "canonical": {
+      "file": "canonical-complete.json.gz",
+      "sha256": "463ed0982c5463e83f541eddf79bda88b6418251fa7002f59c63ec8f8d733790",
+      "native_sha256": "0eb6ec03ff64f4da8c297527fedb95d71398b7bb066a33f0c080f4881ac7b1d0"
+    },
+    "workflow": {
+      "file": "workflow-complete.json.gz",
+      "sha256": "7764100fe60679aa2b1a060f21c42adb62e6d32d1549084068ca94873dcb18f1",
+      "native_sha256": "50ed4da94e7a03066d5b1099f1fc78f6e0d5ffa60d8af9a0e68b67735294080e"
+    }
+  },
+  "policy": [
+    "Use exactly the accepted complete native+intake pairs; no accepted work replay. Derive actor/context from paired intake.",
+    "Derive supported unacquired repair procedures solely from owned exact Procedure values: executor u4.repair.v1, inputs target/tool/stock, empty steps/preconditions/effects. Choose stable typed minimum; no external procedure/role/success argument.",
+    "Use latest owned successful actor/context inspection observation per target identity in owned-particular order. Retain target exact observed revision. Require actor owner AND custodian. Targets damaged; tools serviceable; stocks stock with exact integer available >=1.",
+    "If same-revision direct owned particulars explicitly disclose stock purpose, exclude any purpose other than repair. Unknown purpose is uncertainty, not assumed compatibility. No hidden world reads by planner. No names, type labels or known successful roles in ranking.",
+    "Enumerate ALL distinct-identity target/tool/stock triples, stable typed sort, at most 512. Try in order. Native primitive repair is a practice prerequisite, NOT selected main task route. Each attempt pays native 6 energy/time, then delivers and pays read2 of its actual outcome. Failed attempts remain paid and visible, never manufacture acquisition.",
+    "After first successful paid repair+read, start native acquire with exact owned procedure and realized practice event, pay3; native access receipt alone grants acquired use. Stop after one acquired procedure, or exhaust plan honestly. No old task, demand, admission, reserve/history or selection update.",
+    "Immutable original world/command/access prefixes; only native material practice and paid operation/read/acquire suffixes. Preserve TIM, dimensions, wallet law, bindings and source task definitions; no refills or protected-output edits. Existing comparison receipts do not pay changed-input comparisons.",
+    "State phases practice/read/acquire/complete/exhausted/cancelled; actor exclusive, exact expected native digest; terminal idempotent. Checkpoint after EVERY new step before audit; save raw record before independent audit. Stop cooperatively on owner/lease/deadline without discarding last checkpoint."
+  ],
+  "gate": {
+    "settings": [
+      "canonical",
+      "workflow"
+    ],
+    "records": [
+      "before",
+      "practice-partial",
+      "read-partial",
+      "acquire-partial",
+      "complete",
+      "restarted",
+      "cancelled"
+    ],
+    "total_records": 14,
+    "methods": [
+      "test_exact_panel",
+      "test_partial_withholds_acquisition",
+      "test_native_paid_effects",
+      "test_restart_and_cancel",
+      "test_owned_domain",
+      "test_saved_forgery_rejections"
+    ],
+    "method_count": 6,
+    "requirements": [
+      "Full independent native/source/prefix/payment/material/observation/acquisition reconstruction for all records; auditor cannot import planner/controller.",
+      "Original and restarted native+adapter complete pairs byte exact; restart from acquire-partial only, so prior completed paid practice is not replayed.",
+      "Cancellation from saved first practice-partial retains debit1 and no material or acquired effect.",
+      "Each setting must acquire exactly one previously unacquired procedure through its own new successful practice, delivered read and acquire receipt. No parent claims.",
+      "Per-setting saved forgeries plan/source/payment/acquired-authority are rejected without native work; synthetic owned-view controls remove observations/procedure and incompatible purpose, exclude foreign custody/owner, preserve unknown-purpose candidates and distinct identities.",
+      "Prior427 source hashes unchanged; new full freeze before invocation; exact record keys not count-only."
+    ]
+  },
+  "execution": {
+    "max_steps": 4096,
+    "work_quantum": 1,
+    "serial_engines": true,
+    "fresh_output": true,
+    "deadline": "fixed future UTC argument within live lease; no launch after deadline",
+    "no_rerun_accepted": true
+  },
+  "scope": "Native practiced repair acquisition only; no main-task choice or downstream-use acceptance, recall repair, history credit, TD5 admission, changed-input comparison payment, FT7/FT8/FT9 acceptance. Matched main-cost downstream causality remains owed."
+}
