@@ -1,0 +1,249 @@
+{
+  "batch": "FT7.Fresh.CueComparison.A12C",
+  "version": 1,
+  "scope": "Actual newly paid native comparisons for all 30 accepted new-cue tasks; route-free existing role-absent request-window grammar. Recall measured independently; not skills, full future role domain, TD5 admission, live history choice, parent FT7 or FT8 acceptance.",
+  "prior_source_freeze": "contracts/ft/FT7_Cue_Intake_A12B_Source_Freeze_v1.json",
+  "prior_identities": 576,
+  "accepted_input_archive": {
+    "filename": "FT7_A12B_Attempt2_Validated_Evidence.zip",
+    "sha256": "2857ff6c67d0d830938e74683728556a3045eb46836166844cc12e03329e62bc",
+    "members": 117
+  },
+  "inputs": {
+    "canonical-01-complete": {
+      "file": "records/canonical-01-complete.json.gz",
+      "sha256": "65d914f0e4e6e791921ca57dcc36a77c19ec5c4deffe9dc0fd3055ffd2eefaca",
+      "native_sha256": "0af926f6d56840dd88b1b7f7fd58837a22449eed9ee1cb98b7b2f06ae03fbbf9",
+      "intake_sha256": "6a5b6ae23348b0b3981ddec1d99b90c4d51d32b0a09e18062c96bbb7d4d1b1fb",
+      "audit_sha256": "371c8b515d247d1d751cf677b70cebd5ff45a29a13fda3844787d4ff73297dfe"
+    },
+    "canonical-02-complete": {
+      "file": "records/canonical-02-complete.json.gz",
+      "sha256": "d302f933cd5918fa8fc931f2e8555eebf908421fe420cda04b7d11e487da0a1f",
+      "native_sha256": "1c1b252ebbf409ac171ed3310c3fabb5bc9d3e7d09fd3937bdbbbb2371dbc713",
+      "intake_sha256": "4ec8699652fe46ea3a6fcbd1d069c0651197e70cb88aaa31c522f71bbe8eb4c9",
+      "audit_sha256": "8a56e9da1776ab7debf65e19083557afe49f4c74709a800388d3a69d417f9483"
+    },
+    "canonical-03-complete": {
+      "file": "records/canonical-03-complete.json.gz",
+      "sha256": "6d780f46ee723e2ef313f39c2c6569c386ebcb187f3f8eeba077c154630135d7",
+      "native_sha256": "014581d8ae133e2d1be91ae902fb0ce9f513f51b75db9f4911b51b6fb7769c50",
+      "intake_sha256": "5ee52cb8244abccc60da32a9fd7f94dff9d9d03a093f69a7e98c0cd248d7947c",
+      "audit_sha256": "6352ab06cc5dd2833837d97411123c8ab39c9fd3b29fcba7f08808cca5dc489d"
+    },
+    "canonical-04-complete": {
+      "file": "records/canonical-04-complete.json.gz",
+      "sha256": "acbcbb2291aa47ac4948cb804c39560abc4da1add142ca6fc378eccca4ee344d",
+      "native_sha256": "d9ff9e6910ec5ed9f2155e2413c0137617d65836347dddce490ce3f3caf458fc",
+      "intake_sha256": "369c72948c85edc902c9ff361503b025882475886b26125746ec4eaefb2c2259",
+      "audit_sha256": "278dae42ddbc2ca3ca09d2eeccfd523df74bd125b282663351575a75e78b51ac"
+    },
+    "canonical-05-complete": {
+      "file": "records/canonical-05-complete.json.gz",
+      "sha256": "a1187d8b21e72276daef57e27d9c1e30967fbbec00a949e4b5314301e5d1b755",
+      "native_sha256": "4c5e6db2cb3b14d11e49014de0be3c22b46ccd86c6e12d7604e28097636a80f2",
+      "intake_sha256": "e7c28bcd71cd8911a65766a4468be3cc831cc9cb740f98e70d0e30d2f3f2ba89",
+      "audit_sha256": "dff4078701241ffb885808d89890f01f0c387ae2c1e3b9a0fc564cf3f51ad25e"
+    },
+    "canonical-06-complete": {
+      "file": "records/canonical-06-complete.json.gz",
+      "sha256": "7d556984acd6e7b0023dc67aca4089a35327e73301cfb7cd94ada4c1b6fd76b8",
+      "native_sha256": "e68c4a380196246fc5a27157c73a338fed50963c5a756e1e8ed09aea96023c24",
+      "intake_sha256": "c3a31bea3bdeb58e9fc80ec80fcad6d45fd7f37ae9c68283956016c692d0d19d",
+      "audit_sha256": "d11066547b73901372d951df3b7a924081fe59511ea02683434e52976b1f3ffa"
+    },
+    "canonical-07-complete": {
+      "file": "records/canonical-07-complete.json.gz",
+      "sha256": "7767d621d9911a9c3257e635a57a842d362b2694f1f72b2fb114983a5c56e14c",
+      "native_sha256": "01a7dc01db31dad9bd617eb8131160c49e84e143dd622fd9d21ee1420dfd651e",
+      "intake_sha256": "a08b3da7c3a70940732b15a55ec00f26db2c2523cb5bd6838a3b6d445e1ffd3a",
+      "audit_sha256": "f4ae62711ff5945cdf54d64eea104b7d6709eba4c9802bfcc1f552c406d4894c"
+    },
+    "canonical-08-complete": {
+      "file": "records/canonical-08-complete.json.gz",
+      "sha256": "d6d8b94ddbb2a2a04f26060469f3f725b98827b1f25c165489bebf60e0dfaf7b",
+      "native_sha256": "ae90a216a44522f4ec76dfadcff25ac13df2066f6b7996c2dff12e308ae15be6",
+      "intake_sha256": "aa2502082a509172f04629d5c794445453b4eada7be510f89c69cc05f6e0fa7e",
+      "audit_sha256": "950b31668cee240e19ef7310ab3c78781ff0c671384b39240001189abed39bea"
+    },
+    "canonical-09-complete": {
+      "file": "records/canonical-09-complete.json.gz",
+      "sha256": "3dc3cdba7392455c9b6b6f45e126d46ff886deb4ed41567999324c78be89c7e0",
+      "native_sha256": "3220f438eab9c5dccb17c3884dac45d88ae5751c78b98827cb368d05b9b340d2",
+      "intake_sha256": "292b811790a334f334459bcf0d7e6f49e6cb55867aeb395a06b6a233d4ab4689",
+      "audit_sha256": "31eac815174fe6ccc91c335c62b0ac1e5f67e85778a174a7f152d7f3abde9631"
+    },
+    "canonical-10-complete": {
+      "file": "records/canonical-10-complete.json.gz",
+      "sha256": "a117ed81fd153d194fa1db87ac5451f3bb3aa7bf6462eb55df5235b807fc1eb8",
+      "native_sha256": "94bb1c8acd936127e25504a019c6b575d1324ebe7365c19f3ce562ddc631fb61",
+      "intake_sha256": "b0ade4a527ab69b4e2c6f78aef569c61e1ae4cdf7041dcde09daf9a6aad2d1ed",
+      "audit_sha256": "fe168c0cf6135f93c4a666f3f813e20cd554c6559b9ae95e9c59e3164569338f"
+    },
+    "canonical-11-complete": {
+      "file": "records/canonical-11-complete.json.gz",
+      "sha256": "966d1785a485a1be2dba8869a5ef190025ed3b0cf3c208730c80d5dff67fe6d5",
+      "native_sha256": "0c6fd20e28049645cea270b60370c364d896f559149f36370bdc7e396836659d",
+      "intake_sha256": "99a7355e23f181e8a294e95d2bf820b80375fee4fda273bf18f338f0153cc5af",
+      "audit_sha256": "86730db784324291f71c0bf5279e913b9edc2cba32cf1d59097215892ee146ee"
+    },
+    "canonical-12-complete": {
+      "file": "records/canonical-12-complete.json.gz",
+      "sha256": "f02b02b67a15c85ca8a9413da5124e3bf0a654f050d0e79fd7ece4687347c2e4",
+      "native_sha256": "f4be5c2746c7ba757b926d75bdd945c6338924efc66d04aaf913886a08aa3044",
+      "intake_sha256": "64d8f90352237e324a34c3f9a66f3f4ffa2cbb5847753373a373e64dcb453644",
+      "audit_sha256": "12a14fe4dc058b13c723954a877ad2060d27d9284cccdd1c820eea63c22d4cc0"
+    },
+    "canonical-13-complete": {
+      "file": "records/canonical-13-complete.json.gz",
+      "sha256": "2c3b5ad73bfe026ebe73c521b6a9cd1420910b7f2f336405e918a2cf90a1d49d",
+      "native_sha256": "e5279514fdc52825392628615b094e542f67f1223a8b88a90bf6e624a5de45cf",
+      "intake_sha256": "1819852f01f68d47cdbf7a767eeb1422197fcb80c81dc269d75e947a44a932c5",
+      "audit_sha256": "a91ec5de3d373f825ed8cd34e12dfadcb7c74ce2b41c2261897f852320666c55"
+    },
+    "canonical-14-complete": {
+      "file": "records/canonical-14-complete.json.gz",
+      "sha256": "5089f4aedf10bb41609352fc22388fb03edf0bb0b709d684a2303b5575a607b5",
+      "native_sha256": "c636cb000b1dec2495aa24d6cdee6b7e964553a1fd1323cf5aac58a50084895d",
+      "intake_sha256": "bca326a92237d570032c83211520f1e15fc66fafe6ba1f0e1550c4354168603d",
+      "audit_sha256": "52d47d3b6c613e6a76f29155c37e641c8b3b5da2758e058c67e963e9d348088e"
+    },
+    "canonical-15-complete": {
+      "file": "records/canonical-15-complete.json.gz",
+      "sha256": "c872603800b80154285b1bfb7b8a307357f784feb45be4d34f0e18efb0e4fd3c",
+      "native_sha256": "5ad72ea04700e8e367e1e25cf29438f1b226008d111107feb8d2c80450c675f6",
+      "intake_sha256": "e363ec6b9e084320663353b2ceba0aa5f29975a5e3f45a93c4f36afaa11459e6",
+      "audit_sha256": "4c16bdcb80540000bde8f0ef9f01e723e22c7cd09f203c8a184c947c5e6739dc"
+    },
+    "workflow-01-complete": {
+      "file": "records/workflow-01-complete.json.gz",
+      "sha256": "b87675101ac5f9b80aff159cf82789ae98508cefd8e21d3bb79b17568680f251",
+      "native_sha256": "a4df4d4099e447b992119fe8bd777d2e97b0906c62976ea75b36c6d2df79eb48",
+      "intake_sha256": "6dc7472f7bbe7448ef5704b3d447da341ea5411fad869192f2022e04b1c359f0",
+      "audit_sha256": "fd68d4945cbf7a98a25fa35f0b1afb0a05b6829a7541f4ef4eda23fcda894ce4"
+    },
+    "workflow-02-complete": {
+      "file": "records/workflow-02-complete.json.gz",
+      "sha256": "d4be262071c19911830b4bc5e4ff857b3af319ee1b2c8edc4c723b45b6202027",
+      "native_sha256": "7040fad80d69297ab8252461436d638b00843637a5710a51d0cde003204a7ebc",
+      "intake_sha256": "67641657cb9627c4be154b316e1488e94208ace6cee53a3bc2c6275d77958ff2",
+      "audit_sha256": "a28dd85aa250b19ee18fcd480cb99e6b0e1ca04d1a4c915e0e4537f5e2b41e85"
+    },
+    "workflow-03-complete": {
+      "file": "records/workflow-03-complete.json.gz",
+      "sha256": "cd355cbb9c312db1d4ac3f2e7e4dcdd90b9c9daa8450433c2768362f1d345d1b",
+      "native_sha256": "219dc837b08b665d7ee83588a122063106b0458d365dd03ea4cbf3adf45346dd",
+      "intake_sha256": "ccace4e7dde952ed2c9d4161fd07574989666c4ad79389e291aeb9c398b7e705",
+      "audit_sha256": "384f522b04ed3af62570adf95d74c6c03710111e19a7240914c5acad111e8036"
+    },
+    "workflow-04-complete": {
+      "file": "records/workflow-04-complete.json.gz",
+      "sha256": "59d72d0d0d6e2238d831ba8d79e57e208a0a09e578c17aa4900c0da08574bf77",
+      "native_sha256": "b8c005bf90234ba8511a39bcb79ec213c8f4229736eddfdd5331cefef72e0cfa",
+      "intake_sha256": "8c1528a099d560b9119e7f585c7b3b3b6fb3fa718e1e54ed961d4a70f146ab9d",
+      "audit_sha256": "cf0f671f8307d3475d1986afc2f6abba5e622acf9c7d1930462c20073cb12801"
+    },
+    "workflow-05-complete": {
+      "file": "records/workflow-05-complete.json.gz",
+      "sha256": "29dbb7ad11220c21696b602f59d93a9657c2a17f6a599f11505f7c04546885a5",
+      "native_sha256": "fb51160889d34bf05413a51fccb3a5853bf379dfa90e0239cc57fbd9f4170e46",
+      "intake_sha256": "2e27fd046593b50af18b659dbaf7465d2b1034388c518025626b1af561833b54",
+      "audit_sha256": "2e8cd49dae496b1b30420193dae6d64eea858838588111d941f9c751df2a141b"
+    },
+    "workflow-06-complete": {
+      "file": "records/workflow-06-complete.json.gz",
+      "sha256": "fa120ba097ab51d138edb0d0a95d0bd08161222864e04cbda6cc04bdf5f02caa",
+      "native_sha256": "55f193baf22f4879c24ca07f996a9d20e93a7e1af4c5e1926a547b99c56dac64",
+      "intake_sha256": "0b819bca53a721fc158f72563cd0d459b739ae8c11bb70dfbc8fb78d92665141",
+      "audit_sha256": "a02c6ccaa1b8db30b91f223bb075a8e2af179737b137ffa5d36d23cd22f0aca9"
+    },
+    "workflow-07-complete": {
+      "file": "records/workflow-07-complete.json.gz",
+      "sha256": "517cc84d23f4a6365f47cfc4733940cf41b763f8ee3ca2de6cfeebf092476a1c",
+      "native_sha256": "1d6cf103972a5490972f7c917cc87ab41bbacded95573692fbc02cc95d5d2680",
+      "intake_sha256": "f0f070b7164d0de52e52a22a27f4a8cc5181e8d0074d39479d045f534304d16c",
+      "audit_sha256": "f1c858626b4821a3d7661970ceb2b455b5ad5fd83f2b71d2a1a39d9db90815d9"
+    },
+    "workflow-08-complete": {
+      "file": "records/workflow-08-complete.json.gz",
+      "sha256": "85f6eddd33e972086ec28ed9ab33392c80a5628068f5e1ac17b6636b8a871233",
+      "native_sha256": "90889c9fe95b12afac9fc9010f8618ca5ac3d09a1412600e72ff0d1d7942b9ce",
+      "intake_sha256": "ccbdaef0d335a38beb3eea46e366c5efb336426f616ad96865e8cb303037500f",
+      "audit_sha256": "07c2a78819d2f797393f3f13b8600bb7ebe525594c56118080e886626164a99b"
+    },
+    "workflow-09-complete": {
+      "file": "records/workflow-09-complete.json.gz",
+      "sha256": "5d0f7459addbe8093a54718bc468a29ac6a418d29ac59b1cc461f28ecf34e27d",
+      "native_sha256": "2aa12810946cb65914b7e4b5f2995210f40b5098ba5331e7e9b2bdba5a29374b",
+      "intake_sha256": "eb9cddfc26b1d1e94484aa3047cc0d6d2eb628000f2897d0659110f5d56cf805",
+      "audit_sha256": "d6e31d102162288fabb28a2e7d86aabf167294e42ed819372a76c066e7122c05"
+    },
+    "workflow-10-complete": {
+      "file": "records/workflow-10-complete.json.gz",
+      "sha256": "df36f78c669affc30492fb41abbe28215ee5b26196a31c8bc97f5433ba683e9b",
+      "native_sha256": "d5aed219b80e503dc6fcc9dbc34b0d78e28a88214637955ddd1be53119a19d08",
+      "intake_sha256": "53f2479b27ba6320432d9c79baf14fa05270d2bf8453bd27c500f74e81d224e7",
+      "audit_sha256": "93d388e6508ee7bc725cae3f16cf9ac3503606a6b840719321b868d140ab6576"
+    },
+    "workflow-11-complete": {
+      "file": "records/workflow-11-complete.json.gz",
+      "sha256": "a24e8eae3f9408945a7521ab8c9ce36ba9ce716cc0551aed45df22dd62d3d8bd",
+      "native_sha256": "60b928c51c5ccd94166adfb31367cb359f8dcb722fa1e38283f75618169467e9",
+      "intake_sha256": "ab35792960b44a4d63e16618cb743c09747c037c29721ed628de509d370261c2",
+      "audit_sha256": "f795aa710fd32cc49228c808a1915e983890a2b0f2129196a325318969835ec3"
+    },
+    "workflow-12-complete": {
+      "file": "records/workflow-12-complete.json.gz",
+      "sha256": "7430502005d30ec537201c63621a05b53c6959a7a50b9ab6e0d76c1514877a2a",
+      "native_sha256": "334d99c2e84b09c2203876b51704c11cb130d081ec1002c60e776e8bde51646e",
+      "intake_sha256": "2a6b604df9be5e78105662cbe980c615878d68de8d0d834a745f225c38625621",
+      "audit_sha256": "d32c0bec7c15f2fb0ed176f4071a3a485fdd4a2eb49f51edc09920509c4d5fe9"
+    },
+    "workflow-13-complete": {
+      "file": "records/workflow-13-complete.json.gz",
+      "sha256": "e604937dda74616e5652131706e13f7ab11b666669d15c217c3e20d568f5b8c2",
+      "native_sha256": "43606ec0f9c3c5457dbc5ea01a40751cfdda5407c4446c555add841652e11ceb",
+      "intake_sha256": "2dc7b456ca92646f8b4501fc484a81ed9fbb7dbffbeb41cf598f4c1a197fdf1c",
+      "audit_sha256": "dba308c39038439bfb4365d6070a7e3ba102f34b7173a6f01a97e8c285985ec1"
+    },
+    "workflow-14-complete": {
+      "file": "records/workflow-14-complete.json.gz",
+      "sha256": "5beb7a9f46c2ca023e97343fd1039bccd1635f2227e3f65a90c0c0f18117300d",
+      "native_sha256": "4326b42c530ba45548875ed522fae631d2e57fe7bd1629bfada22664046e4b1a",
+      "intake_sha256": "e0b88dd2ffb337370a7e52536a33f3f83254e0bc994401584fef1aab3b4b5227",
+      "audit_sha256": "83c72e748218185a3e73b1c13ede2494930eaba9b9417c8e692e9e665e80f40f"
+    },
+    "workflow-15-complete": {
+      "file": "records/workflow-15-complete.json.gz",
+      "sha256": "a66ae6432e218d6212c1b9670eb213cacfa76df4c6af1c063f7d514fd4b0ba0e",
+      "native_sha256": "25e2a238416c5f0c81cc6e3fffaa50168716deba1e6fc428ccfda384f721b2ed",
+      "intake_sha256": "95f155d94bbae74e6c5228717a3404633fcff4e506af5ecff82a5d235455c7c0",
+      "audit_sha256": "06f689b2230551ed58f504855f513377b42789c6b5e58b9da9e0ddf29dcb102b"
+    }
+  },
+  "grammar": "Pin each accepted complete native/intake record and audit by exact digest; do not repeat completed A12B generation/audit/tests. Derive current paid task and immutable original controller prefix, reject any older unresolved owned need. Add only this fresh task as pending in a local demand projection. Use unchanged form_request. Canonical one default-role SelectionRequest; workflow every nonempty subset of current paid matching c7w.data content of size<=8. No external operands, successful route, labels, skill or outcome supplied. All optional material/social roles absent, explicitly not complete future role coverage. Derive actual recall32 traverse for task cue/context; record exact visited tuple/truncation/task membership without suppressing failure.",
+  "native": "New engine schemas and CueComparisonRequest; preserve existing native policy rows and nominees. Reuse original paid window lifecycle with new source validation and policy identifier, never override existing selector. Snapshot and compare all 33 canonical/32 workflow cells per legal request including deferral/rejections. Required comparison cost is unchanged exact per-window native extent, summed over complete declared grammar. Native energy/time advances pay every unit; no result before settlement, no refund on cancellation. Snapshot predates debit. No route execution, reserve/history/preparation credit, current admission or choice authority.",
+  "records": "40 exact records: each setting mask1 before/partial1/ready-uncommitted/complete plus exact saved partial restart completion and saved partial cancellation; masks2..15 complete. Preserve terminal idempotence result. Each primary runs once; control forks start only from saved partial. Persist atomic exclusive raw and independent backup, fsync, byte/typed readback before any next stage. Separate exclusive generation/audit/test/finish job boundaries, save outputs before validation, never replay completed stages. Unknown interruption needs separate prospective recovery.",
+  "independent_audit": "Independently rebuild demand fields, oldest-first constraint, owned content grammar via bit masks, recall traversal via own bounded BFS and snapshot rows via existing independent native reference functions. Reconstruct entire native/source/command/access/pool/policy/cost/result/receipt suffix. No imports of new runtime, selectors or executor in auditor; record structures and reference auditors allowed. Require unchanged view/profile/cursor/access and old journal/command prefix. Verify all frozen source identities before/after. Reuse accepted identities, not accepted paid work.",
+  "methods": [
+    "test_complete_panel",
+    "test_partial_ready_receipts",
+    "test_exact_restart",
+    "test_cancellation_debits",
+    "test_prefixes_recall_scope",
+    "test_wrong_input_domain_rejected",
+    "test_forgery_rejected",
+    "test_terminal_idempotence"
+  ],
+  "forgeries": "For each setting mask1 reject wrong native/intake/task/mask, omitted request, foreign operand/domain, altered current cue/controller/recall, payment/required, partial result/receipt, policy nominee and execution authority. Tests use saved records only.",
+  "failure_policy": "Preserve all source/log/output; register concrete repair before changed code, freeze before bounded rerun. No unchanged identical-failure retry or accepted replay. No weakening FT8/native payments/authority, old demand requirements, source or denominator.",
+  "operations": "Expected-head main claim and 30minute lease, full-tree exact verification each save, bounded jobs with >=300seconds lease/deadline before launch. All unrelated paths preserved. Independent audits may run serially to bound memory. No new automation.",
+  "new_files": [
+    "full_theory/cue_comparison.py",
+    "full_theory/cue_comparison_audit.py",
+    "tools/evaluate_ft7_cue_comparison.py",
+    "tests_ft7/test_cue_comparison.py"
+  ],
+  "ft8_unchanged": true,
+  "no_old_gate_replay": true
+}
