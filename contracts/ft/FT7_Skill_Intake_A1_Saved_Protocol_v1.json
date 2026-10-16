@@ -1,0 +1,18 @@
+{
+  "version": "ft-owned-material-inspection-saved-adversarial-v1",
+  "batch": "FT7.Skill.Intake.A1.Saved",
+  "parent_protocol_commit": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
+  "parent_freeze_commit": "36f1277133dd765d6441d8e549d8306d979a9d22",
+  "purpose": "Close explicit payment/receipt forgery probes on exact saved inspection records without rerunning native work or prior test methods.",
+  "inputs": "Both canonical/workflow inspect-partial records saved by the original frozen evaluator; original accepted paid/capacity pair bound by its archive indexes. Validate file SHA256 against original progress. Missing records are an operational checkpoint, not a pass.",
+  "mutations": [
+    "Increase the first paid event's energy debit by one while retaining exact native checkpoint, wallet fields and all other adapter fields.",
+    "Append a fictitious completed read receipt to the partial inspection adapter without changing native work."
+  ],
+  "checks": "For each setting restore exact saved native once; original independent full audit must pass; both independently mutated saved adapters must raise ValueError. Preserve exact original records and all 419 frozen source identities. No start, advance, commit, cancel, delivery, method-body or native work calls.",
+  "implementation": [
+    "tools/check_owned_material_inspection_saved.py"
+  ],
+  "acceptance": "Both settings and all four negative probes must pass alongside unchanged original 12-record/six-method gate; no parent acceptance, skill acquisition, recall repair, comparison or main admission.",
+  "execution": "Serial read-only native restoration and audits; persist one result after each setting. Operate under current lease, stop launching settings after deadline. Never rerun a completed probe setting."
+}

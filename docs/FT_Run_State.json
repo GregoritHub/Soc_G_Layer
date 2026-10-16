@@ -4,7 +4,7 @@
   "status": "running",
   "run_id": "ft7-owned-skill-2026-10-16T08:29:38.609Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-16T08:59:38.609Z",
+  "lease_expires_at": "2026-10-16T09:18:03.000Z",
   "expected_head": "e25e9fd342bc843cd07187c1716765608c19765c",
   "current_batch": "FT7.Recall.Feasibility.A1",
   "current_window_admission_progress": {
@@ -2273,5 +2273,6 @@
       "bytes": 83235
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
-  }
+  },
+  "updated_at": "2026-10-16T08:48:03.000Z"
 }
