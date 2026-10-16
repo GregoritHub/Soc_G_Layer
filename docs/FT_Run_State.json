@@ -5,7 +5,7 @@
   "run_id": "ft7-admission-recovery-20261016T004323Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-16T01:31:04.000Z",
-  "expected_head": "5e90318166710ea10681ffd316776a7604418052",
+  "expected_head": "67fe36ace4bfa819b7ded7febed46a517a42b2c1",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1d",
   "current_window_admission_progress": {
     "status": "continuation_running_not_accepted",
@@ -18,7 +18,7 @@
     "required_saved_records": 40,
     "required_predecessor_identities": 484,
     "actual_methods_completed": 0,
-    "saved_records_completed": 31,
+    "saved_records_completed": 35,
     "record_launches_closed_at_deadline": 31,
     "active_records_at_deadline": 4,
     "continuation_protocol_commit": "92abf8cee4203a3e9527e80d869385ba72acda13",
@@ -33,10 +33,6 @@
     "original_children_failed": 0,
     "original_children_interrupted": 0,
     "remaining_records": [
-      "workflow/mask-9",
-      "workflow/mask-10",
-      "workflow/mask-11",
-      "workflow/mask-12",
       "workflow/mask-13",
       "workflow/mask-14",
       "workflow/mask-15",
@@ -88,15 +84,24 @@
       "owner": "ft7-admission-recovery-20261016T004323Z",
       "output": "current-window-admission-continuation1",
       "stop_at": "2026-10-16T01:14:21.000Z",
-      "records_pending": 9,
+      "records_pending": 5,
       "actual_methods_pending": 8,
       "original_source_unchanged": true,
       "session": 91487,
       "active_records": [
+        "workflow/mask-13",
+        "workflow/mask-14",
+        "workflow/mask-15",
+        "workflow/restarted"
+      ],
+      "closed_records": [
         "workflow/mask-9",
         "workflow/mask-10",
         "workflow/mask-11",
         "workflow/mask-12"
+      ],
+      "unstarted_records": [
+        "workflow/cancelled"
       ]
     },
     "continuation2": {
