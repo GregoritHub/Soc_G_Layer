@@ -1,0 +1,35 @@
+{
+  "batch": "FT.Setup.ToolOverlay.A3",
+  "version": 2,
+  "scope": "Setup-only exact A10R continuation inclusion; no native work, dependency rebuild, accepted gate replay or FT9 acceptance.",
+  "precondition": "Do not change prepare_workspace.py or invoke setup gate until corrected A10R continuation2 closes and zero workers survive. Preserve exact old setup and543 freeze before changing it.",
+  "prior_source_freeze": "contracts/ft/FT7_Owned_Rehearsal_A10R_Source_Freeze_v2.json",
+  "prior_source_identities": 543,
+  "old_setup_sha256": "9ca82c7203c63cd0c514f549486dd76dba05b05836d5f5f161084fe0850717af",
+  "additional_exact_tool": "tools/continue_owned_rehearsal_closure.py",
+  "tool_sha256": "69fcce79de390dc1c0a5761ccf6fe77b864652e71377897bfb17119fe3e85874",
+  "change": "Add only this exact path to existing layer_files tuple. Removing this literal restores complete old AST. All other selection and setup behavior identical.",
+  "methods": [
+    "test_exact_one_path_extension",
+    "test_all_frozen_public_files_selected",
+    "test_copy_exact_bytes",
+    "test_no_broad_tool_permission",
+    "test_unsafe_path_rejected",
+    "test_existing_output_preserved"
+  ],
+  "gate": "Six new exact methods, actual selection/copy-loop execution, complete selected public bytes exact,543-prior bridge with only setup differing; original534 subset preserved. No native replay or dependency network preparation.",
+  "known_before_registration": {
+    "missing": [
+      "tools/continue_owned_rehearsal_closure.py"
+    ],
+    "old_setup_sha256": "9ca82c7203c63cd0c514f549486dd76dba05b05836d5f5f161084fe0850717af",
+    "tool_sha256": "69fcce79de390dc1c0a5761ccf6fe77b864652e71377897bfb17119fe3e85874"
+  },
+  "public_base_head": "6c7abe61fb7d7fcc3811925fcd39501e6389faee",
+  "new_files": [
+    "tools/evaluate_ft_setup_rehearsal_overlay.py",
+    "tests_ft7/test_setup_rehearsal_overlay.py"
+  ],
+  "preserve": "All A10/A10R sources and failures, original raw evidence, gates, private pointers and denied transfers.",
+  "reason_for_version2": "A10R digest correction added separate v2 modules and an automatically selected evaluate_ft7 tool. The original omitted continuation remains a historical project tool that must be included. Same single exact setup path change."
+}
