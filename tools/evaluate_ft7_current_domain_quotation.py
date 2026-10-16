@@ -69,8 +69,8 @@ def run():
             raise SystemExit("ownership/lease/deadline")
 
     def verify_source():
-        if len(freeze) != 618:
-            raise ValueError("exact 618-identity freeze required")
+        if len(freeze) != 620:
+            raise ValueError("exact 620-identity freeze required")
         prior = json.loads(
             (root / "contracts/ft/FT7_Post_Processing_Domain_A12E1_Source_Freeze_v1.json").read_text()
         )
@@ -301,15 +301,16 @@ def run():
                         args.audit_saved_branch != label
                         or args.only_branch != label
                         or not args.saved_quote_root
-                        or label != "workflow-07"
                     ):
-                        raise ValueError("exact workflow-07 saved-quote audit mode required")
+                        raise ValueError("exact saved-quote audit mode required")
                     amendment = json.loads(
                         (
                             root
-                            / "contracts/ft/FT7_Current_Domain_Quotation_A12E2_Procedure_Audit_Amendment_v2.json"
+                            / "contracts/ft/FT7_Current_Domain_Quotation_A12E2_Procedure_Rejection_Audit_Amendment_v3.json"
                         ).read_text()
                     )
+                    if label not in amendment["saved_quotes"]:
+                        raise ValueError("registered saved workflow quotation required")
                     retained = pathlib.Path(args.saved_quote_root)
                     record_data = (retained / "records" / (label + ".json.gz")).read_bytes()
                     retained_backup = retained / "backups" / ("records--" + label + ".json.gz")
@@ -317,14 +318,13 @@ def run():
                     outcome_data = outcome.read_bytes()
                     outcome_value = json.loads(outcome_data)
                     if (
-                        sha(record_data) != amendment["failure"]["quote_record_sha256"]
+                        sha(record_data) != amendment["saved_quotes"][label]
                         or retained_backup.read_bytes() != record_data
                         or outcome_value.get("passed") is not True
                         or outcome_value.get("job") != "quote-" + label
                         or outcome_value.get("assignments") != entry["assignments"]
-                        or outcome_value.get("required") != amendment["failure"]["quote_required"]
                     ):
-                        raise ValueError("exact retained workflow-07 quotation required")
+                        raise ValueError("exact retained workflow quotation required")
                     text = gzip.decompress(record_data).decode()
                     report = loads(text)
                     rows = report["rows"]

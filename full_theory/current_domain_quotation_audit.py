@@ -156,16 +156,41 @@ class CurrentDomainQuotationAudit:
                     for particular in self.view.resolve(procedure_ref)
                     if type(particular.value) is Procedure
                 ]
-                require(len(definitions) == 1, "paid exact repair procedure")
+                if len(definitions) != 1:
+                    return {
+                        **common,
+                        "rejection": "paid exact care procedure required",
+                        "required": 1,
+                        "snapshot_sha256": None,
+                        "candidates_sha256": None,
+                        "nominee": None,
+                        "candidate_count": 0,
+                        "examined": (),
+                        "scanned": None,
+                        "foreign_total": None,
+                        "items": None,
+                    }
                 procedure = definitions[0]
-                require(
-                    procedure.executor == "u4.repair.v1"
-                    and procedure.inputs == SIGNATURES["repair"]
-                    and not procedure.steps
-                    and not procedure.preconditions
-                    and not procedure.effects,
-                    "supported native repair procedure",
-                )
+                if (
+                    procedure.executor != "u4.care.v1"
+                    or procedure.inputs != SIGNATURES["care"]
+                    or procedure.steps
+                    or procedure.preconditions
+                    or procedure.effects
+                ):
+                    return {
+                        **common,
+                        "rejection": "supported native care procedure required",
+                        "required": 1,
+                        "snapshot_sha256": None,
+                        "candidates_sha256": None,
+                        "nominee": None,
+                        "candidate_count": 0,
+                        "examined": (),
+                        "scanned": None,
+                        "foreign_total": None,
+                        "items": None,
+                    }
                 definition = {
                     "executor": procedure.executor,
                     "inputs": procedure.inputs,
