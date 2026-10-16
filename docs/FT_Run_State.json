@@ -5,7 +5,7 @@
   "run_id": "ft7-admission-final-20261016T023350Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-16T03:03:50.000Z",
-  "expected_head": "9bdc2dd9eb86ae637265d88720d948f0e0aebdbd",
+  "expected_head": "decb862e4a2cee41676138d6d56e68e145c297e1",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1d",
   "current_window_admission_progress": {
     "status": "continuation2_running_not_accepted",
@@ -17,8 +17,8 @@
     "required_methods": 8,
     "required_saved_records": 40,
     "required_predecessor_identities": 484,
-    "actual_methods_completed": 0,
-    "saved_records_completed": 39,
+    "actual_methods_completed": 4,
+    "saved_records_completed": 40,
     "record_launches_closed_at_deadline": 31,
     "active_records_at_deadline": 4,
     "continuation_protocol_commit": "92abf8cee4203a3e9527e80d869385ba72acda13",
@@ -27,19 +27,13 @@
     "new_native_work": false,
     "accepted": false,
     "record": "docs/ft/FT7_1b2b3b2b2b2b2b2b1d_Record.md",
-    "owned_processes_remaining": 2,
+    "owned_processes_remaining": 3,
     "original_outcome": "checkpoint",
     "stop_reason": "prospective deadline",
     "original_children_failed": 0,
     "original_children_interrupted": 0,
-    "remaining_records": [
-      "workflow/cancelled"
-    ],
+    "remaining_records": [],
     "remaining_methods": [
-      "test_exact_full_panel",
-      "test_lifecycle_withholds_domain",
-      "test_restart_exact",
-      "test_every_cost_and_priority_join",
       "test_window_operand_cost_forgery_rejected",
       "test_capacity_and_input_pairing_rejected",
       "test_old_nominees_and_bounded_cells",
@@ -130,7 +124,13 @@
       "current_owner": "ft7-admission-final-20261016T023350Z",
       "session": 13027,
       "output": "current-window-admission-continuation2",
-      "started_utc": "2026-10-16T02:34:13Z"
+      "started_utc": "2026-10-16T02:34:13Z",
+      "saved_records_completed": 40,
+      "actual_methods_completed": 4,
+      "active_methods": [
+        "test_window_operand_cost_forgery_rejected",
+        "test_capacity_and_input_pairing_rejected"
+      ]
     },
     "continuation_children_failed": 0,
     "continuation_children_interrupted": 0,

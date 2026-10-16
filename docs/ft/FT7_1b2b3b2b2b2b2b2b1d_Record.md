@@ -1,5 +1,7 @@
 # Current paid-window operand and TD5-cost domain
 
+Current execution update, 16 October 2026: continuation2 was invoked once at 02:34 UTC with launch deadline 03:02:50 UTC. Workflow cancelled passed, completing all forty exact saved audits. Four original actual methods have passed: exact full panel, lifecycle withholding, exact restart and every cost/priority join. Forgery and capacity/input-pairing methods are active; remaining methods and unchanged aggregate are mandatory. No new error or failure, no accepted paid work or passing stage rerun, all original406 source identities unchanged. Ownership and lease are in the current run-state. Never reinvoke continuation2 or either earlier launcher. Dated 39-record checkpoint below is preserved history, not current execution status.
+
 Status as of 16 October 2026 UTC: implemented, frozen and partially verified; NOT ACCEPTED. There are 39 exact saved record audits passed, zero errors/failures or interrupted children, zero actual method bodies, and no owned process remaining. All twenty canonical records and nineteen workflow records are closed. Only workflow cancelled, all eight exact methods and unchanged finish remain mandatory. The original 31-record run and the eight-record continuation both closed naturally after their launch deadlines.
 
 ## Registered source and execution
