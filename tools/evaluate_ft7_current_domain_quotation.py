@@ -24,6 +24,10 @@ def run():
     parser.add_argument("--public", required=True)
     parser.add_argument("--owner", required=True)
     parser.add_argument("--stop-at", required=True)
+    parser.add_argument("--only-branch")
+    parser.add_argument("--finish", action="store_true")
+    parser.add_argument("--retain-from")
+    parser.add_argument("--parts-root")
     args = parser.parse_args()
     root = pathlib.Path(__file__).resolve().parents[1]
     source = pathlib.Path(args.a12e1)
@@ -63,8 +67,8 @@ def run():
             raise SystemExit("ownership/lease/deadline")
 
     def verify_source():
-        if len(freeze) != 612:
-            raise ValueError("exact 612-identity freeze required")
+        if len(freeze) != 614:
+            raise ValueError("exact 614-identity freeze required")
         prior = json.loads(
             (root / "contracts/ft/FT7_Post_Processing_Domain_A12E1_Source_Freeze_v1.json").read_text()
         )
@@ -174,10 +178,97 @@ def run():
         guard()
         verify_source()
         note("start", owner=args.owner, inputs=len(protocol["inputs"]))
+        if args.finish:
+            if args.only_branch or not args.retain_from or not args.parts_root:
+                raise ValueError("exact continuation merge roots required")
+            retained = pathlib.Path(args.retain_from)
+            parts = pathlib.Path(args.parts_root)
+            retained_labels = {"canonical-01", "canonical-02"}
+            for setting in ("canonical", "workflow"):
+                for mask in range(1, 16):
+                    label = f"{setting}-{mask:02d}"
+                    branch_root = retained if label in retained_labels else parts / label
+                    if not branch_root.is_dir() or list((branch_root / "jobs").glob("*.running")):
+                        raise ValueError("closed branch root required: " + label)
+                    record_data = (branch_root / "records" / (label + ".json.gz")).read_bytes()
+                    audit_data = (branch_root / "audits" / (label + ".json")).read_bytes()
+                    persist(output / "records" / (label + ".json.gz"), record_data)
+                    persist(output / "audits" / (label + ".json"), audit_data)
+                    for kind in ("quote", "audit"):
+                        outcome = branch_root / "jobs" / (kind + "-" + label + ".outcome.json")
+                        payload = json.loads(outcome.read_text())
+                        if payload.get("passed") is not True or payload.get("job") != kind + "-" + label:
+                            raise ValueError("exact closed outcome required: " + kind + "-" + label)
+                        atomic_bytes(output / "jobs" / outcome.name, outcome.read_bytes())
+                    report_text = gzip.decompress(record_data).decode()
+                    report = loads(report_text)
+                    audit = json.loads(audit_data)
+                    rows = report["rows"]
+                    formula_exact = all(
+                        row["required"]
+                        == (
+                            1
+                            if row["rejection"] is not None
+                            else 1
+                            + (
+                                row["scanned"] + row["foreign_total"]
+                                if setting == "canonical"
+                                else row["items"]
+                            )
+                            + row["candidate_count"]
+                            + sum(row["examined"])
+                        )
+                        for row in rows
+                    )
+                    if (
+                        report["setting"] != setting
+                        or report["mask"] != mask
+                        or audit.get("passed") is not True
+                        or audit.get("assignments") != len(rows)
+                        or tuple(row["ordinal"] for row in rows) != tuple(range(len(rows)))
+                        or not formula_exact
+                    ):
+                        raise ValueError("exact saved branch binding required: " + label)
+                    if label not in retained_labels:
+                        branch_summary = json.loads((branch_root / "branch-summary.json").read_text())
+                        if branch_summary["branch"] != label:
+                            raise ValueError("branch summary binding")
+                        for name in probes:
+                            if branch_summary["probes"].get(name):
+                                if probes[name]:
+                                    raise ValueError("duplicate setting forgery panel")
+                                probes[name] = branch_summary["probes"][name]
+                    summaries.append(
+                        {
+                            "branch": label,
+                            "setting": setting,
+                            "mask": mask,
+                            "record_sha256": sha(record_data),
+                            "payload_sha256": sha(report_text),
+                            "audit_sha256": sha(audit_data),
+                            "assignments": len(rows),
+                            "required": report["required_energy"],
+                            "energy": report["energy"],
+                            "time": report["time"],
+                            "status": report["status"],
+                            "rejected": audit["rejected"],
+                            "formula_exact": True,
+                            "native_state_unchanged": audit["native_state_unchanged"],
+                        }
+                    )
+                    ordered_reports += 1
+                    native_view_calls += len(rows)
+                    audit_view_calls += len(rows)
+            if len(summaries) != 30 or any(len(rows) < 16 for rows in probes.values()):
+                raise ValueError("complete continuation merge and forgery panels required")
         for setting in ("canonical", "workflow"):
             for mask in range(1, 16):
+                if args.finish:
+                    continue
                 guard()
                 label = f"{setting}-{mask:02d}"
+                if args.only_branch and label != args.only_branch:
+                    continue
                 entry = protocol["inputs"][label]
                 raw_path = source / "records" / (label + ".json.gz")
                 raw = raw_path.read_bytes()
@@ -245,7 +336,7 @@ def run():
                     raise ValueError("audit changed native state: " + label)
                 audit_data = (json.dumps(audit, indent=2, sort_keys=True) + "\n").encode()
                 persist(output / "audits" / (label + ".json"), audit_data)
-                if not probes[setting]:
+                if label in ("canonical-03", "workflow-01"):
                     report_probe_set(setting, text, expected, auditor, native, domain, mask, sha(raw))
                 close_job(audit_marker, assignments=audit["assignments"], required=audit["required"])
                 audit_view_calls += len(rows)
@@ -296,6 +387,25 @@ def run():
                     status=report["status"],
                 )
                 verify_source()
+
+        if args.only_branch:
+            if len(summaries) != 1 or summaries[0]["branch"] != args.only_branch:
+                raise ValueError("one exact branch required")
+            branch_summary = {
+                **summaries[0],
+                "probes": probes,
+                "native_view_calls": native_view_calls,
+                "audit_view_calls": audit_view_calls,
+                "source_identities": len(freeze),
+                "prior_identities": 600,
+            }
+            atomic_bytes(
+                output / "branch-summary.json",
+                (json.dumps(branch_summary, indent=2, sort_keys=True) + "\n").encode(),
+            )
+            verify_source()
+            note("closed_branch_pass", branch=args.only_branch)
+            return
 
         methods_marker = begin_job("methods")
         summary = {
@@ -367,7 +477,7 @@ def run():
             "methods": 6,
             "closed_jobs": 62,
             "failed_jobs": 0,
-            "source_identities": 612,
+            "source_identities": 614,
             "prior_identities": 600,
             "native_view_calls": native_view_calls,
             "audit_view_calls": audit_view_calls,

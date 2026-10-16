@@ -129,9 +129,9 @@
   "status": "running",
   "run_id": "ft7-a12e2-20261016T213945Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-16T22:30:00+00:00",
-  "expected_head": "4c4ef2ad425bf4719c44af89c508e0a7048e6562",
-  "current_batch": "A12E2 current-native correction frozen for numbered attempt3; not yet invoked",
+  "lease_expires_at": "2026-10-16T22:28:57+00:00",
+  "expected_head": "4a09260273efea3324d6038240c4a2fd1cff9f84",
+  "current_batch": "A12E2 bounded continuation1 frozen; two exact closed branches retained, 28 pending",
   "canonical_quotation_a8": {
     "status": "passed",
     "accepted": true,
@@ -3352,7 +3352,7 @@
     "ft8_unchanged": true
   },
   "current_domain_quotation_a12e2": {
-    "status": "two_zero_work_failures_preserved_attempt3_frozen_not_executed",
+    "status": "attempt3_margin_interruption_preserved_continuation1_frozen_not_executed",
     "accepted": false,
     "protocol": "contracts/ft/FT7_Current_Domain_Quotation_A12E2_Protocol_v1.json",
     "protocol_commit": "da70ddb619c8de44166a3a0bcd65866dc18bd1eb",
@@ -3370,10 +3370,16 @@
     "native_envelope_amendment_commit": "f9a15f331cea26506ead1497262dbc364b93f4b4",
     "native_envelope_freeze_commit": "a510a49d7b8d0c510070b117f602863600384bd0",
     "current_native_class_amendment_commit": "4c4ef2ad425bf4719c44af89c508e0a7048e6562",
+    "attempt3_freeze_commit": "618f201dce141873dd25adb000e56646422f4fd7",
+    "continuation1_protocol_commit": "4a09260273efea3324d6038240c4a2fd1cff9f84",
     "freeze_commit": null,
     "freeze_file": "contracts/ft/FT7_Current_Domain_Quotation_A12E2_Source_Freeze_v1.json",
-    "freeze_sha256": "d1c10b91bb0a217f6c8c9c189873e7d89eb975de09769c318d7cab823c5a9a21",
-    "source_identities": 612,
+    "freeze_sha256": "51fea718b109f799cad3871e8c83ad258462bd399c237f07632ce63aa237dbe4",
+    "source_identities": 614,
+    "retained_closed_branches": [
+      "canonical-01",
+      "canonical-02"
+    ],
     "failed_attempts": [
       {
         "attempt": "current-domain-quotation-a12e2-attempt1",
