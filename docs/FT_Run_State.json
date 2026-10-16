@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft7-admission-recovery-20261016T004323Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-16T01:15:21.000Z",
-  "expected_head": "d1f4ae6b714e794f8ab328d194f18511cb773de0",
+  "lease_expires_at": "2026-10-16T01:31:04.000Z",
+  "expected_head": "5e90318166710ea10681ffd316776a7604418052",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1d",
   "current_window_admission_progress": {
     "status": "continuation_running_not_accepted",
@@ -97,6 +97,24 @@
         "workflow/mask-10",
         "workflow/mask-11",
         "workflow/mask-12"
+      ]
+    },
+    "continuation2": {
+      "status": "implemented_not_frozen_not_invoked",
+      "protocol_commit": "6ecaa8977e64f114e719343095c69a3decb5a7c2",
+      "protocol_sha256": "37633169ba74bbc6955c0668d5452bb6cce10ba4f3abf2957bc8299de024f044",
+      "implementation_commit": "5e90318166710ea10681ffd316776a7604418052",
+      "requires": "Complete exact output and continuation1 file bindings after quiescence; separate four-identity freeze before invocation.",
+      "original_406_unchanged": true,
+      "compile_and_help_passed": true,
+      "unchanged_operational_function_asts": [
+        "read",
+        "sha",
+        "write",
+        "record",
+        "method",
+        "allowed",
+        "phase"
       ]
     }
   },
