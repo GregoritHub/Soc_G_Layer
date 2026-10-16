@@ -1,0 +1,20 @@
+{
+  "version": "ft-current-window-admission-recovered-finish1-v1",
+  "scope": "Conditional unchanged final aggregate only if the current missing-method recovery closes at its deadline after all eight original bodies pass. Never run if the existing aggregate already passed.",
+  "original_freeze_commit": "86c613185216ae09b76ef1a1dbd764847ec2c31e",
+  "recovery_freeze_commit": "a15962485b3188b89e20b239575731c6729fdebe",
+  "module": "tools/finish_current_window_admission_recovery.py",
+  "binding_file": "contracts/ft/FT7_1b2b3b2b2b2b2b2b1d_Recovered_Finish1_Input_Binding_v1.json",
+  "output": "current-window-admission-final1",
+  "operations": "current-window-admission-final1-operations",
+  "lease_margin_seconds": 300,
+  "rules": [
+    "Never invoke before the original method-recovery runner closes naturally with status checkpoint, active_children zero and all three exact new original method jobs passed with exit zero. Its original two interrupted attempts remain preserved; no failed body may be retried here.",
+    "Require all eight exact original passing method results, all forty original exact saved independent audit/typed-roundtrip records, 484 predecessor identities, original406/prior399 identities, and no existing summary/method_ids/record_index aggregate in the recovery output.",
+    "Before invocation bind every file of recovered output and recovery operations, all prior bound original/operational prefix files, all80 accepted raw inputs, original406 plus all12 existing operational identities. Freeze this module, protocol, hash and complete binding. No governed original source changes.",
+    "Reject any surviving original/recovery/evaluator/finalizer process using read-only current process inspection; never enter another namespace or signal. Require current unique running owner with more300seconds lease and future UTC launch deadline within30minutes.",
+    "Create fresh disjoint final output and operations. Copy every recovered output file exactly. Run only the unchanged original evaluator finish action once; no init/run/record/method action, native execution, source regeneration, passing-stage rerun or paid replay.",
+    "Preserve complete launch, exit-zero job, log hash and outcome. Recheck all bound and copied files and every source identity after finish. Require unchanged original summary8/40/484/406/399 with zeroerrors/failures and nativeunchanged/newnativeworkfalse. A child failure or interruption is preserved with no automatic retry.",
+    "Keep all prior incomplete logs/outcomes honestly labelled. No fabricated prior exit/outcome. The copied historical original outcome inside final output is not the authoritative finalizer outcome. Full parent FT7–FT9 and FT8 gates remain unchanged."
+  ]
+}
