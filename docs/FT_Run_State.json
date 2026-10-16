@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft7-admission-recovery-20261016T004323Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-16T01:50:10.000Z",
-  "expected_head": "cc8641139d75e732294730e61e7e6550e7912966",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "622eb345b306de7f6222f18f33a892a8d07fb960",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1d",
   "current_window_admission_progress": {
     "status": "partially_verified_not_accepted",
