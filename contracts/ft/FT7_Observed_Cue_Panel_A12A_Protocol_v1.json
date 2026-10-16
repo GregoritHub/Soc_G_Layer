@@ -1,0 +1,45 @@
+{
+  "batch": "FT7.Fresh.ObservedCuePanel.A12A",
+  "version": 1,
+  "scope": "Read-only complete independently specified route-free task descriptors on accepted fulfilled sources. Not paid intake, skill work, comparison, admission, live choice or replacement of A10R pending branch.",
+  "archive": {
+    "filename": "FT7_1b2b3b2b1_Owned_Proposal_Domain_Evidence_20261015.zip",
+    "sha256": "3973f24b472e90ff047f5d61c16e3b987860c2d5478a62234dde213fc3212945",
+    "members": 20
+  },
+  "inputs": {
+    "canonical": {
+      "native": "226c0792b4b43cc3db5baa44418bf21238d3998b9e8bcf0242508b9ac14207e0",
+      "source": "37c1633216271dc057f71c195489a4363bb7348966f4f5fd9a227953f06a7a30",
+      "binding": "39a9557c43b46cc61d140a9d73cadeb0adf1d1ae5fa71008e7ccca77b64f3c34"
+    },
+    "workflow": {
+      "native": "058d1252fa9367b28829f6be81a4568038f609d6960e5e84b97e86895c46f5c9",
+      "source": "081b435f05728eac55c9f58f866246ae41ddd3738cc15b0594da993e4ef3982d",
+      "binding": "bb30e6e5016b3f38eae7436a25762806e8b95b216c5a5fb3fb25fb061fedbacd"
+    }
+  },
+  "prior_source_freeze": "contracts/ft/FT7_Preserved_Recall_Floor_A11P_Source_Freeze_v1.json",
+  "prior_identities": 560,
+  "grammar": "All exact u5.reference source revisions with paid complete read of category name/path label in current owned view, sorted by typed serialization; Cartesian with every nonempty four-bit mask1..15. Preserve source task payload except weights/priorities10 for setbits,0 otherwise. Context,target,other payload fields and original prefixes unchanged. No routes/recipes/roles/success/tie selectors supplied. Cue is explicit experimental task input, not a revision of any existing task.",
+  "oldest_need_gate": "Exact accepted completed source only; every current non-retracted/non-disputed c6.need or c7ws.need must have fulfilled effective controller outcome. Generator rejects source tuple mismatch first. Existing A10R pending source cannot enter this branch.",
+  "historical_cases": "Keep original-cue15 descriptors visibly in complete panel as historical_only; do not rerun their accepted paid intake. Other cue cases are new unpaid descriptors only. This partitions experimental intake work, not candidate/admission/comparison pruning.",
+  "known_before_registration": "Both exact fulfilled sources contain one current need with fulfilled controller status; paid reference label observations Coin10 and Wand. No fresh native task or outcome has been produced.",
+  "methods": [
+    "test_complete_panel",
+    "test_exact_payload_and_prefixes",
+    "test_all_authority_false",
+    "test_history_partition",
+    "test_input_mismatch_rejected",
+    "test_report_forgery_rejected"
+  ],
+  "gate": "Six exact methods, two saved independently reconstructed descriptor reports, exact typed roundtrip, source560 predecessors unchanged. Changed cue alone grants no eligibility; complete paid/comparison/admission gates remain later. Independent auditor may share codec/native primitives but not generator.",
+  "new_files": [
+    "full_theory/observed_cue_panel.py",
+    "full_theory/observed_cue_panel_audit.py",
+    "tools/evaluate_ft7_observed_cue_panel.py",
+    "tests_ft7/test_observed_cue_panel.py"
+  ],
+  "no_replay": true,
+  "ft8_unchanged": true
+}
