@@ -5,7 +5,7 @@
   "run_id": "ft7-owned-skill-2026-10-16T08:29:38.609Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-16T09:18:03.000Z",
-  "expected_head": "fd1d5ada6b4cc1afd35b489bb2847945c2797ebd",
+  "expected_head": "f0257b705fb30d4024c7b57ea4c8e6f855e11f50",
   "current_batch": "FT7.Skill.Intake.A1",
   "current_window_admission_progress": {
     "status": "passed",
@@ -363,7 +363,7 @@
       "paths_removed": 0
     }
   },
-  "next_batch": "Close the active FT7.Skill.Intake.A1 continuation; do not reinvoke original paid panels or completed saved probes. Then route-free paid skill practice/acquisition from new owned observations, lawful recall organization and fresh comparisons after changed inputs; parent FT7–FT9 unchanged.",
+  "next_batch": "Route-free actual paid skill practice/acquisition from accepted inspection observations, broader lawful paid recall organization, and fresh comparisons after changed inputs. Use saved completed mask-1 native branches; do not rerun accepted inspection/control/probe stages. Genuine distinct-element priority/cost ties, history-only choice, chosen paid work/use, matched controls/full staging and parent FT7–FT9 remain; FT8 unchanged.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -420,11 +420,12 @@
     "FT7.1b2b3b2b2b2b2b2b1a",
     "FT7.1b2b3b2b2b2b2b2b1b",
     "FT7.1b2b3b2b2b2b2b2b1c",
-    "FT7.1b2b3b2b2b2b2b2b1d"
+    "FT7.1b2b3b2b2b2b2b2b1d",
+    "FT7.Skill.Intake.A1"
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md",
+  "latest_record": "docs/ft/FT7_Skill_Intake_A1_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
@@ -682,7 +683,7 @@
     "source_publication": "verified",
     "prior_failed_attempts": 6
   },
-  "latest_acceptance_record": "docs/ft/FT7_1b2b3b2b2b2b2b2b1c_Record.md",
+  "latest_acceptance_record": "docs/ft/FT7_Skill_Intake_A1_Record.md",
   "engineering_continuation": {
     "batch": "FT7.1b2b3b",
     "accepted": false,
@@ -2240,18 +2241,15 @@
   "prior_paid_window_acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2",
   "latest_acceptance_commit": "64341a34a6fb90221ae440f9d683c4e29bddb6bb",
   "latest_local_acceptance": {
-    "batch": "FT7.1b2b3b2b2b2b2b2b1d",
-    "claim": "Read-only current TD5/estimated-cost diagnostic join across complete accepted window and bounded operand grammar only. Not full future role/skill coverage, actual preparation, live history-only choice, chosen movement/use, matched controls or parent FT7/FT8/FT9 acceptance.",
-    "errors": 0,
-    "failures": 0,
-    "frozen_identities": 406,
-    "methods": 8,
-    "native_unchanged": true,
-    "new_native_work": false,
+    "batch": "FT7.Skill.Intake.A1",
     "passed": true,
-    "predecessor_identities": 484,
-    "prior_identities": 399,
-    "saved_records": 40
+    "methods": 6,
+    "saved_records": 12,
+    "saved_negative_probes": 4,
+    "frozen_identities": 427,
+    "original_frozen_identities": 419,
+    "prior_identities": 412,
+    "claim": "Bounded paid material observation prerequisite only; not skill acquisition, recall repair, main admission, live choice or parent acceptance."
   },
   "recall_feasibility_progress": {
     "status": "diagnostic_pass",
@@ -2277,9 +2275,9 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T09:03:30.000Z",
+  "updated_at": "2026-10-16T09:15:47.000Z",
   "skill_intake_a1": {
-    "status": "continuation_running_not_accepted",
+    "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
     "original_freeze": "36f1277133dd765d6441d8e549d8306d979a9d22",
     "saved_probe_protocol": "2f8d7a905e02cbceaa29a35f5293653414575c2f",
@@ -2296,6 +2294,34 @@
     "deadline": "2026-10-16T09:14:00+00:00",
     "paid_main_replayed": false,
     "skill_acquired": false,
-    "parent_accepted": false
+    "parent_accepted": false,
+    "continuation_closed_exit": 0,
+    "methods": 6,
+    "records": 12,
+    "source_identities": 427,
+    "prior_identities": 412,
+    "original_native_main_replayed": false,
+    "interruption_preserved": true,
+    "archive": {
+      "filename": "FT7_Skill_Intake_A1_Evidence_20261016.zip",
+      "sha256": "9fc1fe02dacbe33d3849741ed43ea837d72c0da2433f6d3fe269c9a1081f9a0c",
+      "bytes": 112962487,
+      "manifest_members": 59
+    },
+    "recall_repaired": false
+  },
+  "prior_b1d_local_acceptance": {
+    "batch": "FT7.1b2b3b2b2b2b2b2b1d",
+    "claim": "Read-only current TD5/estimated-cost diagnostic join across complete accepted window and bounded operand grammar only. Not full future role/skill coverage, actual preparation, live history-only choice, chosen movement/use, matched controls or parent FT7/FT8/FT9 acceptance.",
+    "errors": 0,
+    "failures": 0,
+    "frozen_identities": 406,
+    "methods": 8,
+    "native_unchanged": true,
+    "new_native_work": false,
+    "passed": true,
+    "predecessor_identities": 484,
+    "prior_identities": 399,
+    "saved_records": 40
   }
 }

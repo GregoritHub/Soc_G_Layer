@@ -1,0 +1,255 @@
+{
+  "batch": "FT7.Skill.Intake.A1",
+  "scope": "paid material observation prerequisite only",
+  "passed": true,
+  "methods": 6,
+  "records": [
+    {
+      "setting": "canonical",
+      "record": "before",
+      "file": "canonical-before.json.gz",
+      "sha256": "3cf949ea51e3917621e9739a26b009600eefba5c637568a8f3af401e65eed028",
+      "passed": true,
+      "phase": "inspect",
+      "inventory": 22,
+      "receipts": 0,
+      "rejected": 0,
+      "energy": 0,
+      "time": 0
+    },
+    {
+      "setting": "canonical",
+      "record": "inspect-partial",
+      "file": "canonical-inspect-partial.json.gz",
+      "sha256": "26ad7493e10f10b9a201c94312270dffdb7e12ac64957179df3aa331a5d205a1",
+      "passed": true,
+      "phase": "inspect",
+      "inventory": 22,
+      "receipts": 0,
+      "rejected": 3,
+      "energy": 1,
+      "time": 1
+    },
+    {
+      "setting": "canonical",
+      "record": "read-partial",
+      "file": "canonical-read-partial.json.gz",
+      "sha256": "1c6ba894b8d2d3b81c1bf06843e1a8662630b0905d1473ee35142108c1a98474",
+      "passed": true,
+      "phase": "read",
+      "inventory": 22,
+      "receipts": 0,
+      "rejected": 3,
+      "energy": 4,
+      "time": 4
+    },
+    {
+      "setting": "canonical",
+      "record": "complete",
+      "file": "canonical-complete.json.gz",
+      "sha256": "463ed0982c5463e83f541eddf79bda88b6418251fa7002f59c63ec8f8d733790",
+      "passed": true,
+      "phase": "complete",
+      "inventory": 22,
+      "receipts": 8,
+      "rejected": 14,
+      "energy": 40,
+      "time": 40
+    },
+    {
+      "setting": "canonical",
+      "record": "restarted",
+      "file": "canonical-restarted.json.gz",
+      "sha256": "fe4ecf08b355be68cf3877a35d31e51582e9232b202e7c6090bd1cd26dd7dbdd",
+      "passed": true,
+      "phase": "complete",
+      "inventory": 22,
+      "receipts": 8,
+      "rejected": 14,
+      "energy": 40,
+      "time": 40
+    },
+    {
+      "setting": "canonical",
+      "record": "cancelled",
+      "file": "canonical-cancelled.json.gz",
+      "sha256": "5cb7ebcb806a864b6cdb7fd5579ac50673885cc11bd8d9cd5679a0ab3ee9e24f",
+      "passed": true,
+      "phase": "cancelled",
+      "inventory": 22,
+      "receipts": 0,
+      "rejected": 3,
+      "energy": 1,
+      "time": 1
+    },
+    {
+      "setting": "workflow",
+      "record": "before",
+      "file": "workflow-before.json.gz",
+      "sha256": "04500c500fab4c7591a120e7aeaca7840415257a1533319d328904352eb2663e",
+      "passed": true,
+      "phase": "inspect",
+      "inventory": 25,
+      "receipts": 0,
+      "rejected": 0,
+      "energy": 0,
+      "time": 0
+    },
+    {
+      "setting": "workflow",
+      "record": "inspect-partial",
+      "file": "workflow-inspect-partial.json.gz",
+      "sha256": "a55ee75b142ac1b76583b3cdbf81d640365f5e30dcf475e60c43ef5a3c4bfd44",
+      "passed": true,
+      "phase": "inspect",
+      "inventory": 25,
+      "receipts": 0,
+      "rejected": 3,
+      "energy": 1,
+      "time": 1
+    },
+    {
+      "setting": "workflow",
+      "record": "read-partial",
+      "file": "workflow-read-partial.json.gz",
+      "sha256": "ffef8f89e712250220aa5105c87daece3c61e59fe60e05ec8df1f074fa8030e1",
+      "passed": true,
+      "phase": "read",
+      "inventory": 25,
+      "receipts": 0,
+      "rejected": 3,
+      "energy": 4,
+      "time": 4
+    },
+    {
+      "setting": "workflow",
+      "record": "complete",
+      "file": "workflow-complete.json.gz",
+      "sha256": "7764100fe60679aa2b1a060f21c42adb62e6d32d1549084068ca94873dcb18f1",
+      "passed": true,
+      "phase": "complete",
+      "inventory": 25,
+      "receipts": 10,
+      "rejected": 15,
+      "energy": 50,
+      "time": 50
+    },
+    {
+      "setting": "workflow",
+      "record": "restarted",
+      "file": "workflow-restarted.json.gz",
+      "sha256": "3a8a14cfdb5a6a9fc7959ed84dc07d111240d7cec73dbc11b127eea07e77b183",
+      "passed": true,
+      "phase": "complete",
+      "inventory": 25,
+      "receipts": 10,
+      "rejected": 15,
+      "energy": 50,
+      "time": 50
+    },
+    {
+      "setting": "workflow",
+      "record": "cancelled",
+      "file": "workflow-cancelled.json.gz",
+      "sha256": "b60cd0d209bdb5f16e2787d8b8a1b4b093f5f5c67f2708f0454d416551e90ebd",
+      "passed": true,
+      "phase": "cancelled",
+      "inventory": 25,
+      "receipts": 0,
+      "rejected": 3,
+      "energy": 1,
+      "time": 1
+    }
+  ],
+  "source_identities": 427,
+  "prior_identities": 423,
+  "original_records_copied_exact": 10,
+  "new_records": 2,
+  "paid_main_replayed": false,
+  "original_interruption_preserved": true,
+  "skill_acquired": false,
+  "main_execution_authorized": false,
+  "history_choice": false,
+  "parent_accepted": false,
+  "saved_probes": {
+    "passed": true,
+    "settings": [
+      {
+        "setting": "canonical",
+        "passed": true,
+        "record_sha256": "26ad7493e10f10b9a201c94312270dffdb7e12ac64957179df3aa331a5d205a1",
+        "original_audit": {
+          "passed": true,
+          "phase": "inspect",
+          "inventory": 22,
+          "receipts": 0,
+          "rejected": 3,
+          "energy": 1,
+          "time": 1
+        },
+        "rejections": {
+          "payment": "owned inspection audit: wallet projection",
+          "receipt": "owned inspection audit: exact adapter, progress and authority fields"
+        },
+        "native_unchanged": true,
+        "paid_work_calls": 0
+      },
+      {
+        "setting": "workflow",
+        "passed": true,
+        "record_sha256": "a55ee75b142ac1b76583b3cdbf81d640365f5e30dcf475e60c43ef5a3c4bfd44",
+        "original_audit": {
+          "passed": true,
+          "phase": "inspect",
+          "inventory": 25,
+          "receipts": 0,
+          "rejected": 3,
+          "energy": 1,
+          "time": 1
+        },
+        "rejections": {
+          "payment": "owned inspection audit: wallet projection",
+          "receipt": "owned inspection audit: exact adapter, progress and authority fields"
+        },
+        "native_unchanged": true,
+        "paid_work_calls": 0
+      }
+    ],
+    "negative_probes": 4,
+    "source_identities": 423,
+    "prior_identities": 419,
+    "paid_work_calls": 0,
+    "parent_accepted": false
+  },
+  "closure": {
+    "passed": true,
+    "unique_records": 12,
+    "original_exact_copies": 10,
+    "original_methods": 6,
+    "negative_saved_probes": 4,
+    "original_source_identities": 419,
+    "prior_source_identities": 412,
+    "closure_source_identities": 427,
+    "original_stop_preserved": true,
+    "main_native_replayed": false,
+    "typed_restart_pairs_exact": 2,
+    "native_work_in_this_verifier": 0,
+    "parent_accepted": false
+  },
+  "dependency_check": {
+    "sealed_baseline": 1093,
+    "repair_freeze": 20,
+    "historical_reference": 210,
+    "all_exact": true,
+    "native_work": 0
+  },
+  "evidence": {
+    "filename": "FT7_Skill_Intake_A1_Evidence_20261016.zip",
+    "sha256": "9fc1fe02dacbe33d3849741ed43ea837d72c0da2433f6d3fe269c9a1081f9a0c",
+    "bytes": 112962487,
+    "manifest_members": 59
+  },
+  "recall_repaired": false,
+  "comparison_paid": false,
+  "td5_admitted": false
+}
