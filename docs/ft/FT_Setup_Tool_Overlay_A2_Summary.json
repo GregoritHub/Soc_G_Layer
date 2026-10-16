@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "methods": [
+    "test_all_frozen_public_files_selected",
+    "test_copy_exact_bytes",
+    "test_exact_one_path_extension",
+    "test_existing_output_preserved",
+    "test_no_broad_tool_permission",
+    "test_unsafe_path_rejected"
+  ],
+  "errors": 0,
+  "failures": 0,
+  "public_paths": 656,
+  "copied": 501,
+  "source_identities": 481,
+  "prior_source_identities": 475,
+  "sole_exact_path_delta": true,
+  "additional": "tools/continue_ft7_material_refresh.py",
+  "dependency_rebuilds": 0,
+  "native_work": 0,
+  "accepted_gate_replays": 0,
+  "ft9_accepted": false,
+  "protocol_commit": "eeffb58263f58797427e2eb5e77a1154a263fb22",
+  "freeze_commit": "92942f51c6eeb53993f6f0d87a68bc24432895a4",
+  "a5_acceptance_commit": "6fe952810490b9f8c29cdfb0d4306abe874143a9",
+  "prior_unchanged_identities": 474,
+  "prior_setup_bridge_sha256": "3dab435411ae2c9439b2f0d91431af3753bae8a1b6cd18f87994e7ab4016dd90",
+  "exit_code": 0
+}

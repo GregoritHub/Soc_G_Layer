@@ -5,7 +5,7 @@
   "run_id": "ft7-observed-fields-a5-2026-10-16T12:34:01.000Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-16T13:26:55.000Z",
-  "expected_head": "92942f51c6eeb53993f6f0d87a68bc24432895a4",
+  "expected_head": "83278218bb649201445b012dbab46298b4cf59d4",
   "current_batch": "FT.Setup.ToolOverlay.A2",
   "current_window_admission_progress": {
     "status": "passed",
@@ -363,7 +363,7 @@
       "paths_removed": 0
     }
   },
-  "next_batch": "Finish preregistered setup-only exact A3 continuation inclusion. Then bind A5 changed native inputs to immutable oldest-task/source/social/history prefixes, complete current request/role domain and pay new comparisons; broader lawful recall organization, ties/history-only choice, chosen work/use, matched controls/full staging and parent FT7–FT9 remain open.",
+  "next_batch": "Compose complete declared current request/role domain over exact accepted A5 changed native inputs and immutable oldest-task/source/social/history prefixes; pay fresh comparisons before current TD5/cost admission. Broader lawful recall organization, genuine distinct-element ties, autonomous history-only choice, chosen paid work/downstream use, matched controls/full staging, FT7 pairs/populations and FT8–FT9 remain open. Never rerun accepted A5/A4/A3/A2/A1/B1D or setup gates.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -423,11 +423,12 @@
     "FT7.1b2b3b2b2b2b2b2b1d",
     "FT7.Skill.Intake.A1",
     "FT7.Observed.Reference.A4",
-    "FT7.Observed.Fields.A5"
+    "FT7.Observed.Fields.A5",
+    "FT.Setup.ToolOverlay.A2"
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT7_Observed_Fields_A5_Record.md",
+  "latest_record": "docs/ft/FT_Setup_Tool_Overlay_A2_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
@@ -2245,12 +2246,12 @@
   "prior_paid_window_acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2",
   "latest_acceptance_commit": "6fe952810490b9f8c29cdfb0d4306abe874143a9",
   "latest_local_acceptance": {
-    "batch": "FT7.Observed.Fields.A5",
+    "batch": "FT.Setup.ToolOverlay.A2",
     "passed": true,
     "methods": 6,
-    "records": 10,
-    "source_identities": 475,
-    "acceptance_commit": "6fe952810490b9f8c29cdfb0d4306abe874143a9"
+    "copied": 501,
+    "source_identities": 481,
+    "engine_work": false
   },
   "recall_feasibility_progress": {
     "status": "diagnostic_pass",
@@ -2565,7 +2566,7 @@
     "acceptance_commit": "6fe952810490b9f8c29cdfb0d4306abe874143a9"
   },
   "setup_tool_overlay_a2": {
-    "status": "frozen",
+    "status": "accepted",
     "protocol_commit": "eeffb58263f58797427e2eb5e77a1154a263fb22",
     "additional": "tools/continue_ft7_material_refresh.py",
     "a5_closed_exit": 0,
@@ -2575,6 +2576,22 @@
     "source_identities": 481,
     "prior_bridge": 475,
     "unchanged_predecessors": 474,
-    "output": "setup-continuation-overlay-a2-attempt1"
+    "output": "setup-continuation-overlay-a2-attempt1",
+    "accepted": true,
+    "methods": 6,
+    "copied": 501,
+    "public_paths": 656,
+    "exit_code": 0,
+    "record": "docs/ft/FT_Setup_Tool_Overlay_A2_Record.md",
+    "summary": "docs/ft/FT_Setup_Tool_Overlay_A2_Summary.json",
+    "native_work": 0,
+    "dependency_rebuilds": 0
+  },
+  "latest_engine_acceptance": {
+    "batch": "FT7.Observed.Fields.A5",
+    "acceptance_commit": "6fe952810490b9f8c29cdfb0d4306abe874143a9",
+    "methods": 6,
+    "records": 10,
+    "probes": 20
   }
 }

@@ -1,0 +1,11 @@
+test_all_frozen_public_files_selected (setup_a2_tests.SetupContinuationOverlayTests.test_all_frozen_public_files_selected) ... ok
+test_copy_exact_bytes (setup_a2_tests.SetupContinuationOverlayTests.test_copy_exact_bytes) ... ok
+test_exact_one_path_extension (setup_a2_tests.SetupContinuationOverlayTests.test_exact_one_path_extension) ... ok
+test_existing_output_preserved (setup_a2_tests.SetupContinuationOverlayTests.test_existing_output_preserved) ... ok
+test_no_broad_tool_permission (setup_a2_tests.SetupContinuationOverlayTests.test_no_broad_tool_permission) ... ok
+test_unsafe_path_rejected (setup_a2_tests.SetupContinuationOverlayTests.test_unsafe_path_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.090s
+
+OK
