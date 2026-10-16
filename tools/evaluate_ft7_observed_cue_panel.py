@@ -9,7 +9,7 @@ from tests_ft7 import test_observed_cue_panel as tests
 def main():
     p=argparse.ArgumentParser();p.add_argument('archive');p.add_argument('output');p.add_argument('--public',required=True);p.add_argument('--owner',required=True);p.add_argument('--stop-at',required=True);a=p.parse_args()
     root=pathlib.Path(__file__).resolve().parents[1];out=pathlib.Path(a.output);out.mkdir(exist_ok=False);prefix='contracts/ft/FT7_Observed_Cue_Panel_A12A_'
-    protocol=json.loads((root/(prefix+'Protocol_v1.json')).read_text());freeze=json.loads((root/(prefix+'Source_Freeze_v1.json')).read_text());prior=json.loads((root/protocol['prior_source_freeze']).read_text())
+    protocol=json.loads((root/(prefix+'Protocol_v1.json')).read_text());freeze=json.loads((root/(prefix+'Source_Freeze_v2.json')).read_text());prior=json.loads((root/protocol['prior_source_freeze']).read_text())
     def verify():
         state=json.loads((pathlib.Path(a.public)/'docs/FT_Run_State.json').read_text());now=datetime.now(timezone.utc)
         if state['run_id']!=a.owner or not state['active_worker'] or state['status']!='running' or now>=datetime.fromisoformat(state['lease_expires_at']) or now>=datetime.fromisoformat(a.stop_at):raise ValueError('ownership/deadline')

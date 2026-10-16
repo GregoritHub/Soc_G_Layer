@@ -28,7 +28,7 @@ def build(native,source,binding,setting):
     for detail in view.snapshot.particulars:
         if detail.source.identity.namespace!='u5.reference' or detail.category!='name' or detail.path!=('label',):continue
         receipts=tuple(r.ref for r in view.work_receipts('read',detail.address.delivery) if r.actor==s['actor'] and r.complete and r.spent>=r.required)
-        if receipts:evidence.setdefault(detail.source,[]).append((detail.address,receipts))
+        if receipts:evidence.setdefault(detail.source,[]).append(((detail.address.delivery,detail.address.key),receipts))
     cues=tuple(sorted(evidence,key=dumps));rows=[]
     if old.cue not in cues:raise ValueError('original cue must be paid and visible')
     for cue in cues:

@@ -25,7 +25,7 @@ def expected(native,source,binding,setting):
     for item in v.snapshot.particulars:
         if item.source.identity.namespace=='u5.reference' and item.category=='name' and item.path==('label',):
             refs=tuple(r.ref for r in v.snapshot.receipts if r.operation=='read' and r.work_key==item.address.delivery and r.actor==s['actor'] and r.completed==r.required and r.spent>=r.required)
-            if refs:pool.setdefault(item.source,[]).append((item.address,refs))
+            if refs:pool.setdefault(item.source,[]).append(((item.address.delivery,item.address.key),refs))
     cues=tuple(sorted(pool,key=dumps))
     if task.cue not in cues:raise ValueError('original paid cue')
     rows=[]
