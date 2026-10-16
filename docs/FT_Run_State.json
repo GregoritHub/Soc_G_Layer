@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft7-owned-rehearsal-a10-2026-10-16T15:38:03.294Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-16T16:53:37.000Z",
-  "expected_head": "d68597d7e152fafa1a038f85e976a8bf222f5160",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "9c2f50c64b8ef233dfc216dfad63959562df7f66",
   "current_batch": "FT.Setup.ToolOverlay.A3",
   "canonical_quotation_a8": {
     "status": "passed",
@@ -2303,7 +2303,7 @@
     "acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2"
   },
   "prior_paid_window_acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2",
-  "latest_acceptance_commit": "d68597d7e152fafa1a038f85e976a8bf222f5160",
+  "latest_acceptance_commit": "9c2f50c64b8ef233dfc216dfad63959562df7f66",
   "latest_local_acceptance": {
     "batch": "FT.Setup.ToolOverlay.A3",
     "status": "passed",
@@ -2334,7 +2334,10 @@
     "accepted_gate_replays": 0,
     "ft9_accepted": false,
     "old_setup_preserved": true,
-    "public_summary_exact": true
+    "public_summary_exact": true,
+    "acceptance_commit": "9c2f50c64b8ef233dfc216dfad63959562df7f66",
+    "ownership_released_at": "2026-10-16T16:30:57Z",
+    "owned_workers_at_release": 0
   },
   "recall_feasibility_progress": {
     "status": "diagnostic_pass",
@@ -2360,7 +2363,7 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T16:30:00.000Z",
+  "updated_at": "2026-10-16T16:30:57Z",
   "skill_intake_a1": {
     "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
@@ -2861,7 +2864,8 @@
         "methods": 0,
         "message": "unsupported U2 wire value"
       },
-      "acceptance_commit": "d68597d7e152fafa1a038f85e976a8bf222f5160"
+      "acceptance_commit": "d68597d7e152fafa1a038f85e976a8bf222f5160",
+      "ownership_released_at": "2026-10-16T16:30:57Z"
     }
   },
   "setup_tool_overlay_a3": {
@@ -2893,7 +2897,10 @@
     "accepted_gate_replays": 0,
     "ft9_accepted": false,
     "old_setup_preserved": true,
-    "public_summary_exact": true
+    "public_summary_exact": true,
+    "acceptance_commit": "9c2f50c64b8ef233dfc216dfad63959562df7f66",
+    "ownership_released_at": "2026-10-16T16:30:57Z",
+    "owned_workers_at_release": 0
   },
   "prior_latest_engine_acceptance": {
     "batch": "FT7.Observed.Fields.A5",
@@ -2901,5 +2908,16 @@
     "methods": 6,
     "records": 10,
     "probes": 20
+  },
+  "last_verified_publication": {
+    "head": "9c2f50c64b8ef233dfc216dfad63959562df7f66",
+    "blobs": 750,
+    "all_local_public_blob_identities_exact": true,
+    "paths_removed": 0,
+    "public_summaries_byte_exact": 2,
+    "source_identities": 549,
+    "prior_bridge": 543,
+    "other_prior_unchanged": 542,
+    "workers_remaining": 0
   }
 }
