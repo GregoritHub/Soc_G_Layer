@@ -1,0 +1,35 @@
+{
+  "records": {
+    "workflow-read-partial.json.gz": "215ebf83d6d2a0a281b9dd317d536bfbaa404cc991c65ce2dd899b9c396e0082",
+    "canonical-complete.json.gz": "19e3195ff3785dc1569d20760e08411e77a6f6d03c889fe695256d4ab2e33c2f",
+    "tests.log": "bedb9afbb4186c741dfc9d8d16ed284b1de687b66084764a0927399567feed66",
+    "canonical-restarted.json.gz": "7feebcd3c793b2bce0f41c92eb554b49db452b661830850daf4c2fe59b8aae9b",
+    "workflow-practice-partial.json.gz": "325046da73478086b5b3e8e26a7207425e870bfb67332b46f06f96c595b08061",
+    "probes.json": "89a9e6443e9cc9a8bee37a0708f6c7305e3d5e94b52b66bac6fbc07e37f6df6f",
+    "workflow-cancelled.json.gz": "ba187954255ab97fb01f2a8e9537d937575c6ad7795ae31ff57d3d4b4c477e10",
+    "workflow-restarted.json.gz": "1fe287e1b01172a4ae3715761138d3dd65d6cffdd8dea8b0c0ca328c912c4c84",
+    "workflow-complete.json.gz": "bdf88635c76f0e629b7b15b1c483e91e207bb0820c5da8ebe36bbd11131ce72a",
+    "canonical-read-partial.json.gz": "b36dab697abd38b570c47622b259f42dcde100f38eb180e5164597a201be7274",
+    "canonical-practice-partial.json.gz": "faa9b4283da2e89581760e9f90223abb66079910701a2ba1328dbf8621e0159f",
+    "canonical-acquire-partial.json.gz": "5375fd007a842c39670c7c2e2957841066c1706fb8b7b088650df9a570b87d2e",
+    "workflow-before.json.gz": "c5d961f6225db9aa4c0b177d8da425b6280a2dad52894d43d41ac794e0932ce6",
+    "summary.json": "455fb78b361ae11dfffce7b1af51a248d396142d9a7bf5b9d8565acee1bd2da1",
+    "canonical-before.json.gz": "23d013ba52088a28e1a6157b25240844b506719adbb2e3309793f4241ebbd4e9",
+    "workflow-acquire-partial.json.gz": "62a9bf19c939997a074c009ee9c46c1a05bc95653494d27c5832a6dbd347ba22",
+    "canonical-cancelled.json.gz": "d70886ad477d08553a24fbbd4df6659bef0b16fd3ecdaa8deea887fd3e09ce66",
+    "progress.json": "c02ff6a84720cd056d872415ef57a1065fbf5be28a6bcb4ea3f65e9498720022"
+  },
+  "operations": {
+    "events.jsonl": "5b4539443627357cb8e4b741218067f3ed27959bb0f9334fb0ccdda060c120e1",
+    "current.json.gz": "b8e20810d7304dad5c18951a5790f105055c1f8527021f15b0984f08ef368958"
+  },
+  "old_source": {
+    "full_theory/owned_repair_practice_audit.py": "52c97e351851099c179cb596d098b36aed5066f1b283e806462c0fbeb5ac547a",
+    "full_theory/owned_repair_practice.py": "cf6a4693ea19deb8b2ebe3c7621f5887dd0c02f46f5a9e3092273e93f5007ca3",
+    "tests_ft7/test_owned_repair_practice.py": "705f43b0ea36c2a5bc3236ef3ac3f391523d9b89d0969bd42b88cc756a28d3ce",
+    "tools/evaluate_owned_repair_practice.py": "783771f17d5fb51166f4ba58d7c4755715b2bc8c7952424cd47524ac2213a830",
+    "contracts/ft/FT7_Skill_Practice_A2_Source_Freeze_v1.json": "2d9272eee45f6715d51c96c42dd7be1a1fdc6e35729b8dfe209a3a829722b8d9",
+    "contracts/ft/FT7_Skill_Practice_A2_Protocol_v1.sha256": "92d929b5cde57b8b594755c53a076b21d3701782f4b2c3107b28aaf1f824124b",
+    "contracts/ft/FT7_Skill_Practice_A2_Protocol_v1.json": "d5f71f7248c99c23d247f9b25fd9228c297751dd77ba55013e170f4b37831865"
+  }
+}

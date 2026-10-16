@@ -49,6 +49,8 @@ class OwnedRepairPractice:
 
     def __init__(self, engine, intake):
         native = engine.checkpoint(); i = loads(intake)
+        if digest(intake) != {'0eb6ec03ff64f4da8c297527fedb95d71398b7bb066a33f0c080f4881ac7b1d0':'af1b0953418ad0d9bfede22e440cf5de6333c3d5998b866d8867cc007da296a4','50ed4da94e7a03066d5b1099f1fc78f6e0d5ffa60d8af9a0e68b67735294080e':'652d2b82f47264f3e26a5c6ed6bdbafece3e62a85f844f36f06e4642b3ac0497'}.get(digest(native)):
+            raise ValueError('exact accepted intake identity')
         if digest(native) not in SOURCES or i['expected_native_sha256'] != digest(native) or i['phase'] != 'complete':
             raise ValueError('exact accepted completed intake required')
         self.actor = i['actor']; self.context = i['context']

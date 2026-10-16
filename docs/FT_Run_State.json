@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft7-skill-practice-2026-10-16T09:37:19.365Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-16T10:15:52.918Z",
-  "expected_head": "8961d8f90705f8007f0b41745582403c823b1f7c",
+  "lease_expires_at": "2026-10-16T10:36:12.504Z",
+  "expected_head": "f48f01bc228e1043cab11eecc2514f3d34e37b62",
   "current_batch": "FT7.Skill.Practice.A2",
   "current_window_admission_progress": {
     "status": "passed",
@@ -2275,7 +2275,7 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T09:17:06.000Z",
+  "updated_at": "2026-10-16T10:06:12.504Z",
   "skill_intake_a1": {
     "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
@@ -2328,7 +2328,7 @@
     "saved_records": 40
   },
   "skill_practice_a2": {
-    "status": "running",
+    "status": "original_passed_identity_reader_frozen",
     "accepted": false,
     "protocol_commit": "efc247da7ef40fb43e45fce31784329797e4307d",
     "protocol_sha256": "d5f71f7248c99c23d247f9b25fd9228c297751dd77ba55013e170f4b37831865",
@@ -2343,6 +2343,15 @@
     "invoked": true,
     "execution_session": 79939,
     "started_utc": "2026-10-16T09:46:24.637491+00:00",
-    "stop_at": "2026-10-16T10:13:00+00:00"
+    "stop_at": "2026-10-16T10:13:00+00:00",
+    "original_exit_code": 0,
+    "original_closed_at": "2026-10-16T10:02:07.382169+00:00",
+    "methods": 6,
+    "records": 14,
+    "negative_probes": 10,
+    "original_source_unchanged": true,
+    "identity_amendment_commit": "f48f01bc228e1043cab11eecc2514f3d34e37b62",
+    "identity_source_identities": 439,
+    "saved_output": "owned-repair-practice-a2-saved1"
   }
 }
