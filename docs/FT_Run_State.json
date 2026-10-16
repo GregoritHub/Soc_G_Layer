@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft7-observed-reference-a4-2026-10-16T11:36:33.000Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-16T12:06:33.000Z",
-  "expected_head": "488814dd147d03f779573b958f4ad0513c9a3b30",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "157f0b4c3c3f8a5d584d267047ae749ea05257f4",
   "current_batch": "FT7.Observed.Reference.A4",
   "current_window_admission_progress": {
     "status": "passed",
@@ -421,7 +421,8 @@
     "FT7.1b2b3b2b2b2b2b2b1b",
     "FT7.1b2b3b2b2b2b2b2b1c",
     "FT7.1b2b3b2b2b2b2b2b1d",
-    "FT7.Skill.Intake.A1"
+    "FT7.Skill.Intake.A1",
+    "FT7.Observed.Reference.A4"
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
@@ -2239,13 +2240,14 @@
     "acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2"
   },
   "prior_paid_window_acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2",
-  "latest_acceptance_commit": "aa3462fd9054cc016f49e59e2b21febbe5d25164",
+  "latest_acceptance_commit": "157f0b4c3c3f8a5d584d267047ae749ea05257f4",
   "latest_local_acceptance": {
     "batch": "FT7.Observed.Reference.A4",
     "passed": true,
     "methods": 6,
     "records": 12,
-    "source_identities": 468
+    "source_identities": 468,
+    "acceptance_commit": "157f0b4c3c3f8a5d584d267047ae749ea05257f4"
   },
   "recall_feasibility_progress": {
     "status": "diagnostic_pass",
@@ -2271,7 +2273,7 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T11:49:29.449Z",
+  "updated_at": "2026-10-16T11:50:40.269Z",
   "skill_intake_a1": {
     "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
@@ -2511,6 +2513,15 @@
       "manifest_members": 41,
       "all_members_verified": true
     },
-    "parent_accepted": false
+    "parent_accepted": false,
+    "acceptance_commit": "157f0b4c3c3f8a5d584d267047ae749ea05257f4",
+    "ownership_released_at": "2026-10-16T11:50:40.269Z",
+    "owned_workers_at_release": 0,
+    "public_tree_verification": {
+      "commit": "157f0b4c3c3f8a5d584d267047ae749ea05257f4",
+      "blobs": 641,
+      "all_local_public_blob_identities_exact": true,
+      "no_paths_removed": true
+    }
   }
 }
