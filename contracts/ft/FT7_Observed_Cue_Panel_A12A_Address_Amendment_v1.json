@@ -1,0 +1,9 @@
+{
+  "batch": "FT7.Fresh.ObservedCuePanel.A12A",
+  "amendment": 1,
+  "failed_freeze": "f6b8827ea8fed3f74e7b008a71a609de2bae397a",
+  "failure": "Before any method/report/native work, selection_records.dumps rejects DetailAddress in cue_evidence.",
+  "repair": "Only evidence address representation changes from DetailAddress to exact (delivery,key) tuple in generator and independently reconstructed auditor; evaluator reads separately versioned v2 freeze. Protocol inputs, full cue/mask panel, old need rejection, independent audit, six methods and authority flags unchanged.",
+  "preserve": "Exact failed seven-member source capsule and failure JSON; no accepted stage or paid work replay.",
+  "new_freeze": "contracts/ft/FT7_Observed_Cue_Panel_A12A_Source_Freeze_v2.json"
+}
