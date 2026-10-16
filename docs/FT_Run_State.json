@@ -5,8 +5,8 @@
   "run_id": "ft7-skill-practice-2026-10-16T09:37:19.365Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-16T10:36:12.504Z",
-  "expected_head": "8430d9b9e2f8af5626f744dda431ff5440aeea1b",
-  "current_batch": "FT7.Skill.Practice.A2",
+  "expected_head": "aac246e1b35afdc30267126188f192e5caecc6e0",
+  "current_batch": "FT.Setup.ToolOverlay.A1",
   "current_window_admission_progress": {
     "status": "passed",
     "implementation_commit": "a79669120939bfb0ee5f2dd7914a45b44f3c5696",
@@ -2239,7 +2239,7 @@
     "acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2"
   },
   "prior_paid_window_acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2",
-  "latest_acceptance_commit": "e87218cc23138fe01876a65ce13f39c91d21f652",
+  "latest_acceptance_commit": "aac246e1b35afdc30267126188f192e5caecc6e0",
   "latest_local_acceptance": {
     "batch": "FT7.Skill.Practice.A2",
     "passed": true,
@@ -2312,7 +2312,7 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T10:12:10.713Z",
+  "updated_at": "2026-10-16T10:13:56.159Z",
   "skill_intake_a1": {
     "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
@@ -2405,7 +2405,23 @@
     "comparison_paid": false,
     "td5_admitted": false,
     "history_choice": false,
-    "parent_accepted": false
+    "parent_accepted": false,
+    "acceptance_commit": "aac246e1b35afdc30267126188f192e5caecc6e0"
   },
-  "prior_skill_intake_acceptance_commit": "e87218cc23138fe01876a65ce13f39c91d21f652"
+  "prior_skill_intake_acceptance_commit": "e87218cc23138fe01876a65ce13f39c91d21f652",
+  "setup_tool_overlay_a1": {
+    "status": "protocol_registered",
+    "accepted": false,
+    "prior_source_identities": 439,
+    "tools": [
+      "tools/audit_owned_repair_practice_saved.py",
+      "tools/check_owned_material_inspection_saved.py",
+      "tools/continue_ft7_1b2b3b2b2b2b2b2b1b.py",
+      "tools/continue_owned_material_inspection.py",
+      "tools/evaluate_owned_material_inspection.py",
+      "tools/evaluate_owned_repair_practice.py",
+      "tools/evaluate_recall_feasibility.py"
+    ],
+    "engine_replay": false
+  }
 }

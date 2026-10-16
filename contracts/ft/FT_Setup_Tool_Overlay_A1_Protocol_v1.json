@@ -1,0 +1,37 @@
+{
+  "schema": "ft-setup-tool-overlay-a1-protocol-v1",
+  "batch": "FT.Setup.ToolOverlay.A1",
+  "prior_commit": "aac246e1b35afdc30267126188f192e5caecc6e0",
+  "prior_source_freeze": "contracts/ft/FT7_Skill_Practice_A2_Identity_Source_Freeze_v1.json",
+  "diagnosis": "Seven tools in the accepted 439-identity runtime are excluded by the preparation tool's name-prefix overlay filter. Retained runtime is exact; no new clean reconstruction was claimed.",
+  "additional_exact_tools": [
+    "tools/audit_owned_repair_practice_saved.py",
+    "tools/check_owned_material_inspection_saved.py",
+    "tools/continue_ft7_1b2b3b2b2b2b2b2b1b.py",
+    "tools/continue_owned_material_inspection.py",
+    "tools/evaluate_owned_material_inspection.py",
+    "tools/evaluate_owned_repair_practice.py",
+    "tools/evaluate_recall_feasibility.py"
+  ],
+  "change": "Add only these seven exact tool names as an OR membership term to the existing layer_files selection. Do not alter any archive/dependency/input path, existing prefix, output protection, copy body or immutable verification.",
+  "gate": {
+    "methods": [
+      "test_exact_extension",
+      "test_all_frozen_layer_files",
+      "test_copy_exact_public_bytes",
+      "test_old_filter_preserved",
+      "test_unsafe_overlay_path_rejected",
+      "test_existing_output_preserved"
+    ],
+    "method_count": 6,
+    "requirements": [
+      "Pin complete 601-blob public source tree before changes; verify every pinned local file except the declared setup-tool delta and mutable docs/FT_Run_State.json ownership/progress. Run-state is not selected/copied. All other pinned source bytes must remain exact.",
+      "Compare original and corrected setup ASTs: removing solely the declared seven-name OR term reproduces the original AST exactly.",
+      "Verify original439 source identities, permitting only prepare_workspace.py to differ with exact old-source bridge; separately freeze protocol, input-tree, evaluator and tests before invocation.",
+      "Execute the actual extracted layer_files assignment and following copy loop against all pinned public paths into a fresh temporary output; all selected bytes exact, no unselected path copied, original source remains unchanged.",
+      "Fixed synthetic names confirm arbitrary tools, private files and dependency paths stay excluded; existing allowed prefixes retained; traversal rejected by original safe_path; existing output rejected before archive/source work.",
+      "No dependency clone/access retry, native restore/payment, accepted engine tests or prior stage replay. Save exact method names/results, overlay paths/hashes and source bridge as public small evidence."
+    ]
+  },
+  "scope": "Setup overlay selection/copy only, not fresh full dependency reconstruction, standalone FT9 or main-task causality."
+}
