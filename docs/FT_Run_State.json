@@ -126,12 +126,12 @@
   },
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft7-a12e1-20261016T202900Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-16T20:59:00+00:00",
-  "expected_head": "389fcb82c4620025110b7079f74a3cce526329c8",
-  "current_batch": "A12E1 current post-processing domain implementation",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "6893ef807cad9ec299b38c79dccb694467d638b8",
+  "current_batch": "A12E1 accepted; next changed-input comparison funding",
   "canonical_quotation_a8": {
     "status": "passed",
     "accepted": true,
@@ -3306,7 +3306,7 @@
     "surviving_evaluator_workers": 0,
     "ownership_released": true
   },
-  "ownership_released_at": "2026-10-16T20:09:40+00:00",
+  "ownership_released_at": "2026-10-16T20:38:09+00:00",
   "owned_workers_at_release": 0,
   "post_processing_domain_a12e1": {
     "status": "accepted",
@@ -3343,6 +3343,9 @@
       "saved": true
     },
     "record": "docs/ft/FT7_Post_Processing_Domain_A12E1_Record.md",
+    "acceptance_commit": "6893ef807cad9ec299b38c79dccb694467d638b8",
+    "surviving_evaluator_workers": 0,
+    "ownership_released": true,
     "parent_accepted": false,
     "ft8_unchanged": true
   }

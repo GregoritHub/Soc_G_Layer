@@ -1,6 +1,6 @@
 # A12E1 current post-processing domain acceptance
 
-16 October 2026. Accepted in the registered engineering scope only. Prospective protocol: `5f710961be124579a01252f5b1d1bdb82ed1eab6`. Implementation: `70f310815856ccf561b883ac0942ba33fd68accf`. Source freeze: `6f2036b37c41ab294efa5eb7c3ec17052f368d0c`; all 600 identities and all 594 predecessors were exact before and after the evaluation.
+16 October 2026. Accepted in the registered engineering scope only at `6893ef807cad9ec299b38c79dccb694467d638b8`. Prospective protocol: `5f710961be124579a01252f5b1d1bdb82ed1eab6`. Implementation: `70f310815856ccf561b883ac0942ba33fd68accf`. Source freeze: `6f2036b37c41ab294efa5eb7c3ec17052f368d0c`; all 600 identities and all 594 predecessors were exact before and after the evaluation. Ownership was released after complete remote verification with zero surviving evaluator workers.
 
 The single bounded evaluation projected all 30 accepted complete processing checkpoints. It produced 30 atomically persisted, fsynced, typed-read and byte-backed reports. Thirty new independent audit outcomes reconstructed the current task, oldest-need order, paid content inventory, role evidence, revision rules, factor radices/product and exact bindings. All six new exact methods passed. Forty output/input/algebra forgeries were rejected. All 62 exclusive jobs closed successfully with no failure file.
 
