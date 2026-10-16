@@ -1,0 +1,6 @@
+{
+  "contracts/ft/FT7_1b2b3b2b2b2b2b2b1d_Method_Recovery1_Input_Binding_v1.json": "a87563f93a2d5cd41a99f55b18e9640bbbf8707d53c9d648b04865c3a1eceb84",
+  "contracts/ft/FT7_1b2b3b2b2b2b2b2b1d_Method_Recovery1_Protocol_v1.json": "e77894a218c34507a99f216775b3e65a12311cecbe6d34ba84f09e112b576318",
+  "contracts/ft/FT7_1b2b3b2b2b2b2b2b1d_Method_Recovery1_Protocol_v1.sha256": "73b084beb8824411ef47345e36aa2f4f9ad37e5e697e41f667e6a2d3580c5855",
+  "tools/recover_current_window_admission_methods.py": "93ed9b141d1746334825a7b3db0f9a728a3334bc0910c3fe5ed2bf3098b16a61"
+}
