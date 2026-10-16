@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft7-observation-refresh-2026-10-16T10:35:25.665Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-16T11:05:25.665Z",
-  "expected_head": "fe282257eb452cc113f14fcc6c76563f87557035",
+  "lease_expires_at": "2026-10-16T11:20:02.702Z",
+  "expected_head": "43ca6ad429e68de3a02dba2df5b402564a729e90",
   "current_batch": "FT7.Skill.Refresh.A3",
   "current_window_admission_progress": {
     "status": "passed",
@@ -425,7 +425,7 @@
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT_Setup_Tool_Overlay_A1_Record.md",
+  "latest_record": "docs/ft/FT7_Skill_Refresh_A3_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
@@ -2296,7 +2296,7 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T10:35:25.665Z",
+  "updated_at": "2026-10-16T10:50:02.702Z",
   "skill_intake_a1": {
     "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
@@ -2431,5 +2431,27 @@
       "all_local_public_blob_identities_exact": true,
       "no_paths_removed": true
     }
+  },
+  "skill_refresh_a3": {
+    "status": "running_not_accepted",
+    "protocol_commit": "d09304d5973230b5acacb19a90184a90a26c4d1c",
+    "freeze_commit": "f6c0ef716b553e6ff5f67fde53dee510b3eab81b",
+    "source_identities": 456,
+    "prior_identities_exact": 449,
+    "required_methods": 6,
+    "required_records": 12,
+    "required_probes": 22,
+    "original_session": 52254,
+    "original_stop_at": "2026-10-16T11:03:25.665Z",
+    "output": "owned-material-refresh-a3-attempt1",
+    "operations": "owned-material-refresh-a3-operations",
+    "conditional_continuation": {
+      "protocol_commit": "e49096ba62af851948c6a36320a56e0c60f5c1e1",
+      "implementation_commit": "43ca6ad429e68de3a02dba2df5b402564a729e90",
+      "frozen": false,
+      "invoked": false
+    },
+    "accepted": false,
+    "parent_accepted": false
   }
 }
