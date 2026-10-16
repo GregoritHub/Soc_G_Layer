@@ -45,6 +45,8 @@ def run():
         last=events[-1]
         if last['kind']!='closed_nonpass' or last.get('error_type')!='SystemExit' or 'owner/lease/deadline checkpoint guard' not in last.get('message',''):
             raise ValueError('only registered operational stop may continue')
+        if datetime.fromisoformat(last['at'])<datetime.fromisoformat(binding['original_stop_at']):
+            raise ValueError('deadline must actually have elapsed')
         if any(x['kind']=='methods_start' for x in events) or (prior/'summary.json').exists():
             raise ValueError('original method invocation or completion forbids continuation')
         rows=json.loads((prior/'progress.json').read_text())
