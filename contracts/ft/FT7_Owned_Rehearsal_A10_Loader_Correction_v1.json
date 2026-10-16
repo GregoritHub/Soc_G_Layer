@@ -1,0 +1,12 @@
+{
+  "version": "a10-loader-correction-v1",
+  "original_freeze": "8e768913d46b1a2dc0c889d670e7e85ecd98533e",
+  "session": 5094,
+  "exit_code": 1,
+  "error": "invalid compact envelope",
+  "cause": "The A5 checkpoint is ft-canonical-paid-window-comparison-v1; the evaluator incorrectly invoked base SelectionEngine.restore. No restore, new native work, saved record or actual method completed.",
+  "repair": "Use exact accepted PaidCanonicalWindowEngine/PaidWorkflowWindowEngine wrappers. Retain all runtime/auditor/test bodies and complete six-method ten-record gate. Add durable current native/adapter snapshots after each new step and progress rows after each saved audit to preserve interruption evidence. No original method or paid work to replay.",
+  "source_capsule": "A10_Attempt1_Frozen_Source.zip",
+  "old_freeze_preserved": true,
+  "prior_identities": 517
+}
