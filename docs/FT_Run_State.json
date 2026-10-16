@@ -1,10 +1,10 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft7-changed-domain-a6-2026-10-16T13:06:42.798Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-16T13:36:42.798Z",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
   "expected_head": "72b36c43df4c359f4066fe689bad79569e6d702c",
   "current_batch": "FT7.Comparison.Funding.A7",
   "current_window_admission_progress": {
@@ -2244,7 +2244,7 @@
     "acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2"
   },
   "prior_paid_window_acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2",
-  "latest_acceptance_commit": "9d617943508e92033a3435361aeac11a8327607f",
+  "latest_acceptance_commit": "c39c3343000418972c90137844ec12a4411a297a",
   "latest_local_acceptance": {
     "batch": "FT7.Comparison.Funding.A7",
     "passed": true,
@@ -2252,7 +2252,9 @@
     "records": 4,
     "forgeries": 24,
     "invalid_integer_controls": 5,
-    "source_identities": 493
+    "source_identities": 493,
+    "acceptance_commit": "da9dd19544e22596e6559229428c3c5c5459f16a",
+    "exact_publication_commit": "c39c3343000418972c90137844ec12a4411a297a"
   },
   "recall_feasibility_progress": {
     "status": "diagnostic_pass",
@@ -2611,5 +2613,27 @@
     "methods": 6,
     "records": 10,
     "probes": 20
+  },
+  "latest_domain_acceptance": {
+    "batch": "FT7.Changed.Domain.A6",
+    "commit": "9d617943508e92033a3435361aeac11a8327607f",
+    "methods": 6,
+    "records": 4,
+    "forgeries": 40,
+    "canonical_assignments": 5832,
+    "workflow_assignments": 4920480
+  },
+  "latest_funding_acceptance": {
+    "batch": "FT7.Comparison.Funding.A7",
+    "commit": "da9dd19544e22596e6559229428c3c5c5459f16a",
+    "publication_commit": "c39c3343000418972c90137844ec12a4411a297a",
+    "methods": 6,
+    "records": 4,
+    "workflow_floor": 4920480,
+    "workflow_wallet": 175698,
+    "workflow_deficit": 4744782,
+    "canonical_wallet": 197808,
+    "canonical_status": "exact_quote_required",
+    "native_work": 0
   }
 }
