@@ -126,12 +126,12 @@
   },
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "8d42fb4ef50495ec4f9330618ac6192599ff39a8",
-  "current_batch": "A12E2 quotation protocol registered; not implemented",
+  "status": "running",
+  "run_id": "ft7-a12e2-20261016T213945Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-16T22:09:45+00:00",
+  "expected_head": "1835e26ef9c9dcc44602d58273bc400bfa5e875c",
+  "current_batch": "A12E2 exact current-domain quotation implementation and freeze",
   "canonical_quotation_a8": {
     "status": "passed",
     "accepted": true,
@@ -545,7 +545,7 @@
       "paths_removed": 0
     }
   },
-  "next_batch": "Implement A12E1 under contracts/ft/FT7_Post_Processing_Domain_A12E1_Protocol_v1.json from exact30 accepted A12D/A12D2 primaries. Preserve594 predecessors; no accepted work/audit/method/aggregate replay. Complete current typed paid-observation task/window/role grammar and independent audit before newly paid changed-input comparisons/current TD5/live history-only choice, chosen work/use/matched controls and FT7-FT9.",
+  "next_batch": "Implement and freeze A12E2 exact full native quotation over all 30 accepted A12E1 domains without payment or mutation; run the registered independent full audit and six-method aggregate. Then fund and newly pay changed-input comparisons before current TD5/live history-only choice, chosen work/use, matched controls and FT7-FT9.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -2490,7 +2490,7 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T20:09:40+00:00",
+  "updated_at": "2026-10-16T21:39:45+00:00",
   "skill_intake_a1": {
     "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
@@ -3306,8 +3306,8 @@
     "surviving_evaluator_workers": 0,
     "ownership_released": true
   },
-  "ownership_released_at": "2026-10-16T20:40:32+00:00",
-  "owned_workers_at_release": 0,
+  "ownership_released_at": null,
+  "owned_workers_at_release": null,
   "post_processing_domain_a12e1": {
     "status": "accepted",
     "accepted": true,
