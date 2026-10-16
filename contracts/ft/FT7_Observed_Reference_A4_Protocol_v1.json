@@ -1,0 +1,198 @@
+{
+  "schema": "ft7-observed-reference-a4-protocol-v1",
+  "batch": "FT7.Observed.Reference.A4",
+  "status": "prospective",
+  "prior_acceptance": "aa3462fd9054cc016f49e59e2b21febbe5d25164",
+  "prior_source_freeze": "contracts/ft/FT7_Skill_Refresh_A3_Continuation1_Source_Freeze_v1.json",
+  "prior_identities": 461,
+  "source_archive": {
+    "filename": "FT7_Skill_Refresh_A3_Evidence_20261016.zip",
+    "sha256": "3e2e0a50a3490c6b519ed58e86a63cf00b8ff96b81042458f4eb654a608d3faf",
+    "members": 51
+  },
+  "inputs": [
+    {
+      "setting": "canonical",
+      "label": "before",
+      "file": "canonical-before.json.gz",
+      "sha256": "c2cfac49adfb651138d0afb366765adca8f7fed0296b4ef511b3cb457a5f9390",
+      "native_sha256": "3e4119b5e3b93bbd97dd3ea45f3cfc9b5ada81b9bcb2ebbf8809f8589c93edce",
+      "refresh_sha256": "2f4d0ab84525d69bf81a5bd88e8a0d6e755d39c1a9f5d096c3410e14503a1837",
+      "view_sha256": "f7f107587a2aeccdb7f7367fbc7b35139d7dc1543d42bf047c52c9a1f6753e6a"
+    },
+    {
+      "setting": "canonical",
+      "label": "inspect-partial",
+      "file": "canonical-inspect-partial.json.gz",
+      "sha256": "3f17e83a2f11ed1a191c56eb66d1f8d647460c4300017dae7fc6d2df7eceaec2",
+      "native_sha256": "a20f4cc10e33e6f041e1ae23899833ca1cddc60c8ed945e937e69c214b689a8d",
+      "refresh_sha256": "c4f4d357d6e8c3a117c18f3e325ca86940064a9b4c15160a4f55ef84934aa40d",
+      "view_sha256": "f7f107587a2aeccdb7f7367fbc7b35139d7dc1543d42bf047c52c9a1f6753e6a"
+    },
+    {
+      "setting": "canonical",
+      "label": "read-partial",
+      "file": "canonical-read-partial.json.gz",
+      "sha256": "9983137c4a9b6e2b175332809cc1c16cf3d3d5e0122fd347073b652512bf8dca",
+      "native_sha256": "28990acbc4d3c7a82558771c11b4cd163703d48878e7f86546e32b632ffe6705",
+      "refresh_sha256": "9f01223ec5e01443ccae372b19e082027ff59c37aa637eec2a9fcbbd5e4b63db",
+      "view_sha256": "89b46594394b3bdafae463c604193456b06d8a015a071e0dcf272c230d26d767"
+    },
+    {
+      "setting": "canonical",
+      "label": "complete",
+      "file": "canonical-complete.json.gz",
+      "sha256": "0846fb5922eb3a94fa2fb05889021fc5147fac3be2a95c84c507354bd934ee28",
+      "native_sha256": "8546bfbc362f7e9a7679b397435347ffb0a7f8d5b8b05fc983d1a35d4f2b6935",
+      "refresh_sha256": "5b5c9067f0b59a82d5c20b072ddc637c0a72771f436a4b7f56986eb5a8a0c94f",
+      "view_sha256": "8c2b616a83e136130162275d5ae2c8b8879e64a48085a73763c0dc53841e398c"
+    },
+    {
+      "setting": "canonical",
+      "label": "restarted",
+      "file": "canonical-restarted.json.gz",
+      "sha256": "f1090d94f35b15ee199b3a0c14285b317114a8f8010db3541161c700890626f1",
+      "native_sha256": "8546bfbc362f7e9a7679b397435347ffb0a7f8d5b8b05fc983d1a35d4f2b6935",
+      "refresh_sha256": "5b5c9067f0b59a82d5c20b072ddc637c0a72771f436a4b7f56986eb5a8a0c94f",
+      "view_sha256": "8c2b616a83e136130162275d5ae2c8b8879e64a48085a73763c0dc53841e398c"
+    },
+    {
+      "setting": "canonical",
+      "label": "cancelled",
+      "file": "canonical-cancelled.json.gz",
+      "sha256": "7906718ad95b1641b66e33701010994a1746d3dd3157e5e4d78241a0ef43945c",
+      "native_sha256": "cc333181d6966d251969dc64886fa623a7eec91e1bd21e5415e75ce33e3e9fc7",
+      "refresh_sha256": "5e1ddd7f9a4bed10b65c49817eeb0b46233b6c7ecbb01ab8daa30c265d574fdd",
+      "view_sha256": "f7f107587a2aeccdb7f7367fbc7b35139d7dc1543d42bf047c52c9a1f6753e6a"
+    },
+    {
+      "setting": "workflow",
+      "label": "before",
+      "file": "workflow-before.json.gz",
+      "sha256": "9de45bec925cdc1ad6f909c5f56cabf34e6612e08bf8ba948f189117284ef7ee",
+      "native_sha256": "7c83e5169d0da4bfd0ba3cd8209c1056e48d7c7179f64ca74e7bb0fad5db0354",
+      "refresh_sha256": "90822dc0478f6590dc34558042eb8da86a0274bcb80a621d51f2526daf8d57a6",
+      "view_sha256": "c8080f7f0a4ff9e688ad3ab799e1ec20a58cda50aee5678044060c69c8df6f40"
+    },
+    {
+      "setting": "workflow",
+      "label": "inspect-partial",
+      "file": "workflow-inspect-partial.json.gz",
+      "sha256": "496700aaac9d6c50469d36544f818addc74e83c75eef60146236f65625030a3f",
+      "native_sha256": "4596d46bb089587324ae9847ef0ac3863edfd855a62f1a2b047ce424bc5ad71b",
+      "refresh_sha256": "a75d36bea3e877c3ec0e5c492c66bb7c8e4ce3b7bc0f4cf5d68db189e18bdab3",
+      "view_sha256": "c8080f7f0a4ff9e688ad3ab799e1ec20a58cda50aee5678044060c69c8df6f40"
+    },
+    {
+      "setting": "workflow",
+      "label": "read-partial",
+      "file": "workflow-read-partial.json.gz",
+      "sha256": "8c8d6f732c3fafc94cf31b0170cf86aeb28d7db5e6d92f663835084557413ba3",
+      "native_sha256": "f53b1a4d6aefed085e2c7f538dcb2c82e2f4c5acef6d84667ba28a28109f12a7",
+      "refresh_sha256": "7fa8bc7b72e95af3f2ccb609b2519e603c2429bb79511bbe9d6a8784c57a15d1",
+      "view_sha256": "342406b2615d7e76dcd396be843c40c847bd45cfdf07b14977630d5acf8ba2ea"
+    },
+    {
+      "setting": "workflow",
+      "label": "complete",
+      "file": "workflow-complete.json.gz",
+      "sha256": "130736a8b4c9c6ae6c11d50292a340763caf584a082fe5d664cf93c202200dcc",
+      "native_sha256": "85bc912a7d1cd953dce103577b89aa202eef1a760571ef3b26541166a7773f16",
+      "refresh_sha256": "ca2f4f6d32d018a1c6eb349e79b1741c520e57f197ab0030fab617113c840e04",
+      "view_sha256": "6209fe5f67174e9787485a0b154ea833958e5944cb9e24e06b994b6c41f87b56"
+    },
+    {
+      "setting": "workflow",
+      "label": "restarted",
+      "file": "workflow-restarted.json.gz",
+      "sha256": "4a44667626175b950c96c5815985d6d79b0375e04dac981ec4a07d99444d9280",
+      "native_sha256": "85bc912a7d1cd953dce103577b89aa202eef1a760571ef3b26541166a7773f16",
+      "refresh_sha256": "ca2f4f6d32d018a1c6eb349e79b1741c520e57f197ab0030fab617113c840e04",
+      "view_sha256": "6209fe5f67174e9787485a0b154ea833958e5944cb9e24e06b994b6c41f87b56"
+    },
+    {
+      "setting": "workflow",
+      "label": "cancelled",
+      "file": "workflow-cancelled.json.gz",
+      "sha256": "396af4f7ea145d1c96bbcfbe9dc1a3ffd987c1ead2d468893254f448b6889b8d",
+      "native_sha256": "07a6c987ef7fb0e03d0ca81e0589503de55cab1804536fdf6f8ccb4ee79f0abe",
+      "refresh_sha256": "ee2cc6195d60b3edd2b9f336d71eb57fde8f8468634286bbf1a8cd1be62a1645",
+      "view_sha256": "c8080f7f0a4ff9e688ad3ab799e1ec20a58cda50aee5678044060c69c8df6f40"
+    }
+  ],
+  "scope": "Separately versioned actor-visible material reference vocabulary after accepted A3. Read-only prerequisite, not a complete request/cartesian domain, native comparison, eligibility, TD5 admission, choice or execution.",
+  "observed_before_registration": "Read-only intake inspected the first complete paid observation in each setting and all fresh target values: 8 canonical/10 workflow; three revision-2 targets in each. Original exploratory print attempted unsupported Particular serialization and stopped; corrected formatting only. No engine/test body executed.",
+  "grammar": [
+    "Pin setting, complete native/refresh/view identities against all twelve accepted A3 records. The policy receives only immutable ParticipantView and refresh text; independent audit also hashes actual native text.",
+    "Expose no material vocabulary or new observations unless refresh.phase is complete. Before, inspect-partial, read-partial and cancelled remain empty; completed/restarted projections must be byte-identical.",
+    "Direct material evidence: group particulars by exact source, require unique nonconflicting field values, exact-int quantity (bool excluded), ObjectId owner and custodian. Include foreign, damaged, depleted and unusable material without eligibility filtering.",
+    "Fresh observation evidence: for every A3 refresh receipt derive its exact delivery; require one matching complete actor-owned read receipt with required/completed/spent all 2 and exact observation input; exact source, actor, context, primitive inspect, outcome succeeded, ObjectRef target and ObjectId owner/custodian. All facts/proof addresses remain on the observation, never merged into target.resolve.",
+    "Union direct material source refs with these explicitly paid observed target refs. Canonical uses maximum explicitly evidenced revision per identity; workflow retains all exact revisions. Preserve every original supporting ref, kind, source/delivery/key and observation fact separately.",
+    "Emit None plus stable typed-sorted alternatives for canonical stock/tool/repair_stock or workflow stock. Same permissive material vocabulary for these roles is NOT capability or permission.",
+    "Never query physical state, regenerate old wrappers, change native access/receipts/history/demand/cursor/acquisition, or reuse previous comparison receipts for changed inputs. No old selector/policy label changes."
+  ],
+  "gate": {
+    "settings": [
+      "canonical",
+      "workflow"
+    ],
+    "records": [
+      "before",
+      "inspect-partial",
+      "read-partial",
+      "complete",
+      "restarted",
+      "cancelled"
+    ],
+    "methods": [
+      "test_exact_records_and_staging",
+      "test_independent_reconstruction",
+      "test_revision_policy_and_provenance",
+      "test_no_authority_or_mutation",
+      "test_restart_and_permutation",
+      "test_adversarial_bindings_and_output"
+    ],
+    "methods_required": 6,
+    "records_required": 12,
+    "probes_per_complete_setting": [
+      "refresh_actor",
+      "refresh_extra",
+      "native_pair",
+      "view_pair",
+      "unknown_setting",
+      "output_authority",
+      "output_reference",
+      "output_evidence",
+      "output_missing_observation",
+      "output_extra"
+    ],
+    "grammar_controls": [
+      "reversed particular/receipt order leaves core vocabulary identical",
+      "bool quantity cannot supply direct material support",
+      "removed fresh read receipt rejects",
+      "changed observation target changes core vocabulary, never hidden source truth"
+    ],
+    "acceptance": "Exact independent reconstruction of every saved projection, typed roundtrip, unchanged native/access bytes, all declared methods and probes, all prior frozen identities unchanged. Counts alone never substitute for exact record and method identities."
+  },
+  "execution": {
+    "kind": "serial saved-only reader",
+    "no_paid_native_work": true,
+    "no_accepted_stage_replay": true,
+    "deadline_guard": true,
+    "fresh_output_only": true,
+    "freeze_before_invocation": true
+  },
+  "modules": [
+    "full_theory/observed_material_domain.py",
+    "full_theory/observed_material_domain_audit.py",
+    "tools/evaluate_ft7_observed_material_domain.py"
+  ],
+  "tests": "tests_ft7/test_observed_material_domain.py",
+  "boundaries": [
+    "FT8 denominators and matched-main-cost controls unchanged",
+    "parent FT7 pairs/populations and FT8-FT9 unfinished",
+    "recall32 and oldest-demand/TD5 unchanged",
+    "fresh comparison and full role/request composition still required",
+    "A3 continuation setup coverage still owed"
+  ]
+}
