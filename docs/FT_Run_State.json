@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft7-skill-practice-2026-10-16T09:37:19.365Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-16T10:36:12.504Z",
-  "expected_head": "7cd2d3b6e9915797a70cd3826fd7872bda308f31",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "89f3272cb4eb8f59311aa5c7308c4d05fdb642c5",
   "current_batch": "FT.Setup.ToolOverlay.A1",
   "current_window_admission_progress": {
     "status": "passed",
@@ -2239,7 +2239,7 @@
     "acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2"
   },
   "prior_paid_window_acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2",
-  "latest_acceptance_commit": "aac246e1b35afdc30267126188f192e5caecc6e0",
+  "latest_acceptance_commit": "89f3272cb4eb8f59311aa5c7308c4d05fdb642c5",
   "latest_local_acceptance": {
     "batch": "FT.Setup.ToolOverlay.A1",
     "passed": true,
@@ -2296,7 +2296,7 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T10:21:10.526Z",
+  "updated_at": "2026-10-16T10:22:08.690Z",
   "skill_intake_a1": {
     "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
@@ -2421,6 +2421,15 @@
     "dependency_rebuilds": 0,
     "native_work": 0,
     "ft9_accepted": false,
-    "record": "docs/ft/FT_Setup_Tool_Overlay_A1_Record.md"
+    "record": "docs/ft/FT_Setup_Tool_Overlay_A1_Record.md",
+    "acceptance_commit": "89f3272cb4eb8f59311aa5c7308c4d05fdb642c5",
+    "ownership_released_at": "2026-10-16T10:22:08.690Z",
+    "owned_workers_remaining": 0,
+    "public_tree_verification": {
+      "commit": "89f3272cb4eb8f59311aa5c7308c4d05fdb642c5",
+      "blobs": 618,
+      "all_local_public_blob_identities_exact": true,
+      "no_paths_removed": true
+    }
   }
 }
