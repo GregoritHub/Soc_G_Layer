@@ -4,9 +4,9 @@
   "status": "running",
   "run_id": "ft7-skill-practice-2026-10-16T09:37:19.365Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-16T10:07:19.365Z",
-  "expected_head": "2eca018f167e0f61811379d4498c144ad349acac",
-  "current_batch": "FT7.Skill.Intake.A1",
+  "lease_expires_at": "2026-10-16T10:15:52.918Z",
+  "expected_head": "efc247da7ef40fb43e45fce31784329797e4307d",
+  "current_batch": "FT7.Skill.Practice.A2",
   "current_window_admission_progress": {
     "status": "passed",
     "implementation_commit": "a79669120939bfb0ee5f2dd7914a45b44f3c5696",
@@ -2326,5 +2326,18 @@
     "predecessor_identities": 484,
     "prior_identities": 399,
     "saved_records": 40
+  },
+  "skill_practice_a2": {
+    "status": "frozen_not_invoked",
+    "accepted": false,
+    "protocol_commit": "efc247da7ef40fb43e45fce31784329797e4307d",
+    "protocol_sha256": "d5f71f7248c99c23d247f9b25fd9228c297751dd77ba55013e170f4b37831865",
+    "source_identities": 434,
+    "prior_identities": 427,
+    "required_records": 14,
+    "required_methods": 6,
+    "output": "owned-repair-practice-a2-attempt1",
+    "operations": "owned-repair-practice-a2-operations",
+    "no_accepted_work_replay": true
   }
 }
