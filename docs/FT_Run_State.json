@@ -5,10 +5,10 @@
   "run_id": "ft7-admission-recovery-20261016T004323Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-16T01:15:21.000Z",
-  "expected_head": "4c67b333016129ab2b6d4957308aa9a45e6cf6bf",
+  "expected_head": "d1f4ae6b714e794f8ab328d194f18511cb773de0",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1d",
   "current_window_admission_progress": {
-    "status": "partial_checkpoint_not_accepted",
+    "status": "continuation_running_not_accepted",
     "implementation_commit": "a79669120939bfb0ee5f2dd7914a45b44f3c5696",
     "freeze_commit": "86c613185216ae09b76ef1a1dbd764847ec2c31e",
     "frozen_identities": 406,
@@ -23,11 +23,11 @@
     "active_records_at_deadline": 4,
     "continuation_protocol_commit": "92abf8cee4203a3e9527e80d869385ba72acda13",
     "continuation_implementation_commit": "f26934e2568eb96390f5bd8b9b719e618879e972",
-    "continuation_status": "frozen_not_invoked_ready_for_missing_stages",
+    "continuation_status": "running_missing_only",
     "new_native_work": false,
     "accepted": false,
     "record": "docs/ft/FT7_1b2b3b2b2b2b2b2b1d_Record.md",
-    "owned_processes_remaining": 0,
+    "owned_processes_remaining": 5,
     "original_outcome": "checkpoint",
     "stop_reason": "prospective deadline",
     "original_children_failed": 0,
@@ -84,13 +84,20 @@
       "native_replay": false
     },
     "continuation_run": {
-      "status": "ready_to_invoke",
+      "status": "running",
       "owner": "ft7-admission-recovery-20261016T004323Z",
       "output": "current-window-admission-continuation1",
       "stop_at": "2026-10-16T01:14:21.000Z",
       "records_pending": 9,
       "actual_methods_pending": 8,
-      "original_source_unchanged": true
+      "original_source_unchanged": true,
+      "session": 91487,
+      "active_records": [
+        "workflow/mask-9",
+        "workflow/mask-10",
+        "workflow/mask-11",
+        "workflow/mask-12"
+      ]
     }
   },
   "current_window_capacity_progress": {
