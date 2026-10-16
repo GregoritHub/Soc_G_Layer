@@ -1,0 +1,51 @@
+{
+  "version": "ft-comparison-funding-a7-protocol-v1",
+  "batch": "FT7.Comparison.Funding.A7",
+  "entry_head": "9d617943508e92033a3435361aeac11a8327607f",
+  "accepted_domain": "9d617943508e92033a3435361aeac11a8327607f",
+  "prior_freeze": "contracts/ft/FT7_Changed_Input_Domain_A6_Source_Freeze_v1.json",
+  "inputs": {
+    "canonical": {
+      "native_sha256": "03948fc18b149d5935c3d381432c05d361cd4678bdaceecfd2bb5c6fd717e3ee",
+      "domain_sha256": "17894dd39469ecfabc3f20729808b18a345d72c3452354a7b5b18a516c566ab2"
+    },
+    "workflow": {
+      "native_sha256": "9b16ec1fd67959eb1ab7a9bcbbca50c28723d7f5abc3bd864865090d91a3c7ae",
+      "domain_sha256": "8d7f6148fa5c0e2a70d6d834f6df7b01a7460a003333160d38ba5667d751d0ce"
+    }
+  },
+  "policy": [
+    "Read exact accepted A5 native and A6 domain only. Derive assignment count from every factor, verify declared count; identify the actor's current u4.wallet revision and exact integer energy/time. No engine restore, command, comparison probe, paid work, source changes or accepted gate rerun.",
+    "Under the inherited paid-role/window comparison formulas, each rejected request requires1 unit and each successful request requires1 plus nonnegative counts (canonical adds33). Thus full complete Cartesian comparison requires at least one energy/time unit per assignment. This is a lower bound, not an exact quote; no discounts, refills, hidden candidate pruning or shared credit.",
+    "If either wallet currency is less than this floor, return insufficient_lower_bound and exact deficits. Otherwise return exact_quote_required; never return affordable or authorize launch. Every output keeps comparison_paid/execution_authorized/td5_admitted/history_choice false and may_launch false.",
+    "Provide reusable exact-integer floor_status for positive assignment counts and nonnegative wallets. Synthetic boundary cases are arithmetic tests only, not native wallet edits or new funding.",
+    "Independent auditor imports no funding builder or native engine. Decode exact saved native world independently, derive wallet identity from the address encoding, reconstruct Cartesian size and every output field. Pin accepted pair; reject forged pairs, wallet/count/status/gaps/authority and extra fields.",
+    "Six exact methods, four saved real projections (complete/restored per setting), six integer boundary cases, at least eight output forgeries plus two pair forgeries per setting and five invalid arithmetic inputs. Source487 predecessor identities unchanged. Preserve any failure; freeze before single bounded invocation."
+  ],
+  "cost_sources": {
+    "full_theory/paid_role_comparison.py": "47527c367a1dbb4ff959651038a437413bbbc17df966aff4f8ffcfe07890b42f",
+    "full_theory/paid_window_comparison.py": "dc6dae9faa210df47c2d276e4dc6f6ee4085f30cd5f7006c9c5c7472eab4c8e4"
+  },
+  "modules": [
+    "full_theory/comparison_funding.py",
+    "full_theory/comparison_funding_audit.py",
+    "tools/evaluate_ft7_comparison_funding.py"
+  ],
+  "tests": "tests_ft7/test_comparison_funding.py",
+  "methods": [
+    "test_exact_real_panel",
+    "test_current_wallet_and_floor",
+    "test_boundary_cases",
+    "test_forgery_rejection",
+    "test_never_grants_affordability",
+    "test_inherited_cost_floor"
+  ],
+  "claims": {
+    "comparison_paid": false,
+    "execution_authorized": false,
+    "td5_admitted": false,
+    "history_choice": false,
+    "parent_accepted": false
+  },
+  "next": "Use funding result to design bounded lawful changed-input comparisons; preserve complete-domain coverage, paid cost rules, historical deferral and parent FT7-FT9 obligations. No terminal theoretical impossibility inferred from this single full-Cartesian funding bound."
+}
