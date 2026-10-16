@@ -112,6 +112,7 @@ def prepare(held_archive, repair_archive, output, source_checkout=None, repair_c
                        name in ("tools/audit_owned_repair_practice_saved.py",
                                 "tools/check_owned_material_inspection_saved.py",
                                 "tools/continue_ft7_1b2b3b2b2b2b2b2b1b.py",
+                                "tools/continue_ft7_material_refresh.py",
                                 "tools/continue_owned_material_inspection.py",
                                 "tools/evaluate_owned_material_inspection.py",
                                 "tools/evaluate_owned_repair_practice.py",
