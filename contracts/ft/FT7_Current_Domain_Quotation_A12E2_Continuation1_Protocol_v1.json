@@ -1,0 +1,62 @@
+{
+  "version": "ft-current-domain-quotation-a12e2-continuation1-protocol-v1",
+  "batch": "FT7.PostProcessing.CurrentQuotation.A12E2",
+  "registered_at": "2026-10-16T22:00:00+00:00",
+  "parent_freeze_commit": "618f201dce141873dd25adb000e56646422f4fd7",
+  "interrupted_attempt": "current-domain-quotation-a12e2-attempt3",
+  "diagnosis": "Measured serial throughput was approximately 90 seconds per canonical quote-plus-audit branch. After canonical-01 and canonical-02 closed exactly, canonical-03 had only begun quotation. Continuing serially would knowingly violate the fixed launch margin before 28 remaining independent branches could close.",
+  "retained_exact_closed_branches": [
+    "canonical-01",
+    "canonical-02"
+  ],
+  "unfinished_branches": [
+    "canonical-03",
+    "canonical-04",
+    "canonical-05",
+    "canonical-06",
+    "canonical-07",
+    "canonical-08",
+    "canonical-09",
+    "canonical-10",
+    "canonical-11",
+    "canonical-12",
+    "canonical-13",
+    "canonical-14",
+    "canonical-15",
+    "workflow-01",
+    "workflow-02",
+    "workflow-03",
+    "workflow-04",
+    "workflow-05",
+    "workflow-06",
+    "workflow-07",
+    "workflow-08",
+    "workflow-09",
+    "workflow-10",
+    "workflow-11",
+    "workflow-12",
+    "workflow-13",
+    "workflow-14",
+    "workflow-15"
+  ],
+  "continuation": "Extend only the existing evaluator with an exact one-branch mode and saved-only final merge. Launch at most eight independent branch workers, each with its own output root and exclusive quote/audit markers. Never launch canonical-01 or canonical-02. Canonical-03 and workflow-01 carry the required setting-specific forgery controls. The finalizer copies the two retained closed record/audit/outcome bindings and all 28 new closed bindings byte-exact, rejects any missing/extra/running/failed job, then runs the unchanged six methods and one complete aggregate without native views.",
+  "required_final_gate": {
+    "quote_reports": 30,
+    "independent_audits": 30,
+    "methods": 6,
+    "closed_jobs": 62,
+    "failed_jobs": 0,
+    "native_view_calls": 211680,
+    "audit_view_calls": 211680,
+    "forgery_rejections_minimum_per_setting": 16
+  },
+  "preservation": {
+    "attempt1_and_attempt2": "zero-work failures retained unchanged",
+    "attempt3": "two closed branches and unfinished canonical-03 marker retained unchanged",
+    "accepted_stage_replays": 0,
+    "paid_work": 0
+  },
+  "gate_unchanged": true,
+  "ft8_unchanged": true
+}
+
