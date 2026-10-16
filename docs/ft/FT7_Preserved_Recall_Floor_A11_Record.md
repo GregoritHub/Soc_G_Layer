@@ -1,0 +1,15 @@
+# A11 — preserved-root recall floor
+
+16 October 2026 UTC. Accepted scoped read-only obstruction, not a main-task or parent gate. The sole frozen invocation closed exit0: six exact methods, two saved reports with independent readback audits,16 report-forgery probes, and source556/prior549 identities exact. No engine restore, native command, paid work or accepted-stage replay occurred.
+
+On exact A10R complete inputs, canonical has32 preserved current cue roots and a38-binding closure; workflow has30 such roots and a36-binding closure. Each report supplies33 distinct reachable witnesses. Original task-cue recall remains truncated at32. Even removing every other current cue root cannot remove this preserved closure while original bindings, links and contexts remain unchanged. This is a superset relaxation, not permission to remove the task. Added roots cannot lower that floor.
+
+The scope preserves current generated heads in c3.output/c7w.output, u8.account, u11.binding and u7.binding. It rules out only mutable-root cue relocation under those conditions. It does NOT prove all lawful native organization impossible, supply a new complete admission/domain audit, or carry A9's old-input proof into A10R. No old demand, generated record, history, selector, wallet, baseline or FT8 requirement changed.
+
+Protocol e22ffed2deb4b43d4c11cc57a09c91a9a903fced preceded implementation d334ded5543461ab768ed746b441b3a031f7f698; freeze 60f972eeaa0e737ec9d11910da20305c705e44bf preceded the sole gate. The independent auditor reconstructs the original owned graph from exact native bytes, computes a least fixed point independently, checks ordered traversal and exact entire report, and rejects forged graph/root/witness/count/source/scope/authority fields. Synthetic controls cover32/33, cycles, historical references, missing/other-context nodes and every subset of a small mutable-root set. All predecessor source remains exact.
+
+A preparation-only process-service disconnect recovered before freeze/evaluation; no governed attempt or native work was lost or restarted. No A11 attempt failed. A11's evaluator filename is not yet in the setup tool whitelist; a byte-exact convention-named entrypoint or separately frozen setup correction remains required before claiming fresh preparation coverage. No FT9 standalone acceptance.
+
+Evidence: FT7_Preserved_Recall_Floor_A11_Evidence_20261016.zip, SHA256 6153b3464e8bf03158aae70ce0a2c09625c4244a5d20e0d24b5c6d702bb1d429, 9044162 bytes, all17 manifest members verified. Includes both original saved inputs, exact source/protocol/freezes, reports, method log, summary, closure and private predecessor pointer. Private identifiers remain inside the archive.
+
+Next: independently specify and verify a route-free fresh panel from an accepted fulfilled source, with every older owned need checked fulfilled; the existing A10R pending branch stays intact. Alternatively establish a genuinely different lawful native organization mechanism before paying it. Fresh changed-input comparisons and all genuine tie/choice/work/use/matched-control/staging/pair/population FT7 and FT8-FT9 obligations remain open. No terminal blocker.

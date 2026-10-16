@@ -139,5 +139,7 @@ Separate auxiliary rejection closure accepted at frozen source6c7abe61fb7d7fcc38
 
 ## 16 October 2026 — FT.Setup.ToolOverlay.A3
 
+Subsequent16 October A11 accepted: six new methods, two independent changed-state saved audits,16 forgery probes,556 frozen/prior549 exact. Preserved-root recall floors38 canonical/36 workflow exceed32 even after optimistic removal of all other roots. No native work or admission; scoped cue-only obstruction, not all organization impossibility. See [A11 record](ft/FT7_Preserved_Recall_Floor_A11_Record.md). Existing pending branch preserved; independent fulfilled-source route-free panel remains next.
+
 Accepted separate setup-only exact path inclusion at freezec46d92a605693bf70f378ec2fa9da81830cec72b: one exit0 invocation, six methods,570 selected files copied exactly from743-path snapshot,549 frozen identities and543-prior bridge. Only setup literal changed; all542 other predecessors exact. No native work, dependency rebuild, accepted replay or FT9 claim. [Record](ft/FT_Setup_Tool_Overlay_A3_Record.md). A10R accepted atd68597d7e152fafa1a038f85e976a8bf222f5160; its three failed attempts and negative recall readback remain intact.
 
