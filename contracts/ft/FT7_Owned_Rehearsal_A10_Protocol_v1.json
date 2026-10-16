@@ -4,10 +4,12 @@
   "scope": "Auxiliary rehearsal of all eligible already-owned content once; not main-task execution, skill acquisition, comparison payment, or choice-causality acceptance.",
   "inputs": {
     "canonical": {
-      "native_sha256": "03948fc18b149d5935c3d381432c05d361cd4678bdaceecfd2bb5c6fd717e3ee"
+      "native_sha256": "03948fc18b149d5935c3d381432c05d361cd4678bdaceecfd2bb5c6fd717e3ee",
+      "adapter_sha256": "d7b8870cfa02c6dc30f48017dd629211218e23fba27e81da4d1d58f3fe33f40d"
     },
     "workflow": {
-      "native_sha256": "9b16ec1fd67959eb1ab7a9bcbbca50c28723d7f5abc3bd864865090d91a3c7ae"
+      "native_sha256": "9b16ec1fd67959eb1ab7a9bcbbca50c28723d7f5abc3bd864865090d91a3c7ae",
+      "adapter_sha256": "911c1da54870d82968209407aa5dbacfeebde0859a79903b53cc99b3debed75c"
     }
   },
   "prior_freeze": "contracts/ft/FT7_Universal_TD5_Veto_A9_Source_Freeze_v1.json",
