@@ -1,0 +1,354 @@
+{
+  "batch": "FT7.Owned.CueProcessing.Panel.A12D2",
+  "version": 1,
+  "status": "prospectively_registered_not_implemented_not_executed",
+  "required_parent": "A12D complete gate accepted at 2cc0161667f8cffc05601be4ada8025c5a9ab1cf",
+  "prior_source_freeze": "contracts/ft/FT7_Cue_Processing_A12D_Source_Freeze_v1.json",
+  "prior_identities": 588,
+  "accepted_sources": {
+    "a12c": {
+      "filename": "FT7_Cue_Comparison_A12C_Validated_Evidence_20261016.zip",
+      "sha256": "8ac562f96b824bd7fe0afaed961d0954d9af390e70510579a705dc6d60c52021",
+      "members": 327
+    },
+    "a12d": {
+      "filename": "FT7_Cue_Processing_A12D_Validated_Evidence_20261016.zip",
+      "sha256": "f633cdd3c9d5e60d0df3ff61c4f95e8d0b71e8af0f0499201cc288cf4c504cad",
+      "members": 129
+    }
+  },
+  "inputs": {
+    "canonical-01": {
+      "file": "canonical-01-complete.json.gz",
+      "sha256": "8e0ba4b7ba8bbd70721495ae8b1b93bae3e0fd6e2a88974912e673d2a72e0a10",
+      "native_sha256": "5c9d22682690aa364472827a540b9fd44a4cbd548a441d3afa547ffa14a4ca0d",
+      "windows_sha256": "8a9b002e17587d5e9d8fc43deade4a79b585c41ba522f2c3bc735cf19c62a5cc",
+      "already_processed_a12d": true
+    },
+    "canonical-02": {
+      "file": "canonical-02-complete.json.gz",
+      "sha256": "a194988cb3b33f0aa6860cda0f12ba814bc2b09bc0057ca56f502d8c779865d2",
+      "native_sha256": "557a50ceead591ebcd2f4e73d742a7057a943f30db68c2e8d1f8121621e47591",
+      "windows_sha256": "b582d2aa2519fddec715bf1dd1f3d93200cd77e8744068bc2927696092018902",
+      "already_processed_a12d": false
+    },
+    "canonical-03": {
+      "file": "canonical-03-complete.json.gz",
+      "sha256": "f4ed6d08792e9e2045121e32eb13143719ebf076d8e8eee3d1054bf3d751407b",
+      "native_sha256": "7ddf1d42bd5e453fe7040ef6d0c1b869a5b07daaac8cc8ac361c2258777ca4ba",
+      "windows_sha256": "1aa38e61b6a92699cf41e5d796712c0d442d84db96da3c5c40e454efce271a3f",
+      "already_processed_a12d": false
+    },
+    "canonical-04": {
+      "file": "canonical-04-complete.json.gz",
+      "sha256": "2bcdbd6bda306f3828a36befc5793a165bfbc33641d4f3bcd8bc7a64d10da46b",
+      "native_sha256": "86cfc531e9881255b905c09e14a7da4f3fdb96cbb88b4d28ef32dac2c59a3165",
+      "windows_sha256": "c9e5bc15e117056e910f3054107d79a3f392a8a298f526ba375ffd7dc415cb47",
+      "already_processed_a12d": false
+    },
+    "canonical-05": {
+      "file": "canonical-05-complete.json.gz",
+      "sha256": "90905b5a139c552c57aec6784bf5244d2267ffbac289560564e8b3de04e9094e",
+      "native_sha256": "ed318fd4d597a441108e27ccc2c16ab8ad0a039e99d8a121888342ab96d906c3",
+      "windows_sha256": "29e04037209c2b7cb19d046388c90001fc1901b2ad6fb7a4a5535f8617a72acf",
+      "already_processed_a12d": false
+    },
+    "canonical-06": {
+      "file": "canonical-06-complete.json.gz",
+      "sha256": "13251022b085270e3cb75a60e8ba1caf1d54279d381509b482a0c50643f9ad25",
+      "native_sha256": "ba7d4ce0c9452c4574a1fd45b839142f9ee6eae31c0863438abf2012bf7e376c",
+      "windows_sha256": "4deaa773ff11195329aa7d000f617a92d0763e78d1a11d7132fc3e89f08b59bc",
+      "already_processed_a12d": false
+    },
+    "canonical-07": {
+      "file": "canonical-07-complete.json.gz",
+      "sha256": "045cbf1970328c88ea8ee65d7187a11f1543e00cd09a3368c5caece6e993a711",
+      "native_sha256": "b52d1c4fb6e52422280d2ae83ffa418d7384b334865d314f8d29ec7dec883702",
+      "windows_sha256": "346a8366d734585353f4947259a3fcd969dd00380e8e7c4d5cbadc8c87584712",
+      "already_processed_a12d": false
+    },
+    "canonical-08": {
+      "file": "canonical-08-complete.json.gz",
+      "sha256": "5c259176e46128263ad20ea00ae70e25bf14ba7ec3f5280a86412a6888e357fc",
+      "native_sha256": "22a1a9438f7237ef50bf4124d1380fcfa400502e38a730c56a158d0914243d6a",
+      "windows_sha256": "dac3e9ce689057ac5b354d76f6c3fb81dc76e7ec55e85ce4b01e47e9c021536d",
+      "already_processed_a12d": false
+    },
+    "canonical-09": {
+      "file": "canonical-09-complete.json.gz",
+      "sha256": "20a7c06490fe3dd9ef81e81002f698484dd2e9d766e39ebbe40d3874addcb332",
+      "native_sha256": "b27ae40d5490a8d59cba95ec9eed87a51797661dd38c300b1afb4d3ba2d8c34b",
+      "windows_sha256": "42a05155c077e4ba63c2573dddd1466f2ceddb1ae74a6c72998b840931035ad9",
+      "already_processed_a12d": false
+    },
+    "canonical-10": {
+      "file": "canonical-10-complete.json.gz",
+      "sha256": "17bb56c088781d4d509eb2570dcbc932bb95d19887015064280d348fb825e2a5",
+      "native_sha256": "288bafec112d73aac363ca6720cdb06ac38590b60cee2ad7935bb461514215c5",
+      "windows_sha256": "d5771435b77af03d0f229ca68e1c9d063df1582316551bd6b0646f6cfb68967f",
+      "already_processed_a12d": false
+    },
+    "canonical-11": {
+      "file": "canonical-11-complete.json.gz",
+      "sha256": "97796c9202a6837e55dd583f9ef5b996e38a44acbee9099ab3155f87a28991a7",
+      "native_sha256": "9bd60102c42892a34d7bee4dfd0fa339e83e5cbd7237343861dbacf2394de0b2",
+      "windows_sha256": "1a4554214f1216a47b4d49dfe5d8496a46e7e5c174192daa0a5870f1bb707f1e",
+      "already_processed_a12d": false
+    },
+    "canonical-12": {
+      "file": "canonical-12-complete.json.gz",
+      "sha256": "1c83f949c39641d13091a776fa3c5009a67af7ce69e7420a5558e07732d2f442",
+      "native_sha256": "528f6877fc2ebaab20f4b21f07c469fef4156fc420b68f3ec6c14c6f0179ebdb",
+      "windows_sha256": "6b87b8cc6486c84c5af05bd7554f57f351ac9c6cdd68e1362dbe221aec3c0d8d",
+      "already_processed_a12d": false
+    },
+    "canonical-13": {
+      "file": "canonical-13-complete.json.gz",
+      "sha256": "3ad688489391bde7db9415214602202648bb9c01c670e02309438a16493729b0",
+      "native_sha256": "8818137a51fd8730bed0f71ac75b9de3d94ad09cb0d510bab900356584d20dca",
+      "windows_sha256": "88f80fc2322b0703e3111690489a45e4f7377896c5a34a433a541851e58c4d42",
+      "already_processed_a12d": false
+    },
+    "canonical-14": {
+      "file": "canonical-14-complete.json.gz",
+      "sha256": "4af35153bd3096b25b532a0c6365fc68f1f3e750a1e0767f2b671328d7c7c6ba",
+      "native_sha256": "30aa6c32155e91644252138309b5c9dd47505e02b493c427b27bb91dcdc75542",
+      "windows_sha256": "ffd3a59249c51dcaf52cd2801c75cea43961401db3980e7e1a847c9f34e7e46e",
+      "already_processed_a12d": false
+    },
+    "canonical-15": {
+      "file": "canonical-15-complete.json.gz",
+      "sha256": "ee130e7b5fae39d9c12551edc9767747d3c9082019f4c4b9742ec5a937c4a0eb",
+      "native_sha256": "523de239587c0e4facc201b703decd112ed6c7abed3e9c7d9d4758992acd5e7c",
+      "windows_sha256": "7eadacb689abaee203295ce97a15eb4bf022f23212e7b699a27c960d14fc60a7",
+      "already_processed_a12d": false
+    },
+    "workflow-01": {
+      "file": "workflow-01-complete.json.gz",
+      "sha256": "a06fac624fca88255f87119c0372660efbee62722b8e166d4fad1158cb30495e",
+      "native_sha256": "47e96565307d7ff3dbe55c03fb32b380687cb81fa1b37fbf0c7dfffddfbf8975",
+      "windows_sha256": "c6fc5679220fef330b19243343902b11e9b22a56f92d81bcf80aae727e56b92e",
+      "already_processed_a12d": true
+    },
+    "workflow-02": {
+      "file": "workflow-02-complete.json.gz",
+      "sha256": "12906d7d32fe152e5496eec51add92b87c5535061144846b6377c3229f9c7bdb",
+      "native_sha256": "fd9942714f55afa0fcd55399ec7097175b33d065d4a388deb68002583385b54a",
+      "windows_sha256": "6dba98e8a52e23a91198fe1c5f1c78d2444981fcac8bc8125890ff3463542bee",
+      "already_processed_a12d": false
+    },
+    "workflow-03": {
+      "file": "workflow-03-complete.json.gz",
+      "sha256": "63e156c6a16d6af2a094b11e2ccb4352f791bec069c2d464c6e783ec48b85b8d",
+      "native_sha256": "51ed171af562564c14bb399e0e3e738424fce24b9d04bb2b750a0c4cce32dd38",
+      "windows_sha256": "f1ebf6bdc73c491c25c917ea4cfd00f93620f6a047584beb5077b215a47d0140",
+      "already_processed_a12d": false
+    },
+    "workflow-04": {
+      "file": "workflow-04-complete.json.gz",
+      "sha256": "cd316559f61bad7edc1c22abaeab766a706ef7dee9a9eb7f72c8577ab415192d",
+      "native_sha256": "c7b961d5ff31c47c01b7f5f62206058ad28661dbd5f935db2ad411ae7803a8ee",
+      "windows_sha256": "0105118c0da491519b8e1ca2f0845119bda15a7017fc0eb7ae51402ff7347f21",
+      "already_processed_a12d": false
+    },
+    "workflow-05": {
+      "file": "workflow-05-complete.json.gz",
+      "sha256": "beae208cbde4438b7423d01adb0240086f1d90309adfea21a77357cf04757c41",
+      "native_sha256": "8ffc853c1051f4488c535e3b3676af73d5e7f9c1293cd9d3792e7650f17d607b",
+      "windows_sha256": "8292ae7b1394aec771946f2a736d2b733dd6bebe7d0f5c2761b0f0bc46e26035",
+      "already_processed_a12d": false
+    },
+    "workflow-06": {
+      "file": "workflow-06-complete.json.gz",
+      "sha256": "3c441ace1a79da130c91022c8b54a197408955458aec99994a021fdc3b7d9faa",
+      "native_sha256": "47272b52eb2d4a21210c6d13a70e34e06705751b3d845f9c4bd562ce37505ac7",
+      "windows_sha256": "8bac2ee10d6570c597e142be7ee799aba1c25b98c67c73f936846733bd7a41b0",
+      "already_processed_a12d": false
+    },
+    "workflow-07": {
+      "file": "workflow-07-complete.json.gz",
+      "sha256": "d33c8f8d49e68c30cc815a0ade726159be83227b07e44b5660e1e1d4b347c5e3",
+      "native_sha256": "9b0592e35158a3b5ccdef5dc6c3db966962ef3519cee82ac65c199bf225f0318",
+      "windows_sha256": "ce335d3d0594961f10efe3b19e7c8d46d28468756758e9c4de952d721aa46bc6",
+      "already_processed_a12d": false
+    },
+    "workflow-08": {
+      "file": "workflow-08-complete.json.gz",
+      "sha256": "af39f8b36ec68e938d1405a746406443e72b5cce97c7cb540560ad2f52dd58ed",
+      "native_sha256": "61c6e4e0432b6dd45d4e61e7d7a9fd1b3c21b4dea97419a396e82abadef0f62b",
+      "windows_sha256": "e07d95fe8d7f7e1fec1a4ee2978a06e8fe89009de2ac99b90f9deb6e0c8e53e6",
+      "already_processed_a12d": false
+    },
+    "workflow-09": {
+      "file": "workflow-09-complete.json.gz",
+      "sha256": "d5a2d5e7ed8bfc97dc76358f6e7fe7961e2b8b228170a6ee82a46635635d79ec",
+      "native_sha256": "41d5709f1ce0c15f1b4e530d3c09a106d22b573064549667ca22ebadf03de0e8",
+      "windows_sha256": "66a5e383f512a57a1ca8c141cc15440afad15a7950da1b26f55239ef58976e3b",
+      "already_processed_a12d": false
+    },
+    "workflow-10": {
+      "file": "workflow-10-complete.json.gz",
+      "sha256": "026051173c7f6f2acbb33d1921c6c18908e83573bfbb5fc0729b0b5baae6dff1",
+      "native_sha256": "fe3cc584960212abdb6f800cf8d0b65a509aeac9f5593e162a0b44b596497baf",
+      "windows_sha256": "c3fb76dee1f0f6297f5e632fb2cf27703cd242fffa8ce4d6ebfe4e00a3b1e798",
+      "already_processed_a12d": false
+    },
+    "workflow-11": {
+      "file": "workflow-11-complete.json.gz",
+      "sha256": "c3bda7fce19684b6cc79e23d9178b90c785664a517d87bb5c71ef3edbe334c18",
+      "native_sha256": "9413e682a30a98fd749738913f54422d1e9e0d2c9fee8863d3db025b86b7a73b",
+      "windows_sha256": "a54d422ccc7cf595e878d28f2c21f638d15651c6b566f272243d913240019c5e",
+      "already_processed_a12d": false
+    },
+    "workflow-12": {
+      "file": "workflow-12-complete.json.gz",
+      "sha256": "e692d978fcd69b904c8417105c5a0379d437cd49247fb5826aa9fa247ced91b6",
+      "native_sha256": "07b39f95bb7e6a0319a71d92578e6a6f27bd4164278e7c7a60c6709c004a9a06",
+      "windows_sha256": "09863eb4cd7690c45bfbad10f5247265fd8e56cefc62ccc24e89467226713261",
+      "already_processed_a12d": false
+    },
+    "workflow-13": {
+      "file": "workflow-13-complete.json.gz",
+      "sha256": "eeebdaaf178fb998535df7b4919351c85dd8a5900898a2727819d7c518bf3c67",
+      "native_sha256": "d42e094cd924a48ffecbccd7f5578fba8b8cf8ab54b1be647d2ed089d4f01570",
+      "windows_sha256": "26e1101f9d763a26d109babecaff5438b91437afaac844292c1e824f37439dd1",
+      "already_processed_a12d": false
+    },
+    "workflow-14": {
+      "file": "workflow-14-complete.json.gz",
+      "sha256": "20d4c0859620688920834670692b8bb231e45bb59a8471ef948e353903d4f485",
+      "native_sha256": "46d9056b85da90a988cbb26224e9d6ed748d4c336557fde5c963e0c845577ca7",
+      "windows_sha256": "05082ab74123cc338249578b115bf2ac77dc3b847a8bb2e495b2985811fbea35",
+      "already_processed_a12d": false
+    },
+    "workflow-15": {
+      "file": "workflow-15-complete.json.gz",
+      "sha256": "0693852485df48c640e4b5b134b31f467f6b8ce13c8eac58d1cf3c3ae3c20bbb",
+      "native_sha256": "38f926e533eecbc67c3cfd51e952ef90dc034a8ae4d5ac26f81824a1323ceb19",
+      "windows_sha256": "0febc558c71cda86e2587485f284b0ac41f2da597e3164c2b4f91cae9b479f79",
+      "already_processed_a12d": false
+    }
+  },
+  "retained_a12d_records": {
+    "canonical-before": {
+      "file": "canonical-before.json.gz",
+      "raw_sha256": "1379cf0e83847b0021c68f495e8c643b1ed8919b483a5f430a0131a64d80d016",
+      "audit_sha256": "f2c6e2112f2ac57342ffc9f71a5722d50112deb0848f61715d0547a00bd19bbe",
+      "audit_outcome_sha256": "d296726f5fd26a3125907079096f1f3155b83a9d11d259a935fd279dd58d5d97",
+      "version": "ft-owned-cue-processing-a12d-v1",
+      "source_mask": 1
+    },
+    "canonical-cancelled": {
+      "file": "canonical-cancelled.json.gz",
+      "raw_sha256": "eafc8cb2f667b6a929c30f5508e87e26235d9f98361a684842417db84b0c9aa2",
+      "audit_sha256": "c2dabb52958d4cf037946e30332f430e2ffc7baa9fdb9cd73cb601456b9461c1",
+      "audit_outcome_sha256": "be3d602c7d171d5356d141fbe09952f4d77a886601b98e45a1e9a3ee57ef5eb0",
+      "version": "ft-owned-cue-processing-a12d-v1",
+      "source_mask": 1
+    },
+    "canonical-complete": {
+      "file": "canonical-complete.json.gz",
+      "raw_sha256": "b16b9cb983244f210679761cfe7039c7fab81fe74468d912e4b96665a7e946d9",
+      "audit_sha256": "39c6d7260c5fa4fc91d679444d64187833e66d0eb5dfa1d400881723e05d69a2",
+      "audit_outcome_sha256": "52d093f06a3d8e323be3f1b34ac364220e9df48b490506dcb627616dee475687",
+      "version": "ft-owned-cue-processing-a12d-v1",
+      "source_mask": 1
+    },
+    "canonical-partial": {
+      "file": "canonical-partial.json.gz",
+      "raw_sha256": "dc0a5206cc29970384401ebf819693a8edaa6f465e357a91a0e0d6afd4a51e9c",
+      "audit_sha256": "d4f2b61f9f6341b46f80f3c5f00f3ea3c600ee718434dbdc2bd3f7a72b1cf830",
+      "audit_outcome_sha256": "937f3794f0c8d0e3fb7d7438e9e17a58f101c1f5a3dfe3ff5458e254b95e7b1c",
+      "version": "ft-owned-cue-processing-a12d-v1",
+      "source_mask": 1
+    },
+    "canonical-ready": {
+      "file": "canonical-ready.json.gz",
+      "raw_sha256": "d9cb24df3ac03e5110616d184384d7e9501efeae4f0bef83f0a47b5ecd834596",
+      "audit_sha256": "7773194209c5d1e8eab105393185f57c11aa0533404d1d6f97cd3793c76c6755",
+      "audit_outcome_sha256": "a238e6143a1cc9540e076b9654e2d5a6fb87c6494cb24baac36a599afad1ce95",
+      "version": "ft-owned-cue-processing-a12d-v1",
+      "source_mask": 1
+    },
+    "canonical-restarted": {
+      "file": "canonical-restarted.json.gz",
+      "raw_sha256": "b82f9cc94db747cbe40d0798e541630980200c1cb449e9698c0817944950c83c",
+      "audit_sha256": "4352bb5d86664770fe52ef7196b63a92fc273d0d3c09b58cfcfdfe4a6a3e2a5f",
+      "audit_outcome_sha256": "6f1998b927135a9264bbf9251dc5e0e8bd5b930868e6cff1e6def38066be2ae3",
+      "version": "ft-owned-cue-processing-a12d-v1",
+      "source_mask": 1
+    },
+    "workflow-before": {
+      "file": "workflow-before.json.gz",
+      "raw_sha256": "bd29f73b5ddfd7b6fec12e3589fbf795257f086b8007215c859096316b357aa7",
+      "audit_sha256": "20eeac4de27268f639236adb8e24c5f26932b459667c7310a10a9553066a3072",
+      "audit_outcome_sha256": "fe06e0e83f9eeddab954ae84970759533079fbb4ceb5faa79c452bef44fc7ee5",
+      "version": "ft-owned-cue-processing-a12d-v1",
+      "source_mask": 1
+    },
+    "workflow-cancelled": {
+      "file": "workflow-cancelled.json.gz",
+      "raw_sha256": "1e7cba79f76bb88b30d60daef355ca8983c84c036c62a3fb8a4e70f19bacd3b9",
+      "audit_sha256": "a2296b049028fd4a2197c6ad137b8dada2366e6d8b3d45a2bbd1af2ee30e4a98",
+      "audit_outcome_sha256": "e05e99ccf7f6291540d50290b23b79518d1c4da0a981dfa4675313a749826e35",
+      "version": "ft-owned-cue-processing-a12d-v1",
+      "source_mask": 1
+    },
+    "workflow-complete": {
+      "file": "workflow-complete.json.gz",
+      "raw_sha256": "9b3a0011ccbe808a0d90b134faaa12199ea307c199064e310774a2014b2b194e",
+      "audit_sha256": "70c81d2f068a30ff877484c23945f9ba4e18b3458ba127dafa0d00392998c926",
+      "audit_outcome_sha256": "99c473ca6f41f49e60aff81ce2802e911816281af6816be59c1121c75847dce3",
+      "version": "ft-owned-cue-processing-a12d-v1",
+      "source_mask": 1
+    },
+    "workflow-partial": {
+      "file": "workflow-partial.json.gz",
+      "raw_sha256": "4cd45f2551ca2725ade35c28d4662c8ec07f24ecd76da1e8543ff8016d3e1c81",
+      "audit_sha256": "c2c431b1f86e60a7a593fa8d159d4bd63e4572151d5ffc15747ae760767b3a4e",
+      "audit_outcome_sha256": "e612bd62c872054ecd5e48432c39ea610b9babf1b42e7f4b7aef699d91d79d5d",
+      "version": "ft-owned-cue-processing-a12d-v1",
+      "source_mask": 1
+    },
+    "workflow-ready": {
+      "file": "workflow-ready.json.gz",
+      "raw_sha256": "353f9d52b9f1abd72b7d6cb1514865e989cd06461f0fc308098f8b177215dbc0",
+      "audit_sha256": "71eeb2b1453eec7faa56446b56e5e8397dcbdd05a1b6beb1829e52359e73aa8f",
+      "audit_outcome_sha256": "4ec2d92b9e908e14e94f9f892acc63f0c83ec435edca93f973d117f0e735c2ed",
+      "version": "ft-owned-cue-processing-a12d-v1",
+      "source_mask": 1
+    },
+    "workflow-restarted": {
+      "file": "workflow-restarted.json.gz",
+      "raw_sha256": "63ac78fc3fd7e2b76c675bd3ffa17749318c09482f5ae591e940d6cd764b381e",
+      "audit_sha256": "818875cd51a15c751b621cba3afebe04ad20dc352302aa6634bb6405862a0853",
+      "audit_outcome_sha256": "f7470ad5f04b933d589e244d4a03ecef724e5f1d1a4ca64298f1efcbb36f1340",
+      "version": "ft-owned-cue-processing-a12d-v1",
+      "source_mask": 1
+    }
+  },
+  "question": "Does the exact paid owned-opportunity processing cover the complete already fixed15-mask task panel in both settings while preserving the accepted mask1 work? This full panel is needed before later fresh comparisons/history-sensitive contrasts; it is not an expansion of FT8 denominators or a narrowed parent gate.",
+  "execution": "Execute exactly28 previously unprocessed primary branches: each setting masks2..15 starts from its exact accepted A12C native/windows pair. Never regenerate mask1 or original A12D controls. All12 original A12D raw records/audit reports and exact successful audit outcomes are retained byte-for-byte as explicit v1 provenance. No old audit/method/aggregate replay. The remaining28 native branches use the same paid target-domain and encounter transition rules and genuine source-specific native wallets/cursors.",
+  "versioning": "Create a new v2 adapter/source validation and independent audit version. Preserve every prior588 source identity. Prefer inheritance of the original unmodified step/key/checkpoint transition logic; only new prospective input registry, version and audited restore can differ. Old v1 constructor only accepts the two declared mask1 sources and must never be monkey-patched or fed other masks. No source hash rewrite, fake old version, global validator override, native schema/policy change, target pruning or geometry tweak.",
+  "domain": "Exactly the original A12D owned_plan: all distinct target references in received u7.encounter-facts-v1 rows for actor/context, latest received sources per identity, all their actual paid particulars, conflicts/unknowns retained, no outcome filtering, typed target order, bound16. No new facts, pattern fixtures, claims, feedback, consent, routes or successful output provided. Native EncounterRequest defaults unchanged, including engage, actual target carrier, ObjectRef(actor,1) bearer and recall32. Same unchanged full four-facet main demand remains pending.",
+  "new_controls": "Use mask2 as the fixed new-v2 lifecycle representative in each setting. Save before,one-unit partial,first-job ready/uncommitted and complete. Restore only its newly saved partial for exact restart and separate cancellation. Match original primary remaining quantum/commit schedule exactly. These are new v2 controls, never replay of old v1 controls. Every primary/control terminal idempotent.",
+  "records": "50 bound raw records:12 exact accepted v1 A12D records reused without replay;28 newly paid v2 complete primaries;6 additional mask2 before/partial/ready v2 states;4 new mask2 restart/cancel v2 controls. Thus38 new full independent raw audits plus12 exact retained accepted audit bindings. Preserve old four-field raw tuples and adapter text exactly, with explicit legacy reader/provenance; new five-field raw tuples include setting,mask,stage,native,adapter. Do not rewrite original data to make schemas look uniform.",
+  "independent": "New v2 auditor independently reconstructs exact registered source identity, full received-fact target/evidence domain, all native command/journal/access/payment/effect/cursor changes and adapter results, following all original A12D rules. It must not import v2 runtime, selectors or effect policies. Existing independent native auditors and shared structural progress helper remain allowed. A native restore is supplementary exact command/access replay, not a substitute for independent semantic/payment reconstruction. Retained v1 evidence binds exact accepted hashes/proofs without rerunning its old tests or native work.",
+  "methods": [
+    "test_all_thirty_exact_sources",
+    "test_all_native_target_domains",
+    "test_partial_ready_no_result",
+    "test_new_v2_restarts_and_cancellations",
+    "test_twelve_legacy_records_exact",
+    "test_prefixes_native_payments_no_authority",
+    "test_wrong_inputs_and_saved_forgeries",
+    "test_frozen_sources_and_terminal_idempotence"
+  ],
+  "gate": "All50 exact record/audit bindings (38 new+12 retained), all8 new actual method bodies and one complete aggregate. All588 predecessors exact and new source freeze before any native execution. Full all30 primary result table with actual per-source cost/cursor/intents; preserve honest native failures or adverse intents without claiming gate success unless its registered complete-operation domain holds. No current comparison payment, main execution/fulfillment, skill/mastery, Shell clearance, independent history credit, history choice or parent acceptance from this processing alone. Every FT8 gate remains intact.",
+  "evidence": "Exclusive job starts/outcomes, no completed/rejected/interrupted job reinvocation. Each new raw and per-step durable checkpoint: atomic exclusive fsync write, immediate exact byte+typed readback, second exact backup. Persist and materialize the first new successful primary immediately before more new native work; persist all closed primary work before complete validation. Preserve input/provenance/freezes/logs and all failures; final archive has accessible private retrieval identity, exact digest/member verification and downloaded byte-exact copy. No private IDs in public source.",
+  "operations": "Claim/refresh unique30minute lease with expected-head ref update and explicit nonempty base tree; verify complete remote tree/head every save; no forcepush or foreign live ownership. At most3 new implementation/tool modules, one test directory, one bounded gate and one short record per checkpoint. Close each job at its exact boundary, guard lease/deadline with300second launch margin. If bounded stopping is necessary, persist every closed stage, save ready checkpoint, release ownership and continue only unstarted/explicitly recovered work later.",
+  "failure_policy": "Standing routine diagnosis/repair/retry authority with exact gates; prospective amendment and source freeze before changed code/run, preserve every failed source/log/output. Never repeat unchanged failure or accepted paid work. Required theory/baseline/authority change is separate, not silently engineered around.",
+  "next": "After this processing panel, newly pay complete changed-input request/role/operand comparisons and current TD5 cost/admission; original A12C comparison receipts are stale for the changed view/cursor/wallet. Derive genuine same-priority/native-cost ties over different actual elements, autonomous history-only choice and chosen paid movement/downstream use with matched feedback/history controls. Preserve ordered pairs/populations and FT8\u2013FT9 gates. Do not force a tie or bypass older demand/TD5.",
+  "ft8_unchanged": true,
+  "no_accepted_stage_replay": true
+}
