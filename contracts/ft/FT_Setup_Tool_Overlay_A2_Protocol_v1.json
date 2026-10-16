@@ -1,0 +1,28 @@
+{
+  "batch": "FT.Setup.ToolOverlay.A2",
+  "version": 1,
+  "scope": "Setup-only inclusion of the exact A3 continuation tool. No native work, dependency rebuild, accepted gate replay or FT9 acceptance.",
+  "precondition": "Do not change tools/prepare_workspace.py or invoke the setup gate until the A5 evaluation closes and has no surviving worker. Preserve its exact frozen source first.",
+  "prior_source_freeze": "contracts/ft/FT7_Observed_Fields_A5_Source_Freeze_v1.json",
+  "prior_source_identities": 475,
+  "old_setup_sha256": "3dab435411ae2c9439b2f0d91431af3753bae8a1b6cd18f87994e7ab4016dd90",
+  "additional_exact_tool": "tools/continue_ft7_material_refresh.py",
+  "tool_sha256": "99108014824d39d64dc70cf8732ce5f24273d73ca0febceafb1469aeaa032a21",
+  "change": "Add this one exact path to the existing layer_files literal tuple; removing only that literal must restore the complete original AST. Every old selection and all other setup behavior unchanged.",
+  "methods": [
+    "test_exact_one_path_extension",
+    "test_all_frozen_public_files_selected",
+    "test_copy_exact_bytes",
+    "test_no_broad_tool_permission",
+    "test_unsafe_path_rejected",
+    "test_existing_output_preserved"
+  ],
+  "gate": "Six exact new methods, complete selected public-file copying and byte identities, prior475 bridge with only setup differing, unchanged pinned dependency/repair/history and no network/dependency preparation. Use actual frozen selection assignment and copy loop, not a replacement implementation.",
+  "known_before_registration": "Read-only AST selection diagnostic found exactly tools/continue_ft7_material_refresh.py missing from public paths in the475 freeze; same omission already recorded in A4.",
+  "public_base_head": "40d45cf90fd8ff7972a47a1523f3c35f6be3ad5f",
+  "new_files": [
+    "tools/evaluate_ft_setup_continuation_overlay.py",
+    "tests_ft7/test_setup_continuation_overlay.py"
+  ],
+  "preserve": "All original accepted source copies, current paid work/evidence and historical failures. No broad tool inclusion or denied source transfer."
+}
