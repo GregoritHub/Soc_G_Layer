@@ -2,10 +2,10 @@
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
   "status": "running",
-  "run_id": "ft7-admission-final-20261016T023350Z",
+  "run_id": "ft7-forgery-recovery2-20261016T044200Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-16T03:58:21.490Z",
-  "expected_head": "44c26e90cd209385208ba1753221da5c5977295d",
+  "lease_expires_at": "2026-10-16T05:12:00.000Z",
+  "expected_head": "6c1a767ce2a2c99b2230bed8376b85fdf00c2fdb",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1d",
   "current_window_admission_progress": {
     "status": "method_recovery1_running_not_accepted",
@@ -27,7 +27,7 @@
     "new_native_work": false,
     "accepted": false,
     "record": "docs/ft/FT7_1b2b3b2b2b2b2b2b1d_Record.md",
-    "owned_processes_remaining": 2,
+    "owned_processes_remaining": 0,
     "original_outcome": "checkpoint",
     "stop_reason": "prospective deadline",
     "original_children_failed": 0,
@@ -170,7 +170,7 @@
       "inapplicable_reason": "Requires fully closed passing prior runs; continuation2 was interrupted. Preserve unused protocol; separate recovery required."
     },
     "method_recovery1": {
-      "status": "running",
+      "status": "execution_session_lost",
       "invoked": true,
       "protocol_commit": "eec7b3c6cd8a09edcc6ef6efcecdf90ee0eea1ab",
       "protocol_sha256": "e77894a218c34507a99f216775b3e65a12311cecbe6d34ba84f09e112b576318",
@@ -196,8 +196,23 @@
         "test_native_and_prefixes_unchanged"
       ],
       "new_launches_allowed": false,
-      "active_children": 1,
-      "deadline_passed": true
+      "active_children": 0,
+      "deadline_passed": true,
+      "interruption": {
+        "observed_utc": "2026-10-16 04:38:34 UTC",
+        "session": 97404,
+        "error": "Unknown process id 97404",
+        "matching_current_processes": 0,
+        "closed_jobs": 2,
+        "unclosed_methods": [
+          "test_window_operand_cost_forgery_rejected"
+        ],
+        "outcome_present": false,
+        "engine_failure_reported": false,
+        "cause": "unknown",
+        "signals": false,
+        "namespace_entry": false
+      }
     },
     "read_only_recall_inspection": {
       "status": "closed_read_only_diagnostic",
