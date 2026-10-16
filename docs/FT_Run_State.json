@@ -5,7 +5,7 @@
   "run_id": "ft7-admission-recovery-20261016T004323Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-16T01:50:10.000Z",
-  "expected_head": "45309d2046ca807021f4877cacfd0590b577072b",
+  "expected_head": "cc8641139d75e732294730e61e7e6550e7912966",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1d",
   "current_window_admission_progress": {
     "status": "partially_verified_not_accepted",
@@ -128,7 +128,18 @@
       "invoked": false
     },
     "continuation_children_failed": 0,
-    "continuation_children_interrupted": 0
+    "continuation_children_interrupted": 0,
+    "continuation_evidence": {
+      "filename": "FT7_1b2b3b2b2b2b2b2b1d_Current_Window_Admission_Continuation_Evidence_20261016.zip",
+      "sha256": "2d6640747e89f0f341b7aa951ec44cce4310c2c8fa7225cc1abf39f1cf63040b",
+      "manifest_members": 222,
+      "bytes": 9678855,
+      "all_members_verified": true,
+      "exact_nested_progress_members": 179,
+      "nested_capacity_members": 226,
+      "nested_checkpoint_members": 97,
+      "nested_initial_members": 40
+    }
   },
   "current_window_capacity_progress": {
     "status": "passed",
