@@ -1,0 +1,115 @@
+{
+  "batch": "FT7.Observed.Fields.A5",
+  "version": 1,
+  "scope": "Paid exact observed-revision field disclosure/read only; no selector override, comparison payment, main work, recall repair or parent acceptance.",
+  "inputs": {
+    "canonical": {
+      "setting": "canonical",
+      "label": "complete",
+      "file": "canonical-complete.json.gz",
+      "sha256": "0846fb5922eb3a94fa2fb05889021fc5147fac3be2a95c84c507354bd934ee28",
+      "native_sha256": "8546bfbc362f7e9a7679b397435347ffb0a7f8d5b8b05fc983d1a35d4f2b6935",
+      "refresh_sha256": "5b5c9067f0b59a82d5c20b072ddc637c0a72771f436a4b7f56986eb5a8a0c94f",
+      "view_sha256": "8c2b616a83e136130162275d5ae2c8b8879e64a48085a73763c0dc53841e398c",
+      "projection_sha256": "29fdf1e4f101802aeb6cbeafd5d588cb4d6462e2de8fb0a648b791866a745a1e"
+    },
+    "workflow": {
+      "setting": "workflow",
+      "label": "complete",
+      "file": "workflow-complete.json.gz",
+      "sha256": "130736a8b4c9c6ae6c11d50292a340763caf584a082fe5d664cf93c202200dcc",
+      "native_sha256": "85bc912a7d1cd953dce103577b89aa202eef1a760571ef3b26541166a7773f16",
+      "refresh_sha256": "ca2f4f6d32d018a1c6eb349e79b1741c520e57f197ab0030fab617113c840e04",
+      "view_sha256": "6209fe5f67174e9787485a0b154ea833958e5944cb9e24e06b994b6c41f87b56",
+      "projection_sha256": "b82e1aa9d408f3ec7bb954bebd724edda2db6641908404b2aaa9271c6032993e"
+    }
+  },
+  "prior_freeze": "contracts/ft/FT7_Observed_Reference_A4_Source_Freeze_v1.json",
+  "prior_identities": 468,
+  "plan_rule": [
+    "Require exact accepted A3 complete native/refresh and A4 projection identities; actor unlocked, no caller-supplied target or selectors.",
+    "Enumerate every distinct target explicitly named in A4 paid observations, sorted by typed identity. Do not filter by ownership, condition, demand, eligibility or desired outcome.",
+    "For each target, take already processed directly sourced particulars from the greatest known revision of the same identity not newer than the target. Derive unique key/category/path triples. Reject ambiguous mappings for one key.",
+    "Subtract exact key/category/path triples already directly processed at the target revision. Read all remaining descriptors once in one disclosure per target; targets with no missing descriptors do no work. Bound 128 targets/128 selectors per target.",
+    "Do not infer unobserved fields: workflow name-only kit and stock remain name-only. Observation values remain separate. No schema lookup or world-head resolution enters plan."
+  ],
+  "native_work": [
+    "New ft-observed-fields-a5 namespace. Native disclose exact target/subject and known selectors; disclosure alone confers no processed knowledge.",
+    "Each read uses unchanged native cost2 energy/2 time. One-unit partial grants no fields/receipt. Cancel preserves debit without refund. Complete receipt exactly once. Terminal steps idempotent.",
+    "Strict pairing after each step, exact serialized adapter/native restart. Save raw before independent audit. Retain original native journal/commands/access prefixes and all original physical/profile/binding/acquired state."
+  ],
+  "panel": {
+    "settings": [
+      "canonical",
+      "workflow"
+    ],
+    "records": [
+      "before",
+      "partial",
+      "complete",
+      "restarted",
+      "cancelled"
+    ],
+    "expected_targets": 3,
+    "expected_selectors": {
+      "canonical": [
+        7,
+        7,
+        7
+      ],
+      "workflow": [
+        1,
+        7,
+        1
+      ]
+    },
+    "complete_cost_each": {
+      "energy": 6,
+      "time": 6
+    },
+    "partial_cost_each": {
+      "energy": 1,
+      "time": 1
+    },
+    "cancelled_cost_each": {
+      "energy": 1,
+      "time": 1
+    },
+    "restart": "Resume exact first partial pair and compare full final pair byte-for-byte."
+  },
+  "auditor": "Separate module, no controller import: independently derive targets/descriptor evidence from exact input view and A4 projection; reconstruct allowed native commands and paid lifecycle, native journal audit, exact committed source path values, no early fields, unchanged prefixes/physical/binding/acquired state, every adapter field and receipt. Verify typed saved readback.",
+  "methods": [
+    "test_exact_panel",
+    "test_paid_fields_and_limited_paths",
+    "test_partial_cancel_no_credit",
+    "test_restart_terminal_exact",
+    "test_independent_forgery_rejection",
+    "test_prefixes_and_no_authority"
+  ],
+  "negative_probes_per_setting": [
+    "refresh_pair_constructor",
+    "projection_pair_constructor",
+    "refresh_pair_auditor",
+    "projection_pair_auditor",
+    "plan",
+    "source",
+    "receipts",
+    "authority",
+    "payment",
+    "selector_path"
+  ],
+  "operational": "Single serial frozen evaluator, unique fresh outputs, cooperative owner/lease/fixed future deadline checks at each step, current raw pair written before audits; do not replay completed branches or methods after interruption. Any continuation separately preregistered and frozen.",
+  "preserve": [
+    "All468 predecessor identities unchanged",
+    "No accepted stage or paid work replay",
+    "Original oldest demand/TD5/recall32/TIM/dimensionality/defaults unchanged",
+    "All FT8 denominators and matched-main-cost obligations unchanged",
+    "Parent FT7 pairs/populations and FT8-FT9 unfinished"
+  ],
+  "new_files": [
+    "full_theory/observed_field_reads.py",
+    "full_theory/observed_field_reads_audit.py",
+    "tools/evaluate_ft7_observed_field_reads.py",
+    "tests_ft7/test_observed_field_reads.py"
+  ]
+}
