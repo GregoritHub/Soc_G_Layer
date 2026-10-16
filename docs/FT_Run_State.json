@@ -4,9 +4,9 @@
   "status": "running",
   "run_id": "ft7-owned-rehearsal-a10-2026-10-16T15:38:03.294Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-16T16:38:42.000Z",
-  "expected_head": "8ba4bc4610f6de762956b9dd9ab86c075261b41c",
-  "current_batch": "FT7.Owned.Rehearsal.A10R",
+  "lease_expires_at": "2026-10-16T16:53:37.000Z",
+  "expected_head": "5c80d01d965fd4c3a90940a5b66e85dd389cf4b3",
+  "current_batch": "FT.Setup.ToolOverlay.A3",
   "canonical_quotation_a8": {
     "status": "passed",
     "accepted": true,
@@ -2361,7 +2361,7 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T16:13:08Z",
+  "updated_at": "2026-10-16T16:23:37.000Z",
   "skill_intake_a1": {
     "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
@@ -2773,11 +2773,11 @@
     "failure": "workflow intention is not a valid use-personal native input; no output-consumer identity missing",
     "no_accepted_stage_replay": true,
     "rejection_closure": {
-      "status": "running",
+      "status": "closed_pass_pending_evidence_publication",
       "failed_freeze": "20a593626af16a92f09f6e960006575f2b4e4d0a",
       "failed_exit_code": 1,
-      "new_paid_work": 0,
-      "methods": 0,
+      "new_paid_work": "Only previously unstarted workflow restart control; no completed original main paid work replayed.",
+      "methods": 7,
       "protocol_commit": "6e0fac45fd4316a76298c77c50f5065af0fe4a6f",
       "digest_protocol_commit": "6e0fac45fd4316a76298c77c50f5065af0fe4a6f",
       "implementation_commit": "a6b103c8d04d3b6b8a48aacf0673d486e00d7937",
@@ -2789,11 +2789,15 @@
       "stop_at": "2026-10-16T16:33:00+00:00",
       "invoked": true,
       "accepted": false,
-      "original_paid_main_replay": false
+      "original_paid_main_replay": false,
+      "exit_code": 0,
+      "closed_at": "2026-10-16T16:22:35.986580+00:00",
+      "records": 10,
+      "workers_remaining": 0
     }
   },
   "setup_tool_overlay_a3": {
-    "status": "conditional_protocol_only",
+    "status": "implemented_not_frozen",
     "protocol_commit": "8ba4bc4610f6de762956b9dd9ab86c075261b41c",
     "requires": "A10R continuation2 closed and zero workers; exact old setup preserved. One exact historical continuation inclusion only.",
     "invoked": false
