@@ -1,0 +1,1094 @@
+{
+  "passed": true,
+  "records": 40,
+  "independent_audits": 40,
+  "methods": [
+    "test_cancellation_debits",
+    "test_complete_panel",
+    "test_exact_restart",
+    "test_forgery_rejected",
+    "test_partial_ready_receipts",
+    "test_prefixes_recall_scope",
+    "test_terminal_idempotence",
+    "test_wrong_input_domain_rejected"
+  ],
+  "forgery_probes": [
+    {
+      "setting": "canonical",
+      "field": "requests",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "native_sha256",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "intake_sha256",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "fresh_demand",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "controller_prefix",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "recall",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "execution_authorized",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "comparison_paid",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "td5_admitted",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "history_choice",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "full_future_role_domain",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "foreign_operand",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "native_required",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "native_spent",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "native_policy",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "native_nominee",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "requests",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "native_sha256",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "intake_sha256",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "fresh_demand",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "controller_prefix",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "content_inventory",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "recall",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "execution_authorized",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "comparison_paid",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "td5_admitted",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "history_choice",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "full_future_role_domain",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "foreign_operand",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "native_required",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "native_spent",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "native_policy",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "native_nominee",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "wrong_input_mask",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "field": "wrong_native_intake_pair",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "wrong_input_mask",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "field": "wrong_native_intake_pair",
+      "rejected": true
+    }
+  ],
+  "source_identities": 582,
+  "prior_identities": 576,
+  "reports": [
+    {
+      "passed": true,
+      "recall": {
+        "visited": 4,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "before",
+      "windows": 1,
+      "rejected": 0,
+      "required": 52,
+      "spent": 0,
+      "receipts": 0,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "canonical-01-before",
+      "record_sha256": "148d0b643accac8ec930bd0e57d95ef2bd22570b12819f8dbe5a240a40416713"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 4,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "partial",
+      "windows": 1,
+      "rejected": 0,
+      "required": 52,
+      "spent": 1,
+      "receipts": 0,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "canonical-01-partial",
+      "record_sha256": "a39affc3820c9469877b82b4056973ab997c62e87ce04e9d65157b74fcad7801"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 4,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "ready",
+      "windows": 1,
+      "rejected": 0,
+      "required": 52,
+      "spent": 52,
+      "receipts": 0,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "canonical-01-ready",
+      "record_sha256": "49bac48f2452d4a57a1cb08145f7f5965d4248adbc6c4a2cda4606dd730fe26d"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 4,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 1,
+      "rejected": 0,
+      "required": 52,
+      "spent": 52,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "canonical-01-complete",
+      "record_sha256": "8e0ba4b7ba8bbd70721495ae8b1b93bae3e0fd6e2a88974912e673d2a72e0a10"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 5,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "before",
+      "windows": 3,
+      "rejected": 0,
+      "required": 113,
+      "spent": 0,
+      "receipts": 0,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "workflow-01-before",
+      "record_sha256": "5913849b62281fe6bb08cc28da007a353e8e65079ffdaed166a3d11c2e548f82"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 5,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "partial",
+      "windows": 3,
+      "rejected": 0,
+      "required": 113,
+      "spent": 1,
+      "receipts": 0,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "workflow-01-partial",
+      "record_sha256": "206db56df8593c594eb3fdc103e1ba11451e7801dab34c7d5ad2abd5b2f40dd1"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 5,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "ready",
+      "windows": 3,
+      "rejected": 0,
+      "required": 113,
+      "spent": 113,
+      "receipts": 0,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "workflow-01-ready",
+      "record_sha256": "246d7ba1438807963a532847305e3c93e4147775a29ad5214222db8e3c07adc7"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 5,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 3,
+      "rejected": 0,
+      "required": 113,
+      "spent": 113,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "workflow-01-complete",
+      "record_sha256": "a06fac624fca88255f87119c0372660efbee62722b8e166d4fad1158cb30495e"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 4,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 1,
+      "rejected": 0,
+      "required": 52,
+      "spent": 52,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "canonical-02-complete",
+      "record_sha256": "a194988cb3b33f0aa6860cda0f12ba814bc2b09bc0057ca56f502d8c779865d2"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 4,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 1,
+      "rejected": 0,
+      "required": 52,
+      "spent": 52,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "canonical-03-complete",
+      "record_sha256": "f4ed6d08792e9e2045121e32eb13143719ebf076d8e8eee3d1054bf3d751407b"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 4,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 1,
+      "rejected": 0,
+      "required": 52,
+      "spent": 52,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "canonical-04-complete",
+      "record_sha256": "2bcdbd6bda306f3828a36befc5793a165bfbc33641d4f3bcd8bc7a64d10da46b"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 4,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 1,
+      "rejected": 0,
+      "required": 52,
+      "spent": 52,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "canonical-05-complete",
+      "record_sha256": "90905b5a139c552c57aec6784bf5244d2267ffbac289560564e8b3de04e9094e"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 4,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 1,
+      "rejected": 0,
+      "required": 52,
+      "spent": 52,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "canonical-06-complete",
+      "record_sha256": "13251022b085270e3cb75a60e8ba1caf1d54279d381509b482a0c50643f9ad25"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 4,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 1,
+      "rejected": 0,
+      "required": 52,
+      "spent": 52,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "canonical-07-complete",
+      "record_sha256": "045cbf1970328c88ea8ee65d7187a11f1543e00cd09a3368c5caece6e993a711"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 4,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 1,
+      "rejected": 0,
+      "required": 52,
+      "spent": 52,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "canonical-08-complete",
+      "record_sha256": "5c259176e46128263ad20ea00ae70e25bf14ba7ec3f5280a86412a6888e357fc"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 4,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 1,
+      "rejected": 0,
+      "required": 52,
+      "spent": 52,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "canonical-09-complete",
+      "record_sha256": "20a7c06490fe3dd9ef81e81002f698484dd2e9d766e39ebbe40d3874addcb332"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 4,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 1,
+      "rejected": 0,
+      "required": 52,
+      "spent": 52,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "canonical-10-complete",
+      "record_sha256": "17bb56c088781d4d509eb2570dcbc932bb95d19887015064280d348fb825e2a5"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 4,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 1,
+      "rejected": 0,
+      "required": 52,
+      "spent": 52,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "canonical-11-complete",
+      "record_sha256": "97796c9202a6837e55dd583f9ef5b996e38a44acbee9099ab3155f87a28991a7"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 4,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 1,
+      "rejected": 0,
+      "required": 52,
+      "spent": 52,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "canonical-12-complete",
+      "record_sha256": "1c83f949c39641d13091a776fa3c5009a67af7ce69e7420a5558e07732d2f442"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 4,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 1,
+      "rejected": 0,
+      "required": 52,
+      "spent": 52,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "canonical-13-complete",
+      "record_sha256": "3ad688489391bde7db9415214602202648bb9c01c670e02309438a16493729b0"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 4,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 1,
+      "rejected": 0,
+      "required": 52,
+      "spent": 52,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "canonical-14-complete",
+      "record_sha256": "4af35153bd3096b25b532a0c6365fc68f1f3e750a1e0767f2b671328d7c7c6ba"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 4,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 1,
+      "rejected": 0,
+      "required": 52,
+      "spent": 52,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "canonical-15-complete",
+      "record_sha256": "ee130e7b5fae39d9c12551edc9767747d3c9082019f4c4b9742ec5a937c4a0eb"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 5,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 3,
+      "rejected": 0,
+      "required": 113,
+      "spent": 113,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "workflow-02-complete",
+      "record_sha256": "12906d7d32fe152e5496eec51add92b87c5535061144846b6377c3229f9c7bdb"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 5,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 3,
+      "rejected": 0,
+      "required": 113,
+      "spent": 113,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "workflow-03-complete",
+      "record_sha256": "63e156c6a16d6af2a094b11e2ccb4352f791bec069c2d464c6e783ec48b85b8d"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 5,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 3,
+      "rejected": 0,
+      "required": 113,
+      "spent": 113,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "workflow-04-complete",
+      "record_sha256": "cd316559f61bad7edc1c22abaeab766a706ef7dee9a9eb7f72c8577ab415192d"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 5,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 3,
+      "rejected": 0,
+      "required": 113,
+      "spent": 113,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "workflow-05-complete",
+      "record_sha256": "beae208cbde4438b7423d01adb0240086f1d90309adfea21a77357cf04757c41"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 5,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 3,
+      "rejected": 0,
+      "required": 113,
+      "spent": 113,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "workflow-06-complete",
+      "record_sha256": "3c441ace1a79da130c91022c8b54a197408955458aec99994a021fdc3b7d9faa"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 5,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 3,
+      "rejected": 0,
+      "required": 113,
+      "spent": 113,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "workflow-07-complete",
+      "record_sha256": "d33c8f8d49e68c30cc815a0ade726159be83227b07e44b5660e1e1d4b347c5e3"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 5,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 3,
+      "rejected": 0,
+      "required": 113,
+      "spent": 113,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "workflow-08-complete",
+      "record_sha256": "af39f8b36ec68e938d1405a746406443e72b5cce97c7cb540560ad2f52dd58ed"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 5,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 3,
+      "rejected": 0,
+      "required": 113,
+      "spent": 113,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "workflow-09-complete",
+      "record_sha256": "d5a2d5e7ed8bfc97dc76358f6e7fe7961e2b8b228170a6ee82a46635635d79ec"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 5,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 3,
+      "rejected": 0,
+      "required": 113,
+      "spent": 113,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "workflow-10-complete",
+      "record_sha256": "026051173c7f6f2acbb33d1921c6c18908e83573bfbb5fc0729b0b5baae6dff1"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 5,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 3,
+      "rejected": 0,
+      "required": 113,
+      "spent": 113,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "workflow-11-complete",
+      "record_sha256": "c3bda7fce19684b6cc79e23d9178b90c785664a517d87bb5c71ef3edbe334c18"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 5,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 3,
+      "rejected": 0,
+      "required": 113,
+      "spent": 113,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "workflow-12-complete",
+      "record_sha256": "e692d978fcd69b904c8417105c5a0379d437cd49247fb5826aa9fa247ced91b6"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 5,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 3,
+      "rejected": 0,
+      "required": 113,
+      "spent": 113,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "workflow-13-complete",
+      "record_sha256": "eeebdaaf178fb998535df7b4919351c85dd8a5900898a2727819d7c518bf3c67"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 5,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 3,
+      "rejected": 0,
+      "required": 113,
+      "spent": 113,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "workflow-14-complete",
+      "record_sha256": "20d4c0859620688920834670692b8bb231e45bb59a8471ef948e353903d4f485"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 5,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 3,
+      "rejected": 0,
+      "required": 113,
+      "spent": 113,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "workflow-15-complete",
+      "record_sha256": "0693852485df48c640e4b5b134b31f467f6b8ce13c8eac58d1cf3c3ae3c20bbb"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 4,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 1,
+      "rejected": 0,
+      "required": 52,
+      "spent": 52,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "canonical-01-restarted",
+      "record_sha256": "e4367980a23b345f39a5bd8aff8d8f16b7975398ba029067db09572651f9fad2"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 4,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "cancelled",
+      "windows": 1,
+      "rejected": 0,
+      "required": 52,
+      "spent": 1,
+      "receipts": 0,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "canonical-01-cancelled",
+      "record_sha256": "b5c149b6f7430074acf21a8aa61bca048ef4ce33edc7adb04e3c9270b1b7c24f"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 5,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "succeeded",
+      "windows": 3,
+      "rejected": 0,
+      "required": 113,
+      "spent": 113,
+      "receipts": 1,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "workflow-01-restarted",
+      "record_sha256": "d8ac861e7bf538d3ae9d67b653843de23981ab3ea4af66b29fc5951f081e75d5"
+    },
+    {
+      "passed": true,
+      "recall": {
+        "visited": 5,
+        "truncated": false,
+        "task_visited": true,
+        "limit": 32
+      },
+      "source_prefix_exact": true,
+      "reserve_history_unchanged": true,
+      "td5_admitted": false,
+      "status": "cancelled",
+      "windows": 3,
+      "rejected": 0,
+      "required": 113,
+      "spent": 1,
+      "receipts": 0,
+      "execution_authorized": false,
+      "history_choice": false,
+      "record": "workflow-01-cancelled",
+      "record_sha256": "a978f8ef2f0ac050b90e906e831e39502ecbcc7e015dc3e0096534f858f3e8bd"
+    }
+  ],
+  "comparison_paid": true,
+  "execution_authorized": false,
+  "td5_admitted": false,
+  "history_choice": false,
+  "full_future_role_domain": false,
+  "parent_accepted": false,
+  "ft8_unchanged": true,
+  "accepted_stage_replays": 0
+}

@@ -1,3 +1,5 @@
+Current update, 16 October 2026: **A12C paid new-cue comparisons accepted**: 40 independent saved audits, eight methods, 37 forgery checks, exact restarts and all 582/prior576 identities. All 30 new-cue task branches retain complete recall32 (4 canonical / 5 workflow) and pay the exact current role-absent native comparison. No current TD5 admission/history choice or parent FT7–FT9 acceptance. [A12C record](docs/ft/FT7_Cue_Comparison_A12C_Record.md).
+
 Current update, 16 October 2026: **A12B attempt 2 accepted** with 50 passing saved-record audits and all eight original methods. Original failed evidence preserved. Publication blocker resolved under explicit public-disclosure authorization; continue remaining FT7–FT9. [Attempt-2 record](docs/ft/FT7_Cue_Intake_A12B_Attempt2_Record.md).
 
 Historical updates below:
