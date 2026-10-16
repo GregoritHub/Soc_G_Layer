@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "48ee7ec597a1f5ff319f860f5c4623bc1efdb24c",
+  "status": "running",
+  "run_id": "ft7-owned-skill-2026-10-16T08:29:38.609Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-16T08:59:38.609Z",
+  "expected_head": "e25e9fd342bc843cd07187c1716765608c19765c",
   "current_batch": "FT7.Recall.Feasibility.A1",
   "current_window_admission_progress": {
     "status": "passed",
