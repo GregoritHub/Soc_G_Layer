@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft7-forgery-recovery2-20261016T044200Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-16T05:12:00.000Z",
-  "expected_head": "d85f6aa9e498fcc66c8bfc6d9bd0e6b322eda25e",
+  "lease_expires_at": "2026-10-16T05:20:25.000Z",
+  "expected_head": "946635e95e758f3d3fbb81045de7ae444969215a",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1d",
   "current_window_admission_progress": {
     "status": "method_recovery2_running_not_accepted",
@@ -260,7 +260,12 @@
       "method": "test_window_operand_cost_forgery_rejected",
       "stop_at": "2026-10-16T05:12:00.000Z",
       "sole_evaluator_worker": true,
-      "aggregate_run": false
+      "aggregate_run": false,
+      "last_observed_utc": "2026-10-16T04:50:25.000Z",
+      "operational_notes": [
+        "Initial lease used a planned timestamp; refreshed to exactly thirty minutes from current UTC before further work. No governed acceptance change.",
+        "A large local binding read was truncated before publication; fixed chunked reading. A subsequent transient GitHub ref update error left head unchanged; reread and safely saved with full-tree verification."
+      ]
     },
     "recovered_finish2": {
       "status": "implemented_not_frozen_not_invoked",
