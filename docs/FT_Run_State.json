@@ -129,9 +129,9 @@
   "status": "running",
   "run_id": "ft7-a12e2-20261016T213945Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-16T23:16:00+00:00",
-  "expected_head": "d6ef83b147d91321752fd9d2279c64c39806516d",
-  "current_batch": "A12E2 procedure-audit recovery running; workflow-07 exact quote retained and audit-only, other workflow branches unclosed",
+  "lease_expires_at": "2026-10-16T23:34:00+00:00",
+  "expected_head": "0e38fa857fb8ef2373a652108b6db7c9834b9227",
+  "current_batch": "A12E2 procedure-audit recovery running; workflow-07 audit-only and seven fresh workflow quotations active, seven workflow branches untouched",
   "canonical_quotation_a8": {
     "status": "passed",
     "accepted": true,
