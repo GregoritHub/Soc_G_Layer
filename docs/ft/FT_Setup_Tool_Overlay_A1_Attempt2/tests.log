@@ -1,0 +1,11 @@
+test_all_frozen_layer_files (overlay_tests.SetupToolOverlayTests.test_all_frozen_layer_files) ... ok
+test_copy_exact_public_bytes (overlay_tests.SetupToolOverlayTests.test_copy_exact_public_bytes) ... ok
+test_exact_extension (overlay_tests.SetupToolOverlayTests.test_exact_extension) ... ok
+test_existing_output_preserved (overlay_tests.SetupToolOverlayTests.test_existing_output_preserved) ... ok
+test_old_filter_preserved (overlay_tests.SetupToolOverlayTests.test_old_filter_preserved) ... ok
+test_unsafe_overlay_path_rejected (overlay_tests.SetupToolOverlayTests.test_unsafe_overlay_path_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.076s
+
+OK

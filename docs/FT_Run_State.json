@@ -5,7 +5,7 @@
   "run_id": "ft7-skill-practice-2026-10-16T09:37:19.365Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-16T10:36:12.504Z",
-  "expected_head": "aac246e1b35afdc30267126188f192e5caecc6e0",
+  "expected_head": "7cd2d3b6e9915797a70cd3826fd7872bda308f31",
   "current_batch": "FT.Setup.ToolOverlay.A1",
   "current_window_admission_progress": {
     "status": "passed",
@@ -363,7 +363,7 @@
       "paths_removed": 0
     }
   },
-  "next_batch": "Register and repair setup overlay for seven current tools omitted by name prefixes, without native replay; then separately bind fresh paid observations/comparisons after changed skill/material inputs, broader lawful recall organization, genuine distinct-element same-priority/native-cost ties, autonomous history-only choice, chosen paid work/downstream use, matched controls/full staging, parent FT7 pairs/populations and unchanged FT8–FT9. Never rerun accepted A2/A1 or prior gates.",
+  "next_batch": "Separately register fresh paid observation/current-input binding and new comparisons after A2 skill/material changes; broaden lawful paid recall organization. Then genuine distinct-element same-priority/native-cost ties, autonomous history-only choice, chosen paid work/downstream use, matched controls/full staging, parent FT7 pairs/populations and unchanged FT8–FT9. No accepted A2/A1/B1D or setup gate replay; clean full dependency reconstruction and standalone FT9 remain unproven.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -425,7 +425,7 @@
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT7_Skill_Practice_A2_Record.md",
+  "latest_record": "docs/ft/FT_Setup_Tool_Overlay_A1_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
@@ -2241,52 +2241,36 @@
   "prior_paid_window_acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2",
   "latest_acceptance_commit": "aac246e1b35afdc30267126188f192e5caecc6e0",
   "latest_local_acceptance": {
-    "batch": "FT7.Skill.Practice.A2",
+    "batch": "FT.Setup.ToolOverlay.A1",
     "passed": true,
-    "methods": 6,
-    "saved_records": 14,
-    "original_negative_probes": 10,
-    "pairing_rejections": 12,
-    "identity_guard_only_ast_bridge": true,
-    "original_source_identities": 434,
-    "source_identities": 439,
-    "prior_identities": 427,
-    "exact_restart_pairs": 2,
-    "costs": {
-      "canonical": {
-        "energy": 19,
-        "time": 19,
-        "failed_practices": 1,
-        "successful_practices": 1,
-        "acquired": 1
-      },
-      "workflow": {
-        "energy": 11,
-        "time": 11,
-        "failed_practices": 0,
-        "successful_practices": 1,
-        "acquired": 1
-      }
-    },
-    "original_exit_code": 0,
-    "saved_exit_code": 0,
-    "saved_native_work": 0,
-    "saved_engine_restores": 0,
-    "saved_test_body_replays": 0,
-    "accepted_stage_replayed": false,
-    "parent_accepted": false,
-    "protocol_commit": "efc247da7ef40fb43e45fce31784329797e4307d",
-    "original_freeze_commit": "8961d8f90705f8007f0b41745582403c823b1f7c",
-    "identity_amendment_commit": "f48f01bc228e1043cab11eecc2514f3d34e37b62",
-    "identity_freeze_commit": "8430d9b9e2f8af5626f744dda431ff5440aeea1b",
-    "evidence": {
-      "filename": "FT7_Skill_Practice_A2_Evidence_20261016.zip",
-      "sha256": "171ede255dd8b770d98ee1eaba7c683f51ae7ac0e01af9b2ebf94b2b268ddfaf",
-      "bytes": 78902621,
-      "manifest_members": 49
-    },
-    "clean_preparation_claimed": false,
-    "scope": "Native practiced repair acquisition only; no main-task live choice, recall repair or parent acceptance."
+    "methods": [
+      "test_all_frozen_layer_files",
+      "test_copy_exact_public_bytes",
+      "test_exact_extension",
+      "test_existing_output_preserved",
+      "test_old_filter_preserved",
+      "test_unsafe_overlay_path_rejected"
+    ],
+    "failures": 0,
+    "errors": 0,
+    "pinned_public_blobs": 601,
+    "overlay_files": 459,
+    "additional_tools": [
+      "tools/audit_owned_repair_practice_saved.py",
+      "tools/check_owned_material_inspection_saved.py",
+      "tools/continue_ft7_1b2b3b2b2b2b2b2b1b.py",
+      "tools/continue_owned_material_inspection.py",
+      "tools/evaluate_owned_material_inspection.py",
+      "tools/evaluate_owned_repair_practice.py",
+      "tools/evaluate_recall_feasibility.py"
+    ],
+    "prior_source_identities": 439,
+    "source_identities": 449,
+    "sole_filter_ast_delta": true,
+    "dependency_rebuilds": 0,
+    "native_work": 0,
+    "accepted_test_replays": 0,
+    "ft9_accepted": false
   },
   "recall_feasibility_progress": {
     "status": "diagnostic_pass",
@@ -2312,7 +2296,7 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T10:13:56.159Z",
+  "updated_at": "2026-10-16T10:21:10.526Z",
   "skill_intake_a1": {
     "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
@@ -2410,8 +2394,8 @@
   },
   "prior_skill_intake_acceptance_commit": "e87218cc23138fe01876a65ce13f39c91d21f652",
   "setup_tool_overlay_a1": {
-    "status": "protocol_registered",
-    "accepted": false,
+    "status": "accepted",
+    "accepted": true,
     "prior_source_identities": 439,
     "tools": [
       "tools/audit_owned_repair_practice_saved.py",
@@ -2422,6 +2406,21 @@
       "tools/evaluate_owned_repair_practice.py",
       "tools/evaluate_recall_feasibility.py"
     ],
-    "engine_replay": false
+    "engine_replay": false,
+    "protocol_commit": "5ad22b866984bc5a93c3426021614eadfe2911e5",
+    "failed_freeze_commit": "61f52001d2b1869d3d7daa8d241e657acd4bb4a6",
+    "amendment_commit": "7a5ed827b54daa10f0d124af9d6aa5178e2c12b1",
+    "freeze_commit": "7cd2d3b6e9915797a70cd3826fd7872bda308f31",
+    "methods": 6,
+    "overlay_files": 459,
+    "source_identities": 449,
+    "prior_identities": 439,
+    "original_setup_only_bridge": true,
+    "failed_attempts_preserved": 1,
+    "exit_code": 0,
+    "dependency_rebuilds": 0,
+    "native_work": 0,
+    "ft9_accepted": false,
+    "record": "docs/ft/FT_Setup_Tool_Overlay_A1_Record.md"
   }
 }

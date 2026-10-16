@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "methods": [
+    "test_all_frozen_layer_files",
+    "test_copy_exact_public_bytes",
+    "test_exact_extension",
+    "test_existing_output_preserved",
+    "test_old_filter_preserved",
+    "test_unsafe_overlay_path_rejected"
+  ],
+  "failures": 0,
+  "errors": 0,
+  "pinned_public_blobs": 601,
+  "overlay_files": 459,
+  "additional_tools": [
+    "tools/audit_owned_repair_practice_saved.py",
+    "tools/check_owned_material_inspection_saved.py",
+    "tools/continue_ft7_1b2b3b2b2b2b2b2b1b.py",
+    "tools/continue_owned_material_inspection.py",
+    "tools/evaluate_owned_material_inspection.py",
+    "tools/evaluate_owned_repair_practice.py",
+    "tools/evaluate_recall_feasibility.py"
+  ],
+  "prior_source_identities": 439,
+  "source_identities": 449,
+  "sole_filter_ast_delta": true,
+  "dependency_rebuilds": 0,
+  "native_work": 0,
+  "accepted_test_replays": 0,
+  "ft9_accepted": false
+}
