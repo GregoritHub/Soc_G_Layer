@@ -129,7 +129,7 @@
   "status": "running",
   "run_id": "ft7-a12d2-20261016T193600Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-16T20:06:00+00:00",
+  "lease_expires_at": "2026-10-16T20:18:30+00:00",
   "expected_head": "300aee98e0af58a5a859c9f8d43a2c46b6c6a4bb",
   "current_batch": "A12D2 full fixed-panel extension: frozen implementation, new primary generation in progress; no acceptance yet",
   "canonical_quotation_a8": {
