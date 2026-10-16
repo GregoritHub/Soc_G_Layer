@@ -1,0 +1,60 @@
+{
+  "version": "ft-recall-feasibility-a1-v1",
+  "batch": "FT7.Recall.Feasibility.A1",
+  "entry_acceptance": "850c21a2adf60a8e43e6e6799b4fc92bb71b0e6e",
+  "status": "prospective implementation of saved-state diagnostic; antecedent exploratory counts already observed",
+  "scope": "Two accepted mask-1 checkpoints only. Extract exact owned access snapshots without running native operation bodies. Assess the optimistic root-removal relaxation of archiving current workshop cue roots, excluding the current task and positive reorganizations. No paid execution, admission or parent acceptance.",
+  "antecedent": {
+    "canonical": {
+      "roots": 30,
+      "reachable": 35,
+      "after_two_root_removal": 33
+    },
+    "workflow": {
+      "roots": 29,
+      "reachable": 34,
+      "after_two_root_removal": 33
+    }
+  },
+  "inputs": {
+    "acceptance_archive_sha256": "4ece02f685fb7df900523bc64983e83e19f3d636994b90bf796f5a1282dca71b",
+    "prior_freeze": "FT7_1b2b3b2b2b2b2b2b1d_Source_Freeze_v1.json",
+    "keys": [
+      "canonical/mask-1",
+      "workflow/mask-1"
+    ],
+    "bind": "Exact paid and capacity raw SHA256s from accepted indexes; native digest must equal capacity native_sha256."
+  },
+  "modules": [
+    "full_theory/recall_feasibility.py",
+    "full_theory/recall_feasibility_audit.py",
+    "tools/evaluate_recall_feasibility.py"
+  ],
+  "tests": "tests_ft7/test_recall_feasibility.py",
+  "checks": [
+    "baseline ordered walk equals native traverse at unchanged limit32",
+    "independent fixed-point closure agrees for every subset of at most two eligible workshop roots",
+    "linked archived roots remain reachable; no deletion or retraction assumed",
+    "current heads and retained revisions both preserved",
+    "cycles and foreign/missing links handled exactly",
+    "forged closure or authority claim rejected",
+    "all prior406 source identities unchanged; snapshot bytes unchanged; no operation replay"
+  ],
+  "bounds": {
+    "eligible_roots_max": 2,
+    "subset_max": 4,
+    "records": 2,
+    "visit_limit": 32
+  },
+  "claims": {
+    "paid_organization": false,
+    "skill_acquisition": false,
+    "comparison_paid": false,
+    "td5_admitted": false,
+    "execution_authorized": false,
+    "history_choice": false,
+    "parent_accepted": false
+  },
+  "failure_policy": "Preserve every failed attempt, amend before corrections, no identical failed rerun. Diagnostic cannot prove all lawful organization strategies impossible.",
+  "next": "Use this scoped obstruction to design route-free fresh skill and paid organization work; changed inputs require fresh paid comparisons. Genuine distinct-element priority/cost ties, autonomous history-only choice, paid movement/use, matched controls and full staging remain owed. FT8 unchanged."
+}
