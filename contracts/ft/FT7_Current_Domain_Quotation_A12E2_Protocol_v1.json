@@ -1,0 +1,596 @@
+{
+  "version": "ft-current-domain-quotation-a12e2-protocol-v1",
+  "batch": "FT7.PostProcessing.CurrentQuotation.A12E2",
+  "registered_at": "2026-10-16T20:40:00+00:00",
+  "parent_acceptance_commit": "6893ef807cad9ec299b38c79dccb694467d638b8",
+  "prior_source_freeze": "contracts/ft/FT7_Post_Processing_Domain_A12E1_Source_Freeze_v1.json",
+  "prior_source_identities": 600,
+  "inputs": {
+    "canonical-01": {
+      "path": "records/canonical-01.json.gz",
+      "raw_sha256": "5f75f97a83bc9b1fa5834857721443b3b62e89a9217cb154f6eb7c5e7184b8db",
+      "raw_arity": 6,
+      "native_sha256": "6f3796063f7050444dccf9baa00991c7a8637cd733edc71a3b2b3a61fb8e61c1",
+      "adapter_sha256": "f0caed7896a581395e50a046de45c90e253ddf072e893ea9e308e00f179d2f29",
+      "windows_sha256": "8a9b002e17587d5e9d8fc43deade4a79b585c41ba522f2c3bc735cf19c62a5cc",
+      "domain_sha256": "8494b7f0efe40955afaaf2c9894be8a053311c1addb903664da2b31509d49c36",
+      "assignments": 1728,
+      "windows": 1,
+      "role_sizes": {
+        "stock": 6,
+        "tool": 6,
+        "repair_stock": 6,
+        "procedure": 2,
+        "peer": 2,
+        "group": 2
+      }
+    },
+    "canonical-02": {
+      "path": "records/canonical-02.json.gz",
+      "raw_sha256": "152e3770ae8d3256d601f688a3c392c8be3bc543f51aad01f4d93cbab5dcaf8e",
+      "raw_arity": 6,
+      "native_sha256": "0f4811c155b1af237a1b02e87a1366be467196c3f0860815078376d4994b77b1",
+      "adapter_sha256": "4e2c2aeb881cae882c2c952445541bfc5fef368e8635a9cc3b1adc9bee683cdd",
+      "windows_sha256": "b582d2aa2519fddec715bf1dd1f3d93200cd77e8744068bc2927696092018902",
+      "domain_sha256": "323eb7a6b2f3d1d7e1959ff7408356515c0fb4897fde9101362f781a4180c167",
+      "assignments": 1728,
+      "windows": 1,
+      "role_sizes": {
+        "stock": 6,
+        "tool": 6,
+        "repair_stock": 6,
+        "procedure": 2,
+        "peer": 2,
+        "group": 2
+      }
+    },
+    "canonical-03": {
+      "path": "records/canonical-03.json.gz",
+      "raw_sha256": "5a107750efe5aa5dddbcef5c20e46192e89d42270ab51814ae6b79621c99a1b3",
+      "raw_arity": 6,
+      "native_sha256": "70155dbedd47890ace62638fc7395ebf74e842e5d742a2f547c5146cd96860b1",
+      "adapter_sha256": "3bffb80e30a19d10cb1c11d85ce553abcd858f47a54349031e48a7c324c228e3",
+      "windows_sha256": "1aa38e61b6a92699cf41e5d796712c0d442d84db96da3c5c40e454efce271a3f",
+      "domain_sha256": "5e6b7c7c3a5fbb9591f10612bf5d2e4dd4dfab0f8a81167cfc68cd0ac762b7e7",
+      "assignments": 1728,
+      "windows": 1,
+      "role_sizes": {
+        "stock": 6,
+        "tool": 6,
+        "repair_stock": 6,
+        "procedure": 2,
+        "peer": 2,
+        "group": 2
+      }
+    },
+    "canonical-04": {
+      "path": "records/canonical-04.json.gz",
+      "raw_sha256": "dbff015307e540e0739aa9dc3ca155efed51fa9581ac80a7678cc9d58b87c81e",
+      "raw_arity": 6,
+      "native_sha256": "37877e6e2f17c6f9627b8c535679178e0b318a14004dadc967d984197e769767",
+      "adapter_sha256": "191c16f4eb17cbc91f4fb2d755afe4a93de735e827e4392c8649a52998462f60",
+      "windows_sha256": "c9e5bc15e117056e910f3054107d79a3f392a8a298f526ba375ffd7dc415cb47",
+      "domain_sha256": "7302aa8bac01e129dd712ee9ca6a8bb84e574363b4345283536be9a4a92b8445",
+      "assignments": 1728,
+      "windows": 1,
+      "role_sizes": {
+        "stock": 6,
+        "tool": 6,
+        "repair_stock": 6,
+        "procedure": 2,
+        "peer": 2,
+        "group": 2
+      }
+    },
+    "canonical-05": {
+      "path": "records/canonical-05.json.gz",
+      "raw_sha256": "b2a112df9a3bde23f67ccdf8de3e474ec8e9debca337b6fb870565417bcc7b79",
+      "raw_arity": 6,
+      "native_sha256": "2cbc84167dc059169a34856efbf28718c9a6dc827a44855aa3ed3893d8be68e4",
+      "adapter_sha256": "d7bb230c87691497031152412f7faba74167249c08eb303d9e867a569a33974a",
+      "windows_sha256": "29e04037209c2b7cb19d046388c90001fc1901b2ad6fb7a4a5535f8617a72acf",
+      "domain_sha256": "a1e49e0e53d0b4a889545df7126b4b7f27bf59d6416ab7f4e394b2b1b8d219bc",
+      "assignments": 1728,
+      "windows": 1,
+      "role_sizes": {
+        "stock": 6,
+        "tool": 6,
+        "repair_stock": 6,
+        "procedure": 2,
+        "peer": 2,
+        "group": 2
+      }
+    },
+    "canonical-06": {
+      "path": "records/canonical-06.json.gz",
+      "raw_sha256": "6807af536b2ea06e5fe3f72f8108a01bfa5588d97ed900f9c61029fddece4224",
+      "raw_arity": 6,
+      "native_sha256": "0ff910cedc01b596ddc9a59557f15ea46377df18bda3c46f52854c3e718adfef",
+      "adapter_sha256": "7d3b102f7d495d86faa1a14c86bfc07436e9089b12d366d0c20291d371927f9a",
+      "windows_sha256": "4deaa773ff11195329aa7d000f617a92d0763e78d1a11d7132fc3e89f08b59bc",
+      "domain_sha256": "f54f9ca69f5eaefaa8267fd0b31981445dbd630ceeadee4d9506022f4e8eec2e",
+      "assignments": 1728,
+      "windows": 1,
+      "role_sizes": {
+        "stock": 6,
+        "tool": 6,
+        "repair_stock": 6,
+        "procedure": 2,
+        "peer": 2,
+        "group": 2
+      }
+    },
+    "canonical-07": {
+      "path": "records/canonical-07.json.gz",
+      "raw_sha256": "db9046485c77d102450cdb484d6f3330a4f45c9b5684e1f01d1338af51bfc2e9",
+      "raw_arity": 6,
+      "native_sha256": "4ac23ecaa0aa25fa0a10b6b6f26ca743c688684d2f157116db513ce662846e9c",
+      "adapter_sha256": "8981bfb605970584d8e2d7b422899fea1c01b8d58573ac9268c696485dca0b6d",
+      "windows_sha256": "346a8366d734585353f4947259a3fcd969dd00380e8e7c4d5cbadc8c87584712",
+      "domain_sha256": "ccc6262469d4c190d03c677dc4595587e7538c4c262f74603055ce7fcd3e60df",
+      "assignments": 1728,
+      "windows": 1,
+      "role_sizes": {
+        "stock": 6,
+        "tool": 6,
+        "repair_stock": 6,
+        "procedure": 2,
+        "peer": 2,
+        "group": 2
+      }
+    },
+    "canonical-08": {
+      "path": "records/canonical-08.json.gz",
+      "raw_sha256": "51b30cb5819aa0c97576b79de35d29146636ea5e6c1b6947d731fbe70a380f84",
+      "raw_arity": 6,
+      "native_sha256": "07fd74f385f36f0d6e777d5b00ebd1727f3d31cb33cb835fbb8f23b40380f7b1",
+      "adapter_sha256": "aba0b1368cbf987025cb27c0b2b22b816d1cf7a86c712e35933597c206179ef4",
+      "windows_sha256": "dac3e9ce689057ac5b354d76f6c3fb81dc76e7ec55e85ce4b01e47e9c021536d",
+      "domain_sha256": "f2eb6f68767acd501a267121649ccb31a32a2f62b35c1adf01ad9cb3fc358daa",
+      "assignments": 1728,
+      "windows": 1,
+      "role_sizes": {
+        "stock": 6,
+        "tool": 6,
+        "repair_stock": 6,
+        "procedure": 2,
+        "peer": 2,
+        "group": 2
+      }
+    },
+    "canonical-09": {
+      "path": "records/canonical-09.json.gz",
+      "raw_sha256": "53a4edd2c27f57b376fd5f9bf012f7e8b1bf6af3be0cf86ba46701b237502b55",
+      "raw_arity": 6,
+      "native_sha256": "ec2899366d470760005e552712e99703310888295a9ddc89f5456410ded2a831",
+      "adapter_sha256": "525ff68238c5ce2f09ae685287bf4d21edff08e6b8c0d52dda3fc763f4a51de3",
+      "windows_sha256": "42a05155c077e4ba63c2573dddd1466f2ceddb1ae74a6c72998b840931035ad9",
+      "domain_sha256": "83e029441311e4d65fb424ca48217f2eb2c23ff19166f522de50b0da5424e374",
+      "assignments": 1728,
+      "windows": 1,
+      "role_sizes": {
+        "stock": 6,
+        "tool": 6,
+        "repair_stock": 6,
+        "procedure": 2,
+        "peer": 2,
+        "group": 2
+      }
+    },
+    "canonical-10": {
+      "path": "records/canonical-10.json.gz",
+      "raw_sha256": "521df4fab5e8efabc710a1fff04617bb396333277b6b7533b1c12a1835c29492",
+      "raw_arity": 6,
+      "native_sha256": "85f4a3622f60278b51577ecb3f2aabc0caf35ee55f9a2d569ccaa6745669b2b9",
+      "adapter_sha256": "0c8b6b4f222a423865247c94fd0aefb9e58a7076a02212c5b7051b6ab80acedd",
+      "windows_sha256": "d5771435b77af03d0f229ca68e1c9d063df1582316551bd6b0646f6cfb68967f",
+      "domain_sha256": "a9402dbc577cac696710c2c5f6ca406cd3c566826af70b90c3e12bb244756220",
+      "assignments": 1728,
+      "windows": 1,
+      "role_sizes": {
+        "stock": 6,
+        "tool": 6,
+        "repair_stock": 6,
+        "procedure": 2,
+        "peer": 2,
+        "group": 2
+      }
+    },
+    "canonical-11": {
+      "path": "records/canonical-11.json.gz",
+      "raw_sha256": "8595b6df20cd3aa2c0ced60e1e4429d1abf96e20386f26d3986ee09c7bc263ae",
+      "raw_arity": 6,
+      "native_sha256": "1b4ca84f96a33574b1e5e828028e4f33874a645c489cdc545fdcf7afa209a655",
+      "adapter_sha256": "e32d2e132a859acbc9c1f1adfdebb9ffce470e03492cf9a73ac5ee164e2d269f",
+      "windows_sha256": "1a4554214f1216a47b4d49dfe5d8496a46e7e5c174192daa0a5870f1bb707f1e",
+      "domain_sha256": "f1b9db22b477080d67220f47662217f8c090d8fe93d64570cd1bc150bd44755e",
+      "assignments": 1728,
+      "windows": 1,
+      "role_sizes": {
+        "stock": 6,
+        "tool": 6,
+        "repair_stock": 6,
+        "procedure": 2,
+        "peer": 2,
+        "group": 2
+      }
+    },
+    "canonical-12": {
+      "path": "records/canonical-12.json.gz",
+      "raw_sha256": "de67ec4c473a3ca646a389d8b9f49b2fe560292d851e6ca92333d9509cab1c4f",
+      "raw_arity": 6,
+      "native_sha256": "6ecb8a5f241b75564f82d783f99e104991f59b650b71508f039592af8da33866",
+      "adapter_sha256": "f8f7cb7c43c96005e4338c926341619a7fc136327e719df610b0484d7de31a5a",
+      "windows_sha256": "6b87b8cc6486c84c5af05bd7554f57f351ac9c6cdd68e1362dbe221aec3c0d8d",
+      "domain_sha256": "ac96018199670cd4604d3a35569b9f61079a7e7ddf273773d71ecd53b2781543",
+      "assignments": 1728,
+      "windows": 1,
+      "role_sizes": {
+        "stock": 6,
+        "tool": 6,
+        "repair_stock": 6,
+        "procedure": 2,
+        "peer": 2,
+        "group": 2
+      }
+    },
+    "canonical-13": {
+      "path": "records/canonical-13.json.gz",
+      "raw_sha256": "f124addcb38a003e6c26ab0e2ed4bb0530a4a4b78644b0d56b972d100588ecc9",
+      "raw_arity": 6,
+      "native_sha256": "a28950bc37e09e98373d38e355abe8d5e9913e0c3e09d122a5b3fb0df33c8773",
+      "adapter_sha256": "688c976cb70baec9f77f0abc5d949e6c78fa4a0ad229762d78969f713df40303",
+      "windows_sha256": "88f80fc2322b0703e3111690489a45e4f7377896c5a34a433a541851e58c4d42",
+      "domain_sha256": "cb5d4d3994abb0961f65e29f6ce2f89a1ce3b856b87cd4547faf38bdf006b4d8",
+      "assignments": 1728,
+      "windows": 1,
+      "role_sizes": {
+        "stock": 6,
+        "tool": 6,
+        "repair_stock": 6,
+        "procedure": 2,
+        "peer": 2,
+        "group": 2
+      }
+    },
+    "canonical-14": {
+      "path": "records/canonical-14.json.gz",
+      "raw_sha256": "74e3560af5a99b3f3ddf4dc2252022b7b2db21a02bb1c12e7a6973536cc98eb0",
+      "raw_arity": 6,
+      "native_sha256": "a69e4323bfb80bd5ab30c9e54f3a08ddefb91180efa92c52ad50553c839d1664",
+      "adapter_sha256": "f9b90c29d39665496d7aff9eda0875679c5a802a078b6aa49365a4fbd175b8c9",
+      "windows_sha256": "ffd3a59249c51dcaf52cd2801c75cea43961401db3980e7e1a847c9f34e7e46e",
+      "domain_sha256": "1b247b1f9f5d6a8147a44132b6c7ed3971bffcb8dbce75f53541dd61854fa38f",
+      "assignments": 1728,
+      "windows": 1,
+      "role_sizes": {
+        "stock": 6,
+        "tool": 6,
+        "repair_stock": 6,
+        "procedure": 2,
+        "peer": 2,
+        "group": 2
+      }
+    },
+    "canonical-15": {
+      "path": "records/canonical-15.json.gz",
+      "raw_sha256": "77b7bdba82d536a7240954b895a7b06687d70e8834f226015905cd2340707724",
+      "raw_arity": 6,
+      "native_sha256": "b45259e6205d830692316711577d7b6427d81d9c249b3a1bfbf6509337578eae",
+      "adapter_sha256": "2ab57e46ad97a0bb8344cfe8c38504b21360577eeea0512db775f4aede889727",
+      "windows_sha256": "7eadacb689abaee203295ce97a15eb4bf022f23212e7b699a27c960d14fc60a7",
+      "domain_sha256": "575eb9715e0829daffc233d65566a0e645a168987409a25f86a87862a6ad51ab",
+      "assignments": 1728,
+      "windows": 1,
+      "role_sizes": {
+        "stock": 6,
+        "tool": 6,
+        "repair_stock": 6,
+        "procedure": 2,
+        "peer": 2,
+        "group": 2
+      }
+    },
+    "workflow-01": {
+      "path": "records/workflow-01.json.gz",
+      "raw_sha256": "15f137e134dabcaf185809f407da9a8696b420e69d0c0df020d3ea4f5519ad43",
+      "raw_arity": 6,
+      "native_sha256": "b28d040071e27f84bde3767c8c19eb5a54dab49325a747649b142e107d725cf7",
+      "adapter_sha256": "cffe4176fc8e323d0ae9ad44f4bd7e96f160265b667f8c75179391c702957f40",
+      "windows_sha256": "c6fc5679220fef330b19243343902b11e9b22a56f92d81bcf80aae727e56b92e",
+      "domain_sha256": "7a854d7c154803051ccbcc04154e9003bab6e2a5b9cbdff2a2210aed8b9f0d07",
+      "assignments": 12384,
+      "windows": 3,
+      "role_sizes": {
+        "stock": 8,
+        "relation": 43,
+        "procedure": 2,
+        "peer": 2,
+        "group": 3
+      }
+    },
+    "workflow-02": {
+      "path": "records/workflow-02.json.gz",
+      "raw_sha256": "60fc4371355ce931945a39d599f72fd63590e7111781e5b691d4933a87b5ff33",
+      "raw_arity": 6,
+      "native_sha256": "fb06d847589c00b047632c0f9e999045126ce622d74ac7afeabc6561dc9dc9d9",
+      "adapter_sha256": "707fe8bd827e81e22e92dcad774066610e2b9b7ac84e4fd40df23aa20d7898a6",
+      "windows_sha256": "6dba98e8a52e23a91198fe1c5f1c78d2444981fcac8bc8125890ff3463542bee",
+      "domain_sha256": "769bdb705f4405444026abfeddfa8343956b434bea57d3a7cead17b34ffec13c",
+      "assignments": 12384,
+      "windows": 3,
+      "role_sizes": {
+        "stock": 8,
+        "relation": 43,
+        "procedure": 2,
+        "peer": 2,
+        "group": 3
+      }
+    },
+    "workflow-03": {
+      "path": "records/workflow-03.json.gz",
+      "raw_sha256": "95b50cc8291539f693ee4379ae47036e43d8da91b5dd45c4ea522f74b51bba19",
+      "raw_arity": 6,
+      "native_sha256": "e9bb7d5743cabb9a8f031b1abe3567b05aa9e704bd0ddbf5a80d6aad9cbb1e0a",
+      "adapter_sha256": "6dbc0a6cc9d3ae5fc1b61e0d81a8d118ce3b8543ac776cc7ff94ef4c23fc79ae",
+      "windows_sha256": "f1ebf6bdc73c491c25c917ea4cfd00f93620f6a047584beb5077b215a47d0140",
+      "domain_sha256": "7645cb3be129c97d761bd146a2c4467c1f4d5b02d8399427a84db0209cbeb297",
+      "assignments": 12384,
+      "windows": 3,
+      "role_sizes": {
+        "stock": 8,
+        "relation": 43,
+        "procedure": 2,
+        "peer": 2,
+        "group": 3
+      }
+    },
+    "workflow-04": {
+      "path": "records/workflow-04.json.gz",
+      "raw_sha256": "dda769c3509d02b51faae5d27013d188f3ce7719e55fd3a0aa19c03273c9c072",
+      "raw_arity": 6,
+      "native_sha256": "bc6df2efecb1a6709af1697e6386bcf7385ed6c4cbf1969abbb81bb8c8ae7fb8",
+      "adapter_sha256": "d2fccb399ba7b5500af6654009491fde65c79b567cab6f4a3f9a3a86fb1a3b29",
+      "windows_sha256": "0105118c0da491519b8e1ca2f0845119bda15a7017fc0eb7ae51402ff7347f21",
+      "domain_sha256": "491a5561dc2c88eac146004fcd35bf1349fff8dca8b540803bb99c06a5ee269c",
+      "assignments": 12384,
+      "windows": 3,
+      "role_sizes": {
+        "stock": 8,
+        "relation": 43,
+        "procedure": 2,
+        "peer": 2,
+        "group": 3
+      }
+    },
+    "workflow-05": {
+      "path": "records/workflow-05.json.gz",
+      "raw_sha256": "fca5e8a012998000e1ba6898b67309842737ca0bfbbd7ac52c61e0a65f0b912e",
+      "raw_arity": 6,
+      "native_sha256": "7b81a2da492e65c452160efb7a98ec571016e83f04b0547ebd5c9e50ac58dd1d",
+      "adapter_sha256": "76e1777783644558a721ee742e781425af2e0d49c9525e86a61c33f85292c64c",
+      "windows_sha256": "8292ae7b1394aec771946f2a736d2b733dd6bebe7d0f5c2761b0f0bc46e26035",
+      "domain_sha256": "2a47646f3304f5df337d0764816c81189e479c3955cc4e703df55f68c926941f",
+      "assignments": 12384,
+      "windows": 3,
+      "role_sizes": {
+        "stock": 8,
+        "relation": 43,
+        "procedure": 2,
+        "peer": 2,
+        "group": 3
+      }
+    },
+    "workflow-06": {
+      "path": "records/workflow-06.json.gz",
+      "raw_sha256": "30b1ca136f3c090f68ca21db863dfa38e3807df37bbdeda67e02789a70c26c60",
+      "raw_arity": 6,
+      "native_sha256": "0d605e8b3619dc509a88ea883a459a81bb45ad9a6967fbf89a49c7a85a6c5f26",
+      "adapter_sha256": "2c89ad3df082297ebf1b0fbec4b6acf15558eeb38168a6ddfdd710388dec9fa9",
+      "windows_sha256": "8bac2ee10d6570c597e142be7ee799aba1c25b98c67c73f936846733bd7a41b0",
+      "domain_sha256": "ab905832d68e51a6ac3cbc1f4136ccecf95827feb54883c0bc0c3b3759e5fc00",
+      "assignments": 12384,
+      "windows": 3,
+      "role_sizes": {
+        "stock": 8,
+        "relation": 43,
+        "procedure": 2,
+        "peer": 2,
+        "group": 3
+      }
+    },
+    "workflow-07": {
+      "path": "records/workflow-07.json.gz",
+      "raw_sha256": "e8185e9acd80259c1ff7a674476d536221df3d29984c315a00cdda6f853786bd",
+      "raw_arity": 6,
+      "native_sha256": "29afdf292b54f7195933096d1bc9158eaedc977289c5a73337781693e77a59de",
+      "adapter_sha256": "a4608b918914ff313192b3a1c42f8700195090e55d459f57b8e5e57ad76677d3",
+      "windows_sha256": "ce335d3d0594961f10efe3b19e7c8d46d28468756758e9c4de952d721aa46bc6",
+      "domain_sha256": "0bfd83a63b7d5c67a91af8730ead9a251cfb6ee06ec5faaddbfdb868399044d4",
+      "assignments": 12384,
+      "windows": 3,
+      "role_sizes": {
+        "stock": 8,
+        "relation": 43,
+        "procedure": 2,
+        "peer": 2,
+        "group": 3
+      }
+    },
+    "workflow-08": {
+      "path": "records/workflow-08.json.gz",
+      "raw_sha256": "a695184a5e087d264d48fb7e16bed83360653384a340ac9a2ba40a2c19b2c34b",
+      "raw_arity": 6,
+      "native_sha256": "21adcd9e63efbef9ceb723425b6f1c8baf929ca9afccba7f312908223b8fc09f",
+      "adapter_sha256": "819748e2b8db6c3180c12018a9e5427aa65df8275a52566c5254410945514a10",
+      "windows_sha256": "e07d95fe8d7f7e1fec1a4ee2978a06e8fe89009de2ac99b90f9deb6e0c8e53e6",
+      "domain_sha256": "baca274d137397f43db214ee0502205d7ace972da4cf8bc8adfd16ef64bd885a",
+      "assignments": 12384,
+      "windows": 3,
+      "role_sizes": {
+        "stock": 8,
+        "relation": 43,
+        "procedure": 2,
+        "peer": 2,
+        "group": 3
+      }
+    },
+    "workflow-09": {
+      "path": "records/workflow-09.json.gz",
+      "raw_sha256": "33922892f3c89002654d1e3a7752127abb06cf14536332f72230b47bd631e62e",
+      "raw_arity": 6,
+      "native_sha256": "b3b3a5b9eb6ab40fb2b269cd5345a1526f7e74a5a439adc3fdf2bb9644e29a7e",
+      "adapter_sha256": "626a79a45cc988c0041c922c399b82902ac0d659573115d8156e19e1b19cb40c",
+      "windows_sha256": "66a5e383f512a57a1ca8c141cc15440afad15a7950da1b26f55239ef58976e3b",
+      "domain_sha256": "11f3c21786b4faf9999758e2f5f416a10710d9599bd49cf3568cb17960595f6c",
+      "assignments": 12384,
+      "windows": 3,
+      "role_sizes": {
+        "stock": 8,
+        "relation": 43,
+        "procedure": 2,
+        "peer": 2,
+        "group": 3
+      }
+    },
+    "workflow-10": {
+      "path": "records/workflow-10.json.gz",
+      "raw_sha256": "7f3c1266d0c8c5c7b22135dd80188e1eac896a5a88f8727155a8141b0e4a9a31",
+      "raw_arity": 6,
+      "native_sha256": "795737b7a179dadedba857db83a839a2d904c4ae5fd127e3bfb6f70035052dd1",
+      "adapter_sha256": "d37a1e954e3fadcc0db271c80d46271b5e7de2d1487235e03c79f945f4dcd766",
+      "windows_sha256": "c3fb76dee1f0f6297f5e632fb2cf27703cd242fffa8ce4d6ebfe4e00a3b1e798",
+      "domain_sha256": "cc23a796d7b4a7a110f27311bd2182baa43f27a99bc6daf94c5cee9845cd79cc",
+      "assignments": 12384,
+      "windows": 3,
+      "role_sizes": {
+        "stock": 8,
+        "relation": 43,
+        "procedure": 2,
+        "peer": 2,
+        "group": 3
+      }
+    },
+    "workflow-11": {
+      "path": "records/workflow-11.json.gz",
+      "raw_sha256": "00ebf6a2f8a4f5774da1b847aadfec215064e2213784695a6213bf5b98b2df97",
+      "raw_arity": 6,
+      "native_sha256": "9c754680c2d5ba418237cd1ba9ebd26518f7698b39221655e26951a03e93d888",
+      "adapter_sha256": "603806b9d054e5cfc858236acad47838c1a54778a2d4832e81deaf7ef797f0ba",
+      "windows_sha256": "a54d422ccc7cf595e878d28f2c21f638d15651c6b566f272243d913240019c5e",
+      "domain_sha256": "e021691e2fc296ffd069d0edeae790d2bf378bc756e85f17d226a38acf1d8ab7",
+      "assignments": 12384,
+      "windows": 3,
+      "role_sizes": {
+        "stock": 8,
+        "relation": 43,
+        "procedure": 2,
+        "peer": 2,
+        "group": 3
+      }
+    },
+    "workflow-12": {
+      "path": "records/workflow-12.json.gz",
+      "raw_sha256": "8c84754b44c5f9884ee1e954326738ee265ea7a381ce2109eecccbc5ec10aed2",
+      "raw_arity": 6,
+      "native_sha256": "5a8bc4d664e2bc40a9cabe61ec6181b544763b94048396404dc01c96ec223c9e",
+      "adapter_sha256": "c2fd6ff0e4d6ea5451414f77c954c11c53584ec943b66a9a87db119ff8e687ff",
+      "windows_sha256": "09863eb4cd7690c45bfbad10f5247265fd8e56cefc62ccc24e89467226713261",
+      "domain_sha256": "8cba4ca622c8cf7443ef7b8bbe0a48b3a91829b7b3bb5c7d0a97f8f330b5a052",
+      "assignments": 12384,
+      "windows": 3,
+      "role_sizes": {
+        "stock": 8,
+        "relation": 43,
+        "procedure": 2,
+        "peer": 2,
+        "group": 3
+      }
+    },
+    "workflow-13": {
+      "path": "records/workflow-13.json.gz",
+      "raw_sha256": "2b9ac614312859a65ebb62baa68731ad4d4524594b8f4714d3eceaf4b84cd20b",
+      "raw_arity": 6,
+      "native_sha256": "eae7a9deb2d56b2c552c7183ac277e99378f5c68a6a07974fed97ebfc0c82772",
+      "adapter_sha256": "763da7c0ffa53fa2bfbf17106b846bc04249926ab14a3da04587149ab8303898",
+      "windows_sha256": "26e1101f9d763a26d109babecaff5438b91437afaac844292c1e824f37439dd1",
+      "domain_sha256": "4e2f5b2e87ca17e9e2e0c3b455ea7d1f771e3ae9486e765cacdd602ad6d0d729",
+      "assignments": 12384,
+      "windows": 3,
+      "role_sizes": {
+        "stock": 8,
+        "relation": 43,
+        "procedure": 2,
+        "peer": 2,
+        "group": 3
+      }
+    },
+    "workflow-14": {
+      "path": "records/workflow-14.json.gz",
+      "raw_sha256": "1924b3d16f32f6f6abce3f73b81a7bad1f2ae55a2106ceb86d254546f590cb71",
+      "raw_arity": 6,
+      "native_sha256": "e29e031349d2acbf78a798853d426dedcd0ec091984f3fe5350661d27db2ce00",
+      "adapter_sha256": "5d7b19bc49db0a6c445cf82e8b0e3a53675107857a6c7478821da21206b0b088",
+      "windows_sha256": "05082ab74123cc338249578b115bf2ac77dc3b847a8bb2e495b2985811fbea35",
+      "domain_sha256": "b05a66ca9a12609dcbf0851e9a27d295e767de6562256c856d02263286150116",
+      "assignments": 12384,
+      "windows": 3,
+      "role_sizes": {
+        "stock": 8,
+        "relation": 43,
+        "procedure": 2,
+        "peer": 2,
+        "group": 3
+      }
+    },
+    "workflow-15": {
+      "path": "records/workflow-15.json.gz",
+      "raw_sha256": "c1724f6519aa2e6105a1da01f02a40cb495b35db9dc32fc697671c3a0f1b912e",
+      "raw_arity": 6,
+      "native_sha256": "b212b97e53a88b1d4b95ade757e0a40d082196691b9549cac0dccdf97c5a85c7",
+      "adapter_sha256": "be3b87e45f43f16a6acba1a89f3256b7320b7a82824af84ea1aa4e274a6a1c46",
+      "windows_sha256": "0febc558c71cda86e2587485f284b0ac41f2da597e3164c2b4f91cae9b479f79",
+      "domain_sha256": "b039636d6ee111035054af61387009deec34fbecfa45ff4ddf03370da4a472d2",
+      "assignments": 12384,
+      "windows": 3,
+      "role_sizes": {
+        "stock": 8,
+        "relation": 43,
+        "procedure": 2,
+        "peer": 2,
+        "group": 3
+      }
+    }
+  },
+  "question": "What are the exact unchanged native comparison costs and affordability results for every request in each accepted current A12E1 domain after paid processing? Quote before any new payment; stale A12C receipts never apply.",
+  "source": "Use only the 30 exact accepted A12E1 six-field saved records. Bind each compressed raw, current native, adapter, source windows and domain report. Restore an immutable base native selection engine from the saved current native state only for read-only quotation. Never restore or call an A12D/A12D2 processing adapter, and never execute an engine command.",
+  "quotation": "Enumerate every A12E1 mixed-radix ordinal without pruning or sampling. Construct the exact typed request using the accepted reader. Canonical: rejection costs1; otherwise 1+scanned+foreign_total+33+sum(examined). Workflow: rejection costs1; otherwise require explicit workflow v4 and cost 1+len(items)+len(all32cells)+sum(examined). Persist each ordered per-request row, native snapshot/candidate projection hashes, nominee and required units, plus the exact aggregate energy/time cost, current wallet and affordability/deficit. Read-only selection views and policies must leave world, access, profile and cursor state byte-exact.",
+  "funding": "Quotation itself spends nothing and grants nothing. Each of the30 branches is independent; never aggregate wallets across masks or settings. An affordable exact quote permits only a separately registered fresh paid comparison. An insufficient quote requires lawful independently paid funding work; no wallet refill, mint, refund, cross-branch transfer, discount or lower-bound substitution.",
+  "audit": "A new independent auditor may import the unchanged base native selection engines and accepted A12E1 request reader but not the new quotation runtime/evaluator. It must independently reconstruct every ordinal, request hash, rejection or full candidate projection, cost formula, exact total, current wallet and unchanged native state from saved bytes. Full audit, not sampled agreement.",
+  "methods": [
+    "test_all_thirty_exact_quote_bindings",
+    "test_complete_ordered_request_rows",
+    "test_exact_native_cost_formula",
+    "test_exact_wallet_affordability",
+    "test_read_only_native_state",
+    "test_forgery_and_truncation_rejected"
+  ],
+  "gate": "30 exact typed saved quote reports and full independent audits, six new exact method bodies, complete aggregate, all600 predecessors unchanged and new source freeze before evaluation. Atomic fsync/readback/backup, exclusive jobs, launch margins and persistent evidence. No accepted A12E1/A12D2/A12C action is replayed.",
+  "required_negative_controls": "At least16 exact rejection probes per setting covering raw/native/domain mismatch, omitted or reordered ordinals, request hash, snapshot/candidates, rejection/cost formula, total, wallet, affordability, truncation, policy version, native mutation and authority flags.",
+  "claims": "Exact current quotation and affordability only. No payment, comparison result, TD5 admission, execution authority, candidate success, history credit/choice or parent FT7-FT9 acceptance. FT8 costs and denominators unchanged.",
+  "next": "For every affordable exact branch, separately register and freshly pay the full changed-input comparison with restart/cancellation/idempotence and independent saved audits. For any insufficient branch, obtain lawful paid resources before comparison. Then current TD5 role/operand/cost admission, genuine distinct-element same-priority/native-cost ties, autonomous history-only choice, chosen paid work/use, matched controls, pairs/populations and FT8-FT9.",
+  "modules": [
+    "full_theory/current_domain_quotation.py",
+    "full_theory/current_domain_quotation_audit.py",
+    "tools/evaluate_ft7_current_domain_quotation.py"
+  ],
+  "tests": "tests_ft7/test_current_domain_quotation.py",
+  "ft8_unchanged": true,
+  "no_accepted_stage_replay": true,
+  "source_evidence": {
+    "filename": "FT7_Post_Processing_Domain_A12E1_Validated_Evidence_20261016.zip",
+    "sha256": "04f4ddb762ebcb335864e4659ad9aa101dde48ee6f3711a465df3d8a791205dd",
+    "bytes": 46630899,
+    "members": 224
+  }
+}
