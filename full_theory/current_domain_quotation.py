@@ -4,13 +4,13 @@ from hashlib import sha256
 from pathlib import Path
 
 from hle_unified import codec
-from hle_unified.compact import seal, unseal
 from hle_unified.material import attrs
 from hle_unified.operations import wallet_address
 from hle_unified.selection_execution import SelectionEngine
 from hle_unified.selection_records import dumps, fields_of, loads
 from hle_unified.workflow_selection_execution import WorkflowFinalSelectionEngine
 
+from .cue_comparison import CueCanonicalEngine, CueWorkflowEngine
 from .post_processing_domain import request_at
 
 
@@ -81,20 +81,20 @@ class CurrentDomainQuotation:
             digest(native),
         ):
             raise ValueError("complete current domain required")
-        cls = SelectionEngine if setting == "canonical" else WorkflowFinalSelectionEngine
-        self.native_state = unseal(native, loads(native)["schema"])
-        self.engine = cls.restore(seal(cls.SCHEMA, self.native_state))
+        cls = CueCanonicalEngine if setting == "canonical" else CueWorkflowEngine
+        self.engine = cls.restore(native)
         self.native = native
         self.domain = domain
         self.setting = setting
         self.mask = mask
         self.raw_sha256 = raw_sha256
         self.d = d
+        self.before = native
         self.wallet_ref = self.engine.world.head(wallet_address(d["actor"]).identity)
         self.wallet = attrs(self.wallet_ref)
 
     def unchanged(self):
-        return unseal(self.engine.checkpoint(), self.engine.SCHEMA) == self.native_state
+        return self.engine.checkpoint() == self.before
 
     def row(self, ordinal):
         request = request_at(self.domain, ordinal)
