@@ -1,12 +1,12 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "ready",
-  "run_id": null,
-  "active_worker": false,
-  "lease_expires_at": null,
-  "expected_head": "265a4ba2f94df05601ccd360a480234138a5dc88",
-  "current_batch": "FT7.Canonical.Quotation.A8",
+  "status": "running",
+  "run_id": "ft7-comparison-design-a9-2026-10-16T14:38:29.839Z",
+  "active_worker": true,
+  "lease_expires_at": "2026-10-16T15:08:29.839Z",
+  "expected_head": "f90a3e278be71afa608fb285ce15b659fe3926a6",
+  "current_batch": "FT7.Comparison.Design.A9",
   "canonical_quotation_a8": {
     "status": "passed",
     "accepted": true,
