@@ -1,19 +1,21 @@
 """A12E2 exact read-only native quotation over every current A12E1 request."""
 import json
 from hashlib import sha256
+from math import prod
 from pathlib import Path
 
 from hle_unified import codec
 from hle_unified.material import attrs
 from hle_unified.operations import wallet_address
 from hle_unified.selection_execution import SelectionEngine
-from hle_unified.selection_records import dumps, fields_of, loads
+from hle_unified.selection_records import SelectionRequest, dumps, fields_of, loads
 from hle_unified.workflow_selection_execution import WorkflowFinalSelectionEngine
+from hle_unified.workflow_selection_records import (
+    WorkflowCapacitySelectionRequest,
+    WorkflowSelectionRequest,
+)
 
 from .cue_comparison import CueCanonicalEngine, CueWorkflowEngine
-from .post_processing_domain import request_at
-
-
 VERSION = "ft-current-domain-quotation-a12e2-v1"
 ROOT = Path(__file__).resolve().parents[1]
 PROTOCOL = ROOT / "contracts/ft/FT7_Current_Domain_Quotation_A12E2_Protocol_v1.json"
@@ -29,6 +31,33 @@ WORKFLOW_KEYS = (
 
 def digest(value):
     return sha256(value.encode() if isinstance(value, str) else value).hexdigest()
+
+
+def request_from_decoded_domain(d, ordinal):
+    names = d["role_order"]
+    radices = (len(d["windows"]),) + tuple(len(d["pools"][name]) for name in names)
+    if radices != d["radices"] or prod(radices) != d["assignments"]:
+        raise ValueError("factor sizes")
+    if type(ordinal) is not int or not 0 <= ordinal < prod(radices):
+        raise ValueError("ordinal outside complete product")
+    remaining = ordinal
+    reversed_digits = []
+    for radix in reversed(radices):
+        remaining, digit = divmod(remaining, radix)
+        reversed_digits.append(digit)
+    digits = tuple(reversed(reversed_digits))
+    fields = dict(d["windows"][digits[0]])
+    fields.update(
+        (name, d["pools"][name][digit]["value"])
+        for name, digit in zip(names, digits[1:])
+    )
+    fields["key"] = d["namespace"] + str(ordinal)
+    if d["setting"] == "canonical":
+        return SelectionRequest(**fields)
+    if fields.get("procedure") is not None:
+        return WorkflowCapacitySelectionRequest(**fields)
+    fields.pop("procedure", None)
+    return WorkflowSelectionRequest(**fields)
 
 
 def snapshot_text(snapshot, setting):
@@ -97,7 +126,7 @@ class CurrentDomainQuotation:
         return self.engine.checkpoint() == self.before
 
     def row(self, ordinal):
-        request = request_at(self.domain, ordinal)
+        request = request_from_decoded_domain(self.d, ordinal)
         common = {
             "ordinal": ordinal,
             "request_sha256": digest(dumps(fields_of(request))),

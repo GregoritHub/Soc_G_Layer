@@ -1,6 +1,7 @@
 """Independent A12E2 reconstruction; never imports the new quotation runtime."""
 import json
 from hashlib import sha256
+from math import prod
 from pathlib import Path
 
 from hle_unified import codec
@@ -10,15 +11,16 @@ from hle_unified.operations import wallet_address
 from hle_unified.records import Procedure
 from hle_unified.selection_audit import reference as canonical_reference
 from hle_unified.selection_execution import SelectionEngine
-from hle_unified.selection_records import dumps, fields_of, loads
+from hle_unified.selection_records import SelectionRequest, dumps, fields_of, loads
 from hle_unified.workflow_selection_audit import reference as workflow_reference
 from hle_unified.workflow_selection_execution import WorkflowFinalSelectionEngine
+from hle_unified.workflow_selection_records import (
+    WorkflowCapacitySelectionRequest,
+    WorkflowSelectionRequest,
+)
 
 from .cue_comparison import CueCanonicalEngine, CueWorkflowEngine
 from .owned_proposal_domain_audit import _snapshot
-from .post_processing_domain import request_at
-
-
 ROOT = Path(__file__).resolve().parents[1]
 PROTOCOL = ROOT / "contracts/ft/FT7_Current_Domain_Quotation_A12E2_Protocol_v1.json"
 CANONICAL_KEYS = (
@@ -33,6 +35,29 @@ WORKFLOW_KEYS = (
 
 def digest(value):
     return sha256(value.encode() if isinstance(value, str) else value).hexdigest()
+
+
+def independently_reconstruct_request(d, ordinal):
+    names = d["role_order"]
+    radices = (len(d["windows"]),) + tuple(len(d["pools"][name]) for name in names)
+    require(radices == d["radices"] and prod(radices) == d["assignments"], "factor sizes")
+    require(type(ordinal) is int and 0 <= ordinal < prod(radices), "ordered ordinal")
+    remaining = ordinal
+    backward = []
+    for radix in reversed(radices):
+        remaining, digit = divmod(remaining, radix)
+        backward.append(digit)
+    digits = tuple(reversed(backward))
+    fields = dict(d["windows"][digits[0]])
+    for name, digit in zip(names, digits[1:]):
+        fields[name] = d["pools"][name][digit]["value"]
+    fields["key"] = d["namespace"] + str(ordinal)
+    if d["setting"] == "canonical":
+        return SelectionRequest(**fields)
+    if fields.get("procedure") is not None:
+        return WorkflowCapacitySelectionRequest(**fields)
+    fields.pop("procedure", None)
+    return WorkflowSelectionRequest(**fields)
 
 
 def snapshot_digest(snapshot, setting):
@@ -102,7 +127,7 @@ class CurrentDomainQuotationAudit:
         return self.engine.checkpoint() == self.before
 
     def row(self, ordinal):
-        request = request_at(self.domain, ordinal)
+        request = independently_reconstruct_request(self.d, ordinal)
         fields = fields_of(request)
         common = {"ordinal": ordinal, "request_sha256": digest(dumps(fields))}
         try:

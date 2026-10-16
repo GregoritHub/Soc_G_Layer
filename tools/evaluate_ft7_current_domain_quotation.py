@@ -67,8 +67,8 @@ def run():
             raise SystemExit("ownership/lease/deadline")
 
     def verify_source():
-        if len(freeze) != 614:
-            raise ValueError("exact 614-identity freeze required")
+        if len(freeze) != 616:
+            raise ValueError("exact 616-identity freeze required")
         prior = json.loads(
             (root / "contracts/ft/FT7_Post_Processing_Domain_A12E1_Source_Freeze_v1.json").read_text()
         )
@@ -477,7 +477,7 @@ def run():
             "methods": 6,
             "closed_jobs": 62,
             "failed_jobs": 0,
-            "source_identities": 614,
+            "source_identities": 616,
             "prior_identities": 600,
             "native_view_calls": native_view_calls,
             "audit_view_calls": audit_view_calls,

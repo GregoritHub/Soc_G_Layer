@@ -1,4 +1,4 @@
-Warning: truncated output (original token count: 32358)
+Warning: truncated output (original token count: 32357)
 Total output lines: 3407
 
 {
@@ -133,8 +133,8 @@ Total output lines: 3407
   "run_id": "ft7-a12e2-20261016T213945Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-16T22:39:00+00:00",
-  "expected_head": "d3ccf1b19137a9653633f257411150206951d549",
-  "current_batch": "A12E2 decoded-domain amendment prospective; all 15 canonical branches retained exact, 15 workflow branches unfinished",
+  "expected_head": "97748c4eb15abbc0e232464fc8bf3b895aa4b1ab",
+  "current_batch": "A12E2 decoded-domain correction frozen; all 15 canonical branches retained exact, 15 workflow branches pending",
   "canonical_quotation_a8": {
     "status": "passed",
     "accepted": true,
@@ -1646,7 +1646,7 @@ Total output lines: 3407
         "passed": true,
         "base": "fdede6f16721f06422d0798a79d84170969b83f8",
         "held": "c8bef62d623b55054594d1328dfd649c52811641",
-        "dependency_recipe_sha256": "df4bcf2319f6478f211f2f…2358 tokens truncated…_exact": true,
+        "dependency_recipe_sha256": "df4bcf2319f6478f211f2f160a7af…2357 tokens truncated…_exact": true,
       "manual_overlay": false,
       "sealed_baseline": 1093,
       "historical_references": 210,
