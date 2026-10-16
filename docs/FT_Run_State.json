@@ -126,12 +126,12 @@
   },
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft7-a12d2-20261016T193600Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-16T20:18:30+00:00",
-  "expected_head": "df08b48a682b57d28c9af46e2a40f7226121ccbc",
-  "current_batch": "A12D2 accepted: 50 exact bindings, 8 new methods, 48 rejection probes and 73 closed jobs; remaining FT7-FT9 open",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "5f710961be124579a01252f5b1d1bdb82ed1eab6",
+  "current_batch": "A12D2 accepted and fully saved; A12E1 current-domain protocol registered, not implemented or executed",
   "canonical_quotation_a8": {
     "status": "passed",
     "accepted": true,
@@ -545,7 +545,7 @@
       "paths_removed": 0
     }
   },
-  "next_batch": "Prospectively register complete current post-processing task/window/role domain from all30 exact accepted primaries, then freshly paid changed-input comparisons and current TD5 roles/operands/costs; genuine history-only tied choice, chosen work/use, matched controls, pairs/populations and FT8-FT9 remain.",
+  "next_batch": "Implement A12E1 under contracts/ft/FT7_Post_Processing_Domain_A12E1_Protocol_v1.json from exact30 accepted A12D/A12D2 primaries. Preserve594 predecessors; no accepted work/audit/method/aggregate replay. Complete current typed paid-observation task/window/role grammar and independent audit before newly paid changed-input comparisons/current TD5/live history-only choice, chosen work/use/matched controls and FT7-FT9.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -2490,7 +2490,7 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T20:08:30+00:00",
+  "updated_at": "2026-10-16T20:09:40+00:00",
   "skill_intake_a1": {
     "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
@@ -3301,8 +3301,26 @@
       "kind": "validation companion; exact raw/step evidence in generated archive"
     },
     "record": "docs/ft/FT7_Cue_Processing_Panel_A12D2_Record.md",
-    "summary": "docs/ft/FT7_Cue_Processing_Panel_A12D2_Summary.json"
+    "summary": "docs/ft/FT7_Cue_Processing_Panel_A12D2_Summary.json",
+    "acceptance_commit": "e955ebca0aab7b845e8824665053731ef59c4814",
+    "surviving_evaluator_workers": 0,
+    "ownership_released": true
   },
-  "ownership_released_at": "2026-10-16T18:56:20.846502+00:00",
-  "owned_workers_at_release": 0
+  "ownership_released_at": "2026-10-16T20:09:40+00:00",
+  "owned_workers_at_release": 0,
+  "post_processing_domain_a12e1": {
+    "status": "prospectively_registered_not_implemented_not_frozen_not_executed",
+    "accepted": false,
+    "protocol": "contracts/ft/FT7_Post_Processing_Domain_A12E1_Protocol_v1.json",
+    "protocol_commit": "5f710961be124579a01252f5b1d1bdb82ed1eab6",
+    "protocol_sha256": "a225a963db8427e267a4444e10f7ec8850c67e9978eeab0fa73c5323e7961eac",
+    "prior_identities": 594,
+    "exact_primary_inputs": 30,
+    "required_saved_reports": 30,
+    "required_methods": 6,
+    "native_work": 0,
+    "accepted_stage_replays": 0,
+    "parent_accepted": false,
+    "ft8_unchanged": true
+  }
 }

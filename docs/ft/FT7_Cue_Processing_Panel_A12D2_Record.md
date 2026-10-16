@@ -1,6 +1,6 @@
 # A12D2 full fixed-panel processing acceptance
 
-16 October 2026. Accepted in the registered engineering scope only.
+16 October 2026. Accepted in the registered engineering scope only. Acceptance commit: e955ebca0aab7b845e8824665053731ef59c4814. Next A12E1 protocol registered at 5f710961be124579a01252f5b1d1bdb82ed1eab6, not implemented or executed. Ownership released with zero surviving evaluator workers and no blocker.
 
 Prospective protocol: cc48912c4a55b93fb4a83c46e29567772c8ff4c6. Implementation: 59c3b72512f4b7a57485ecb560819fe3b3056499. Source freeze: 19780916484bbfe162b2b7436595ef1e223ed05c; all 594 identities and all 588 predecessors exact before and after work.
 
