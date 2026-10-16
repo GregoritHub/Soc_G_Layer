@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checks": [
+    "alias_bytes_equal_accepted_source",
+    "actual_setup_filter_selects_alias",
+    "exact_prior_source_unchanged"
+  ],
+  "source_identities": 560,
+  "prior_identities": 556,
+  "selected": [
+    "tools/evaluate_ft7_preserved_recall_floor.py"
+  ],
+  "alias_sha256": "1aece95fd7f681131d9248d4a98a9bebe843adc28f273f0b9223a7250f012d39",
+  "accepted_gate_replays": 0,
+  "native_work": 0,
+  "setup_source_changed": false,
+  "full_preparation_claim": false
+}
