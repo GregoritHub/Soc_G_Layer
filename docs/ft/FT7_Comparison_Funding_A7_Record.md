@@ -13,6 +13,8 @@ The separately versioned guard binds the exact accepted A5 native and A6 domain 
 
 Saved/restored reports are byte-exact. All493 frozen identities and all487 predecessor identities remain unchanged. Zero surviving workers verified. No native commands, engine restores, accepted stage replays or failed gates. Small raw reports, original method log and closed event log accompany this public record; large accepted A5/A6 inputs remain referenced by their existing exact evidence.
 
+Publication-only correction: the initial four public JSON copies acquired a terminal newline from text patching. That added byte was removed; all four public files now match the original saved bytes and reported SHA256 values exactly. The evaluator, original reports, source freeze and acceptance result were unchanged; no gate was rerun.
+
 Protocol `2199b972d6b0ca9739d14a2baad4db47e67cc941` preceded implementation `cd016e9808ceac003a90bc2fbca4b3ad82bae3e7`; freeze `48de908de6d61f9e10f42689722122eb61590571`.
 
 ## Continuation boundary
