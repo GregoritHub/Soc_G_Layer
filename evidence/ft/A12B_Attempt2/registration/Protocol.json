@@ -1,0 +1,10 @@
+{
+  "batch": "FT7.Fresh.CueIntake.A12B.Attempt2",
+  "authorization": "Project owner explicitly requests rerunning the affected A12B step as a new documented attempt, preserving the failed attempt, saving and verifying new evidence immediately, running all required validation, then continuing. This supersedes the earlier no-replay restriction only for workflow mask 12 and supersedes the proposed evidence-waiver continuation.",
+  "scope": "Rerun only workflow mask 12 from the exact original input using unchanged engine, adapter, auditor and test bodies. Preserve attempt1 and its empty record; do not represent attempt2 as recovered historical evidence.",
+  "evidence": "Use new attempt2 directory and new generation/audit outcomes; create exact byte copies of the other 49 records with explicit attempt1 provenance, preserving their successful audit outcomes. Save the new record atomically, fsync, read back and compare typed content; write SHA256 and independent second copy before further work. Preserve failed generation/audit attempts if any.",
+  "gate": "50 exact saved records with independent passing audits, all eight original methods and final aggregate, unchanged 576 frozen identities including 568 predecessors. The newly generated record supplies workflow-12 only with explicit attempt2 provenance. No waived validation.",
+  "continuation": "Resume FT7–FT9 only after this complete gate passes; preserve FT8 requirements.",
+  "operations": "Prospectively publish this protocol and freeze the separate attempt2 runner before execution. Existing attempt1 sources and raw records are immutable. Use exclusive new job markers. No duplicate paid rerun after a successfully saved attempt2 record. Public protocol registration was rejected by automatic approval review. Local prospective registration and source freeze precede the expressly user-authorized rerun. Remote acceptance/publication remains pending; do not claim a remote lease. An exclusive local attempt directory prevents duplicate runs.",
+  "status": "registered_not_executed"
+}

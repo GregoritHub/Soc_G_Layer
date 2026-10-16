@@ -1,3 +1,7 @@
+Current update, 16 October 2026: **A12B attempt 2 accepted** with 50 passing saved-record audits and all eight original methods. Original failed evidence preserved. Publication blocker resolved under explicit public-disclosure authorization; continue remaining FT7–FT9. [Attempt-2 record](docs/ft/FT7_Cue_Intake_A12B_Attempt2_Record.md).
+
+Historical updates below:
+
 # Soc G Layer
 
 Current held release, 16 October 2026 UTC: **A12B paid cue intake implemented, NOT ACCEPTED.** All30 primary generation jobs and8 controls closed, but original workflow mask12 raw evidence is now zero bytes. The49 retained records independently audit; the50-record/8-method gate remains incomplete, with no methods or aggregate invoked. Cause unknown; no paid replay. Exact held evidence is saved and verified; continuation paused pending original record recovery. A12A and earlier acceptances remain intact. [A12B held record](docs/ft/FT7_Cue_Intake_A12B_Record.md).

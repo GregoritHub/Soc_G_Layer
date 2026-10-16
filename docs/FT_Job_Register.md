@@ -147,3 +147,6 @@ Subsequent16 October A11 accepted: six new methods, two independent changed-stat
 
 Accepted separate setup-only exact path inclusion at freezec46d92a605693bf70f378ec2fa9da81830cec72b: one exit0 invocation, six methods,570 selected files copied exactly from743-path snapshot,549 frozen identities and543-prior bridge. Only setup literal changed; all542 other predecessors exact. No native work, dependency rebuild, accepted replay or FT9 claim. [Record](ft/FT_Setup_Tool_Overlay_A3_Record.md). A10R accepted atd68597d7e152fafa1a038f85e976a8bf222f5160; its three failed attempts and negative recall readback remain intact.
 
+
+
+[measured] A12B attempt2 accepted: one explicitly authorized workflow12 primary rerun, 49 exact original records/audits retained, all50 passing saved audits, eight unchanged methods and complete new-runner aggregate. Original277 files unchanged;576 frozen/prior568 identities exact. Publication after local prospective freeze is disclosed; original failure preserved. See FT7_Cue_Intake_A12B_Attempt2_Record.md. Continue remaining FT7–FT9; FT8 intact.

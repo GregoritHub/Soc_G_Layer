@@ -10,7 +10,8 @@
     "audits_passed": 49,
     "methods_run": 0,
     "aggregate_invoked": false,
-    "evidence_sha256": "3ab1069b729123a56901fb2dc73d0343edb3112043d861a7aaf73b9cc86d2bb1"
+    "evidence_sha256": "3ab1069b729123a56901fb2dc73d0343edb3112043d861a7aaf73b9cc86d2bb1",
+    "superseded_by": "a12b_attempt2; historical hold preserved"
   },
   "cue_intake_a12b": {
     "batch": "FT7.Fresh.CueIntake.A12B",
@@ -57,7 +58,8 @@
       "bytes": 38185859,
       "members": 297,
       "saved_readback_exact": true
-    }
+    },
+    "superseded_by": "a12b_attempt2; historical failed attempt unchanged"
   },
   "observed_cue_panel_a12a": {
     "status": "accepted",
@@ -124,12 +126,12 @@
   },
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "a12b-attempt2-publication-20261016",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-16T18:39:00.763Z",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
   "expected_head": "026a8319eee86cbfcec4ee645872db8d6c92a6d9",
-  "current_batch": "FT7.Fresh.CueIntake.A12B held, not accepted: original workflow-12 raw evidence lost; 49/50 audits, 0/8 methods; all89 jobs closed",
+  "current_batch": "FT7.Fresh.CueIntake.A12B accepted via explicitly authorized attempt2",
   "canonical_quotation_a8": {
     "status": "passed",
     "accepted": true,
@@ -543,7 +545,7 @@
       "paths_removed": 0
     }
   },
-  "next_batch": "Held: recover exact original workflow-12-complete.json.gz without regenerating completed primary work; prospectively register saved-only recovery if exact bytes become available. No tests/finish/dependent paid stage until evidence gate is restored. Prior acceptances and FT8 obligations unchanged.",
+  "next_batch": "Prospectively register paid cue-task skill/recall/comparison continuation from A12B saved states toward live history-caused choice; continue FT7–FT9 without rerunning passed A12B validation.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -615,15 +617,7 @@
     "enabled": false,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
   },
-  "blocker": {
-    "type": "missing_original_evidence",
-    "record": "workflow-12-complete.json.gz",
-    "current_bytes": 0,
-    "cause": "unknown",
-    "required": "Exact original saved native/adapter record; no completed-primary replay or generated substitute.",
-    "status": "held_not_engine_failure",
-    "private_evidence_saved": true
-  },
+  "blocker": null,
   "recovery": {
     "status": "passed",
     "inherited_methods": 751,
@@ -3050,5 +3044,28 @@
     "prior_identities": 568,
     "workers_remaining": 0,
     "note": "Verified held checkpoint, NOT acceptance; ownership-release child verified separately after expected-head update."
+  },
+  "a12b_attempt2": {
+    "status": "accepted",
+    "accepted": true,
+    "record": "docs/ft/FT7_Cue_Intake_A12B_Attempt2_Record.md",
+    "records": 50,
+    "methods": 8,
+    "new_primary_reruns": 1,
+    "original_records_reused": 49,
+    "original_attempt_files_preserved": 277,
+    "source_identities": 576,
+    "prior_identities": 568,
+    "publication_pending": false,
+    "local_prospective_freeze": true,
+    "public_prospective_registration": false,
+    "evidence": {
+      "filename": "FT7_A12B_Attempt2_Validated_Evidence.zip",
+      "sha256": "2857ff6c67d0d830938e74683728556a3045eb46836166844cc12e03329e62bc",
+      "bytes": 21366368,
+      "members": 117,
+      "saved_readback_exact": true
+    },
+    "parent_accepted": false
   }
 }

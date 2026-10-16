@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "attempt": 2,
+  "ended": "2026-10-16T18:01:01.586505+00:00",
+  "result": {
+    "passed": true,
+    "mask": 12,
+    "cue": "{\"format\":\"hle-unified-typed-json-v1\",\"payload\":{\"fields\":{\"identity\":{\"fields\":{\"key\":\"suit:Wand\",\"namespace\":\"u5.reference\"},\"record\":\"ObjectId\"},\"revision\":1},\"record\":\"ObjectRef\"},\"sha256\":\"d15e647f22da12e621ff2d4799a5ea89ae2a896187069f612d176ef05b75c862\"}",
+    "bound": true,
+    "cancelled": false,
+    "native_cost": {
+      "energy": 5,
+      "time": 5
+    },
+    "source_prefix_exact": true,
+    "controller_prefix_exact": true,
+    "reserve_history_unchanged": true,
+    "comparison_paid": false,
+    "execution_authorized": false,
+    "td5_admitted": false,
+    "history_choice": false,
+    "record": "workflow-12-complete",
+    "record_sha256": "7430502005d30ec537201c63621a05b53c6959a7a50b9ab6e0d76c1514877a2a"
+  }
+}

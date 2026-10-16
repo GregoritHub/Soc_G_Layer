@@ -1,0 +1,1 @@
+Initial launch stopped during imports before creating any attempt2 output or performing native work: ModuleNotFoundError: No module named 'hle'. Corrected execution environment by adding the existing baseline/HLE_Rebuild_R21B to PYTHONPATH. Frozen source unchanged.

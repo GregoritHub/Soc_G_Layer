@@ -1,0 +1,9 @@
+{
+  "attempt": 2,
+  "record": "workflow-12-complete.json.gz",
+  "sha256": "7430502005d30ec537201c63621a05b53c6959a7a50b9ab6e0d76c1514877a2a",
+  "bytes": 425528,
+  "typed_roundtrip": true,
+  "exact_backup": true,
+  "recovered_original": false
+}

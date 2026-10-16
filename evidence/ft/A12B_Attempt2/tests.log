@@ -1,0 +1,13 @@
+test_cancellation_debits (tests_ft7.test_cue_task_intake.CueTaskIntakeTests.test_cancellation_debits) ... ok
+test_complete_panel (tests_ft7.test_cue_task_intake.CueTaskIntakeTests.test_complete_panel) ... ok
+test_exact_restart (tests_ft7.test_cue_task_intake.CueTaskIntakeTests.test_exact_restart) ... ok
+test_historical_and_wrong_input_rejected (tests_ft7.test_cue_task_intake.CueTaskIntakeTests.test_historical_and_wrong_input_rejected) ... ok
+test_partial_ready_receipts (tests_ft7.test_cue_task_intake.CueTaskIntakeTests.test_partial_ready_receipts) ... ok
+test_prefixes_and_no_authority (tests_ft7.test_cue_task_intake.CueTaskIntakeTests.test_prefixes_and_no_authority) ... ok
+test_saved_forgery_rejected (tests_ft7.test_cue_task_intake.CueTaskIntakeTests.test_saved_forgery_rejected) ... ok
+test_terminal_idempotence (tests_ft7.test_cue_task_intake.CueTaskIntakeTests.test_terminal_idempotence) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 11.465s
+
+OK

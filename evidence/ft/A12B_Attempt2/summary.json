@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "records": 50,
+  "methods": [
+    "test_cancellation_debits",
+    "test_complete_panel",
+    "test_exact_restart",
+    "test_historical_and_wrong_input_rejected",
+    "test_partial_ready_receipts",
+    "test_prefixes_and_no_authority",
+    "test_saved_forgery_rejected",
+    "test_terminal_idempotence"
+  ],
+  "source_identities": 576,
+  "prior_identities": 568,
+  "new_primary_reruns": 1,
+  "original_records_reused": 49,
+  "original_attempt_preserved": true,
+  "original_gate_denominators_unchanged": true,
+  "publication_pending": true,
+  "comparison_paid": false,
+  "execution_authorized": false,
+  "td5_admitted": false,
+  "history_choice": false
+}

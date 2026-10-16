@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "methods": [
+    "test_cancellation_debits",
+    "test_complete_panel",
+    "test_exact_restart",
+    "test_historical_and_wrong_input_rejected",
+    "test_partial_ready_receipts",
+    "test_prefixes_and_no_authority",
+    "test_saved_forgery_rejected",
+    "test_terminal_idempotence"
+  ],
+  "failures": 0,
+  "errors": 0
+}
