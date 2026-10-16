@@ -1,0 +1,39 @@
+{
+  "schema": "ft-setup-tool-overlay-a1-amendment-v2",
+  "original_protocol_commit": "5ad22b866984bc5a93c3426021614eadfe2911e5",
+  "failed_freeze_commit": "61f52001d2b1869d3d7daa8d241e657acd4bb4a6",
+  "original_outcome": {
+    "passed": false,
+    "methods": [
+      "test_all_frozen_layer_files",
+      "test_copy_exact_public_bytes",
+      "test_exact_extension",
+      "test_existing_output_preserved",
+      "test_old_filter_preserved",
+      "test_unsafe_overlay_path_rejected"
+    ],
+    "failures": 1,
+    "errors": 0,
+    "pinned_public_blobs": 601,
+    "overlay_files": 459,
+    "additional_tools": [
+      "tools/audit_owned_repair_practice_saved.py",
+      "tools/check_owned_material_inspection_saved.py",
+      "tools/continue_ft7_1b2b3b2b2b2b2b2b1b.py",
+      "tools/continue_owned_material_inspection.py",
+      "tools/evaluate_owned_material_inspection.py",
+      "tools/evaluate_owned_repair_practice.py",
+      "tools/evaluate_recall_feasibility.py"
+    ],
+    "prior_source_identities": 439,
+    "source_identities": 445,
+    "sole_filter_ast_delta": true,
+    "dependency_rebuilds": 0,
+    "native_work": 0,
+    "accepted_test_replays": 0,
+    "ft9_accepted": false
+  },
+  "diagnosis": "test_all_frozen_layer_files excluded only baseline/ but the 439-identity runtime also includes inherited contracts, full_theory, hle_unified and fixtures absent from the pinned public tree by design. Requiring those through the overlay contradicts pinned-dependency publication boundaries. All original439 bytes were verified independently by the evaluator before and after the six-method attempt; five setup controls passed, zero errors.",
+  "correction": "Required overlay coverage is exactly prior frozen identities intersected with the pinned public-tree names. Dependency-only identities remain independently hash verified; no source is imported or newly published. Change solely this test expression and add an evaluator --freeze argument so immutable v1 freeze is retained and new v2 freeze selected explicitly. Runtime setup filter/copy body remains byte exact to failed freeze.",
+  "gate": "Freeze before full six-method setup-only retry in a fresh output. Preserve all failed attempt files and freeze hashes. No accepted engine gate, native work, dependency access or A2 replay. Verify prior439 and original setup AST bridge, all pinned public identities except declared setup delta and operational state, exact459 selected copies, all controls. Failure is test coverage classification, not native engine failure."
+}

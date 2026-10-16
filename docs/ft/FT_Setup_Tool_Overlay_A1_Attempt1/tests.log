@@ -1,0 +1,19 @@
+test_all_frozen_layer_files (overlay_tests.SetupToolOverlayTests.test_all_frozen_layer_files) ... FAIL
+test_copy_exact_public_bytes (overlay_tests.SetupToolOverlayTests.test_copy_exact_public_bytes) ... ok
+test_exact_extension (overlay_tests.SetupToolOverlayTests.test_exact_extension) ... ok
+test_existing_output_preserved (overlay_tests.SetupToolOverlayTests.test_existing_output_preserved) ... ok
+test_old_filter_preserved (overlay_tests.SetupToolOverlayTests.test_old_filter_preserved) ... ok
+test_unsafe_overlay_path_rejected (overlay_tests.SetupToolOverlayTests.test_unsafe_overlay_path_rejected) ... ok
+
+======================================================================
+FAIL: test_all_frozen_layer_files (overlay_tests.SetupToolOverlayTests.test_all_frozen_layer_files)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/8c91c400540c/runtime-b1d-recovered/tests_ft7/test_setup_tool_overlay.py", line 20, in test_all_frozen_layer_files
+    self.assertTrue(required<=set(c['select'](c['names'])),sorted(required-set(c['select'](c['names']))))
+AssertionError: False is not true : ['contracts/ft/FT0_Baseline_Protocol_v1.json', 'contracts/ft/FT0_Baseline_Protocol_v1.sha256', 'contracts/ft/FT1_Protocol_v1.json', 'contracts/ft/FT1_Protocol_v1.sha256', 'contracts/ft/FT2_Protocol_v1.json', 'contracts/ft/FT2_Protocol_v1.sha256', 'contracts/ft/FT2_Repair_Protocol_v1.json', 'contracts/ft/FT2_Repair_Protocol_v1.json.sha256', 'contracts/ft/FT3_Protocol_v1.json', 'contracts/ft/FT3_Protocol_v1.sha256', 'contracts/ft/FT3_Repair_Protocol_v1.json', 'contracts/ft/FT3_Repair_Protocol_v1.json.sha256', 'full_theory/__init__.py', 'full_theory/content.py', 'full_theory/content_audit.py', 'full_theory/historical.py', 'full_theory/retention.py', 'full_theory/retention_audit.py', 'hle_unified/axes.py', 'hle_unified/codec.py', 'hle_unified/compact.py', 'hle_unified/conditioning_audit.py', 'hle_unified/crossing_records.py', 'hle_unified/model_g.py', 'hle_unified/operation_audit.py', 'hle_unified/operations.py', 'hle_unified/selection_audit.py', 'hle_unified/selection_execution.py', 'hle_unified/selection_policy.py', 'hle_unified/selection_records.py', 'hle_unified/self_content.py', 'hle_unified/shell.py', 'hle_unified/workflow_content.py', 'hle_unified/workflow_execution.py', 'hle_unified/workflow_records.py', 'hle_unified/workflow_selection_audit.py', 'hle_unified/workflow_selection_execution.py', 'hle_unified/workflow_selection_policy.py', 'tests_c3/fixtures.py', 'tests_c5/fixtures.py', 'tests_c6/fixtures.py', 'tests_c7_workflow/fixtures.py']
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.086s
+
+FAILED (failures=1)
