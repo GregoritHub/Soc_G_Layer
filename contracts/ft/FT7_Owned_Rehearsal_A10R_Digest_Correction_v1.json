@@ -1,0 +1,28 @@
+{
+  "version": "ft-a10r-digest-correction-v1",
+  "reason": "Continuation1 closed exit1: codec.dumps cannot encode WorkflowRequest; native rejected before paid work. Exact native and base no-mutation checks passed before digest writer failed. Seven originals preserved, zero new paid work or method invocations.",
+  "change": "Separate v2 wrapper/auditor encode all WorkflowRequest fields as an explicit type-tagged tuple, with evidence encoded as delivery/key tuples, using existing U2 codec. No request/native behavior, plan, rejection condition, original methods or counts change. Separate v2 continuation uses v2 modules and complete closed binding, automatically selected evaluate_ft7 tool name. Preserve all534 prior identities exact and failed source capsule.",
+  "prior_freeze": "contracts/ft/FT7_Owned_Rehearsal_A10R_Source_Freeze_v1.json",
+  "prior_identities": 534,
+  "gate": "Unchanged six original methods plus narrow rejection test, ten saved records, sixteen original plus six new rejection probes, two exact restarts. No original paid main work replay. All accepted sources unchanged.",
+  "encoding_fields": [
+    "type",
+    "key",
+    "actor",
+    "recipe",
+    "context",
+    "cue",
+    "inputs",
+    "evidence(delivery,key)",
+    "target",
+    "stock",
+    "relation",
+    "peer",
+    "group",
+    "completed",
+    "clock",
+    "elements"
+  ],
+  "closed_failure": "20a593626af16a92f09f6e960006575f2b4e4d0a",
+  "publication_scope": "Three new implementation/tool modules; no existing frozen source change."
+}
