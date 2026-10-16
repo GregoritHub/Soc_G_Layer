@@ -3,15 +3,14 @@ import argparse,gzip,hashlib,json,pathlib,gc,unittest
 from datetime import datetime,timezone
 from hle_unified import codec
 from hle_unified.selection_records import dumps,loads
-from hle_unified.selection_execution import SelectionEngine
-from hle_unified.workflow_selection_execution import WorkflowFinalSelectionEngine
+from full_theory.paid_window_comparison import PaidCanonicalWindowEngine,PaidWorkflowWindowEngine
 from full_theory.owned_content_rehearsal import OwnedContentRehearsal
 from full_theory.owned_content_rehearsal_audit import audit,baseline
 
 def run():
     p=argparse.ArgumentParser();p.add_argument('a5');p.add_argument('output');p.add_argument('--public',required=True);p.add_argument('--owner',required=True);p.add_argument('--stop-at',required=True);a=p.parse_args()
     root=pathlib.Path(__file__).resolve().parents[1];out=pathlib.Path(a.output);out.mkdir(exist_ok=False)
-    freeze=json.loads((root/'contracts/ft/FT7_Owned_Rehearsal_A10_Source_Freeze_v1.json').read_text())
+    freeze=json.loads((root/'contracts/ft/FT7_Owned_Rehearsal_A10_Source_Freeze_v2.json').read_text())
     protocol=json.loads((root/'contracts/ft/FT7_Owned_Rehearsal_A10_Protocol_v1.json').read_text())
     sha=lambda x:hashlib.sha256(x.encode() if isinstance(x,str) else x).hexdigest()
     def guard():
@@ -31,7 +30,7 @@ def run():
         else:raise ValueError('forgery accepted '+name)
     try:
         guard();verify();note('start',owner=a.owner)
-        for setting,typ in (('canonical',SelectionEngine),('workflow',WorkflowFinalSelectionEngine)):
+        for setting,typ in (('canonical',PaidCanonicalWindowEngine),('workflow',PaidWorkflowWindowEngine)):
             guard();_,original,adapter=codec.loads(gzip.decompress((pathlib.Path(a.a5)/(setting+'-complete.json.gz')).read_bytes()).decode())
             note('restore_original',setting=setting);engine=typ.restore(original);obj=OwnedContentRehearsal(engine,adapter,setting)
             def save(label,e,o):
@@ -41,7 +40,7 @@ def run():
                 if back!=(label,n,text) or codec.dumps(back)!=raw:raise ValueError('typed saved roundtrip')
                 note('audit_start',setting=setting,label=label)
                 result=audit(e,original,adapter,setting,back[2]);result.update(setting=setting,label=label,file=file,sha256=sha((out/file).read_bytes()))
-                rows.append(result);note('record_passed',setting=setting,label=label,energy=result['energy'])
+                rows.append(result);(out/'progress.json').write_text(json.dumps(rows,indent=2)+'\n');note('record_passed',setting=setting,label=label,energy=result['energy'])
             save('before',engine,obj)
             obj.step(engine,work_limit=1);save('partial',engine,obj)
             partial_native=engine.checkpoint();partial_text=obj.checkpoint(engine)
@@ -49,7 +48,11 @@ def run():
                 for step in range(256):
                     guard()
                     if o.phase in ('complete','cancelled'):return
-                    o.step(e,work_limit=1000000);note('work',setting=setting,index=o.index,phase=o.phase)
+                    o.step(e,work_limit=1000000)
+                    temporary=out/(setting+'-current.pending.gz')
+                    temporary.write_bytes(gzip.compress(codec.dumps(('current',e.checkpoint(),o.checkpoint(e))).encode(),mtime=0))
+                    temporary.replace(out/(setting+'-current.json.gz'))
+                    note('work',setting=setting,index=o.index,phase=o.phase)
                 raise ValueError('step bound')
             finish(engine,obj);save('complete',engine,obj);complete_native=engine.checkpoint();complete_text=obj.checkpoint(engine)
             terminal=(complete_native,complete_text);obj.step(engine)
