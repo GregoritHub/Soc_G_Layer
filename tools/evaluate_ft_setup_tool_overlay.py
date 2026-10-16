@@ -16,12 +16,13 @@ def code(nodes):return compile(ast.fix_missing_locations(ast.Module(body=nodes,t
 
 def run():
     p=argparse.ArgumentParser();p.add_argument('old_setup');p.add_argument('output')
+    p.add_argument('--freeze',default='contracts/ft/FT_Setup_Tool_Overlay_A1_Source_Freeze_v1.json')
     p.add_argument('--public',required=True);p.add_argument('--owner',required=True);p.add_argument('--stop-at',required=True);a=p.parse_args()
     root=pathlib.Path(__file__).resolve().parents[1];public=pathlib.Path(a.public);out=pathlib.Path(a.output);out.mkdir(exist_ok=False)
     prefix='contracts/ft/FT_Setup_Tool_Overlay_A1_'
     protocol=json.loads((root/(prefix+'Protocol_v1.json')).read_text())
     binding=json.loads((root/(prefix+'Input_Tree_v1.json')).read_text())
-    freeze=json.loads((root/(prefix+'Source_Freeze_v1.json')).read_text())
+    freeze=json.loads((root/a.freeze).read_text())
     prior=json.loads((root/protocol['prior_source_freeze']).read_text())
     oldpath=pathlib.Path(a.old_setup);oldtext=oldpath.read_text()
     def guard():

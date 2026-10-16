@@ -16,7 +16,7 @@ class SetupToolOverlayTests(unittest.TestCase):
 
     def test_all_frozen_layer_files(self):
         c=CONTEXT
-        required={n for n in c['prior_freeze'] if not n.startswith('baseline/')}
+        required=set(c['prior_freeze']) & set(c['names'])
         self.assertTrue(required<=set(c['select'](c['names'])),sorted(required-set(c['select'](c['names']))))
 
     def test_copy_exact_public_bytes(self):
