@@ -5,7 +5,7 @@
   "run_id": "ft7-comparison-design-a9-2026-10-16T14:38:29.839Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-16T15:08:29.839Z",
-  "expected_head": "f90a3e278be71afa608fb285ce15b659fe3926a6",
+  "expected_head": "27ced080b3e734a35a71fb8126a56625829943d2",
   "current_batch": "FT7.Comparison.Design.A9",
   "canonical_quotation_a8": {
     "status": "passed",
@@ -420,7 +420,7 @@
       "paths_removed": 0
     }
   },
-  "next_batch": "Prospectively design lawful complete-domain changed-input comparison or an independently specified route-free fresh panel. Canonical exact432864 exceeds197808 wallet by235056; workflow floor4920480 exceeds175698 by4744782. No unaffordable launch, refill, hidden pruning, free/shared factorization credit, new pricing under old labels or bypass of current oldest need/deferral. A8 is quotation only. Genuine distinct-element ties, autonomous history-only choice, paid chosen work/use, matched controls/full staging and FT7 pairs/populations FT8-FT9 remain open.",
+  "next_batch": "A9 universally vetoes all work for exact A5/A6/B1C current inputs without comparison payment or pruning. Existing current oldest need remains deferred. Prospectively design lawful paid recall organization/fresh skill work or an independently specified route-free fresh panel, preserving older unresolved demand and all full-domain gates. Changed inputs require new paid comparisons; canonical prior exact432864 exceeds197808 and workflow floor4920480 exceeds175698. No refill, forced ties, hidden pruning, shared/free payment credit, altered old labels or bypass. Distinct-element ties, autonomous history-only choice, paid chosen work/use, matched controls/full staging, FT7 pairs/populations and FT8-FT9 remain open.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -485,7 +485,7 @@
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT7_Canonical_Quotation_A8_Record.md",
+  "latest_record": "docs/ft/FT7_Universal_TD5_Veto_A9_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
@@ -745,7 +745,7 @@
     "source_publication": "verified",
     "prior_failed_attempts": 6
   },
-  "latest_acceptance_record": "docs/ft/FT7_Canonical_Quotation_A8_Record.md",
+  "latest_acceptance_record": "docs/ft/FT7_Universal_TD5_Veto_A9_Record.md",
   "engineering_continuation": {
     "batch": "FT7.1b2b3b",
     "accepted": false,
@@ -2303,19 +2303,38 @@
   "prior_paid_window_acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2",
   "latest_acceptance_commit": "265a4ba2f94df05601ccd360a480234138a5dc88",
   "latest_local_acceptance": {
-    "batch": "FT7.Canonical.Quotation.A8",
-    "passed": true,
+    "batch": "FT7.Comparison.Design.A9",
+    "status": "passed",
+    "accepted": true,
+    "protocol_commit": "79eb0b3a945f89c86a053d043d6ee7cfd83316ba",
+    "implementation_commit": "154d725d1d7c5aa5fc0f3916fb02bf45dc9cc0b7",
+    "freeze_commit": "27ced080b3e734a35a71fb8126a56625829943d2",
+    "source_identities": 517,
+    "prior_identities": 510,
     "methods": 6,
-    "records": 2,
-    "independent_rows": 5832,
-    "forgeries": 21,
-    "source_identities": 510,
-    "original_source_identities": 499,
-    "prior_identities": 493,
-    "quote_invocations": 1,
-    "new_native_view_calls": 0,
-    "native_work_calls": 0,
-    "acceptance_commit": "265a4ba2f94df05601ccd360a480234138a5dc88"
+    "records": 4,
+    "forgery_rejections": 36,
+    "boundary_cases": 128,
+    "canonical_assignments": 5832,
+    "workflow_assignments": 4920480,
+    "all_work_ineligible": true,
+    "comparison_paid": false,
+    "native_commands": 0,
+    "native_view_calls": 0,
+    "engine_restores": 0,
+    "accepted_stage_replays": 0,
+    "session": 78327,
+    "exit_code": 0,
+    "workers_remaining": 0,
+    "source_unchanged": true,
+    "parent_accepted": false,
+    "evidence": {
+      "filename": "FT7_Universal_TD5_Veto_A9_Evidence_20261016.zip",
+      "sha256": "fb40b7485fc14a0835e87081e1dcdefe33d65ba272936923e5810f6c03787adb",
+      "bytes": 14884,
+      "manifest_members": 11,
+      "all_members_verified": true
+    }
   },
   "recall_feasibility_progress": {
     "status": "diagnostic_pass",
@@ -2341,7 +2360,7 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T13:01:29.000Z",
+  "updated_at": "2026-10-16T14:57:00Z",
   "skill_intake_a1": {
     "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
@@ -2699,5 +2718,39 @@
     "canonical_exact_quote": 432864,
     "canonical_deficit": 235056,
     "canonical_quote_record": "docs/ft/FT7_Canonical_Quotation_A8_Record.md"
+  },
+  "universal_td5_veto_a9": {
+    "batch": "FT7.Comparison.Design.A9",
+    "status": "passed",
+    "accepted": true,
+    "protocol_commit": "79eb0b3a945f89c86a053d043d6ee7cfd83316ba",
+    "implementation_commit": "154d725d1d7c5aa5fc0f3916fb02bf45dc9cc0b7",
+    "freeze_commit": "27ced080b3e734a35a71fb8126a56625829943d2",
+    "source_identities": 517,
+    "prior_identities": 510,
+    "methods": 6,
+    "records": 4,
+    "forgery_rejections": 36,
+    "boundary_cases": 128,
+    "canonical_assignments": 5832,
+    "workflow_assignments": 4920480,
+    "all_work_ineligible": true,
+    "comparison_paid": false,
+    "native_commands": 0,
+    "native_view_calls": 0,
+    "engine_restores": 0,
+    "accepted_stage_replays": 0,
+    "session": 78327,
+    "exit_code": 0,
+    "workers_remaining": 0,
+    "source_unchanged": true,
+    "parent_accepted": false,
+    "evidence": {
+      "filename": "FT7_Universal_TD5_Veto_A9_Evidence_20261016.zip",
+      "sha256": "fb40b7485fc14a0835e87081e1dcdefe33d65ba272936923e5810f6c03787adb",
+      "bytes": 14884,
+      "manifest_members": 11,
+      "all_members_verified": true
+    }
   }
 }
