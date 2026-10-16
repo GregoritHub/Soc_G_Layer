@@ -131,7 +131,7 @@
   "active_worker": true,
   "lease_expires_at": "2026-10-16T20:18:30+00:00",
   "expected_head": "300aee98e0af58a5a859c9f8d43a2c46b6c6a4bb",
-  "current_batch": "A12D2 full fixed-panel extension: frozen implementation, new primary generation in progress; no acceptance yet",
+  "current_batch": "A12D2: all28 new primaries and4 controls closed; generated evidence saved and byte-verified before38 new audits; gate not yet accepted",
   "canonical_quotation_a8": {
     "status": "passed",
     "accepted": true,
@@ -3226,7 +3226,20 @@
     "acceptance_commit": "2cc0161667f8cffc05601be4ada8025c5a9ab1cf"
   },
   "cue_processing_panel_a12d2": {
-    "status": "frozen_generation_in_progress_not_accepted",
+    "status": "generation_closed_validation_in_progress_not_accepted",
+    "closed_new_primary_jobs": 28,
+    "closed_new_control_jobs": 4,
+    "new_raw_records": 38,
+    "generated_evidence": {
+      "filename": "FT7_Cue_Processing_Panel_A12D2_Generated_Evidence_20261016.zip",
+      "sha256": "cbbadb487508dbe9ad6ce65c4922fd32ecf2460223690facf381559767a2e173",
+      "bytes": 121648518,
+      "members": 339,
+      "saved_as_ordered_parts": 3,
+      "downloaded_reconstruction_byte_exact": true,
+      "whole_archive_transfer_failures": 2,
+      "native_replays": 0
+    },
     "implementation_commit": "59c3b72512f4b7a57485ecb560819fe3b3056499",
     "freeze_commit": "19780916484bbfe162b2b7436595ef1e223ed05c",
     "source_identities": 594,
@@ -3248,7 +3261,7 @@
     "record_gate": 50,
     "method_gate": 8,
     "accepted": false,
-    "engine_work": 0,
+    "engine_work": "28 new primary branches and4 new controls; accepted work never replayed",
     "parent_accepted": false,
     "ft8_unchanged": true
   },
