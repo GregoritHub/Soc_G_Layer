@@ -126,12 +126,12 @@
   },
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft7-a12e2-20261016T204000Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-16T21:10:00+00:00",
-  "expected_head": "d9612bd0af9ebdcfa2281cde2a6ebafed11e939f",
-  "current_batch": "A12E2 exact current-domain quotation protocol registration",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "da70ddb619c8de44166a3a0bcd65866dc18bd1eb",
+  "current_batch": "A12E2 quotation protocol registered; not implemented",
   "canonical_quotation_a8": {
     "status": "passed",
     "accepted": true,
@@ -3306,7 +3306,7 @@
     "surviving_evaluator_workers": 0,
     "ownership_released": true
   },
-  "ownership_released_at": "2026-10-16T20:38:09+00:00",
+  "ownership_released_at": "2026-10-16T20:40:32+00:00",
   "owned_workers_at_release": 0,
   "post_processing_domain_a12e1": {
     "status": "accepted",
@@ -3346,6 +3346,24 @@
     "acceptance_commit": "6893ef807cad9ec299b38c79dccb694467d638b8",
     "surviving_evaluator_workers": 0,
     "ownership_released": true,
+    "parent_accepted": false,
+    "ft8_unchanged": true
+  },
+  "current_domain_quotation_a12e2": {
+    "status": "prospectively_registered_not_implemented_not_frozen_not_executed",
+    "accepted": false,
+    "protocol": "contracts/ft/FT7_Current_Domain_Quotation_A12E2_Protocol_v1.json",
+    "protocol_commit": "da70ddb619c8de44166a3a0bcd65866dc18bd1eb",
+    "protocol_sha256": "143d7735baad2013e8aa422da65e0b36aa18379ac2990789cf13241a5d0ed56f",
+    "prior_identities": 600,
+    "exact_inputs": 30,
+    "canonical_assignments_each": 1728,
+    "workflow_assignments_each": 12384,
+    "required_quote_reports": 30,
+    "required_methods": 6,
+    "native_work": 0,
+    "comparison_paid": false,
+    "accepted_stage_replays": 0,
     "parent_accepted": false,
     "ft8_unchanged": true
   }

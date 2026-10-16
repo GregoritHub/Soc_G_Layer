@@ -1,4 +1,4 @@
-Next work: fund and freshly pay the changed-input current comparisons from the accepted A12E1 domain, then complete current TD5 admission and live history-only choice. A12E1 does not authorize execution or permit stale-receipt reuse.
+Next registered work: **A12E2 exact current-domain quotation**, protocol `da70ddb619c8de44166a3a0bcd65866dc18bd1eb`. It must quote every request in all30 accepted A12E1 domains before any fresh changed-input comparison payment. No stale-receipt reuse, refill or payment is authorized by the quotation gate.
 
 Current update, 16 October 2026: **A12E1 current post-processing domain accepted**: all30 exact saved typed reports and full independent audit outcomes, six new exact methods,40 rejection probes and62 closed jobs passed at600/prior594 exact identities. It used saved typed access only, with zero engine restore/native work or accepted replay. This is complete declared current paid-observation grammar only; comparison payment, TD5 admission, execution, history choice and FT7–FT9 remain open. [A12E1 record](docs/ft/FT7_Post_Processing_Domain_A12E1_Record.md).
 
