@@ -1,5 +1,7 @@
 # Full Theory job register — Soc G Layer
 
+[measured] 16 October 2026 UTC: FT7.Comparison.Funding.A7 accepted necessary-cost guard: six methods/four independent saved audits,24 forgeries/five invalid-integer controls,493 identities/prior487 exact. Workflow minimum4,920,480 exceeds175,698 wallet; canonical5,832 floor still needs exact quote. Never grants launch/payment/admission. Zero native work or accepted replays. See FT7_Comparison_Funding_A7_Record.md; full FT7–FT9 remains open.
+
 [measured] 16 October 2026 UTC: FT7.Changed.Domain.A6 accepted complete factorized changed-input grammar: six methods/four independent saved audits/forty forgeries,487 source identities/prior481 exact. Canonical5,832/workflow4,920,480 assignments; no native comparison/payment/admission/choice. Oldest demand/source/controller/access prefixes unchanged. Funding preflight next; parent FT7–FT9 and FT8 obligations remain open. See FT7_Changed_Input_Domain_A6_Record.md.
 
 [measured] 16 October 2026 UTC: FT.Setup.ToolOverlay.A2 accepted: six new methods and501 exact copied files. One explicit A3 continuation-tool path added; complete remaining setup AST unchanged. Current481 identities/prior475 bridge exact,474 predecessor files unchanged. A5 source preserved before the setup change; zero dependency rebuilds/native work/accepted gate replays. FT9 standalone remains open. See FT_Setup_Tool_Overlay_A2_Record.md.

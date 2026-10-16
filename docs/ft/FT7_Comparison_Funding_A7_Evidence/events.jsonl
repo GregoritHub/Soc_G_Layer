@@ -1,0 +1,7 @@
+{"at": "2026-10-16T13:25:58.580216+00:00", "kind": "start", "owner": "ft7-changed-domain-a6-2026-10-16T13:06:42.798Z"}
+{"at": "2026-10-16T13:26:02.634152+00:00", "kind": "raw_saved_before_audit", "file": "canonical-complete.json"}
+{"at": "2026-10-16T13:26:07.628231+00:00", "kind": "raw_saved_before_audit", "file": "canonical-restored.json"}
+{"at": "2026-10-16T13:26:33.765179+00:00", "kind": "raw_saved_before_audit", "file": "workflow-complete.json"}
+{"at": "2026-10-16T13:26:39.833550+00:00", "kind": "raw_saved_before_audit", "file": "workflow-restored.json"}
+{"at": "2026-10-16T13:27:06.450911+00:00", "kind": "methods_start"}
+{"at": "2026-10-16T13:27:06.465508+00:00", "kind": "closed_pass"}

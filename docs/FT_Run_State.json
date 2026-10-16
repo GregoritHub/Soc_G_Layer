@@ -6,7 +6,7 @@
   "active_worker": true,
   "lease_expires_at": "2026-10-16T13:36:42.798Z",
   "expected_head": "72b36c43df4c359f4066fe689bad79569e6d702c",
-  "current_batch": "FT7.Changed.Domain.A6",
+  "current_batch": "FT7.Comparison.Funding.A7",
   "current_window_admission_progress": {
     "status": "passed",
     "implementation_commit": "a79669120939bfb0ee5f2dd7914a45b44f3c5696",
@@ -363,7 +363,7 @@
       "paths_removed": 0
     }
   },
-  "next_batch": "Prospectively register comparison funding preflight over accepted A6 factors/current A5 wallets; no unpaid comparison/admission or partial-result authority. Then lawful changed-input paid comparisons, current TD5/cost admission, ties/history-only choice/work/use/controls/full staging; FT7-FT9 open.",
+  "next_batch": "Prospectively design cost-preserving changed-input paid comparison with complete-domain coverage. Exact canonical quote required; workflow full Cartesian floor4,920,480 exceeds current wallet175,698, so do not launch/refill/drop alternatives/share old credit. Preserve A6/A7 and prior gates; current actor oldest need/deferral intact. Genuine ties/history-only choice/work/use/controls/staging and FT7 pairs/populations FT8-FT9 remain open.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -428,7 +428,7 @@
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT7_Changed_Input_Domain_A6_Record.md",
+  "latest_record": "docs/ft/FT7_Comparison_Funding_A7_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
@@ -688,7 +688,7 @@
     "source_publication": "verified",
     "prior_failed_attempts": 6
   },
-  "latest_acceptance_record": "docs/ft/FT7_Observed_Reference_A4_Record.md",
+  "latest_acceptance_record": "docs/ft/FT7_Comparison_Funding_A7_Record.md",
   "engineering_continuation": {
     "batch": "FT7.1b2b3b",
     "accepted": false,
@@ -2244,14 +2244,15 @@
     "acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2"
   },
   "prior_paid_window_acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2",
-  "latest_acceptance_commit": "72b36c43df4c359f4066fe689bad79569e6d702c",
+  "latest_acceptance_commit": "9d617943508e92033a3435361aeac11a8327607f",
   "latest_local_acceptance": {
-    "batch": "FT7.Changed.Domain.A6",
+    "batch": "FT7.Comparison.Funding.A7",
     "passed": true,
     "methods": 6,
     "records": 4,
-    "forgeries": 40,
-    "source_identities": 487
+    "forgeries": 24,
+    "invalid_integer_controls": 5,
+    "source_identities": 493
   },
   "recall_feasibility_progress": {
     "status": "diagnostic_pass",

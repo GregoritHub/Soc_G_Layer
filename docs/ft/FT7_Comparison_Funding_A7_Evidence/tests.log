@@ -1,0 +1,11 @@
+test_boundary_cases (tests_ft7.test_comparison_funding.ComparisonFundingTests.test_boundary_cases) ... ok
+test_current_wallet_and_floor (tests_ft7.test_comparison_funding.ComparisonFundingTests.test_current_wallet_and_floor) ... ok
+test_exact_real_panel (tests_ft7.test_comparison_funding.ComparisonFundingTests.test_exact_real_panel) ... ok
+test_forgery_rejection (tests_ft7.test_comparison_funding.ComparisonFundingTests.test_forgery_rejection) ... ok
+test_inherited_cost_floor (tests_ft7.test_comparison_funding.ComparisonFundingTests.test_inherited_cost_floor) ... ok
+test_never_grants_affordability (tests_ft7.test_comparison_funding.ComparisonFundingTests.test_never_grants_affordability) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.000s
+
+OK

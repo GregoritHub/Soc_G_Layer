@@ -1,5 +1,7 @@
 # Soc G Layer
 
+[measured] 16 October 2026 UTC: FT7.Comparison.Funding.A7 accepted necessary-cost guard: six methods/four independent saved audits,24 forgeries/five invalid-integer controls,493 identities/prior487 exact. Workflow minimum4,920,480 exceeds175,698 wallet; canonical5,832 floor still needs exact quote. Never grants launch/payment/admission. Zero native work or accepted replays. See FT7_Comparison_Funding_A7_Record.md; full FT7–FT9 remains open.
+
 [measured] 16 October 2026 UTC: FT7.Changed.Domain.A6 accepted complete factorized changed-input grammar: six methods/four independent saved audits/forty forgeries,487 source identities/prior481 exact. Canonical5,832/workflow4,920,480 assignments; no native comparison/payment/admission/choice. Oldest demand/source/controller/access prefixes unchanged. Funding preflight next; parent FT7–FT9 and FT8 obligations remain open. See FT7_Changed_Input_Domain_A6_Record.md.
 
 Latest setup-only update, 16 October 2026 UTC: **FT.Setup.ToolOverlay.A2 passed** six exact controls and byte-exact copying of501 selected public files. The sole setup change includes the exact A3 continuation tool; all other setup AST and474 predecessor identities are unchanged, with the prior475 bridge verified. A5 acceptance stands. No dependency rebuild/native work or FT9 standalone acceptance. See `docs/ft/FT_Setup_Tool_Overlay_A2_Record.md`.

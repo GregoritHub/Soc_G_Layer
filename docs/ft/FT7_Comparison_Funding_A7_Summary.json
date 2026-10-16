@@ -1,0 +1,352 @@
+{
+  "passed": true,
+  "methods": [
+    "test_boundary_cases",
+    "test_current_wallet_and_floor",
+    "test_exact_real_panel",
+    "test_forgery_rejection",
+    "test_inherited_cost_floor",
+    "test_never_grants_affordability"
+  ],
+  "records": [
+    {
+      "record": "complete",
+      "file": "canonical-complete.json",
+      "sha256": "22ae7af266c893e4bfce3c068442cfdd22888f68fbae8ec5f164dc75f3ab81fe",
+      "passed": true,
+      "setting": "canonical",
+      "energy": 197808,
+      "time": 197808,
+      "assignments": 5832,
+      "status": "exact_quote_required",
+      "energy_deficit": 0,
+      "time_deficit": 0,
+      "may_launch": false,
+      "exact_quote": false
+    },
+    {
+      "record": "restored",
+      "file": "canonical-restored.json",
+      "sha256": "22ae7af266c893e4bfce3c068442cfdd22888f68fbae8ec5f164dc75f3ab81fe",
+      "passed": true,
+      "setting": "canonical",
+      "energy": 197808,
+      "time": 197808,
+      "assignments": 5832,
+      "status": "exact_quote_required",
+      "energy_deficit": 0,
+      "time_deficit": 0,
+      "may_launch": false,
+      "exact_quote": false
+    },
+    {
+      "record": "complete",
+      "file": "workflow-complete.json",
+      "sha256": "bc90f1d604535a420705c4d70a8cc133813b0d1d9fe51b7ea189a8cde6ba3403",
+      "passed": true,
+      "setting": "workflow",
+      "energy": 175698,
+      "time": 175698,
+      "assignments": 4920480,
+      "status": "insufficient_lower_bound",
+      "energy_deficit": 4744782,
+      "time_deficit": 4744782,
+      "may_launch": false,
+      "exact_quote": false
+    },
+    {
+      "record": "restored",
+      "file": "workflow-restored.json",
+      "sha256": "bc90f1d604535a420705c4d70a8cc133813b0d1d9fe51b7ea189a8cde6ba3403",
+      "passed": true,
+      "setting": "workflow",
+      "energy": 175698,
+      "time": 175698,
+      "assignments": 4920480,
+      "status": "insufficient_lower_bound",
+      "energy_deficit": 4744782,
+      "time_deficit": 4744782,
+      "may_launch": false,
+      "exact_quote": false
+    }
+  ],
+  "probes": [
+    {
+      "setting": "canonical",
+      "name": "energy",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "assignments",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "status",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "energy_deficit",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "may_launch",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "comparison_paid",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "wallet",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "extra",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "native_pair_builder",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "native_pair_auditor",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "domain_pair_builder",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "domain_pair_auditor",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "energy",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "assignments",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "status",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "energy_deficit",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "may_launch",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "comparison_paid",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "wallet",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "extra",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "native_pair_builder",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "native_pair_auditor",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "domain_pair_builder",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "domain_pair_auditor",
+      "rejected": true
+    },
+    {
+      "setting": "arithmetic",
+      "name": "bool",
+      "rejected": true
+    },
+    {
+      "setting": "arithmetic",
+      "name": "zero",
+      "rejected": true
+    },
+    {
+      "setting": "arithmetic",
+      "name": "negative_count",
+      "rejected": true
+    },
+    {
+      "setting": "arithmetic",
+      "name": "negative_wallet",
+      "rejected": true
+    },
+    {
+      "setting": "arithmetic",
+      "name": "float",
+      "rejected": true
+    }
+  ],
+  "boundaries": [
+    {
+      "assignments": 1,
+      "energy": 0,
+      "time": 0,
+      "result": {
+        "minimum_energy": 1,
+        "minimum_time": 1,
+        "energy_deficit": 1,
+        "time_deficit": 1,
+        "status": "insufficient_lower_bound",
+        "may_launch": false,
+        "exact_quote": false,
+        "comparison_paid": false,
+        "execution_authorized": false,
+        "td5_admitted": false,
+        "history_choice": false
+      }
+    },
+    {
+      "assignments": 1,
+      "energy": 1,
+      "time": 1,
+      "result": {
+        "minimum_energy": 1,
+        "minimum_time": 1,
+        "energy_deficit": 0,
+        "time_deficit": 0,
+        "status": "exact_quote_required",
+        "may_launch": false,
+        "exact_quote": false,
+        "comparison_paid": false,
+        "execution_authorized": false,
+        "td5_admitted": false,
+        "history_choice": false
+      }
+    },
+    {
+      "assignments": 5,
+      "energy": 4,
+      "time": 8,
+      "result": {
+        "minimum_energy": 5,
+        "minimum_time": 5,
+        "energy_deficit": 1,
+        "time_deficit": 0,
+        "status": "insufficient_lower_bound",
+        "may_launch": false,
+        "exact_quote": false,
+        "comparison_paid": false,
+        "execution_authorized": false,
+        "td5_admitted": false,
+        "history_choice": false
+      }
+    },
+    {
+      "assignments": 5,
+      "energy": 8,
+      "time": 4,
+      "result": {
+        "minimum_energy": 5,
+        "minimum_time": 5,
+        "energy_deficit": 0,
+        "time_deficit": 1,
+        "status": "insufficient_lower_bound",
+        "may_launch": false,
+        "exact_quote": false,
+        "comparison_paid": false,
+        "execution_authorized": false,
+        "td5_admitted": false,
+        "history_choice": false
+      }
+    },
+    {
+      "assignments": 5,
+      "energy": 5,
+      "time": 5,
+      "result": {
+        "minimum_energy": 5,
+        "minimum_time": 5,
+        "energy_deficit": 0,
+        "time_deficit": 0,
+        "status": "exact_quote_required",
+        "may_launch": false,
+        "exact_quote": false,
+        "comparison_paid": false,
+        "execution_authorized": false,
+        "td5_admitted": false,
+        "history_choice": false
+      }
+    },
+    {
+      "assignments": 5,
+      "energy": 9,
+      "time": 9,
+      "result": {
+        "minimum_energy": 5,
+        "minimum_time": 5,
+        "energy_deficit": 0,
+        "time_deficit": 0,
+        "status": "exact_quote_required",
+        "may_launch": false,
+        "exact_quote": false,
+        "comparison_paid": false,
+        "execution_authorized": false,
+        "td5_admitted": false,
+        "history_choice": false
+      }
+    }
+  ],
+  "cost_sources": [
+    {
+      "file": "full_theory/paid_role_comparison.py",
+      "sha256": "47527c367a1dbb4ff959651038a437413bbbc17df966aff4f8ffcfe07890b42f",
+      "rejected_floor": 1,
+      "successful_constant_floor": 1,
+      "exact_expressions": true
+    },
+    {
+      "file": "full_theory/paid_window_comparison.py",
+      "sha256": "dc6dae9faa210df47c2d276e4dc6f6ee4085f30cd5f7006c9c5c7472eab4c8e4",
+      "rejected_floor": 1,
+      "successful_constant_floor": 1,
+      "exact_expressions": true
+    }
+  ],
+  "source_identities": 493,
+  "prior_identities": 487,
+  "native_work_calls": 0,
+  "engine_restore_calls": 0,
+  "accepted_stage_replays": 0,
+  "parent_accepted": false
+}
