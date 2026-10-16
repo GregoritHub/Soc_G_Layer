@@ -1,0 +1,83 @@
+{
+  "schema": "ft-skill-refresh-a3-v1",
+  "batch": "FT7.Skill.Refresh.A3",
+  "created_utc": "2026-10-16T10:37:08.100Z",
+  "predecessor_acceptance": "aac246e1b35afdc30267126188f192e5caecc6e0",
+  "source_freeze": "contracts/ft/FT_Setup_Tool_Overlay_A1_Source_Freeze_v2.json",
+  "prior_identities": 449,
+  "inputs": {
+    "canonical": {
+      "file": "canonical-complete.json.gz",
+      "sha256": "19e3195ff3785dc1569d20760e08411e77a6f6d03c889fe695256d4ab2e33c2f",
+      "native_sha256": "3e4119b5e3b93bbd97dd3ea45f3cfc9b5ada81b9bcb2ebbf8809f8589c93edce",
+      "practice_sha256": "0426c86773bafb001886b22c9451ac6ebe78da27dad7a4128ba83e136b692bbf"
+    },
+    "workflow": {
+      "file": "workflow-complete.json.gz",
+      "sha256": "bdf88635c76f0e629b7b15b1c483e91e207bb0820c5da8ebe36bbd11131ce72a",
+      "native_sha256": "7c83e5169d0da4bfd0ba3cd8209c1056e48d7c7179f64ca74e7bb0fad5db0354",
+      "practice_sha256": "d23cfbe634b002db67ecea96828105a8d287f0d887d92352e367613a959f9e8d"
+    }
+  },
+  "policy": [
+    "Exact native/practice digest pairs only; completed acquired A2 required; actor/context/procedure derived from accepted adapter, no caller supplied roles.",
+    "Inventory: all identities with owned name or exact integer quantity particulars, latest explicitly owned source revision per identity, stable typed order, bound128. Include foreign/nonmaterial/uncertain entries; no hidden-success filtering.",
+    "Fresh native inspect3 then delivered read2 per material. Native inspect samples current head at commit. Exact nonmaterial-role rejection preserved without debit. Partial and cancellation withhold receipt. All completed reads visible, no filtering for favorable condition.",
+    "Fresh version ft-owned-material-refresh-a3-v1 and job prefix ft-skill-refresh; old adapters/labels/receipts unchanged. Copy established lifecycle into separately bound new module; independent auditor does not import controller.",
+    "Preserve all material heads, existing acquisition/bindings/old particular/journal/command/access prefixes, initial law/setup/profile/cursor/task/old source/reserve/history. No new skills, main execution, TD5 admission, comparison credit or history choice.",
+    "Independent audit reconstructs entire suffix and exact observation facts at current world heads. New receipts are fresh observations only, not paid comparisons. Future altered-input comparisons require own prospective binding/payment."
+  ],
+  "gate": {
+    "methods": [
+      "test_exact_panel",
+      "test_partial_receipts",
+      "test_paid_refresh",
+      "test_restart_and_cancel",
+      "test_inventory_and_pairing",
+      "test_saved_forgery_rejections"
+    ],
+    "records": [
+      "before",
+      "inspect-partial",
+      "read-partial",
+      "complete",
+      "restarted",
+      "cancelled"
+    ],
+    "settings": [
+      "canonical",
+      "workflow"
+    ],
+    "required_records": 12,
+    "original_adapters_unchanged": true,
+    "probes": [
+      "plan",
+      "source_native_sha256",
+      "receipts",
+      "main_execution_authorized",
+      "payment"
+    ],
+    "pair_probes": [
+      "actor",
+      "context",
+      "unregistered_extra"
+    ],
+    "pair_apis": [
+      "constructor",
+      "auditor"
+    ],
+    "restart": "read-partial; exact native and adapter terminal equality",
+    "cancel": "first inspect-partial, debit1 retained, no completed receipt",
+    "source": "all449 prior identities exact; new source frozen before evaluation"
+  },
+  "operations": {
+    "max_steps": 4096,
+    "serial": true,
+    "durable_after_each_step": true,
+    "save_raw_before_audit": true,
+    "lease": "unique live30minutes",
+    "deadline": "explicit future UTC within live lease, stop before next step/restore; no launch on expired owner",
+    "accepted_replay": false
+  },
+  "next": "New paid current-input comparisons and broader lawful recall organization, genuine distinct-element same-priority/native-cost ties, history-only choice, chosen work/use, matched controls and full staging. FT7 parent/pairs/populations and FT8–FT9 pending; FT8 denominators unchanged."
+}
