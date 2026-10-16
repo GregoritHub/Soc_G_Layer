@@ -1,0 +1,8 @@
+{
+  "batch": "FT7.Fresh.CueIntake.A12B",
+  "version": 1,
+  "scope": "Prospective runner-only operational split before runner implementation or any gate/native invocation.",
+  "change": "Generate(setting,mask) writes primary stages only. Four control jobs per setting independently restore the exact already-saved mask1 read_partial or bind_partial: restart-read, restart-bind, cancel-read, cancel-bind. Each control emits one final record. This isolates expensive restore/audit work and permits safe scheduling between closed jobs; mask1 primary work is never replayed. All50 records/eight methods and complete native audits unchanged.",
+  "prior_protocol_sha256": "b62fb449bda53383c489cc7198d945a7270276d7154006f277e24c7216c3cfac",
+  "runtime_semantics_unchanged": true
+}
