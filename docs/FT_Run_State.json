@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft7-admission-final-20261016T023350Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-16T03:27:08.101Z",
-  "expected_head": "a5aeadb6bfc196fdafc63147bbbc5bc92f48c78f",
+  "lease_expires_at": "2026-10-16T03:44:31.743Z",
+  "expected_head": "6e57d17ecd8340b379bfdd34e49f1293c7fb467f",
   "current_batch": "FT7.1b2b3b2b2b2b2b2b1d",
   "current_window_admission_progress": {
     "status": "method_recovery1_running_not_accepted",
@@ -196,6 +196,13 @@
       "new_methods_passed": [
         "test_old_nominees_and_bounded_cells"
       ]
+    },
+    "read_only_recall_inspection": {
+      "status": "running",
+      "execution_session": 89681,
+      "paid_replay": false,
+      "mutation": false,
+      "acceptance_claim": false
     }
   },
   "current_window_capacity_progress": {
