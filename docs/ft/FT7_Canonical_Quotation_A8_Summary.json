@@ -67,10 +67,10 @@
   "native_unchanged": true,
   "audit_native_unchanged": true,
   "cost_histogram": {
+    "152": 648,
     "62": 3888,
-    "67": 648,
     "77": 648,
-    "152": 648
+    "67": 648
   },
   "original_source_identities": 499,
   "new_native_view_calls": 0,

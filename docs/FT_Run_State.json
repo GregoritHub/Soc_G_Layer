@@ -1,11 +1,11 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft7-canonical-quote-a8-2026-10-16T13:41:05.386Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-16T14:30:18.131Z",
-  "expected_head": "e2dd6dd43a5ab1f520e907ff7e4f6ef7ce62331f",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "265a4ba2f94df05601ccd360a480234138a5dc88",
   "current_batch": "FT7.Canonical.Quotation.A8",
   "canonical_quotation_a8": {
     "status": "passed",
@@ -58,7 +58,11 @@
       "bytes": 2676047,
       "manifest_members": 14,
       "all_members_verified": true
-    }
+    },
+    "acceptance_commit": "265a4ba2f94df05601ccd360a480234138a5dc88",
+    "public_summary_exact": true,
+    "ownership_released_at": "2026-10-16T14:20:30.000Z",
+    "owned_workers_at_release": 0
   },
   "current_window_admission_progress": {
     "status": "passed",
@@ -2297,7 +2301,7 @@
     "acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2"
   },
   "prior_paid_window_acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2",
-  "latest_acceptance_commit": "c39c3343000418972c90137844ec12a4411a297a",
+  "latest_acceptance_commit": "265a4ba2f94df05601ccd360a480234138a5dc88",
   "latest_local_acceptance": {
     "batch": "FT7.Canonical.Quotation.A8",
     "passed": true,
@@ -2310,7 +2314,8 @@
     "prior_identities": 493,
     "quote_invocations": 1,
     "new_native_view_calls": 0,
-    "native_work_calls": 0
+    "native_work_calls": 0,
+    "acceptance_commit": "265a4ba2f94df05601ccd360a480234138a5dc88"
   },
   "recall_feasibility_progress": {
     "status": "diagnostic_pass",

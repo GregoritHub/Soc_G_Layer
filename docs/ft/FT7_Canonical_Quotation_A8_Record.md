@@ -27,6 +27,8 @@ Evidence: `FT7_Canonical_Quotation_A8_Evidence_20261016.zip`, SHA256 `f03e1e5125
 
 ## Continuation boundary
 
+Publication-only correction: JavaScript serialization reordered the four numeric histogram keys in the public summary at the acceptance save. Values were unchanged. The public copy was restored to the original key order and compared byte-for-byte with the saved summary before ownership release. Original evidence, frozen source and acceptance tests were unchanged; nothing was rerun.
+
 The canonical exhaustive Cartesian strategy is now proven unaffordable at the current wallet, not merely unquoted. A7's workflow lower-bound result remains insufficient: minimum 4,920,480 against 175,698. Do not launch either unaffordable strategy, refill wallets, silently discard alternatives, treat factorization as free/shared comparison payment, alter pricing under old labels, or bypass the current actor's oldest unresolved need. Preserve the honest existing deferral.
 
 Next engineering work requires a prospective lawful complete-domain comparison design or an independently specified route-free fresh panel with current actors and unresolved needs preserved. No new pricing, proof algorithm or panel is accepted here. These funding limits do not prove every lawful continuation impossible and establish no terminal theory/access blocker. Genuine distinct-element same-priority/native-cost ties, autonomous history-only choice, chosen paid work/downstream use, matched controls/full staging, FT7 pairs/populations and FT8–FT9 remain open. Every FT8 denominator and matched-main-cost obligation is unchanged.
