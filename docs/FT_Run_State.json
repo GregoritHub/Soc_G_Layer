@@ -5,8 +5,8 @@
   "run_id": "ft7-owned-skill-2026-10-16T08:29:38.609Z",
   "active_worker": true,
   "lease_expires_at": "2026-10-16T09:18:03.000Z",
-  "expected_head": "e25e9fd342bc843cd07187c1716765608c19765c",
-  "current_batch": "FT7.Recall.Feasibility.A1",
+  "expected_head": "fd1d5ada6b4cc1afd35b489bb2847945c2797ebd",
+  "current_batch": "FT7.Skill.Intake.A1",
   "current_window_admission_progress": {
     "status": "passed",
     "implementation_commit": "a79669120939bfb0ee5f2dd7914a45b44f3c5696",
@@ -363,7 +363,7 @@
       "paths_removed": 0
     }
   },
-  "next_batch": "Route-free fresh skills and broader lawful paid organization; two-workshop-root-only removal is insufficient (best reachable33 in both mask-1 settings at recall32). Preserve scope/protected outputs/oldest demand. Fresh comparisons after changed inputs; full live choice/work/use/controls/staging and FT7–FT9 remain.",
+  "next_batch": "Close the active FT7.Skill.Intake.A1 continuation; do not reinvoke original paid panels or completed saved probes. Then route-free paid skill practice/acquisition from new owned observations, lawful recall organization and fresh comparisons after changed inputs; parent FT7–FT9 unchanged.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -485,7 +485,10 @@
     "FT7.1b2b3b2b2b2b2b2a",
     "FT7.1b2b3b2b2b2b2b2b1",
     "FT7.1b2b3b2b2b2b2b2b1a",
-    "FT7.1b2b3b2b2b2b2b2b1b"
+    "FT7.1b2b3b2b2b2b2b2b1b",
+    "FT7.Skill.Intake.A1",
+    "FT7.Skill.Intake.A1.Saved",
+    "FT7.Skill.Intake.A1.Continuation1"
   ],
   "publication": {
     "mode": "read-only pinned dependencies plus new development",
@@ -2274,5 +2277,25 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T08:48:03.000Z"
+  "updated_at": "2026-10-16T09:03:30.000Z",
+  "skill_intake_a1": {
+    "status": "continuation_running_not_accepted",
+    "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
+    "original_freeze": "36f1277133dd765d6441d8e549d8306d979a9d22",
+    "saved_probe_protocol": "2f8d7a905e02cbceaa29a35f5293653414575c2f",
+    "saved_probe_freeze": "85271494aba020bca7febc52abd25f3c608417b0",
+    "saved_probes_passed": 4,
+    "continuation_protocol": "70df71d3ec446c4e2e150c797e6e5958d14b22e5",
+    "continuation_freeze": "fd1d5ada6b4cc1afd35b489bb2847945c2797ebd",
+    "original_outcome": "fixed deadline exit1; ten saved audits pass; workflow restart/cancel and original six methods not complete",
+    "original_records": 10,
+    "original_methods": 0,
+    "original_output": "owned-material-inspection-a1-attempt1",
+    "continuation_output": "owned-material-inspection-a1-continuation1",
+    "continuation_operations": "owned-material-inspection-a1-continuation1-operations",
+    "deadline": "2026-10-16T09:14:00+00:00",
+    "paid_main_replayed": false,
+    "skill_acquired": false,
+    "parent_accepted": false
+  }
 }
