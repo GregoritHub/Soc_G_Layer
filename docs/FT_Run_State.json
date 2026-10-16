@@ -8,7 +8,7 @@
   "expected_head": "eaec2a04cc1af133b68f7bc0a13b704e34a1a40c",
   "current_batch": "FT7.Canonical.Quotation.A8",
   "canonical_quotation_a8": {
-    "status": "quote_complete_audit_running",
+    "status": "original_deadline_closed_saved_audit_running",
     "accepted": false,
     "protocol_commit": "517fadd09276cfb094c22d7c2469d2a3c6072ef1",
     "implementation_commit": "af75c258079128cd7980d1a22cbb12a58266deaf",
@@ -22,7 +22,7 @@
     "available_time": 197808,
     "deficit_each": 235056,
     "quote_invocations": 1,
-    "session": 36445,
+    "session": 74706,
     "native_work_calls": 0,
     "engine_restore_calls": 0,
     "closed_quote_evidence": {
@@ -31,7 +31,18 @@
       "members": 6
     },
     "conditional_saved_audit_protocol": "eaec2a04cc1af133b68f7bc0a13b704e34a1a40c",
-    "conditional_continuation_invoked": false
+    "conditional_continuation_invoked": false,
+    "original_session": 36445,
+    "original_exit_code": 1,
+    "original_closed_at": "2026-10-16T14:04:51.864282+00:00",
+    "last_original_audit_progress": 5120,
+    "original_methods_run": 0,
+    "saved_source_identities": 510,
+    "saved_protocol_commit": "eaec2a04cc1af133b68f7bc0a13b704e34a1a40c",
+    "saved_implementation_commit": "6ffab0d6495ca7fabde01f7d34b986581ab22ddc",
+    "saved_freeze_commit": "24bd9d598c714f091cf1704f597cb7dfd390fe52",
+    "new_quotation_rows": 0,
+    "conditional_saved_audit_invoked": true
   },
   "current_window_admission_progress": {
     "status": "passed",
