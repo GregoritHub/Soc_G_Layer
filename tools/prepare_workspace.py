@@ -108,7 +108,14 @@ def prepare(held_archive, repair_archive, output, source_checkout=None, repair_c
         # do not transfer any source back to the destination repository.
         layer_files = [name for name in run("git", "ls-files", cwd=ROOT).splitlines()
                        if name == "tools/prepare_workspace.py" or
-                       name.startswith(("full_theory/", "tests_ft", "contracts/ft/", "tools/evaluate_ft", "tools/audit_ft", "tools/compare_ft"))]
+                       name.startswith(("full_theory/", "tests_ft", "contracts/ft/", "tools/evaluate_ft", "tools/audit_ft", "tools/compare_ft")) or
+                       name in ("tools/audit_owned_repair_practice_saved.py",
+                                "tools/check_owned_material_inspection_saved.py",
+                                "tools/continue_ft7_1b2b3b2b2b2b2b2b1b.py",
+                                "tools/continue_owned_material_inspection.py",
+                                "tools/evaluate_owned_material_inspection.py",
+                                "tools/evaluate_owned_repair_practice.py",
+                                "tools/evaluate_recall_feasibility.py")]
         for name in layer_files:
             safe_path(name)
             dest = output / name
