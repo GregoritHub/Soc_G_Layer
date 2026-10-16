@@ -1,0 +1,385 @@
+{
+  "passed": true,
+  "methods": [
+    "test_exact_panel",
+    "test_independent_forgery_rejection",
+    "test_paid_fields_and_limited_paths",
+    "test_partial_cancel_no_credit",
+    "test_prefixes_and_no_authority",
+    "test_restart_terminal_exact"
+  ],
+  "records": [
+    {
+      "setting": "canonical",
+      "record": "before",
+      "file": "canonical-before.json.gz",
+      "sha256": "5a0b23a4b20cdbf8d240fa213561ccb099f04d9f1f264bf148dc51f960565954",
+      "passed": true,
+      "phase": "read",
+      "targets": 3,
+      "selectors": [
+        7,
+        7,
+        7
+      ],
+      "receipts": 0,
+      "new_fields": 0,
+      "energy": 0,
+      "time": 0,
+      "prefixes_exact": true,
+      "physical_unchanged": true,
+      "acquired_preserved": true,
+      "no_authority": true
+    },
+    {
+      "setting": "canonical",
+      "record": "partial",
+      "file": "canonical-partial.json.gz",
+      "sha256": "6e19de1a49b3453151194b2f7418ee25eb813537b1ad67af7fccb8b5735ff302",
+      "passed": true,
+      "phase": "read",
+      "targets": 3,
+      "selectors": [
+        7,
+        7,
+        7
+      ],
+      "receipts": 0,
+      "new_fields": 0,
+      "energy": 1,
+      "time": 1,
+      "prefixes_exact": true,
+      "physical_unchanged": true,
+      "acquired_preserved": true,
+      "no_authority": true
+    },
+    {
+      "setting": "canonical",
+      "record": "complete",
+      "file": "canonical-complete.json.gz",
+      "sha256": "2787712b7f61233a1924cc5fe0c23bcdcb3ca3b5c6646d28dde8453451caafdc",
+      "passed": true,
+      "phase": "complete",
+      "targets": 3,
+      "selectors": [
+        7,
+        7,
+        7
+      ],
+      "receipts": 3,
+      "new_fields": 21,
+      "energy": 6,
+      "time": 6,
+      "prefixes_exact": true,
+      "physical_unchanged": true,
+      "acquired_preserved": true,
+      "no_authority": true
+    },
+    {
+      "setting": "canonical",
+      "record": "restarted",
+      "file": "canonical-restarted.json.gz",
+      "sha256": "82bd918be18474b516b79ef4ea0a5a6dfacef0ea93365cfd3cfcb2e521c87fa1",
+      "passed": true,
+      "phase": "complete",
+      "targets": 3,
+      "selectors": [
+        7,
+        7,
+        7
+      ],
+      "receipts": 3,
+      "new_fields": 21,
+      "energy": 6,
+      "time": 6,
+      "prefixes_exact": true,
+      "physical_unchanged": true,
+      "acquired_preserved": true,
+      "no_authority": true
+    },
+    {
+      "setting": "canonical",
+      "record": "cancelled",
+      "file": "canonical-cancelled.json.gz",
+      "sha256": "32aac8d1deaf125672bf19a0c979974243721f47f77cbb4a86929d1d748d3070",
+      "passed": true,
+      "phase": "cancelled",
+      "targets": 3,
+      "selectors": [
+        7,
+        7,
+        7
+      ],
+      "receipts": 0,
+      "new_fields": 0,
+      "energy": 1,
+      "time": 1,
+      "prefixes_exact": true,
+      "physical_unchanged": true,
+      "acquired_preserved": true,
+      "no_authority": true
+    },
+    {
+      "setting": "workflow",
+      "record": "before",
+      "file": "workflow-before.json.gz",
+      "sha256": "fb0d90600ee50d844934216a656bd80f8c25247a305bbc0ef72203a9f338deba",
+      "passed": true,
+      "phase": "read",
+      "targets": 3,
+      "selectors": [
+        1,
+        7,
+        1
+      ],
+      "receipts": 0,
+      "new_fields": 0,
+      "energy": 0,
+      "time": 0,
+      "prefixes_exact": true,
+      "physical_unchanged": true,
+      "acquired_preserved": true,
+      "no_authority": true
+    },
+    {
+      "setting": "workflow",
+      "record": "partial",
+      "file": "workflow-partial.json.gz",
+      "sha256": "66f154d591131008f3520115a7cb24ad03b6dcdc6a6e0f943ae7cc07639ca80b",
+      "passed": true,
+      "phase": "read",
+      "targets": 3,
+      "selectors": [
+        1,
+        7,
+        1
+      ],
+      "receipts": 0,
+      "new_fields": 0,
+      "energy": 1,
+      "time": 1,
+      "prefixes_exact": true,
+      "physical_unchanged": true,
+      "acquired_preserved": true,
+      "no_authority": true
+    },
+    {
+      "setting": "workflow",
+      "record": "complete",
+      "file": "workflow-complete.json.gz",
+      "sha256": "e6b597f6451c0f12bd58a00cac429fa1d0d0e513467f20ae0b00901f3f3aaea2",
+      "passed": true,
+      "phase": "complete",
+      "targets": 3,
+      "selectors": [
+        1,
+        7,
+        1
+      ],
+      "receipts": 3,
+      "new_fields": 9,
+      "energy": 6,
+      "time": 6,
+      "prefixes_exact": true,
+      "physical_unchanged": true,
+      "acquired_preserved": true,
+      "no_authority": true
+    },
+    {
+      "setting": "workflow",
+      "record": "restarted",
+      "file": "workflow-restarted.json.gz",
+      "sha256": "0bdc79c68f45bebc961b6bc3791ebc5ee7886d9389680b432bd744005b442057",
+      "passed": true,
+      "phase": "complete",
+      "targets": 3,
+      "selectors": [
+        1,
+        7,
+        1
+      ],
+      "receipts": 3,
+      "new_fields": 9,
+      "energy": 6,
+      "time": 6,
+      "prefixes_exact": true,
+      "physical_unchanged": true,
+      "acquired_preserved": true,
+      "no_authority": true
+    },
+    {
+      "setting": "workflow",
+      "record": "cancelled",
+      "file": "workflow-cancelled.json.gz",
+      "sha256": "d5b4dbbda0788ace0ffe5a26bb68d81b9cfe0c6435029a0916af8d9f4bd3b720",
+      "passed": true,
+      "phase": "cancelled",
+      "targets": 3,
+      "selectors": [
+        1,
+        7,
+        1
+      ],
+      "receipts": 0,
+      "new_fields": 0,
+      "energy": 1,
+      "time": 1,
+      "prefixes_exact": true,
+      "physical_unchanged": true,
+      "acquired_preserved": true,
+      "no_authority": true
+    }
+  ],
+  "probes": [
+    {
+      "setting": "canonical",
+      "name": "refresh_pair_constructor",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "projection_pair_constructor",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "refresh_pair_auditor",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "projection_pair_auditor",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "plan",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "source",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "receipts",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "authority",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "payment",
+      "rejected": true
+    },
+    {
+      "setting": "canonical",
+      "name": "selector_path",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "refresh_pair_constructor",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "projection_pair_constructor",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "refresh_pair_auditor",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "projection_pair_auditor",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "plan",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "source",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "receipts",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "authority",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "payment",
+      "rejected": true
+    },
+    {
+      "setting": "workflow",
+      "name": "selector_path",
+      "rejected": true
+    }
+  ],
+  "controls": [
+    {
+      "setting": "canonical",
+      "name": "terminal",
+      "exact": true
+    },
+    {
+      "setting": "canonical",
+      "name": "restart",
+      "exact": true
+    },
+    {
+      "setting": "workflow",
+      "name": "terminal",
+      "exact": true
+    },
+    {
+      "setting": "workflow",
+      "name": "restart",
+      "exact": true
+    }
+  ],
+  "source_identities": 475,
+  "prior_identities": 468,
+  "main_execution_authorized": false,
+  "comparison_paid": false,
+  "td5_admitted": false,
+  "history_choice": false,
+  "parent_accepted": false,
+  "protocol_commit": "41e5a30da9d8536c5abc7c001d73123850f80984",
+  "freeze_commit": "259f51b467232ea8fe9520c813cca029afd5be94",
+  "archive": {
+    "filename": "FT7_Observed_Fields_A5_Evidence_20261016.zip",
+    "sha256": "33fb68e88df5f894749abc250228beb53ebdc752e4c92fa07d1afd3f0bcf36ef",
+    "bytes": 52954778,
+    "manifest_members": 22,
+    "all_members_verified": true,
+    "companion_members": [
+      51,
+      41
+    ]
+  },
+  "exit_code": 0,
+  "workers_remaining": 0,
+  "retained_identity_checks": {
+    "baseline": 1093,
+    "repair": 20,
+    "historical": 210
+  },
+  "accepted_gate_replays": 0
+}

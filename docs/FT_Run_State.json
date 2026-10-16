@@ -4,8 +4,8 @@
   "status": "running",
   "run_id": "ft7-observed-fields-a5-2026-10-16T12:34:01.000Z",
   "active_worker": true,
-  "lease_expires_at": "2026-10-16T13:11:48.000Z",
-  "expected_head": "259f51b467232ea8fe9520c813cca029afd5be94",
+  "lease_expires_at": "2026-10-16T13:26:55.000Z",
+  "expected_head": "eeffb58263f58797427e2eb5e77a1154a263fb22",
   "current_batch": "FT7.Observed.Fields.A5",
   "current_window_admission_progress": {
     "status": "passed",
@@ -363,7 +363,7 @@
       "paths_removed": 0
     }
   },
-  "next_batch": "Prospectively register paid exact observed-revision field disclosure/read using already owned selector paths, without overriding native selectors. Then complete changed-input request/role domain and new paid comparisons, broader lawful recall organization, distinct-element ties/history-only choice/paid work/downstream use/matched controls/full staging; parent FT7 and FT8-FT9 unfinished.",
+  "next_batch": "Finish preregistered setup-only exact A3 continuation inclusion. Then bind A5 changed native inputs to immutable oldest-task/source/social/history prefixes, complete current request/role domain and pay new comparisons; broader lawful recall organization, ties/history-only choice, chosen work/use, matched controls/full staging and parent FT7–FT9 remain open.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -422,11 +422,12 @@
     "FT7.1b2b3b2b2b2b2b2b1c",
     "FT7.1b2b3b2b2b2b2b2b1d",
     "FT7.Skill.Intake.A1",
-    "FT7.Observed.Reference.A4"
+    "FT7.Observed.Reference.A4",
+    "FT7.Observed.Fields.A5"
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT7_Observed_Reference_A4_Record.md",
+  "latest_record": "docs/ft/FT7_Observed_Fields_A5_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
@@ -490,7 +491,9 @@
     "FT7.1b2b3b2b2b2b2b2b1b",
     "FT7.Skill.Intake.A1",
     "FT7.Skill.Intake.A1.Saved",
-    "FT7.Skill.Intake.A1.Continuation1"
+    "FT7.Skill.Intake.A1.Continuation1",
+    "FT7.Observed.Fields.A5",
+    "FT.Setup.ToolOverlay.A2"
   ],
   "publication": {
     "mode": "read-only pinned dependencies plus new development",
@@ -2242,12 +2245,11 @@
   "prior_paid_window_acceptance_commit": "c445b2bd9865be0194d998e9a9098a7ac8532ff2",
   "latest_acceptance_commit": "157f0b4c3c3f8a5d584d267047ae749ea05257f4",
   "latest_local_acceptance": {
-    "batch": "FT7.Observed.Reference.A4",
+    "batch": "FT7.Observed.Fields.A5",
     "passed": true,
     "methods": 6,
-    "records": 12,
-    "source_identities": 468,
-    "acceptance_commit": "157f0b4c3c3f8a5d584d267047ae749ea05257f4"
+    "records": 10,
+    "source_identities": 475
   },
   "recall_feasibility_progress": {
     "status": "diagnostic_pass",
@@ -2273,7 +2275,7 @@
     },
     "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   },
-  "updated_at": "2026-10-16T12:41:48.000Z",
+  "updated_at": "2026-10-16T12:56:55.000Z",
   "skill_intake_a1": {
     "status": "accepted",
     "original_protocol": "9e908c4845b86e820e03cf70dfe468ee1613f6b8",
@@ -2525,8 +2527,8 @@
     }
   },
   "observed_fields_a5": {
-    "status": "running",
-    "accepted": false,
+    "status": "accepted",
+    "accepted": true,
     "protocol_commit": "41e5a30da9d8536c5abc7c001d73123850f80984",
     "freeze_commit": "259f51b467232ea8fe9520c813cca029afd5be94",
     "source_identities": 475,
@@ -2540,6 +2542,32 @@
     "stop_at": "2026-10-16T13:02:00+00:00",
     "invoked": true,
     "no_accepted_stage_replay": true,
-    "parent_accepted": false
+    "parent_accepted": false,
+    "exit_code": 0,
+    "methods": 6,
+    "records": 10,
+    "probes": 20,
+    "workers_remaining": 0,
+    "record": "docs/ft/FT7_Observed_Fields_A5_Record.md",
+    "summary": "docs/ft/FT7_Observed_Fields_A5_Summary.json",
+    "archive": {
+      "filename": "FT7_Observed_Fields_A5_Evidence_20261016.zip",
+      "sha256": "33fb68e88df5f894749abc250228beb53ebdc752e4c92fa07d1afd3f0bcf36ef",
+      "bytes": 52954778,
+      "manifest_members": 22,
+      "all_members_verified": true,
+      "companion_members": [
+        51,
+        41
+      ]
+    }
+  },
+  "setup_tool_overlay_a2": {
+    "status": "protocol_registered",
+    "protocol_commit": "eeffb58263f58797427e2eb5e77a1154a263fb22",
+    "additional": "tools/continue_ft7_material_refresh.py",
+    "a5_closed_exit": 0,
+    "engine_work": false,
+    "ft9_accepted": false
   }
 }
