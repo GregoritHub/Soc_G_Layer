@@ -1,0 +1,29 @@
+{
+  "version": "a10r-closed-binding-v1",
+  "roots": {
+    "owned-rehearsal-a10-attempt1": {
+      "events.jsonl": "83c42bfc1e7c278439812a3e4e4037d45782f10c6bc2eeadef74295eda646431"
+    },
+    "owned-rehearsal-a10-attempt2": {
+      "canonical-complete.json.gz": "c14885f2a336fad2d3a385680c3d66abd14c8ff67ef38f580093cb07ed343413",
+      "workflow-partial.json.gz": "6df25de47b09659e37dccb49cca112935d1a5f6588b6a6ea3984505d3c7fcc37",
+      "canonical-current.json.gz": "0cfa7beb54c1f0e62c20eca221d98f8348dfc79e6db6d3cfc8ea4bb491bddad1",
+      "canonical-restored.json.gz": "131aaf898be8085761cf1cd48ccc0b02a395dd5d4082ec2a25f22bb809a94bd2",
+      "canonical-partial.json.gz": "1c0b1ec26ed418a6e7e5034b79f332bd8171ccfc30b6fa97a5c2112baf342ed9",
+      "workflow-current.json.gz": "1f411143a644c8c1cb9b681961aea5d26f62d10081a1fa62a825663583d4f56a",
+      "events.jsonl": "21716bb19f2a935bd18dfcf18a6eeb4867f17ba9e4b66f029e06068baabe5f15",
+      "workflow-before.json.gz": "87a3ac0d1db94000039608ef386ecb5bfe3fcbaed49e991bc716d042f5cd140f",
+      "canonical-before.json.gz": "6c88d7d368c56493a10a91ba00251b2138aec6c097ca4a2ef9e91de09381bf91",
+      "canonical-cancelled.json.gz": "e92f5e87a4882643e874441781768552193bce045e0a7caa87fae901c494b97d",
+      "progress.json": "cf16bf080798f421bc5f22a01dc6d67ab884a893831bf9f2632dbcbdb2bb36b4"
+    }
+  },
+  "files": {
+    "A10_Attempt1_Frozen_Source.zip": "10c53d965ab4c8452db2bb2a1068486bf4f694e820e4bc01206c51fe306c5252",
+    "A10_Attempt2_Frozen_Source.zip": "be7fbf3c526ac4ba3db1e77482a75ff249873627f70960bf826d1210a6a7a265",
+    "observed-field-reads-a5-attempt1/canonical-complete.json.gz": "2787712b7f61233a1924cc5fe0c23bcdcb3ca3b5c6646d28dde8453451caafdc",
+    "observed-field-reads-a5-attempt1/workflow-complete.json.gz": "e6b597f6451c0f12bd58a00cac429fa1d0d0e513467f20ae0b00901f3f3aaea2"
+  },
+  "original_exit_code": 1,
+  "original_workers": []
+}
