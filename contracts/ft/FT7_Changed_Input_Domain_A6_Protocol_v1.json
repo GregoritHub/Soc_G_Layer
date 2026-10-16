@@ -1,0 +1,88 @@
+{
+  "version": "ft-changed-input-domain-a6-protocol-v1",
+  "batch": "FT7.Changed.Domain.A6",
+  "entry_head": "d8aed7374fa6fa402524caf01fdfa21cd7222734",
+  "accepted_engine": "6fe952810490b9f8c29cdfb0d4306abe874143a9",
+  "accepted_setup": "72b36c43df4c359f4066fe689bad79569e6d702c",
+  "prior_freeze": "contracts/ft/FT_Setup_Tool_Overlay_A2_Source_Freeze_v1.json",
+  "inputs": {
+    "canonical": {
+      "file": "canonical-complete.json.gz",
+      "raw_sha256": "2787712b7f61233a1924cc5fe0c23bcdcb3ca3b5c6646d28dde8453451caafdc",
+      "native_sha256": "03948fc18b149d5935c3d381432c05d361cd4678bdaceecfd2bb5c6fd717e3ee",
+      "adapter_sha256": "d7b8870cfa02c6dc30f48017dd629211218e23fba27e81da4d1d58f3fe33f40d",
+      "view_sha256": "ddef9e76ebe93604ab2edb6bc8fed852f7def16776a24ea292bf207d099328ec",
+      "old_raw_sha256": "dfdaec74a37ad8fcdbdbe9faeab8a36dc25677b46bf89899f2d6e3dc38fcf654",
+      "old_domain_sha256": "7a126687f03f7694aaea6f3ed87eb2d8b5550f6a16735108fe6c93fe69044123",
+      "old_native_sha256": "b6310743f81618af42f2a8528db3202cddfed6e97da0c009ca8b4df099a3b3ae",
+      "refresh_sha256": "5b5c9067f0b59a82d5c20b072ddc637c0a72771f436a4b7f56986eb5a8a0c94f"
+    },
+    "workflow": {
+      "file": "workflow-complete.json.gz",
+      "raw_sha256": "e6b597f6451c0f12bd58a00cac429fa1d0d0e513467f20ae0b00901f3f3aaea2",
+      "native_sha256": "9b16ec1fd67959eb1ab7a9bcbbca50c28723d7f5abc3bd864865090d91a3c7ae",
+      "adapter_sha256": "911c1da54870d82968209407aa5dbacfeebde0859a79903b53cc99b3debed75c",
+      "view_sha256": "084b16c9109b7c1e842b911c7c636f18f71969cab99f8fe517e6161350cb1799",
+      "old_raw_sha256": "de81a5730550fd7360fc25365b30273a5e2f145cff028f2e45dfd28321ab5676",
+      "old_domain_sha256": "c614272e69f5e4a9280102e30eb265f3c2537c68f21f3ecad5295f9cb6e88eae",
+      "old_native_sha256": "3d14a3c9d7c0bfdd1dff24979c264068beed4665e4d416da0bd0450c78e11a06",
+      "refresh_sha256": "ca2f4f6d32d018a1c6eb349e79b1741c520e57f197ab0030fab617113c840e04"
+    }
+  },
+  "old_archive": {
+    "filename": "FT7_1b2b3b2b2b2b2b2b1a_Request_Window_Evidence_20261015.zip",
+    "sha256": "6eca9ead0be9da26575d6e39b48ba3005de63a85fc6672760119caeccea063b6",
+    "member_pattern": "request-window-attempt1/records/{setting}-mask-1.json.gz"
+  },
+  "policy": [
+    "New ft-changed-input-domain-a6-v1 schema binds exact accepted A5 native/adapter/owned-view, accepted A3 refresh and old accepted mask1 request-domain identities. Reject any other pairing; no native execution or restore replay in this gate.",
+    "Restore immutable old demand controller; form oldest current paid owned demand with unchanged form_request. Require exact original fresh demand and formation; all owned task/content bindings remain byte-exact. Preserve old source/binding/intake/controller/history identities; never regenerate the old wrapper against changed native.",
+    "Canonical one base request; workflow all nonempty subsets of current owned matching content of sizes1..8, cardinality-first typed stable order. Keep original native over-eight rejection honest; no content omission.",
+    "Role grammar is existing paid_pools on current exact owned view, with material roles replaced by the full A4 material_vocabulary grammar on this current view and exact accepted A3 refresh. Preserve explicit paid observations separate from directly processed target fields, None, foreign/damaged/depleted/unacquired/name-only alternatives, canonical latest explicitly observed normalization and workflow exact revisions. No feasibility/success filter or hidden current-world lookup.",
+    "Represent complete Cartesian product as windows plus independently ordered role pools; no cap, truncation, selection or mandatory materialization. Use mixed-radix deterministic request_at and inverse coordinates for exact integer ordinal range. Window is most significant factor. New ft-changed-a6 namespace; original request fields otherwise unchanged; workflow non-None procedure yields explicit capacity request.",
+    "Factorization is storage representation only: grants no free comparison, cost discount, shared paid credit, admission or movement. Every future comparison must cover exact changed input/request under a separately frozen paid protocol. Invalid native requests stay in declared grammar pending paid rejection.",
+    "Independent auditor cannot import builder, demand controller/form_request, paid_pools or material_vocabulary. Reconstruct task/oldest proof, all content subsets by bit masks, every role/value/provenance from owned particulars/receipts, complete factor sizes and total cardinality. Exact full output equality; all prefixes and accepted native input unchanged."
+  ],
+  "modules": [
+    "full_theory/changed_input_domain.py",
+    "full_theory/changed_input_domain_audit.py",
+    "tools/evaluate_ft7_changed_input_domain.py"
+  ],
+  "tests": "tests_ft7/test_changed_input_domain.py",
+  "gate": {
+    "methods": [
+      "test_exact_saved_panel",
+      "test_complete_factorization",
+      "test_index_bijection",
+      "test_current_owned_evidence",
+      "test_forgery_rejection",
+      "test_no_native_authority"
+    ],
+    "records": [
+      "canonical-complete",
+      "canonical-restored",
+      "workflow-complete",
+      "workflow-restored"
+    ],
+    "checks": [
+      "Four saved typed roundtrips and full independent reconstructions; restored projection byte-exact; zero native work/engine restores/old tests.",
+      "Compare representative native request records at first/last and every individual factor coordinate against independently constructed fields. Exhaustively prove mixed-radix bijection for synthetic radices empty/singleton/multiple, plus boundary/type rejection.",
+      "At least12 output corruptions per setting covering pair, source/controller/demand, window omission, role omission/value/evidence, count/order and authority, plus4 input-pair forgeries per setting; all rejected.",
+      "Verify source freeze before/after and all481 predecessor identities unchanged; raw record persisted before audit; preserve failures; no gate acceptance until all exact methods and records pass."
+    ]
+  },
+  "claims": {
+    "comparison_paid": false,
+    "td5_admitted": false,
+    "execution_authorized": false,
+    "history_choice": false,
+    "parent_accepted": false
+  },
+  "execution": {
+    "serial_saved_readers": true,
+    "fresh_output": true,
+    "lease_guard": true,
+    "no_accepted_rerun": true
+  },
+  "next": "Fresh paid full changed-input comparison, current TD5/cost admission; genuine distinct-element ties/history-only live choice/chosen paid work/use/matched controls/full staging and FT7 pairs/populations FT8-FT9 remain open; all FT8 requirements unchanged."
+}
