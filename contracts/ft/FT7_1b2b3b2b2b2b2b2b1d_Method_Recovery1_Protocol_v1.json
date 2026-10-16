@@ -1,0 +1,41 @@
+{
+  "version": "ft-current-window-admission-method-recovery1-v1",
+  "scope": "Recover only unfinished original method bodies after the observed execution-server interruption; no original source, test or acceptance change.",
+  "original_freeze_commit": "86c613185216ae09b76ef1a1dbd764847ec2c31e",
+  "prior_operational_freeze_commits": [
+    "f72e518a289404a1afeb67ff2bf48634c0068fff",
+    "45309d2046ca807021f4877cacfd0590b577072b"
+  ],
+  "module": "tools/recover_current_window_admission_methods.py",
+  "binding_file": "contracts/ft/FT7_1b2b3b2b2b2b2b2b1d_Method_Recovery1_Input_Binding_v1.json",
+  "output": "current-window-admission-method-recovery1",
+  "operations": "current-window-admission-method-recovery1-operations",
+  "method_workers": 2,
+  "lease_margin_seconds": 300,
+  "passed_methods": [
+    "test_capacity_and_input_pairing_rejected",
+    "test_every_cost_and_priority_join",
+    "test_exact_full_panel",
+    "test_lifecycle_withholds_domain",
+    "test_restart_exact"
+  ],
+  "interrupted_methods": [
+    "test_window_operand_cost_forgery_rejected",
+    "test_old_nominees_and_bounded_cells"
+  ],
+  "unstarted_methods": [
+    "test_native_and_prefixes_unchanged"
+  ],
+  "rules": [
+    "Preserve original output and both prior operational directories byte-exact, including unclosed launch records and incomplete method logs. Do not fabricate a prior outcome or exit code. The execution-server session was lost; read-only current process inventory found no B1D worker. No namespace entry, signals, paid replay or exact cause claim.",
+    "Before invocation, bind every file in all three preserved directories, all eighty accepted raw inputs, original406 source and both prior operational4 freezes. Freeze the new runner, this protocol, its hash and complete binding before any unfinished body executes.",
+    "Verify all forty exact saved reports/raw hashes/source/full independent audit verdicts; exact484 predecessor IDs; five original successful method results and their parent exit-zero jobs. A passed restart method has a start-only controls log but a passing result and exact closed parent job; preserve and disclose this incomplete auxiliary log, never rerun the passed method.",
+    "Reconcile every prior launch/job/log. Original and continuation1 outcomes must remain quiescent checkpoints. Continuation2 has no outcome and exactly two unclosed method launches, no result for either. The third pending method was never launched. No reported child failure is silently retried.",
+    "Read only the current process table to reject any surviving original B1D evaluator or launcher before creating output; permission failure stops. Never enter another namespace or signal processes.",
+    "Create fresh disjoint output and operational directories. Copy every original output file exactly except the two interrupted method directories; their originals remain untouched and bound. No missing original raw may be regenerated. The five passed method directories and every other prior output file are copied exactly; the third pending directory must not exist.",
+    "Invoke only the three exact pending registered bodies through the original frozen evaluator method CLI, at most two workers. No monkeypatch, substitute tests, original init/run, record regeneration or passed-body replay. Verify all bound original/input/source bytes before launches and after closures, and all copied immutable files.",
+    "Require current unique running ownership with more than300seconds on the lease and a future UTC launch deadline within30minutes. Stop new launches on first failure, STOP, deadline or ownership change; let active children finish naturally. Exclusive logs/jobs/results, no automatic retry.",
+    "Only after all eight exact passing original method results may the original unchanged finish action run once against all forty exact copied records. Preserve the complete original aggregate checks and claim boundary. If deadline prevents finish, preserve checkpoint and use a separate prospective continuation; never reinvoke this recovery.",
+    "Operational interruption is not an engine test failure or acceptance. Any later failed or interrupted attempt needs concrete diagnosis and a separately registered numbered recovery. Preserve all FT8 requirements, historical failures, native/source/reserve/history prefixes and private identifiers."
+  ]
+}
