@@ -1,12 +1,12 @@
 {
   "schema": "full-theory-run-v2",
   "destination_repository": "GregoritHub/Soc_G_Layer",
-  "status": "running",
-  "run_id": "ft7-fresh-skills-2026-10-16T07:29:29.572Z",
-  "active_worker": true,
-  "lease_expires_at": "2026-10-16T07:59:29.572Z",
-  "expected_head": "850c21a2adf60a8e43e6e6799b4fc92bb71b0e6e",
-  "current_batch": "FT7.1b2b3b2b2b2b2b2b1d",
+  "status": "ready",
+  "run_id": null,
+  "active_worker": false,
+  "lease_expires_at": null,
+  "expected_head": "48ee7ec597a1f5ff319f860f5c4623bc1efdb24c",
+  "current_batch": "FT7.Recall.Feasibility.A1",
   "current_window_admission_progress": {
     "status": "passed",
     "implementation_commit": "a79669120939bfb0ee5f2dd7914a45b44f3c5696",
@@ -363,7 +363,7 @@
       "paths_removed": 0
     }
   },
-  "next_batch": "Prospectively register route-free fresh skills and paid recall organization, then changed-input comparisons and genuine history-only choice with matched work/use/full staging. FT7 pair/population and FT8–FT9 remain.",
+  "next_batch": "Route-free fresh skills and broader lawful paid organization; two-workshop-root-only removal is insufficient (best reachable33 in both mask-1 settings at recall32). Preserve scope/protected outputs/oldest demand. Fresh comparisons after changed inputs; full live choice/work/use/controls/staging and FT7–FT9 remain.",
   "completed_batches": [
     "FT0.1",
     "FT0.2",
@@ -424,7 +424,7 @@
   ],
   "reference_head": "fdede6f16721f06422d0798a79d84170969b83f8",
   "repair_source_head": "2b62b22f02a94f32ba060812c95309890a05856c",
-  "latest_record": "docs/ft/FT7_1b2b3b2b2b2b2b2b1d_Record.md",
+  "latest_record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md",
   "automation": {
     "enabled": true,
     "private_receipt": "Stored in the task settings; exact identifier and schedule are not published."
@@ -2249,5 +2249,29 @@
     "predecessor_identities": 484,
     "prior_identities": 399,
     "saved_records": 40
+  },
+  "recall_feasibility_progress": {
+    "status": "diagnostic_pass",
+    "protocol_commit": "0a451e1663cc18705f83d2d34feff98872a88574",
+    "freeze_commit": "48ee7ec597a1f5ff319f860f5c4623bc1efdb24c",
+    "source_identities": 412,
+    "prior_identities_exact": 406,
+    "tests": 4,
+    "saved_snapshots": 2,
+    "subset_cases": 8,
+    "best_reachable": {
+      "canonical": 33,
+      "workflow": 33
+    },
+    "limit": 32,
+    "paid_work": false,
+    "parent_accepted": false,
+    "evidence": {
+      "filename": "FT7_Recall_Feasibility_A1_Evidence_20261016.zip",
+      "sha256": "b0391d0d11284d53dc2eacdb259d2a8953798baf3690348cc5cce408f1c30185",
+      "manifest_members": 15,
+      "bytes": 83235
+    },
+    "record": "docs/ft/FT7_Recall_Feasibility_A1_Record.md"
   }
 }

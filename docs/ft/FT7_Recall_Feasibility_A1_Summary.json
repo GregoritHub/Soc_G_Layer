@@ -1,0 +1,44 @@
+{
+  "status": "diagnostic_pass",
+  "tests": 4,
+  "records": [
+    {
+      "key": "canonical/mask-1",
+      "paid_raw_sha256": "4ab8e52e56b99c0d64e802afea616a2ce335ecd1ba23f431c1231b829694cf2d",
+      "capacity_raw_sha256": "0023a9f355afb66fc58560b6a8e5381c18d5acb6691ab8a65a7dd90408c9800a",
+      "native_sha256": "60ccb856924227cf58e4eda10bc23825eed594c3cc5bbbec5958f0ecf6712d31",
+      "report_sha256": "407a945bcc356846ba29f2e8a065c691130fac94af1fb5d7c22f60f5f5bde7ce",
+      "roots": 30,
+      "eligible_roots": 2,
+      "reachable": [
+        35,
+        34,
+        34,
+        33
+      ],
+      "all_truncated": true,
+      "best_reachable": 33
+    },
+    {
+      "key": "workflow/mask-1",
+      "paid_raw_sha256": "b67617baf3444179a7f56a0b9e8a0fd3a2f9910f19f3868e13985eb4123e3d4e",
+      "capacity_raw_sha256": "8d261fa38e4a1f34a28cf1ba0975d3720b4116c9c33c9fa3ead2a8a61ac7bc2a",
+      "native_sha256": "dbde5bef7e2e6ba7bef5562a3dca3355eae1f2aab07730f5b69807eaf28633bc",
+      "report_sha256": "2ab2350a6aa9c6bbf981299680b857495f7fb5be971848d59c580de80a006349",
+      "roots": 29,
+      "eligible_roots": 2,
+      "reachable": [
+        34,
+        34,
+        33,
+        33
+      ],
+      "all_truncated": true,
+      "best_reachable": 33
+    }
+  ],
+  "frozen_identities": 412,
+  "native_operation_bodies_executed": 0,
+  "parent_acceptance": false,
+  "scope": "two mask-1 saved states; optimistic workshop-root removal only"
+}
